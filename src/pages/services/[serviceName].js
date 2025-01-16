@@ -16,6 +16,7 @@ import {
     Pagination,
     Scrollbar
 } from 'swiper/modules'
+import ImageViewer from '@/components/sliders/imageViewer';
 
 const ServicePage = () => {
     const { query } = useRouter();
@@ -105,47 +106,11 @@ const ServicePage = () => {
             {service.showResults && (
                 <section className='-mb-5 pt-10'>
                     <Container classList='px-5'>
-                        <div className='rounded border border-teal-700 py-5 md:px-10'>
+                        <div className='rounded border border-teal-700 py-5 md:px-10 flex flex-col items-center'>
                             <h2 className='pb-5 text-center font-display text-4xl md:text-6xl'>
                                 Results
                             </h2>
-                            <Swiper
-                                slidesPerView={1}
-                                spaceBetween={30}
-                                loop={false}
-                                centeredSlides={true}
-                                grabCursor={true}
-                                keyboard={{
-                                    enabled: true,
-                                    onlyInViewport: true
-                                }}
-                                pagination={{
-                                    clickable: true
-                                }}
-                                modules={[
-                                    Keyboard,
-                                    Autoplay,
-                                    Navigation,
-                                    Pagination,
-                                    Scrollbar,
-                                    A11y
-                                ]}
-                                breakpoints={{
-                                    768: {
-                                        slidesPerView: 1
-                                    }
-                                }}
-                            >
-                                {service.beforeAfterImages.images.map((image, index) => (
-                                    <SwiperSlide key={index} className='mb-10 rounded sm:mb-5'>
-                                        <img
-                                            src={image.asset.url}
-                                            alt={`Descriptive text about image ${index}`}
-                                            className='ms:px-10 mx-auto w-full rounded object-contain object-center px-5 md:h-[600px] md:px-0'
-                                        />
-                                    </SwiperSlide>
-                                ))}
-                            </Swiper>
+                            <ImageViewer data={service.beforeAfterImages.images} />
                         </div>
                     </Container>
                 </section>
@@ -288,13 +253,13 @@ const ServicePage = () => {
                                                         }).format(Number(item.standardPrice))}
                                                     </li>
                                                     {Number.isFinite(item.exclusivePrice) && (
-                                                    <li className='border-l-none hidden bg-dawnPink p-5 text-center xs:block xs:w-24 xs:border-l xs:border-dawnPink sm:w-32'>
-                                                        $
-                                                        {new Intl.NumberFormat('en-US', {
-                                                            minimumFractionDigits: 2,
-                                                            maximumFractionDigits: 2
-                                                        }).format(Number(item.exclusivePrice))}
-                                                    </li>
+                                                        <li className='border-l-none hidden bg-dawnPink p-5 text-center xs:block xs:w-24 xs:border-l xs:border-dawnPink sm:w-32'>
+                                                            $
+                                                            {new Intl.NumberFormat('en-US', {
+                                                                minimumFractionDigits: 2,
+                                                                maximumFractionDigits: 2
+                                                            }).format(Number(item.exclusivePrice))}
+                                                        </li>
                                                     )}
                                                     {!Number.isFinite(item.exclusivePrice) && (
                                                         <li className='border-l-none hidden bg-dawnPink p-5 text-center xs:block xs:w-24 xs:border-l xs:border-dawnPink sm:w-32'>
