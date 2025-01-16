@@ -36,7 +36,7 @@ const About = () => (
               Learn More About CADMEN
             </h1>
             <p className='leading-relaxed'>
-              We're focused on clear, natural-looking results, guided by the
+              We&apos;re focused on clear, natural-looking results, guided by the
               principle that everyone deserves to achieve their desired skin
               goals. Our skilled providers will guide you every step of the way
               through our carefully curated selection of medically-proven
