@@ -112,6 +112,7 @@ const ServicePage = () => {
                             <Swiper
                                 slidesPerView={1}
                                 spaceBetween={30}
+                                loop={false}
                                 centeredSlides={true}
                                 grabCursor={true}
                                 keyboard={{
@@ -130,7 +131,6 @@ const ServicePage = () => {
                                     A11y
                                 ]}
                                 breakpoints={{
-                                    // when window width is >= 768px
                                     768: {
                                         slidesPerView: 1
                                     }
