@@ -33,7 +33,7 @@ const Footer = () => {
           <div className='col-span-12 sm:col-span-3'>
             <Image
               className='h-9 w-auto'
-              src='/site-logo.png'
+              src='/site-logo-white.png'
               alt='ImageLab Logo'
               height={100}
               width={200}

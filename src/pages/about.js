@@ -55,7 +55,7 @@ const About = () => (
           <div className='order-1 h-[250px] md:order-2 md:h-full'>
             <Image
               draggable='false'
-              src='/media/clinic-interior.jpg'
+              src='/cadmen_clinic_cover.jpeg'
               alt='Picture Cadmen Interior'
               sizes='100vw'
               className='h-full w-full object-cover object-center'
