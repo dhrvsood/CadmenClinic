@@ -1,0 +1,75 @@
+"": {
+        "promo": "Book Now for 20% Off Your First Visit!",
+        "title": "",
+        "subTitle": "",
+        "duration": ,
+        "cost": ,
+        "heroImage": {
+            "asset": {
+                "url": "/media/services/botox-and-wrinkle-relaxers.jpg"
+            },
+            "alt": "Service Image"
+        },
+        "benefits": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "conditions": [
+            {
+                "icon": {
+                    "asset": {
+                        "url": "/icons/lines-and-wrinkles.webp"
+                    }
+                },
+                "title": "Lines and Wrinkles"
+            },
+            {
+                "icon": {
+                    "asset": {
+                        "url": "/icons/excessive-sweating.webp"
+                    }
+                },
+                "title": "Excessive Sweating"
+            }
+        ],
+        "howItWorks": [
+            '',
+            '',
+            '',
+            ''
+        ],
+        "packages": [
+            {
+                "title": "",
+                "measurementUnit": "Per Unit",
+                "packageItems": [
+                    {
+                        "name": "",
+                        "standardPrice": ,
+                    },
+                    {
+                        "name": "",
+                        "standardPrice": ,
+                    },
+                    {
+                        "name": "",
+                        "standardPrice": ,
+                    }
+                ]
+            }
+        ],
+        "packagesImage": {
+            "asset": {
+                "url": "/services/botox-pricing.webp"
+            },
+            "alt": "Pricing Image"
+        },
+        "faqs": [
+            {
+                "question": "",
+                "answer": ""
+            },
+        ]
+    }
