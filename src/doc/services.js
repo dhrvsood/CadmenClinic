@@ -626,8 +626,8 @@ export const servicesData = {
     },
     "microneedling": {
         "promo": "Book Now for 50% Off Your First Microneedling!",
-        "title": "SkinPen Microneedling",
-        "subTitle": "Refresh your skin with the SkinPen microneedling treatment, which stimulates collagen and elastin production, helping you reveal a smoother, more vibrant complexion",
+        "title": "DermaPen Microneedling",
+        "subTitle": "Refresh your skin with the DermaPen microneedling treatment, which stimulates collagen and elastin production, helping you reveal a smoother, more vibrant complexion",
         "duration": 45,
         "cost": 400,
         "slug": 'microneedling', "heroImage": {
@@ -676,7 +676,7 @@ export const servicesData = {
             }
         ],
         "howItWorks": [
-            "Collagen induction therapy, also known as Microneedling, is a cutting-edge treatment that works by creating precise, micro-injuries to the skin, expertly administered using a handheld device (the SkinPen) with fine needles.",
+            "Collagen induction therapy, also known as Microneedling, is a cutting-edge treatment that works by creating precise, micro-injuries to the skin, expertly administered using a handheld device (the DermaPen) with fine needles.",
             "These controlled stimulations activate the skin's natural regenerative process, leading to a surge in collagen and elastin production.",
             "Collagen strengthens the skin's structure, while elastin allows elasticity and resilience. As the skin heals, new collagen and elastin fibers are formed, manifesting in smoother, firmer, and visibly rejuvenated skin.",
             "Microneedling + Exosomes:",

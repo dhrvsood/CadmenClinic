@@ -150,9 +150,9 @@ export const conditions = [
         }
       },
       {
-        "title": "SkinPen Microneedling",
+        "title": "DermaPen Microneedling",
         "slug": {
-          "current": "/skinpen-microneedling"
+          "current": "/DermaPen-microneedling"
         }
       }
     ]
@@ -202,9 +202,9 @@ export const conditions = [
         }
       },
       {
-        "title": "SkinPen Microneedling",
+        "title": "DermaPen Microneedling",
         "slug": {
-          "current": "/skinpen-microneedling"
+          "current": "/DermaPen-microneedling"
         }
       }
     ]
@@ -228,9 +228,9 @@ export const conditions = [
         }
       },
       {
-        "title": "SkinPen Microneedling",
+        "title": "DermaPen Microneedling",
         "slug": {
-          "current": "/skinpen-microneedling"
+          "current": "/DermaPen-microneedling"
         }
       }
     ]
@@ -260,9 +260,9 @@ export const conditions = [
         }
       },
       {
-        "title": "SkinPen Microneedling",
+        "title": "DermaPen Microneedling",
         "slug": {
-          "current": "/skinpen-microneedling"
+          "current": "/DermaPen-microneedling"
         }
       }
     ]

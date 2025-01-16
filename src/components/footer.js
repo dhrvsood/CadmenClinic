@@ -49,9 +49,9 @@ const Footer = () => {
               </p>
               <a
                 className='text-sm hover:underline'
-                href='mailto:info@cadmenclinic.com'
+                href='mailto:info@cadmenclinic.ca'
               >
-                info@cadmenclinic.com{' '}
+                info@cadmenclinic.ca{' '}
               </a>
             </div>
           </div>
@@ -126,8 +126,7 @@ const Footer = () => {
         </div>
         <div className='mt-10 flex flex-col justify-between border-t border-white border-opacity-30 pt-5 text-xs sm:flex-row'>
           <p className='text-sm'>
-            &copy; {new Date().getFullYear()} CADMEN COSMETIC CLINIC ™ All rights reserved.
-            reserved.
+            &copy; {new Date().getFullYear()} CADMEN CLINIC ™ All rights reserved.
           </p>
           <div className='flex flex-row items-center space-x-2 pt-3 sm:pt-0'>
             {/* <p className='text-sm'>

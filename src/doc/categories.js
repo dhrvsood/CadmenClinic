@@ -118,15 +118,15 @@ export const categories = {
         }
       },
       {
-        "title": "SkinPen Microneedling",
-        "subTitle": "Refresh your skin with the SkinPen microneedling treatment, which stimulates collagen and elastin production, helping you reveal a smoother, more vibrant complexion",
+        "title": "DermaPen Microneedling",
+        "subTitle": "Refresh your skin with the DermaPen microneedling treatment, which stimulates collagen and elastin production, helping you reveal a smoother, more vibrant complexion",
         "slug": "/microneedling",
         "categoryOrder": 3,
         "heroImage": {
           "asset": {
             "url": "/media/services/skinpen-microneedling.webp"
           },
-          "alt": "SkinPen Microneedling Service Image"
+          "alt": "DermaPen Microneedling Service Image"
         }
       },
       {
