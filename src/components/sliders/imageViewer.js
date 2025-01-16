@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function ImageViewer({ data }) {
     return (
         <div className='flex m-8 xl:m-0 xl:w-[45%]'>
-            {!data.length == 1 && (
+            {data.length != 1 && (
                 <Carousel className='rounded-2xl relative h-fit'
                     navigation={({ setActiveIndex, activeIndex, length }) => (
                         <div className="absolute bottom-6 left-2/4 z-50 flex -translate-x-2/4 gap-2 bg-customBlack py-2 px-3 rounded-full">
