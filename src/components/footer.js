@@ -3,6 +3,8 @@ import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
+import siteLogoWhite from '../../public/site-logo-white.png';
+
 
 const navigation = {
   company: [
@@ -33,7 +35,7 @@ const Footer = () => {
           <div className='col-span-12 sm:col-span-3'>
             <Image
               className='h-9 w-auto'
-              src='/site-logo-white.png'
+              src={siteLogoWhite}
               alt='CADMEN Clinic Logo'
               height={100}
               width={200}
@@ -129,19 +131,7 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} CADMEN CLINIC ™ All rights reserved.
           </p>
           <div className='flex flex-row items-center space-x-2 pt-3 sm:pt-0'>
-            {/* <p className='text-sm'>
-              Site by{' '}
-              <a
-                className='text-sm hover:underline'
-                href='https://seedlogic.com/?utm_source=imagelab-footer'
-                target='_blank'
-              >
-                Seedlogic
-              </a>
-            </p>
-            <div>
-              <HeartIcon className='h-3 w-3 text-white' />
-            </div> */}
+            
           </div>
         </div>
       </Container>

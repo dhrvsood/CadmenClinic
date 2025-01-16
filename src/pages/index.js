@@ -7,23 +7,25 @@ import { categories } from '@/doc/categories'
 import { NextSeo } from 'next-seo'
 import Image from 'next/image'
 import Link from 'next/link'
+import treatment from '../../public/media/treatment.webp';
+import landing from '../../public/media/home.png';
 
 const Home = () => {
   return (
     <>
       <NextSeo
         title="CADMEN Clinic | Toronto’s Best Med Clinic Experience"
-        description='Offering Botox, fillers, laser treatments, and personalized skincare in Chicago for enhancing beauty and addressing your various aesthetic needs. Learn more.'
+        description='Offering Botox, fillers, laser treatments, and personalized skincare in Toronto for enhancing beauty and addressing your various aesthetic needs. Learn more.'
         canonical='https://www.cadmenclinic.ca/'
         openGraph={{
           url: 'https://www.cadmenclinic.ca/',
           title:
-            "CADMEN Clinic | Medspa Chicago Aesthetic & Beauty Clinic",
+            "CADMEN Clinic | Medspa Toronto Aesthetic & Beauty Clinic",
           description:
-            'Offering Botox, fillers, laser treatments, and personalized skincare in Chicago for enhancing beauty and addressing your various aesthetic needs. Learn more.',
+            'Offering Botox, fillers, laser treatments, and personalized skincare in Toronto for enhancing beauty and addressing your various aesthetic needs. Learn more.',
           images: [
             {
-              url: 'https://www.cadmenclinic.ca/og_image.jpg',
+              url: 'https://www.cadmenclinic.ca/media/interior.jpg',
               width: 800,
               height: 800,
               alt: 'Interior of CADMEN Clinic',
@@ -64,13 +66,12 @@ const Home = () => {
             <div className='order-1 h-[250px] md:order-2 md:h-full'>
               <Image
                 draggable='false'
-                src='/media/home.png'
+                src={landing}
                 alt='Picture Woman Home'
                 sizes='100vw'
                 className='h-full w-full object-cover object-center'
                 width={1000}
                 height={1000}
-                priority
                 quality={100}
               />
             </div>
@@ -103,7 +104,7 @@ const Home = () => {
               <Image
                 className='h-full w-full object-cover object-center'
                 draggable='false'
-                src='/media/treatment.webp'
+                src={treatment}
                 alt='Smiling woman'
                 width={500}
                 height={500}

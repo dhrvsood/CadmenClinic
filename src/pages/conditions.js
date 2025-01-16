@@ -1,15 +1,13 @@
 import ContactBanner from '@/components/contact_banner'
 import Container from '@/components/container'
 import { conditions } from '@/doc/conditions'
-import {
-  AdjustmentsVerticalIcon,
-  ArrowLongRightIcon
-} from '@heroicons/react/24/outline'
+import { AdjustmentsVerticalIcon, ArrowLongRightIcon } from '@heroicons/react/24/outline'
 import sortBy from 'lodash/sortBy'
 import { NextSeo } from 'next-seo'
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useEffect, useRef, useState } from 'react'
+import condition from '../../public/media/conditions.jpg';
 
 const Conditions = () => {
   const [conditionsFilter, setConditionsFilter] = useState(conditions)
@@ -63,7 +61,7 @@ const Conditions = () => {
             'Treat conditions like varicose veins, unwanted hair, and weight issues with cutting-edge treatments at CADMEN Clinic for lasting results. See more.',
           images: [
             {
-              url: 'https://www.cadmenclinic.ca/og_image.jpg',
+              url: 'https://www.cadmenclinic.ca/media/conditions.jpg',
               width: 800,
               height: 800,
               alt: 'Interior of CADMEN Clinic',
@@ -98,13 +96,12 @@ const Conditions = () => {
             <div className='order-1 h-[250px] md:order-2 md:h-full'>
               <Image
                 draggable='false'
-                src='/media/conditions.jpg'
+                src={condition}
                 alt='Woman touching face'
                 sizes='100vw'
                 className='h-full w-full object-cover object-center'
                 width={1000}
                 height={1000}
-                priority
                 quality={100}
               />
             </div>

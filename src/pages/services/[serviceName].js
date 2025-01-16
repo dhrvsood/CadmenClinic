@@ -160,6 +160,7 @@ const ServicePage = () => {
                                                         alt={c.title}
                                                         height='23'
                                                         width='23'
+                                                        priority
                                                     />
                                                 </div>
                                                 <div>{c.title}</div>
@@ -284,6 +285,7 @@ const ServicePage = () => {
                                 className='h-[95%] rounded object-cover object-center'
                                 width={500}
                                 height={500}
+                                priority
                             />
                         </div>
                     </div>

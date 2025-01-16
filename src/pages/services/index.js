@@ -8,16 +8,16 @@ const Services = () => {
         <>
             <NextSeo
                 title='Our Services | See All Premium Treatments | CADMEN Clinic'
-                description='Explore our services including Botox, fillers, laser hair removal & PRP therapy at our Chicago medspa, tailored to enhance your beauty & wellness. See more.'
+                description='Explore our services including Botox, fillers, laser hair removal & PRP therapy at our Toronto medspa, tailored to enhance your beauty & wellness. See more.'
                 canonical='https://www.cadmenclinic.ca/about'
                 openGraph={{
                     url: 'https://www.cadmenclinic.ca/about',
                     title: 'Our Services | See All Premium Treatments | CADMEN Clinic',
                     description:
-                        'Explore our services including Botox, fillers, laser hair removal & PRP therapy at our Chicago medspa, tailored to enhance your beauty & wellness. See more.',
+                        'Explore our services including Botox, fillers, laser hair removal & PRP therapy at our Toronto medspa, tailored to enhance your beauty & wellness. See more.',
                     images: [
                         {
-                            url: 'https://www.cadmenclinic.ca/og_image.jpg',
+                            url: 'https://www.cadmenclinic.ca/media/clinic_interior.jpg',
                             width: 800,
                             height: 800,
                             alt: 'Interior of CADMEN Clinic',

@@ -20,7 +20,6 @@ const SlideContent = ({ provider }) => {
         alt={provider.name}
         width={500}
         height={100}
-        priority={false}
       />
       <div className='absolute bottom-0 left-0 right-0 h-[50%] bg-gradient-to-t from-gray-700 to-transparent' />
       <div className='absolute bottom-3 left-3 flex flex-col p-5'>

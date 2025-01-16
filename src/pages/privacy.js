@@ -4,11 +4,11 @@ const Privacy = () => (
   <>
     <NextSeo
       title='Our Privacy Policy | CADMEN Clinic'
-      description='Discover how we treat your personal data & ensure your privacy while using our services in Chicago, with detailed policies on data use & protection. Learn more.'
+      description='Discover how we treat your personal data & ensure your privacy while using our services in Toronto, with detailed policies on data use & protection. Learn more.'
       canonical='https://www.cadmenclinic.ca/privacy'
       openGraph={{
         title: 'Our Privacy Policy | CADMEN Clinic',
-        description: 'Discover how we treat your personal data & ensure your privacy while using our services in Chicago, with detailed policies on data use & protection. Learn more.',
+        description: 'Discover how we treat your personal data & ensure your privacy while using our services in Toronto, with detailed policies on data use & protection. Learn more.',
         type: 'website',
         url: 'https://www.cadmenclinic.ca/privacy',
         site_name: 'CADMEN Clinic'
@@ -206,7 +206,7 @@ const Privacy = () => (
           the Sites, or your dealings with the Sites, please contact us at:
         </p>
         <p>
-          <a href='mailto:info@imagelabmedspa.com'>info@imagelabmedspa.com</a>
+          <a href='mailto:info@cadmenclinic.ca'>info@cadmenclinic.ca</a>
         </p>
 
         <p>This document was last updated on September 26, 2019</p>
@@ -362,7 +362,7 @@ const Privacy = () => (
         <p>
           If you have any questions or concerns about any aspect of this privacy
           policy, please feel free to contact our Privacy Policy Coordinator at
-          marketing@imagelabmedspa.com
+          info@cadmenclinic.ca
         </p>
 
         <h4>Your Consent to this Policy; Changes to the Policy</h4>

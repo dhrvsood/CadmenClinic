@@ -4,18 +4,19 @@ import ProvidersCarousel from '@/components/providers_carousel'
 import { NextSeo } from 'next-seo'
 import Image from 'next/image'
 import Link from 'next/link'
+import clinicInterior from '../../public/cadmen_clinic_cover.jpeg';
 
 const About = () => (
   <>
     <NextSeo
       title='About Us | CADMEN Clinic'
-      description='Learn about our expert team, advanced cosmetic services & personalized care at our Chicago medspa, offering Botox, fillers, laser treatments & more. Visit today.'
+      description='Learn about our expert team, advanced cosmetic services & personalized care at our Toronto medspa, offering Botox, fillers, laser treatments & more. Visit today.'
       canonical='https://www.cadmenclinic.ca/about'
       openGraph={{
         url: 'https://www.cadmenclinic.ca/about',
         title: 'About Us | CADMEN Clinic',
         description:
-          'Learn about our expert team, advanced cosmetic services & personalized care at our Chicago medspa, offering Botox, fillers, laser treatments & more. Visit today.',
+          'Learn about our expert team, advanced cosmetic services & personalized care at our Toronto medspa, offering Botox, fillers, laser treatments & more. Visit today.',
         images: [
           {
             url: 'https://www.cadmenclinic.ca/media/interior-1.jpg',
@@ -55,7 +56,7 @@ const About = () => (
           <div className='order-1 h-[250px] md:order-2 md:h-full'>
             <Image
               draggable='false'
-              src='/cadmen_clinic_cover.jpeg'
+              src={clinicInterior}
               alt='Picture Cadmen Interior'
               sizes='100vw'
               className='h-full w-full object-cover object-center'

@@ -16,9 +16,9 @@ const Accessibility = () => (
     />
     <section className='prose mx-auto px-5 py-32 lg:prose-xl'>
       <article>
-        <h1>Web Accessibility Policy ImageLab</h1>
+        <h1>Web Accessibility Policy CADMEN</h1>
         <p>
-          ImageLab is committed to ensuring digital accessibility for all
+          CADMEN is committed to ensuring digital accessibility for all
           visitors, including people with disabilities. Our goal is to provide a
           user-friendly and inclusive experience for everyone, regardless of
           their abilities. This policy outlines the steps we have taken and the
@@ -69,14 +69,14 @@ const Accessibility = () => (
         </p>
         <div className='flex flex-row'>
           Email:
-          <a className='pl-2' href='mailto:info@imagelabmedspa.com'>
-            info@imagelabmedspa.com
+          <a className='pl-2' href='mailto:info@cadmenclinic.ca'>
+            info@cadmenclinic.ca
           </a>
         </div>
         <div className='flex flex-row'>
           Phone:
-          <a className='pl-2' href='tel:+15023172921'>
-            (502) 317-2921
+          <a className='pl-2' href='tel:+14165111337'>
+            (416) 511-1337
           </a>
         </div>
         <p>

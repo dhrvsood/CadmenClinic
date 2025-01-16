@@ -5,8 +5,10 @@ import { useRouter } from 'next/router'
 import { Fragment, useEffect, useState } from 'react'
 import { categories } from '@/doc/categories';
 import { orderBy } from 'lodash'
-
 import MobileMenu from './mobile_menu'
+import { PhoneIcon } from '@heroicons/react/24/solid'
+import Image from 'next/image'
+import siteLogo from '../../public/site-logo.png';
 
 const navigation = {
   pages: [
@@ -35,12 +37,12 @@ const Navbar = () => {
     'semaglutide-injections-CADMENClinic',
     'microneedling-CADMENClinic'
   ]
-  // const categories = { 'microneedling-imagelab': 'Skin' }
+
   const pathSegments = router.asPath.split("/");
   const nonEmptySegments = pathSegments.filter(segment => segment !== "");
   const slug = nonEmptySegments.length > 0 ? router.asPath.split("/").filter(segment => segment !== "")[nonEmptySegments.length - 1] : null;
   const skip = servicesToSkip.includes(slug);
-  
+
   useEffect(() => {
     setNavItems(categories);
   }, [])
@@ -76,11 +78,7 @@ const Navbar = () => {
                   <div className='hidden md:flex md:flex-1 md:items-center'>
                     <Link href='/'>
                       <span className='sr-only'>CADMEN Clinic</span>
-                      <img
-                        className='h-10 w-auto'
-                        src='/site-logo.png'
-                        alt='ImageLab logo'
-                      />
+                      <Image height={40} width={0} src={siteLogo} alt='CADMEN logo' />
                     </Link>
                   </div>
 
@@ -96,7 +94,7 @@ const Navbar = () => {
                                   className={classNames(
                                     open
                                       ? 'border-beaver/90 text-beaver/90'
-                                      : 'border-beaver/90 hover:text-beaver/90',
+                                      : 'text-gray-700 hover:text-beaver/90',
                                     'relative',
                                     '-mb-px',
                                     'flex',
@@ -209,8 +207,9 @@ const Navbar = () => {
                         </div>
                         <div className="menu-btn-last">
                           <a href='tel:4165111337'
-                            className='header-btn rounded border border-beaver/90 bg-beaver/90 px-5 py-3 text-sm font-light text-white hover:bg-beaver'>
-                            <i className="fa-solid fa-phone mr-2"></i> (416) 511-1337
+                            className='flex flex-row items-center justify-start gap-3 header-btn rounded border border-beaver/90 bg-beaver/90 px-5 py-3 text-sm font-light text-white hover:bg-beaver'>
+                            <PhoneIcon className='w-4' />
+                            <p>(416) 511-1337</p>
                           </a>
                         </div>
                       </div>
@@ -242,7 +241,7 @@ const Navbar = () => {
                       <img
                         className='h-5 object-cover xxs:h-8'
                         src='/site-logo.png'
-                        alt='ImageLab logo'
+                        alt='CADMEN logo'
                       />
                     </Link>
                   </div>
