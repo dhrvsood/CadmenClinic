@@ -27,14 +27,14 @@ const AppointmentCancellationPolicy = () => (
           time.
         </p>
         <p>
-          If you're over 15 minutes late, you might need to either reschedule or
+          If you&apos;re over 15 minutes late, you might need to either reschedule or
           select a different service.
         </p>
         <p>
           Purchases made at ImageLab Med Spa are final. Gratuities are only
           accepted for non-medical procedures. This means you can tip our
           Estheticians, Spa Therapists, and Guest Experience Specialists. Tips
-          are a token of appreciation and not obligatory, but they're always
+          are a token of appreciation and not obligatory, but they&apos;re always
           welcomed for exceptional service!
         </p>
       </article>
