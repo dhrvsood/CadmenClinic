@@ -22,7 +22,7 @@ const Accessibility = () => (
           visitors, including people with disabilities. Our goal is to provide a
           user-friendly and inclusive experience for everyone, regardless of
           their abilities. This policy outlines the steps we have taken and the
-          ongoing efforts we are making to maintain and improve our website's
+          ongoing efforts we are making to maintain and improve our website&apos;s
           accessibility. Conformance with Web Content Accessibility Guidelines
           (WCAG) Our website has been designed and developed to comply with the
           Web Content Accessibility Guidelines (WCAG) 2.1, Level AA, published
@@ -58,10 +58,10 @@ const Accessibility = () => (
         <p>
           Ongoing Efforts We recognize that maintaining an accessible website is
           an ongoing effort, and we are committed to continually monitoring and
-          improving our site's accessibility. We regularly conduct accessibility
+          improving our site&apos;s accessibility. We regularly conduct accessibility
           audits to identify potential barriers and implement improvements in
           accordance with evolving best practices and standards. Feedback and
-          Assistance We welcome your feedback on our website's accessibility.
+          Assistance We welcome your feedback on our website&apos;s accessibility.
         </p>
         <p>
           If you encounter any issues, have questions, or require assistance,
