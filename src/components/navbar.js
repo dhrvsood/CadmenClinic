@@ -96,7 +96,7 @@ const Navbar = () => {
                                   className={classNames(
                                     open
                                       ? 'border-beaver/90 text-beaver/90'
-                                      : 'text-gray-700 hover:text-gray-800',
+                                      : 'border-beaver/90 hover:text-beaver/90',
                                     'relative',
                                     '-mb-px',
                                     'flex',
