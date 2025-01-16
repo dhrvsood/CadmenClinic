@@ -7,15 +7,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { servicesData } from '@/doc/services';
 import Faqs from '@/components/faqs';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import {
-    A11y,
-    Autoplay,
-    Keyboard,
-    Navigation,
-    Pagination,
-    Scrollbar
-} from 'swiper/modules'
 import ImageViewer from '@/components/sliders/imageViewer';
 
 const ServicePage = () => {
@@ -77,15 +68,27 @@ const ServicePage = () => {
                                 </p>
                             </div>
                             <div className='flex w-full'>
-                                <Link
-                                    style={{
-                                        boxShadow: 'rgb(198,156,147) -9px 9px 0px 0px'
-                                    }}
-                                    href='/book-now'
-                                    className='w-full rounded border border-beaver/90 bg-beaver/90 px-10 py-3 text-center font-light text-white hover:bg-beaver'
-                                >
-                                    Book Now
-                                </Link>
+                                {!service.comingSoon && (
+                                    <Link
+                                        style={{
+                                            boxShadow: 'rgb(198,156,147) -9px 9px 0px 0px'
+                                        }}
+                                        href='/book-now'
+                                        className='w-full rounded border border-beaver/90 bg-beaver/90 px-10 py-3 text-center font-light text-white hover:bg-beaver'
+                                    >
+                                        Book Now
+                                    </Link>
+                                )}
+                                {service.comingSoon && (
+                                    <div
+                                        style={{
+                                            boxShadow: 'rgb(198,156,147) -9px 9px 0px 0px'
+                                        }}
+                                        className='w-full rounded border border-beaver/90 bg-beaver/90 px-10 py-3 text-center font-light text-white hover:bg-beaver'
+                                    >
+                                        COMING SOON
+                                    </div>
+                                )}
                             </div>
                         </div>
                         <div className='order-1 h-full'>

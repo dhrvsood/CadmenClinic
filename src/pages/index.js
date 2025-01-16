@@ -14,16 +14,16 @@ const Home = () => {
       <NextSeo
         title="CADMEN Clinic | Toronto’s Best Med Clinic Experience"
         description='Offering Botox, fillers, laser treatments, and personalized skincare in Chicago for enhancing beauty and addressing your various aesthetic needs. Learn more.'
-        canonical='https://www.imagelabmedspa.com/'
+        canonical='https://www.cadmenclinic.ca/'
         openGraph={{
-          url: 'https://www.imagelabmedspa.com/',
+          url: 'https://www.cadmenclinic.ca/',
           title:
             "CADMEN Clinic | Medspa Chicago Aesthetic & Beauty Clinic",
           description:
             'Offering Botox, fillers, laser treatments, and personalized skincare in Chicago for enhancing beauty and addressing your various aesthetic needs. Learn more.',
           images: [
             {
-              url: 'https://www.imagelabmedspa.com/og_image.jpg',
+              url: 'https://www.cadmenclinic.ca/og_image.jpg',
               width: 800,
               height: 800,
               alt: 'Interior of CADMEN Clinic',
@@ -81,7 +81,7 @@ const Home = () => {
       <ServicesCarousel
         categories={categories}
         bookNow={false}
-        title="Toronto’s Best Med Clinic Experience"
+        title="Toronto’s Best Med Spa Experience"
       />
       <ContactBanner />
       {/* Info Section */}

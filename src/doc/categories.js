@@ -51,7 +51,7 @@ export const categories = {
       }
     ]
   },
-  "Hair": {
+  "Hair + Wellness": {
     "services": [
       {
         "title": "PRP Hair Restoration",
@@ -87,6 +87,18 @@ export const categories = {
             "url": "/media/services/meso.webp"
           },
           "alt": "Mesotheraphy Service Image"
+        }
+      },
+      {
+        "title": "Semaglutide Therapy",
+        "subTitle": "In-person, medically-supervised Semaglutide injections for safe and effective weight loss, no insurance needed. The same active ingredient in Wegovy®* and Ozempic®*.",
+        "slug": "/semaglutide-therapy",
+        "categoryOrder": 4,
+        "heroImage": {
+          "asset": {
+            "url": "/media/services/semaglutide.webp"
+          },
+          "alt": "Semaglutide Service Image"
         }
       }
     ]

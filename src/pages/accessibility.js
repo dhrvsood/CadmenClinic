@@ -3,15 +3,15 @@ import { NextSeo } from 'next-seo'
 const Accessibility = () => (
   <>
     <NextSeo
-      title='Our Web Accessibility Policy | ImageLab Med Spa'
+      title='Our Web Accessibility Policy | CADMEN Clinic'
       description='Discover our commitment to digital accessibility, ensuring a user-friendly experience for all visitors, including those with disabilities. See more.'
-      canonical='https://www.imagelabmedspa.com/accessibility'
+      canonical='https://www.cadmenclinic.ca/accessibility'
       openGraph={{
-        url: 'https://www.imagelabmedspa.com/accessibility',
-        title: 'Our Web Accessibility Policy | ImageLab Med Spa',
+        url: 'https://www.cadmenclinic.ca/accessibility',
+        title: 'Our Web Accessibility Policy | CADMEN Clinic',
         description:
           'Discover our commitment to digital accessibility, ensuring a user-friendly experience for all visitors, including those with disabilities. See more.',
-        siteName: 'ImageLab Med Spa'
+        siteName: 'CADMEN Clinic'
       }}
     />
     <section className='prose mx-auto px-5 py-32 lg:prose-xl'>

@@ -75,8 +75,8 @@ const Layout = ({ children }) => {
   const shouldShowNavbar =
     !router.pathname.includes('studio') &&
     !router.pathname.includes('paymentsuccess') &&
-    !router.pathname.includes('/services/botox-imagelab') &&
-    !router.pathname.includes('/services/botox-imagelab-search')
+    !router.pathname.includes('/services/botox-CADMEN Clinic') &&
+    !router.pathname.includes('/services/botox-CADMEN Clinic-search')
 
   return (
     <>

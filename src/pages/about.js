@@ -10,15 +10,15 @@ const About = () => (
     <NextSeo
       title='About Us | CADMEN Clinic'
       description='Learn about our expert team, advanced cosmetic services & personalized care at our Chicago medspa, offering Botox, fillers, laser treatments & more. Visit today.'
-      canonical='https://www.imagelabmedspa.com/about'
+      canonical='https://www.cadmenclinic.ca/about'
       openGraph={{
-        url: 'https://www.imagelabmedspa.com/about',
+        url: 'https://www.cadmenclinic.ca/about',
         title: 'About Us | CADMEN Clinic',
         description:
           'Learn about our expert team, advanced cosmetic services & personalized care at our Chicago medspa, offering Botox, fillers, laser treatments & more. Visit today.',
         images: [
           {
-            url: 'https://www.imagelabmedspa.com/media/interior-1.jpg',
+            url: 'https://www.cadmenclinic.ca/media/interior-1.jpg',
             width: 800,
             height: 800,
             alt: 'Interior of CADMEN Clinic',

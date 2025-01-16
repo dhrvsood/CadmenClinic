@@ -3,26 +3,26 @@ import { NextSeo } from 'next-seo'
 const Privacy = () => (
   <>
     <NextSeo
-      title='Our Privacy Policy | ImageLab Med Spa'
+      title='Our Privacy Policy | CADMEN Clinic'
       description='Discover how we treat your personal data & ensure your privacy while using our services in Chicago, with detailed policies on data use & protection. Learn more.'
-      canonical='https://www.imagelabmedspa.com/privacy'
+      canonical='https://www.cadmenclinic.ca/privacy'
       openGraph={{
-        title: 'Our Privacy Policy | ImageLab Med Spa',
+        title: 'Our Privacy Policy | CADMEN Clinic',
         description: 'Discover how we treat your personal data & ensure your privacy while using our services in Chicago, with detailed policies on data use & protection. Learn more.',
         type: 'website',
-        url: 'https://www.imagelabmedspa.com/privacy',
-        site_name: 'ImageLab Med Spa'
+        url: 'https://www.cadmenclinic.ca/privacy',
+        site_name: 'CADMEN Clinic'
       }}
     />
     <section className='prose mx-auto px-5 py-32 lg:prose-xl'>
       <article>
         <h1 className='entry-title'>Privacy Policy</h1>
         <p>
-          This Privacy Policy governs the manner in which ImageLab Med Spa
+          This Privacy Policy governs the manner in which CADMEN Clinic
           collects, uses, maintains and discloses information collected from
-          users (each, a “User”) of the https://www.imagelabmedspa.com (each, a
+          users (each, a “User”) of the https://www.cadmenclinic.ca (each, a
           “Site”). This Privacy Policy applies to the Sites and all products and
-          services offered by ImageLab Med Spa.
+          services offered by CADMEN Clinic.
         </p>
         <h3>
           <strong>Personal identification information</strong>
@@ -69,7 +69,7 @@ const Privacy = () => (
           <strong>How we use collected information</strong>
         </h3>
         <p>
-          ImageLab Med Spa may collect and use Users personal information for
+          CADMEN Clinic may collect and use Users personal information for
           the following purposes:
         </p>
         <ul>
@@ -179,7 +179,7 @@ const Privacy = () => (
           <strong>Changes to this privacy policy</strong>
         </h3>
         <p>
-          ImageLab Med Spa has the discretion to update this privacy policy at
+          CADMEN Clinic has the discretion to update this privacy policy at
           any time. When we do, we will revise the updated date at the bottom of
           this page. We encourage Users to frequently check this page for any
           changes to stay informed about how we are helping to protect the
@@ -211,7 +211,7 @@ const Privacy = () => (
 
         <p>This document was last updated on September 26, 2019</p>
 
-        <h2>ImageLab Med Spa Mobile App</h2>
+        <h2>CADMEN Clinic Mobile App</h2>
 
         <h3>Privacy Policy</h3>
         <h4>Information We Collect</h4>
@@ -260,10 +260,10 @@ const Privacy = () => (
         <h4>Disclosure of This Information</h4>
         <p>
           We may share your personally identifiable information with our app
-          host, ImageLab Med Spa, LLC, as well as with other third parties that
-          provide us with services. ImageLab Med Spa, LLC may use your purchase
+          host, CADMEN Clinic, LLC, as well as with other third parties that
+          provide us with services. CADMEN Clinic, LLC may use your purchase
           information and billing address to calculate any applicable sales and
-          use tax; however, ImageLab Med Spa, LLC is not responsible for payment
+          use tax; however, CADMEN Clinic, LLC is not responsible for payment
           of any applicable taxes and has no liability to you with respect to
           calculation of taxes or your purchase of our content. We require third
           parties to protect your information in a manner consistent with this
@@ -272,7 +272,7 @@ const Privacy = () => (
           personal information to any other third parties for the purpose of
           marketing their own products or services. We may share non-personally
           identifiable information or aggregated data about our users with
-          ImageLab Med Spa, LLC or other third parties for research, analytical
+          CADMEN Clinic, LLC or other third parties for research, analytical
           and marketing purposes, such as analyzing usage patterns for certain
           content, services, advertisements, promotions, and/or functionality on
           our web site and/or to our subsidiaries, affiliated companies, or
@@ -281,7 +281,7 @@ const Privacy = () => (
           information in order to cooperate with law enforcement proceedings or
           governmental investigations, such as in response to subpoenas, search
           warrants, court orders, or other legal processes. You also acknowledge
-          and agree that ImageLab Med Spa, LLC may disclose your purchase and
+          and agree that CADMEN Clinic, LLC may disclose your purchase and
           billing information in order to cooperate with tax authorities&apos;
           inquires, law enforcement proceedings or governmental investigations,
           such as in response to subpoenas, search warrants, court orders, or
@@ -353,7 +353,7 @@ const Privacy = () => (
 
         <h4>Terms of Service</h4>
         <p>
-          Please also visit our Terms of Service at www.imagelabmedspa.com,
+          Please also visit our Terms of Service at www.cadmenclinic.ca,
           which govern the use, liability, and limitations of our web site and
           services.
         </p>

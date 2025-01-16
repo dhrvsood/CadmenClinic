@@ -55,15 +55,15 @@ const Conditions = () => {
       <NextSeo
         title='Get Aesthetic Treatments for Conditions - CADMEN Clinic'
         description='Treat conditions like varicose veins, unwanted hair, and weight issues with cutting-edge treatments at CADMEN Clinic for lasting results. See more.'
-        canonical='https://www.imagelabmedspa.com/conditions'
+        canonical='https://www.cadmenclinic.ca/conditions'
         openGraph={{
-          url: 'https://www.imagelabmedspa.com/conditions',
+          url: 'https://www.cadmenclinic.ca/conditions',
           title: 'Get Aesthetic Treatments for Conditions - CADMEN Clinic',
           description:
             'Treat conditions like varicose veins, unwanted hair, and weight issues with cutting-edge treatments at CADMEN Clinic for lasting results. See more.',
           images: [
             {
-              url: 'https://www.imagelabmedspa.com/og_image.jpg',
+              url: 'https://www.cadmenclinic.ca/og_image.jpg',
               width: 800,
               height: 800,
               alt: 'Interior of CADMEN Clinic',

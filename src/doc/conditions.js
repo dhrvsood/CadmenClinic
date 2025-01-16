@@ -88,7 +88,7 @@ export const conditions = [
       {
         "title": "Botox Sweat Reduction",
         "slug": {
-          "current": "/botox-sweat-reduction"
+          "current": "/botox"
         }
       }
     ]

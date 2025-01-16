@@ -52,7 +52,7 @@ export const servicesData = {
             }
         ],
         "howItWorks": [
-            'Unveil smoother, softer-looking skin through precise neuromodulator treatments. By injecting micro-doses of neuromodulators at the nerve endings beneath wrinkles, we temporarily block impulses, causing the facial muscles to relax. The outcome? Renewed, rejuvenated skin with a softer, smoother appearance. At ImageLab, we offer a range of options including Botox, Xeomin, and Dysport neuromodulators, allowing you to select the best fit for your unique needs.',
+            'Unveil smoother, softer-looking skin through precise neuromodulator treatments. By injecting micro-doses of neuromodulators at the nerve endings beneath wrinkles, we temporarily block impulses, causing the facial muscles to relax. The outcome? Renewed, rejuvenated skin with a softer, smoother appearance. At CADMEN Clinic, we offer a range of options including Botox, Xeomin, and Dysport neuromodulators, allowing you to select the best fit for your unique needs.',
             'Botox: Renowned as a versatile option, Botox effectively targets facial muscles to minimize wrinkles and fine lines. Its subtle approach offers a rejuvenated look, while maintaining your natural expression.',
             'Xeomin: Similar to Botox, Xeomin specializes in smoothing facial lines and creases. It distinguishes itself by being a "naked" injectable, free of additional proteins, potentially reducing the risk of resistance developing.',
             'Dysport: With its unique diffusion pattern, Dysport is designed to address larger treatment areas effectively. It rapidly spreads to target a broader surface, making it an excellent choice for reducing the appearance of dynamic wrinkles across the face.'
@@ -90,7 +90,7 @@ export const servicesData = {
         "faqs": [
             {
                 "question": "Will my face look unnatural or overdone?",
-                "answer": "Botox® requires skillful technique. When administered by a licensed, trained medical expert well-versed in facial anatomy, Botox® Cosmetic ensures subtle, natural-looking results that maintain your individuality while minimizing noticeable lines. At ImageLab, our team is comprised of expertly trained and licensed professionals, ensuring your confidence in achieving the desired outcome."
+                "answer": "Botox® requires skillful technique. When administered by a licensed, trained medical expert well-versed in facial anatomy, Botox® Cosmetic ensures subtle, natural-looking results that maintain your individuality while minimizing noticeable lines. At CADMEN Clinic, our team is comprised of expertly trained and licensed professionals, ensuring your confidence in achieving the desired outcome."
             },
             {
                 "question": "What is the downtime?",
@@ -1039,6 +1039,105 @@ export const servicesData = {
                 "question": "Does it hurt?",
                 "answer": "You may experience mild stinging or pressure at the injection site. We prioritize your comfort and can adjust the pace of the treatment."
             }
+        ]
+    },
+    "semaglutide-therapy": {
+        "promo": "",
+        "title": "Semaglutide Therapy",
+        "subTitle": "In-person, medically-supervised Semaglutide injections for safe and effective weight loss, no insurance needed. The same active ingredient in Wegovy®* and Ozempic®*.",
+        "duration": 15,
+        "cost": 79,
+        "comingSoon": true,
+        "slug": 'semaglutide-therapy', 
+        "heroImage": {
+            "asset": {
+                "url": "/media/services/semaglutide.webp"
+            },
+            "alt": "Man admiring clear skin"
+        },
+        "benefits": [
+            "Weight Loss",
+            "Reduces Appetite",
+            "Supports Lifestyle Changes",
+            "Blood Sugar Control"
+        ],
+        "conditions": [
+            {
+                "icon": {
+                    "asset": {
+                        "url": "/icons/chin-fat.webp"
+                    }
+                },
+                "title": "Wheight Loss"
+            }
+        ],
+        "howItWorks": [
+            "Administered just once weekly, semaglutide is a cutting-edge injectable glucagon-like peptide-1 (GLP-1) agonist designed to support effective, sustainable weight loss. As a GLP-1 agonist, semaglutide mimics the action of naturally occurring incretin hormones that play a key role in regulating appetite and digestion. When released after meals, incretins help to:",
+            "Lower blood sugar by stimulating insulin production Delay stomach emptying to promote a lasting feeling of fullness Reduce cravings and help control appetite",
+            "By leveraging these natural mechanisms, semaglutide supports weight management by helping you feel satisfied with smaller portions, making it easier to reduce daily caloric intake and achieve a calorie deficit essential for weight loss.",
+            "Semaglutide for Weight Loss: Key Benefits:",
+            "Studies show that semaglutide, when used in conjunction with lifestyle modifications like a balanced diet and consistent exercise, can significantly enhance weight loss results. Our clients who have added semaglutide to their weight loss plan report better control over hunger, reduced food intake, and improvements in their overall body composition.",
+            "Who Is Semaglutide Therapy Ideal For: ",
+            "Semaglutide is ideal for individuals who have struggled with weight management through diet and exercise alone. This therapy is particularly effective for those needing additional support to control appetite and reduce cravings. It is FDA-approved for weight loss and recommended for adults with a BMI of 27 or higher who have weight-related health conditions, or a BMI of 30 or higher.",
+            "What to Expect from Semaglutide Therapy:",
+            "Our medical team will provide personalized guidance throughout your semaglutide therapy. After an initial consultation, you’ll receive step-by-step instructions on the correct administration of semaglutide injections, which are self-administered once a week. Regular follow-up appointments will track your progress and help you stay on course with your weight loss goals.",
+            "Results You Can Trust with Semaglutide:",
+            "Most clients begin seeing results within the first few weeks of treatment. Semaglutide therapy helps users lose weight steadily and sustainably, with studies showing potential weight loss of up to 15% of total body weight over a year when combined with lifestyle adjustments. As you progress, you’ll notice more control over food choices and reduced hunger cues, making long-term weight loss more achievable.",
+            "Choose semaglutide therapy to support your weight loss journey and experience how this GLP-1 agonist can make a lasting difference."
+        ],
+        "packages": [
+            {
+                "title": "Semaglutide Therapy",
+                "measurementUnit": "",
+                "packageItems": [
+                    {
+                        "name": "Per Shot",
+                        "standardPrice": 100,
+                        "exclusivePrice": 84
+                    }
+                ]
+            }
+        ],
+        "packagesImage": {
+            "asset": {
+                "url": "/media/services/semaglutide.webp"
+            },
+            "alt": "Woman loving her clear skin"
+        },
+        "faqs": [
+            {
+                "question": "Does semaglutide have any side effects?",
+                "answer": "It is rare for users to experience severe side effects while using Semaglutide for weight loss. The most commonly reported side effect is mild to moderate nausea, which can be managed by adjusting the dosage to enhance comfort during treatment."
+            },
+            {
+                "question": "What is the protocol and dosage for semaglutide?",
+                "answer": "The exact protocol will be outlined during your consultation. Nonetheless, the typical approach involves gradually escalating the dosage through a weekly injection administered on the same day each week."
+            },
+            {
+                "question": "Can I get my first shot on the same day as my consultation?",
+                "answer": "We are sometimes able to allow same-day injections, depending on the seniority of the medical provider conducting the intake."
+            },
+            {
+                "question": "How long will it take for me to lose weight?",
+                "answer": "Results from Semaglutide can be apparent even after your first dose, and you may start experiencing weight loss results within the initial two to four weeks of your program."
+            },
+            {
+                "question": "Are there any restrictions while on semaglutide?",
+                "answer": "Not at all! Although adopting a healthy diet is highly advised, there are no stringent food limitations. Exercise serves as a valuable complement to semaglutide, hence no exercise restrictions exist within this program. Incorporating nutritious eating habits and physical activity will contribute to optimizing your results."
+            },
+            {
+                "question": "How long can I take semaglutide?",
+                "answer": "The duration of treatment varies based on your weight loss objectives and personal aspirations. Long-term safety data supports the extended use of this medication. Our expert providers will collaborate with you during the consultation to create an individualized protocol tailored to your needs."
+            },
+            {
+                "question": "How much weight will I lose?",
+                "answer": "Actual results are dependent on many factors, but patients often lose ~10-155% of their initial bodyweight. Over 12 weeks, weight loss can be as high as 10% of bodyweight. This equates to weight loss (for a 180 lbs person) of approximately 10-20 lbs. Every patient is unique, and the most successful results are seen when semaglutide therapy is supported with healthy diet and lifestyle choices. Healthy weight loss is defined as 1-2 lbs per week. Extreme weight loss is not a medically desired effect."
+            },
+            {
+                "question": "Disclaimer",
+                "answer": "*Disclaimer: The FDA-approved brand name drugs, such as Saxenda®, Victoza®, Wegovy®, and Ozempic® are exclusively available from the Novo Nordisk™ company. Mounjaro™ is exclusively available from Eli Lilly and Company™. CADMEN Clinic does not claim any affiliation with, or endorsement from, the above mentioned products or entities. We do not offer any of the above mentioned products, anyone seeking said products should discuss options with their licensed healthcare provider or pharmacist."
+            }
+            
         ]
     },
     "exosomes": {

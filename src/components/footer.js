@@ -34,7 +34,7 @@ const Footer = () => {
             <Image
               className='h-9 w-auto'
               src='/site-logo-white.png'
-              alt='ImageLab Logo'
+              alt='CADMEN Clinic Logo'
               height={100}
               width={200}
               draggable='false'

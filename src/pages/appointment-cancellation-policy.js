@@ -3,15 +3,15 @@ import { NextSeo } from 'next-seo'
 const AppointmentCancellationPolicy = () => (
   <>
     <NextSeo
-      title='Our Appointment Cancellation Policy | ImageLab Med Spa'
+      title='Our Appointment Cancellation Policy | CADMEN Clinic'
       description='Learn about our appointment cancellation policy, including notice requirements and potential fees, to ensure a smooth experience. Learn more.'
-      canonical='https://www.imagelabmedspa.com/appointment-cancellation-policy'
+      canonical='https://www.cadmenclinic.ca/appointment-cancellation-policy'
       openGraph={{
-        title: 'Our Appointment Cancellation Policy | ImageLab Med Spa',
+        title: 'Our Appointment Cancellation Policy | CADMEN Clinic',
         description:
           'Learn about our appointment cancellation policy, including notice requirements and potential fees, to ensure a smooth experience. Learn more.',
-        url: 'https://www.imagelabmedspa.com/appointment-cancellation-policy',
-        site_name: 'ImageLab Med Spa'
+        url: 'https://www.cadmenclinic.ca/appointment-cancellation-policy',
+        site_name: 'CADMEN Clinic'
       }}
     />
     <section>
@@ -31,7 +31,7 @@ const AppointmentCancellationPolicy = () => (
           select a different service.
         </p>
         <p>
-          Purchases made at ImageLab Med Spa are final. Gratuities are only
+          Purchases made at CADMEN Clinic are final. Gratuities are only
           accepted for non-medical procedures. This means you can tip our
           Estheticians, Spa Therapists, and Guest Experience Specialists. Tips
           are a token of appreciation and not obligatory, but they&apos;re always

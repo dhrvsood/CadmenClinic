@@ -3,15 +3,11 @@ import '@/styles/webflow.css'
 import '@/styles/globals.css'
 import { DefaultSeo } from 'next-seo'
 import Head from 'next/head'
-import { useRouter } from 'next/router'
 import { useEffect } from 'react'
-import TagManager from 'react-gtm-module'
 import { ParallaxProvider } from 'react-scroll-parallax'
 import { v4 as uuid4 } from 'uuid'
 
 const CadmenClinic = ({ Component, pageProps }) => {
-  const router = useRouter()
-
   useEffect(() => {
     const uuid = localStorage.getItem('uuid') ?? uuid4()
     localStorage.setItem('uuid', uuid)

@@ -27,13 +27,13 @@ const Navbar = () => {
   const [navItems, setNavItems] = useState([])
 
   const servicesToSkip = [
-    'semaglutide-therapy-imagelab',
+    'semaglutide-therapy-CADMENClinic',
     'tirzepatide-weight-loss-injections',
     'glp-1-weight-loss-injections-semaglutide',
-    'semaglutide-clinic-imagelab',
-    'slimshot-therapy-imagelab',
-    'semaglutide-injections-imagelab',
-    'microneedling-imagelab'
+    'semaglutide-clinic-CADMENClinic',
+    'slimshot-therapy-CADMENClinic',
+    'semaglutide-injections-CADMENClinic',
+    'microneedling-CADMENClinic'
   ]
   // const categories = { 'microneedling-imagelab': 'Skin' }
   const pathSegments = router.asPath.split("/");
