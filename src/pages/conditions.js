@@ -81,7 +81,7 @@ const Conditions = () => {
                 Conditions Our Aesthetic Treatments Help With
               </h1>
               <p className='leading-relaxed'>
-                Whether you're struggling with premature aging or seeking
+                Whether you&apos;re struggling with premature aging or seeking
                 solutions for a more radiant complexion, explore this section to
                 learn how our state-of-the-art procedures and expert team can
                 help you achieve the look and confidence you desire.

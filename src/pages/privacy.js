@@ -57,7 +57,7 @@ const Privacy = () => (
           <strong>Web browser cookies</strong>
         </h3>
         <p>
-          Our Sites may use “cookies” to enhance User experience. User’s web
+          Our Sites may use “cookies” to enhance User experience. User&apos;s web
           browser places cookies on their hard drive for record-keeping purposes
           and sometimes to track information about them. User may choose to set
           their web browser to refuse cookies, or to alert you when cookies are
@@ -172,7 +172,7 @@ const Privacy = () => (
           may be constantly changing. These sites and services may have their
           own privacy policies and customer service policies. Browsing and
           interaction on any other website, including websites which have a link
-          to our Sites, is subject to that website’s own terms and policies.
+          to our Sites, is subject to that website&apos;s own terms and policies.
         </p>
 
         <h3>
@@ -249,7 +249,7 @@ const Privacy = () => (
           The information we collect from you will be used to provide and
           improve the products and services offered through our website. We also
           use certain information that we collect for research regarding our
-          customers’ online behavior. We may also use your information to
+          customers&apos; online behavior. We may also use your information to
           contact you regarding new features, services, promotions, or user
           surveys or to respond to your comments or questions. If you wish to
           opt-out of future communications from us, you can follow the
@@ -282,7 +282,7 @@ const Privacy = () => (
           governmental investigations, such as in response to subpoenas, search
           warrants, court orders, or other legal processes. You also acknowledge
           and agree that ImageLab Med Spa, LLC may disclose your purchase and
-          billing information in order to cooperate with tax authorities’
+          billing information in order to cooperate with tax authorities&apos;
           inquires, law enforcement proceedings or governmental investigations,
           such as in response to subpoenas, search warrants, court orders, or
           other legal processes. We may transfer information about you if we are
@@ -338,7 +338,7 @@ const Privacy = () => (
         <h4>California Residents</h4>
         <p>
           We are in compliance with the California Online Privacy Protection
-          Act, and we are exempt from the requirements of California’s “Shine
+          Act, and we are exempt from the requirements of California&apos;ss “Shine
           the Light” law because we do not share your personal information with
           third parties for direct marketing purposes.
         </p>
