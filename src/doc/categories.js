@@ -152,7 +152,7 @@ export const categories = {
         "categoryOrder": 1,
         "heroImage": {
           "asset": {
-            "url": ""
+            "url": "/media/services/ivy-1.jpg"
           },
           "alt": "Service Image Home"
         }
@@ -164,7 +164,7 @@ export const categories = {
         "categoryOrder": 2,
         "heroImage": {
           "asset": {
-            "url": ""
+            "url": "/media/services/ivy-2.jpg"
           },
           "alt": "Service Image Home"
         }
@@ -176,7 +176,7 @@ export const categories = {
         "categoryOrder": 3,
         "heroImage": {
           "asset": {
-            "url": ""
+            "url": "/media/services/ivy-3.jpg"
           },
           "alt": "Service Image Home"
         }
@@ -188,7 +188,7 @@ export const categories = {
         "categoryOrder": 4,
         "heroImage": {
           "asset": {
-            "url": ""
+            "url": "/media/services/ivy-4.jpg"
           },
           "alt": "Service Image Home"
         }
@@ -200,7 +200,7 @@ export const categories = {
         "categoryOrder": 5,
         "heroImage": {
           "asset": {
-            "url": ""
+            "url": "/media/services/ivy-5.jpg"
           },
           "alt": "Service Image Home"
         }

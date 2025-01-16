@@ -1,7 +1,6 @@
 import Container from '@/components/container'
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { HeartIcon } from '@heroicons/react/24/solid'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 
@@ -20,7 +19,6 @@ const navigation = {
   legal: [
     { name: 'Privacy', href: '/privacy' },
     { name: 'Accessiblity', href: '/accessibility' },
-    { name: 'Personal Data Request', href: '/personal-data-request' }
   ]
 }
 
@@ -107,14 +105,14 @@ const Footer = () => {
                 </li>
               ))}
               <li className='flex flex-row space-x-3 pt-3'>
-                <a href='https://www.instagram.com/myimagelab' target='_blank'>
+                <a href='https://www.instagram.com/cadmenclinic/?hl=en' target='_blank'>
                   <FontAwesomeIcon
                     icon={faInstagram}
                     className='h-5 w-5 text-white'
                   />
                 </a>
                 <a
-                  href='https://www.facebook.com/profile.php?id=100091962347273'
+                  href='https://www.facebook.com/CADMENclinic/'
                   target='_blank'
                 >
                   <FontAwesomeIcon

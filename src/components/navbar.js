@@ -12,6 +12,7 @@ const navigation = {
   pages: [
     { name: 'Conditions', href: '/conditions' },
     { name: 'About', href: '/about' },
+    { name: 'Shop', href: 'https://e370ne-nc.myshopify.com/collections/frontpage' },
     { name: 'Blog', href: '/blog' },
   ]
 }
@@ -56,10 +57,11 @@ const Navbar = () => {
       {!router.pathname.includes('payment-plan') && (
         <div className='bg-customBlack'>
           <Link
-            href='/payment-plans'
+            href='https://www.beautifi.com/doctors/cadmen-clinic/'
+            target='_blank'
             className='flex w-full justify-center py-1 text-xs text-white'
           >
-            Financing Now Available
+            0% Financing Now Available
           </Link>
         </div>
       )}
@@ -198,6 +200,7 @@ const Navbar = () => {
                           {!router.pathname.includes('/book-now') ? (
                             <Link
                               href={'https://cadmenclinic.janeapp.com/'}
+                              target='_blank'
                               className='rounded border border-beaver/90 bg-beaver/90 px-10 py-3 text-center text-sm font-light text-white hover:bg-beaver'
                             >
                               Book Now

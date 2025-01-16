@@ -66,14 +66,17 @@ export const servicesData = {
                     {
                         "name": "Botox",
                         "standardPrice": 14,
+                        "exclusivePrice": '-'
                     },
                     {
                         "name": "Dysport®",
                         "standardPrice": 14,
+                        "exclusivePrice": '-'
                     },
                     {
                         "name": "Xeomin",
                         "standardPrice": 13,
+                        "exclusivePrice": '-'
                     }
                 ]
             }
@@ -347,12 +350,12 @@ export const servicesData = {
             "images": [
                 {
                     "asset": {
-                        "url": "/before-after/kybella-1.png"
+                        "url": "/before-after/kybella-1.jpg"
                     }
                 },
                 {
                     "asset": {
-                        "url": "/before-after/kybella-2.png"
+                        "url": "/before-after/kybella-2.jpg"
                     }
                 }
             ]
@@ -1144,7 +1147,7 @@ export const servicesData = {
         "cost": 499,
         "slug": 'farsk-nad-iv', "heroImage": {
             "asset": {
-                "url": "/media/services/botox-and-wrinkle-relaxers.jpg"
+                "url": "/media/services/ivy-1.jpg"
             },
             "alt": "Service Image"
         },
@@ -1229,7 +1232,7 @@ export const servicesData = {
         ],
         "packagesImage": {
             "asset": {
-                "url": "/services/botox-pricing.webp"
+                "url": "/services/ivy-1-pricing.webp"
             },
             "alt": "Pricing Image"
         },
@@ -1260,7 +1263,7 @@ export const servicesData = {
         "cost": 349,
         "slug": 'farsk-radiance-iv', "heroImage": {
             "asset": {
-                "url": "/media/services/botox-and-wrinkle-relaxers.jpg"
+                "url": "/media/services/ivy-2.jpg"
             },
             "alt": "Service Image"
         },
@@ -1343,7 +1346,7 @@ export const servicesData = {
         ],
         "packagesImage": {
             "asset": {
-                "url": "/services/botox-pricing.webp"
+                "url": "/services/ivy-2-pricing.jpg"
             },
             "alt": "Pricing Image"
         },
@@ -1374,7 +1377,7 @@ export const servicesData = {
         "cost": 349,
         "slug": 'farsk-immune-iv', "heroImage": {
             "asset": {
-                "url": "/media/services/botox-and-wrinkle-relaxers.jpg"
+                "url": "/media/services/ivy-3.jpg"
             },
             "alt": "Service Image"
         },
@@ -1459,7 +1462,7 @@ export const servicesData = {
         ],
         "packagesImage": {
             "asset": {
-                "url": "/services/botox-pricing.webp"
+                "url": "/services/ivy-3-pricing.jpg"
             },
             "alt": "Pricing Image"
         },
@@ -1490,7 +1493,7 @@ export const servicesData = {
         "cost": 299,
         "slug": 'farsk-energy-iv', "heroImage": {
             "asset": {
-                "url": "/media/services/botox-and-wrinkle-relaxers.jpg"
+                "url": "/media/services/ivy-4.jpg"
             },
             "alt": "Service Image"
         },
@@ -1575,7 +1578,7 @@ export const servicesData = {
         ],
         "packagesImage": {
             "asset": {
-                "url": "/services/botox-pricing.webp"
+                "url": "/services/ivy-4-pricing.jpg"
             },
             "alt": "Pricing Image"
         },
@@ -1606,7 +1609,7 @@ export const servicesData = {
         "cost": 199,
         "slug": 'athlete-iv', "heroImage": {
             "asset": {
-                "url": "/media/services/botox-and-wrinkle-relaxers.jpg"
+                "url": "/media/services/ivy-5.jpg"
             },
             "alt": "Service Image"
         },
@@ -1687,7 +1690,7 @@ export const servicesData = {
         ],
         "packagesImage": {
             "asset": {
-                "url": "/services/botox-pricing.webp"
+                "url": "/services/ivy-5-pricing.jpg"
             },
             "alt": "Pricing Image"
         },
