@@ -26,7 +26,6 @@ const ServiceTable = ({ services, title }) => (
               }
               width={500}
               height={500}
-              priority
             />
             <div className='absolute bottom-0 left-0 right-0 h-[60%] rounded-bl rounded-br bg-gradient-to-t from-black to-transparent' />
             <div className='absolute bottom-3 left-3 flex flex-col p-5'>

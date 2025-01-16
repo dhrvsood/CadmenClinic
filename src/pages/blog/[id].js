@@ -91,7 +91,6 @@ const BlogPost = () => {
                 className='h-full w-full object-cover object-center'
                 width={1000}
                 height={1000}
-                priority
                 quality={100}
               />
             </div>
