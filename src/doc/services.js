@@ -957,7 +957,7 @@ export const servicesData = {
     "mesotheraphy": {
         "promo": "Book Now for 10% Off Your First Visit!",
         "title": "Mesotheraphy",
-        "subTitle": "Naturally promote new hair growth and thicker, fuller hair by using your body's own plasma",
+        "subTitle": "Natural treatment which includes injecting vitamins, minerals, amino acids and growth factors that nourish hair follicles into the scalp.",
         "duration": 30,
         "cost": 399,
         "showResults": true,
@@ -1093,7 +1093,7 @@ export const servicesData = {
             }
         ],
         "howItWorks": [
-            "Administered just once weekly, semaglutide is a cutting-edge injectable glucagon-like peptide-1 (GLP-1) agonist designed to support effective, sustainable weight loss. As a GLP-1 agonist, semaglutide mimics the action of naturally occurring incretin hormones that play a key role in regulating appetite and digestion. When released after meals, incretins help to:",
+            "Administered just once weekly, semaglutide is a cutting-edge injectable glucagon-like peptide-1 (GLP-1) agonist designed to support effective, sustainable weight loss. As a GLP-1 agonist, semaglutide mimics the action of naturally occurring incretin hormones that play a key role in regulating appetite and digestion. When released after meals, incretins help to",
             "Lower blood sugar by stimulating insulin production Delay stomach emptying to promote a lasting feeling of fullness Reduce cravings and help control appetite",
             "By leveraging these natural mechanisms, semaglutide supports weight management by helping you feel satisfied with smaller portions, making it easier to reduce daily caloric intake and achieve a calorie deficit essential for weight loss.",
             "Semaglutide for Weight Loss: Key Benefits:",
@@ -1164,7 +1164,7 @@ export const servicesData = {
     "exosomes": {
         "promo": "Book Now for 10% Off Your First Visit!",
         "title": "Exosomes Theraphy",
-        "subTitle": "",
+        "subTitle": "Non-invasive treatment that stimulates hair growth and reduces hair loss by blocking DHT.",
         "duration": 60,
         "cost": 799,
         "showResults": true,

@@ -94,7 +94,7 @@ const ServicePage = () => {
                                         style={{
                                             boxShadow: 'rgb(198,156,147) -9px 9px 0px 0px'
                                         }}
-                                        href='/book-now'
+                                        href='https://cadmenclinic.janeapp.com/'
                                         className='w-full rounded border border-beaver/90 bg-beaver/90 px-10 py-3 text-center font-light text-white hover:bg-beaver'
                                     >
                                         Book Now
