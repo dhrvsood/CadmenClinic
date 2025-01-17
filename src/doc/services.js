@@ -1093,8 +1093,7 @@ export const servicesData = {
             }
         ],
         "howItWorks": [
-            "Administered just once weekly, semaglutide is a cutting-edge injectable glucagon-like peptide-1 (GLP-1) agonist designed to support effective, sustainable weight loss. As a GLP-1 agonist, semaglutide mimics the action of naturally occurring incretin hormones that play a key role in regulating appetite and digestion. When released after meals, incretins help to",
-            "Lower blood sugar by stimulating insulin production Delay stomach emptying to promote a lasting feeling of fullness Reduce cravings and help control appetite",
+            "Administered just once weekly, semaglutide is a cutting-edge injectable glucagon-like peptide-1 (GLP-1) agonist designed to support effective, sustainable weight loss. As a GLP-1 agonist, semaglutide mimics the action of naturally occurring incretin hormones that play a key role in regulating appetite and digestion. When released after meals, incretins help to lower blood sugar by stimulating insulin production Delay stomach emptying to promote a lasting feeling of fullness Reduce cravings and help control appetite.",
             "By leveraging these natural mechanisms, semaglutide supports weight management by helping you feel satisfied with smaller portions, making it easier to reduce daily caloric intake and achieve a calorie deficit essential for weight loss.",
             "Semaglutide for Weight Loss: Key Benefits:",
             "Studies show that semaglutide, when used in conjunction with lifestyle modifications like a balanced diet and consistent exercise, can significantly enhance weight loss results. Our clients who have added semaglutide to their weight loss plan report better control over hunger, reduced food intake, and improvements in their overall body composition.",
