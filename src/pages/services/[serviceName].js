@@ -8,6 +8,7 @@ import Image from 'next/image';
 import { servicesData } from '@/doc/services';
 import Faqs from '@/components/faqs';
 import ImageViewer from '@/components/sliders/imageViewer';
+import { NextSeo } from 'next-seo';
 
 const ServicePage = () => {
     const { query } = useRouter();
@@ -33,6 +34,26 @@ const ServicePage = () => {
 
     return (
         <>
+            <NextSeo
+                title = {`${service.title} | CADMEN Clinic`}
+                description='Explore our services including Botox, fillers, laser hair removal & PRP therapy at our Toronto medspa, tailored to enhance your beauty & wellness. See more.'
+                openGraph={{
+                    url: 'https://www.cadmenclinic.ca/services',
+                    title: 'Our Services | See All Premium Treatments | CADMEN Clinic',
+                    description:
+                        'Explore our services including Botox, fillers, laser hair removal & PRP therapy at our Toronto medspa, tailored to enhance your beauty & wellness. See more.',
+                    images: [
+                        {
+                            url: 'https://www.cadmenclinic.ca/media/clinic_interior.jpg',
+                            width: 800,
+                            height: 800,
+                            alt: 'Interior of CADMEN Clinic',
+                            type: 'image/jpeg'
+                        }
+                    ],
+                    siteName: 'CADMEN Clinic'
+                }}
+            />
             <section className='mt-10 overflow-hidden'>
                 <Container classList='md:px-5'>
                     <div className='grid border border-gray-100 bg-gray-100 md:grid-cols-2'>

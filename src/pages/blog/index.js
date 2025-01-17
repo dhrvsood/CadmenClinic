@@ -2,6 +2,7 @@ import Container from '@/components/container';
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { NextSeo } from 'next-seo';
 
 const BlogPage = () => {
   const [pages, setPages] = useState([]);
@@ -50,6 +51,27 @@ const BlogPage = () => {
 
   return (
     <>
+      <NextSeo
+        title={`Blog | CADMEN Clinic`}
+        description='Explore our services including Botox, fillers, laser hair removal & PRP therapy at our Toronto medspa, tailored to enhance your beauty & wellness. See more.'
+        openGraph={{
+          url: 'https://www.cadmenclinic.ca/blog',
+          title: 'Our Services | See All Premium Treatments | CADMEN Clinic',
+          description:
+            'Explore our services including Botox, fillers, laser hair removal & PRP therapy at our Toronto medspa, tailored to enhance your beauty & wellness. See more.',
+          images: [
+            {
+              url: 'https://www.cadmenclinic.ca/media/clinic_interior.jpg',
+              width: 800,
+              height: 800,
+              alt: 'Interior of CADMEN Clinic',
+              type: 'image/jpeg'
+            }
+          ],
+          siteName: 'CADMEN Clinic'
+        }}
+      />
+
       <section className='mt-10 bg-wildSand px-5 py-20'>
         <Container>
           <div className='grid items-center gap-10 space-y-5'>
@@ -94,7 +116,7 @@ const BlogPage = () => {
           {loading &&
             <div className={`flex gap-4 pb-6 items-center text-center justify-center`}>
               <div className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-e-transparent align-[-0.125em] text-surface motion-reduce:animate-[spin_1.5s_linear_infinite]">
-                
+
               </div>
               Loading
             </div>

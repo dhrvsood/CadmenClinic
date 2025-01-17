@@ -1,6 +1,6 @@
 export const servicesData = {
     "botox": {
-        "promo": "Book Now for 20% Off Your First Visit!",
+        "promo": "Book Now for 10% Off Your First Visit!",
         "title": "Botox® Wrinkle Relaxer Treatment",
         "subTitle": "The perfect solution for those seeking to soften the appearance of fine lines and wrinkles.",
         "duration": 30,
@@ -20,7 +20,7 @@ export const servicesData = {
                 }
             ]
         },
-        "cost": 11,
+        "cost": 9.99,
         "heroImage": {
             "asset": {
                 "url": "/media/services/botox-and-wrinkle-relaxers.jpg"
@@ -65,18 +65,13 @@ export const servicesData = {
                 "packageItems": [
                     {
                         "name": "Botox",
-                        "standardPrice": 14,
-                        "exclusivePrice": '-'
+                        "standardPrice": 9.99,
+                        "exclusivePrice": 8.99
                     },
                     {
                         "name": "Dysport®",
-                        "standardPrice": 14,
-                        "exclusivePrice": '-'
-                    },
-                    {
-                        "name": "Xeomin",
-                        "standardPrice": 13,
-                        "exclusivePrice": '-'
+                        "standardPrice": 9.99,
+                        "exclusivePrice": 8.99
                     }
                 ]
             }
@@ -114,11 +109,11 @@ export const servicesData = {
         ]
     },
     "dermal-fillers": {
-        "promo": "Book Now for 20% Off Your First Visit!",
+        "promo": "Book Now for 10% Off Your First Visit!",
         "title": "Dermal Fillers",
         "subTitle": "Define, increase volume, and enhance the natural fullness of the jaw, cheeks, and lips",
         "duration": 45,
-        "cost": 750,
+        "cost": 550,
         "showResults": true,
         "beforeAfterImages": {
             "images": [
@@ -182,18 +177,18 @@ export const servicesData = {
                 "packageItems": [
                     {
                         "name": "Juvéderm",
-                        "standardPrice": 750,
-                        "exclusivePrice": 637.50
+                        "standardPrice": 550,
+                        "exclusivePrice": 495
                     },
                     {
                         "name": "Restylane®",
-                        "standardPrice": 750,
-                        "exclusivePrice": 637.50
+                        "standardPrice": 550,
+                        "exclusivePrice": 495
                     },
                     {
                         "name": "RHA Filler",
-                        "standardPrice": 750,
-                        "exclusivePrice": 637.50
+                        "standardPrice": 550,
+                        "exclusivePrice": 495
                     }
                 ]
             },
@@ -203,13 +198,13 @@ export const servicesData = {
                 "packageItems": [
                     {
                         "name": "Revanesse® Lip Filler",
-                        "standardPrice": 650,
-                        "exclusivePrice": 552.50
+                        "standardPrice": 550,
+                        "exclusivePrice": 495
                     },
                     {
                         "name": "RHA Lip Filler",
-                        "standardPrice": 650,
-                        "exclusivePrice": 552.50
+                        "standardPrice": 550,
+                        "exclusivePrice": 495
                     }
                 ]
             }
@@ -240,11 +235,11 @@ export const servicesData = {
         ]
     },
     "plasma-injections-prp": {
-        "promo": "Book Now for 20% Off Your First Visit!",
+        "promo": "Book Now for 10% Off Your First Visit!",
         "title": "Plasma Injections (PRP)",
         "subTitle": "Naturally revitalize your face by using your body's own plasma to naturally build collagen for smoother, firmer skin",
         "duration": 45,
-        "cost": 450,
+        "cost": 499,
         "slug": 'plasma-injections-prp',
         "heroImage": {
             "asset": {
@@ -301,18 +296,18 @@ export const servicesData = {
                 "packageItems": [
                     {
                         "name": "Face",
-                        "standardPrice": 550,
-                        "exclusivePrice": 467.50
+                        "standardPrice": 599,
+                        "exclusivePrice": 539
                     },
                     {
                         "name": "Undereye",
-                        "standardPrice": 450,
-                        "exclusivePrice": 382.50
+                        "standardPrice": 499,
+                        "exclusivePrice": 449
                     },
                     {
                         "name": "Scalp",
-                        "standardPrice": 800,
-                        "exclusivePrice": 680
+                        "standardPrice": 599,
+                        "exclusivePrice": 539
                     }
                 ]
             }
@@ -339,7 +334,7 @@ export const servicesData = {
         ]
     },
     "kybella": {
-        "promo": "Book Now for 20% Off Your First Visit!",
+        "promo": "Book Now for 10% Off Your First Visit!",
         "title": "Kybella",
         "subTitle": "Non-surgical procedure for eliminating stubborn chin fat",
         "duration": 60,
@@ -398,8 +393,8 @@ export const servicesData = {
                 "packageItems": [
                     {
                         "name": "Per Vial",
-                        "standardPrice": 650,
-                        "exclusivePrice": 552.50
+                        "standardPrice": 799,
+                        "exclusivePrice": 729
                     }
                 ]
             }
@@ -430,11 +425,11 @@ export const servicesData = {
         ]
     },
     "diamondglow-facial": {
-        "promo": "Book Now for 20% Off Your First Visit!",
+        "promo": "Book Now for 10% Off Your First Visit!",
         "title": "DiamondGlow® Facial",
         "subTitle": "Get glowing with our signature facial, designed to refresh and nourish your skin",
         "duration": 45,
-        "cost": 200,
+        "cost": 199,
         "slug": 'diamondglow-facial',
         "heroImage": {
             "asset": {
@@ -493,8 +488,8 @@ export const servicesData = {
                 "packageItems": [
                     {
                         "name": "Per Treatment",
-                        "standardPrice": 200,
-                        "exclusivePrice": 170
+                        "standardPrice": 199,
+                        "exclusivePrice": 179
                     }
                 ]
             }
@@ -525,11 +520,11 @@ export const servicesData = {
         ]
     },
     "chemical-peels": {
-        "promo": "Book Now for 50% Off Your First Chemical Peel!",
+        "promo": "Book Now for 10% Off Your First Chemical Peel!",
         "title": "Chemical Peels",
         "subTitle": "Revitalize your skin and stimulate collagen with our anti-aging chemical peel, designed to exfoliate and rejuvenate",
         "duration": 30,
-        "cost": 350,
+        "cost": 250,
         "slug": 'chemical-peels', "heroImage": {
             "asset": {
                 "url": "/media/services/chemical-peels.webp"
@@ -589,8 +584,8 @@ export const servicesData = {
                 "packageItems": [
                     {
                         "name": "Per Treatment",
-                        "standardPrice": 350,
-                        "exclusivePrice": 297.50
+                        "standardPrice": 250,
+                        "exclusivePrice": 225
                     }
                 ]
             }
@@ -625,11 +620,11 @@ export const servicesData = {
         ]
     },
     "microneedling": {
-        "promo": "Book Now for 50% Off Your First Microneedling!",
+        "promo": "Book Now for 40% Off Your First Microneedling!",
         "title": "DermaPen Microneedling",
         "subTitle": "Refresh your skin with the DermaPen microneedling treatment, which stimulates collagen and elastin production, helping you reveal a smoother, more vibrant complexion",
         "duration": 45,
-        "cost": 400,
+        "cost": 399,
         "slug": 'microneedling', "heroImage": {
             "asset": {
                 "url": "/media/services/skinpen-microneedling.webp"
@@ -690,8 +685,8 @@ export const servicesData = {
                 "packageItems": [
                     {
                         "name": "Per Treatment",
-                        "standardPrice": 400,
-                        "exclusivePrice": 340
+                        "standardPrice": 399,
+                        "exclusivePrice": 249
                     }
                 ]
             },
@@ -701,8 +696,8 @@ export const servicesData = {
                 "packageItems": [
                     {
                         "name": "Per Treatment",
-                        "standardPrice": 600,
-                        "exclusivePrice": 510
+                        "standardPrice": 899,
+                        "exclusivePrice": 799
                     }
                 ]
             }
@@ -737,11 +732,11 @@ export const servicesData = {
         ]
     },
     "blood-facial-prp-microneedling": {
-        "promo": "Book Now for 20% Off Your First Visit!",
+        "promo": "Book Now for 10% Off Your First Visit!",
         "title": "Blood Facial (PRP+Microneedling)",
         "subTitle": "Reverse the signs of aging and reclaim a youthful, radiant appearance",
         "duration": 60,
-        "cost": 765,
+        "cost": 799,
         "showResults": true,
         "beforeAfterImages": {
             "images": [
@@ -820,8 +815,8 @@ export const servicesData = {
                 "packageItems": [
                     {
                         "name": "Per Treatment",
-                        "standardPrice": 765,
-                        "exclusivePrice": 650
+                        "standardPrice": 799,
+                        "exclusivePrice": 719
                     }
                 ]
             }
@@ -852,11 +847,11 @@ export const servicesData = {
         ]
     },
     "prp-hair-restoration": {
-        "promo": "Book Now for 20% Off Your First Visit!",
+        "promo": "Book Now for 10% Off Your First Visit!",
         "title": "PRP Hair Restoration",
         "subTitle": "Naturally promote new hair growth and thicker, fuller hair by using your body's own plasma",
         "duration": 60,
-        "cost": 800,
+        "cost": 599,
         "showResults": true,
         "beforeAfterImages": {
             "images": [
@@ -898,13 +893,34 @@ export const servicesData = {
                 "packageItems": [
                     {
                         "name": "PRP Hair",
-                        "standardPrice": 800,
-                        "exclusivePrice": 680
+                        "standardPrice": 599,
+                        "exclusivePrice": 539
                     },
                     {
-                        "name": "Microneedling + PRP Hair",
-                        "standardPrice": 1000,
-                        "exclusivePrice": 850
+                        "name": "PRP Hair (3 Sessions)",
+                        "standardPrice": 1599,
+                        "exclusivePrice": "-"
+                    }
+                ]
+            },
+            {
+                "title": "Plasma Hair Restoration Bundles",
+                "measurementUnit": "Per Bundle",
+                "packageItems": [
+                    {
+                        "name": "PRP Hair + Microneedling",
+                        "standardPrice": 799,
+                        "exclusivePrice": "-"
+                    },
+                    {
+                        "name": "3 PRP + 6 Meso Sessions + Complimentary Hair Lotion",
+                        "standardPrice": 2999,
+                        "exclusivePrice": "-"
+                    },
+                    {
+                        "name": "3 PRP Sessions + 3 Exosomes + Complimentary Hair Lotion",
+                        "standardPrice": 3499,
+                        "exclusivePrice": '-'
                     }
                 ]
             }
@@ -939,11 +955,11 @@ export const servicesData = {
         ]
     },
     "mesotheraphy": {
-        "promo": "Book Now for 20% Off Your First Visit!",
+        "promo": "Book Now for 10% Off Your First Visit!",
         "title": "Mesotheraphy",
         "subTitle": "Naturally promote new hair growth and thicker, fuller hair by using your body's own plasma",
-        "duration": 60,
-        "cost": 300,
+        "duration": 30,
+        "cost": 399,
         "showResults": true,
         "beforeAfterImages": {
             "images": [
@@ -985,8 +1001,8 @@ export const servicesData = {
                 "packageItems": [
                     {
                         "name": "Mesotherapy",
-                        "standardPrice": 350,
-                        "exclusivePrice": 300
+                        "standardPrice": 399,
+                        "exclusivePrice": 359
                     }
                 ]
             },
@@ -996,17 +1012,22 @@ export const servicesData = {
                 "packageItems": [
                     {
                         "name": "Mesotherapy (Package of 3)",
-                        "standardPrice": 900,
+                        "standardPrice": 999,
                         "exclusivePrice": '-'
                     },
                     {
                         "name": "Mesotherapy (Package of 6)",
-                        "standardPrice": 1750,
+                        "standardPrice": 1999,
                         "exclusivePrice": '-'
                     },
                     {
-                        "name": "3 PRP + 6 MESO Sessions + Complimentary Hair Lotion",
-                        "standardPrice": 2700,
+                        "name": "3 PRP + 6 Meso Sessions + Complimentary Hair Lotion",
+                        "standardPrice": 2999,
+                        "exclusivePrice": '-'
+                    },
+                    {
+                        "name": "6 Meso + 3 Exosomes Sessions + Complimentary Hair Lotion",
+                        "standardPrice": 3499,
                         "exclusivePrice": '-'
                     }
                 ]
@@ -1068,7 +1089,7 @@ export const servicesData = {
                         "url": "/icons/chin-fat.webp"
                     }
                 },
-                "title": "Wheight Loss"
+                "title": "Weight Loss"
             }
         ],
         "howItWorks": [
@@ -1141,11 +1162,11 @@ export const servicesData = {
         ]
     },
     "exosomes": {
-        "promo": "Book Now for 20% Off Your First Visit!",
+        "promo": "Book Now for 10% Off Your First Visit!",
         "title": "Exosomes Theraphy",
         "subTitle": "",
         "duration": 60,
-        "cost": 675,
+        "cost": 799,
         "showResults": true,
         "beforeAfterImages": {
             "images": [
@@ -1187,8 +1208,8 @@ export const servicesData = {
                 "packageItems": [
                     {
                         "name": "Exosomes",
-                        "standardPrice": 700,
-                        "exclusivePrice": 580
+                        "standardPrice": 799,
+                        "exclusivePrice": 719
                     }
                 ]
             },
@@ -1198,12 +1219,17 @@ export const servicesData = {
                 "packageItems": [
                     {
                         "name": "Exosomes (Package of 3)",
-                        "standardPrice": 2100,
+                        "standardPrice": 2199,
                         "exclusivePrice": '-'
                     },
                     {
                         "name": "3 Exosomes + 3 PRP Sessions + Complimentary Hair Lotion",
-                        "standardPrice": 3000,
+                        "standardPrice": 3499,
+                        "exclusivePrice": '-'
+                    },
+                    {
+                        "name": "3 Exosomes + 6 Meso Sessions + Complimentary Hair Lotion",
+                        "standardPrice": 3499,
                         "exclusivePrice": '-'
                     }
                 ]
@@ -1243,7 +1269,7 @@ export const servicesData = {
         "title": "Färsk NAD+ IV",
         "subTitle": "Our most popular and effective offering. Significantly improves your energy levels and cognitive functions (including memory and focus) while promoting anti-aging and cellular regeneration to make you look and feel young.",
         "duration": 45,
-        "cost": 499,
+        "cost": 599,
         "slug": 'farsk-nad-iv', "heroImage": {
             "asset": {
                 "url": "/media/services/ivy-1.jpg"
@@ -1318,8 +1344,8 @@ export const servicesData = {
                     },
                     {
                         "name": "Färsk Energy IV",
-                        "standardPrice": 349,
-                        "exclusivePrice": 299
+                        "standardPrice": 399,
+                        "exclusivePrice": 349
                     },
                     {
                         "name": "Athlete’s IV",
@@ -1359,7 +1385,7 @@ export const servicesData = {
         "title": "Färsk Radiance+ IV",
         "subTitle": "Provides a nourishing and youthful glow to the skin while enhancing elasticity and targeting fine lines and wrinkles.",
         "duration": 30,
-        "cost": 349,
+        "cost": 399,
         "slug": 'farsk-radiance-iv', "heroImage": {
             "asset": {
                 "url": "/media/services/ivy-2.jpg"
@@ -1432,8 +1458,8 @@ export const servicesData = {
                     },
                     {
                         "name": "Färsk Energy IV",
-                        "standardPrice": 349,
-                        "exclusivePrice": 299
+                        "standardPrice": 399,
+                        "exclusivePrice": 349
                     },
                     {
                         "name": "Athlete’s IV",
@@ -1473,7 +1499,7 @@ export const servicesData = {
         "title": "Färsk Immune IV",
         "subTitle": "This treatment is specifically developed to supply the necessary vitamins, minerals, and amino acids for improved and effective immune functions.",
         "duration": 30,
-        "cost": 349,
+        "cost": 399,
         "slug": 'farsk-immune-iv', "heroImage": {
             "asset": {
                 "url": "/media/services/ivy-3.jpg"
@@ -1548,8 +1574,8 @@ export const servicesData = {
                     },
                     {
                         "name": "Färsk Energy IV",
-                        "standardPrice": 349,
-                        "exclusivePrice": 299
+                        "standardPrice": 399,
+                        "exclusivePrice": 349
                     },
                     {
                         "name": "Athlete’s IV",
@@ -1589,7 +1615,7 @@ export const servicesData = {
         "title": "Färsk Energy IV",
         "subTitle": "Provides you with the adequate number of essential vitamins and minerals that help significantly boost your energy levels immediately.",
         "duration": 30,
-        "cost": 299,
+        "cost": 399,
         "slug": 'farsk-energy-iv', "heroImage": {
             "asset": {
                 "url": "/media/services/ivy-4.jpg"
@@ -1649,8 +1675,8 @@ export const servicesData = {
                 "packageItems": [
                     {
                         "name": "Färsk Energy IV",
-                        "standardPrice": 349,
-                        "exclusivePrice": 299
+                        "standardPrice": 399,
+                        "exclusivePrice": 349
                     },
                     {
                         "name": "Färsk NAD+ IV",
@@ -1705,7 +1731,7 @@ export const servicesData = {
         "title": "Athlete’s IV (Myer’s Cocktail)",
         "subTitle": "Best vitamin formula for a heavy workout and fast body recovery, especially after a hard day at work.",
         "duration": 30,
-        "cost": 199,
+        "cost": 249,
         "slug": 'athlete-iv', "heroImage": {
             "asset": {
                 "url": "/media/services/ivy-5.jpg"
@@ -1780,8 +1806,8 @@ export const servicesData = {
                     },
                     {
                         "name": "Färsk Energy IV",
-                        "standardPrice": 349,
-                        "exclusivePrice": 299
+                        "standardPrice": 399,
+                        "exclusivePrice": 349
                     },
 
                 ]

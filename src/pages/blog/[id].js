@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import Container from '@/components/container';
 import Image from 'next/image'
+import { NextSeo } from 'next-seo';
 
 const BlogPost = () => {
   const [post, setPost] = useState(null);
@@ -73,34 +74,56 @@ const BlogPost = () => {
 
 
   return (
-    <Container classList='my-24'>
-      <section className='overflow-hidden mb-5 mt-10'>
-        <Container classList='md:px-5'>
-          <div className='grid h-full md:h-[530px] md:grid-cols-2 lg:h-[550px] '>
-            <div className='order-2 flex h-full flex-col justify-center space-y-5 bg-gray-100 px-5 py-5 md:order-1 md:py-0 lg:px-10'>
-              <h1 className='font-display text-4xl font-light tracking-wide md:text-5xl xl:text-6xl'>
-                {post.page.properties.Title.title[0].plain_text}
-              </h1>
+    <>
+      <NextSeo
+        title={`${post.page.properties.Title.title[0].plain_text} | CADMEN Clinic`}
+        description='Explore our services including Botox, fillers, laser hair removal & PRP therapy at our Toronto medspa, tailored to enhance your beauty & wellness. See more.'
+        openGraph={{
+          url: 'https://www.cadmenclinic.ca/blog',
+          title: 'Our Services | See All Premium Treatments | CADMEN Clinic',
+          description:
+            'Explore our services including Botox, fillers, laser hair removal & PRP therapy at our Toronto medspa, tailored to enhance your beauty & wellness. See more.',
+          images: [
+            {
+              url: 'https://www.cadmenclinic.ca/media/clinic_interior.jpg',
+              width: 800,
+              height: 800,
+              alt: 'Interior of CADMEN Clinic',
+              type: 'image/jpeg'
+            }
+          ],
+          siteName: 'CADMEN Clinic'
+        }}
+      />
+      <Container classList='my-24'>
+        <section className='overflow-hidden mb-5 mt-10'>
+          <Container classList='md:px-5'>
+            <div className='grid h-full md:h-[530px] md:grid-cols-2 lg:h-[550px] '>
+              <div className='order-2 flex h-full flex-col justify-center space-y-5 bg-gray-100 px-5 py-5 md:order-1 md:py-0 lg:px-10'>
+                <h1 className='font-display text-4xl font-light tracking-wide md:text-5xl xl:text-6xl'>
+                  {post.page.properties.Title.title[0].plain_text}
+                </h1>
+              </div>
+              <div className='order-1 h-[250px] md:order-2 md:h-full'>
+                <Image
+                  draggable='false'
+                  src={post.page.icon.file.url}
+                  alt={post.page.properties.Title.title[0].plain_text}
+                  sizes='100vw'
+                  className='h-full w-full object-cover object-center'
+                  width={1000}
+                  height={1000}
+                  quality={100}
+                />
+              </div>
             </div>
-            <div className='order-1 h-[250px] md:order-2 md:h-full'>
-              <Image
-                draggable='false'
-                src={post.page.icon.file.url}
-                alt={post.page.properties.Title.title[0].plain_text}
-                sizes='100vw'
-                className='h-full w-full object-cover object-center'
-                width={1000}
-                height={1000}
-                quality={100}
-              />
-            </div>
-          </div>
-        </Container>
-      </section>
-      <article className='mx-5 py-16 px-12 border border-wildSand rounded-md'>
-        {post.blocks.map(block => renderBlock(block))}
-      </article>
-    </Container>
+          </Container>
+        </section>
+        <article className='mx-5 py-16 px-12 border border-wildSand rounded-md'>
+          {post.blocks.map(block => renderBlock(block))}
+        </article>
+      </Container>
+    </>
   );
 };
 
