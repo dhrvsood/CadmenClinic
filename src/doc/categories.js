@@ -67,7 +67,7 @@ export const categories = {
       },
       {
         "title": "Exosomes",
-        "subTitle": "",
+        "subTitle": "Non-invasive treatment that stimulates hair growth and reduces hair loss by blocking DHT.",
         "slug": "/exosomes",
         "categoryOrder": 2,
         "heroImage": {
@@ -79,7 +79,7 @@ export const categories = {
       },
       {
         "title": "Mesotheraphy",
-        "subTitle": "",
+        "subTitle": "Natural treatment which includes injecting vitamins, minerals, amino acids and growth factors that nourish hair follicles into the scalp.",
         "slug": "/mesotheraphy",
         "categoryOrder": 3,
         "heroImage": {
