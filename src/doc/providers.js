@@ -15,13 +15,13 @@ export const providers = [
     image: '/media/team/sindy.webp',
   },
   {
+    name: 'Eugenie',
+    title: 'Registered Nurse',
+    image: '/media/team/eugenie.png',
+  },
+  {
     name: 'Claudia',
     title: 'Medical Director',
     image: '/media/team/claudia.jpeg',
-  },
-  {
-    name: 'Richa',
-    title: 'Registered Nurse',
-    image: '/media/team/richa.webp',
   }
 ]

@@ -238,9 +238,9 @@ const Navbar = () => {
                   <div className='md:hidden'>
                     <Link href='/'>
                       <span className='sr-only'>CADMEN Clinic</span>
-                      <img
+                      <Image
                         className='h-5 object-cover xxs:h-8'
-                        src='/site-logo.png'
+                        src={siteLogo}
                         alt='CADMEN logo'
                       />
                     </Link>

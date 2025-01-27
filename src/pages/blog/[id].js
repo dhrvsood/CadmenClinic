@@ -61,7 +61,11 @@ const BlogPost = () => {
         return null;
       case 'image':
         return (
-          <img
+          <Image
+            width={0}
+            height={0}
+            sizes="100vw"
+            style={{ width: 'auto', height: 'auto' }}
             key={block.id}
             src={block.image.file.url}
             alt={block.image.caption ? block.image.caption.map(c => c.plain_text).join(' ') : 'Image'}

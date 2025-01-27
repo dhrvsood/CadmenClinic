@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <>
       <NextSeo
-        title="CADMEN Clinic | Toronto’s Best Med Clinic Experience"
+        title="CADMEN Clinic | Toronto’s Best Med Spa Experience"
         description='Offering Botox, fillers, laser treatments, and personalized skincare in Toronto for enhancing beauty and addressing your various aesthetic needs. Learn more.'
         canonical='https://www.cadmenclinic.ca/'
         openGraph={{
