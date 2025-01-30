@@ -239,17 +239,17 @@ const Navbar = () => {
                     <Link href='/'>
                       <span className='sr-only'>CADMEN Clinic</span>
                       <Image
-                        className='h-5 object-cover xxs:h-8'
+                        className='h-8 object-cover xxs:h-8 w-full'
                         src={siteLogo}
                         alt='CADMEN logo'
                       />
                     </Link>
                   </div>
-                  <div className='ml-auto pl-3 md:hidden'>
+                  <div className='ml-auto md:hidden'>
                     {!router.pathname.includes('/book-now') ? (
                       <Link
                         href={'https://cadmenclinic.janeapp.com/'}
-                        className='rounded border border-beaver/90 bg-beaver/90 px-5 py-2 text-xs font-light text-white hover:bg-beaver'
+                        className='rounded border border-beaver/90 bg-beaver/90 px-1 sm:px-2 py-2 md:px-2 text-xs font-light text-white hover:bg-beaver'
                       >
                         Book Now
                       </Link>
