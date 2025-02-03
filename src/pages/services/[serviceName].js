@@ -229,8 +229,8 @@ const ServicePage = () => {
                                         <p className='border-l-none p-3 text-center font-medium xs:block xs:w-24 xs:border-l xs:border-teal-700 sm:w-32'>
                                             Standard
                                         </p>
-                                        <p className='border-l border-black bg-dawnPink p-3 text-center font-medium xs:block xs:w-24 xs:border-l xs:border-black sm:w-32'>
-                                            Exclusive
+                                        <p className='border-l border-black bg-dawnPink p-3 text-center font-medium xs:block w-24 xs:border-l xs:border-black sm:w-32'>
+                                            Exclusive Promo
                                         </p>
                                     </div>
                                     <ul role='list' className='flex flex-col'>
@@ -239,7 +239,7 @@ const ServicePage = () => {
                                                 <div key={i} className='flex flex-row'>
                                                     <li className='w-full flex flex-row justify-between xs:flex-col'>
                                                         <div className='grow p-3'>
-                                                            <span className='text-lg font-medium'>
+                                                            <span className='text-md md:text-lg font-medium'>
                                                                 {item.name}
                                                             </span>
                                                             <span className='block pb-2 text-sm text-gray-400 md:pb-0 md:pl-0'>
@@ -247,14 +247,14 @@ const ServicePage = () => {
                                                             </span>
                                                         </div>
                                                         <div className='flex flex-row text-center'>
-                                                            <div className='xs:hidden sm:w-32 xs:w-24 p-3'>
+                                                            <div className='xs:hidden sm:w-32 w-24 p-3'>
                                                                 ${new Intl.NumberFormat('en-US', {
                                                                     minimumFractionDigits: 2,
                                                                     maximumFractionDigits: 2
                                                                 }).format(Number(item.standardPrice))}
                                                             </div>
                                                             {Number.isFinite(item.exclusivePrice) && (
-                                                                <div className='xs:hidden sm:w-32 xs:w-24 p-3 bg-dawnPink border-l border-black'>
+                                                                <div className='xs:hidden sm:w-32 w-24 p-3 bg-dawnPink border-l border-black'>
                                                                     ${new Intl.NumberFormat('en-US', {
                                                                         minimumFractionDigits: 2,
                                                                         maximumFractionDigits: 2
@@ -262,7 +262,7 @@ const ServicePage = () => {
                                                                 </div>
                                                             )}
                                                             {!Number.isFinite(item.exclusivePrice) && (
-                                                                <div className='xs:hidden sm:w-32 xs:w-24 p-3 bg-dawnPink border-l border-black'>
+                                                                <div className='xs:hidden sm:w-32 w-24 p-3 bg-dawnPink border-l border-black'>
                                                                     {item.exclusivePrice}
                                                                 </div>
                                                             )}
