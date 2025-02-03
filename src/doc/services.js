@@ -954,9 +954,9 @@ export const servicesData = {
             }
         ]
     },
-    "mesotheraphy": {
+    "mesotherapy": {
         "promo": "Book Now for 10% Off Your First Visit!",
-        "title": "Mesotheraphy",
+        "title": "Mesotherapy",
         "subTitle": "Natural treatment which includes injecting vitamins, minerals, amino acids and growth factors that nourish hair follicles into the scalp.",
         "duration": 30,
         "cost": 399,
@@ -970,7 +970,7 @@ export const servicesData = {
                 }
             ]
         },
-        "slug": 'mesotheraphy', "heroImage": {
+        "slug": 'mesotherapy', "heroImage": {
             "asset": {
                 "url": "/media/services/meso.webp"
             },
@@ -1162,7 +1162,7 @@ export const servicesData = {
     },
     "exosomes": {
         "promo": "Book Now for 10% Off Your First Visit!",
-        "title": "Exosomes Theraphy",
+        "title": "Exosomes Therapy",
         "subTitle": "Non-invasive treatment that stimulates hair growth and reduces hair loss by blocking DHT.",
         "duration": 60,
         "cost": 799,

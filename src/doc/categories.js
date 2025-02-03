@@ -78,15 +78,15 @@ export const categories = {
         }
       },
       {
-        "title": "Mesotheraphy",
+        "title": "Mesotherapy",
         "subTitle": "Natural treatment which includes injecting vitamins, minerals, amino acids and growth factors that nourish hair follicles into the scalp.",
-        "slug": "/mesotheraphy",
+        "slug": "/mesotherapy",
         "categoryOrder": 3,
         "heroImage": {
           "asset": {
             "url": "/media/services/meso.webp"
           },
-          "alt": "Mesotheraphy Service Image"
+          "alt": "Mesotherapy Service Image"
         }
       },
       {
