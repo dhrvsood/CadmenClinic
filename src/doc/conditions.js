@@ -152,7 +152,7 @@ export const conditions = [
       {
         "title": "DermaPen Microneedling",
         "slug": {
-          "current": "/DermaPen-microneedling"
+          "current": "/microneedling"
         }
       }
     ]
@@ -204,7 +204,7 @@ export const conditions = [
       {
         "title": "DermaPen Microneedling",
         "slug": {
-          "current": "/DermaPen-microneedling"
+          "current": "/microneedling"
         }
       }
     ]
@@ -230,7 +230,7 @@ export const conditions = [
       {
         "title": "DermaPen Microneedling",
         "slug": {
-          "current": "/DermaPen-microneedling"
+          "current": "/microneedling"
         }
       }
     ]
@@ -262,7 +262,7 @@ export const conditions = [
       {
         "title": "DermaPen Microneedling",
         "slug": {
-          "current": "/DermaPen-microneedling"
+          "current": "/microneedling"
         }
       }
     ]

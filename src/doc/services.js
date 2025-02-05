@@ -20,7 +20,7 @@ export const servicesData = {
                 }
             ]
         },
-        "cost": 9.99,
+        "cost": 10.99,
         "heroImage": {
             "asset": {
                 "url": "/media/services/botox-and-wrinkle-relaxers.jpg"
@@ -65,13 +65,13 @@ export const servicesData = {
                 "packageItems": [
                     {
                         "name": "Botox",
-                        "standardPrice": 9.99,
-                        "exclusivePrice": 8.99
+                        "standardPrice": 10.99,
+                        "exclusivePrice": 9.99
                     },
                     {
                         "name": "Dysport®",
-                        "standardPrice": 9.99,
-                        "exclusivePrice": 8.99
+                        "standardPrice": 10.99,
+                        "exclusivePrice": 9.99
                     }
                 ]
             }
@@ -113,7 +113,7 @@ export const servicesData = {
         "title": "Dermal Fillers",
         "subTitle": "Define, increase volume, and enhance the natural fullness of the jaw, cheeks, and lips",
         "duration": 45,
-        "cost": 550,
+        "cost": 599,
         "showResults": true,
         "beforeAfterImages": {
             "images": [
@@ -177,18 +177,18 @@ export const servicesData = {
                 "packageItems": [
                     {
                         "name": "Juvéderm",
-                        "standardPrice": 550,
-                        "exclusivePrice": 495
+                        "standardPrice": 599,
+                        "exclusivePrice": 549
                     },
                     {
                         "name": "Restylane®",
-                        "standardPrice": 550,
-                        "exclusivePrice": 495
+                        "standardPrice": 599,
+                        "exclusivePrice": 549
                     },
                     {
                         "name": "RHA Filler",
-                        "standardPrice": 550,
-                        "exclusivePrice": 495
+                        "standardPrice": 599,
+                        "exclusivePrice": 549
                     }
                 ]
             },
@@ -197,12 +197,12 @@ export const servicesData = {
                 "measurementUnit": "Service",
                 "packageItems": [
                     {
-                        "name": "Revanesse® Lip Filler",
+                        "name": "Full Syringe",
                         "standardPrice": 550,
                         "exclusivePrice": 495
                     },
                     {
-                        "name": "RHA Lip Filler",
+                        "name": "Half Syringe",
                         "standardPrice": 550,
                         "exclusivePrice": 495
                     }
@@ -239,7 +239,7 @@ export const servicesData = {
         "title": "Plasma Injections (PRP)",
         "subTitle": "Naturally revitalize your face by using your body's own plasma to naturally build collagen for smoother, firmer skin",
         "duration": 45,
-        "cost": 499,
+        "cost": 599,
         "slug": 'plasma-injections-prp',
         "heroImage": {
             "asset": {
@@ -293,6 +293,7 @@ export const servicesData = {
             {
                 "title": "Plasma Injections (PRP)",
                 "measurementUnit": "Per Treatment",
+                "note": "Save $300 on a package of 3 sessions",
                 "packageItems": [
                     {
                         "name": "Face",
@@ -301,11 +302,16 @@ export const servicesData = {
                     },
                     {
                         "name": "Undereye",
-                        "standardPrice": 499,
-                        "exclusivePrice": 449
+                        "standardPrice": 599,
+                        "exclusivePrice": 539
                     },
                     {
                         "name": "Scalp",
+                        "standardPrice": 599,
+                        "exclusivePrice": 539
+                    },
+                    {
+                        "name": "Breast",
                         "standardPrice": 599,
                         "exclusivePrice": 539
                     }
@@ -338,7 +344,7 @@ export const servicesData = {
         "title": "Kybella",
         "subTitle": "Non-surgical procedure for eliminating stubborn chin fat",
         "duration": 60,
-        "cost": 650,
+        "cost": 799,
         'slug': 'kybella',
         "showResults": true,
         "beforeAfterImages": {

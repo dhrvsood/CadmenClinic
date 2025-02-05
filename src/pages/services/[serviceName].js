@@ -35,7 +35,7 @@ const ServicePage = () => {
     return (
         <>
             <NextSeo
-                title = {`${service.title} | CADMEN Clinic`}
+                title={`${service.title} | CADMEN Clinic`}
                 description='Explore our services including Botox, fillers, laser hair removal & PRP therapy at our Toronto medspa, tailored to enhance your beauty & wellness. See more.'
                 openGraph={{
                     url: 'https://www.cadmenclinic.ca/services',
@@ -218,81 +218,88 @@ const ServicePage = () => {
                     <div className='grid gap-10 lg:grid-cols-12'>
                         <ul role='list' className='lg:col-span-8'>
                             {service.packages.map(($package) => (
-                                <li
-                                    key={$package.title}
-                                    className='mb-10 rounded border border-teal-700'
-                                >
-                                    <div className='flex flex-row border-b border-teal-700'>
-                                        <p className='grow p-3 text-xl font-bold xs:bg-transparent'>
-                                            {$package.title}
-                                        </p>
-                                        <p className='border-l-none p-3 text-center font-medium xs:block xs:w-24 xs:border-l xs:border-teal-700 sm:w-32'>
-                                            Standard
-                                        </p>
-                                        <p className='border-l border-black bg-dawnPink p-3 text-center font-medium xs:block w-24 xs:border-l xs:border-black sm:w-32'>
-                                            Exclusive Promo
-                                        </p>
-                                    </div>
-                                    <ul role='list' className='flex flex-col'>
-                                        {Array.isArray($package?.packageItems) &&
-                                            $package.packageItems.map((item, i) => (
-                                                <div key={i} className='flex flex-row'>
-                                                    <li className='w-full flex flex-row justify-between xs:flex-col'>
-                                                        <div className='grow p-3'>
-                                                            <span className='text-md md:text-lg font-medium'>
-                                                                {item.name}
-                                                            </span>
-                                                            <span className='block pb-2 text-sm text-gray-400 md:pb-0 md:pl-0'>
-                                                                {$package.measurementUnit}
-                                                            </span>
-                                                        </div>
-                                                        <div className='flex flex-row text-center'>
-                                                            <div className='xs:hidden sm:w-32 w-24 p-3'>
-                                                                ${new Intl.NumberFormat('en-US', {
-                                                                    minimumFractionDigits: 2,
-                                                                    maximumFractionDigits: 2
-                                                                }).format(Number(item.standardPrice))}
+                                <>
+                                    <li
+                                        key={$package.title}
+                                        className='mb-4 rounded border border-teal-700'
+                                    >
+                                        <div className='flex flex-row border-b border-teal-700'>
+                                            <p className='grow p-3 text-xl font-bold xs:bg-transparent'>
+                                                {$package.title}
+                                            </p>
+                                            <p className='border-l-none p-3 text-center font-medium xs:block xs:w-24 xs:border-l xs:border-teal-700 sm:w-32'>
+                                                Standard
+                                            </p>
+                                            <p className='border-l border-black bg-dawnPink p-3 text-center font-medium xs:block w-24 xs:border-l xs:border-black sm:w-32'>
+                                                Exclusive Promo
+                                            </p>
+                                        </div>
+                                        <ul role='list' className='flex flex-col'>
+                                            {Array.isArray($package?.packageItems) &&
+                                                $package.packageItems.map((item, i) => (
+                                                    <div key={i} className='flex flex-row'>
+                                                        <li className='w-full flex flex-row justify-between xs:flex-col'>
+                                                            <div className='grow p-3'>
+                                                                <span className='text-md md:text-lg font-medium'>
+                                                                    {item.name}
+                                                                </span>
+                                                                <span className='block pb-2 text-sm text-gray-400 md:pb-0 md:pl-0'>
+                                                                    {$package.measurementUnit}
+                                                                </span>
                                                             </div>
-                                                            {Number.isFinite(item.exclusivePrice) && (
-                                                                <div className='xs:hidden sm:w-32 w-24 p-3 bg-dawnPink border-l border-black'>
+                                                            <div className='flex flex-row text-center'>
+                                                                <div className='xs:hidden sm:w-32 w-24 p-3'>
                                                                     ${new Intl.NumberFormat('en-US', {
                                                                         minimumFractionDigits: 2,
                                                                         maximumFractionDigits: 2
-                                                                    }).format(Number(item.exclusivePrice))}
+                                                                    }).format(Number(item.standardPrice))}
                                                                 </div>
-                                                            )}
-                                                            {!Number.isFinite(item.exclusivePrice) && (
-                                                                <div className='xs:hidden sm:w-32 w-24 p-3 bg-dawnPink border-l border-black'>
-                                                                    {item.exclusivePrice}
-                                                                </div>
-                                                            )}
-                                                        </div>
-                                                    </li>
-                                                    <li className='hidden p-5 text-center xs:block sm:w-32'>
-                                                        $
-                                                        {new Intl.NumberFormat('en-US', {
-                                                            minimumFractionDigits: 2,
-                                                            maximumFractionDigits: 2
-                                                        }).format(Number(item.standardPrice))}
-                                                    </li>
-                                                    {Number.isFinite(item.exclusivePrice) && (
-                                                        <li className='border-l-none hidden bg-dawnPink p-5 text-center xs:block xs:w-24 xs:border-l xs:border-dawnPink sm:w-32'>
+                                                                {Number.isFinite(item.exclusivePrice) && (
+                                                                    <div className='xs:hidden sm:w-32 w-24 p-3 bg-dawnPink border-l border-black'>
+                                                                        ${new Intl.NumberFormat('en-US', {
+                                                                            minimumFractionDigits: 2,
+                                                                            maximumFractionDigits: 2
+                                                                        }).format(Number(item.exclusivePrice))}
+                                                                    </div>
+                                                                )}
+                                                                {!Number.isFinite(item.exclusivePrice) && (
+                                                                    <div className='xs:hidden sm:w-32 w-24 p-3 bg-dawnPink border-l border-black'>
+                                                                        {item.exclusivePrice}
+                                                                    </div>
+                                                                )}
+                                                            </div>
+                                                        </li>
+                                                        <li className='hidden p-5 text-center xs:block sm:w-32'>
                                                             $
                                                             {new Intl.NumberFormat('en-US', {
                                                                 minimumFractionDigits: 2,
                                                                 maximumFractionDigits: 2
-                                                            }).format(Number(item.exclusivePrice))}
+                                                            }).format(Number(item.standardPrice))}
                                                         </li>
-                                                    )}
-                                                    {!Number.isFinite(item.exclusivePrice) && (
-                                                        <li className='border-l-none hidden bg-dawnPink p-5 text-center xs:block xs:w-24 xs:border-l xs:border-dawnPink sm:w-32'>
-                                                            ${item.exclusivePrice}
-                                                        </li>
-                                                    )}
-                                                </div>
-                                            ))}
-                                    </ul>
-                                </li>
+                                                        {Number.isFinite(item.exclusivePrice) && (
+                                                            <li className='border-l-none hidden bg-dawnPink p-5 text-center xs:block xs:w-24 xs:border-l xs:border-dawnPink sm:w-32'>
+                                                                $
+                                                                {new Intl.NumberFormat('en-US', {
+                                                                    minimumFractionDigits: 2,
+                                                                    maximumFractionDigits: 2
+                                                                }).format(Number(item.exclusivePrice))}
+                                                            </li>
+                                                        )}
+                                                        {!Number.isFinite(item.exclusivePrice) && (
+                                                            <li className='border-l-none hidden bg-dawnPink p-5 text-center xs:block xs:w-24 xs:border-l xs:border-dawnPink sm:w-32'>
+                                                                ${item.exclusivePrice}
+                                                            </li>
+                                                        )}
+                                                    </div>
+                                                ))}
+                                        </ul>
+                                    </li>
+                                    {$package.note && (
+                                        <span className='grow italic font-bold xs:bg-transparent mb-8'>
+                                            {$package.note}
+                                        </span>
+                                    )}
+                                </>
                             ))}
                         </ul>
                         <div className='hidden lg:col-span-4 lg:block'>
@@ -307,8 +314,8 @@ const ServicePage = () => {
                             />
                         </div>
                     </div>
-                </Container>
-            </section>
+                </Container >
+            </section >
 
             <Faqs data={service.faqs} />
         </>

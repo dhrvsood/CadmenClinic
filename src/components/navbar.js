@@ -197,11 +197,11 @@ const Navbar = () => {
                         <div className="menu-btn-first ml-auto">
                           {!router.pathname.includes('/book-now') ? (
                             <Link
-                              href={'https://cadmenclinic.janeapp.com/'}
+                              href={'https://cadmenclinic.janeapp.com/#/free-consultation'}
                               target='_blank'
                               className='rounded border border-beaver/90 bg-beaver/90 px-10 py-3 text-center text-sm font-light text-white hover:bg-beaver'
                             >
-                              Book Now
+                              Book Free Consultation
                             </Link>
                           ) : null}
                         </div>
