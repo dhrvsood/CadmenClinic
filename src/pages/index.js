@@ -434,7 +434,7 @@ const Home = () => {
               Our <span className='gold-italic'>Location</span>
             </h2>
             <p className='text-center'>
-              Don't put off your changes — come to us now and get <b>FREE</b>{' '}
+              Don&apos;t put off your changes — come to us now and get <b>FREE</b>{' '}
               first consultation!
             </p>
           </div>
