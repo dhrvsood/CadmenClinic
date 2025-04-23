@@ -86,7 +86,7 @@ const Conditions = () => {
               </p>
               <div className='flex w-full'>
                 <Link
-                  href='https://cadmenclinic.janeapp.com/'
+                  href='https://cadmenclinic.ca.zenoti.com/webstoreNew/services'
                   className='w-full rounded border border-beaver/90 bg-beaver/90 px-10 py-3 text-center font-light text-white hover:bg-beaver lg:flex lg:w-auto'
                 >
                   Book Now

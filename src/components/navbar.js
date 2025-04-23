@@ -197,7 +197,7 @@ const Navbar = () => {
                         <div className="menu-btn-first ml-auto">
                           {!router.pathname.includes('/book-now') ? (
                             <Link
-                              href={'https://cadmenclinic.janeapp.com/#/free-consultation'}
+                              href={'https://cadmenclinic.ca.zenoti.com/webstoreNew/services'}
                               target='_blank'
                               className='rounded border border-beaver/90 bg-beaver/90 px-10 py-3 text-center text-sm font-light text-white hover:bg-beaver'
                             >
@@ -248,7 +248,7 @@ const Navbar = () => {
                   <div className='ml-auto md:hidden'>
                     {!router.pathname.includes('/book-now') ? (
                       <Link
-                        href={'https://cadmenclinic.janeapp.com/'}
+                        href={'https://cadmenclinic.ca.zenoti.com/webstoreNew/services'}
                         className='rounded border border-beaver/90 bg-beaver/90 px-1 sm:px-2 py-2 md:px-2 text-xs font-light text-white hover:bg-beaver'
                       >
                         Book Now

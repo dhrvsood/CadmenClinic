@@ -17,7 +17,7 @@ const navigation = {
       href: '/appointment-cancellation-policy'
     }
   ],
-  connect: [{ name: 'Book Now', href: 'https://cadmenclinic.janeapp.com/' }],
+  connect: [{ name: 'Book Now', href: 'https://cadmenclinic.ca.zenoti.com/webstoreNew/services' }],
   legal: [
     { name: 'Privacy', href: '/privacy' },
     { name: 'Accessiblity', href: '/accessibility' },
