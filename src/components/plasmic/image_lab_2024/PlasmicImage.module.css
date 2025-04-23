@@ -1,0 +1,27 @@
+.root {
+  display: flex;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .root {
+    max-width: 242px;
+    width: 100%;
+    min-width: 0;
+  }
+}
+.rootshadow {
+  box-shadow: 0px 4px 25px 0px #00000040;
+}
+.rootrounded {
+  border-radius: 40px;
+}
+.img__ecWrm {
+  object-fit: cover;
+  max-width: 100%;
+  width: 364px;
+  position: relative;
+  box-shadow: none;
+  flex-shrink: 0;
+}
+.img__ecWrm > picture > img {
+  object-fit: cover;
+}

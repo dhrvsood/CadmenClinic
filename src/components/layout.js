@@ -4,6 +4,8 @@ import Cookies from 'js-cookie'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
+import PlasmicTopNav from './plasmic/image_lab_2024/PlasmicTopNav'
+
 
 const Layout = ({ children }) => {
   const router = useRouter()
@@ -84,7 +86,7 @@ const Layout = ({ children }) => {
         <Link className='sr-only' href='#main-content'>
           Skip to main content
         </Link>
-        {shouldShowNavbar && <Navbar />}
+        {shouldShowNavbar && <PlasmicTopNav />}
       </div>
       <div id='main' className={`${shouldShowNavbar ? 'pt-10' : ''}`}>
         {children}
