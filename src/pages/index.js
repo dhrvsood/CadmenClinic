@@ -1,14 +1,6 @@
-import ContactBanner from '@/components/contact_banner'
-import BaseButton from '@/components/base_button'
-import Container from '@/components/container'
-import Reviews from '@/components/reviews'
-import ServicesCarousel from '@/components/services_carousel'
-import { categories } from '@/doc/categories'
 import { NextSeo } from 'next-seo'
 import Image from 'next/image'
 import Link from 'next/link'
-import treatment from '../../public/media/treatment.webp';
-import landing from '../../public/media/home.png';
 import RatingReviewPill from '@/components/RatingReviewPill'
 import SeeTheResultsSlider from '@/components/SeeTheResultsSlider/SeeTheResultsSlider'
 import { useWindowSize } from 'react-use'
@@ -41,20 +33,7 @@ const Home = () => {
           "markDefs": []
         }
       ],
-      "body": [
-        {
-          "_type": "block",
-          "style": "normal",
-          "children": [
-            {
-              "_type": "span",
-              "text": "Our non-invasive treatments deliver noticeable results with little to no downtime, allowing you to look and feel your best without interrupting your daily routine.",
-              "marks": []
-            }
-          ],
-          "markDefs": []
-        }
-      ]
+      "text": "Our non-invasive treatments deliver noticeable results with little to no downtime, allowing you to look and feel your best without interrupting your daily routine.",
     },
     {
       "icon": '/icons/group.svg',
@@ -73,20 +52,7 @@ const Home = () => {
           "markDefs": []
         }
       ],
-      "body": [
-        {
-          "_type": "block",
-          "style": "normal",
-          "children": [
-            {
-              "_type": "span",
-              "text": "Our licensed professionals bring years of experience in medical-grade aesthetics, ensuring each treatment is safe, effective, and delivered with precision.",
-              "marks": []
-            }
-          ],
-          "markDefs": []
-        }
-      ]
+      "text": "Our license professionals brings decades of experience in medical-grade hair restoration and aesthetics, ensuring each treatment is safe, effective, and delivered with precision.",
     },
     {
       "icon": '/icons/star-icon.svg',
@@ -105,20 +71,7 @@ const Home = () => {
           "markDefs": []
         }
       ],
-      "body": [
-        {
-          "_type": "block",
-          "style": "normal",
-          "children": [
-            {
-              "_type": "span",
-              "text": "Join over 140 happy patients who have rated us five stars on Google. At ImageLab, we’re dedicated to delivering results that keep patients coming back.",
-              "marks": []
-            }
-          ],
-          "markDefs": []
-        }
-      ]
+      "text": "Join over 2,100 satisfied patients who have trusted CADMEN Clinic with their hair restoration and aesthetic journey. At CADMEN Clinic, we’re dedicated to delivering results that keep patients coming back.",
     },
     {
       "icon": '/icons/lab.svg',
@@ -137,20 +90,7 @@ const Home = () => {
           "markDefs": []
         }
       ],
-      "body": [
-        {
-          "_type": "block",
-          "style": "normal",
-          "children": [
-            {
-              "_type": "span",
-              "text": "We provide results-driven, medical-grade services backed by science and carefully selected to ensure treatments that truly make a difference.",
-              "marks": []
-            }
-          ],
-          "markDefs": []
-        }
-      ]
+      "text": "We provide results-driven, medical-grade services backed by science and carefully selected to ensure our treatments truly make a difference.",
     }
   ]
   const offerCards = [
@@ -178,7 +118,7 @@ const Home = () => {
       "percentOff": 50,
       "price": 199,
       "unitText": "per session",
-      "priceFrom": 100,
+      "priceFrom": false,
       "serviceId": "mesotherapy-vitamins"
     },
     {
@@ -256,6 +196,7 @@ const Home = () => {
           siteName: 'CADMEN Clinic'
         }}
       />
+
       {/* Landing */}
       <section className='pb-[80px] pt-[167px] max-sm:pt-[100px]'>
         <div className='wrapper flex items-center justify-between gap-[165px] max-sm:flex-col max-sm:gap-[60px]'>
@@ -268,12 +209,12 @@ const Home = () => {
               <span className='italic text-[#D19D51]'>Treatments</span>
             </h1>
             <p className='mt-[8px] pr-[50px] text-[18px] max-sm:text-[14px]'>
-              Join hundreds of satisfied patients who trust CADMEN Clinic -
-              Toronto{' '}
+            Join thousands of satisfied patients who trust CADMEN Clinic – Toronto’s 
+            {' '}
               <i>
                 <b>#1 choice</b>
               </i>{' '}
-              for medical-grade hair restoration and aesthetic treatments
+              for medical-grade hair and aesthetic treatments.
             </p>
             <div className='mt-[24px] flex'>
               <RatingReviewPill />
@@ -297,7 +238,7 @@ const Home = () => {
         <div className='wrapper'>
           <div className='m-auto mb-[58px] max-w-[840px] text-center'>
             <h2 className='d-h2'>
-              Why Our Patients <span className='blue-italic'>Choose</span>{' '}
+              Why Our Patients <span className='blue-italic text-gold-base'>Choose</span>{' '}
               CADMEN Clinic
             </h2>
           </div>
@@ -324,7 +265,7 @@ const Home = () => {
                     serializers={blockSerializer}
                   />
                 }
-                text={<BlockContent blocks={card.body} />}
+                text={card.text}
               />
             ))}
           </WhyOurPatientsSlider>
@@ -441,20 +382,20 @@ const Home = () => {
           <div className='grid grid-cols-[1.75fr,2.25fr,3fr] gap-[30px] max-md:grid-cols-1 max-md:gap-[14px]'>
             {/* Change */}
             <ContactDataCard
-              linkTo='tel:+18722072269'
-              linkText='(872) 207-2269'
+              linkTo='tel:+14165111337'
+              linkText='(416) 511-1337'
               icon='/icons/circle-phone.svg'
               title='Call Us'
             />
             <ContactDataCard
-              linkTo='mailto:info@imagelabmedspa.com'
-              linkText='info@imagelabmedspa.com'
+              linkTo='mailto:info@cadmenclinic.ca'
+              linkText='info@cadmenclinic.ca'
               icon='/icons/circle-mail.svg'
               title='Contact Us'
             />
             <ContactDataCard
               linkTo='https://maps.app.goo.gl/RizTXzKMnXVkUewB7'
-              linkText='2033 W Roscoe St, Chicago, IL 60618'
+              linkText='240 Queen St W (2nd Floor), Toronto, ON'
               icon='/icons/circle-pin.svg'
               title='Visit Us'
               newTab
@@ -486,19 +427,10 @@ const Home = () => {
               </div>
               <div className='flex flex-col gap-[8px] rounded-[12px] border border-[#eaecee] bg-[#fcfcfc] p-[20px] pr-[100px] max-sm:pr-[20px]'>
                 <p className='text-[18px]'>
-                  <span className='font-medium'>Monday & Tuesday: </span>10AM
-                  - 6PM
+                  <span className='font-medium'>Monday & Friday: </span>10AM - 5PM
                 </p>
                 <p className='text-[18px]'>
-                  <span className='font-medium'>Wednesday: </span>9AM - 5PM
-                </p>
-                <p className='text-[18px]'>
-                  <span className='font-medium'>Thursday & Friday: </span>9AM
-                  - 6PM
-                </p>
-                <p className='text-[18px]'>
-                  <span className='font-medium'>Saturday: </span>9:30AM -
-                  5:30PM
+                  <span className='font-medium'>Saturday & Sunday: </span>10AM - 7PM
                 </p>
               </div>
             </div>

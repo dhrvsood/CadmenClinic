@@ -86,7 +86,7 @@ const Layout = ({ children }) => {
         <Link className='sr-only' href='#main-content'>
           Skip to main content
         </Link>
-        {shouldShowNavbar && <PlasmicTopNav />}
+        {shouldShowNavbar && <Navbar />}
       </div>
       <div id='main' className={`${shouldShowNavbar ? 'pt-10' : ''}`}>
         {children}

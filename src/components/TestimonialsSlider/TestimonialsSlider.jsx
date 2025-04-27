@@ -5,7 +5,6 @@ import 'slick-carousel/slick/slick-theme.css'
 import 'slick-carousel/slick/slick.css'
 import Button from '../v2-components/Button'
 import styles from './TestimonialsSlider.module.css'
-import TestimonialCardBig from '../TestimonialCardBig'
 
 const TestimonialsSlider = ({
   children,

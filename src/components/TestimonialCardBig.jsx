@@ -29,7 +29,7 @@ const TestimonialCardBig = ({ quote, imageUrl }) => {
           width={453}
           height={410}
           alt=''
-          className='max-md:w-full'
+          className='max-md:w-full rounded-2xl'
         />
       </div>
     </div>

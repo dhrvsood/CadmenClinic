@@ -23,8 +23,8 @@ const OfferCard = ({
   return (
     <div>
       <div className='flex'>
-        <Image src={image} width={120} height={115} alt='' />
-        <div className='flex w-full flex-col rounded-[16px] bg-dawnPink p-[20px]'>
+        <Image className="flex-shrink-0" src={image} width={120} height={115} alt='' />
+        <div className='flex w-full flex-col rounded-[16px] bg-dawnPink p-5'>
           <div className='flex min-h-[22px] items-center justify-between gap-[16px]'>
             <h5 className='text-[20px] font-medium text-customBlack'>{service}</h5>
             {price && (
@@ -38,9 +38,9 @@ const OfferCard = ({
                   <p className='mr-[8px] text-[12px] text-customBlack'>From</p>
                 )}
                 <p className='mr-[3px] text-[18px] font-medium text-customBlack'>
-                  {price}
+                  ${price}
                 </p>
-                <p className='text-[12px] text-customBlack'>{unitText}</p>
+                <p className='text-[12px] text-customBlack'> / {unitText}</p>
               </div>
             ) : (
               <p className='text-[18px] font-medium text-customBlack'>

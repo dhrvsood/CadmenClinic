@@ -1,3 +1,4 @@
+import BlockContent from '@sanity/block-content-to-react'
 import Image from "next/image"
 
 const IconImageTextCard = ({ icon, image, title, text }) => {

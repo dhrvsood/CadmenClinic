@@ -141,13 +141,13 @@ const data = [
       },
       {
         frontCard: {
-          title: 'SkinPen Microneedling',
+          title: 'Microneedling Facial',
           description: 'Stimulates collagen for firmer, younger-looking skin.',
           image: '/seeTheResultsSlider/skinTreatments/skin-3a.avif',
           link: 'https://www.imagelabmedspa.com/services/microneedling'
         },
         backCard: {
-          title: 'SkinPen Microneedling',
+          title: 'Microneedling Facial',
           description: 'Stimulates collagen for firmer, younger-looking skin.',
           image: '/seeTheResultsSlider/skinTreatments/skin-3b.avif',
           link: 'https://www.imagelabmedspa.com/services/microneedling'
@@ -155,14 +155,14 @@ const data = [
       },
       {
         frontCard: {
-          title: 'Blood Facial (PRP + Microneedling)',
+          title: 'PRP (Vampire) Facial',
           description:
             'Combines PRP therapy with microneedling for ultimate skin rejuvenation.',
           image: '/seeTheResultsSlider/skinTreatments/skin-4a.avif',
           link: 'https://www.imagelabmedspa.com/services/blood-facial-prp-microneedling'
         },
         backCard: {
-          title: 'Blood Facial (PRP + Microneedling)',
+          title: 'PRP (Vampire) Facial',
           description:
             'Combines PRP therapy with microneedling for ultimate skin rejuvenation.',
           image: '/seeTheResultsSlider/skinTreatments/skin-4b.avif',
@@ -298,7 +298,7 @@ const SeeTheResultsSlider = ({ settings, handleButtonClick }) => {
                     onClick={previous}
                   >
                     <Image
-                      src={`/arrows/prev-arrow-${!currentSlide ? 'green' : 'white'}.svg`}
+                      src={`/arrows/prev-arrow-white.svg`}
                       width={14}
                       height={14}
                       alt=''
@@ -310,8 +310,7 @@ const SeeTheResultsSlider = ({ settings, handleButtonClick }) => {
                     onClick={next}
                   >
                     <Image
-                      src={`/arrows/next-arrow-${currentSlide === totalPages - 1 ? 'green' : 'white'
-                        }.svg`}
+                      src={`/arrows/next-arrow-white.svg`}
                       width={14}
                       height={14}
                       alt=''

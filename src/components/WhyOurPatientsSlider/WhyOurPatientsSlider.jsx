@@ -69,7 +69,7 @@ const WhyOurPatientsSlider = ({ children, settings, handleButtonClick }) => {
                 onClick={previous}
               >
                 <Image
-                  src={`/arrows/prev-arrow-${!currentSlide ? 'green' : 'white'}.svg`}
+                  src={`/arrows/prev-arrow-white.svg`}
                   width={14}
                   height={14}
                   alt=''
@@ -91,8 +91,7 @@ const WhyOurPatientsSlider = ({ children, settings, handleButtonClick }) => {
                 onClick={next}
               >
                 <Image
-                  src={`/arrows/next-arrow-${currentSlide === totalPages - 1 ? 'green' : 'white'
-                    }.svg`}
+                  src={`/arrows/next-arrow-white.svg`}
                   width={14}
                   height={14}
                   alt=''
