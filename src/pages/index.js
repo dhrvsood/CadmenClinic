@@ -17,7 +17,7 @@ const Home = () => {
   const { width: windowWidth, height: windowHeight } = useWindowSize();
   const whyChooseCards = [
     {
-      "icon": '/icons/circle-clock.svg',
+      "icon": '/icons/Clock.svg',
       "mainImage": '/images/services/md.jpeg',
       "title": [
         {
@@ -36,7 +36,7 @@ const Home = () => {
       "text": "Our non-invasive treatments deliver noticeable results with little to no downtime, allowing you to look and feel your best without interrupting your daily routine.",
     },
     {
-      "icon": '/icons/group.svg',
+      "icon": '/icons/Group.svg',
       "mainImage": '/images/services/ep.webp',
       "title": [
         {
@@ -55,7 +55,7 @@ const Home = () => {
       "text": "Our license professionals brings decades of experience in medical-grade hair restoration and aesthetics, ensuring each treatment is safe, effective, and delivered with precision.",
     },
     {
-      "icon": '/icons/star-icon.svg',
+      "icon": '/icons/star.svg',
       "mainImage": '/images/services/ht.webp',
       "title": [
         {
@@ -71,10 +71,10 @@ const Home = () => {
           "markDefs": []
         }
       ],
-      "text": "Join over 2,100 satisfied patients who have trusted CADMEN Clinic with their hair restoration and aesthetic journey. At CADMEN Clinic, we’re dedicated to delivering results that keep patients coming back.",
+      "text": "Join 2,100+ satisfied patients who have trusted CADMEN with hair restoration and aesthetic journey. We are dedicated to delivering results that keep patients coming back.",
     },
     {
-      "icon": '/icons/lab.svg',
+      "icon": '/icons/Lab.svg',
       "mainImage": '/images/services/cp.webp',
       "title": [
         {
@@ -214,7 +214,7 @@ const Home = () => {
               <i>
                 <b>#1 choice</b>
               </i>{' '}
-              for medical-grade hair and aesthetic treatments.
+              for medical-grade hair restoration and aesthetic treatments.
             </p>
             <div className='mt-[24px] flex'>
               <RatingReviewPill />
@@ -384,19 +384,19 @@ const Home = () => {
             <ContactDataCard
               linkTo='tel:+14165111337'
               linkText='(416) 511-1337'
-              icon='/icons/circle-phone.svg'
+              icon='/icons/phone.svg'
               title='Call Us'
             />
             <ContactDataCard
               linkTo='mailto:info@cadmenclinic.ca'
               linkText='info@cadmenclinic.ca'
-              icon='/icons/circle-mail.svg'
+              icon='/icons/mail.svg'
               title='Contact Us'
             />
             <ContactDataCard
               linkTo='https://maps.app.goo.gl/RizTXzKMnXVkUewB7'
               linkText='240 Queen St W (2nd Floor), Toronto, ON'
-              icon='/icons/circle-pin.svg'
+              icon='/icons/map.svg'
               title='Visit Us'
               newTab
             />
@@ -415,7 +415,7 @@ const Home = () => {
               <div className='flex'>
                 <div className='flex items-center rounded-[12px] border border-[#eaecee] bg-[#fcfcfc] p-[28px]'>
                   <Image
-                    src='/icons/circle-clock.svg'
+                    src='/icons/Clock.svg'
                     width={32}
                     height={32}
                     alt='Phone icon'
@@ -427,7 +427,7 @@ const Home = () => {
               </div>
               <div className='flex flex-col gap-[8px] rounded-[12px] border border-[#eaecee] bg-[#fcfcfc] p-[20px] pr-[100px] max-sm:pr-[20px]'>
                 <p className='text-[18px]'>
-                  <span className='font-medium'>Monday & Friday: </span>10AM - 5PM
+                  <span className='font-medium'>Monday - Friday: </span>10AM - 5PM
                 </p>
                 <p className='text-[18px]'>
                   <span className='font-medium'>Saturday & Sunday: </span>10AM - 7PM
@@ -447,7 +447,7 @@ const Home = () => {
               Toward a New You!
             </h2>
             <p className='text-[18px] text-white'>
-              Discover how ImageLab Med Spa can help you look and feel your
+              Discover how CADMEN Clinic can help you look and feel your
               best. Book a consultation today to learn more about our services
               and see which treatments are right for you.
             </p>

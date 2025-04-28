@@ -186,13 +186,6 @@ const data = [
             'Select from a range of IV drips targeting revitalizing energy levels, providing a youthful glow, promoting cellular regeneration, and combatting anti-aging.',
           image: '/seeTheResultsSlider/skinTreatments/skin-1a.avif',
           link: 'https://www.imagelabmedspa.com/services/diamondglow-facial'
-        },
-        backCard: {
-          title: 'Färsk IV Drip Therapy',
-          description:
-            'Select from a range of IV drips targeting revitalizing energy levels, providing a youthful glow, promoting cellular regeneration, and combatting anti-aging.',
-          image: '/seeTheResultsSlider/skinTreatments/skin-1b.avif',
-          link: 'https://www.imagelabmedspa.com/services/diamondglow-facial'
         }
       },
       {
@@ -201,13 +194,6 @@ const data = [
           description:
             'In-person, medically-supervised Semaglutide injections for safe and effective weight loss. The same active ingredient in Wegovy® and Ozempic®.',
           image: '/seeTheResultsSlider/skinTreatments/skin-3a.avif',
-          link: 'https://www.imagelabmedspa.com/services/microneedling'
-        },
-        backCard: {
-          title: 'Semaglutide Therapy',
-          description:
-            'In-person, medically-supervised Semaglutide injections for safe and effective weight loss. The same active ingredient in Wegovy® and Ozempic®.',
-          image: '/seeTheResultsSlider/skinTreatments/skin-3b.avif',
           link: 'https://www.imagelabmedspa.com/services/microneedling'
         }
       }
