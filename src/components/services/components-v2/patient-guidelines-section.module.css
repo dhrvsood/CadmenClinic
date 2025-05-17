@@ -1,0 +1,366 @@
+.postTreatmentGuideSection {
+  position: relative;
+  align-content: flex-start;
+  justify-items: center;
+  width: 100%;
+  background:
+    url('/plasmic/image_lab_2024/images/circlesSvg13.svg') top 50% left 50% /
+      cover repeat,
+    #4c8d91;
+  overflow: hidden;
+}
+
+.freeBox__udQ90 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 80px 0px;
+}
+
+.freeBox__udQ90 > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 0;
+  margin-top: calc(0px - 54px);
+  height: calc(100% + 54px);
+}
+
+.freeBox__udQ90 > :global(.__wab_flex-container) > *,
+.freeBox__udQ90 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox__udQ90 > :global(.__wab_flex-container) > picture > img,
+.freeBox__udQ90
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 54px;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox__udQ90 {
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox__udQ90 > :global(.__wab_flex-container) {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+
+.postTreatmentGuideHeader {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 660px;
+  min-width: 0;
+  padding: 0px;
+}
+
+.postTreatmentGuideHeader > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 0;
+  margin-top: calc(0px - 12px);
+  height: calc(100% + 12px);
+}
+
+.postTreatmentGuideHeader > :global(.__wab_flex-container) > *,
+.postTreatmentGuideHeader
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > *,
+.postTreatmentGuideHeader > :global(.__wab_flex-container) > picture > img,
+.postTreatmentGuideHeader
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 12px;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .postTreatmentGuideHeader {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.guidelinesTitle {
+  color: var(---sanity-heading2-color);
+  font-size: var(--sanity-heading2-font-size);
+  font-weight: var(---sanity-heading2-font-weight);
+  line-height: var(--sanity-heading2-line-height);
+  font-family: var(--sanity-heading2-font-family);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.p__r0Kd4 {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 0%;
+}
+
+.postTreatmentGuideCards {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 0px;
+  margin-top: 54px;
+}
+
+.postTreatmentGuideCards > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  margin-top: calc(0px - 30px);
+  height: calc(100% + 30px);
+}
+
+.postTreatmentGuideCards > :global(.__wab_flex-container) > *,
+.postTreatmentGuideCards
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > *,
+.postTreatmentGuideCards > :global(.__wab_flex-container) > picture > img,
+.postTreatmentGuideCards
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 30px;
+}
+
+@media (max-width: 1200px) {
+  .postTreatmentGuideCards {
+    overflow: auto;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .postTreatmentGuideCards > :global(.__wab_flex-container) {
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .postTreatmentGuideCards {
+    flex-direction: row;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .postTreatmentGuideCards > :global(.__wab_flex-container) {
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: row;
+    margin-left: calc(0px - 16px);
+    width: calc(100% + 16px);
+    margin-top: calc(0px - 0px);
+    height: calc(100% + 0px);
+  }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .postTreatmentGuideCards > :global(.__wab_flex-container) > *,
+  .postTreatmentGuideCards
+    > :global(.__wab_flex-container)
+    > :global(.__wab_slot)
+    > *,
+  .postTreatmentGuideCards > :global(.__wab_flex-container) > picture > img,
+  .postTreatmentGuideCards
+    > :global(.__wab_flex-container)
+    > :global(.__wab_slot)
+    > picture
+    > img {
+    margin-left: 16px;
+    margin-top: 0px;
+  }
+}
+
+.freeBox__jtXj0 {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 0px;
+}
+
+.freeBox__jtXj0 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  min-width: 0;
+  margin-left: calc(0px - 30px);
+  width: calc(100% + 30px);
+}
+
+.freeBox__jtXj0 > :global(.__wab_flex-container) > *,
+.freeBox__jtXj0 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox__jtXj0 > :global(.__wab_flex-container) > picture > img,
+.freeBox__jtXj0
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 30px;
+}
+
+@media (max-width: 1200px) {
+  .freeBox__jtXj0 > :global(.__wab_flex-container) {
+    margin-left: calc(0px - 30px);
+    width: calc(100% + 30px);
+    margin-top: calc(0px - 0px);
+    height: calc(100% + 0px);
+  }
+}
+
+@media (max-width: 1200px) {
+  .freeBox__jtXj0 > :global(.__wab_flex-container) > *,
+  .freeBox__jtXj0 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+  .freeBox__jtXj0 > :global(.__wab_flex-container) > picture > img,
+  .freeBox__jtXj0
+    > :global(.__wab_flex-container)
+    > :global(.__wab_slot)
+    > picture
+    > img {
+    margin-left: 30px;
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox__jtXj0 > :global(.__wab_flex-container) {
+    margin-left: calc(0px - 16px);
+    width: calc(100% + 16px);
+    margin-top: calc(0px - 0px);
+    height: calc(100% + 0px);
+  }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox__jtXj0 > :global(.__wab_flex-container) > *,
+  .freeBox__jtXj0 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+  .freeBox__jtXj0 > :global(.__wab_flex-container) > picture > img,
+  .freeBox__jtXj0
+    > :global(.__wab_flex-container)
+    > :global(.__wab_slot)
+    > picture
+    > img {
+    margin-left: 16px;
+    margin-top: 0px;
+  }
+}
+
+.howItWorksCard__fZvrn {
+  width: 100%;
+  min-width: 400px;
+  margin-left: 20px;
+  margin-top: 54px;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .howItWorksCard__fZvrn {
+    width: 300px;
+    min-width: 300px;
+    flex-shrink: 0;
+    margin-top: 12px;
+  }
+}
+
+.img__bLyGh {
+  object-fit: cover;
+  max-width: 100%;
+  height: 20px;
+  width: 20px;
+}
+
+.img__bLyGh > picture > img {
+  object-fit: cover;
+}
+
+.text__yFfnh {
+  font-size: 24px;
+  padding-right: 0px;
+}
+
+.ul__snzob {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.ul__snzob > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(0px - 10px);
+  height: calc(100% + 10px);
+}
+
+.ul__snzob > :global(.__wab_flex-container) > *,
+.ul__snzob > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.ul__snzob > :global(.__wab_flex-container) > picture > img,
+.ul__snzob
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 10px;
+}
+
+.li__erM8I {
+  text-align: left;
+  list-style: disc;
+}
+
+.mtt7 {
+  display: flex;
+  margin-top: 32px;
+}
+
+.guideCta {
+  position: relative;
+  height: 58px;
+  margin-top: calc(20px + 54px) !important;
+  flex-shrink: 0;
+  align-items: center;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .guideCta {
+    width: 225px;
+    margin-top: calc(0px + 54px) !important;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+  }
+}

@@ -26,7 +26,7 @@ import {
   useDollarState
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
-import TopNav from "../../TopNav"; // plasmic-import: xBvtLE-eO4gb/component
+// import TopNav from "../../TopNav"; // plasmic-import: xBvtLE-eO4gb/component
 import DiscountPricingPill from "../../DiscountPricingPill"; // plasmic-import: TO66K8qjr8TP/component
 import ReviewsRatingPill from "../../ReviewsRatingPill"; // plasmic-import: lUTkTuQcsEcx/component
 import Button from "../../Button"; // plasmic-import: 0o-OkGmTYJg3/component
@@ -275,11 +275,11 @@ function PlasmicBotoxLander__RenderFunc(props) {
             sty.root
           )}
         >
-          <TopNav
+          {/* <TopNav
             data-plasmic-name={"topNav"}
             data-plasmic-override={overrides.topNav}
             className={classNames("__wab_instance", sty.topNav)}
-          />
+          /> */}
 
           <section
             data-plasmic-name={"hero"}
@@ -410,7 +410,7 @@ function PlasmicBotoxLander__RenderFunc(props) {
                   displayWidth={"auto"}
                   loading={"lazy"}
                   src={{
-                    src: "/plasmic/image_lab_2024/images/smilingElderlyWoman1Avif.avif",
+                    src: "/landingPages/smilingElderlyWoman1.avif",
                     fullWidth: 1605,
                     fullHeight: 1351,
                     aspectRatio: undefined
@@ -2323,27 +2323,6 @@ function PlasmicBotoxLander__RenderFunc(props) {
               </Button>
             </div>
           </section>
-          <FooterNew
-            data-plasmic-name={"footerNew"}
-            data-plasmic-override={overrides.footerNew}
-            claimCta={
-              <PlasmicLink__
-                data-plasmic-name={"claimBotoxFooter"}
-                data-plasmic-override={overrides.claimBotoxFooter}
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  projectcss.__wab_text,
-                  sty.claimBotoxFooter
-                )}
-                component={Link}
-                platform={"nextjs"}
-              >
-                {"Claim Your Special 30% Offer Now!"}
-              </PlasmicLink__>
-            }
-            className={classNames("__wab_instance", sty.footerNew)}
-          />
         </div>
       </div>
     </React.Fragment>

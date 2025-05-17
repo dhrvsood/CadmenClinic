@@ -42,10 +42,10 @@
     margin-bottom: 12px;
     min-width: 0;
     color: var(--sanity-heading3-color);
-    font-size: var(--sanity-heading3-font-size);
-    font-weight: var(--sanity-heading3-font-weight);
+    font-size: 32px;
+    font-weight: 500;
     line-height: var(--sanity-heading3-line-height);
-    font-family: var(--sanity-heading3-font-family);
+    font-family: "Cormorant Garamond", serif;
 }
 
 .p__vhRq {
@@ -56,7 +56,7 @@
     min-width: 0;
 
     font-size: var(--sanity-base-text-font-size);
-    font-weight: var(--sanity-heading3-font-weight);
+    font-weight: 400;
     color: var(--sanity-base-text-color);
 }
 

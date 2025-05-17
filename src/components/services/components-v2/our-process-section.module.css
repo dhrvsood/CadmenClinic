@@ -1,0 +1,298 @@
+.ourBotoxProcessSection {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    background: url("/plasmic/image_lab_2024/images/circlesSvg23.svg") top 50% left 50% / cover no-repeat,
+        #8F7162;
+    grid-column-start: 1 !important;
+    grid-column-end: -1 !important;
+    min-height: 0;
+    padding: 80px 0px;
+}
+
+.ourBotoxProcessSection> :global(.__wab_flex-container) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 0;
+}
+
+@media (max-width: 1200px) {
+    .ourBotoxProcessSection {
+        background: url("/plasmic/image_lab_2024/images/circlesSvg23.svg") top 50% left 50% / cover no-repeat,
+            #4c8d91;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+    .ourBotoxProcessSection {
+        width: 100%;
+        background: url("/plasmic/image_lab_2024/images/circlesSvg24.svg") top 50% left 50% / cover no-repeat,
+            #4c8d91;
+        grid-column-start: 1 !important;
+        grid-column-end: -1 !important;
+        padding: 40px 16px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+    .ourBotoxProcessSection> :global(.__wab_flex-container) {
+        margin-left: calc(0px - 0px);
+        width: calc(100% + 0px);
+        margin-top: calc(0px - 0px);
+        height: calc(100% + 0px);
+    }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+
+    .ourBotoxProcessSection> :global(.__wab_flex-container)>*,
+    .ourBotoxProcessSection> :global(.__wab_flex-container)> :global(.__wab_slot)>*,
+    .ourBotoxProcessSection> :global(.__wab_flex-container)>picture>img,
+    .ourBotoxProcessSection> :global(.__wab_flex-container)> :global(.__wab_slot)>picture>img {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+}
+
+
+.freeBox__caiCx {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-width: 1400px;
+    min-width: 0;
+    padding: 0px 32px;
+}
+
+.freeBox__caiCx> :global(.__wab_flex-container) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 0;
+    margin-top: calc(0px - 60px);
+    height: calc(100% + 60px);
+}
+
+.freeBox__caiCx> :global(.__wab_flex-container)>*,
+.freeBox__caiCx> :global(.__wab_flex-container)> :global(.__wab_slot)>*,
+.freeBox__caiCx> :global(.__wab_flex-container)>picture>img,
+.freeBox__caiCx> :global(.__wab_flex-container)> :global(.__wab_slot)>picture>img {
+    margin-top: 60px;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+    .freeBox__caiCx {
+        padding: 0px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+    .freeBox__caiCx> :global(.__wab_flex-container) {
+        margin-left: calc(0px - 0px);
+        width: calc(100% + 0px);
+        margin-top: calc(0px - 0px);
+        height: calc(100% + 0px);
+    }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+
+    .freeBox__caiCx> :global(.__wab_flex-container)>*,
+    .freeBox__caiCx> :global(.__wab_flex-container)> :global(.__wab_slot)>*,
+    .freeBox__caiCx> :global(.__wab_flex-container)>picture>img,
+    .freeBox__caiCx> :global(.__wab_flex-container)> :global(.__wab_slot)>picture>img {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+}
+
+.freeBox__feJCz {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    padding: 0px;
+}
+
+.freeBox__feJCz> :global(.__wab_flex-container) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: calc(0px - 12px);
+    height: calc(100% + 12px);
+}
+
+.freeBox__feJCz> :global(.__wab_flex-container)>*,
+.freeBox__feJCz> :global(.__wab_flex-container)> :global(.__wab_slot)>*,
+.freeBox__feJCz> :global(.__wab_flex-container)>picture>img,
+.freeBox__feJCz> :global(.__wab_flex-container)> :global(.__wab_slot)>picture>img {
+    margin-top: 12px;
+}
+
+
+.text__ncWOq {
+    position: relative;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    text-align: center;
+    font-family: "Cormorant Garamond", serif;
+    line-height: 92%;
+    letter-spacing: -2%;
+    font-size: 64px;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+    .text__ncWOq {
+        font-size: 40px;
+    }
+}
+
+
+.text__s6AqX {
+    position: relative;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    padding-bottom: 0px;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+    .text__s6AqX {
+        font-size: 16px;
+    }
+}
+
+
+.freeBox__ehNsr {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: auto;
+    max-width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+    .freeBox__ehNsr {
+        width: 100%;
+        height: auto;
+        min-width: 0;
+    }
+}
+
+
+.ourBotoxProcessContent {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin-top: 24px;
+    min-width: 0;
+    padding: 0px;
+}
+
+.ourBotoxProcessContent> :global(.__wab_flex-container) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 0;
+    margin-left: calc(0px - 60px);
+    width: calc(100% + 60px);
+}
+
+.ourBotoxProcessContent> :global(.__wab_flex-container)>*,
+.ourBotoxProcessContent> :global(.__wab_flex-container)> :global(.__wab_slot)>*,
+.ourBotoxProcessContent> :global(.__wab_flex-container)>picture>img,
+.ourBotoxProcessContent> :global(.__wab_flex-container)> :global(.__wab_slot)>picture>img {
+    margin-left: 60px;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+    .ourBotoxProcessContent {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+    .ourBotoxProcessContent> :global(.__wab_flex-container) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: calc(0px - 0px);
+        width: calc(100% + 0px);
+        margin-top: calc(0px - 60px);
+        height: calc(100% + 60px);
+    }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+
+    .ourBotoxProcessContent> :global(.__wab_flex-container)>*,
+    .ourBotoxProcessContent> :global(.__wab_flex-container)> :global(.__wab_slot)>*,
+    .ourBotoxProcessContent> :global(.__wab_flex-container)>picture>img,
+    .ourBotoxProcessContent> :global(.__wab_flex-container)> :global(.__wab_slot)>picture>img {
+        margin-left: 0px;
+        margin-top: 60px;
+    }
+}
+
+
+.botoxProcessCard___4G7G5 {
+    max-width: 100%;
+    width: 100%;
+    min-width: 0;
+    margin-left: 20px;
+}
+
+
+.img__ayxqX {
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    min-height: 0;
+}
+
+.img__ayxqX>picture>img {
+    object-fit: cover;
+}
+
+
+.processCta {
+    position: relative;
+    height: 48px;
+    z-index: 15;
+    margin-top: 60px;
+    flex-shrink: 0;
+    align-items: center;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+    .processCta {
+        width: 100%;
+        min-width: 0;
+        margin: 60px 0px 0px;
+    }
+}
+
+.text__sciw {
+    font-size: 16px;
+}

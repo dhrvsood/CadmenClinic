@@ -91,7 +91,7 @@ const Layout = ({ children }) => {
       <div id='main' className={`${shouldShowNavbar ? 'pt-10' : ''}`}>
         {children}
       </div>
-      {shouldShowNavbar && <Footer />}
+      {/* {shouldShowNavbar && <Footer />} */}
     </>
   )
 }

@@ -1,0 +1,10 @@
+.dynamicIcon {
+    object-fit: cover;
+    max-width: 100%;
+    color: #4c8d91;
+    width: 24px;
+    height: 24px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }

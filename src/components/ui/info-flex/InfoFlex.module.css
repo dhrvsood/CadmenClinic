@@ -1,0 +1,41 @@
+.wrap {
+  width: 100%;
+}
+
+.top {
+  display: flex;
+  width: 100%;
+}
+
+.topLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #EAECEE;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.topRight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #EAECEE;
+  border-radius: 12px;
+  flex: 1;
+  padding-left: 20px;
+}
+
+.edit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.bottom {
+  padding: 20px;
+  border: 1px solid #EAECEE;
+  border-radius: 12px;
+}

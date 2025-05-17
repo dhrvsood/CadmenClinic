@@ -1,112 +1,250 @@
 export const servicesData = {
     "botox": {
-        "promo": "Book Now for 10% Off Your First Visit!",
-        "title": "Botox® Wrinkle Relaxer Treatment",
-        "subTitle": "The perfect solution for those seeking to soften the appearance of fine lines and wrinkles.",
-        "duration": 30,
+        "title": "Top Botox Services",
+        "description": "Discover smoother, more youthful-looking skin with personalized care from our expert team, exclusive offers, and premium-quality results tailored just for you.",
         "slug": 'botox',
         "showResults": true,
-        "beforeAfterImages": {
-            "images": [
+        "id": "need-id",
+        //"promo": "Book Now for 10% Off Your First Visit!",
+        //"subTitle": "The perfect solution for those seeking to soften the appearance of fine lines and wrinkles.",
+        //"duration": 30,
+        // "beforeAfterImages": {
+        //     "images": [
+        //         {
+        //             "asset": {
+        //                 "url": "/before-after/botox-1.png"
+        //             }
+        //         },
+        //         {
+        //             "asset": {
+        //                 "url": "/before-after/botox-2.png"
+        //             }
+        //         }
+        //     ]
+        // },
+        "cost": 10.99,
+        "unit": "per unit",
+        "promoBadge": "New Patient Deal",
+        "reviews": {
+            "rating": 4.8,
+            "reviewCount": 123
+        },
+        "heroImage": {
+            "asset": {
+                "url": "/services-new/botox-seo-hero-bg.webp"
+            },
+            "alt": "Botox® Service Image"
+        },
+        "benefits": {
+            "title": "Benefits of Botox Procedure for a",
+            "highlightedText": "Radiant, Confident You",
+            "description": "Smooth wrinkles with natural results and minimal downtime.",
+            "benefitCards": [
                 {
-                    "asset": {
-                        "url": "/before-after/botox-1.png"
-                    }
+                    "icon": "/icons/hair.svg",
+                    "title": "Quick & Convenient",
+                    "titleNormal": "Results",
+                    "supportingText": "Botox softens wrinkles and fine lines for a refreshed, youthful appearance that looks completely natural. Our expert team ensures a subtle enhancement tailored to your unique features."
                 },
                 {
-                    "asset": {
-                        "url": "/before-after/botox-2.png"
+                    "icon": "/icons/Clock.svg",
+                    "title": "Quick & Convenient",
+                    "titleNormal": "",
+                    "supportingText": "A single Botox treatment provides results that can last up to 4 months, keeping your skin smooth and youthful for longer. Regular treatments help maintain your look effortlessly over time."
+                },
+                {
+                    "icon": "/icons/Clock.svg",
+                    "title": "Long-Lasting",
+                    "titleNormal": "Effects",
+                    "supportingText": "Botox treatments are fast, taking as little as 10 minutes, making it easy to fit into even the busiest schedule. With no significant downtime, you can return to your day right after your appointment."
+                },
+                {
+                    "icon": "/icons/Clock.svg",
+                    "title": "Preventative Care",
+                    "titleNormal": "",
+                    "supportingText": "A single Botox treatment provides results that can last up to 4 months, keeping your skin smooth and youthful for longer. Regular treatments help maintain your look effortlessly over time."
+                }
+            ]
+        },
+        "beforeAndAfter": {
+            "title": '',
+            "highlightedText": '',
+            "description": '',
+            "act": {
+                "link": "#",
+                "text": "Act Now"
+            },
+            "testimonials": [
+                {
+                    "title": "Julia's Results",
+                    "subtitle": "Results after one month with Botox",
+                    "tImage": "/before-after/botox-1.png",
+                    "insta": "@julia"
+                },
+                {
+                    "title": "Daria's Results",
+                    "subtitle": "Results after three weeks with Botox",
+                    "tImage": "/before-after/botox-1.png",
+                    "insta": "@daria"
+                },
+                {
+                    "title": "Anna's Results",
+                    "subtitle": "Results after three weeks with Botox",
+                    "tImage": "/before-after/botox-1.png",
+                    "insta": "@anna"
+                },
+                {
+                    "title": "Sarah's Results",
+                    "subtitle": "Results after three weeks with Botox",
+                    "tImage": "/before-after/botox-1.png",
+                    "insta": "@sarah"
+                }
+            ]
+        },
+        "theWhat": {
+            "title": 'and How Does It Work?',
+            "image": '/services-new/botox-how.png',
+            "highlightedText": 'What Is Botox',
+            "intro": 'Botox, short for Botulinum Toxin Type A, is a neurotoxin derived from Clostridium botulinum.',
+            "keyPointsTitle": "Science Behind Botox",
+            "footerText": "Here’s how it works: Botox blocks nerve signals to specific muscles, preventing them from contracting. By targeting the neuromuscular junction, it inhibits the release of acetylcholine—a neurotransmitter that triggers muscle movement. This temporary “freeze” allows the skin above these muscles to appear smoother and more refreshed.",
+            "act": {
+                "link": "#",
+                "text": "Act Now"
+            },
+            "keyPoints": [
+                {
+                    "description": "Botox is FDA-approved and trusted worldwide for both medical and aesthetic uses. This remarkable treatment works by temporarily relaxing targeted muscles, helping to reduce the appearance of fine lines and wrinkles caused by repeated facial expressions."
+                },
+                {
+                    "description": "Whether you’re looking to soften crow’s feet, forehead lines, or frown lines, Botox offers a safe and effective solution for achieving a rejuvenated appearance."
+                }
+            ]
+        },
+        "process": {
+            "title": 'Our Botox',
+            "highlightedText": 'Works',
+            "intro": 'From consultation to treatment, we make the process simpleand comfortable for natural, lasting results.',
+            "button": {
+                "link": "#",
+                "text": "Book Now"
+            },
+            "steps": [
+                {
+                    "title": "Consultation",
+                    "description": "Begin with a personalized consultation where our experts assess your skin and discuss your goals. We’ll create a tailored treatment plan to ensure optimal results that align with your needs.",
+                    "icon": "/icons/file.svg"
+                },
+                {
+                    "title": "Treatment",
+                    "description": "During your Botox session, a skilled practitioner will administer precise injections to targeted areas.The procedure is quick, minimally invasive, and designed for your comfort.",
+                    "icon": "/icons/needle.svg"
+                },
+                {
+                    "title": "Results",
+                    "description": "Enjoy smoother, younger-looking skin as the Botox begins to work over the next few days. With minimal downtime, you’ll look refreshed and confident in no time.",
+                    "icon": "/icons/verified.svg"
+                }
+            ]
+        },
+        "prices": {
+            "title": 'Affordable Botox Treatments',
+            "highlightedText": 'Tailored to You',
+            "description": 'Affordable, transparent Botox pricing tailored to your goals and budget.',
+            "button": {
+                "link": "#",
+                "text": "Book Now"
+            },
+            "cards": [
+                {
+                    "brandName": "Botox",
+                    "discountedPrice": "9.99",
+                    "regularPrice": "10.99",
+                    "items": [
+                        {
+                            "title": "Versatile Treatment",
+                            "description": "Botox targets facial muscles to address a variety of cosmetic concerns."
+                        },
+                        {
+                            "title": "Wrinkle Reduction",
+                            "description": "Effectively minimizes fine lines and wrinkles for a smoother appearance."
+                        },
+                        {
+                            "title": "Natural Results",
+                            "description": "Delivers a refreshed, rejuvenated look while preserving natural expressions."
+                        }
+                    ]
+                },
+                {
+                    "brandName": "Dysport®",
+                    "discountedPrice": "9.99",
+                    "regularPrice": "10.99",
+                    "items": [
+                        {
+                            "title": "Targeted for Larger Areas",
+                            "description": "Dysport’s unique diffusion pattern effectively addresses broader treatment zones."
+                        },
+                        {
+                            "title": "Dynamic Wrinkle Reduction",
+                            "description": "Designed to minimize the appearance of dynamic wrinkles across the face."
+                        },
+                        {
+                            "title": "Rapid Action",
+                            "description": "Spreads quickly to cover a wider surface for efficient, natural-looking results."
+                        }
+                    ]
+                }
+            ]
+
+        },
+        "results": {
+            "title": 'How Long Do Botox',
+            "highlightedText": 'Results Last?',
+            "description": "On average, Botox results last between 3 to 4 months. The duration varies based on factors like the treatment area, your metabolism, and how expressive your facial muscles are. For first-time users, results may fade slightly faster, while those with consistent Botox treatments may find their results lasting longer over time.",
+            "selectedPills": [
+                {
+                    "name": "Pill Title 1",
+                    "content": {
+                        "title": "Heading for Pill 1",
+                        "description": "Short paragraph about this pill.",
+                        "icon": {
+                            "_type": "image",
+                            "asset": {
+                                "_ref": "image-someRefValue-500x500-jpg",
+                                "_type": "reference"
+                            }
+                        },
+                        "image": {
+                            "_type": "image",
+                            "asset": {
+                                "_ref": "image-anotherRefValue-800x600-jpg",
+                                "_type": "reference"
+                            }
+                        }
                     }
                 }
             ]
         },
-        "cost": 10.99,
-        "heroImage": {
-            "asset": {
-                "url": "/media/services/botox-and-wrinkle-relaxers.jpg"
-            },
-            "alt": "Botox® Service Image"
+        "safe": {
+            "title": 'Is Botox',
+            "highlightedText": 'Safe?',
+            "subHeading": 'Addressing Common Concerns',
+            "briefDescription": "Botox is a safe, non-invasive treatment that smooths wrinkles and prevents signs of aging, delivering natural, long-lasting results. Tailored to your unique facial structure, it offers a refreshed, youthful look with minimal downtime, enhancing your beauty and boosting your confidence.",
+            "image": "/services-new/botox-safe.png",
+            "sideEffectsBlock": {
+                "subtitle": "Possible Side Effects:",
+                "intro": "Common side effects include minor bruising, swelling at the injection site, and, in rare cases, headaches or mild flu-like symptoms. These typically fade within a few days. More serious side effects, such as drooping eyelids, are rare and often related to improper technique, underscoring the importance of choosing a qualified provider."
+
+            }
         },
-        "benefits": [
-            "Relaxes facial muscle and reduces wrinkles",
-            "Creates a smoother, youthful-looking appearance",
-            "Safe, FDA approved treatment used medically for over 40 years",
-            "Highly effective with zero downtime"
-        ],
-        "conditions": [
-            {
-                "icon": {
-                    "asset": {
-                        "url": "/icons/lines-and-wrinkles.webp"
-                    }
-                },
-                "title": "Lines and Wrinkles"
-            },
-            {
-                "icon": {
-                    "asset": {
-                        "url": "/icons/excessive-sweating.webp"
-                    }
-                },
-                "title": "Excessive Sweating"
-            }
-        ],
-        "howItWorks": [
-            'Unveil smoother, softer-looking skin through precise neuromodulator treatments. By injecting micro-doses of neuromodulators at the nerve endings beneath wrinkles, we temporarily block impulses, causing the facial muscles to relax. The outcome? Renewed, rejuvenated skin with a softer, smoother appearance. At CADMEN Clinic, we offer a range of options including Botox, Xeomin, and Dysport neuromodulators, allowing you to select the best fit for your unique needs.',
-            'Botox: Renowned as a versatile option, Botox effectively targets facial muscles to minimize wrinkles and fine lines. Its subtle approach offers a rejuvenated look, while maintaining your natural expression.',
-            'Xeomin: Similar to Botox, Xeomin specializes in smoothing facial lines and creases. It distinguishes itself by being a "naked" injectable, free of additional proteins, potentially reducing the risk of resistance developing.',
-            'Dysport: With its unique diffusion pattern, Dysport is designed to address larger treatment areas effectively. It rapidly spreads to target a broader surface, making it an excellent choice for reducing the appearance of dynamic wrinkles across the face.'
-        ],
-        "pricingDescription": "Pricing details for the service.",
-        "packages": [
-            {
-                "title": "Neurotoxins",
-                "measurementUnit": "Per Unit",
-                "packageItems": [
-                    {
-                        "name": "Botox",
-                        "standardPrice": 10.99,
-                        "exclusivePrice": 9.99
-                    },
-                    {
-                        "name": "Dysport®",
-                        "standardPrice": 10.99,
-                        "exclusivePrice": 9.99
-                    }
-                ]
-            }
-        ],
-        "packagesImage": {
-            "asset": {
-                "url": "/services/botox-pricing.webp"
-            },
-            "alt": "Botox® Pricing Image"
+        "cta": {
+            "titleStart": 'Want to learn more about if',
+            "highlightedText": 'Botox is right',
+            "titleEnd": 'for you?',
+            "description": "Schedule a Consultation with Our Team to discuss a treatment plan tailored to you.",
+            "ctaText": "Book Now",
         },
-        "faqs": [
-            {
-                "question": "Will my face look unnatural or overdone?",
-                "answer": "Botox® requires skillful technique. When administered by a licensed, trained medical expert well-versed in facial anatomy, Botox® Cosmetic ensures subtle, natural-looking results that maintain your individuality while minimizing noticeable lines. At CADMEN Clinic, our team is comprised of expertly trained and licensed professionals, ensuring your confidence in achieving the desired outcome."
-            },
-            {
-                "question": "What is the downtime?",
-                "answer": "What's fantastic about this treatment is that there's practically no downtime involved. You may notice minor red bumps resembling bug bites initially, but they typically vanish within an hour, allowing you to return to work seamlessly without anyone noticing a thing."
-            },
-            ,
-            {
-                "question": "When will I see the results?",
-                "answer": "Expect visible changes to manifest within approximately 3 to 5 days. During this period, you'll notice increased skin firmness, reduced movement, and diminished wrinkling in the treated areas. The complete outcomes may become apparent within up to 2 weeks. If you're addressing static lines and wrinkles, you may observe their gradual improvement over time, especially with consistent and repeated treatments."
-            },
-            ,
-            {
-                "question": "How long do the results last?",
-                "answer": "Everyone's results last for different lengths of time. Generally, you can expect results to last 3-4 months."
-            },
-            ,
-            {
-                "question": "Is it painful?",
-                "answer": "For most individuals, neuromodulator injections are relatively painless. However, there might be some who encounter mild discomfort or a slight pinching sensation during the injection procedure."
-            }
-        ]
+
     },
     "dermal-fillers": {
         "promo": "Book Now for 10% Off Your First Visit!",
@@ -1075,7 +1213,7 @@ export const servicesData = {
         "duration": 15,
         "cost": 79,
         "comingSoon": true,
-        "slug": 'semaglutide-therapy', 
+        "slug": 'semaglutide-therapy',
         "heroImage": {
             "asset": {
                 "url": "/media/services/semaglutide.webp"
@@ -1163,7 +1301,7 @@ export const servicesData = {
                 "question": "Disclaimer",
                 "answer": "*Disclaimer: The FDA-approved brand name drugs, such as Saxenda®, Victoza®, Wegovy®, and Ozempic® are exclusively available from the Novo Nordisk™ company. Mounjaro™ is exclusively available from Eli Lilly and Company™. CADMEN Clinic does not claim any affiliation with, or endorsement from, the above mentioned products or entities. We do not offer any of the above mentioned products, anyone seeking said products should discuss options with their licensed healthcare provider or pharmacist."
             }
-            
+
         ]
     },
     "exosomes": {

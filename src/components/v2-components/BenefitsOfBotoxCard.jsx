@@ -5,7 +5,7 @@ import sty from './BenefitsOfBotoxCard.module.css';
 
 const BenefitsOfBotoxCard = ({ icon, title, slot }) => {
   return (
-       <div className={classNames(sty.root, 'benefits-of-botox-card')}>
+    <div className={classNames(sty.root, 'benefits-of-botox-card')}>
       <div className={classNames(sty.freeBox__jxaN)}>
         <div className={classNames(sty.freeBox__ntqs)}>
           <div className="__wab_flex-container ρfc">

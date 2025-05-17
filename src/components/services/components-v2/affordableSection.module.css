@@ -1,0 +1,266 @@
+.affordableBotoxSection {
+  background: rgba(235, 245, 245, 1);
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  height: auto;
+  grid-column-start: 1 !important;
+  grid-column-end: -1 !important;
+  padding: 80px 0;
+}
+
+.affordableBotoxSection > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: calc(0px - 56px);
+  height: calc(100% + 56px);
+}
+
+.affordableBotoxSection > :global(.__wab_flex-container) > *,
+.affordableBotoxSection > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.affordableBotoxSection > :global(.__wab_flex-container) > picture > img,
+.affordableBotoxSection > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
+  margin-top: 56px;
+}
+
+@media (max-width: 1200px) {
+  .affordableBotoxSection {
+    padding: 80px 0px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .affordableBotoxSection {
+    width: 100%;
+    grid-column-start: 1 !important;
+    grid-column-end: -1 !important;
+    padding: 40px 16px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .affordableBotoxSection > :global(.__wab_flex-container) {
+    margin-left: calc(0px - 0px);
+    width: calc(100% + 0px);
+    margin-top: calc(0px - 32px);
+    height: calc(100% + 32px);
+  }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .affordableBotoxSection > :global(.__wab_flex-container) > *,
+  .affordableBotoxSection > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+  .affordableBotoxSection > :global(.__wab_flex-container) > picture > img,
+  .affordableBotoxSection > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
+    margin-left: 0px;
+    margin-top: 32px;
+  }
+}
+
+.textContainer {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: column;
+}
+
+.textContainer > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: calc(0px - 12px);
+  height: calc(100% + 12px);
+}
+
+.textContainer > :global(.__wab_flex-container) > *,
+.textContainer > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.textContainer > :global(.__wab_flex-container) > picture > img,
+.textContainer > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
+  margin-top: 12px;
+}
+
+@media (max-width: 1200px) {
+  .textContainer {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .textContainer {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .textContainer > :global(.__wab_flex-container) {
+    min-width: 0;
+  }
+}
+
+.sectionTitle {
+  display: block;
+  font-size: 64px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  line-height: 0.92;
+  position: relative;
+  width: 658px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .sectionTitle {
+    width: 100%;
+    font-size: 40px;
+    min-width: 0;
+  }
+}
+
+.sectionDescription {
+  display: block;
+  font-size: 18px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(83, 84, 86, 1);
+  align-self: stretch;
+  position: relative;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .sectionDescription {
+    letter-spacing: normal;
+    font-size: 16px;
+  }
+}
+
+.cardsContainer {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 0;
+  padding: 0px;
+}
+
+@media (max-width: 1200px) {
+  .cardsContainer {
+    padding-bottom: 20px;
+    overflow: auto;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .cardsContainer {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto !important;
+  }
+}
+
+/* Affordable Botox Card Variations */
+.botoxCardFullHeight {
+  height: 100%;
+  min-height: 0;
+}
+
+@media (max-width: 1200px) {
+  .botoxCardFullHeight {
+    width: 400px;
+    flex-shrink: 0;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .botoxCardFullHeight {
+    width: auto;
+    height: auto;
+  }
+}
+
+.botoxCardStandard {
+  max-width: 100%;
+  height: 100%;
+  min-height: 0;
+}
+
+@media (max-width: 1200px) {
+  .botoxCardStandard {
+    width: 400px;
+    flex-shrink: 0;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .botoxCardStandard {
+    width: auto;
+    height: auto;
+  }
+}
+
+.botoxCardResponsive {
+  max-width: 100%;
+  height: 100%;
+  min-height: 0;
+}
+
+@media (max-width: 1200px) {
+  .botoxCardResponsive {
+    width: 400px;
+    flex-shrink: 0;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .botoxCardResponsive {
+    width: auto;
+    height: auto;
+  }
+}
+
+/* Used for cards within this section */
+.botoxCardItem {
+  max-width: 100%;
+  height: 100%;
+  min-height: 0;
+  margin-left: 20px;
+}
+
+@media (max-width: 1200px) {
+  .botoxCardItem {
+    width: 400px;
+    flex-shrink: 0;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .botoxCardItem {
+    width: auto;
+    height: auto;
+  }
+}
+
+.ctaButton {
+  position: relative;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .ctaButton {
+    width: 100%;
+    min-width: 0;
+  }
+}
