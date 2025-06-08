@@ -1,0 +1,102 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  position: relative;
+  min-width: 0;
+  padding: 0px;
+}
+.freeBox__hLqWc {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  max-width: 100%;
+  margin-bottom: -22px;
+  z-index: 2;
+  background: #ffffff;
+  flex-shrink: 0;
+  border-radius: 999px;
+  padding: 6px;
+  border-width: 2px;
+  border-style: solid;
+}
+.p___9Gv9Y {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  text-align: center;
+  font-weight: 600;
+}
+.freeBox__jScD {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  border-radius: 28px;
+  padding: 0px;
+  border: 2px solid #007476;
+}
+.img__ifBly {
+  object-fit: cover;
+  max-width: 100%;
+}
+.img__ifBly > picture > img {
+  object-fit: cover;
+}
+.freeBox__nFm {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  margin-top: 20px;
+  min-width: 0;
+  padding: 0px;
+}
+.freeBox__nFm > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 0;
+  margin-top: calc(0px - 20px);
+  height: calc(100% + 20px);
+}
+.freeBox__nFm > :global(.__wab_flex-container) > *,
+.freeBox__nFm > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox__nFm > :global(.__wab_flex-container) > picture > img,
+.freeBox__nFm
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 20px;
+}
+.h4 {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  text-align: center;
+}
+.p__q0LqM {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  text-align: center;
+}

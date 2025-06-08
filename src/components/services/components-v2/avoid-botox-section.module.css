@@ -1,0 +1,377 @@
+.avoidBotoxSection {
+    display: grid;
+    position: relative;
+    align-content: flex-start;
+    justify-items: center;
+    width: 100%;
+    grid-row-gap: 56px;
+    grid-column-start: 1 !important;
+    grid-column-end: -1 !important;
+    grid-template-columns:
+        var(--plsmc-viewport-gap) 1fr minmax(0, var(--plsmc-wide-chunk)) min(var(--plsmc-standard-width),
+            calc(100% - var(--plsmc-viewport-gap) - var(--plsmc-viewport-gap))) minmax(0, var(--plsmc-wide-chunk)) 1fr var(--plsmc-viewport-gap);
+    padding: 80px 60px;
+}
+
+.avoidBotoxSection > * {
+    grid-column: 4;
+}
+
+@media (max-width: 1200px) {
+    .avoidBotoxSection > * {
+        grid-column: 4;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+    .avoidBotoxSection {
+        grid-row-gap: 32px;
+        padding: 40px 16px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+    .avoidBotoxSection > * {
+        grid-column: 4;
+    }
+}
+
+.introContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 627px;
+    height: auto;
+    max-width: 100%;
+    padding: 0px;
+}
+
+.introContainer > :global(.__wab_flex-container) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: calc(0px - 12px);
+    height: calc(100% + 12px);
+}
+
+.introTitle {
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    text-align: center;
+    font-size: 64px;
+    line-height: 92%;
+    letter-spacing: -2%;
+    font-family: "Cormorant Garamond", serif;
+    min-width: 0;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+    .introTitle {
+        font-size: 40px;
+    }
+}
+
+.introDescription {
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    text-align: center;
+    font-size: 18px;
+    min-width: 0;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+    .introDescription {
+        font-size: 16px;
+    }
+}
+
+.cardsContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    min-width: 0;
+    padding: 0px;
+}
+
+.cardsContainer > :global(.__wab_flex-container) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 0;
+    margin-top: calc(0px - 30px);
+    height: calc(100% + 30px);
+}
+
+.cardsContainer > :global(.__wab_flex-container) > *,
+.cardsContainer > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.cardsContainer > :global(.__wab_flex-container) > picture > img,
+.cardsContainer > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
+    margin-top: 30px;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+    .cardsContainer {
+        display: flex;
+        flex-direction: column;
+        max-width: none;
+        width: 100%;
+        justify-self: flex-start;
+        min-width: 0;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+    .cardsContainer > :global(.__wab_flex-container) {
+        align-items: stretch;
+        justify-content: flex-start;
+        flex-direction: column;
+        min-width: 0;
+        margin-left: calc(0px - 0px);
+        width: calc(100% + 0px);
+        margin-top: calc(0px - 16px);
+        height: calc(100% + 16px);
+    }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+    .cardsContainer > :global(.__wab_flex-container) > *,
+    .cardsContainer > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+    .cardsContainer > :global(.__wab_flex-container) > picture > img,
+    .cardsContainer > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
+        margin-left: 0px;
+        margin-top: 16px;
+    }
+}
+
+.cardsWrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    min-width: 0;
+    padding: 0px;
+}
+
+.cardsWrapper > :global(.__wab_flex-container) {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 0;
+    margin-left: calc(0px - 20px);
+    width: calc(100% + 20px);
+}
+
+.cardsWrapper > :global(.__wab_flex-container) > *,
+.cardsWrapper > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.cardsWrapper > :global(.__wab_flex-container) > picture > img,
+.cardsWrapper > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
+    margin-left: 20px;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+    .cardsWrapper {
+        overflow: visible;
+        max-width: none;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+    .cardsWrapper > :global(.__wab_flex-container) {
+        justify-content: flex-start;
+        align-items: stretch;
+        flex-direction: column;
+        margin-left: calc(0px - 0px);
+        width: calc(100% + 0px);
+        margin-top: calc(0px - 16px);
+        height: calc(100% + 16px);
+    }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+    .cardsWrapper > :global(.__wab_flex-container) > *,
+    .cardsWrapper > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+    .cardsWrapper > :global(.__wab_flex-container) > picture > img,
+    .cardsWrapper > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
+        margin-left: 0px;
+        margin-top: 16px;
+    }
+}
+
+.cardsGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    /* Adjust the gap as needed */
+    justify-content: flex-start;
+}
+
+/* Card item styling for desktop (3 per row) */
+.cardsGrid .cardItem {
+    /* Override the default width for a 3-column layout */
+    flex: 0 0 calc(33.33% - 32px);
+}
+
+/* Mobile adjustments: 1 card per row */
+@media (max-width: 768px) {
+    .cardsGrid .cardItem {
+        flex: 0 0 100%;
+        margin-left: 0;
+        /* Remove left margin if necessary */
+    }
+}
+
+/* Card item styling for desktop (3 per row) */
+.cardsGrid .cardItem {
+    /* Override the default width for a 3-column layout */
+    flex: 0 0 calc(33.33% - 32px);
+}
+
+/* Mobile adjustments: 1 card per row */
+@media (max-width: 768px) {
+    .cardsGrid .cardItem {
+        flex: 0 0 100%;
+        margin-left: 0;
+        /* Remove left margin if necessary */
+    }
+}
+
+.cardItem {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 0;
+    min-height: 0;
+    padding: 0px;
+    margin-left: 20px;
+    margin-bottom: 24px;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+    .cardItem {
+        width: 100%;
+        height: auto;
+        min-width: 0;
+    }
+}
+
+.cardTitle {
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    background: #f8f8f8;
+    font-family: "Cormorant", serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    color: #080909;
+    text-align: center;
+    min-width: 0;
+    border-radius: 16px;
+    padding: 24px 0px;
+    border: 1px solid #eaecee;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+    .cardTitle {
+        padding: 16px 0px;
+    }
+}
+
+.cardImage {
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+    height: 280px;
+    min-width: 0;
+    flex-shrink: 0;
+    border-radius: 12px;
+}
+
+.cardImage > picture > img {
+    object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+    .cardImage {
+        height: 200px;
+        flex-shrink: 0;
+    }
+}
+
+.cardDescription {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    background: #f8f8f8;
+    color: #535556;
+    min-width: 0;
+    min-height: 0;
+    border-radius: 16px;
+    padding: 24px;
+    border: 1px solid #eaecee;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+    .cardDescription {
+        font-size: 12px;
+        padding: 16px;
+    }
+}
+
+.cardList {
+    display: flex;
+    flex-direction: column;
+    background: #f8f8f8;
+    height: 100%;
+    min-height: 0;
+    border-radius: 16px;
+    padding: 24px 24px 24px 34px;
+    border: 1px solid #eaecee;
+}
+
+.cardList > :global(.__wab_flex-container) {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-height: 0;
+    margin-top: calc(0px - 10px);
+    height: calc(100% + 10px);
+}
+
+.cardList > :global(.__wab_flex-container) > *,
+.cardList > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.cardList > :global(.__wab_flex-container) > picture > img,
+.cardList > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
+    margin-top: 10px;
+}
+
+.cardListItem {
+    list-style: disc;
+    margin-top: 10px;
+}
+
+.highlightedText {
+    font-style: italic;
+    color: #D19D51;
+}
+
+.normalTitle {
+    color: #302E33;
+}

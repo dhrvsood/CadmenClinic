@@ -1,0 +1,288 @@
+.benefitsSection {
+
+  background:
+    url('/plasmic/image_lab_2024/images/circlesSvg14.svg') top 50% left 50% /
+      cover repeat,
+    #F4F3EF;
+  overflow: hidden;
+
+}
+
+
+/* Section wrapper for overall benefits content */
+.sectionWrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 0px;
+}
+
+.sectionWrapper > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 0;
+  margin-top: calc(0px - 54px);
+  height: calc(100% + 54px);
+}
+
+.sectionWrapper > :global(.__wab_flex-container) > *,
+.sectionWrapper > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.sectionWrapper > :global(.__wab_flex-container) > picture > img,
+.sectionWrapper
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 54px;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .sectionWrapper > :global(.__wab_flex-container) {
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 0px;
+    width: 100%;
+    margin-top: calc(0px - 32px);
+    height: calc(100% + 32px);
+  }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .sectionWrapper > :global(.__wab_flex-container) > *,
+  .sectionWrapper > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+  .sectionWrapper > :global(.__wab_flex-container) > picture > img,
+  .sectionWrapper
+    > :global(.__wab_flex-container)
+    > :global(.__wab_slot)
+    > picture
+    > img {
+    margin-left: 0px;
+    margin-top: 32px;
+  }
+}
+
+/* Header container for title and description */
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 663px;
+  min-width: 0;
+  padding: 0px;
+}
+
+.headerContainer > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 0;
+  margin-top: calc(0px - 12px);
+  height: calc(100% + 12px);
+}
+
+.headerContainer > :global(.__wab_flex-container) > *,
+.headerContainer > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.headerContainer > :global(.__wab_flex-container) > picture > img,
+.headerContainer
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 12px;
+}
+
+@media (max-width: 1200px) {
+  .headerContainer {
+    padding-right: 32px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .headerContainer {
+    padding: 0px 16px;
+  }
+}
+
+.sectionTitle {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  text-align: center;
+  line-height: 110%;
+  letter-spacing: -2%;
+  color: var(--sanity-heading2-color);
+  font-size: var(--sanity-heading2-font-size);
+  font-weight: var(--sanity-heading2-font-weight);
+  letter-spacing: var(--sanity-heading2-letter-spacing);
+  line-height: var(--sanity-heading2-line-height);
+  font-family: var(--sanity-heading2-font-family);
+}
+
+.sectionDescription {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  color: #434445;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 0px;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .sectionDescription {
+    font-size: 16px;
+  }
+}
+
+/* Cards container for benefit cards */
+.cardsContainer {
+  display: flex;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  flex-direction: row;
+  min-width: 0;
+  padding: 0px;
+}
+
+.cardsContainer > :global(.__wab_flex-container) {
+  flex-direction: row;
+  min-width: 0;
+  margin-left: calc(0px - 30px);
+  width: calc(100% + 30px);
+}
+
+.cardsContainer > :global(.__wab_flex-container) > *,
+.cardsContainer > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.cardsContainer > :global(.__wab_flex-container) > picture > img,
+.cardsContainer
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 30px;
+}
+
+@media (max-width: 1200px) {
+  .cardsContainer {
+    overflow: auto;
+    padding-bottom: 20px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .cardsContainer {
+    flex-direction: row;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .cardsContainer > :global(.__wab_flex-container) {
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: row;
+    margin-left: calc(0px - 16px);
+    width: calc(100% + 16px);
+    margin-top: 0px;
+    height: 100%;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .cardsContainer > :global(.__wab_flex-container) > *,
+  .cardsContainer > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+  .cardsContainer > :global(.__wab_flex-container) > picture > img,
+  .cardsContainer
+    > :global(.__wab_flex-container)
+    > :global(.__wab_slot)
+    > picture
+    > img {
+    margin-left: 16px;
+    margin-top: 0px;
+  }
+}
+
+/* Wrapper for the flex container of cards */
+.cardsWrapper {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  flex-direction: row;
+  padding: 0px;
+  gap: 20px;
+}
+
+@media (max-width: 1200px) {
+  .cardsWrapper {
+    margin-right: 32px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .cardsWrapper > :global(.__wab_flex-container) {
+    margin-left: calc(0px - 30px);
+    width: calc(100% + 30px);
+    margin-top: 0px;
+    height: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .cardsWrapper > :global(::__wab_flex-container) > *,
+  .cardsWrapper > :global(.__wab_flex-container) > :global(::__wab_slot) > *,
+  .cardsWrapper > :global(.__wab_flex-container) > picture > img,
+  .cardsWrapper
+    > :global(::__wab_flex-container)
+    > :global(::__wab_slot)
+    > picture
+    > img {
+    margin-left: 30px;
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .cardsWrapper {
+    gap: 10px;
+    width: auto;
+    max-width: none;
+  }
+}
+
+.cardSupportingText {
+  display: block;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 24px;
+  color: rgba(83, 84, 86, 1);
+  align-self: stretch;
+  position: relative;
+}
+
+.cardTitleText {
+  display: block;
+  font-size: 24px;
+  text-align: left;
+  letter-spacing: 0;
+  line-height: 30px;
+  color: #080909;
+  position: relative;
+  font-family: 'Cormorant', serif;
+}

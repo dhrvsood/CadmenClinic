@@ -1,0 +1,13 @@
+.badgeOne {
+    position: absolute;
+    top: 75%;
+    left: 79px;
+    width: auto;
+}
+
+.badgeTwo {
+    position: absolute;
+    top: 25%;
+    right: 80px;
+    width: auto;
+}

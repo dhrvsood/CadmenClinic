@@ -1,0 +1,26 @@
+.sectionContainer {
+  padding-top: 8vh;
+  /* height: auto; */
+}
+
+.pricingBadge {
+  border-radius: 50px;
+  border: #ffffff33 1px solid;
+  padding: 4px;
+  padding-right: 16px;
+}
+
+.reviwBadge {
+  border-radius: 50px;
+  border: #ffffff33 1px solid;
+  padding: 2px;
+  padding-right: 16px;
+}
+
+.reviwBadgeStars {
+  border-radius: 50px;
+  border: #ffffff33 1px solid;
+  padding: 2px;
+  padding-right: 8px;
+  padding-left: 8px;
+}

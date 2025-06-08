@@ -1,0 +1,11 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  max-width: 874px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 40px 16px 72px 16px;
+}

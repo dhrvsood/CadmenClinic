@@ -7,6 +7,7 @@ export default function Document() {
         <link rel="Shortcut Icon" href="icon.png" />
       </Head>
       <body>
+        <div id="modal-root"></div>
         <Main />
         <NextScript />
       </body>

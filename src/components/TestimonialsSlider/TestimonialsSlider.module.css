@@ -1,0 +1,65 @@
+.wrapper {
+  width: 101.5%;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+@media screen and (max-width: 414px) {
+  .nav {
+    margin-top: 16px;
+  }
+}
+
+.navButton {
+  display: flex;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 56px;
+  width: 56px;
+  justify-content: center;
+  align-items: center;
+}
+
+.prevLite {
+  composes: navButton;
+  border: 1px solid #EAECEE;
+  background-color: #8f7162e6;
+}
+
+.prevDark {
+  composes: navButton;
+  background-color: #ECF6F6;
+}
+
+.nextLite {
+  composes: navButton;
+  border: 1px solid #EAECEE;
+  background-color: #8f7162e6;
+}
+
+.nextDark {
+  composes: navButton;
+  background-color: #ECF6F6;
+}
+
+.slider {
+  gap: 20px;
+}
+
+.slide {
+  padding: 0 10px;
+}
+
+.bottomStrip {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+  align-items: center;
+  padding: 0 10px;
+}
