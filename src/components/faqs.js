@@ -19,7 +19,7 @@ const Faqs = ({ data, title }) => (
           aria-label='Frequently Asked Questions'
           className='px-5 py-10'
         >
-          {data.map((faq, index) => (
+          {/* {data.map((faq, index) => (
             <li key={index} className='pb-10'>
               <Disclosure>
                 {({ open }) => (
@@ -48,7 +48,7 @@ const Faqs = ({ data, title }) => (
                 )}
               </Disclosure>
             </li>
-          ))}
+          ))} */}
         </ul>
       </div>
     </Container>

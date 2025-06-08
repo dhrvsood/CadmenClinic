@@ -15,8 +15,6 @@ import BeforeAfterSection from '@/components/services/components-v2/before-after
 import WhatAreLipFillersSection from '@/components/services/components-v2/what-are-lip-filler-section';
 import OurProcessSection from '@/components/services/components-v2/our-process-section';
 import AffordableBotoxSection from '@/components/services/components-v2/affordableSection';
-import AreasInteractiveSection from '@/components/services/components-v2/areas-interactive-section';
-import ResultsSection from '@/components/services/components-v2/result-section';
 import CtaSection from '@/components/services/components-v2/cta-section';
 import IsSafeSection from '@/components/services/components-v2/is-safe-section';
 
@@ -27,6 +25,7 @@ const ServicePage = () => {
     const showLegacy = serviceName !== 'botox'
 
     useEffect(() => {
+        console.log('serviceName:', serviceName);
         if (serviceName) {
             const fetchedServiceData = servicesData[serviceName];
             console.log(fetchedServiceData);
@@ -342,9 +341,8 @@ const ServicePage = () => {
                     <WhatAreLipFillersSection data={service.theWhat} serviceId={service.serviceId} />
                     <OurProcessSection data={service.process} serviceId={service.serviceId} />
                     <AffordableBotoxSection data={service.prices} serviceId={service.serviceId} />
-                    {/* <ResultsSection data={service.results} /> */}
                     <CtaSection data={service.cta} serviceId={service.serviceId} />
-                    <IsSafeSection data={service.safe} />
+                    
                 </>
             )}
         </>
