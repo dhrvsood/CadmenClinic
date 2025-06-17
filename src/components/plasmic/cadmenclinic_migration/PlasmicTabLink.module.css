@@ -1,0 +1,30 @@
+.root {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  position: relative;
+  padding: 10px 16px;
+}
+.rootselected {
+  background: #9ee6e8;
+  border-radius: 10px;
+}
+.text {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  color: #565656;
+  text-align: center;
+}
+.textselected {
+  font-weight: 600;
+  color: #000000;
+}
+.root:hover .text {
+  font-weight: 600;
+}

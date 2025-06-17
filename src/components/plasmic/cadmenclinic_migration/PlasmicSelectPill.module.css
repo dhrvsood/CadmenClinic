@@ -1,0 +1,36 @@
+.root {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  position: relative;
+  cursor: pointer;
+  background: #ffffff;
+  border-radius: 500px;
+  padding: 8px 20px;
+  border: 1px solid #d9dcde;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .root {
+    width: 100%;
+    min-width: 0;
+  }
+}
+.rootselected {
+  justify-content: center;
+  align-items: center;
+  background: #9a7f71;
+}
+.text {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  text-align: center;
+}
+.textselected {
+  color: #ffffff;
+}

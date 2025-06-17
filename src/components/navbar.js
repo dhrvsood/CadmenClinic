@@ -12,9 +12,9 @@ import siteLogo from '../../public/site-logo.png';
 
 const navigation = {
   pages: [
-    { name: 'Conditions', href: '/conditions' },
-    { name: 'About', href: '/about' },
+    // { name: 'Conditions', href: '/conditions' },
     { name: 'Shop', href: 'https://e370ne-nc.myshopify.com/collections/frontpage' },
+    { name: 'About', href: '/about' },
     { name: 'Blog', href: '/blog' },
   ]
 }
@@ -109,7 +109,7 @@ const Navbar = () => {
                                     'hover:border-b-2'
                                   )}
                                 >
-                                  Services
+                                  In Studio Treatments
                                 </Popover.Button>
                               </div>
 
