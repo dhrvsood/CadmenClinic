@@ -41,7 +41,7 @@ const SlideContent = ({ provider }) => {
       >
         <p className='text-sm'>{provider.bio}</p>
         <blockquote className='pt-5 text-sm italic'>
-          "{provider.quote}"
+          &quot;{provider.quote}&quot;
         </blockquote>
       </div>
     </div>

@@ -22,7 +22,7 @@ const EmailBanner = () => (
           <p className='max-w-sm text-xs text-white'>
             You agree to subscribe to our newsletter and receive periodic
             updates, news, and special offers from ImageLab Med Spa. You may
-            unsubscribe at any time by clicking the "unsubscribe" link at the
+            unsubscribe at any time by clicking the &quot;unsubscribe&quot; link at the
             bottom of our emails.
           </p>
         </div>

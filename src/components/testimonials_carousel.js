@@ -15,7 +15,7 @@ import FadeInOnScroll from './fadeIn'
 const SlideContent = ({ cat }) => (
   <div className='flex flex-col justify-between relative cursor-grab rounded-md border border-black text-black px-5 py-5 h-[275px] lg:h-[375px] xl:h-[275px]'>
     <p className='text-left text-sm font-bold'>
-      "{cat.text}"
+      &quot;{cat.text}&quot;
     </p>
     <div className='flex flex-row w-full justify-center items-center space-x-2 mt-3'>
       <p class="font-bold">{cat.person}</p>

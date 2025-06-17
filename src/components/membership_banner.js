@@ -11,7 +11,7 @@ const MembershipBanner = () => (
             ImageLab Med Spa Membership
           </h2>
           <p className='leading-relaxed'>
-            Elevate your self-care experience with ImageLab's membership
+            Elevate your self-care experience with ImageLab&apos;s membership
             program. Unlock a world of benefits, including exclusive discounts,
             special gifts, VIP events, and premium promotions on our most
             sought-after treatments.
