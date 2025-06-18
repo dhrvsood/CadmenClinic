@@ -49,9 +49,12 @@ import sty from "./CadmenPRPLander.module.css"; // plasmic-import: 9rME71zJbGo1/
 import Icon9Icon from "./icons/PlasmicIcon__Icon9"; // plasmic-import: fgEQ3xZTbtTI/icon
 import VectorHeartSvgIcon from "./icons/PlasmicIcon__VectorHeartSvg"; // plasmic-import: JbM7XFcjDUEn/icon
 import VectorPersonSvgIcon from "./icons/PlasmicIcon__VectorPersonSvg"; // plasmic-import: OvyHUiQ4SEzz/icon
+import Image from "next/image";
+
+// newly created components
 import RatingReviewPill from "@/components/RatingReviewPill";
 import AffordableHairRestoration from "@/components/AffordableHairRestoration";
-import Image from "next/image";
+import ServiceStepCard from "@/components/ServiceStepCard";
 
 
 createPlasmicElementProxy;
@@ -95,29 +98,25 @@ function PlasmicBotoxLander__RenderFunc(props) {
       id: 1,
       title: "Blood <em>Collection</em>",
       description: "A small sample of your blood is drawn, similar to a routine blood test. This sample is the key to unlocking the healing power within your body.",
-      img: "../../media/services/ivy-1.jpg",
-      icon: "../../icons/head-icon.svg"
+      img: "/media/services/prp/section4/1.jpeg"
     },
     {
       id: 2,
       title: "PRP <em>Separation</em>",
       description: "The blood is processed in a centrifuge to isolate the platelet-rich plasma (PRP), which contains powerful growth factors essential for hair regeneration.",
-      img: "../../media/services/ivy-2.jpg",
-      icon: "../../icons/syringe-icon.svg"
+      img: "/media/services/prp/section4/2.jpeg"
     },
     {
       id: 3,
       title: "<em>Targeted</em> Scalp Injections",
       description: "The PRP is injected into areas of your scalp where hair thinning or loss has occurred. This targeted approach stimulates the natural healing process in your hair follicles.",
-      img: "../../media/services/ivy-3.jpg",
-      icon: "../../icons/check-badge.svg"
+      img: "/media/services/prp/section4/3.jpeg"
     },
     {
       id: 4,
       title: "<em>Regrowth</em> and Restoration",
       description: "Over time, the PRP activates your dormant hair follicles, leading to the regrowth of thicker, healthier hair, and restoring your confidence with natural-looking results.",
-      img: "../../media/services/ivy-4.jpg",
-      icon: "../../icons/circle-pin.svg"
+      img: "/media/services/prp/section4/4.jpeg"
     },
   ];
   const affordables = [
@@ -1172,143 +1171,24 @@ function PlasmicBotoxLander__RenderFunc(props) {
                   }
                 </p>
               </Stack__>
-              {(
-                hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? false
-                  : true
-              ) ? (
-                // DESKTOP VERSION
-                <Stack__
-                  as={"div"}
-                  data-plasmic-name={"howBotoxWorksCards"}
-                  data-plasmic-override={overrides.howBotoxWorksCards}
-                  hasGap={true}
-                  className={classNames(
-                    projectcss.all,
-                    sty.howBotoxWorksCards,
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? "how-botox-works-cards"
-                      : undefined
-                  )}
-                >
-                  {serviceSteps.map((serviceStep) => (
-                    <HowItWorksCard
-                    className={classNames(
-                      "__wab_instance",
-                      sty.howItWorksCard__l4Wa6
-                    )}
-                    icon={
-                      <Image src={serviceStep.icon} width={32} height={32}></Image>
-                    }
-                    image={
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img__lXFf)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"auto"}
-                        loading={"lazy"}
-                        src={{
-                          src: serviceStep.img,
-                          fullWidth: 511,
-                          fullHeight: 256,
-                          aspectRatio: undefined
-                        }}
-                      />
-                    }
-                    title={
-                      <h3 dangerouslySetInnerHTML={{__html:serviceStep.title}}></h3>
-
-                      // <div
-                      //   className={classNames(
-                      //     projectcss.all,
-                      //     projectcss.__wab_text,
-                      //     sty.text__silX
-                      //   )}
-                      // >
-                    }
-                  >
-                    {/* <p
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.p,
-                        projectcss.__wab_text,
-                        sty.p__hogAn
-                      )}
-                    > */}
-                      {serviceStep.description}
-                    {/* </p> */}
-                  </HowItWorksCard>
-                  ))}
-                </Stack__>
-              ) : null}
-
-              {/* HOW SERVICE WORKS -- MOBILE VIEW */}
-              <div className={classNames(projectcss.all, sty.freeBox__cdLSd)}>
-                <Stack__
-                  as={"div"}
-                  data-plasmic-name={"howBotoxWorksCardsMobile"}
-                  data-plasmic-override={overrides.howBotoxWorksCardsMobile}
-                  hasGap={true}
-                  className={classNames(
-                    projectcss.all,
-                    sty.howBotoxWorksCardsMobile,
-                    "how-botox-works-cards"
-                  )}>
-                  <Stack__
-                    as={"div"}
-                    data-plasmic-name={"howBotoxWorksCards"}
-                    data-plasmic-override={overrides.howBotoxWorksCards}
-                    hasGap={true}
-                    className={classNames(
-                      projectcss.all,
-                      sty.howBotoxWorksCards,
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? "how-botox-works-cards"
-                        : undefined
-                    )}
-                  >
-                    {serviceSteps.map((serviceStep) => (
-                      <HowItWorksCard
-                      className={classNames(
-                        "__wab_instance",
-                        sty.howItWorksCard__l4Wa6
-                      )}
-                      icon={
-                        <Image src={serviceStep.icon} width={32} height={32}></Image>
-                      }
-                      image={
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img__lXFf)}
-                          displayHeight={"auto"}
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"auto"}
-                          loading={"lazy"}
-                          src={{
-                            src: serviceStep.img,
-                            fullWidth: 511,
-                            fullHeight: 256,
-                            aspectRatio: undefined
-                          }}
-                        />
-                      }
-                      title={
-                        <h3 dangerouslySetInnerHTML={{__html:serviceStep.title}}></h3>
-                      }
-                    >
-                        {serviceStep.description}
-                    </HowItWorksCard>
-                    ))}
-                  </Stack__>
-                </Stack__>
+              <div className="cards-container">
+                {serviceSteps.map((step) => (
+                  <ServiceStepCard key={step.id} step={step} />
+                ))}
               </div>
+
+              {/* Add a style block for the container */}
+              <style jsx>{`
+                .cards-container {
+                  display: flex; /* Makes items arrange in a row */
+                  flex-wrap: wrap; /* Allows items to wrap to the next line if space runs out */
+                  justify-content: center; /* Centers the cards horizontally */
+                  gap: 20px; /* Adds space between cards (optional, but good for visual separation) */
+                  padding: 20px; /* Adds some padding around the container */
+                  box-sizing: border-box; /* Ensures padding doesn't add to total width unexpectedly */
+                  width: 100%; /* Ensures the container takes full available width */
+                }
+              `}</style>
             </Stack__>
           </section>
 
