@@ -45,8 +45,8 @@ const Footer = () => {
               <p className='text-sm'>240 Queen St W (2nd Floor)</p>
               <p className='text-sm'>Toronto, ON, M5V1Z7</p>
               <p className='text-sm'>
-                <a href='tel:+14165111337' className='text-sm  hover:underline'>
-                (416) 511-1337
+                <a href='tel:+1416551137' className='text-sm  hover:underline'>
+                (416) 551-1137
                 </a>
               </p>
               <a
