@@ -169,6 +169,38 @@ function PlasmicBotoxLander__RenderFunc(props) {
       icon: "../../icons/hair.svg"
     }
   ];
+  const beforeAfters = [
+    {
+      id: 1,
+      title: "Marcus’ Results",
+      subtitle: "Results after 3 PRP Sessions",
+      img: "/media/services/prp/section6/Marcus.jpeg"
+    },
+    {
+      id: 2,
+      title: "Jacob’s Results",
+      subtitle: "Results after 4 PRP Sessions",
+      img: "/media/services/prp/section6/Jacob.jpeg"
+    },
+    {
+      id: 3,
+      title: "Anna’s Results",
+      subtitle: "Results after 3 PRP Sessions",
+      img: "/media/services/prp/section6/Anna.jpeg"
+    },
+    {
+      id: 4,
+      title: "Monica’s Results",
+      subtitle: "Results after 4 PRP Sessions",
+      img: "/media/services/prp/section6/Monica.jpeg"
+    },
+    {
+      id: 5,
+      title: "Michael’s Results",
+      subtitle: "Results after 6 PRP Sessions",
+      img: "/media/services/prp/section6/Michael.jpeg"
+    },
+  ];
   const transformations = [
     {
       id: 1,
@@ -494,12 +526,6 @@ function PlasmicBotoxLander__RenderFunc(props) {
                       <React.Fragment>
                         <React.Fragment>{"Rediscover Hair Growth with\n"}</React.Fragment>
                         <span
-                          // className={
-                          //   "plasmic_default__all plasmic_default__span"
-                          // }
-                          // className={
-                          //   "text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl"
-                          // }
                           style={{
                             fontWeight: 500,
                             fontStyle: "italic",
@@ -511,19 +537,6 @@ function PlasmicBotoxLander__RenderFunc(props) {
                         >
                           {"PRP Hair Restoration"}
                         </span>
-                        {/* <React.Fragment>{", Enhance your "}</React.Fragment>
-                        <span
-                          className={
-                            "plasmic_default__all plasmic_default__span"
-                          }
-                          style={{
-                            fontStyle: "italic",
-                            fontWeight: 500,
-                            color: "#D19D51"
-                          }}
-                        >
-                          {"Confidence"}
-                        </span> */}
                       </React.Fragment>
                     </h1>
                   </div>
@@ -1315,90 +1328,37 @@ function PlasmicBotoxLander__RenderFunc(props) {
                       }
                 }
               >
-                <TestimonialCard
-                  className={classNames(
-                    "__wab_instance",
-                    sty.testimonialCard__rFqgo
-                  )}
-                  insta={"@anna_green"}
-                  patient={"Anna Green"}
-                  subtitle={"Results after one month with Botox"}
-                  title={"Anna\u2019s Results"}
-                >
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img___2Nkey)}
-                    displayHeight={"auto"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"100%"}
-                    loading={"lazy"}
-                    src={{
-                      src: "../../media/services/ivy-3.jpg",
-                      fullWidth: 486,
-                      fullHeight: 480,
-                      aspectRatio: undefined
-                    }}
-                  />
-                </TestimonialCard>
-                <TestimonialCard
-                  className={classNames(
-                    "__wab_instance",
-                    sty.testimonialCard__whgPp
-                  )}
-                  insta={"@mila_sadowska"}
-                  patient={"Mila Sadowska"}
-                  subtitle={"Results after three weeks with Botox"}
-                  title={"Mila\u2019s Results"}
-                >
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__vqiEq)}
-                    displayHeight={"auto"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"100%"}
-                    loading={"lazy"}
-                    src={{
-                      src: "../../media/services/ivy-3.jpg",
-                      fullWidth: 379,
-                      fullHeight: 379,
-                      aspectRatio: undefined
-                    }}
-                  />
-                </TestimonialCard>
-                <TestimonialCard
-                  className={classNames(
-                    "__wab_instance",
-                    sty.testimonialCard__oW3MI
-                  )}
-                  insta={"@iammonikaaa"}
-                  patient={"Monika Miller"}
-                  subtitle={"Results after two weeks with Botox"}
-                  title={"Monika\u2019s Results"}
-                >
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__aiKe)}
-                    displayHeight={"auto"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"100%"}
-                    loading={"lazy"}
-                    src={{
-                      src: "../../media/services/ivy-3.jpg",
-                      fullWidth: 800,
-                      fullHeight: 800,
-                      aspectRatio: undefined
-                    }}
-                  />
-                </TestimonialCard>
+                {beforeAfters.map((beforeAfter) => (
+                  <TestimonialCard
+                    className={classNames(
+                      "__wab_instance",
+                      sty.testimonialCard__rFqgo
+                    )}
+                    // insta={"@anna_green"}
+                    // patient={"Anna Green"}
+                    id={beforeAfter.id}
+                    subtitle={beforeAfter.subtitle}
+                    title={beforeAfter.title}
+                  >
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img___2Nkey)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"100%"}
+                      loading={"lazy"}
+                      src={{
+                        src: beforeAfter.img,
+                        fullWidth: 486,
+                        fullHeight: 480,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  </TestimonialCard>
+                ))}
               </TestimonialsSlider>
             </div>
           </section>
