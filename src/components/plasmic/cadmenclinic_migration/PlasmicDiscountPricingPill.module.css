@@ -17,6 +17,7 @@
     padding-left: 16px;
   }
 }
+/* Strike Price */
 .p__wLTdE {
   position: relative;
   width: auto;
@@ -24,10 +25,22 @@
   max-width: 100%;
   margin-right: 24px;
   color: #535556;
-  text-decoration-line: line-through;
+  /* text-decoration-line: line-through; */
   font-weight: 500;
-  font-size: 20px;
+  font-size: 25px;
 }
+/* Red strikethrough */
+.p__wLTdE::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  border-top: 2px solid #CD5C5C;
+  transform: translateY(-50%); 
+  pointer-events: none;
+}
+
 @media (max-width: 1200px) {
   .p__wLTdE {
     font-size: 16px;
@@ -54,6 +67,7 @@
     padding: 4px 12px;
   }
 }
+/* Sale Price */
 .p___8Izu3 {
   position: relative;
   width: auto;
