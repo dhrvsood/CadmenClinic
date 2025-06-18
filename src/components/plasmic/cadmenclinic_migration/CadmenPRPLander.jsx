@@ -70,6 +70,26 @@ function useNextRouter() {
 }
 
 function PlasmicBotoxLander__RenderFunc(props) {
+  const smallCards = [
+    {
+      icon: "../../icons/portrait-icon.svg",
+      emphasis: "FREE",
+      title: " Consultation",
+      subtitle: "Claim your first consultation for <strong>FREE</strong>"
+    },
+    {
+      icon: "../../icons/discount.svg",
+      emphasis: "$299",
+      title: " Special Price!",
+      subtitle: "Exclusive <strong>50% discount</strong> for your first procedure"
+    },
+    {
+      icon: "../../icons/star.svg",
+      emphasis: "Trusted",
+      title: " by 2,100+ Patients",
+      subtitle: "Proven results, 100% natural, minimal downtime"
+    }
+  ];
   const serviceSteps = [
     {
       id: 1,
@@ -592,210 +612,66 @@ function PlasmicBotoxLander__RenderFunc(props) {
               hasGap={true}
               className={classNames(projectcss.all, sty.threeCards)}
             >
-              <div className={classNames(projectcss.all, sty.freeBox__aBZlq)}>
-                <div className={classNames(projectcss.all, sty.freeBox__zjMdy)}>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__txJhU)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img___4BU6T)}
-                      displayHeight={"32px"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"32px"}
-                      loading={"lazy"}
-                      src={{
-                        src: "../../icons/portrait-icon.svg",
-                        fullWidth: 32,
-                        fullHeight: 32,
-                        aspectRatio: 1
-                      }}
-                    />
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__rYcX)}
-                  >
-                    <h4
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.h4,
-                        projectcss.__wab_text,
-                        sty.h4__tyIsz
-                      )}
-                    >
-                      <React.Fragment>
-                        <span
-                          className={
-                            "plasmic_default__all plasmic_default__span"
-                          }
-                          style={{ fontWeight: 700, fontStyle: "italic" }}
-                        >
-                          {"FREE"}
-                        </span>
-                        <React.Fragment>{" Consultation"}</React.Fragment>
-                      </React.Fragment>
-                    </h4>
-                  </div>
-                </div>
-                <div className={classNames(projectcss.all, sty.freeBox__t7NH5)}>
-                  <p
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.p,
-                      projectcss.__wab_text,
-                      sty.p__rFmv
-                    )}
-                  >
-                    <React.Fragment>
-                      <React.Fragment>
-                        {"Claim your first consultation for "}
-                      </React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ fontWeight: 700 }}
-                      >
-                        {"FREE"}
-                      </span>
-                    </React.Fragment>
-                  </p>
-                </div>
-              </div>
-              <div className={classNames(projectcss.all, sty.freeBox__dnMpm)}>
-                <div className={classNames(projectcss.all, sty.freeBox__vXo)}>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__yxCqw)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img___062ZL)}
-                      displayHeight={"32px"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"32px"}
-                      loading={"lazy"}
-                      src={{
-                        src: "../../icons/circle-clock.svg",
-                        fullWidth: 32,
-                        fullHeight: 32,
-                        aspectRatio: 1
-                      }}
-                    />
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__nGf9K)}
-                  >
+              {smallCards.map((smallCard) => (
+                <div className={classNames(projectcss.all, sty.freeBox__aBZlq)}>
+                  <div className={classNames(projectcss.all, sty.freeBox__zjMdy)}>
                     <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__zk4EF
-                      )}
+                      className={classNames(projectcss.all, sty.freeBox__txJhU)}
                     >
-                      <React.Fragment>
-                
-                        <span
-                          className={
-                            "plasmic_default__all plasmic_default__span"
-                          }
-                          style={{ fontWeight: 700, fontStyle: "italic" }}
-                        >
-                          {"$299"}
-                        </span>
-                        <React.Fragment>{" Specical Price "}</React.Fragment>
-                      </React.Fragment>
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img___4BU6T)}
+                        displayHeight={"32px"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"32px"}
+                        loading={"lazy"}
+                        src={{
+                          src: smallCard.icon,
+                          fullWidth: 32,
+                          fullHeight: 32,
+                          aspectRatio: 1
+                        }}
+                      />
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__rYcX)}
+                    >
+                      <h4
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.h4,
+                          projectcss.__wab_text,
+                          sty.h4__tyIsz
+                        )}
+                      >
+                        <React.Fragment>
+                          <span className={"plasmic_default__all plasmic_default__span"} style={{ fontWeight: 700, fontStyle: "italic" }}>
+                            {smallCard.emphasis}
+                          </span>
+                          <React.Fragment>{smallCard.title}</React.Fragment>
+                        </React.Fragment>
+                      </h4>
                     </div>
                   </div>
-                </div>
-                <div className={classNames(projectcss.all, sty.freeBox__kcoYh)}>
-                  <p
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.p,
-                      projectcss.__wab_text,
-                      sty.p__bfxgO
-                    )}
-                  >
-                    <React.Fragment>
-                      <React.Fragment>{"Exclusive"}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ fontWeight: 700 }}
-                      >
-                        {" 50% discount "}
-                      </span>
-                      <React.Fragment>
-                        {"for your first procedure"}
-                      </React.Fragment>
-                    </React.Fragment>
-                  </p>
-                </div>
-              </div>
-              <div className={classNames(projectcss.all, sty.freeBox__qeKs)}>
-                <div className={classNames(projectcss.all, sty.freeBox__ou5QZ)}>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__ebx9F)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__eDuFq)}
-                      displayHeight={"32px"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"32px"}
-                      loading={"lazy"}
-                      src={{
-                        src: "../../icons/star.svg",
-                        fullWidth: 32,
-                        fullHeight: 32,
-                        aspectRatio: 1
-                      }}
-                    />
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__aicH3)}
-                  >
-                    <h4
+                  <div className={classNames(projectcss.all, sty.freeBox__t7NH5)}>
+                    <p
                       className={classNames(
                         projectcss.all,
-                        projectcss.h4,
+                        projectcss.p,
                         projectcss.__wab_text,
-                        sty.h4__idBx0
+                        sty.p__rFmv
                       )}
                     >
-                      <React.Fragment>
-                        <span
-                          className={
-                            "plasmic_default__all plasmic_default__span"
-                          }
-                          style={{ fontWeight: 700, fontStyle: "italic" }}
-                        >
-                          {"Trusted "}
-                        </span>
-                        <React.Fragment>{"by 2,100+ Patients"}</React.Fragment>
+                      <React.Fragment >
+                        <span dangerouslySetInnerHTML={{__html:smallCard.subtitle}}></span>
                       </React.Fragment>
-                    </h4>
+                    </p>
                   </div>
                 </div>
-                <div className={classNames(projectcss.all, sty.freeBox__uNnju)}>
-                  <p
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.p,
-                      projectcss.__wab_text,
-                      sty.p__iycYo
-                    )}
-                  >
-                    {"Proven results, 100% natural, minimal downtime."}
-                  </p>
-                </div>
-              </div>
+              ))}
             </Stack__>
           </section>
 
