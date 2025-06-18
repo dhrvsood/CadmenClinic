@@ -64,6 +64,7 @@ const ServiceStepCard = ({ step }) => {
           font-size: 1em;
           line-height: 1.6;
           flex-grow: 1; /* Allows description to take up available space */
+          text-align: center;
         }
 
         /* Responsive design */
