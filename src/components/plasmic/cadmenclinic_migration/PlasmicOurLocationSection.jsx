@@ -143,8 +143,8 @@ function PlasmicOurLocationSection__RenderFunc(props) {
         >
           <ContactCardNew
             className={classNames("__wab_instance", sty.contactCardNew__pg9Uh)}
-            content={"(416) 511-1337"}
-            destination={"tel:+14165111337"}
+            content={"(416) 551-1137"}
+            destination={"tel:+14165511137"}
             title={"Call Us"}
           >
             <PhoneIcon2SvgIcon

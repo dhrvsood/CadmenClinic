@@ -206,10 +206,10 @@ const Navbar = () => {
                           ) : null}
                         </div>
                         <div className="menu-btn-last">
-                          <a href='tel:4165111337'
+                          <a href='tel:416551137'
                             className='flex flex-row items-center justify-start gap-3 header-btn rounded border border-beaver/90 bg-beaver/90 px-5 py-3 text-sm font-light text-white hover:bg-beaver'>
                             <PhoneIcon className='w-4' />
-                            <p>(416) 511-1337</p>
+                            <p>(416) 551-1137</p>
                           </a>
                         </div>
                       </div>
