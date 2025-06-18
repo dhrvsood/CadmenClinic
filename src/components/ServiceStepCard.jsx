@@ -5,7 +5,7 @@ const ServiceStepCard = ({ step }) => {
   return (
     <div className="service-step-card">
       <h3 className="card-title">
-        <span className="underlined-id">Step {step.id}</span>{'\n'}
+        <span className="underlined-id"><strong>Step {step.id}</strong></span>{'\n'}
         <span dangerouslySetInnerHTML={{ __html: step.title }} />
       </h3>
       <div className="card-image-container">
