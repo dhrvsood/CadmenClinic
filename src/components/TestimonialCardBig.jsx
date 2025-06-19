@@ -1,8 +1,8 @@
 import Image from "next/image"
-import { client as sanityClient } from '@/sanity/lib/client'
-import imageUrlBuilder from '@sanity/image-url'
+// import { client as sanityClient } from '@/sanity/lib/client'
+// import imageUrlBuilder from '@sanity/image-url'
 
-const builder = imageUrlBuilder(sanityClient)
+// const builder = imageUrlBuilder(sanityClient)
 
 const TestimonialCardBig = ({ quote, imageUrl }) => {
   return (
@@ -15,7 +15,7 @@ const TestimonialCardBig = ({ quote, imageUrl }) => {
             height={24}
             alt='5 stars'
           />
-          <p className='text-[20px] font-medium italic max-sm:text-[16px]'>{quote}</p>
+          <p className='text-[20px] font-medium italic max-sm:text-[16px]' dangerouslySetInnerHTML={{ __html: quote}}></p>
           <div className='flex h-full items-end'>
             <Image
               src='/graphics/google-icon.svg'
@@ -26,7 +26,8 @@ const TestimonialCardBig = ({ quote, imageUrl }) => {
           </div>
         </div>
         <Image
-          src={builder.image(imageUrl).url()}
+          // src={builder.image(imageUrl).url()}
+          src={imageUrl}
           width={453}
           height={410}
           alt=''

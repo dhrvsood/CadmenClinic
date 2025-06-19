@@ -1,0 +1,208 @@
+.sanity-root {
+    /* Base text style */
+    --sanity-base-text-font-family: "Poppins", sans-serif;
+    --sanity-base-text-font-size: 16px;
+    --sanity-base-text-font-weight: 400;
+    --sanity-base-text-font-style: normal;
+    --sanity-base-text-color: #535556;
+    --sanity-base-text-text-align: left;
+    --sanity-base-text-text-transform: none;
+    --sanity-base-text-line-height: 1.5;
+    --sanity-base-text-letter-spacing: normal;
+    --sanity-base-text-white-space: pre-wrap;
+    --sanity-base-text-user-select: text;
+    --sanity-base-text-text-decoration: none;
+    --sanity-base-text-text-overflow: clip;
+  
+    /* Heading 1 style */
+    --sanity-heading1-color: #000000;
+    --sanity-heading1-font-weight: 400;
+    --sanity-heading1-font-size: 92px;
+    --sanity-heading1-line-height: 92%;
+    --sanity-heading1-letter-spacing: -1px;
+    --sanity-heading1-font-family: "Cormorant Garamond", serif;
+    --sanity-heading1-white-space: pre-wrap;
+  
+    /* Heading 2 style */
+    --sanity-heading2-color: #000000;
+    --sanity-heading2-font-size: 64px;
+    --sanity-heading2-font-weight: 400;
+    --sanity-heading2-letter-spacing: -2px;
+    --sanity-heading2-line-height: 92%;
+    --sanity-heading2-font-family: "Cormorant Garamond", serif;
+    --sanity-heading2-white-space: pre-wrap;
+  
+    /* Default text color */
+    --sanity-text-default-color: #000000;
+    --sanity-text-default-white-space: pre-wrap;
+  
+    /* Heading 3 style */
+    --sanity-heading3-color: #000000;
+    --sanity-heading3-font-size: 32px;
+    --sanity-heading3-font-weight: 500;
+    --sanity-heading3-line-height: 1.2;
+    --sanity-heading3-font-family: "Cormorant Garamond", serif;
+    --sanity-heading3-white-space: pre-wrap;
+  
+    /* Heading 4 style */
+    --sanity-heading4-color: #000000;
+    --sanity-heading4-font-size: 24px;
+    --sanity-heading4-font-weight: 500;
+    --sanity-heading4-line-height: 1.3;
+    --sanity-heading4-font-family: "Cormorant", serif;
+    --sanity-heading4-white-space: pre-wrap;
+  
+    /* Inline code style */
+    --sanity-code-inline-background: linear-gradient(#f8f8f8, #f8f8f8);
+    --sanity-code-inline-border-bottom-color: #dddddd;
+    --sanity-code-inline-border-bottom-style: solid;
+    --sanity-code-inline-border-bottom-width: 1px;
+    --sanity-code-inline-border-left-color: #dddddd;
+    --sanity-code-inline-border-left-style: solid;
+    --sanity-code-inline-border-left-width: 1px;
+    --sanity-code-inline-border-right-color: #dddddd;
+    --sanity-code-inline-border-right-style: solid;
+    --sanity-code-inline-border-right-width: 1px;
+    --sanity-code-inline-border-top-color: #dddddd;
+    --sanity-code-inline-border-top-style: solid;
+    --sanity-code-inline-border-top-width: 1px;
+    --sanity-code-inline-border-bottom-left-radius: 3px;
+    --sanity-code-inline-border-bottom-right-radius: 3px;
+    --sanity-code-inline-border-top-left-radius: 3px;
+    --sanity-code-inline-border-top-right-radius: 3px;
+    --sanity-code-inline-font-family: "Inconsolata";
+    --sanity-code-inline-padding-bottom: 1px;
+    --sanity-code-inline-padding-left: 4px;
+    --sanity-code-inline-padding-right: 4px;
+    --sanity-code-inline-padding-top: 1px;
+    --sanity-code-inline-white-space: pre-wrap;
+  
+    /* Blockquote style */
+    --sanity-blockquote-border-left-color: #dddddd;
+    --sanity-blockquote-border-left-style: solid;
+    --sanity-blockquote-border-left-width: 3px;
+    --sanity-blockquote-color: #888888;
+    --sanity-blockquote-padding-left: 10px;
+    --sanity-blockquote-white-space: pre-wrap;
+  
+    /* Code block style */
+    --sanity-code-block-background: linear-gradient(#f8f8f8, #f8f8f8);
+    --sanity-code-block-border-bottom-color: #dddddd;
+    --sanity-code-block-border-bottom-style: solid;
+    --sanity-code-block-border-bottom-width: 1px;
+    --sanity-code-block-border-left-color: #dddddd;
+    --sanity-code-block-border-left-style: solid;
+    --sanity-code-block-border-left-width: 1px;
+    --sanity-code-block-border-right-color: #dddddd;
+    --sanity-code-block-border-right-style: solid;
+    --sanity-code-block-border-right-width: 1px;
+    --sanity-code-block-border-top-color: #dddddd;
+    --sanity-code-block-border-top-style: solid;
+    --sanity-code-block-border-top-width: 1px;
+    --sanity-code-block-border-bottom-left-radius: 3px;
+    --sanity-code-block-border-bottom-right-radius: 3px;
+    --sanity-code-block-border-top-left-radius: 3px;
+    --sanity-code-block-border-top-right-radius: 3px;
+    --sanity-code-block-font-family: "Inconsolata";
+    --sanity-code-block-padding-bottom: 3px;
+    --sanity-code-block-padding-left: 6px;
+    --sanity-code-block-padding-right: 6px;
+    --sanity-code-block-padding-top: 3px;
+    --sanity-code-block-white-space: pre-wrap;
+  
+    /* Unordered list style */
+    --sanity-list-ul-display: flex;
+    --sanity-list-ul-flex-direction: column;
+    --sanity-list-ul-align-items: stretch;
+    --sanity-list-ul-justify-content: flex-start;
+    --sanity-list-ul-list-style-position: outside;
+    --sanity-list-ul-padding-left: 40px;
+    --sanity-list-ul-position: relative;
+    --sanity-list-ul-list-style-type: disc;
+    --sanity-list-ul-white-space: pre-wrap;
+  
+    /* Ordered list style */
+    --sanity-list-ol-display: flex;
+    --sanity-list-ol-flex-direction: column;
+    --sanity-list-ol-align-items: stretch;
+    --sanity-list-ol-justify-content: flex-start;
+    --sanity-list-ol-list-style-position: outside;
+    --sanity-list-ol-padding-left: 40px;
+    --sanity-list-ol-position: relative;
+    --sanity-list-ol-list-style-type: decimal;
+    --sanity-list-ol-white-space: pre-wrap;
+  
+    /* Subheading text style */
+    --sanity-subheading-text-color: #000000;
+    --sanity-subheading-text-font-size: 20px;
+    --sanity-subheading-text-font-weight: 600;
+    --sanity-subheading-text-line-height: 1.5;
+    --sanity-subheading-text-white-space: pre-wrap;
+  
+    /* Emphasis text style */
+    --sanity-emphasis-text-color: #000000;
+    --sanity-emphasis-text-font-size: 16px;
+    --sanity-emphasis-text-font-weight: 600;
+    --sanity-emphasis-text-line-height: 1.5;
+    --sanity-emphasis-text-white-space: pre-wrap;
+  
+    /* Link style */
+    --sanity-link-color: #3291ff;
+    --sanity-link-white-space: pre-wrap;
+  
+    /* Generic white-space utility */
+    --sanity-generic-white-space: pre-wrap;
+
+    /* LEGACY */
+    --token-NtkC24ykrcxQ: #4c8d91;
+    --plasmic-token-unnamed-style-token: var(--token-NtkC24ykrcxQ);
+    --token-WqmKFbtStDOp: #d19d51;
+    --plasmic-token-gold: var(--token-WqmKFbtStDOp);
+    --token-2O8AIm-rC9eT: #0c7a7b;
+    --plasmic-token-dark-green: var(--token-2O8AIm-rC9eT);
+    --token-ewRGgMZER5rC: 0.5rem;
+    --plasmic-token-size-8: var(--token-ewRGgMZER5rC);
+    --token-Wbstd3pZYZQR: #030712;
+    --plasmic-token-basic-text-primary: var(--token-Wbstd3pZYZQR);
+    --token-n3evkVnWTJHU: Inter;
+    --plasmic-token-sans-serif: var(--token-n3evkVnWTJHU);
+    --token-D29e_Ngagpyi: 1rem;
+    --plasmic-token-font-md: var(--token-D29e_Ngagpyi);
+    --token-cf_b0RJ9RPfo: 1.25;
+    --plasmic-token-line-height-md: var(--token-cf_b0RJ9RPfo);
+    --token-AndKPpYzId8h: 1.25rem;
+    --plasmic-token-size-20: var(--token-AndKPpYzId8h);
+    --token-maR8yinrrtfs: #9ca3af;
+    --plasmic-token-basic-ring: var(--token-maR8yinrrtfs);
+    --token-K_6xEBn8BvQj: 0.125rem;
+    --plasmic-token-size-2: var(--token-K_6xEBn8BvQj);
+    --token-MvOSdCTB6-Oi: #2563eb;
+    --plasmic-token-brand-brand: var(--token-MvOSdCTB6-Oi);
+    --plsmc-standard-width: 1400px;
+    --plsmc-wide-width: 100%;
+    --plsmc-viewport-gap: 0px;
+    --plsmc-wide-chunk: calc(((var(--plsmc-wide-width) - var(--plsmc-standard-width)) / 2) - var(--plsmc-viewport-gap));
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1200px) {
+    .sanity-root {
+      --sanity-heading2-font-size: 32px;
+      --sanity-heading2-white-space: pre-wrap;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .sanity-root {
+      --sanity-base-text-font-size: 14px;
+      --sanity-base-text-white-space: pre-wrap;
+      --sanity-heading1-font-size: 60px;
+      --sanity-heading1-white-space: pre-wrap;
+      --sanity-heading2-font-size: 40px;
+      --sanity-heading2-white-space: pre-wrap;
+      --sanity-heading3-font-size: 26px;
+      --sanity-heading3-white-space: pre-wrap;
+      --sanity-heading4-font-size: 20px;
+      --sanity-heading4-white-space: pre-wrap;
+    }
+  }
