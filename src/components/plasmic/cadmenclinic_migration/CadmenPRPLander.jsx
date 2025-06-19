@@ -93,6 +93,15 @@ function PlasmicBotoxLander__RenderFunc(props) {
       subtitle: "Proven results, 100% natural, minimal downtime"
     }
   ];
+  const whyPeopleChooseCards = [
+    {
+      id: 1,
+      title: "What is PRP Hair Restoration?",
+      description: "PRP Hair Restoration uses the body’s own platelet-rich plasma to naturally stimulate hair growth. It is a safe, non-surgical treatment that is 100% natural with no synthetic additives.",
+      img: "",
+      icon: ""
+    }, 
+  ];
   const serviceSteps = [
     {
       id: 1,
@@ -109,13 +118,13 @@ function PlasmicBotoxLander__RenderFunc(props) {
     {
       id: 3,
       title: "<em>Targeted</em> Scalp Injections",
-      description: "The PRP is injected into areas of your scalp where hair thinning or loss has occurred. This targeted approach stimulates the natural healing process in your hair follicles.",
+      description: "The PRP is injected into areas of your scalp where hair thinning or loss has occurred. This targeted approach stimulates the natural healing process in your follicles.",
       img: "/media/services/prp/section4/3.jpeg"
     },
     {
       id: 4,
       title: "<em>Regrowth</em> and Restoration",
-      description: "Over time, the PRP activates your dormant hair follicles, leading to the regrowth of thicker, healthier hair, and restoring your confidence with natural-looking results.",
+      description: "Over time, the PRP activates your dormant follicles, leading to the regrowth of thicker, healthier hair, and restoring your confidence with natural-looking results.",
       img: "/media/services/prp/section4/4.jpeg"
     },
   ];
