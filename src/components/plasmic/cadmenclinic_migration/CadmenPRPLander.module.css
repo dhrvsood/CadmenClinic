@@ -2062,11 +2062,12 @@
   }
 }
 .freeBox__h0TYw {
+  position: sticky;
+  top: 150px;
+  height: 40vh;
   display: flex;
   flex-direction: column;
-  position: relative;
   width: 50%;
-  height: auto;
   max-width: 560px;
   padding: 0px 32px;
 }
@@ -2089,6 +2090,7 @@
 }
 @media (max-width: 1200px) {
   .freeBox__h0TYw {
+    top: 0;
     width: 100%;
   }
 }

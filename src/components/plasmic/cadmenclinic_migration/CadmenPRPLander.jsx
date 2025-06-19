@@ -1014,21 +1014,31 @@ function PlasmicBotoxLander__RenderFunc(props) {
             data-plasmic-override={overrides.botoxHelpedSection}
             className={classNames(projectcss.all, sty.botoxHelpedSection)}
           >
+            
+            {/* stack for all */}
             <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox___9IgFv)}
             >
+
+              {/* stack for left title */}
               <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__h0TYw)}
+
+                // style={{
+                //   position: "sticky",
+                //   top: "150px",
+                //   height: "40vh"
+                // }}
               >
-                <Stack__
+                {/* <Stack__
                   as={"div"}
                   hasGap={true}
                   className={classNames(projectcss.all, sty.freeBox__lJj0R)}
-                >
+                > */}
                   <h2
                     className={classNames(
                       projectcss.all,
@@ -1064,8 +1074,13 @@ function PlasmicBotoxLander__RenderFunc(props) {
                       "Don’t wait any longer to restore your hair – join the many satisfied clients who have already experienced the benefits of PRP Hair Restoration."
                     }
                   </p>
-                </Stack__>
+                {/* </Stack__> */}
+
               </Stack__>
+
+              
+
+
               <div className={classNames(projectcss.all, sty.freeBox___5Wi9P)}>
                 <Stack__
                   as={"div"}
