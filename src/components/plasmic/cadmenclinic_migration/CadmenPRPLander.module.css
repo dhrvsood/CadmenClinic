@@ -1,3 +1,14 @@
+
+.cards-container {
+  display: flex; /* Makes items arrange in a row */
+  flex-wrap: wrap; /* Allows items to wrap to the next line if space runs out */
+  justify-content: center; /* Centers the cards horizontally */
+  gap: 20px; /* Adds space between cards (optional, but good for visual separation) */
+  padding: 20px; /* Adds some padding around the container */
+  box-sizing: border-box; /* Ensures padding doesn't add to total width unexpectedly */
+  width: 100%; /* Ensures the container takes full available width */
+}
+
 .root {
   display: grid;
   flex-direction: column;

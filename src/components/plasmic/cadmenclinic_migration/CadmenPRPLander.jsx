@@ -55,6 +55,7 @@ import Image from "next/image";
 import RatingReviewPill from "@/components/RatingReviewPill";
 import AffordableHairRestoration from "@/components/AffordableHairRestoration";
 import ServiceStepCard from "@/components/ServiceStepCard";
+import WhyPeopleChooseCard from "@/components/WhyPeopleChooseCard";
 
 
 createPlasmicElementProxy;
@@ -75,19 +76,19 @@ function useNextRouter() {
 function PlasmicBotoxLander__RenderFunc(props) {
   const smallCards = [
     {
-      icon: "../../icons/portrait-icon.svg",
+      icon: "/icons/portrait-icon.svg",
       emphasis: "FREE",
       title: " Consultation",
       subtitle: "Claim your first consultation for <strong>FREE</strong>"
     },
     {
-      icon: "../../icons/discount.svg",
+      icon: "/icons/discount.svg",
       emphasis: "$299",
       title: " Special Price!",
       subtitle: "Exclusive <strong>50% discount</strong> for your first procedure"
     },
     {
-      icon: "../../icons/star.svg",
+      icon: "/icons/star.svg",
       emphasis: "Trusted",
       title: " by 2,100+ Patients",
       subtitle: "Proven results, 100% natural, minimal downtime"
@@ -96,10 +97,24 @@ function PlasmicBotoxLander__RenderFunc(props) {
   const whyPeopleChooseCards = [
     {
       id: 1,
-      title: "What is PRP Hair Restoration?",
+      title: "What is <strong><em>PRP Hair Restoration?</em></strong>",
       description: "PRP Hair Restoration uses the body’s own platelet-rich plasma to naturally stimulate hair growth. It is a safe, non-surgical treatment that is 100% natural with no synthetic additives.",
-      img: "",
-      icon: ""
+      img: "/media/services/prp/section3/1.jpeg",
+      icon: "/icons/syringe-icon.svg"
+    }, 
+    {
+      id: 2,
+      title: "Why <strong><em>People Choose</em></strong> PRP?",
+      description: "If you are seeking to stimulate hair growth with a 100% natural solution then PRP is for you. PRP Hair Restoration has been clinically proven to regrow lost hair and is the most popular form of natural hair restoration.",
+      img: "/media/services/prp/section3/2.jpeg",
+      icon: "/icons/portrait-icon.svg"
+    }, 
+    {
+      id: 3,
+      title: "Safe and <strong><em>Professional</em></strong> Care",
+      description: "Your safety is our top priority. Our licensed professionals use industry-leading techniques in a controlled, sterile environment. We believe in natural-looking results that allow your natural beauty to shine.",
+      img: "/media/services/prp/section3/3.jpeg",
+      icon: "/icons/heart-icon.svg"
     }, 
   ];
   const serviceSteps = [
@@ -697,24 +712,8 @@ function PlasmicBotoxLander__RenderFunc(props) {
           </section>
 
           {/* CHOOSE SERVICE SECTION */}
-          <section
-            data-plasmic-name={"chooseBotoxSection"}
-            data-plasmic-override={overrides.chooseBotoxSection}
-            className={classNames(projectcss.all, sty.chooseBotoxSection)}
-          >
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__a4Yp)}
-            >
-              <Stack__
-                as={"div"}
-                data-plasmic-name={"chooseBotoxHeader"}
-                data-plasmic-override={overrides.chooseBotoxHeader}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.chooseBotoxHeader)}
-              >
-                <h2
+          <section className={classNames(projectcss.all, sty.chooseBotoxSection)}>
+            <h2
                   className={classNames(
                     projectcss.all,
                     projectcss.h2,
@@ -737,400 +736,37 @@ function PlasmicBotoxLander__RenderFunc(props) {
                   </React.Fragment>
                 </h2>
                 <p
-                  className={classNames(
+                className={classNames(
                     projectcss.all,
                     projectcss.p,
                     projectcss.__wab_text,
                     sty.p__zSnqu
                   )}
+                  style={{
+                    maxWidth: "800px",
+                    paddingTop: "20px"
+                  }}
                 >
-                  {
-                    "Chosen by 2,100+ clients and backed by a 98% success rate, PRP Hair Restoration offers a safe and effective solution for natural hair regrowth"
-                  }
+                  Chosen by 2,100+ clients and backed by a 98% success rate, PRP Hair Restoration offers a safe and effective solution for natural hair regrowth
                 </p>
-              </Stack__>
-              {(
-                hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? false
-                  : true
-              ) ? (
-                <Stack__
-                  as={"div"}
-                  data-plasmic-name={"peopleChooseNav"}
-                  data-plasmic-override={overrides.peopleChooseNav}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.peopleChooseNav)}
-                >
-                  <TextNavLink
-                    className={classNames(
-                      "__wab_instance",
-                      sty.textNavLink__tsyYv
-                    )}
-                    dataSlide={"0"}
-                    text={"What is PRP Hair Restoration"}
-                  />
+              
+            <div className="cards-container">
+              {whyPeopleChooseCards.map((whyPeopleChooseCard) => (
+                <WhyPeopleChooseCard card={whyPeopleChooseCard}/>
+              ))}
+            </div>
 
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox___6U70Q)}
-                  />
-
-                  <TextNavLink
-                    className={classNames(
-                      "__wab_instance",
-                      sty.textNavLink__iuY
-                    )}
-                    dataSlide={"1"}
-                    text={"Why People Choose PRP"}
-                  />
-
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__tyTZm)}
-                  />
-
-                  <TextNavLink
-                    className={classNames(
-                      "__wab_instance",
-                      sty.textNavLink__tLIvJ
-                    )}
-                    dataSlide={"2"}
-                    text={"Safe and Professional Care"}
-                  />
-                </Stack__>
-              ) : null}
-              <div
-                className={classNames(
-                  projectcss.all,
-                  sty.freeBox___0Q6Io,
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? "people-choose-botox-grid"
-                    : "people-choose-botox-grid"
-                )}
-              >
-                <div
-                  data-plasmic-name={"chooseBotoxPoints"}
-                  data-plasmic-override={overrides.chooseBotoxPoints}
-                  className={classNames(projectcss.all, sty.chooseBotoxPoints)}
-                >
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__aCp5)}
-                  >
-                    {(
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? false
-                        : true
-                    ) ? (
-                      <IconLayeredCircles
-                        data-plasmic-name={"chooseBotoxDot2"}
-                        data-plasmic-override={overrides.chooseBotoxDot2}
-                        className={classNames(
-                          "__wab_instance",
-                          sty.chooseBotoxDot2
-                        )}
-                      >
-                        <Icon9Icon
-                          className={classNames(
-                            projectcss.all,
-                            sty.svg__hZfD6,
-                            "dot-icon"
-                          )}
-                          role={"img"}
-                        />
-                      </IconLayeredCircles>
-                    ) : null}
-                    <Stack__
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.freeBox__gNPhq)}
-                    >
-                      <h3
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.h3,
-                          projectcss.__wab_text,
-                          sty.h3__ba4K6
-                        )}
-                      >
-                        <React.Fragment>
-                          <React.Fragment>{"What is "}</React.Fragment>
-                          <span
-                            className={
-                              "plasmic_default__all plasmic_default__span"
-                            }
-                            style={{ fontWeight: 700, fontStyle: "italic" }}
-                          >
-                            {"PRP Hair Restoration?"}
-                          </span>
-                        </React.Fragment>
-                      </h3>
-                      <p
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.p,
-                          projectcss.__wab_text,
-                          sty.p__u3DCv
-                        )}
-                      >
-                        {
-                        "PRP Hair Restoration uses the body’s own platelet-rich plasma to naturally stimulate hair growth. It is a safe, non-surgical treatment that is 100% natural with no synthetic additives."                        
-                        }
-                      </p>
-                    </Stack__>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__jkH0O)}
-                  >
-                    {(
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? false
-                        : true
-                    ) ? (
-                      <IconLayeredCircles
-                        data-plasmic-name={"chooseBotoxDot3"}
-                        data-plasmic-override={overrides.chooseBotoxDot3}
-                        className={classNames(
-                          "__wab_instance",
-                          sty.chooseBotoxDot3
-                        )}
-                      >
-                        <VectorHeartSvgIcon
-                          className={classNames(
-                            projectcss.all,
-                            sty.svg__v2Fk3,
-                            "dot-icon"
-                          )}
-                          role={"img"}
-                        />
-                      </IconLayeredCircles>
-                    ) : null}
-                    <Stack__
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.freeBox__kKbLm)}
-                    >
-                      <h3
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.h3,
-                          projectcss.__wab_text,
-                          sty.h3__axj8O
-                        )}
-                      >
-                        <React.Fragment>
-                          <React.Fragment>{"Why "}</React.Fragment>
-                          <span
-                            className={
-                              "plasmic_default__all plasmic_default__span"
-                            }
-                            style={{ fontWeight: 700, fontStyle: "italic" }}
-                          >
-                            {"People Choose"}
-                          </span>
-                          <React.Fragment>{" PRP?"}</React.Fragment>
-                        </React.Fragment>
-                      </h3>
-                      <p
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.p,
-                          projectcss.__wab_text,
-                          sty.p___7GW3C
-                        )}
-                      >
-                        {
-                        "If you are seeking to stimulate hair growth with a 100% natural solution then PRP is for you. PRP Hair Restoration has been clinically proven to regrow lost hair and is the most popular form of natural hair restoration."
-                        }
-                      </p>
-                    </Stack__>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox___1HoDw)}
-                  >
-                    {(
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? false
-                        : true
-                    ) ? (
-                      <IconLayeredCircles
-                        data-plasmic-name={"chooseBotoxDot4"}
-                        data-plasmic-override={overrides.chooseBotoxDot4}
-                        className={classNames(
-                          "__wab_instance",
-                          sty.chooseBotoxDot4
-                        )}
-                      >
-                        <VectorPersonSvgIcon
-                          className={classNames(
-                            projectcss.all,
-                            sty.svg__hneYz,
-                            "dot-icon"
-                          )}
-                          role={"img"}
-                        />
-                      </IconLayeredCircles>
-                    ) : null}
-                    <Stack__
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.freeBox__sd3Ae)}
-                    >
-                      <h3
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.h3,
-                          projectcss.__wab_text,
-                          sty.h3__kuXrf
-                        )}
-                      >
-                        <React.Fragment>
-                          <React.Fragment>{"Safe and "}</React.Fragment>
-                          <span
-                            className={
-                              "plasmic_default__all plasmic_default__span"
-                            }
-                            style={{ fontWeight: 700, fontStyle: "italic" }}
-                          >
-                            {"Professional"}
-                          </span>
-                          <React.Fragment>{" Care"}</React.Fragment>
-                        </React.Fragment>
-                      </h3>
-                      <p
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.p,
-                          projectcss.__wab_text,
-                          sty.p__yttPr
-                        )}
-                      >
-                        {
-                          "Your safety is our top priority. Our licensed professionals use industry-leading techniques in a controlled, sterile environment. We believe in natural-looking results that allow your natural beauty to shine."
-                        }
-                      </p>
-                      {(
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? false
-                          : true
-                      ) ? (
-                        <Button
-                          data-plasmic-name={"chooseBotoxButton"}
-                          data-plasmic-override={overrides.chooseBotoxButton}
-                          className={classNames(
-                            "__wab_instance",
-                            sty.chooseBotoxButton
-                          )}
-                        >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__dcr20
-                            )}
-                          >
-                            {"Book Consultation Now"}
-                          </div>
-                        </Button>
-                      ) : null}
-                    </Stack__>
-                  </Stack__>
-                </div>
-                <div
-                  data-plasmic-name={"chooseBotoxImages"}
-                  data-plasmic-override={overrides.chooseBotoxImages}
-                  className={classNames(projectcss.all, sty.chooseBotoxImages)}
-                >
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__u1H78)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__wKvp)}
-                      displayHeight={"120%"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "../../media/services/ivy-1.jpg",
-                        fullWidth: 650,
-                        fullHeight: 420,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__ci3Do)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img___0Uydh)}
-                      displayHeight={"120%"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "../../media/services/ivy-2.jpg",
-                        fullWidth: 650,
-                        fullHeight: 420,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__mzvU)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__w3Ydj)}
-                      displayHeight={"120%"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "../../media/services/ivy-3.jpg",
-                        fullWidth: 650,
-                        fullHeight: 420,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  </div>
-                </div>
-                {(
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? true
-                    : false
-                ) ? (
-                  <Button
-                    data-plasmic-name={"button"}
-                    data-plasmic-override={overrides.button}
-                    className={classNames("__wab_instance", sty.button)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__rzOl7
-                      )}
-                    >
-                      {"Book Consultation Now"}
-                    </div>
-                  </Button>
-                ) : null}
-              </div>
-            </Stack__>
+            <style jsx>{`
+              .cards-container {
+                display: flex; /* Makes items arrange in a row */
+                flex-wrap: wrap; /* Allows items to wrap to the next line if space runs out */
+                justify-content: center; /* Centers the cards horizontally */
+                gap: 20px; /* Adds space between cards (optional, but good for visual separation) */
+                padding: 20px; /* Adds some padding around the container */
+                box-sizing: border-box; /* Ensures padding doesn't add to total width unexpectedly */
+                width: 100%; /* Ensures the container takes full available width */
+              }
+            `}</style>
           </section>
 
           {/* HOW SERVICE WORKS */}
