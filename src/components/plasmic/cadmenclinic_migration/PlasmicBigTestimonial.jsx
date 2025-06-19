@@ -119,25 +119,6 @@ function PlasmicBigTestimonial__RenderFunc(props) {
           [sty.freeBoximage___1G5BvZoYyX]: hasVariant($state, "image", "image")
         })}
       >
-        {/* <PlasmicImg__
-          alt={""}
-          className={classNames(sty.img___6Wbd6, {
-            [sty.imgimage___6Wbd6ZoYyX]: hasVariant($state, "image", "image")
-          })}
-          displayHeight={"24px"}
-          displayMaxHeight={"none"}
-          displayMaxWidth={"100%"}
-          displayMinHeight={"0"}
-          displayMinWidth={"0"}
-          displayWidth={"auto"}
-          loading={"lazy"}
-          src={{
-            src: "/plasmic/image_lab_2024/images/image2.svg",
-            fullWidth: 184,
-            fullHeight: 27,
-            aspectRatio: 6.814815
-          }}
-        /> */}
         <div style={{marginBottom: "20px"}}>
           <Image src='/graphics/5-stars.svg' width={160} height={27} alt='5 stars' />
         </div>
@@ -153,7 +134,6 @@ function PlasmicBigTestimonial__RenderFunc(props) {
           )
         }
         >
-          {/* <React.Fragment >{$props.quote}</React.Fragment> */}
           <React.Fragment>
             <p dangerouslySetInnerHTML={{ __html: $props.quote }}></p>
           </React.Fragment>
@@ -207,126 +187,11 @@ function PlasmicBigTestimonial__RenderFunc(props) {
                       value: args.avatar
                     })
                   : null}
-                <p
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.p,
-                    projectcss.__wab_text,
-                    sty.p__r9NZh,
-                    {
-                      [sty.pimage__r9NZhZoYyX]: hasVariant(
-                        $state,
-                        "image",
-                        "image"
-                      )
-                    }
-                  )}
-                >
-                  <React.Fragment>
-                    {(() => {
-                      try {
-                        return $props.author;
-                      } catch (e) {
-                        if (
-                          e instanceof TypeError ||
-                          e?.plasmicType === "PlasmicUndefinedDataError"
-                        ) {
-                          return "Anna Green";
-                        }
-                        throw e;
-                      }
-                    })()}
-                  </React.Fragment>
-                </p>
-                <PlasmicImg__
-                  alt={""}
-                  className={classNames(sty.img__qafNd, {
-                    [sty.imgimage__qafNdZoYyX]: hasVariant(
-                      $state,
-                      "image",
-                      "image"
-                    )
-                  })}
-                  displayHeight={"14px"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"14px"}
-                  loading={"lazy"}
-                  src={{
-                    src: "/plasmic/image_lab_2024/images/riVerifiedBadgeFillSvg.svg",
-                    fullWidth: 15,
-                    fullHeight: 14,
-                    aspectRatio: 1.071429
-                  }}
-                />
               </Stack__>
-              {false ? (
-                <div
-                  className={classNames(projectcss.all, sty.freeBox___35DmA)}
-                >
-                  <p
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.p,
-                      projectcss.__wab_text,
-                      sty.p__orUha
-                    )}
-                  >
-                    {"Instagram: "}
-                  </p>
-                  <PlasmicLink__
-                    data-plasmic-name={"link"}
-                    data-plasmic-override={overrides.link}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      projectcss.__wab_text,
-                      sty.link
-                    )}
-                    component={Link}
-                    href={"#"}
-                    platform={"nextjs"}
-                  >
-                    {" @anna_green"}
-                  </PlasmicLink__>
-                </div>
-              ) : null}
             </div>
           </Stack__>
         </div>
       </div>
-      <div
-        className={classNames(projectcss.all, sty.freeBox__ifmUn, {
-          [sty.freeBoximage__ifmUnZoYyX]: hasVariant($state, "image", "image")
-        })}
-      >
-        {renderPlasmicSlot({
-          defaultContents: (
-            <PlasmicImg__
-              alt={""}
-              className={classNames(sty.img__rMujq)}
-              displayHeight={"auto"}
-              displayMaxHeight={"410px"}
-              displayMaxWidth={"453px"}
-              displayMinHeight={"0"}
-              displayMinWidth={"0"}
-              displayWidth={"auto"}
-              loading={"lazy"}
-              src={{
-                src: "/plasmic/image_lab_2024/images/contentPng.png",
-                fullWidth: 907,
-                fullHeight: 820,
-                aspectRatio: undefined
-              }}
-            />
-          ),
-
-          value: args.children
-        })}
-      </div>
-
       
       {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : false) ? (
         <Stack__
@@ -347,103 +212,7 @@ function PlasmicBigTestimonial__RenderFunc(props) {
               )
             })}
           >
-            {(
-              hasVariant(globalVariants, "screen", "mobileOnly")
-                ? (() => {
-                    try {
-                      return true;
-                    } catch (e) {
-                      if (
-                        e instanceof TypeError ||
-                        e?.plasmicType === "PlasmicUndefinedDataError"
-                      ) {
-                        return true;
-                      }
-                      throw e;
-                    }
-                  })()
-                : true
-            )
-              ? renderPlasmicSlot({
-                  defaultContents: (
-                    // <DeviconGoogleSvgIcon
-                    //   className={classNames(projectcss.all, sty.svg__hGljB)}
-                    //   role={"img"}
-                    // />
-                    <Image src='/graphics/google-icon.svg' width={24} height={24} alt='Google icon' />
-                  ),
-                })
-              : null}
-            <p
-              className={classNames(
-                projectcss.all,
-                projectcss.p,
-                projectcss.__wab_text,
-                sty.p__bJov0,
-                {
-                  [sty.pimage__bJov0ZoYyX]: hasVariant($state, "image", "image")
-                }
-              )}
-            >
-              <React.Fragment>
-                {(() => {
-                  try {
-                    return $props.author;
-                  } catch (e) {
-                    if (
-                      e instanceof TypeError ||
-                      e?.plasmicType === "PlasmicUndefinedDataError"
-                    ) {
-                      return "Anna Green";
-                    }
-                    throw e;
-                  }
-                })()}
-              </React.Fragment>
-            </p>
-            <PlasmicImg__
-              alt={""}
-              className={classNames(sty.img___8J7Em, {
-                [sty.imgimage___8J7EmZoYyX]: hasVariant(
-                  $state,
-                  "image",
-                  "image"
-                )
-              })}
-              displayHeight={"14px"}
-              displayMaxHeight={"none"}
-              displayMaxWidth={"100%"}
-              displayMinHeight={"0"}
-              displayMinWidth={"0"}
-              displayWidth={"14px"}
-              loading={"lazy"}
-              src={{
-                src: "/plasmic/image_lab_2024/images/riVerifiedBadgeFillSvg.svg",
-                fullWidth: 15,
-                fullHeight: 14,
-                aspectRatio: 1.071429
-              }}
-            />
           </Stack__>
-          <PlasmicImg__
-            alt={""}
-            className={classNames(sty.img__a6CBd, {
-              [sty.imgimage__a6CBdZoYyX]: hasVariant($state, "image", "image")
-            })}
-            displayHeight={"16px"}
-            displayMaxHeight={"none"}
-            displayMaxWidth={"100%"}
-            displayMinHeight={"0"}
-            displayMinWidth={"0"}
-            displayWidth={"96px"}
-            loading={"lazy"}
-            src={{
-              src: "/plasmic/image_lab_2024/images/starsSvg4.svg",
-              fullWidth: 96,
-              fullHeight: 16,
-              aspectRatio: 6
-            }}
-          />
         </Stack__>
       ) : null}
     </Stack__>

@@ -241,7 +241,7 @@ function PlasmicOurLocationSection__RenderFunc(props) {
                     className={"plasmic_default__all plasmic_default__span"}
                     style={{ color: "#7B7D7F" }}
                   >
-                    {"10AM - 5PM"}
+                    {"10AM – 7PM"}
                   </span>
                 </React.Fragment>
               </p>
@@ -265,7 +265,7 @@ function PlasmicOurLocationSection__RenderFunc(props) {
                     className={"plasmic_default__all plasmic_default__span"}
                     style={{ color: "#7B7D7F" }}
                   >
-                    {"10AM - 7PM"}
+                    {"10AM – 5PM"}
                   </span>
                 </React.Fragment>
               </p>

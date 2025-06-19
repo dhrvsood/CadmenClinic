@@ -35,8 +35,8 @@ const WhyPeopleChooseCard = ({ card }) => {
         .card {
           border-radius: 15px;
           overflow: hidden;
-          /* The background-color is effectively overridden by the linear-gradient below */
-          background: linear-gradient(45deg, rgba(244, 243, 239, 1) 50%, rgba(235, 219, 214, 1) 100%);
+          // background: linear-gradient(45deg, rgba(244, 243, 239, 1) 50%, rgba(235, 219, 214, 1) 100%);
+          background: radial-gradient(circle,rgba(244, 243, 239, 1) 50%, rgba(235, 219, 214, 1) 100%);
           display: flex;
           flex-direction: column;
           max-width: 350px;

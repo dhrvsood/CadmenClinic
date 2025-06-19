@@ -230,25 +230,25 @@ function PlasmicBotoxLander__RenderFunc(props) {
       id: 1,
       title: "Thinning Hair and Receding Hairline",
       subtitle: "Restore volume and strengthen thinning hair along the hairline for a fuller, thicker appearance.",
-      img: "../../media/services/ivy-1.jpg"
+      img: "/media/services/prp/section7/1.jpeg"
     },
     {
       id: 1,
       title: "Bald Spots",
       subtitle: "Stimulate growth in bald areas to encourage new hair follicles and promote even regrowth across the scalp.",
-      img: "../../media/services/ivy-2.jpg"
+      img: "/media/services/prp/section7/2.jpeg"
     },
     {
       id: 1,
       title: "Hair Thinning on Crown and Temples",
       subtitle: "Target areas of thinning around the crown and temples for more density and healthier-looking hair",
-      img: "../../media/services/ivy-3.jpg"
+      img: "/media/services/prp/section7/3.jpeg"
     },
     {
       id: 1,
       title: "Overall Hair Density",
       subtitle: "Increase the thickness and fullness of your hair, enhancing its natural volume for a refreshed and revitalized appearance.",
-      img: "../../media/services/ivy-4.jpg"
+      img: "/media/services/prp/section7/4.jpeg"
     }
   ];
   const testimonials = [
@@ -756,6 +756,22 @@ function PlasmicBotoxLander__RenderFunc(props) {
               ))}
             </div>
 
+            <Button
+              data-plasmic-name={"heroButton"}
+              data-plasmic-override={overrides.heroButton}
+              className={classNames("__wab_instance", sty.heroButton)}
+            >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__vVmFi
+                )}
+              >
+                {"Book Now"}
+              </div>
+            </Button>
+
             <style jsx>{`
               .cards-container {
                 display: flex; /* Makes items arrange in a row */
@@ -1027,18 +1043,7 @@ function PlasmicBotoxLander__RenderFunc(props) {
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__h0TYw)}
-
-                // style={{
-                //   position: "sticky",
-                //   top: "150px",
-                //   height: "40vh"
-                // }}
               >
-                {/* <Stack__
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__lJj0R)}
-                > */}
                   <h2
                     className={classNames(
                       projectcss.all,
@@ -1074,12 +1079,7 @@ function PlasmicBotoxLander__RenderFunc(props) {
                       "Don’t wait any longer to restore your hair – join the many satisfied clients who have already experienced the benefits of PRP Hair Restoration."
                     }
                   </p>
-                {/* </Stack__> */}
-
               </Stack__>
-
-              
-
 
               <div className={classNames(projectcss.all, sty.freeBox___5Wi9P)}>
                 <Stack__
