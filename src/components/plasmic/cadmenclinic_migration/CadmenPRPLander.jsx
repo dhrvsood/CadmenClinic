@@ -351,7 +351,7 @@ function PlasmicBotoxLander__RenderFunc(props) {
                 <div className={classNames(projectcss.all, sty.freeBox__xeJeY)}>
                   <div
                     className={classNames(projectcss.all, sty.freeBox___6RoWb)}
-                    style={{ display: "inline" }}
+                    // style={{ display: "inline" }}
                   >
                     <h1
                       className={classNames(
@@ -361,17 +361,15 @@ function PlasmicBotoxLander__RenderFunc(props) {
                         sty.h1___1NJ,
                         ".h1-plasmic"
                       )}
-                      style={{ display: "inline" }}
+                      // style={{ display: "inline" }}
                     >
                       <React.Fragment>
-                        <React.Fragment>{service.hero.tagline}{" with "}</React.Fragment>
+                        <React.Fragment>{service.hero.tagline}{" with \n"}</React.Fragment>
                         <span
                           style={{
                             fontWeight: 500,
                             fontStyle: "italic",
                             color: "#D19D51",
-                            whiteSpace: "nowrap",
-                            // display: "inline",
                             fontSize: "90%"
                           }}
                         >
@@ -574,7 +572,7 @@ function PlasmicBotoxLander__RenderFunc(props) {
                 gap: 20px; /* Adds space between cards (optional, but good for visual separation) */
                 padding: 20px; /* Adds some padding around the container */
                 box-sizing: border-box; /* Ensures padding doesn't add to total width unexpectedly */
-                width: 100%; /* Ensures the container takes full available width */
+                width: 100%; /* Ensures the container takes full available width *
               }
             `}</style>
           </section>
@@ -658,13 +656,19 @@ function PlasmicBotoxLander__RenderFunc(props) {
               {/* Add a style block for the container */}
               <style jsx>{`
                 .cards-container {
-                  display: flex; /* Makes items arrange in a row */
-                  flex-wrap: wrap; /* Allows items to wrap to the next line if space runs out */
-                  justify-content: center; /* Centers the cards horizontally */
-                  gap: 20px; /* Adds space between cards (optional, but good for visual separation) */
-                  padding: 20px; /* Adds some padding around the container */
-                  box-sizing: border-box; /* Ensures padding doesn't add to total width unexpectedly */
-                  width: 100%; /* Ensures the container takes full available width */
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: space-between;
+                  gap: 20px;
+                  padding: 20px;
+                  box-sizing: border-box;
+                  width: 100%;
+                }
+
+                @media (max-width: 1023px) {
+                  .cards-container {
+                    flex-direction: column;
+                  }
                 }
               `}</style>
             </Stack__>
@@ -672,43 +676,6 @@ function PlasmicBotoxLander__RenderFunc(props) {
 
           {/* INTERACTIVE AREA */}
           <AffordableHairRestoration/>
-
-          {/* <AreasInteractive
-            data-plasmic-name={"areasInteractive"}
-            data-plasmic-override={overrides.areasInteractive}
-            className={classNames("__wab_instance", sty.areasInteractive)}
-            data={generateStateValueProp($state, ["areasInteractive", "data"])}
-            onDataChange={async (...eventArgs) => {
-              generateStateOnChangeProp($state, [
-                "areasInteractive",
-                "data"
-              ]).apply(null, eventArgs);
-              if (
-                eventArgs.length > 1 &&
-                eventArgs[1] &&
-                eventArgs[1]._plasmic_state_init_
-              ) {
-                return;
-              }
-            }}
-            onSelectedChange={async (...eventArgs) => {
-              generateStateOnChangeProp($state, [
-                "areasInteractive",
-                "selected"
-              ]).apply(null, eventArgs);
-              if (
-                eventArgs.length > 1 &&
-                eventArgs[1] &&
-                eventArgs[1]._plasmic_state_init_
-              ) {
-                return;
-              }
-            }}
-            selected={generateStateValueProp($state, [
-              "areasInteractive",
-              "selected"
-            ])}
-          /> */}
 
           {/* BEFORE AFTER */}
           <section

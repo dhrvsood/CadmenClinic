@@ -39,7 +39,7 @@ const WhyPeopleChooseCard = ({ icon, title, img, description }) => {
           background: radial-gradient(circle,rgba(244, 243, 239, 1) 50%, rgba(235, 219, 214, 1) 100%);
           display: flex;
           flex-direction: column;
-          max-width: 350px;
+          max-width: 410px;
           width: 100%;
           align-items: center;
           text-align: center;

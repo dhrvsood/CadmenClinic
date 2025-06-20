@@ -130,7 +130,7 @@ export const hairServices = {
             muted: true
         }
     },
-    "exosome": {
+    exosomes: {
         "general": {
             "strikePrice": "$799",
             "salePrice": "$399",
@@ -255,7 +255,7 @@ export const hairServices = {
             muted: false
         }
     },
-    "mesotherapy": {
+    mesotherapy: {
         "general": {
             "strikePrice": "$399",
             "salePrice": "$199",

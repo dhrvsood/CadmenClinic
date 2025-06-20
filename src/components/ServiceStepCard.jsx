@@ -12,10 +12,8 @@ const ServiceStepCard = ({ img, id, title, description }) => {
         <Image
           src={img}
           alt={`Step ${id} - ${title.replace(/<[^>]*>?/gm, '')}`}
-          // REMOVED: width={511}
-          // REMOVED: height={256}
-          layout="fill" // Ensures the image fills the parent container's dimensions
-          objectFit="cover" // Crops the image to fit the container while maintaining aspect ratio
+          layout="fill"
+          objectFit="cover"
           className="card-image"
         />
       </div>
@@ -23,21 +21,20 @@ const ServiceStepCard = ({ img, id, title, description }) => {
 
       <style jsx>{`
         .service-step-card {
-          border-radius: 15px; /* Rounded corners */
-          overflow: hidden; /* Ensures image corners are also rounded */
+          flex: 1 1 300px; /* Grow and shrink, but maintain minimum width */
+          border-radius: 15px;
+          overflow: hidden;
           background-color: #fff;
           display: flex;
-          flex-direction: column; /* Explicitly ensures text always goes below the image */
-          max-width: 350px; /* Adjust as needed for card width */
+          flex-direction: column;
           width: 100%;
-          /* margin: 20px; If you removed this previously, keep it removed */
         }
 
         .card-title {
           font-family: "Cormorant", serif;
           font-size: 1.7em;
           padding: 10px 5px 15px 5px;
-          color: #333; /* Regular font color */
+          color: #333;
           text-align: center;
         }
 
@@ -48,13 +45,13 @@ const ServiceStepCard = ({ img, id, title, description }) => {
         }
 
         .card-image-container {
-          position: relative; /* ESSENTIAL for layout="fill" to work */
-          width: %; /* Image container fills the card's width */
-          height: 256px; /* FIXED HEIGHT for the image container as requested */
-          overflow: hidden; /* Hides any part of the image that spills out */
-          padding: 0 7.5%; /* This creates 7.5% space on left/right, making image 85% width */
-          box-sizing: border-box; /* Ensures padding is included within the 100% width */
-          background-color: #fff; /* Ensures the padded area is white */
+          position: relative;
+          width: 100%;
+          height: 256px;
+          overflow: hidden;
+          padding: 0 7.5%;
+          box-sizing: border-box;
+          background-color: #fff;
         }
 
         .card-description {
@@ -63,21 +60,8 @@ const ServiceStepCard = ({ img, id, title, description }) => {
           color: #555;
           font-size: 1em;
           line-height: 1.6;
-          flex-grow: 1; /* Allows description to take up available space */
+          flex-grow: 1;
           text-align: center;
-        }
-
-        /* Responsive design */
-        @media (min-width: 768px) { /* Midsize screens */
-          .service-step-card {
-            max-width: 450px;
-          }
-        }
-
-        @media (min-width: 1024px) { /* Desktop screens */
-          .service-step-card {
-            max-width: 300px; /* Adjusted based on previous discussions */
-          }
         }
       `}</style>
     </div>

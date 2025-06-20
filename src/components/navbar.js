@@ -13,8 +13,8 @@ import siteLogo from '../../public/site-logo.png';
 const navigation = {
   pages: [
     // { name: 'Conditions', href: '/conditions' },
-    { name: 'Shop Products', href: 'https://e370ne-nc.myshopify.com/collections/frontpage' },
-    { name: 'About', href: '/about' },
+    // { name: 'Shop Products', href: 'https://e370ne-nc.myshopify.com/collections/frontpage' },
+    { name: 'Learn More', href: '/about' },
     { name: 'Blog', href: '/blog' },
   ]
 }
