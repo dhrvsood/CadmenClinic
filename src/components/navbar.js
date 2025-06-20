@@ -196,10 +196,10 @@ const Navbar = () => {
                           ))}
                         </div>
                         <div className='flex flex-row items-center gap-5'>
-                          <a href='tel:4165111337'
+                          <a href='tel:4165511137'
                             className='flex flex-row items-center justify-start gap-3 header-btn rounded px-5 py-3 text-base text-beaver font-semibold'>
                             <PhoneIcon className='w-4' />
-                            <p>(416) 511-1337</p>
+                            <p>(416) 551-1137</p>
                           </a>
                           {!router.pathname.includes('/book-now') ? (
                             <Link href='/book-now' className=''>
