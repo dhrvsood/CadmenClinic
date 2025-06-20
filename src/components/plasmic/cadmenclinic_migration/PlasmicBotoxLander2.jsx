@@ -34,7 +34,7 @@ import TestimonialCard from "../../TestimonialCard"; // plasmic-import: zWVJ2Qd7
 import TextToggler from "../../TextToggler"; // plasmic-import: nk356y6CCF9w/component
 import BotoxProcessCard from "../../BotoxProcessCard"; // plasmic-import: 7fDdA2kY52_t/component
 import AffordableBotoxCard from "../../AffordableBotoxCard"; // plasmic-import: dCCKAyC8oXyh/component
-import FaceSection from "../../FaceSection"; // plasmic-import: dOVgE0OgS0yG/component
+// import FaceSection from "../../FaceSection"; // plasmic-import: dOVgE0OgS0yG/component
 import AreasInteractive from "../../AreasInteractive"; // plasmic-import: cNLJfmXsSSOr/component
 import BotoxResultCard from "../../BotoxResultCard"; // plasmic-import: LkkGmqnkkLRj/component
 import SelectPill from "../../SelectPill"; // plasmic-import: XgOD49Zg0vP7/component
@@ -2367,7 +2367,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
               {"Book Now"}
             </Button>
           </Stack__>
-          {(
+          {/* {(
             hasVariant(globalVariants, "screen", "mobileOnly") ? false : false
           ) ? (
             <FaceSection
@@ -2907,7 +2907,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
               "areasInteractive",
               "selected"
             ])}
-          />
+          /> */}
 
           <Stack__
             as={"section"}
