@@ -705,7 +705,7 @@ function PlasmicBotoxLander__RenderFunc(props) {
                     style={{
                       fontStyle: "italic",
                       fontWeight: 500,
-                      color: "#D19D51"
+                      color: "#FAD8A7"
                     }}
                   >
                     {"After"}

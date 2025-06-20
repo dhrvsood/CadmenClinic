@@ -1830,7 +1830,8 @@
   display: grid;
   position: relative;
   align-content: flex-start;
-  background: var(--light-brown);
+  background: url("../../../../public/graphics/circlesSvg.svg") bottom 0px right 0px / cover no-repeat,
+#9a7f71;
   justify-items: center;
   width: 100%;
   grid-row-gap: 56px;
@@ -1897,6 +1898,7 @@
   height: auto;
   max-width: 100%;
   text-align: center;
+  color: white;
 }
 .p__en7Rd {
   position: relative;
@@ -1905,6 +1907,7 @@
   max-width: 100%;
   text-align: center;
   font-size: 18px;
+  color: white;
 }
 .freeBox__bOf5N {
   display: flex;
