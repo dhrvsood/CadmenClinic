@@ -56,13 +56,13 @@ import RatingReviewPill from "@/components/RatingReviewPill";
 import AffordableHairRestoration from "@/components/AffordableHairRestoration";
 import ServiceStepCard from "@/components/ServiceStepCard";
 import WhyPeopleChooseCard from "@/components/WhyPeopleChooseCard";
-
+import SmallInfoCard from "@/components/SmallInfoCard";
 
 createPlasmicElementProxy;
 
 export const PlasmicBotoxLander__VariantProps = new Array();
 
-export const PlasmicBotoxLander__ArgProps = new Array();
+export const PlasmicBotoxLander__ArgProps = ["serviceData"];
 
 const $$ = {};
 
@@ -74,125 +74,7 @@ function useNextRouter() {
 }
 
 function PlasmicBotoxLander__RenderFunc(props) {
-  const smallCards = [
-    {
-      icon: "/icons/portrait-icon.svg",
-      emphasis: "FREE",
-      title: " Consultation",
-      subtitle: "Claim your first consultation for <strong>FREE</strong>"
-    },
-    {
-      icon: "/icons/discount.svg",
-      emphasis: "$299",
-      title: " Special Price!",
-      subtitle: "Exclusive <strong>50% discount</strong> for your first procedure"
-    },
-    {
-      icon: "/icons/star.svg",
-      emphasis: "Trusted",
-      title: " by 2,100+ Patients",
-      subtitle: "Proven results, 100% natural, minimal downtime"
-    }
-  ];
-  const whyPeopleChooseCards = [
-    {
-      id: 1,
-      title: "What is <strong><em>PRP Hair Restoration?</em></strong>",
-      description: "PRP Hair Restoration uses the body’s own platelet-rich plasma to naturally stimulate hair growth. It is a safe, non-surgical treatment that is 100% natural with no synthetic additives.",
-      img: "/media/services/prp/section3/1.jpeg",
-      icon: "/icons/syringe-icon.svg"
-    }, 
-    {
-      id: 2,
-      title: "Why <strong><em>People Choose</em></strong> PRP?",
-      description: "If you are seeking to stimulate hair growth with a 100% natural solution then PRP is for you. PRP Hair Restoration has been clinically proven to regrow lost hair and is the most popular form of natural hair restoration.",
-      img: "/media/services/prp/section3/2.jpeg",
-      icon: "/icons/portrait-icon.svg"
-    }, 
-    {
-      id: 3,
-      title: "Safe and <strong><em>Professional</em></strong> Care",
-      description: "Your safety is our top priority. Our licensed professionals use industry-leading techniques in a controlled, sterile environment. We believe in natural-looking results that allow your natural beauty to shine.",
-      img: "/media/services/prp/section3/3.jpeg",
-      icon: "/icons/heart-icon.svg"
-    }, 
-  ];
-  const serviceSteps = [
-    {
-      id: 1,
-      title: "Blood <em>Collection</em>",
-      description: "A small sample of your blood is drawn, similar to a routine blood test. This sample is the key to unlocking the healing power within your body.",
-      img: "/media/services/prp/section4/1.jpeg"
-    },
-    {
-      id: 2,
-      title: "PRP <em>Separation</em>",
-      description: "The blood is processed in a centrifuge to isolate the platelet-rich plasma (PRP), which contains powerful growth factors essential for hair regeneration.",
-      img: "/media/services/prp/section4/2.jpeg"
-    },
-    {
-      id: 3,
-      title: "<em>Targeted</em> Scalp Injections",
-      description: "The PRP is injected into areas of your scalp where hair thinning or loss has occurred. This targeted approach stimulates the natural healing process in your follicles.",
-      img: "/media/services/prp/section4/3.jpeg"
-    },
-    {
-      id: 4,
-      title: "<em>Regrowth</em> and Restoration",
-      description: "Over time, the PRP activates your dormant follicles, leading to the regrowth of thicker, healthier hair, and restoring your confidence with natural-looking results.",
-      img: "/media/services/prp/section4/4.jpeg"
-    },
-  ];
-  const affordables = [
-    {
-      id: 1,
-      name: "Thinning Hair",
-      description: "Gradual reduction in the density or volume of hair - unlike sudden hair loss, thinning typically happens over time and may not result in complete baldness.",
-      recommended: "PRP Hair Restoration, Exosome Hair Therapy",
-      img: "../../media/services/ivy-1.jpg",
-      icon: "../../icons/hair.svg"
-    },
-    {
-      id: 2,
-      name: "Receding Hair Line",
-      description: "Form of hair loss where the hair gradually thins and pulls back from the forehead or temples, creating a more prominent hairline over time. It's most commonly seen in men as a typical sign of male pattern baldness, but women can experience it too.",
-      recommended: "PRP Hair Restoration, Exosome Hair Therapy",
-      img: "../../media/services/ivy-2.jpg",
-      icon: "../../icons/hair.svg"
-    },
-    {
-      id: 3,
-      name: "Stress-Related",
-      description: "Temporary form of hair shedding triggered by physical or emotional stress. One of the most common types is <strong>telogen effluvium</strong>, where a significant number of hair follicles prematurely enter the resting phase of the hair growth cycle, leading to increased shedding.",
-      recommended: "PRP Hair Restoration, Exosome Hair Therapy, Mesotherapy Vitamins",
-      img: "../../media/services/ivy-3.jpg",
-      icon: "../../icons/hair.svg"
-    },
-    {
-      id: 4,
-      name: "Male/Female Pattern Baldness",
-      description: "Male and female pattern baldness, also known as androgenetic alopecia, is a common hereditary form of hair loss that occurs gradually over time. In <strong>men</strong>, it typically starts with a receding hairline and thinning at the crown, often progressing to partial or complete baldness. In <strong>women</strong>, it usually presents as overall thinning across the scalp, particularly at the part line, without a receding hairline.",
-      recommended: "PRP Hair Restoration, Exosome Hair Therapy",
-      img: "../../media/services/ivy-4.jpg",
-      icon: "../../icons/hair.svg"
-    },
-    {
-      id: 5,
-      name: "Patchy Hair Loss",
-      description: "Condition where hair falls out in small, round, or irregular bald spots on the scalp or other areas of the body. One of the most common causes is <strong>alopecia areata</strong>, an autoimmune disorder where the body’s immune system mistakenly attacks hair follicles.",
-      recommended: "Exosome Hair Therapy, Mesotherapy Vitamins",
-      img: "../../media/services/ivy-4.jpg",
-      icon: "../../icons/hair.svg"
-    },
-    {
-      id: 6,
-      name: "Scarring",
-      description: "Also known as <strong>cicatricial alopecia</strong>, is a type of permanent hair loss caused by inflammation that destroys hair follicles and replaces them with scar tissue. This damage prevents hair from growing back in the affected areas.",
-      recommended: "Exosome Hair Therapy, Mesotherapy Vitamins",
-      img: "../../media/services/ivy-4.jpg",
-      icon: "../../icons/hair.svg"
-    }
-  ];
+
   const beforeAfters = [
     {
       id: 1,
@@ -225,76 +107,6 @@ function PlasmicBotoxLander__RenderFunc(props) {
       img: "/media/services/prp/section6/Michael.jpeg"
     },
   ];
-  const transformations = [
-    {
-      id: 1,
-      title: "Thinning Hair and Receding Hairline",
-      subtitle: "Restore volume and strengthen thinning hair along the hairline for a fuller, thicker appearance.",
-      img: "/media/services/prp/section7/1.jpeg"
-    },
-    {
-      id: 1,
-      title: "Bald Spots",
-      subtitle: "Stimulate growth in bald areas to encourage new hair follicles and promote even regrowth across the scalp.",
-      img: "/media/services/prp/section7/2.jpeg"
-    },
-    {
-      id: 1,
-      title: "Hair Thinning on Crown and Temples",
-      subtitle: "Target areas of thinning around the crown and temples for more density and healthier-looking hair",
-      img: "/media/services/prp/section7/3.jpeg"
-    },
-    {
-      id: 1,
-      title: "Overall Hair Density",
-      subtitle: "Increase the thickness and fullness of your hair, enhancing its natural volume for a refreshed and revitalized appearance.",
-      img: "/media/services/prp/section7/4.jpeg"
-    }
-  ];
-  const testimonials = [
-    {
-      id: 1,
-      quote: "CADMEN Clinic has been my go-to for my hair restoration needs. They take a better approach to <strong>PRP</strong> which produced much better results than my experience at other clinics. I was seeing noticeable improvements within 2 <strong>PRP</strong> treatments. Definitely recommend to anyone who’s evaluating a fully natural solution – their nurses are the best in the business!"
-    },
-    {
-      id: 2,
-      quote: "CADMEN’s results speak for themselves! Definitely recommend anyone to check out their <strong>PRP</strong> treatments. Best in the business"
-    },
-    {
-      id: 3,
-      quote: "I had an amazing time at CADMEN clinic. Team had performed 5 <strong>PRP</strong> Treatment and result are amazing and drastically improved my hair density and texture. Thank you to CADMEN clinic for their amazing service and hope to see you soon."
-    },
-    {
-      id: 4,
-      quote: "Was looking for a reliable and professional spot for <strong>PRP</strong> treatment when I came across CADMEN Clinic. The staff were super knowledgable and helpful with a professionalism I much appreciated. The service was quick and much less painful than I would have imagined! More importantly the follow up was what was most encouraging. Highly recommend and look forward to going back"
-    },
-    {
-      id: 5,
-      quote: "Gifted my Best friend a few sessions of <strong>PRP</strong> and Botox and the results were great! Staff is very professional and he won’t need to worry about Hair loss much longer! Highly RECOMMEND"
-    }
-  ];
-  const faqs = [
-    {
-      id: 1,
-      question: "How do I know if I’m a candidate?",
-      answer: "Come in for a complimentary consultation with our expert providers, who will assess your hair and scalp to recommend a customized treatment plan unique for you."
-    },
-    {
-      id: 2,
-      question: "When will I see results?",
-      answer: "From our experience with over 2,000 clients, results start to show within 3-4 sessions. It is critical to take good care of your scalp and hair outside of the clinic such as using safe shampoos and lotions."
-    },
-    {
-      id: 3,
-      question: "Are there side effects or any recovery time needed?",
-      answer: "The great thing about PRP is that there is no recovery time needed - most patients feel good enough to immediately go back about their day."
-    },
-    {
-      id: 4,
-      question: "Can I do PRP the same day of my consultation?",
-      answer: "Yes you can!"
-    }
-  ]
 
   const { variants, overrides, forNode } = props;
   const args = React.useMemo(
@@ -307,6 +119,10 @@ function PlasmicBotoxLander__RenderFunc(props) {
       ),
     [props.args]
   );
+
+  // Define service data
+  const service = args.serviceData ?? {};
+
   const $props = {
     ...args,
     ...variants
@@ -528,8 +344,8 @@ function PlasmicBotoxLander__RenderFunc(props) {
                     sty.discountPricingPill__lyb
                   )}
                   perUnit={"/session"}
-                  salePrice={"$299"}
-                  strikePrice={"$599"}
+                  salePrice={service.general.salePrice}
+                  strikePrice={service.general.strikePrice}
                 />
 
                 <div className={classNames(projectcss.all, sty.freeBox__xeJeY)}>
@@ -548,7 +364,7 @@ function PlasmicBotoxLander__RenderFunc(props) {
                       style={{ display: "inline" }}
                     >
                       <React.Fragment>
-                        <React.Fragment>{"Rediscover Hair Growth with\n"}</React.Fragment>
+                        <React.Fragment>{service.hero.tagline}{" with "}</React.Fragment>
                         <span
                           style={{
                             fontWeight: 500,
@@ -559,7 +375,8 @@ function PlasmicBotoxLander__RenderFunc(props) {
                             fontSize: "90%"
                           }}
                         >
-                          {"PRP Hair Restoration"}
+                          {service.general.longTitle}
+                          {/* {"PRP Hair Restoration"} */}
                         </span>
                       </React.Fragment>
                     </h1>
@@ -581,9 +398,8 @@ function PlasmicBotoxLander__RenderFunc(props) {
                         {"50% offer"}
                       </span>
                       <React.Fragment>
-                        {
-                          " now & naturally promote new hair growth using your body’s own plasma."
-                        }
+                        {" now & naturally promote new hair growth using "}
+                        {service.hero.description}
                       </React.Fragment>
                     </React.Fragment>
                   </p>
@@ -625,7 +441,7 @@ function PlasmicBotoxLander__RenderFunc(props) {
                   displayWidth={"auto"}
                   loading={"lazy"}
                   src={{
-                    src: "../../media/services/exosome.jpg",
+                    src: service.hero.img,
                     fullWidth: 1605,
                     fullHeight: 1351,
                     aspectRatio: undefined
@@ -648,66 +464,24 @@ function PlasmicBotoxLander__RenderFunc(props) {
               hasGap={true}
               className={classNames(projectcss.all, sty.threeCards)}
             >
-              {smallCards.map((smallCard) => (
-                <div className={classNames(projectcss.all, sty.freeBox__aBZlq)}>
-                  <div className={classNames(projectcss.all, sty.freeBox__zjMdy)}>
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__txJhU)}
-                    >
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img___4BU6T)}
-                        displayHeight={"32px"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"32px"}
-                        loading={"lazy"}
-                        src={{
-                          src: smallCard.icon,
-                          fullWidth: 32,
-                          fullHeight: 32,
-                          aspectRatio: 1
-                        }}
-                      />
-                    </div>
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__rYcX)}
-                    >
-                      <h4
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.h4,
-                          projectcss.__wab_text,
-                          sty.h4__tyIsz
-                        )}
-                      >
-                        <React.Fragment>
-                          <span className={"plasmic_default__all plasmic_default__span"} style={{ fontWeight: 700, fontStyle: "italic" }}>
-                            {smallCard.emphasis}
-                          </span>
-                          <React.Fragment>{smallCard.title}</React.Fragment>
-                        </React.Fragment>
-                      </h4>
-                    </div>
-                  </div>
-                  <div className={classNames(projectcss.all, sty.freeBox__t7NH5)}>
-                    <p
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.p,
-                        projectcss.__wab_text,
-                        sty.p__rFmv
-                      )}
-                    >
-                      <React.Fragment >
-                        <span dangerouslySetInnerHTML={{__html:smallCard.subtitle}}></span>
-                      </React.Fragment>
-                    </p>
-                  </div>
-                </div>
-              ))}
+              <SmallInfoCard
+                icon="/icons/portrait-icon.svg"
+                emphasis="FREE"
+                title=" Consultation"
+                subtitle="Claim your first consultation for <strong>FREE</strong>"
+              />
+              <SmallInfoCard
+                icon="/icons/discount.svg"
+                emphasis={service.general.salePrice}
+                title=" Special Price!"
+                subtitle="Exclusive <strong>50% discount</strong> for your first procedure"
+              />
+              <SmallInfoCard
+                icon="/icons/star.svg"
+                emphasis="Trusted"
+                title=" by 2,100+ Patients"
+                subtitle="Proven results, 100% natural, minimal downtime"
+              />
             </Stack__>
           </section>
 
@@ -730,9 +504,9 @@ function PlasmicBotoxLander__RenderFunc(props) {
                         color: "#D19D51"
                       }}
                     >
-                      {"Why People Choose"}
+                      {"Why People Choose "}
                     </span>
-                    <React.Fragment>{"\nPRP Hair Restoration"}</React.Fragment>
+                    <React.Fragment>{service.general.longTitle}</React.Fragment>
                   </React.Fragment>
                 </h2>
                 <p
@@ -747,13 +521,33 @@ function PlasmicBotoxLander__RenderFunc(props) {
                     paddingTop: "20px"
                   }}
                 >
-                  Chosen by 2,100+ clients and backed by a 98% success rate, PRP Hair Restoration offers a safe and effective solution for natural hair regrowth
+                  {service.whyPeopleChoose.description}
                 </p>
               
             <div className="cards-container">
-              {whyPeopleChooseCards.map((whyPeopleChooseCard) => (
-                <WhyPeopleChooseCard card={whyPeopleChooseCard}/>
-              ))}
+              {/* What is service */}
+              <WhyPeopleChooseCard
+                icon="/icons/syringe-icon.svg"
+                title={`What is <strong><em>${service.general.longTitle}</em></strong>?`}
+                img={service.whyPeopleChoose.what.img}
+                description={service.whyPeopleChoose.what.description}
+              />
+
+              {/* why people choose service */}
+              <WhyPeopleChooseCard
+                icon="/icons/portrait-icon.svg"
+                title={`Why <strong><em>People Choose</em></strong> ${service.general.shortTitle}?`}
+                img={service.whyPeopleChoose.why.img}
+                description={service.whyPeopleChoose.why.description}
+              />
+
+              {/* Safe and Professional care */}
+              <WhyPeopleChooseCard
+                icon="/icons/heart-icon.svg"
+                title="<strong><em>Safe & Professional</em></strong> Care"
+                img="/media/services/prp/section3/3.jpeg"
+                description="Your safety is our top priority. Our licensed professionals use industry-leading techniques in a controlled, sterile environment. We believe in natural-looking results that allow your natural beauty to shine."
+              />
             </div>
 
             <Button
@@ -829,7 +623,10 @@ function PlasmicBotoxLander__RenderFunc(props) {
                     >
                       {" "}
                     </span>
-                    <React.Fragment>{"PRP Hair Restoration Works"}</React.Fragment>
+                    <React.Fragment>
+                      {service.general.longTitle}
+                      {" Works"}
+                    </React.Fragment>
                   </React.Fragment>
                 </h2>
                 <p
@@ -841,13 +638,20 @@ function PlasmicBotoxLander__RenderFunc(props) {
                   )}
                 >
                   {
-                    "Our patients have experienced significant hair regrowth with our science-backed approach, ensuring safe, long-lasting, and incredible results."
+                    "Our patients have experienced significant hair regrowth with our science-backed approach, ensuring safe, long-lasting, and incredible results"
                   }
                 </p>
               </Stack__>
               <div className="cards-container">
-                {serviceSteps.map((step) => (
-                  <ServiceStepCard key={step.id} step={step} />
+                {/* img, id, title, description */}
+                {service.howItWorks.map((step) => (
+                  <ServiceStepCard 
+                    key={step.id}
+                    img={step.img}
+                    id={step.id}
+                    title={step.title}
+                    description={step.description}
+                  />
                 ))}
               </div>
 
@@ -1053,18 +857,18 @@ function PlasmicBotoxLander__RenderFunc(props) {
                     )}
                   >
                     <React.Fragment>
-                      <React.Fragment>{"PRP Hair Restoration Has Already "}</React.Fragment>
+                      <React.Fragment>{service.transformations.title.first}</React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        // className={"plasmic_default__all plasmic_default__span"}
                         style={{
                           fontStyle: "italic",
                           fontWeight: 500,
                           color: "#D19D51"
                         }}
                       >
-                        {"Transformed"}
+                        {service.transformations.title.emphasis}
                       </span>
-                      <React.Fragment>{" 100,000+ Lives"}</React.Fragment>
+                      <React.Fragment>{service.transformations.title.last}</React.Fragment>
                     </React.Fragment>
                   </h2>
                   <p
@@ -1075,9 +879,8 @@ function PlasmicBotoxLander__RenderFunc(props) {
                       sty.p__aWpbi
                     )}
                   >
-                    {
-                      "Don’t wait any longer to restore your hair – join the many satisfied clients who have already experienced the benefits of PRP Hair Restoration."
-                    }
+                    {"Don’t wait any longer to restore your hair – join the many satisfied clients who have already experienced the benefits of "}
+                    {service.general.longTitle}
                   </p>
               </Stack__>
 
@@ -1095,7 +898,7 @@ function PlasmicBotoxLander__RenderFunc(props) {
                       : undefined
                   )}
                 >
-                  {transformations.map((transformation) => (
+                  {service.transformations.cards.map((transformation) => (
                     <AreaExplainerCard
                       className={classNames(
                         "__wab_instance",
@@ -1163,7 +966,8 @@ function PlasmicBotoxLander__RenderFunc(props) {
                         color: "#d09d45"
                       }}
                     >
-                      {"PRP Hair Restoration Clients"}
+                      {service.general.longTitle}
+                      {" Clients"}
                     </span>
                   </React.Fragment>
                 </h2>
@@ -1175,9 +979,8 @@ function PlasmicBotoxLander__RenderFunc(props) {
                     sty.p__qhN8C
                   )}
                 >
-                  {
-                    "Over thousands of people have transformed their lives with PRP Hair Restoration."
-                  }
+                  {"Over thousands of people have transformed their lives with "}
+                  {service.general.longTitle}
                 </p>
               </Stack__>
               <div className={classNames(projectcss.all, sty.freeBox__llpLu)}>
@@ -1200,7 +1003,7 @@ function PlasmicBotoxLander__RenderFunc(props) {
                     slidesToScroll: 1
                   }}
                 >
-                  {testimonials.map((testimonial) => (
+                  {service.testimonials.map((testimonial) => (
                     <BigTestimonial
                       key={testimonial.id}
                       quote={testimonial.quote}
@@ -1254,9 +1057,9 @@ function PlasmicBotoxLander__RenderFunc(props) {
                     sty.p__sLxZu
                   )}
                 >
-                  {
-                    "Our clients have eliminated their doubts about PRP Hair Restoration, and you can join them today!"
-                  }
+                  {"Our clients have eliminated their doubts about "}
+                  {service.general.longTitle}
+                  {", and you can join them today!"}
                 </p>
               </Stack__>
               <Stack__
@@ -1264,7 +1067,7 @@ function PlasmicBotoxLander__RenderFunc(props) {
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__rlxr1)}
               >
-                {faqs.map((faq) => (
+                {service.faqs.map((faq) => (
                   <Faq
                     id={faq.id}
                     answer={faq.answer}
@@ -1298,7 +1101,8 @@ function PlasmicBotoxLander__RenderFunc(props) {
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ fontStyle: "italic", fontWeight: 500 }}
                     >
-                      {"PRP Hair Restoration Process"}
+                      {service.general.longTitle}
+                      {" Process"}
                     </span>
                   </React.Fragment>
                 ) : (
@@ -1308,7 +1112,8 @@ function PlasmicBotoxLander__RenderFunc(props) {
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ fontStyle: "italic", fontWeight: 500 }}
                     >
-                      {"PRP Hair Restoration Process"}
+                      {service.general.longTitle}
+                      {" Process"}
                     </span>
                   </React.Fragment>
                 )}
@@ -1319,11 +1124,8 @@ function PlasmicBotoxLander__RenderFunc(props) {
                   data-plasmic-override={overrides.htmlVideo}
                   className={classNames("__wab_instance", sty.htmlVideo)}
                   controls={true}
-                  // poster={
-                  //   "/plasmic/image_lab_2024/images/vlcsnap2024121212H00M45S081ResultAvif.avif"
-                  // }
-                  
-                  src={"../../media/videos/PRP.mp4"}
+                  src={service.video.src}
+                  muted={service.video.muted}
                 />
               </div>
               <Button
@@ -1355,8 +1157,8 @@ function PlasmicBotoxLander__RenderFunc(props) {
                   sty.discountPricingPill__dvwCm
                 )}
                 perUnit={" /session"}
-                salePrice={"$299"}
-                strikePrice={"$599"}
+                salePrice={service.general.salePrice}
+                strikePrice={service.general.strikePrice}
               />
 
               <Stack__
@@ -1406,7 +1208,9 @@ function PlasmicBotoxLander__RenderFunc(props) {
                       {"50% DISCOUNT"}
                     </span>
                     <React.Fragment>
-                      {" for first PRP Hair Restoration procedure!"}
+                      {" for first "}
+                      {service.general.longTitle}
+                      {" procedure!"}
                     </React.Fragment>
                   </React.Fragment>
                 </p>

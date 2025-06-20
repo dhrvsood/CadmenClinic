@@ -1,17 +1,17 @@
 // src/components/ServiceStepCard.jsx
 import Image from 'next/image';
 
-const ServiceStepCard = ({ step }) => {
+const ServiceStepCard = ({ img, id, title, description }) => {
   return (
     <div className="service-step-card">
       <h3 className="card-title">
-        <span className="underlined-id"><strong>Step {step.id}</strong></span>{'\n'}
-        <span dangerouslySetInnerHTML={{ __html: step.title }} />
+        <span className="underlined-id"><strong>Step {id}</strong></span>{'\n'}
+        <span dangerouslySetInnerHTML={{ __html: title }} />
       </h3>
       <div className="card-image-container">
         <Image
-          src={step.img}
-          alt={`Step ${step.id} - ${step.title.replace(/<[^>]*>?/gm, '')}`}
+          src={img}
+          alt={`Step ${id} - ${title.replace(/<[^>]*>?/gm, '')}`}
           // REMOVED: width={511}
           // REMOVED: height={256}
           layout="fill" // Ensures the image fills the parent container's dimensions
@@ -19,7 +19,7 @@ const ServiceStepCard = ({ step }) => {
           className="card-image"
         />
       </div>
-      <p className="card-description">{step.description}</p>
+      <p className="card-description">{description}</p>
 
       <style jsx>{`
         .service-step-card {

@@ -149,21 +149,7 @@ function PlasmicFaq__RenderFunc(props) {
                   { [sty.h4open]: hasVariant($state, "open", "open") }
                 )}
               >
-                <React.Fragment>
-                  {(() => {
-                    try {
-                      return $props.question;
-                    } catch (e) {
-                      if (
-                        e instanceof TypeError ||
-                        e?.plasmicType === "PlasmicUndefinedDataError"
-                      ) {
-                        return "Is Botox safe?";
-                      }
-                      throw e;
-                    }
-                  })()}
-                </React.Fragment>
+                <React.Fragment>{$props.question}</React.Fragment>
               </h4>
             }
 
@@ -192,19 +178,7 @@ function PlasmicFaq__RenderFunc(props) {
           )}
         >
           <React.Fragment>
-            {(() => {
-              try {
-                return $props.answer;
-              } catch (e) {
-                if (
-                  e instanceof TypeError ||
-                  e?.plasmicType === "PlasmicUndefinedDataError"
-                ) {
-                  return "Yes, Botox is a safe and effective treatment when administered by qualified professionals. It has been FDA-approved for cosmetic use for many years and is backed by extensive research and clinical studies. Our experienced specialists ensure the highest standards of safety and care, allowing you  to enjoy the benefits of Botox with confidence.";
-                }
-                throw e;
-              }
-            })()}
+            <p dangerouslySetInnerHTML={{ __html: $props.answer}}></p>
           </React.Fragment>
         </div>
       </div>

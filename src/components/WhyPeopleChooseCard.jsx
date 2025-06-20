@@ -1,13 +1,13 @@
 import Image from 'next/image';
 
-const WhyPeopleChooseCard = ({ card }) => {
+const WhyPeopleChooseCard = ({ icon, title, img, description }) => {
   return (
     <div className="card">
       {/* icon */}
       <div className="card-icon-container">
         <Image
-          src={card.icon}
-          alt={`${card.title} icon`}
+          src={icon}
+          alt={`${title} icon`}
           width={50}
           height={50}
         />
@@ -15,21 +15,21 @@ const WhyPeopleChooseCard = ({ card }) => {
 
       {/* title */}
       <h3 className="card-title">
-        <span dangerouslySetInnerHTML={{ __html: card.title }}></span>
+        <span dangerouslySetInnerHTML={{ __html: title }}></span>
       </h3>
 
       {/* image */}
       <div className="card-image-container">
         <Image
-          src={card.img}
-          alt={card.title}
+          src={img}
+          alt={title}
           fill
           style={{ objectFit: 'cover' }}
         />
       </div>
 
       {/* description */}
-      <p className="card-description">{card.description}</p>
+      <p className="card-description">{description}</p>
 
       <style jsx>{`
         .card {
@@ -116,108 +116,3 @@ const WhyPeopleChooseCard = ({ card }) => {
 };
 
 export default WhyPeopleChooseCard;
-
-
-// import Image from 'next/image';
-
-// const WhyPeopleChooseCard = ({ card }) => {
-//   return (
-
-    
-//     <div className="card">
-//       {/* icon */}
-//       <div className="card-icon-container"> {/* New container for centering the icon */}
-//         <Image
-//           src={card.icon}
-//           alt={`${card.title} icon`}
-//           width={50}
-//           height={50}
-//         />
-//       </div>
-      
-//       {/* title */}
-//       <h3 className="card-title">
-//         <span dangerouslySetInnerHTML={{ __html: card.title }}></span>
-//       </h3>
-
-//       {/* image */}
-//       <div className="card-image-container">
-//         <Image
-//           src={card.img}
-//           alt={card.title}
-//           fill // Use fill to make the image fill its parent container
-//           style={{ objectFit: 'cover' }} // Ensures the image covers the area without distortion
-//         />
-//       </div>
-
-//       {/* description */}
-//       <p className="card-description">{card.description}</p>
-
-//       <style jsx>{`
-//         .card {
-//           border-radius: 15px; /* Rounded corners */
-//           overflow: hidden; /* Ensures image corners are also rounded */
-//           background-color: #F4F3EF;
-//           background: linear-gradient(45deg,rgba(244, 243, 239, 1) 50%, rgba(235, 219, 214, 1) 100%);
-//           display: flex;
-//           flex-direction: column; /* Explicitly ensures text always goes below the image */
-//           max-width: 350px; /* Adjust as needed for card width */
-//           width: 100%;
-//           /* margin: 20px; If you removed this previously, keep it removed */
-//           align-items: center; /* Center content horizontally */
-//           text-align: center; /* Center text within the card */
-//         }
-
-//         .card-title {
-//           font-family: "Cormorant", serif;
-//           font-size: 1.7em;
-//           padding: 0px 5px 15px 5px;
-//           color: #333; /* Regular font color */
-//           width: 100%; /* Ensure title takes full width to center effectively */
-//         }
-
-//         .card-image-container {
-//           position: relative; /* ESSENTIAL for layout="fill" to work */
-//           width: 100%; /* Image container fills the card's width */
-//           height: 256px; /* FIXED HEIGHT for the image container as requested */
-//           overflow: hidden; /* Hides any part of the image that spills out */
-//           /* padding: 0 7.5%; Removed padding to allow image to fill 100% width */
-//           box-sizing: border-box; /* Ensures padding is included within the 100% width */
-//           background-color: #fff; /* Ensures the padded area is white */
-//         }
-
-//         .card-icon-container {
-//           display: flex;
-//           justify-content: center; /* Center the icon horizontally */
-//           padding: 15px 0; /* Add some vertical padding around the icon */
-//           width: 100%; /* Ensure container takes full width to center effectively */
-//         }
-
-//         .card-description {
-//           font-family: "Poppins", sans-serif;
-//           padding: 15px;
-//           color: #555;
-//           font-size: 1em;
-//           line-height: 1.6;
-//           flex-grow: 1; /* Allows description to take up available space */
-//           width: 100%; /* Ensure description takes full width to center effectively */
-//         }
-
-//         /* Responsive design */
-//         @media (min-width: 768px) { /* Midsize screens */
-//           .service-step-card {
-//             max-width: 450px;
-//           }
-//         }
-
-//         @media (min-width: 1024px) { /* Desktop screens */
-//           .service-step-card {
-//             max-width: 300px; /* Adjusted based on previous discussions */
-//           }
-//         }
-//       `}</style>
-//     </div>
-//   );
-// };
-
-// export default WhyPeopleChooseCard;
