@@ -38,10 +38,10 @@ const WhyOurPatientsSlider = ({ children, settings, handleButtonClick }) => {
         ref={(slider) => (sliderRef = slider)}
         {...settings}
         beforeChange={handleBeforeChange}
-        spaceBetween={20}
       >
         {children.map((child, i) => (
-          <div key={i} className={styles.card}>
+          // <div key={i} className={styles.card}>
+          <div key={i} className="px-[8px]">
             {child}
           </div>
         ))}
