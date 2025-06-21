@@ -6,12 +6,13 @@ import SeeTheResultsSlider from '@/components/SeeTheResultsSlider/SeeTheResultsS
 import { useWindowSize } from 'react-use'
 import OfferCard from '@/components/OfferCard'
 import TestimonialCardBig from '@/components/TestimonialCardBig'
-import ContactDataCard from '@/components/ContactDataCard'
 import TestimonialsSlider from '@/components/TestimonialsSlider/TestimonialsSlider'
 import WhyOurPatientsSlider from '@/components/WhyOurPatientsSlider/WhyOurPatientsSlider'
 import IconImageTextCard from '@/components/IconImageTextCard/IconImageTextCard'
-// import BlockContent from '@sanity/block-content-to-react'
-// import { blockSerializer } from '@/styles/sanitySerializers'
+
+// plasmic our location section
+import OurLocationSection from '@/components/OurLocationSection'
+
 
 const Home = () => {
   const { width: windowWidth, height: windowHeight } = useWindowSize();
@@ -131,7 +132,7 @@ const Home = () => {
       "serviceId": "botox"
     },
     {
-      "service": "Lip Filler / Dermal Filler",
+      "service": "Lip / Dermal Filler",
       "image": "/media/home/offers/o5.webp",
       "percentOff": 30,
       "price": 599,
@@ -172,6 +173,8 @@ const Home = () => {
     }
   ]
 
+  const isDesktop = windowWidth >= 1200
+
   return (
     <>
       <NextSeo
@@ -198,37 +201,36 @@ const Home = () => {
       />
 
       {/* Landing */}
-      <section className='pb-[80px] pt-[167px] max-sm:pt-[100px]'>
-        <div className='wrapper flex items-center justify-between gap-[165px] max-sm:flex-col max-sm:gap-[60px]'>
-          <div className='flex flex-col'>
+      <section className='pb-[80px] pt-[120px] max-sm:pt-[100px]'>
+        <div className='wrapper flex flex-col md:flex-row items-center justify-between gap-[60px] md:gap-[165px]'>
+          
+          {/* TEXT CONTENT */}
+          <div className='flex flex-col w-full md:w-auto'>
             <h1 className='d-h1'>
-              <span className='italic text-[#D19D51]'>
-                Premier Medical Spa{' '}
-              </span>
+              <span className='italic text-[#D19D51]'>Premier Medical Spa </span>
               for Hair Restoration and Aesthetic{' '}
               <span className='italic text-[#D19D51]'>Treatments</span>
             </h1>
             <p className='mt-[8px] pr-[50px] text-[18px] max-sm:text-[14px]'>
-            Join thousands of satisfied patients who trust CADMEN Clinic – Toronto’s 
-            {' '}
-              <i>
-                <b>#1 choice</b>
-              </i>{' '}
+              Join thousands of satisfied patients who trust CADMEN Clinic – Toronto’s{' '}
+              <i><b>#1 choice</b></i>{' '}
               for medical-grade hair restoration and aesthetic treatments.
             </p>
             <div className='mt-[24px] flex'>
               <RatingReviewPill />
             </div>
-            <Link href='/book-now' className='mt-[40px]'>
-              <button className='button max-sm:w-full'>Book Consultation</button>
+            <Link href='/book-now' className='mt-[40px] w-full md:w-auto'>
+              <button className='button w-full md:w-auto'>Book Consultation</button>
             </Link>
           </div>
+
+          {/* IMAGE */}
           <Image
             src='/media/home/hero-image.webp'
             width={538}
             height={494}
             alt="Woman's head turned to the side with serene expression"
-            className='max-md:w-[40vw] max-sm:w-full'
+            className='w-full max-w-[538px] md:w-[40vw]'
           />
         </div>
       </section>
@@ -242,34 +244,44 @@ const Home = () => {
               CADMEN Clinic
             </h2>
           </div>
-          {/* Data from Zenoti, Need to change to JSON */}
-          <WhyOurPatientsSlider
-            settings={{
-              dots: false,
-              infinite: false,
-              arrows: false,
-              speed: 500,
-              slidesToShow: windowWidth > 768 ? 3.1 : 1.1,
-              slidesToScroll: windowWidth > 768 ? 3 : 1
-            }}
-            handleButtonClick={() => router.push('/book-now')}
-          >
-            {whyChooseCards.map((card, index) => (
-              <IconImageTextCard
-                key={index}
-                icon={card.icon}
-                image={card.mainImage}
-                title={
-                  // <BlockContent
-                  //   blocks={card.title}
-                  //   serializers={blockSerializer}
-                  // />
-                  card.title[0].children[0].text
-                }
-                text={card.text}
-              />
-            ))}
-          </WhyOurPatientsSlider>
+
+          {/* DESKTOP GRID */}
+          {isDesktop ? (
+            <div className='flex justify-between gap-[20px]'>
+              {whyChooseCards.map((card, index) => (
+                <IconImageTextCard
+                  key={index}
+                  icon={card.icon}
+                  image={card.mainImage}
+                  title={card.title[0].children[0].text}
+                  text={card.text}
+                />
+              ))}
+            </div>
+          ) : (
+            // SLIDER FOR SMALL SCREENS
+            <WhyOurPatientsSlider
+              settings={{
+                dots: false,
+                infinite: false,
+                arrows: false,
+                speed: 500,
+                slidesToShow: windowWidth > 768 ? 3.1 : 1.1,
+                slidesToScroll: windowWidth > 768 ? 3 : 1
+              }}
+              handleButtonClick={() => router.push('/book-now')}
+            >
+              {whyChooseCards.map((card, index) => (
+                <IconImageTextCard
+                  key={index}
+                  icon={card.icon}
+                  image={card.mainImage}
+                  title={card.title[0].children[0].text}
+                  text={card.text}
+                />
+              ))}
+            </WhyOurPatientsSlider>
+          )}
         </div>
       </section>
 
@@ -300,7 +312,10 @@ const Home = () => {
       </section>
 
       {/* Offers */}
-      <section className='bg-beaver/90 py-[80px] max-sm:py-[40px]'>
+      <section style={{
+          background: `url("/graphics/circlesSvg.svg") bottom right / cover no-repeat, #9a7f71`,
+        }}
+        className='bg-beaver/90 py-[80px] max-sm:py-[40px]'>
         <div className='wrapper'>
           <div className='m-auto mb-[60px] max-w-[875px] text-center'>
             <h1 className='d-h1 text-white mb-[8px] max-sm:text-[40px]'>
@@ -313,7 +328,8 @@ const Home = () => {
               top choice for medical-grade hair restoration and aesthetics.
             </p>
           </div>
-          <div className='grid grid-cols-3 gap-[30px] max-md:grid-cols-2 max-sm:grid-cols-1'>
+
+          <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[30px]'>
             {offerCards.map((card, index) => (
               <OfferCard
                 key={index}
@@ -369,104 +385,43 @@ const Home = () => {
       </section>
 
       {/* Contact */}
-      <section className='py-[80px] max-sm:py-[40px]'>
-        <div className='wrapper'>
-          <div className='mb-[48px] flex flex-col items-center gap-[12px]'>
-            <h2 className='d-h2'>
-              Our <span className='gold-italic'>Location</span>
-            </h2>
-            <p className='text-center'>
-              Don&apos;t put off your changes — come to us now and get <b>FREE</b>{' '}
-              first consultation!
-            </p>
-          </div>
-          <div className='grid grid-cols-[1.75fr,2.25fr,3fr] gap-[30px] max-md:grid-cols-1 max-md:gap-[14px]'>
-            {/* Change */}
-            <ContactDataCard
-              linkTo='tel:+14165511137'
-              linkText='(416) 551-1137'
-              icon='/icons/phone.svg'
-              title='Call Us'
-            />
-            <ContactDataCard
-              linkTo='mailto:info@cadmenclinic.ca'
-              linkText='info@cadmenclinic.ca'
-              icon='/icons/mail.svg'
-              title='Contact Us'
-            />
-            <ContactDataCard
-              linkTo='https://maps.app.goo.gl/RizTXzKMnXVkUewB7'
-              linkText='240 Queen St W (2nd Floor), Toronto, ON'
-              icon='/icons/map.svg'
-              title='Visit Us'
-              newTab
-            />
-          </div>
-          <div className='relative mt-[56px] h-[700px] overflow-hidden rounded-[20px]'>
-            <iframe
-              src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5773.815245938251!2d-79.39317832376719!3d43.65009025263178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b350228b56b63%3A0x114171d25aa4df4d!2sCADMEN%20Clinic%20-%20Hair%20Loss%20%2B%20Face%20Centre!5e0!3m2!1sen!2sca!4v1745283288795!5m2!1sen!2sca'
-              width='100%'
-              height='100%'
-              style={{ border: 0 }}
-              allowfullscreen
-              loading='lazy'
-              referrerpolicy='no-referrer-when-downgrade'
-            ></iframe>
-            <div className='absolute bottom-[20px] left-[20px] max-sm:right-[20px]'>
-              <div className='flex'>
-                <div className='flex items-center rounded-[12px] border border-[#eaecee] bg-[#fcfcfc] p-[28px]'>
-                  <Image
-                    src='/icons/Clock.svg'
-                    width={32}
-                    height={32}
-                    alt='Phone icon'
-                  />
-                </div>
-                <div className='ml-[-1px] flex w-full flex-col justify-center rounded-[12px] border border-[#eaecee] bg-[#fcfcfc] p-[20px]'>
-                  <h4 className='d-h4'>Working Hours</h4>
-                </div>
-              </div>
-              <div className='flex flex-col gap-[8px] rounded-[12px] border border-[#eaecee] bg-[#fcfcfc] p-[20px] pr-[100px] max-sm:pr-[20px]'>
-                <p className='text-[18px]'>
-                  <span className='font-medium'>Monday - Friday: </span>10AM - 5PM
-                </p>
-                <p className='text-[18px]'>
-                  <span className='font-medium'>Saturday & Sunday: </span>10AM - 7PM
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <OurLocationSection />
 
       {/* First Step Banner */}
-      <section className='bg-beaver/90 py-[80px] max-sm:py-[40px]'>
-        <div className='wrapper flex gap-[60px] max-sm:flex-col'>
-          <div className='flex flex-col gap-[12px]'>
+      <section style={{
+          background: `url("/graphics/circlesSvg.svg") bottom right / cover no-repeat, #9a7f71`,
+        }}
+        className='bg-beaver/90 py-[80px] sm:py-[60px] max-sm:py-[40px]'>
+        <div className='wrapper flex flex-col md:flex-row items-center gap-[40px] md:gap-[60px]'>
+          
+          {/* Text Content */}
+          <div className='w-full md:w-[40%] flex flex-col gap-[12px] text-center md:text-left'>
             <h2 className='d-h2 text-white'>
-              Take the <span className='gold-italic light'>First Step</span>{' '}
-              Toward a New You!
+              Take the <span className='gold-italic light'>First Step</span> Toward a New You!
             </h2>
             <p className='text-[18px] text-white'>
-              Discover how CADMEN Clinic can help you look and feel your
-              best. Book a consultation today to learn more about our services
-              and see which treatments are right for you.
+              Discover how CADMEN Clinic can help you look and feel your best.
+              Book a consultation today to learn more about our services and
+              see which treatments are right for you.
             </p>
             <Link href='/book-now'>
-              <button className='button white mt-[28px] max-sm:w-full'>
+              <button className='button white mt-[28px] w-full md:w-auto'>
                 Book My Consultation Now
               </button>
             </Link>
           </div>
+
+          {/* Image */}
           <Image
             src='/media/home/first-step.webp'
             width={650}
             height={380}
             alt='Woman smiling and touching her face'
-            className='rounded-[16px] object-cover max-md:w-[60vw] max-sm:w-full'
+            className='w-full md:w-[60%] rounded-[16px] object-cover'
           />
         </div>
       </section>
+
     </>
   )
 }

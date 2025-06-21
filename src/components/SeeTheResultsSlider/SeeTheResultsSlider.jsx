@@ -23,14 +23,14 @@ const data = [
           description:
             "Promote new hair growth and achieve thicker, fuller hair using your body's own plasma.",
           image: '/seeTheResultsSlider/hair/prp-1a.jpeg',
-          link: '/services/prp-hair-restoration'
+          link: '/services/hair-restoration/prp'
         },
         backCard: {
           title: 'PRP Hair Restoration',
           description:
             "Promote new hair growth and achieve thicker, fuller hair using your body's own plasma.",
           image: '/seeTheResultsSlider/hair/prp-1b.jpeg',
-          link: '/services/prp-hair-restoration'
+          link: '/services/hair-restoration/prp'
         },
       },
       {
@@ -39,14 +39,14 @@ const data = [
           description:
             'Block DHT levels and boost hair regeneration with the combined power of microneedling and exosomes.',
           image: '/seeTheResultsSlider/hair/exo-1a.jpeg',
-          link: '/services/exosomes'
+          link: '/services/hair-restoration/exosomes'
         },
         backCard: {
           title: 'Exosomes Hair Therapy',
           description:
             'Block DHT levels and boost hair regeneration with the combined power of microneedling and exosomes.',
           image: '/seeTheResultsSlider/hair/exo-1b.jpeg',
-          link: '/services/exosomes'
+          link: '/services/hair-restoration/exosomes'
         }
       },
       {
@@ -55,14 +55,14 @@ const data = [
           description:
             'Complex blend of amino acids, minerals, vitamins, and co-enzymes to stimulate hair follicle growth.',
           image: '/seeTheResultsSlider/hair/meso-1a.jpeg',
-          link: '/services/mesotherapy'
+          link: '/services/hair-restoration/mesotherapy'
         },
         backCard: {
           title: 'Mesotherapy Vitamins',
           description:
             'Complex blend of amino acids, minerals, vitamins, and co-enzymes to stimulate hair follicle growth.',
           image: '/seeTheResultsSlider/hair/meso-1b.jpeg',
-          link: '/services/mesotherapy'
+          link: '/services/hair-restoration/mesotherapy'
         },
       }
     ]
