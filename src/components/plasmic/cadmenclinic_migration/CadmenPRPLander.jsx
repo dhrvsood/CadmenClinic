@@ -393,7 +393,7 @@ function PlasmicBotoxLander__RenderFunc(props) {
                 gap: 20px; /* Adds space between cards (optional, but good for visual separation) */
                 padding: 20px; /* Adds some padding around the container */
                 box-sizing: border-box; /* Ensures padding doesn't add to total width unexpectedly */
-                width: 100%; /* Ensures the container takes full available width *
+                max-width: 100%; /* Ensures the container takes full available width *
               }
             `}</style>
           </section>

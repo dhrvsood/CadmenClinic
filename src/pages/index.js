@@ -245,8 +245,30 @@ const Home = () => {
             </h2>
           </div>
 
-          {/* DESKTOP GRID */}
-          {isDesktop ? (
+          <WhyOurPatientsSlider
+            settings={{
+              dots: false,
+              infinite: false,
+              arrows: false,
+              speed: 500,
+              slidesToShow: windowWidth > 768 ? 3.1 : 1.1,
+              slidesToScroll: windowWidth > 768 ? 3 : 1
+            }}
+            handleButtonClick={() => router.push('/book-now')}
+          >
+            {whyChooseCards.map((card, index) => (
+              <IconImageTextCard
+                key={index}
+                icon={card.icon}
+                image={card.mainImage}
+                title={card.title[0].children[0].text}
+                text={card.text}
+              />
+            ))}
+          </WhyOurPatientsSlider>
+
+          {/* CONDITIONAL LOGIC TO REMOVE SLIDER ON DESKTOP SCREENS */}
+          {/* {isDesktop ? (
             <div className='flex justify-between gap-[20px]'>
               {whyChooseCards.map((card, index) => (
                 <IconImageTextCard
@@ -259,7 +281,6 @@ const Home = () => {
               ))}
             </div>
           ) : (
-            // SLIDER FOR SMALL SCREENS
             <WhyOurPatientsSlider
               settings={{
                 dots: false,
@@ -281,7 +302,7 @@ const Home = () => {
                 />
               ))}
             </WhyOurPatientsSlider>
-          )}
+          )} */}
         </div>
       </section>
 
@@ -358,7 +379,7 @@ const Home = () => {
               Over thousands of people have transformed their lives with our hair restoration and aesthetic treatments.
             </p>
           </div>
-          <div className='m-auto max-w-[1033px]'>
+          <div className='m-auto max-w-full'>
             <TestimonialsSlider
               slides={reviews}
               settings={{

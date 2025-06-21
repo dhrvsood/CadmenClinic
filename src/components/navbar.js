@@ -72,7 +72,7 @@ const Navbar = () => {
       <header className='relative'>
         <nav aria-label='Top'>
           <div className='bg-white'>
-            <div className='mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8 py-4'>
+            <div className='mx-auto max-w-100% px-4 sm:px-6 lg:px-8 py-4'>
               <div>
                 <div className='flex flex-row items-center justify-between gap-12'>
                   {/* Logo (lg+) */}

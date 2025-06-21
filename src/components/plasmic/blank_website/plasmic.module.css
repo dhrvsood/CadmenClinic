@@ -30,7 +30,7 @@
 }
 
 .plasmic_tokens {
-  --plsmc-standard-width: 1400px;
+  --plsmc-standard-width: 100%;
   --plsmc-wide-width: 100%;
   --plsmc-viewport-gap: 0px;
   --plsmc-wide-chunk: calc(

@@ -59,7 +59,7 @@ const AffordableHairRestoration = () => {
   const [activeTab, setActiveTab] = useState(affordables[0]); // Initialize with the first item
 
   return (
-    <section className="container mx-auto px-4 py-16">
+    <section className="container max-w-full mx-auto px-16 py-16">
       <div className="flex flex-col lg:flex-row gap-8 items-center lg:items-start lg:justify-between">
         {/* Left Section: Title, Tagline, Buttons */}
         <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left max-w-[550px]">
@@ -97,7 +97,7 @@ const AffordableHairRestoration = () => {
         {/* Right Section: Image and Text Below */}
         <div className="w-full lg:w-1/2 lg:justify-between">
           {/* Container for fixed aspect ratio image */}
-          <div className="relative w-full max-w-[700px] mx-auto overflow-hidden rounded-lg shadow-lg"
+          <div className="relative w-full max-w-full mx-auto overflow-hidden rounded-lg shadow-lg"
                style={{ paddingTop: 'calc(300 / 700 * 100%)' }}> {/* This sets the aspect ratio (height / width * 100%) */}
 
             <Image
@@ -110,7 +110,7 @@ const AffordableHairRestoration = () => {
           </div>
 
 
-          <div className="w-full max-w-[650px] mx-auto p-4 sm:p-6 bg-white rounded-b-lg shadow-lg mt-4 "> {/* Added margin-top for spacing */}
+          <div className="w-full max-w-full mx-auto p-4 sm:p-6 bg-white rounded-b-lg shadow-lg mt-4 "> {/* Added margin-top for spacing */}
             <div className="flex items-center mb-2">
               <Image src={activeTab.icon} alt="Icon" width={28} height={28} className="mr-3 flex-shrink-0" />
               <div className="plasmic_all__lGI85 PlasmicAreaCard_text__qxbqb__MHJZI">{activeTab.name}</div>

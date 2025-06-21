@@ -29,7 +29,7 @@ const Footer = () => {
   
   return (
     <>
-    <footer className='bg-beaver px-5 pb-5 pt-10 text-wildSand' aria-label='footer'>
+    <footer className='w-full bg-beaver px-5 pb-5 pt-10 text-wildSand' aria-label='footer'>
       <Container classList='px-5'>
         <div className='grid grid-cols-12 gap-5 sm:gap-10'>
           <div className='col-span-12 sm:col-span-3'>
