@@ -9,6 +9,7 @@ import MobileMenu from './mobile_menu'
 import { PhoneIcon } from '@heroicons/react/24/solid'
 import Image from 'next/image'
 import siteLogo from '../../public/site-logo.png';
+import { ChevronDownIcon } from '@heroicons/react/20/solid'
 
 const navigation = {
   pages: [
@@ -91,6 +92,27 @@ const Navbar = () => {
                             {({ open }) => (
                               <>
                                 <div className='relative flex'>
+                                  {/* <Popover.Button
+                                    className={classNames(
+                                      open
+                                        ? 'border-beaver/90 text-beaver/90'
+                                        : 'text-gray-700 hover:text-beaver/90',
+                                      'relative',
+                                      '-mb-px',
+                                      'flex',
+                                      'items-center',
+                                      'pt-px',
+                                      'text-base',
+                                      'font-medium',
+                                      'transition-colors',
+                                      'duration-200',
+                                      'ease-out',
+                                      'hover:text-beaver/90',
+                                      'hover:border-b-2'
+                                    )}
+                                  >
+                                    In-Studio Treatments
+                                  </Popover.Button> */}
                                   <Popover.Button
                                     className={classNames(
                                       open
@@ -111,7 +133,15 @@ const Navbar = () => {
                                     )}
                                   >
                                     In-Studio Treatments
+                                    <ChevronDownIcon
+                                      className={classNames(
+                                        'ml-1 h-6 w-6 transform transition-transform duration-200 ease-out',
+                                        open ? 'rotate-180' : 'rotate-0'
+                                      )}
+                                      aria-hidden="true"
+                                    />
                                   </Popover.Button>
+
                                 </div>
 
                                 <Transition
