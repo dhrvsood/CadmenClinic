@@ -54,10 +54,22 @@ export const categories = {
         }
       },
       {
+        "title": "Chemical Peels",
+        "subTitle": "Define, increase volume, and enhance the natural fullness of the jaw, cheeks, and lips",
+        "slug": "/chemical-peels",
+        "categoryOrder": 2,
+        "heroImage": {
+          "asset": {
+            "url": "/media/services/lip-filters.webp"
+          },
+          "alt": "Chemical Peels Service Image"
+        }
+      },
+      {
         "title": "Lip Fillers",
         "subTitle": "Define, increase volume, and enhance the natural fullness of the jaw, cheeks, and lips",
         "slug": "/lip-fillers",
-        "categoryOrder": 2,
+        "categoryOrder": 3,
         "heroImage": {
           "asset": {
             "url": "/media/services/lip-filters.webp"

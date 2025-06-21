@@ -123,77 +123,7 @@ const Navbar = () => {
 
                                 </div>
 
-                                {/* <Transition
-                                  as={Fragment}
-                                  enter='transition ease-out duration-200'
-                                  enterFrom='opacity-0'
-                                  enterTo='opacity-100'
-                                  leave='transition ease-in duration-150'
-                                  leaveFrom='opacity-100'
-                                  leaveTo='opacity-0'
-                                >
-                                  <Popover.Panel className='absolute inset-x-0 top-full text-base text-gray-500 shadow-md'>
-                                    <div
-                                      className='absolute inset-0 top-1/2 bg-white shadow'
-                                      aria-hidden='true'
-                                    />
-
-                                    <div className='relative bg-gray-50'>
-                                      <div className='mx-auto max-w-7xl'>
-                                        <ul
-                                          role='list'
-                                          className='grid grid-cols-3 gap-5 px-5 py-10'
-                                        >
-                                          {Object.entries(navItems).map(
-                                            ([key, category], i) => (
-                                              <li
-                                                key={i}
-                                                className='flex flex-col space-y-2'
-                                              >
-                                                {key === 'Hair Restoration' ? (
-                                                  <Popover.Button
-                                                    as={Link}
-                                                    href="/services/hair-restoration"
-                                                    className='mb-1 max-w-[150px] border-b border-gray-300 pb-1 text-base font-medium text-black hover:underline'
-                                                  >
-                                                    {key}
-                                                  </Popover.Button>
-                                                ) : (
-                                                  <p className='mb-1 max-w-[150px] border-b border-gray-300 pb-1 text-base font-medium text-grey'>
-                                                    {key}
-                                                  </p>
-                                                )}
-
-                                                {orderBy(
-                                                  category.services,
-                                                  [
-                                                    (service) =>
-                                                      service.categoryOrder ||
-                                                      Infinity,
-                                                    'title'
-                                                  ],
-                                                  ['asc', 'asc']
-                                                ).map((service, j) => (
-                                                  <div className="text-black" key={`${i}-${j}`}>
-                                                    <Popover.Button
-                                                      as={Link}
-                                                      className='text-sm tracking-widest hover:underline'
-                                                      href={`/services${service.slug}`}
-                                                    >
-                                                      {service.title}
-                                                    </Popover.Button>
-                                                  </div>
-                                                ))}
-                                              </li>
-                                            )
-                                          )}
-                                        </ul>
-                                      </div>
-                                    </div>
-                                  </Popover.Panel>
-
-
-                                </Transition> */}
+                                {/* Transition */}
                                 <Transition
                                   as={Fragment}
                                   enter='transition ease-out duration-200'
