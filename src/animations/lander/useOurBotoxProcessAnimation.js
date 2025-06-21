@@ -66,15 +66,15 @@ export const useOurBotoxProcessAnimation = () => {
               }
 
               gsap.to(circleRef.current, {
-                background: `conic-gradient(#E4C08C ${progress * 360}deg, #77A4AA 0deg)`
+                background: `conic-gradient(#E4C08C ${progress * 360}deg, #9a7f71 0deg)`
               })
 
               gsap.to(ellipse2Ref.current, {
-                background: currentIndex >= 1 ? '#E4C08C' : '#77A4AA'
+                background: currentIndex >= 1 ? '#E4C08C' : '#9a7f71'
               })
 
               gsap.to(ellipse3Ref.current, {
-                background: currentIndex >= 2 ? '#E4C08C' : '#77A4AA'
+                background: currentIndex >= 2 ? '#E4C08C' : '#9a7f71'
               })
             }
           }
@@ -86,7 +86,7 @@ export const useOurBotoxProcessAnimation = () => {
           width: '385',
           height: '385',
           borderRadius: '50%',
-          background: `conic-gradient(#77A4AA 50% 0deg, #77A4AA 50% 0deg)`,
+          background: `conic-gradient(#9a7f71 50% 0deg, #9a7f71 50% 0deg)`,
           zIndex: 5
         })
 
@@ -117,7 +117,7 @@ export const useOurBotoxProcessAnimation = () => {
           width: '12',
           height: '12',
           borderRadius: '50%',
-          background: `#77A4AA`,
+          background: `#9a7f71`,
           zIndex: 15
         })
 
@@ -128,7 +128,7 @@ export const useOurBotoxProcessAnimation = () => {
           width: '12',
           height: '12',
           borderRadius: '50%',
-          background: `#77A4AA`,
+          background: `#9a7f71`,
           zIndex: 15
         })
 
@@ -180,15 +180,15 @@ export const useOurBotoxProcessAnimation = () => {
               processNumberRef.current.innerText = currentIndex + 1
 
               gsap.to(circleRef.current, {
-                background: `conic-gradient(#E4C08C ${progress * 360}deg, #77A4AA 0deg)`
+                background: `conic-gradient(#E4C08C ${progress * 360}deg, #9a7f71 0deg)`
               })
 
               gsap.to(ellipse2Ref.current, {
-                background: currentIndex >= 1 ? '#E4C08C' : '#77A4AA'
+                background: currentIndex >= 1 ? '#E4C08C' : '#9a7f71'
               })
 
               gsap.to(ellipse3Ref.current, {
-                background: currentIndex >= 2 ? '#E4C08C' : '#77A4AA'
+                background: currentIndex >= 2 ? '#E4C08C' : '#9a7f71'
               })
             }
           }
@@ -200,7 +200,7 @@ export const useOurBotoxProcessAnimation = () => {
           width: '156',
           height: '156',
           borderRadius: '50%',
-          background: `conic-gradient(#77A4AA 50% 0deg, #77A4AA 50% 0deg)`,
+          background: `conic-gradient(#9a7f71 50% 0deg, #9a7f71 50% 0deg)`,
           zIndex: 5
         })
 
@@ -231,7 +231,7 @@ export const useOurBotoxProcessAnimation = () => {
           width: '8',
           height: '8',
           borderRadius: '50%',
-          background: `#77A4AA`,
+          background: `#9a7f71`,
           zIndex: 15
         })
 
@@ -242,7 +242,7 @@ export const useOurBotoxProcessAnimation = () => {
           width: '8',
           height: '8',
           borderRadius: '50%',
-          background: `#77A4AA`,
+          background: `#9a7f71`,
           zIndex: 15
         })
 

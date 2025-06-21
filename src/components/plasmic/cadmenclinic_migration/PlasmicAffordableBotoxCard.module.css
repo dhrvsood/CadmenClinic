@@ -144,7 +144,7 @@
   font-family: "Cormorant Garamond", serif;
   font-weight: 500;
   letter-spacing: 0em;
-  color: #074444;
+  color: #944839;
   align-self: flex-start;
   font-style: italic;
   line-height: 100%;
@@ -357,7 +357,9 @@
   flex-direction: row;
   border-radius: 900px;
   padding: 6px 16px;
-  border: 1px solid #77a4aa;
+  border: 1px solid #944839;
+  background: #ebdbd6;
+
 }
 .price3 > :global(.__wab_flex-container) {
   flex-direction: row;
@@ -386,7 +388,8 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   letter-spacing: 0.01em;
-  color: #9a7f71;
+  /* color: #9a7f71; */
+  color: #944839;
   position: relative;
 }
 .heading3 {
@@ -396,7 +399,8 @@
   font-weight: 400;
   letter-spacing: 0.01em;
   line-height: 100%;
-  color: rgba(75, 140, 144, 1);
+  /* color: #944839; */
+  color: #9a7f71;
   position: relative;
 }
 .heading4 {
@@ -406,7 +410,8 @@
   font-weight: 400;
   letter-spacing: 0.01em;
   line-height: 100%;
-  color: rgba(75, 140, 144, 1);
+  
+  color: #9a7f71;
   position: relative;
 }
 .img {

@@ -63,8 +63,8 @@ function PlasmicAffordableBotoxCard__RenderFunc(props) {
           price: "$11.00",
           perUnit: "$14.00",
           items: [],
-          unitWording: "/ First session price",
-          pillUnit: "/ Session regular price"
+          unitWording: "/ First Session Price",
+          pillUnit: "/ Regular Session Price"
         },
         Object.fromEntries(
           Object.entries(props.args).filter(([_, v]) => v !== undefined)
@@ -351,12 +351,12 @@ function PlasmicAffordableBotoxCard__RenderFunc(props) {
                 sty.heading4
               )}
             >
-              {"regular price"}
+              {/* {"regular price"} */}
             </div>
           </Stack__>
         </Stack__>
       </Stack__>
-      {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : false) ? (
+      {/* {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : false) ? (
         <PlasmicImg__
           data-plasmic-name={"img"}
           data-plasmic-override={overrides.img}
@@ -376,7 +376,7 @@ function PlasmicAffordableBotoxCard__RenderFunc(props) {
             aspectRatio: 133
           }}
         />
-      ) : null}
+      ) : null} */}
       <Stack__
         as={"div"}
         hasGap={true}

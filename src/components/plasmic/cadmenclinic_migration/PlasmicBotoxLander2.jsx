@@ -61,6 +61,9 @@ import PointIcon from "./icons/PlasmicIcon__Point"; // plasmic-import: dMjm7kjmX
 
 import AffordableHairRestoration from "@/components/AffordableHairRestoration";
 import HairLandingHero from "@/components/HairLandingHero";
+import WhyOurPatientsSlider from "@/components/WhyOurPatientsSlider/WhyOurPatientsSlider";
+
+import { useWindowSize } from 'react-use'
 
 createPlasmicElementProxy;
 
@@ -78,6 +81,8 @@ function useNextRouter() {
 }
 
 function PlasmicBotoxLander2__RenderFunc(props) {
+  const { width: windowWidth, height: windowHeight } = useWindowSize();
+  
   const { variants, overrides, forNode } = props;
   const args = React.useMemo(
     () =>
@@ -1121,7 +1126,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                     >
                       {"Affordable Hair Restoration Treatments"}
                     </span>
-                    <React.Fragment> </React.Fragment>
+                    <br></br>
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ color: "#9a7f71", fontStyle: "italic" }}
@@ -1158,8 +1163,8 @@ function PlasmicBotoxLander2__RenderFunc(props) {
               {/* PRP Hair Restoration */}
               <AffordableBotoxCard
                 name={"PRP Hair Restoration"}
-                perUnit={"$299"}
-                price={"$599"}
+                perUnit={"$599"}
+                price={"$299"}
                 className={classNames(
                   "__wab_instance",
                   sty.affordableBotoxCard__v1OXt
@@ -1206,8 +1211,8 @@ function PlasmicBotoxLander2__RenderFunc(props) {
               {/* Exosome Hair Therapy */}
               <AffordableBotoxCard
                 name={"Exosome Hair Therapy"}
-                perUnit={"$399"}
-                price={"$799"}
+                perUnit={"$799"}
+                price={"$399"}
                 className={classNames(
                   "__wab_instance",
                   sty.affordableBotoxCard___844NL
@@ -1276,6 +1281,245 @@ function PlasmicBotoxLander2__RenderFunc(props) {
           <AffordableHairRestoration/>
 
           {/* 5. Proven & Affordable Treatment Packages Tailored for All Types of Hair Loss (slider) */}
+          <Stack__
+            as={"section"}
+            data-plasmic-name={"affordableBotoxSection"}
+            data-plasmic-override={overrides.affordableBotoxSection}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.affordableBotoxSection)}
+          >
+            <Stack__
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox___1JzFp)}
+            >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__fLnGd
+                )}
+              >
+                <React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#080909" }}
+                  >
+                    {"Proven & Affordable Treatment Packages"}
+                  </span>
+                  <React.Fragment>{"\n"}</React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#080909" }}
+                  >
+                    {"Tailored for"}
+                  </span>
+                  <React.Fragment> </React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#9a7f71", fontStyle: "italic" }}
+                  >
+                    {"All Types of Hair Loss"}
+                  </span>
+                </React.Fragment>
+              </div>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__tfw7
+                )}
+              >
+                <React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#535556" }}
+                  >
+                    {"Discounted packages tailored for your goals and budget. Schedule a free consultation to figure out which package is for you."}
+                  </span>
+                </React.Fragment>
+              </div>
+            </Stack__>
+            <Stack__
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox__hib93)}
+            >
+            
+            <WhyOurPatientsSlider
+              settings={{
+                dots: false,
+                infinite: false,
+                arrows: false,
+                speed: 500,
+                slidesToShow: windowWidth > 768 ? 3.1 : 1.1,
+                slidesToScroll: windowWidth > 768 ? 3 : 1
+              }}
+              handleButtonClick={() => router.push('/book-now')}
+            >
+              {/* 1. 4 PRP Hair Restoration Sessions */}
+              <AffordableBotoxCard
+                name={"4 PRP Hair Restoration Sessions"}
+                perUnit={"$2,399"}
+                unitWording={"/ New Patient Special"}
+                price={"$1,999"}
+                pillUnit={"/ Regular price"}
+                className={classNames(
+                  "__wab_instance",
+                  sty.affordableBotoxCard__v1OXt
+                )}
+                items={
+                  [
+                    {
+                      title: "10-Week Program to Re-Grow Your Hair",
+                      description:
+                        "Treatments scheduled every 3 weeks to ensure optimal results"
+                    },
+                    {
+                      title: "Ideal for patients seeking to stimulate natural hair growth to combat ongoing hair shedding and thinning",
+                    }
+                  ]
+                }
+              />
+              {/* 2. 3 Exosome Hair Therapy Sessions */}
+              <AffordableBotoxCard
+                name={"3 Exosome Hair Therapy Sessions"}
+                perUnit={"$2,399"}
+                unitWording={"/ New Patient Special"}
+                price={"$1,799"}
+                pillUnit={"/ Regular price"}
+                className={classNames(
+                  "__wab_instance",
+                  sty.affordableBotoxCard__v1OXt
+                )}
+                items={
+                  [
+                    {
+                      title: "6-Week Program to Prevent Hair Loss",
+                      description:
+                        "Treatments scheduled every 3 weeks to ensure optimal results"
+                    },
+                    {
+                      title: "Ideal for patients seeking to prevent the root cause of hair loss and stimulate hair growth by blocking DHT levels",
+                    }
+                  ]
+                }
+              />
+              {/* 3. 6 Mesotherapy Vitamin Sessions */}
+              <AffordableBotoxCard
+                name={"6 Mesotherapy Vitamin Sessions"}
+                perUnit={"$2,399"}
+                unitWording={"/ New Patient Special"}
+                price={"$1,999"}
+                pillUnit={"/ Regular price"}
+                className={classNames(
+                  "__wab_instance",
+                  sty.affordableBotoxCard__v1OXt
+                )}
+                items={
+                  [
+                    {
+                      title: "6-Week Program to Nourish Your Scalp and Prevent Hair Loss",
+                      description:
+                        "Treatments scheduled every 1 week to ensure optimal results"
+                    },
+                    {
+                      title: "Ideal for patients seeking a healthier and nourished scalp while combatting ongoing hair loss.",
+                    }
+                  ]
+                }
+              />
+              {/* 4. 3 PRP Hair Restoration + 6 Mesotherapy Vitamin Sessions */}
+              <AffordableBotoxCard
+                name={"3 PRP Hair Restoration + 6 Mesotherapy Vitamin Sessions"}
+                perUnit={"$4,199"}
+                unitWording={"/ New Patient Special"}
+                price={"$3,299"}
+                pillUnit={"/ Regular price"}
+                className={classNames(
+                  "__wab_instance",
+                  sty.affordableBotoxCard__v1OXt
+                )}
+                items={
+                  [
+                    {
+                      title: "9-Week Program to Re-Grow Your Hair and Nourish Your Scalp",
+                      description:
+                        "Treatments scheduled every 1 week to ensure optimal results"
+                    },
+                    {
+                      title: "Ideal for patients seeking optimal results for new hair growth, a nourished scalp throughout your PRP process increases longevity of your results",
+                    }
+                  ]
+                
+                }
+              />
+              {/* 5. 3 PRP Hair Restoration + 3 Exosome Hair Therapy Sessions */}
+              <AffordableBotoxCard
+                name={"3 PRP Hair Restoration + 3 Exosome Hair Therapy Sessions"}
+                perUnit={"$4,199"}
+                unitWording={"/ New Patient Special"}
+                price={"$2,999"}
+                pillUnit={"/ Regular price"}
+                className={classNames(
+                  "__wab_instance",
+                  sty.affordableBotoxCard__v1OXt
+                )}
+                items={
+                  [
+                    {
+                      title: "7-Week Program to Re-Grow Your Hair and Prevent Further Hair Loss",
+                      description:
+                        "Treatments scheduled every 3 weeks to ensure optimal results"
+                    },
+                    {
+                      title: "Our most popular package for anyone seeking the full solution – re-grow your hair while blocking DHT to prevent further hair loss",
+                    }
+                  ]
+                
+                }
+              />
+              {/* 6. 3 Exosome Hair Therapy + 6 Mesotherapy Vitamin Sessions */}
+              <AffordableBotoxCard
+                name={"3 Exosome Hair Therapy + 6 Mesotherapy Vitamin Sessions"}
+                perUnit={"$4,199"}
+                unitWording={"/ New Patient Special"}
+                price={"$3,499"}
+                pillUnit={"/ Regular price"}
+                className={classNames(
+                  "__wab_instance",
+                  sty.affordableBotoxCard__v1OXt
+                )}
+                items={
+                  [
+                    {
+                      title: "9-Week Program to Re-Grow Your Hair, Prevent Further Hair Loss, and Nourish Your Scalp",
+                      description:
+                        "Treatments scheduled every 1 week to ensure optimal results"
+                    },
+                    {
+                      title: "Curated for patients ineligible for PRP Hair Restoration, pair Exosome Hair Therapy with Mesotherapy Vitamins to unlock powerful results",
+                    }
+                  ]
+                
+                }
+              />
+            </WhyOurPatientsSlider>
+
+            </Stack__>
+
+            {/* <Button
+              data-plasmic-name={"affordableBotoxButton"}
+              data-plasmic-override={overrides.affordableBotoxButton}
+              className={classNames(
+                "__wab_instance",
+                sty.affordableBotoxButton
+              )}
+            >
+              {"Book Now"}
+            </Button> */}
+          </Stack__>
+
 
           {/* 6. our hair restoration program */}
           <Stack__
@@ -3797,7 +4041,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                 )}
               >
                 {
-                  "Visit\u00a0our Botox FAQ for answers to more common questions or contact us to schedule a consultation."
+                  "Contact us to schedule a FREE consultation."
                 }
               </div>
             </Stack__>
@@ -3806,31 +4050,50 @@ function PlasmicBotoxLander2__RenderFunc(props) {
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__mrdPy)}
             >
+
               <Faq
                 answer={
                   "Our commitment to personalized care, safety, and client satisfaction sets us apart. We focus on natural, long-lasting results and offer transparent pricing and rewards for loyal clients."
                 }
                 className={classNames("__wab_instance", sty.faq__g1EoJ)}
                 question={
-                  "What Makes ImageLab Medspa Different from Other Providers?"
+                  "What makes CADMEN Clinic different from other providers?"
                 }
               />
 
               <Faq
                 answer={
-                  "Yes, we offer a complimentary 2-week follow-up to assess your results and make any necessary adjustments, ensuring your satisfaction."
+                  "During your consultation, our team will assess your scalp and hair concerns to craft a tailored package for you."
                 }
                 className={classNames("__wab_instance", sty.faq__qxO4I)}
-                question={"Do You Offer Follow-Up Appointments?"}
+                question={"How do I know which treatment is right for me?"}
               />
 
               <Faq
                 answer={
-                  "During your consultation, our team will assess your skin and discuss your goals to determine if Botox is the right option for you."
+                  "Yes! All clients can schedule a free follow-up appointment to check-in on their progress and address any concerns."
                 }
                 className={classNames("__wab_instance", sty.faq__ab5Id)}
-                question={"How Do I Know if Botox is Right for Me?"}
+                question={"Do you offer follow-up appointments?"}
               />
+
+              <Faq
+                answer={
+                  "Within 2-4 sessions you will see improvement in your hair! Depending on the treatment, the timing varies but we recommend combining treatments (i.e., PRP + Exosomes) for optimal results."
+                }
+                className={classNames("__wab_instance", sty.faq__ab5Id)}
+                question={"When will I see progress?"}
+              />
+
+              <Faq
+                answer={
+                  "Yes! New customers receive 50% off their first treatment and exclusive package pricing. "
+                }
+                className={classNames("__wab_instance", sty.faq__ab5Id)}
+                question={"Do you have any promotions for new customers?"}
+              />
+              
+
             </Stack__>
           </section>
 
@@ -3856,7 +4119,29 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                   sty.heading9
                 )}
               >
-                {hasVariant(globalVariants, "screen", "mobileOnly") ? (
+                <React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#FFFFFF" }}
+                  >
+                    {"Want to learn more if our "}
+                  </span>
+                  <React.Fragment>{"\n"}</React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#E4C08C" }}
+                  >
+                    {"Hair Restoration Treatments are right"}
+                  </span>
+                  <React.Fragment>{""}</React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#FFFFFF" }}
+                  >
+                    {" for you?"}
+                  </span>
+                </React.Fragment>
+                {/* {hasVariant(globalVariants, "screen", "mobileOnly") ? (
                   <React.Fragment>
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
@@ -3902,7 +4187,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                       {" for you?"}
                     </span>
                   </React.Fragment>
-                )}
+                )} */}
               </div>
               <div
                 data-plasmic-name={"supportingText8"}
@@ -3913,9 +4198,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                   sty.supportingText8
                 )}
               >
-                {
-                  "Schedule a Consultation with Our Team to discuss a treatment \nplan tailored to you."
-                }
+                {"Schedule a free Consultation with our team to discuss a treatment plan tailored for you"}
               </div>
             </Stack__>
             <Button

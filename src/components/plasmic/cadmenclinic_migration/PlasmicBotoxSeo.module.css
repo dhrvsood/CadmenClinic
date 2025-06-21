@@ -2278,7 +2278,7 @@
   letter-spacing: -0.02em;
   line-height: 0.92;
   position: relative;
-  width: 658px;
+  width: 1200px;
   font-family: "Cormorant Garamond", serif;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -2967,8 +2967,8 @@
   }
 }
 .ctaSection {
-  background: url("/plasmic/image_lab_2024/images/ctaBgSvg.svg") top 50% left 50% / contain no-repeat,
-    rgba(6, 67, 67, 1);
+  background: url("../../../../public/graphics/ctaBgSvg.svg") top 50% left 50% / contain no-repeat,
+    rgba(148, 72, 57, 1);
   width: 100%;
   height: auto;
   display: flex;
@@ -2997,15 +2997,17 @@
 }
 @media (max-width: 1200px) {
   .ctaSection {
-    background: url("/plasmic/image_lab_2024/images/ctaBgSvg.svg") top 50% left 50% / cover no-repeat,
-      rgba(6, 67, 67, 1);
+    /* background: url("/plasmic/image_lab_2024/images/ctaBgSvg.svg") top 50% left 50% / cover no-repeat,
+      rgba(6, 67, 67, 1); */
+    background: #944839;
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .ctaSection {
     width: 100%;
-    background: url("/plasmic/image_lab_2024/images/ctaMobileBgSvg.svg") top 50% left 50% / contain no-repeat,
-      rgba(6, 67, 67, 1);
+    /* background: url("/plasmic/image_lab_2024/images/ctaMobileBgSvg.svg") top 50% left 50% / contain no-repeat,
+      rgba(6, 67, 67, 1); */
+      background: #944839;
     grid-column-start: 1 !important;
     grid-column-end: -1 !important;
     padding: 80px 16px;
@@ -10576,7 +10578,7 @@
   width: 100%;
   height: auto;
   max-width: 100%;
-  background: #074444b3;
+  background: #944839b3;
   min-width: 0;
   border-radius: 16px;
   padding: 24px;
@@ -10680,7 +10682,7 @@
   width: 100%;
   height: auto;
   max-width: 100%;
-  background: #074444b3;
+  background: #944839b3;
   min-width: 0;
   border-radius: 16px;
   padding: 24px;
@@ -10786,7 +10788,7 @@
   width: 100%;
   height: auto;
   max-width: 100%;
-  background: #074444b3;
+  background: #944839b3;
   min-width: 0;
   border-radius: 16px;
   padding: 24px;
@@ -10891,7 +10893,7 @@
   width: 100%;
   height: auto;
   max-width: 100%;
-  background: #074444b3;
+  background: #944839b3;
   min-width: 0;
   border-radius: 16px;
   padding: 24px;
@@ -11072,7 +11074,7 @@
   width: 100%;
   height: auto;
   max-width: 100%;
-  background: #074444b3;
+  background: #944839b3;
   min-width: 0;
   border-radius: 16px;
   padding: 24px;
@@ -11205,7 +11207,7 @@
   width: 100%;
   height: auto;
   max-width: 100%;
-  background: #074444b3;
+  background: #944839b3;
   min-width: 0;
   border-radius: 16px;
   padding: 24px;
@@ -11367,7 +11369,7 @@
   width: 100%;
   height: auto;
   max-width: 100%;
-  background: #074444b3;
+  background: #944839b3;
   min-width: 0;
   border-radius: 16px;
   padding: 24px;
@@ -11500,7 +11502,7 @@
   width: 100%;
   height: auto;
   max-width: 100%;
-  background: #074444b3;
+  background: #944839b3;
   min-width: 0;
   border-radius: 16px;
   padding: 24px;
@@ -13631,7 +13633,7 @@
   align-content: flex-start;
   justify-items: center;
   width: 100%;
-  background: url("/plasmic/image_lab_2024/images/circlesSvg8.svg") top 50% left 50% / cover repeat, #074444;
+  background: url("/plasmic/image_lab_2024/images/circlesSvg8.svg") top 50% left 50% / cover repeat, #944839;
   grid-row-gap: 20px;
   grid-column-start: 1 !important;
   grid-column-end: -1 !important;
@@ -13651,7 +13653,7 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .joinTheClubSection {
     background: url("/plasmic/image_lab_2024/images/circlesSvg9.svg") top 50% left 50% / cover repeat,
-      #074444;
+      #944839;
     padding: 40px 16px;
   }
 }

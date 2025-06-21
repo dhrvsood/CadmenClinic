@@ -3,6 +3,14 @@
   padding-left: 16px;
 }
 
+@media screen and (min-width: 768px) {
+  .section {
+    width: 90%;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+}
+
 .slider {
   gap: 20px;
 }
