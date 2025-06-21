@@ -214,7 +214,7 @@
   }
 }
 .price {
-  background: rgba(240, 248, 250, 1);
+  /* background: rgba(240, 248, 250, 1); */
   width: auto;
   height: auto;
   display: flex;
@@ -465,8 +465,8 @@
   max-width: 100%;
   left: 0;
   top: 10px;
-  background: #ecf6f6;
-  color: #0c7a7b;
+  background: #ebdbd6;
+  color: #9a7f71;
   font-weight: 300;
   line-height: 30px;
   border-radius: 24px;
@@ -479,8 +479,8 @@
   max-width: 100%;
   left: auto;
   top: auto;
-  background: #ecf6f6;
-  color: #0c7a7b;
+  background: #ebdbd6;
+  color: #9a7f71;
   font-weight: 300;
   bottom: -10px;
   right: 0;
@@ -557,8 +557,8 @@
   max-width: 100%;
   left: auto;
   top: auto;
-  background: #ecf6f6;
-  color: #0c7a7b;
+  background: #ebdbd6;
+  color: #9a7f71;
   bottom: -20px;
   right: 32px;
   font-weight: 300;
@@ -572,8 +572,8 @@
   max-width: 100%;
   left: auto;
   top: auto;
-  background: #ecf6f6;
-  color: #0c7a7b;
+  background: #ebdbd6;
+  color: #9a7f71;
   font-weight: 300;
   font-size: 14px;
   bottom: -80px;
@@ -619,8 +619,8 @@
   max-width: 100%;
   left: auto;
   top: -50px;
-  background: #ecf6f6;
-  color: #0c7a7b;
+  background: #ebdbd6;
+  color: #9a7f71;
   bottom: auto;
   right: 60px;
   font-weight: 300;
@@ -635,8 +635,8 @@
   max-width: 100%;
   left: -60px;
   top: auto;
-  background: #ecf6f6;
-  color: #0c7a7b;
+  background: #ebdbd6;
+  color: #9a7f71;
   font-weight: 300;
   font-size: 14px;
   bottom: 16px;
@@ -650,7 +650,7 @@
   align-content: flex-start;
   justify-items: center;
   width: 100%;
-  background: url("/plasmic/image_lab_2024/images/circlesSvg14.svg") top 50% left 50% / cover repeat, #ecf6f6;
+  background: url("/plasmic/image_lab_2024/images/circlesSvg14.svg") top 50% left 50% / cover repeat, #ebdbd6;
   overflow: hidden;
   position: relative;
   grid-column-start: 1 !important;
@@ -1732,7 +1732,7 @@
   width: 100%;
   height: auto;
   max-width: 100%;
-  color: #0c7a7b;
+  color: #9a7f71;
   font-size: 24px;
   min-width: 0;
 }
@@ -1792,7 +1792,7 @@
 .svg__lVZh {
   object-fit: cover;
   max-width: 100%;
-  color: #0c7a7b;
+  color: #9a7f71;
   width: 8px;
   height: 8px;
   display: block;
@@ -1846,7 +1846,7 @@
 .svg__zfHU {
   object-fit: cover;
   max-width: 100%;
-  color: #0c7a7b;
+  color: #9a7f71;
   width: 8px;
   height: 8px;
   display: block;
@@ -1878,7 +1878,7 @@
   height: auto;
   max-width: 100%;
   margin-top: 24px;
-  color: #0c7a7b;
+  color: #9a7f71;
   min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -2032,7 +2032,7 @@
   position: relative;
   align-self: stretch;
   flex-direction: column;
-  background: #ecf6f6;
+  background: #ebdbd6;
   width: 650px;
   display: none;
   border-radius: 16px;
@@ -2317,7 +2317,7 @@
   z-index: 15;
   border-radius: 16px;
   padding: 6px 12px;
-  border: 1px solid #cde7e6;
+  border: 1px solid ##bdbd6;
 }
 .freeBox__f83H1 > :global(.__wab_flex-container) {
   flex-direction: row;
@@ -2409,7 +2409,7 @@
   width: auto;
   height: auto;
   max-width: 100%;
-  color: #0c7a7b;
+  color: #9a7f71;
   font-size: 14px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -2422,7 +2422,7 @@
   width: auto;
   height: auto;
   max-width: 100%;
-  color: #0c7a7b;
+  color: #9a7f71;
   font-size: 14px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -2569,7 +2569,8 @@
   height: 1em;
 }
 .affordableBotoxSection {
-  background: rgba(235, 245, 245, 1);
+  /* background: #ebdbd6; */
+  background: #ebdbd6;
   width: 100%;
   display: flex;
   overflow: hidden;
@@ -2793,7 +2794,7 @@
   width: 100%;
   height: auto;
   max-width: 100%;
-  background: #ecf6f6;
+  background: #ebdbd6;
   grid-column-start: 1 !important;
   grid-column-end: -1 !important;
   padding: 80px 60px;
@@ -3738,7 +3739,7 @@
   font-weight: 400;
   letter-spacing: 0em;
   line-height: 1.5;
-  color: #0c7a7b;
+  color: #9a7f71;
   align-self: stretch;
   position: relative;
 }
@@ -3794,7 +3795,7 @@
   left: auto;
   top: auto;
   flex-direction: column;
-  background: #ecf6f6;
+  background: #ebdbd6;
   margin-top: calc(0px + 50px) !important;
   margin-right: 0px;
   margin-bottom: 0px;
@@ -3903,7 +3904,7 @@
   max-width: 100%;
   justify-content: flex-start;
   align-items: center;
-  background: #ecf6f6;
+  background: #ebdbd6;
   grid-column-start: 1 !important;
   grid-column-end: -1 !important;
   padding: 80px 0px;
@@ -4435,7 +4436,7 @@
 .svg__tNu1F {
   object-fit: cover;
   max-width: 100%;
-  color: #0c7a7b;
+  color: #9a7f71;
   width: 8px;
   height: 8px;
   display: block;
@@ -4449,7 +4450,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   letter-spacing: 0em;
-  color: #0c7a7b;
+  color: #9a7f71;
   position: relative;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -4514,7 +4515,7 @@
 .svg___6AfnD {
   object-fit: cover;
   max-width: 100%;
-  color: #0c7a7b;
+  color: #9a7f71;
   width: 8px;
   height: 8px;
   display: block;
@@ -4528,7 +4529,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   letter-spacing: 0em;
-  color: #0c7a7b;
+  color: #9a7f71;
   position: relative;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -4593,7 +4594,7 @@
 .svg__xjPsH {
   object-fit: cover;
   max-width: 100%;
-  color: #0c7a7b;
+  color: #9a7f71;
   width: 8px;
   height: 8px;
   display: block;
@@ -4607,7 +4608,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   letter-spacing: 0em;
-  color: #0c7a7b;
+  color: #9a7f71;
   position: relative;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -5027,7 +5028,7 @@
   width: 100%;
   height: auto;
   max-width: 100%;
-  color: #0c7a7b;
+  color: #9a7f71;
   min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -5062,7 +5063,7 @@
 .svg___4KuWw {
   object-fit: cover;
   max-width: 100%;
-  color: #0c7a7b;
+  color: #9a7f71;
   width: 8px;
   height: 8px;
   display: block;
@@ -5111,7 +5112,7 @@
 .svg___5Xh4E {
   object-fit: cover;
   max-width: 100%;
-  color: #0c7a7b;
+  color: #9a7f71;
   width: 8px;
   height: 8px;
   display: block;
@@ -5160,7 +5161,7 @@
 .svg__dvNar {
   object-fit: cover;
   max-width: 100%;
-  color: #0c7a7b;
+  color: #9a7f71;
   width: 8px;
   height: 8px;
   display: block;
@@ -5188,7 +5189,7 @@
   height: auto;
   max-width: 100%;
   padding-left: 0px;
-  color: #0c7a7b;
+  color: #9a7f71;
   min-width: 0;
 }
 .img__hKjVf {
@@ -6278,7 +6279,7 @@
 .svg__rTdZ {
   object-fit: cover;
   max-width: 100%;
-  color: #0c7a7b;
+  color: #9a7f71;
   width: 8px;
   height: 8px;
   display: block;
@@ -6334,7 +6335,7 @@
 .svg__dJskx {
   object-fit: cover;
   max-width: 100%;
-  color: #0c7a7b;
+  color: #9a7f71;
   width: 8px;
   height: 8px;
   display: block;
@@ -6389,7 +6390,7 @@
 .svg__ogsZn {
   object-fit: cover;
   max-width: 100%;
-  color: #0c7a7b;
+  color: #9a7f71;
   width: 8px;
   height: 8px;
   display: block;
@@ -6445,7 +6446,7 @@
 .svg__iC4Y2 {
   object-fit: cover;
   max-width: 100%;
-  color: #0c7a7b;
+  color: #9a7f71;
   width: 8px;
   height: 8px;
   display: block;
@@ -6501,7 +6502,7 @@
 .svg___95Zk {
   object-fit: cover;
   max-width: 100%;
-  color: #0c7a7b;
+  color: #9a7f71;
   width: 8px;
   height: 8px;
   display: block;
@@ -6853,7 +6854,7 @@
 .svg___2X0Mw {
   object-fit: cover;
   max-width: 100%;
-  color: #0c7a7b;
+  color: #9a7f71;
   width: 8px;
   height: 8px;
   display: block;
@@ -6874,7 +6875,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   letter-spacing: 0em;
-  color: #0c7a7b;
+  color: #9a7f71;
   position: relative;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -6939,7 +6940,7 @@
 .svg__up93 {
   object-fit: cover;
   max-width: 100%;
-  color: #0c7a7b;
+  color: #9a7f71;
   width: 8px;
   height: 8px;
   display: block;
@@ -6960,7 +6961,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   letter-spacing: 0em;
-  color: #0c7a7b;
+  color: #9a7f71;
   position: relative;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -7025,7 +7026,7 @@
 .svg__i9Up4 {
   object-fit: cover;
   max-width: 100%;
-  color: #0c7a7b;
+  color: #9a7f71;
   width: 8px;
   height: 8px;
   display: block;
@@ -7046,7 +7047,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   letter-spacing: 0em;
-  color: #0c7a7b;
+  color: #9a7f71;
   position: relative;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -7394,7 +7395,7 @@
 .svg__wfN3C {
   object-fit: cover;
   max-width: 100%;
-  color: #0c7a7b;
+  color: #9a7f71;
   width: 8px;
   height: 8px;
   display: block;
@@ -7415,7 +7416,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   letter-spacing: 0em;
-  color: #0c7a7b;
+  color: #9a7f71;
   position: relative;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -7480,7 +7481,7 @@
 .svg___64PsE {
   object-fit: cover;
   max-width: 100%;
-  color: #0c7a7b;
+  color: #9a7f71;
   width: 8px;
   height: 8px;
   display: block;
@@ -7501,7 +7502,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   letter-spacing: 0em;
-  color: #0c7a7b;
+  color: #9a7f71;
   position: relative;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -7566,7 +7567,7 @@
 .svg__aDJ {
   object-fit: cover;
   max-width: 100%;
-  color: #0c7a7b;
+  color: #9a7f71;
   width: 8px;
   height: 8px;
   display: block;
@@ -7587,7 +7588,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   letter-spacing: 0em;
-  color: #0c7a7b;
+  color: #9a7f71;
   position: relative;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -7935,7 +7936,7 @@
 .svg___2WIvr {
   object-fit: cover;
   max-width: 100%;
-  color: #0c7a7b;
+  color: #9a7f71;
   width: 8px;
   height: 8px;
   display: block;
@@ -7956,7 +7957,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   letter-spacing: 0em;
-  color: #0c7a7b;
+  color: #9a7f71;
   position: relative;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -8021,7 +8022,7 @@
 .svg___3Pvq {
   object-fit: cover;
   max-width: 100%;
-  color: #0c7a7b;
+  color: #9a7f71;
   width: 8px;
   height: 8px;
   display: block;
@@ -8042,7 +8043,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   letter-spacing: 0em;
-  color: #0c7a7b;
+  color: #9a7f71;
   position: relative;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -8107,7 +8108,7 @@
 .svg__uC9P {
   object-fit: cover;
   max-width: 100%;
-  color: #0c7a7b;
+  color: #9a7f71;
   width: 8px;
   height: 8px;
   display: block;
@@ -8128,7 +8129,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   letter-spacing: 0em;
-  color: #0c7a7b;
+  color: #9a7f71;
   position: relative;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -8476,7 +8477,7 @@
 .svg__yjne {
   object-fit: cover;
   max-width: 100%;
-  color: #0c7a7b;
+  color: #9a7f71;
   width: 8px;
   height: 8px;
   display: block;
@@ -8497,7 +8498,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   letter-spacing: 0em;
-  color: #0c7a7b;
+  color: #9a7f71;
   position: relative;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -8562,7 +8563,7 @@
 .svg___13KZj {
   object-fit: cover;
   max-width: 100%;
-  color: #0c7a7b;
+  color: #9a7f71;
   width: 8px;
   height: 8px;
   display: block;
@@ -8583,7 +8584,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   letter-spacing: 0em;
-  color: #0c7a7b;
+  color: #9a7f71;
   position: relative;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -8648,7 +8649,7 @@
 .svg__sEKxC {
   object-fit: cover;
   max-width: 100%;
-  color: #0c7a7b;
+  color: #9a7f71;
   width: 8px;
   height: 8px;
   display: block;
@@ -8669,7 +8670,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   letter-spacing: 0em;
-  color: #0c7a7b;
+  color: #9a7f71;
   position: relative;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -9016,7 +9017,7 @@
 .svg___7YosM {
   object-fit: cover;
   max-width: 100%;
-  color: #0c7a7b;
+  color: #9a7f71;
   width: 8px;
   height: 8px;
   display: block;
@@ -9037,7 +9038,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   letter-spacing: 0em;
-  color: #0c7a7b;
+  color: #9a7f71;
   position: relative;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -9102,7 +9103,7 @@
 .svg__c7Di {
   object-fit: cover;
   max-width: 100%;
-  color: #0c7a7b;
+  color: #9a7f71;
   width: 8px;
   height: 8px;
   display: block;
@@ -9123,7 +9124,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   letter-spacing: 0em;
-  color: #0c7a7b;
+  color: #9a7f71;
   position: relative;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -9470,7 +9471,7 @@
 .svg__iWqU8 {
   object-fit: cover;
   max-width: 100%;
-  color: #0c7a7b;
+  color: #9a7f71;
   width: 8px;
   height: 8px;
   display: block;
@@ -9491,7 +9492,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   letter-spacing: 0em;
-  color: #0c7a7b;
+  color: #9a7f71;
   position: relative;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -9556,7 +9557,7 @@
 .svg__xyby {
   object-fit: cover;
   max-width: 100%;
-  color: #0c7a7b;
+  color: #9a7f71;
   width: 8px;
   height: 8px;
   display: block;
@@ -9577,7 +9578,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   letter-spacing: 0em;
-  color: #0c7a7b;
+  color: #9a7f71;
   position: relative;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -9944,7 +9945,7 @@
   align-content: flex-start;
   justify-items: center;
   width: 100%;
-  background: #ecf6f6;
+  background: #ebdbd6;
   grid-column-start: 1 !important;
   grid-column-end: -1 !important;
   grid-template-columns:
@@ -10182,7 +10183,7 @@
   max-width: 100%;
   font-family: "Cormorant", serif;
   font-weight: 500;
-  color: #0c7a7b;
+  color: #9a7f71;
   font-size: 24px;
   padding-bottom: 4px;
 }
@@ -10205,7 +10206,7 @@
   position: absolute;
   width: 25%;
   max-width: 100%;
-  background: #0c7a7b;
+  background: #9a7f71;
   height: 1px;
   left: 0px;
   top: auto;
@@ -10217,7 +10218,7 @@
   position: absolute;
   height: 1px;
   max-width: 100%;
-  background: #cde7e6;
+  background: ##bdbd6;
   left: 0px;
   top: auto;
   width: 100%;
@@ -10231,7 +10232,7 @@
   max-width: 100%;
   font-family: "Cormorant", serif;
   font-weight: 500;
-  color: #0c7a7b;
+  color: #9a7f71;
   font-size: 24px;
   padding-bottom: 10px;
 }
@@ -10720,7 +10721,7 @@
   font-family: "Cormorant", serif;
   font-weight: 500;
   letter-spacing: 0%;
-  color: #0c7a7b;
+  color: #9a7f71;
   font-size: 32px;
   line-height: 20px;
   min-width: 0;
@@ -10745,7 +10746,7 @@
   position: absolute;
   width: 1px;
   max-width: 100%;
-  background: #0c7a7b;
+  background: #9a7f71;
   height: 25%;
   left: auto;
   top: 0px;
@@ -10758,7 +10759,7 @@
   width: 1px;
   height: auto;
   max-width: 100%;
-  background: #cde7e6;
+  background: ##bdbd6;
   left: auto;
   top: 0px;
   padding: 0px;
@@ -10771,7 +10772,7 @@
   font-family: "Cormorant", serif;
   font-weight: 500;
   letter-spacing: 0%;
-  color: #0c7a7b;
+  color: #9a7f71;
   font-size: 32px;
   min-width: 0;
 }
@@ -12850,8 +12851,8 @@
   max-width: 100%;
   left: auto;
   top: 26px;
-  background: #ecf6f6;
-  color: #0c7a7b;
+  background: #ebdbd6;
+  color: #9a7f71;
   font-weight: 300;
   font-size: 14px;
   line-height: 30px;
@@ -12870,8 +12871,8 @@
   max-width: 100%;
   left: -111px;
   top: auto;
-  background: #ecf6f6;
-  color: #0c7a7b;
+  background: #ebdbd6;
+  color: #9a7f71;
   font-weight: 300;
   font-size: 14px;
   line-height: 30px;
@@ -12990,7 +12991,7 @@
   height: auto;
   max-width: 100%;
   text-decoration-line: underline !important;
-  color: #0c7a7b;
+  color: #9a7f71;
   font-weight: 600;
   font-size: 18px;
 }

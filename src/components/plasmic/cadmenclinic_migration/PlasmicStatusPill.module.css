@@ -17,8 +17,8 @@
   background: #9a7f71;
 }
 .rootstatus_completed {
-  background: #ecf6f6;
-  border-color: #ecf6f6;
+  background: #ebdbd6;
+  border-color: #ebdbd6;
 }
 .text {
   position: relative;
@@ -32,5 +32,5 @@
   color: #ffffff;
 }
 .textstatus_completed {
-  color: #0c7a7b;
+  color: #9a7f71;
 }

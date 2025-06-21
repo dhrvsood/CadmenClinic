@@ -59,6 +59,9 @@ import IconFace2Icon from "./icons/PlasmicIcon__IconFace2"; // plasmic-import: X
 import HeartSvg4Icon from "./icons/PlasmicIcon__HeartSvg4"; // plasmic-import: QQ0zzfq_LES4/icon
 import PointIcon from "./icons/PlasmicIcon__Point"; // plasmic-import: dMjm7kjmXw_d/icon
 
+import AffordableHairRestoration from "@/components/AffordableHairRestoration";
+import HairLandingHero from "@/components/HairLandingHero";
+
 createPlasmicElementProxy;
 
 export const PlasmicBotoxLander2__VariantProps = new Array();
@@ -422,13 +425,10 @@ function PlasmicBotoxLander2__RenderFunc(props) {
             sty.root
           )}
         >
-          <TopNav
-            data-plasmic-name={"topNav"}
-            data-plasmic-override={overrides.topNav}
-            className={classNames("__wab_instance", sty.topNav)}
-          />
 
-          <section
+          {/* 1. hero page */}
+          <HairLandingHero/>
+          {/* <section
             data-plasmic-name={"topBotoxServicesSection"}
             data-plasmic-override={overrides.topBotoxServicesSection}
             className={classNames(projectcss.all, sty.topBotoxServicesSection)}
@@ -542,7 +542,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                                     "plasmic_default__all plasmic_default__span"
                                   }
                                   style={{
-                                    color: "#0C7A7B",
+                                    color: "#9a7f71",
                                     fontStyle: "italic"
                                   }}
                                 >
@@ -565,7 +565,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                                     "plasmic_default__all plasmic_default__span"
                                   }
                                   style={{
-                                    color: "#0C7A7B",
+                                    color: "#9a7f71",
                                     fontStyle: "italic"
                                   }}
                                 >
@@ -612,7 +612,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                                     "plasmic_default__all plasmic_default__span"
                                   }
                                   style={{
-                                    color: "#0C7A7B",
+                                    color: "#9a7f71",
                                     fontStyle: "italic"
                                   }}
                                 >
@@ -635,7 +635,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                                     "plasmic_default__all plasmic_default__span"
                                   }
                                   style={{
-                                    color: "#0C7A7B",
+                                    color: "#9a7f71",
                                     fontStyle: "italic"
                                   }}
                                 >
@@ -837,513 +837,10 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                 </div>
               </div>
             </Stack__>
-          </section>
-          <section
-            data-plasmic-name={"benefitsOfBotoxSection"}
-            data-plasmic-override={overrides.benefitsOfBotoxSection}
-            className={classNames(projectcss.all, sty.benefitsOfBotoxSection)}
-          >
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__yD9Qq)}
-            >
-              <Stack__
-                as={"div"}
-                data-plasmic-name={"benefitsOfBotoxHeader"}
-                data-plasmic-override={overrides.benefitsOfBotoxHeader}
-                hasGap={true}
-                className={classNames(
-                  projectcss.all,
-                  sty.benefitsOfBotoxHeader
-                )}
-              >
-                <h2
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h2,
-                    projectcss.__wab_text,
-                    sty.h2__wqj6R
-                  )}
-                >
-                  {hasVariant(globalVariants, "screen", "mobileOnly") ? (
-                    <React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#080909" }}
-                      >
-                        {"Benefits of"}
-                      </span>
-                      <React.Fragment>{"\n"}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#080909" }}
-                      >
-                        {"Botox Procedure for "}
-                      </span>
-                      <React.Fragment>{""}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#0C7A7B", fontStyle: "italic" }}
-                      >
-                        {"Radiant, Confident You"}
-                      </span>
-                    </React.Fragment>
-                  ) : (
-                    <React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#080909" }}
-                      >
-                        {"Benefits of Botox Procedure for a"}
-                      </span>
-                      <React.Fragment> </React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ fontStyle: "italic", color: "#0C7A7B" }}
-                      >
-                        {"Radiant, Confident You"}
-                      </span>
-                    </React.Fragment>
-                  )}
-                </h2>
-                <p
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.p,
-                    projectcss.__wab_text,
-                    sty.p__d1OAm
-                  )}
-                >
-                  {hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? "Smooth wrinkles with natural results\nand minimal downtime."
-                    : "Smooth wrinkles with natural results and minimal downtime."}
-                </p>
-              </Stack__>
-              {(
-                hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? false
-                  : true
-              ) ? (
-                <Stack__
-                  as={"div"}
-                  data-plasmic-name={"benefitsOfBotoxCards"}
-                  data-plasmic-override={overrides.benefitsOfBotoxCards}
-                  hasGap={true}
-                  className={classNames(
-                    projectcss.all,
-                    sty.benefitsOfBotoxCards,
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? "how-botox-works-cards"
-                      : undefined
-                  )}
-                >
-                  <BenefitsOfBotoxCard
-                    className={classNames(
-                      "__wab_instance",
-                      sty.benefitsOfBotoxCard___8NOwx
-                    )}
-                    slot={
-                      <div
-                        data-plasmic-name={"supportingText12"}
-                        data-plasmic-override={overrides.supportingText12}
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.supportingText12
-                        )}
-                      >
-                        {
-                          "Botox softens wrinkles and fine lines for a refreshed, youthful appearance that looks completely natural. Our expert team ensures a subtle enhancement tailored to your unique features."
-                        }
-                      </div>
-                    }
-                    title={
-                      <div
-                        data-plasmic-name={"text2"}
-                        data-plasmic-override={overrides.text2}
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text2
-                        )}
-                      >
-                        <React.Fragment>
-                          <span
-                            className={
-                              "plasmic_default__all plasmic_default__span"
-                            }
-                            style={{ fontWeight: 700 }}
-                          >
-                            {"Natural-Looking"}
-                          </span>
-                          <React.Fragment>{" Results"}</React.Fragment>
-                        </React.Fragment>
-                      </div>
-                    }
-                  />
+          </section> */}
 
-                  <BenefitsOfBotoxCard
-                    className={classNames(
-                      "__wab_instance",
-                      sty.benefitsOfBotoxCard__zGwHq
-                    )}
-                    icon={
-                      <TimeSvgIcon
-                        className={classNames(projectcss.all, sty.svg__k3VXt)}
-                        role={"img"}
-                      />
-                    }
-                    slot={
-                      <div
-                        data-plasmic-name={"supportingText13"}
-                        data-plasmic-override={overrides.supportingText13}
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.supportingText13
-                        )}
-                      >
-                        {
-                          "Botox treatments are fast, taking as little as 10 minutes, making it easy to fit into even the busiest schedule. With no significant downtime, you can return to your day right after your appointment."
-                        }
-                      </div>
-                    }
-                    title={
-                      <div
-                        data-plasmic-name={"text3"}
-                        data-plasmic-override={overrides.text3}
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text3
-                        )}
-                      >
-                        <React.Fragment>
-                          <span
-                            className={
-                              "plasmic_default__all plasmic_default__span"
-                            }
-                            style={{ fontWeight: 700 }}
-                          >
-                            {"Quick & Convenient"}
-                          </span>
-                        </React.Fragment>
-                      </div>
-                    }
-                  />
-
-                  <BenefitsOfBotoxCard
-                    className={classNames(
-                      "__wab_instance",
-                      sty.benefitsOfBotoxCard__wksbv
-                    )}
-                    icon={
-                      <Face2SvgIcon
-                        className={classNames(projectcss.all, sty.svg__gi1B3)}
-                        role={"img"}
-                      />
-                    }
-                    slot={
-                      <div
-                        data-plasmic-name={"supportingText14"}
-                        data-plasmic-override={overrides.supportingText14}
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.supportingText14
-                        )}
-                      >
-                        {
-                          "A single Botox treatment provides results that can last up to 4 months, keeping your skin smooth and youthful for longer. Regular treatments help maintain your look effortlessly over time."
-                        }
-                      </div>
-                    }
-                    title={
-                      <div
-                        data-plasmic-name={"text4"}
-                        data-plasmic-override={overrides.text4}
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text4
-                        )}
-                      >
-                        <React.Fragment>
-                          <span
-                            className={
-                              "plasmic_default__all plasmic_default__span"
-                            }
-                            style={{ fontWeight: 700 }}
-                          >
-                            {"Long-Lasting "}
-                          </span>
-                          <React.Fragment>{"Effects"}</React.Fragment>
-                        </React.Fragment>
-                      </div>
-                    }
-                  />
-
-                  <BenefitsOfBotoxCard
-                    className={classNames(
-                      "__wab_instance",
-                      sty.benefitsOfBotoxCard__o1Xu8
-                    )}
-                    icon={
-                      <HeartSvg3Icon
-                        className={classNames(projectcss.all, sty.svg__f8Ns5)}
-                        role={"img"}
-                      />
-                    }
-                    slot={
-                      <div
-                        data-plasmic-name={"supportingText18"}
-                        data-plasmic-override={overrides.supportingText18}
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.supportingText18
-                        )}
-                      >
-                        {
-                          "Botox not only reduces existing wrinkles but also helps prevent new ones from forming by relaxing facial muscles. It\u2019s a proactive approach to maintaining your youthful glow for years to come."
-                        }
-                      </div>
-                    }
-                    title={
-                      <div
-                        data-plasmic-name={"text8"}
-                        data-plasmic-override={overrides.text8}
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text8
-                        )}
-                      >
-                        <React.Fragment>
-                          <span
-                            className={
-                              "plasmic_default__all plasmic_default__span"
-                            }
-                            style={{ fontWeight: 700 }}
-                          >
-                            {"Preventative Care"}
-                          </span>
-                        </React.Fragment>
-                      </div>
-                    }
-                  />
-                </Stack__>
-              ) : null}
-              <Stack__
-                as={"div"}
-                data-plasmic-name={"benefitsOfBotoxCardsMobile"}
-                data-plasmic-override={overrides.benefitsOfBotoxCardsMobile}
-                hasGap={true}
-                className={classNames(
-                  projectcss.all,
-                  sty.benefitsOfBotoxCardsMobile,
-                  "how-botox-works-cards"
-                )}
-              >
-                <BenefitsOfBotoxCard
-                  className={classNames(
-                    "__wab_instance",
-                    sty.benefitsOfBotoxCard__fWOzA
-                  )}
-                  slot={
-                    <div
-                      data-plasmic-name={"supportingText15"}
-                      data-plasmic-override={overrides.supportingText15}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.supportingText15
-                      )}
-                    >
-                      {
-                        "Botox softens wrinkles and fine lines for a refreshed, youthful appearance that looks completely natural. Our expert team ensures a subtle enhancement tailored to your unique features."
-                      }
-                    </div>
-                  }
-                  title={
-                    <div
-                      data-plasmic-name={"text5"}
-                      data-plasmic-override={overrides.text5}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text5
-                      )}
-                    >
-                      <React.Fragment>
-                        <span
-                          className={
-                            "plasmic_default__all plasmic_default__span"
-                          }
-                          style={{ fontWeight: 700 }}
-                        >
-                          {"Natural-Looking"}
-                        </span>
-                        <React.Fragment>{" Results"}</React.Fragment>
-                      </React.Fragment>
-                    </div>
-                  }
-                />
-
-                <BenefitsOfBotoxCard
-                  className={classNames(
-                    "__wab_instance",
-                    sty.benefitsOfBotoxCard__pkMZh
-                  )}
-                  icon={
-                    <TimeSvg3Icon
-                      className={classNames(projectcss.all, sty.svg__pUPpd)}
-                      role={"img"}
-                    />
-                  }
-                  slot={
-                    <div
-                      data-plasmic-name={"supportingText6"}
-                      data-plasmic-override={overrides.supportingText6}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.supportingText6
-                      )}
-                    >
-                      {
-                        "Botox treatments are fast, taking as little as 10 minutes, making it easy to fit into even the busiest schedule. With no significant downtime, you can return to your day right after your appointment."
-                      }
-                    </div>
-                  }
-                  title={
-                    <div
-                      data-plasmic-name={"text6"}
-                      data-plasmic-override={overrides.text6}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text6
-                      )}
-                    >
-                      <React.Fragment>
-                        <span
-                          className={
-                            "plasmic_default__all plasmic_default__span"
-                          }
-                          style={{ fontWeight: 700 }}
-                        >
-                          {"Quick & Convenient"}
-                        </span>
-                      </React.Fragment>
-                    </div>
-                  }
-                />
-
-                <BenefitsOfBotoxCard
-                  className={classNames(
-                    "__wab_instance",
-                    sty.benefitsOfBotoxCard__dNrRw
-                  )}
-                  icon={
-                    <IconFace2Icon
-                      className={classNames(projectcss.all, sty.svg___4Yc0S)}
-                      role={"img"}
-                    />
-                  }
-                  slot={
-                    <div
-                      data-plasmic-name={"supportingText7"}
-                      data-plasmic-override={overrides.supportingText7}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.supportingText7
-                      )}
-                    >
-                      {
-                        "A single Botox treatment provides results that can last up to 4 months, keeping your skin smooth and youthful for longer. Regular treatments help maintain your look effortlessly over time."
-                      }
-                    </div>
-                  }
-                  title={
-                    <div
-                      data-plasmic-name={"text7"}
-                      data-plasmic-override={overrides.text7}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text7
-                      )}
-                    >
-                      <React.Fragment>
-                        <span
-                          className={
-                            "plasmic_default__all plasmic_default__span"
-                          }
-                          style={{ fontWeight: 700 }}
-                        >
-                          {"Long-Lasting"}
-                        </span>
-                        <React.Fragment>{" Effects"}</React.Fragment>
-                      </React.Fragment>
-                    </div>
-                  }
-                />
-
-                <BenefitsOfBotoxCard
-                  className={classNames(
-                    "__wab_instance",
-                    sty.benefitsOfBotoxCard__bn72K
-                  )}
-                  icon={
-                    <HeartSvg4Icon
-                      className={classNames(projectcss.all, sty.svg___5GP77)}
-                      role={"img"}
-                    />
-                  }
-                  slot={
-                    <div
-                      data-plasmic-name={"supportingText16"}
-                      data-plasmic-override={overrides.supportingText16}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.supportingText16
-                      )}
-                    >
-                      {
-                        "Botox not only reduces existing wrinkles but also helps prevent new ones from forming by relaxing facial muscles. It\u2019s a proactive approach to maintaining your youthful glow for years to come."
-                      }
-                    </div>
-                  }
-                  title={
-                    <div
-                      data-plasmic-name={"text9"}
-                      data-plasmic-override={overrides.text9}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text9
-                      )}
-                    >
-                      <React.Fragment>
-                        <span
-                          className={
-                            "plasmic_default__all plasmic_default__span"
-                          }
-                          style={{ fontWeight: 700 }}
-                        >
-                          {"Preventative Care"}
-                        </span>
-                      </React.Fragment>
-                    </div>
-                  }
-                />
-              </Stack__>
-            </Stack__>
-          </section>
+          
+          {/* 2. before after section */}
           <section
             data-plasmic-name={"beforeAfterSection"}
             data-plasmic-override={overrides.beforeAfterSection}
@@ -1572,299 +1069,215 @@ function PlasmicBotoxLander2__RenderFunc(props) {
               </TestimonialsSlider>
             </div>
           </section>
+
+          {/* 3. affordable hair restoration treatments tailored to you */}
           <Stack__
             as={"section"}
-            data-plasmic-name={"whatIsBotoxSection"}
-            data-plasmic-override={overrides.whatIsBotoxSection}
+            data-plasmic-name={"affordableBotoxSection"}
+            data-plasmic-override={overrides.affordableBotoxSection}
             hasGap={true}
-            className={classNames(projectcss.all, sty.whatIsBotoxSection)}
+            className={classNames(projectcss.all, sty.affordableBotoxSection)}
           >
             <Stack__
               as={"div"}
               hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox___9V4GE)}
+              className={classNames(projectcss.all, sty.freeBox___1JzFp)}
             >
               <div
-                data-plasmic-name={"heading6"}
-                data-plasmic-override={overrides.heading6}
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.heading6
-                )}
-              >
-                <React.Fragment>
-                  <span
-                    className={"plasmic_default__all plasmic_default__span"}
-                    style={{ fontStyle: "italic", color: "#D19D51" }}
-                  >
-                    {"What Is Botox"}
-                  </span>
-                  <React.Fragment> </React.Fragment>
-                  <span
-                    className={"plasmic_default__all plasmic_default__span"}
-                    style={{ color: "#080909" }}
-                  >
-                    {"and \nHow Does It Work?"}
-                  </span>
-                </React.Fragment>
-              </div>
-              <div
-                data-plasmic-name={"supportingText5"}
-                data-plasmic-override={overrides.supportingText5}
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.supportingText5
+                  sty.text__fLnGd
                 )}
               >
                 {hasVariant(globalVariants, "screen", "mobileOnly") ? (
                   <React.Fragment>
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#434445" }}
+                      style={{ color: "#080909" }}
                     >
-                      {"Botox, short for Botulinum Toxin Type A,"}
+                      {"Affordable"}
                     </span>
                     <React.Fragment>{"\n"}</React.Fragment>
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#434445" }}
+                      style={{ color: "#080909" }}
                     >
-                      {"is a neurotoxin derived from"}
+                      {"Hair Restoration Treatments"}
                     </span>
-                    <React.Fragment>{"\n"}</React.Fragment>
+                    <React.Fragment> </React.Fragment>
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#434445" }}
+                      style={{ color: "#9a7f71", fontStyle: "italic" }}
                     >
-                      {"Clostridium botulinum. "}
+                      {"Tailored to You"}
                     </span>
                   </React.Fragment>
                 ) : (
                   <React.Fragment>
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#434445" }}
+                      style={{ color: "#080909" }}
                     >
-                      {
-                        "Botox, short for Botulinum Toxin Type A, is a neurotoxin derived from Clostridium botulinum. "
-                      }
+                      {"Affordable Hair Restoration Treatments"}
+                    </span>
+                    <React.Fragment> </React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "#9a7f71", fontStyle: "italic" }}
+                    >
+                      {"Tailored to You"}
                     </span>
                   </React.Fragment>
                 )}
+              </div>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__tfw7
+                )}
+              >
+                <React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#535556" }}
+                  >
+                    {
+                      "Affordable, transparent Hair Restoration pricing tailored to your goals and budget."
+                    }
+                  </span>
+                </React.Fragment>
               </div>
             </Stack__>
             <Stack__
               as={"div"}
               hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__ilt4D)}
+              className={classNames(projectcss.all, sty.freeBox__hib93)}
             >
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__asLdy)}
-              >
-                <Stack__
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__rGvkf)}
-                >
-                  <div
-                    data-plasmic-name={"whatIsBotoxMobileText"}
-                    data-plasmic-override={overrides.whatIsBotoxMobileText}
-                    className={classNames(
-                      projectcss.all,
-                      sty.whatIsBotoxMobileText
-                    )}
-                  >
-                    <TextToggler
-                      className={classNames(
-                        "__wab_instance",
-                        sty.textToggler__ekCr
-                      )}
-                      height={"140px"}
-                      text={
-                        "Despite its intimidating name, Botox is FDA-approved and widely used in medical and aesthetic treatments. By temporarily blocking signals from nerves to muscles, Botox prevents these muscles from contracting.<br> <br> This relaxation smooths the skin and reduces the appearance of wrinkles, making it an effective treatment for fine lines and dynamic wrinkles caused by repeated facial expressions."
-                      }
-                    />
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__tstww)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__iigR
-                      )}
-                    >
-                      {"Science Behind Botox"}
-                    </div>
-                    <Stack__
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(
-                        projectcss.all,
-                        sty.freeBox___3NXhV
-                      )}
-                    >
-                      <Stack__
-                        as={"div"}
-                        data-plasmic-name={"title20"}
-                        data-plasmic-override={overrides.title20}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.title20)}
-                      >
-                        <PointIcon
-                          className={classNames(projectcss.all, sty.svg__lVZh)}
-                          role={"img"}
-                        />
+              {/* PRP Hair Restoration */}
+              <AffordableBotoxCard
+                name={"PRP Hair Restoration"}
+                perUnit={"$299"}
+                price={"$599"}
+                className={classNames(
+                  "__wab_instance",
+                  sty.affordableBotoxCard__v1OXt
+                )}
+                items={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? [
+                        {
+                          title: "Stimulate New Hair Growth",
+                          description:
+                            "Use your own body’s plasma to boost hair growth in targeted regions"
+                        },
+                        {
+                          title: "Clinically Backed, Proven Results",
+                          description:
+                            "The most studied natural hair restoration service – 100% natural, no chemicals or foreign substances"
+                        },
+                        {
+                          title: "Over 7,000 Treatments Performed at CADMEN",
+                          description:
+                            "We are the only clinic in Ontario with medical-grade PRP Hair Restoration practices "
+                        }
+                      ]
+                    : [
+                        {
+                          title: "Stimulate New Hair Growth",
+                          description:
+                            "Use your own body’s plasma to boost hair growth in targeted regions"
+                        },
+                        {
+                          title: "Clinically Backed, Proven Results",
+                          description:
+                            "The most studied natural hair restoration service – 100% natural, no chemicals or foreign substances"
+                        },
+                        {
+                          title: "Over 7,000 Treatments Performed at CADMEN",
+                          description:
+                            "We are the only clinic in Ontario with medical-grade PRP Hair Restoration practices "
+                        }
+                      ]
+                }
+              />
 
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__iHtP
-                          )}
-                        >
-                          {
-                            "Botox is FDA-approved and trusted worldwide for both medical and aesthetic uses. This remarkable treatment works by temporarily relaxing targeted muscles, helping to reduce the appearance of fine lines and wrinkles caused by repeated facial expressions."
-                          }
-                        </div>
-                      </Stack__>
-                      <Stack__
-                        as={"div"}
-                        data-plasmic-name={"title21"}
-                        data-plasmic-override={overrides.title21}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.title21)}
-                      >
-                        <PointIcon
-                          className={classNames(projectcss.all, sty.svg__zfHU)}
-                          role={"img"}
-                        />
+              {/* Exosome Hair Therapy */}
+              <AffordableBotoxCard
+                name={"Exosome Hair Therapy"}
+                perUnit={"$399"}
+                price={"$799"}
+                className={classNames(
+                  "__wab_instance",
+                  sty.affordableBotoxCard___844NL
+                )}
+                items={[
+                  {
+                    title: "Stop Further Hair Thinning and Shedding",
+                    description:
+                      "Address the root cause of your hair loss by blocking DHT on your scalp"
+                  },
+                  {
+                    title: "Stimulate Rapid Hair Growth",
+                    description:
+                      "Activate healing dormant hair follicles to stimulate new hair growth faster"
+                  },
+                  {
+                    title: "Next-Gen Regenerative Science",
+                    description:
+                      "Our stem cell-derived Exosomes have disrupted the industry due to its unparallelled levels of efficacy"
+                  }
+                ]}
+              />
 
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__azzsu
-                          )}
-                        >
-                          {
-                            "Whether you\u2019re looking to soften crow\u2019s feet, forehead lines, or frown lines, Botox offers a safe and effective solution for achieving a rejuvenated appearance."
-                          }
-                        </div>
-                      </Stack__>
-                    </Stack__>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___9KZd
-                      )}
-                    >
-                      {
-                        "Here\u2019s how it works: Botox blocks nerve signals to specific muscles, preventing them from contracting. By targeting the neuromuscular junction, it inhibits the release of acetylcholine\u2014a neurotransmitter that triggers muscle movement. This temporary \u201cfreeze\u201d allows the skin above these muscles to appear smoother and more refreshed."
-                      }
-                    </div>
-                  </div>
-                </Stack__>
-                <Button
-                  data-plasmic-name={"whatIsBotoxButton"}
-                  data-plasmic-override={overrides.whatIsBotoxButton}
-                  className={classNames(
-                    "__wab_instance",
-                    sty.whatIsBotoxButton
-                  )}
-                >
-                  {"Book Now"}
-                </Button>
-              </Stack__>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox___9QOqV)}
-              >
-                <div className={classNames(projectcss.all, sty.freeBox__xG7Va)}>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox___1W2Th)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img___2GbSe)}
-                      displayHeight={
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? "200px"
-                          : hasVariant(globalVariants, "screen", "midsize")
-                          ? "100%"
-                          : "auto"
-                      }
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? "100%"
-                          : hasVariant(globalVariants, "screen", "midsize")
-                          ? "100%"
-                          : "650px"
-                      }
-                      loading={"lazy"}
-                      src={
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? {
-                              src: "/plasmic/image_lab_2024/images/imagePng65.png",
-                              fullWidth: 686,
-                              fullHeight: 400,
-                              aspectRatio: undefined
-                            }
-                          : {
-                              src: "/plasmic/image_lab_2024/images/imagePng66.png",
-                              fullWidth: 1300,
-                              fullHeight: 1036,
-                              aspectRatio: undefined
-                            }
-                      }
-                    />
-                  </div>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__gu8Ol)}
-                  >
-                    <div
-                      data-plasmic-name={"supportingText3"}
-                      data-plasmic-override={overrides.supportingText3}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.supportingText3
-                      )}
-                    >
-                      {"Science Behind Botox"}
-                    </div>
-                    <span
-                      data-plasmic-name={"supportingText4"}
-                      data-plasmic-override={overrides.supportingText4}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.span,
-                        projectcss.__wab_text,
-                        sty.supportingText4
-                      )}
-                    >
-                      {hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? "Botox works by targeting the neuromuscular junction, where it inhibits the release of acetylcholine\u2014a neurotransmitter responsible for muscle contractions. This process temporarily \u201cfreezes\u201d the muscle, creating a smoother appearance on the skin's surface."
-                        : "Botox works by targeting the neuromuscular junction, where it inhibits the release of acetylcholine\u2014a neurotransmitter responsible for muscle contractions. This process temporarily \u201cfreezes\u201d the muscle, creating a smoother appearance on the skin's surface."}
-                    </span>
-                  </Stack__>
-                </div>
-              </Stack__>
+              {/* Mesotherapy Vitamins */}
+              <AffordableBotoxCard
+                name={"Mesotherapy Vitamins"}
+                perUnit={"$399"}
+                price={"$199"}
+                className={classNames(
+                  "__wab_instance",
+                  sty.affordableBotoxCard__rVlvw
+                )}
+                items={[
+                  {
+                    title: "Strengthen Thinning Hair",
+                    description:
+                      "Nourish your scalp from the root up to prevent further hair thinning and shedding"
+                  },
+                  {
+                    title: "Improve Scalp Circulation for Hair Growth",
+                    description:
+                      "Microinjections of complex vitamins boost blood circulation in your scalp while providing nutrients required to stimulate hair growth"
+                  },
+                  {
+                    title: "Clinically Proven Ingredients",
+                    description:
+                      "Complex blend of amino acids, vitamins, DHT blocker, and other essential nutrients that are dermatologist backed and tested with precision"
+                  }
+                ]}
+              />
             </Stack__>
+
+            <Button
+              data-plasmic-name={"affordableBotoxButton"}
+              data-plasmic-override={overrides.affordableBotoxButton}
+              className={classNames(
+                "__wab_instance",
+                sty.affordableBotoxButton
+              )}
+            >
+              {"Book Now"}
+            </Button>
           </Stack__>
+
+          {/* 4. afforadble prices interactive section (import) */}
+          <AffordableHairRestoration/>
+
+          {/* 5. Proven & Affordable Treatment Packages Tailored for All Types of Hair Loss (slider) */}
+
+          {/* 6. our hair restoration program */}
           <Stack__
             as={"div"}
             data-plasmic-name={"ourBotoxProcessSection"}
@@ -1889,14 +1302,13 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                     className={"plasmic_default__all plasmic_default__span"}
                     style={{ color: "#FFFFFF" }}
                   >
-                    {"Our Botox"}
+                    {"Our Hair Restoration "}
                   </span>
-                  <React.Fragment> </React.Fragment>
                   <span
                     className={"plasmic_default__all plasmic_default__span"}
                     style={{ color: "#E4C08C", fontStyle: "italic" }}
                   >
-                    {"Process"}
+                    {"Program"}
                   </span>
                 </React.Fragment>
               </div>
@@ -1962,7 +1374,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__f83H1)}
               >
-                <div
+                {/* <div
                   data-plasmic-name={"ourBotoxProcessIcons"}
                   data-plasmic-override={overrides.ourBotoxProcessIcons}
                   className={classNames(
@@ -2023,7 +1435,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                       aspectRatio: 1
                     }}
                   />
-                </div>
+                </div> */}
                 <div className={classNames(projectcss.all, sty.freeBox__wjfNi)}>
                   <div
                     className={classNames(
@@ -2057,13 +1469,14 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                   sty.ourBotoxProcessContent
                 )}
               >
+                {/* CONSULTATION */}
                 <BotoxProcessCard
                   className={classNames(
                     "__wab_instance",
                     sty.botoxProcessCard___1RJzs
                   )}
                   description={
-                    "Begin with a personalized consultation where our experts assess your skin and discuss your goals. We\u2019ll create a tailored treatment plan to ensure optimal results that align with your needs."
+                    "Begin with a personalized consultation where our experts assess your hair and discuss your goals. We\u2019ll create a tailored treatment plan to ensure optimal results that align with your needs."
                   }
                   icon={
                     <PlasmicImg__
@@ -2085,7 +1498,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                       }
                       loading={"lazy"}
                       src={{
-                        src: "/plasmic/image_lab_2024/images/iconSvg7.svg",
+                        src: "/icons/document-icon.svg",
                         fullWidth: 73,
                         fullHeight: 72,
                         aspectRatio: 1.013889
@@ -2095,13 +1508,14 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                   title={"\u00a0Consultation"}
                 />
 
+                {/* Treatment */}
                 <BotoxProcessCard
                   className={classNames(
                     "__wab_instance",
                     sty.botoxProcessCard__yVyJm
                   )}
                   description={
-                    "During your Botox session, a skilled practitioner will administer precise injections to targeted areas.The procedure is quick, minimally invasive, and designed for your comfort."
+                    "During your hair restoration session, a skilled practitioner will administer precise injections and/or microneedling to targeted areas. The procedure is quick, minimally invasive, and designed for your comfort."
                   }
                   icon={
                     <PlasmicImg__
@@ -2115,7 +1529,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                       displayWidth={"100%"}
                       loading={"lazy"}
                       src={{
-                        src: "/plasmic/image_lab_2024/images/iconSvg8.svg",
+                        src: "/icons/syringe-icon copy.svg",
                         fullWidth: 73,
                         fullHeight: 72,
                         aspectRatio: 1.013889
@@ -2125,6 +1539,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                   title={"Treatment"}
                 />
 
+                {/* Results */}
                 <BotoxProcessCard
                   className={classNames(
                     "__wab_instance",
@@ -2145,7 +1560,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                       displayWidth={"100%"}
                       loading={"lazy"}
                       src={{
-                        src: "/plasmic/image_lab_2024/images/iconSvg9.svg",
+                        src: "/icons/verified-icon.svg",
                         fullWidth: 73,
                         fullHeight: 72,
                         aspectRatio: 1.013889
@@ -2176,1757 +1591,8 @@ function PlasmicBotoxLander2__RenderFunc(props) {
               </Button>
             </div>
           </Stack__>
-          <Stack__
-            as={"section"}
-            data-plasmic-name={"affordableBotoxSection"}
-            data-plasmic-override={overrides.affordableBotoxSection}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.affordableBotoxSection)}
-          >
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox___1JzFp)}
-            >
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__fLnGd
-                )}
-              >
-                {hasVariant(globalVariants, "screen", "mobileOnly") ? (
-                  <React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#080909" }}
-                    >
-                      {"Affordable"}
-                    </span>
-                    <React.Fragment>{"\n"}</React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#080909" }}
-                    >
-                      {"Botox Treatments"}
-                    </span>
-                    <React.Fragment> </React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#0C7A7B", fontStyle: "italic" }}
-                    >
-                      {"Tailored to You"}
-                    </span>
-                  </React.Fragment>
-                ) : (
-                  <React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#080909" }}
-                    >
-                      {"Affordable Botox Treatments"}
-                    </span>
-                    <React.Fragment> </React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#0C7A7B", fontStyle: "italic" }}
-                    >
-                      {"Tailored to You"}
-                    </span>
-                  </React.Fragment>
-                )}
-              </div>
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__tfw7
-                )}
-              >
-                <React.Fragment>
-                  <span
-                    className={"plasmic_default__all plasmic_default__span"}
-                    style={{ color: "#535556" }}
-                  >
-                    {
-                      "Affordable, transparent Botox pricing tailored to your goals and budget."
-                    }
-                  </span>
-                </React.Fragment>
-              </div>
-            </Stack__>
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__hib93)}
-            >
-              <AffordableBotoxCard
-                className={classNames(
-                  "__wab_instance",
-                  sty.affordableBotoxCard__v1OXt
-                )}
-                items={
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? [
-                        {
-                          title: "Versatile Treatment",
-                          description:
-                            "Botox targets facial muscles to address a variety of cosmetic concerns."
-                        },
-                        {
-                          title: "Wrinkle Reduction",
-                          description:
-                            "Effectively minimizes fine lines and wrinkles for a smoother appearance."
-                        },
-                        {
-                          title: "Natural Results",
-                          description:
-                            "Delivers a refreshed, rejuvenated look while preserving natural expressions."
-                        }
-                      ]
-                    : [
-                        {
-                          title: "Versatile Treatment",
-                          description:
-                            "Botox targets facial muscles to address a variety of cosmetic concerns."
-                        },
-                        {
-                          title: "Wrinkle Reduction",
-                          description:
-                            "Effectively minimizes fine lines and wrinkles for a smoother appearance."
-                        },
-                        {
-                          title: "Natural Results",
-                          description:
-                            "Delivers a refreshed, rejuvenated look while preserving natural expressions."
-                        }
-                      ]
-                }
-              />
 
-              <AffordableBotoxCard
-                className={classNames(
-                  "__wab_instance",
-                  sty.affordableBotoxCard___844NL
-                )}
-                items={[
-                  {
-                    title: "Targeted for Larger Areas",
-                    description:
-                      "Dysport\u2019s unique diffusion pattern effectively addresses broader treatment zones."
-                  },
-                  {
-                    title: "Dynamic Wrinkle Reduction",
-                    description:
-                      "Designed to minimize the appearance of dynamic wrinkles across the face."
-                  },
-                  {
-                    title: "Rapid Action",
-                    description:
-                      "Spreads quickly to cover a wider surface for efficient, natural-looking results."
-                  }
-                ]}
-                name={"Dysport"}
-              />
-
-              <AffordableBotoxCard
-                className={classNames(
-                  "__wab_instance",
-                  sty.affordableBotoxCard__rVlvw
-                )}
-                items={[
-                  {
-                    title: "Smooths Facial Lines",
-                    description:
-                      "eomin effectively reduces facial lines and creases, similar to Botox."
-                  },
-                  {
-                    title: "Protein-Free Formula",
-                    description:
-                      "s a 'naked' injectable, Xeomin contains no added proteins, offering a purer solution."
-                  },
-                  {
-                    title: "Lower Resistance Risk",
-                    description:
-                      "Its simplified composition may reduce the likelihood of resistance developing over time."
-                  }
-                ]}
-                name={"Xeomin"}
-                perUnit={"$13.00"}
-                price={"$10.50"}
-              />
-            </Stack__>
-            <Button
-              data-plasmic-name={"affordableBotoxButton"}
-              data-plasmic-override={overrides.affordableBotoxButton}
-              className={classNames(
-                "__wab_instance",
-                sty.affordableBotoxButton
-              )}
-            >
-              {"Book Now"}
-            </Button>
-          </Stack__>
-          {/* {(
-            hasVariant(globalVariants, "screen", "mobileOnly") ? false : false
-          ) ? (
-            <FaceSection
-              data-plasmic-name={"faceSection"}
-              data-plasmic-override={overrides.faceSection}
-              className={classNames("__wab_instance", sty.faceSection)}
-              items={
-                hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? [
-                      {
-                        name: "Forehead",
-                        nameDescription: "",
-                        content:
-                          "Reduces horizontal lines across\nthe forehead for a smoother look.",
-                        face_dot: { left: "53.23%", top: "11.67%" },
-                        range: "$100 - $200",
-                        units: "10-20 units"
-                      },
-                      {
-                        name: "Crow\u2019s Feet",
-                        nameDescription: "",
-                        content:
-                          "Smooths the fine lines that form\naround the outer corners of the eyes.",
-                        face_dot: { left: "29.85%", top: "38.94%" },
-                        range: "$50 - $150",
-                        units: "5-15 units"
-                      },
-                      {
-                        name: "Hooded Eyes",
-                        nameDescription: "",
-                        content:
-                          "Lifts and opens up the appearance\nof drooping eyelids.",
-                        face_dot: { left: "34.46%", top: "31.52%" },
-                        range: "$100 - $200",
-                        units: "10-20 units"
-                      },
-                      {
-                        name: "Jawline",
-                        nameDescription: "",
-                        content:
-                          "Helps contour and refine the jawline\nfor a more sculpted appearance.",
-                        face_dot: { left: "37.85%", top: "66.67%" },
-                        range: "$100 - $200",
-                        units: "10-20 units"
-                      },
-                      {
-                        name: "Under Eye Wrinkles",
-                        nameDescription: "",
-                        content:
-                          "Minimizes fine lines and wrinkles beneath\nthe eyes.",
-                        face_dot: { left: "44.62%", top: "41.36%" },
-                        range: "$100 - $200",
-                        units: "10-20 units"
-                      },
-                      {
-                        name: "Turkey Neck",
-                        nameDescription: "",
-                        content:
-                          "Tightens and smooths sagging skin\nalong the neck area.",
-                        face_dot: { left: "55.85%", top: "88.03%" },
-                        range: "$100 - $200",
-                        units: "10-20 units"
-                      },
-                      {
-                        name: "Bruxism",
-                        nameDescription: "",
-                        content:
-                          "Eases teeth grinding by relaxing\nthe jaw muscles.",
-                        face_dot: { left: "66.92%", top: "78.33%" },
-                        range: "$100 - $200",
-                        units: "10-20 units"
-                      },
-                      {
-                        name: "Frown Lines",
-                        nameDescription: "",
-                        content:
-                          "Softens vertical lines between the brows,\noften referred to as '11 lines.",
-                        face_dot: { left: "54.15%", top: "25.30%" },
-                        range: "$200 - $300",
-                        units: "20-30 units"
-                      },
-                      {
-                        name: "Jaw Clenching",
-                        nameDescription: "",
-                        content:
-                          "Reduces the strain on jaw muscles,\nalleviating tension and pain.",
-                        face_dot: { left: "62.62%", top: "56.97%" },
-                        range: "$100 - $200",
-                        units: "10-20 units"
-                      },
-                      {
-                        name: "TMJ",
-                        nameDescription: "(Temporomandibular Joint Disorders)",
-                        content:
-                          "(Temporomandibular Joint Disorders)\nRelieves tension and discomfort caused\nby jaw clenching and grinding.",
-                        face_dot: { left: "69.54%", top: "65.00%" },
-                        range: "$100 - $200",
-                        units: "10-20 units"
-                      },
-                      {
-                        name: "Jowls",
-                        nameDescription: "",
-                        content:
-                          "Lifts and tightens sagging skin along\nthe jawline for a more defined look.",
-                        face_dot: { left: "70.31%", top: "56.97%" },
-                        range: "$50 - $100",
-                        units: "5-10 units"
-                      },
-                      {
-                        name: "Headaches",
-                        nameDescription: "",
-                        content:
-                          "Provides relief from chronic migraines\nand tension headaches.",
-                        face_dot: { left: "77.54%", top: "21.06%" },
-                        range: "$100 - $200",
-                        units: "10-20 units"
-                      },
-                      {
-                        name: "Smile Lines",
-                        nameDescription: "",
-                        content:
-                          "Softens the creases that form around\nthe mouth when smiling.",
-                        face_dot: { left: "36.92%", top: "56.97%" },
-                        range: "$50 - $100",
-                        units: "5-10 units"
-                      },
-                      {
-                        name: "Gummy Smile",
-                        nameDescription: "",
-                        content:
-                          "Minimizes the appearance of excessive\ngum tissue when smiling.",
-                        face_dot: { left: "62.62%", top: "71.67%" },
-                        range: "$100",
-                        units: "Varies"
-                      },
-                      {
-                        name: "Double Chin",
-                        nameDescription: "",
-                        content:
-                          "Slims the neck area by relaxing muscles\ncontributing to a fuller chin.",
-                        face_dot: { left: "54.15%", top: "79.85%" },
-                        range: "$40 - $100",
-                        units: "4-10 units"
-                      },
-                      {
-                        name: "Under Eye Bags",
-                        nameDescription: "",
-                        content:
-                          "Smooths the appearance of puffiness\nand fine lines under the eyes.",
-                        face_dot: { left: "68.62%", top: "41.52%" },
-                        range: "$100 - $200",
-                        units: "10-20 units"
-                      },
-                      {
-                        name: "Hyperhidrosis",
-                        nameDescription: "",
-                        content:
-                          "Effectively reduces excessive sweating,\nparticularly in the underarms, hands, or feet.",
-                        face_dot: { left: "79.23%", top: "91.82%" },
-                        range: "$100 - $200",
-                        units: "10-20 units"
-                      },
-                      {
-                        name: "Sweating",
-                        nameDescription: "",
-                        content:
-                          "Controls overactive sweat glands\nin targeted areas.",
-                        face_dot: { left: "89.23%", top: "91.82%" },
-                        range: "$100 - $200",
-                        units: "10-20 units"
-                      }
-                    ]
-                  : hasVariant(globalVariants, "screen", "midsize")
-                  ? [
-                      {
-                        name: "Forehead",
-                        nameDescription: "",
-                        content:
-                          "Reduces horizontal lines across\nthe forehead for a smoother look.",
-                        face_dot: { left: "53.23%", top: "11.67%" },
-                        range: "$100 - $200",
-                        units: "10-20 units"
-                      },
-                      {
-                        name: "Crow\u2019s Feet",
-                        nameDescription: "",
-                        content:
-                          "Smooths the fine lines that form\naround the outer corners of the eyes.",
-                        face_dot: { left: "29.85%", top: "38.94%" },
-                        range: "$50 - $150",
-                        units: "5-15 units"
-                      },
-                      {
-                        name: "Hooded Eyes",
-                        nameDescription: "",
-                        content:
-                          "Lifts and opens up the appearance\nof drooping eyelids.",
-                        face_dot: { left: "34.46%", top: "31.52%" },
-                        range: "$100 - $200",
-                        units: "10-20 units"
-                      },
-                      {
-                        name: "Jawline",
-                        nameDescription: "",
-                        content:
-                          "Helps contour and refine the jawline\nfor a more sculpted appearance.",
-                        face_dot: { left: "37.85%", top: "66.67%" },
-                        range: "$100 - $200",
-                        units: "10-20 units"
-                      },
-                      {
-                        name: "Under Eye Wrinkles",
-                        nameDescription: "",
-                        content:
-                          "Minimizes fine lines and wrinkles beneath\nthe eyes.",
-                        face_dot: { left: "44.62%", top: "41.36%" },
-                        range: "$100 - $200",
-                        units: "10-20 units"
-                      },
-                      {
-                        name: "Turkey Neck",
-                        nameDescription: "",
-                        content:
-                          "Tightens and smooths sagging skin\nalong the neck area.",
-                        face_dot: { left: "55.85%", top: "88.03%" },
-                        range: "$100 - $200",
-                        units: "10-20 units"
-                      },
-                      {
-                        name: "Bruxism",
-                        nameDescription: "",
-                        content:
-                          "Eases teeth grinding by relaxing\nthe jaw muscles.",
-                        face_dot: { left: "66.92%", top: "78.33%" },
-                        range: "$100 - $200",
-                        units: "10-20 units"
-                      },
-                      {
-                        name: "Frown Lines",
-                        nameDescription: "",
-                        content:
-                          "Softens vertical lines between the brows,\noften referred to as '11 lines.",
-                        face_dot: { left: "54.15%", top: "25.30%" },
-                        range: "$200 - $300",
-                        units: "20-30 units"
-                      },
-                      {
-                        name: "Jaw Clenching",
-                        nameDescription: "",
-                        content:
-                          "Reduces the strain on jaw muscles,\nalleviating tension and pain.",
-                        face_dot: { left: "62.62%", top: "56.97%" },
-                        range: "$100 - $200",
-                        units: "10-20 units"
-                      },
-                      {
-                        name: "TMJ",
-                        nameDescription: "(Temporomandibular Joint Disorders)",
-                        content:
-                          "(Temporomandibular Joint Disorders)\nRelieves tension and discomfort caused\nby jaw clenching and grinding.",
-                        face_dot: { left: "69.54%", top: "65.00%" },
-                        range: "$100 - $200",
-                        units: "10-20 units"
-                      },
-                      {
-                        name: "Jowls",
-                        nameDescription: "",
-                        content:
-                          "Lifts and tightens sagging skin along\nthe jawline for a more defined look.",
-                        face_dot: { left: "70.31%", top: "56.97%" },
-                        range: "$50 - $100",
-                        units: "5-10 units"
-                      },
-                      {
-                        name: "Headaches",
-                        nameDescription: "",
-                        content:
-                          "Provides relief from chronic migraines\nand tension headaches.",
-                        face_dot: { left: "77.54%", top: "21.06%" },
-                        range: "$100 - $200",
-                        units: "10-20 units"
-                      },
-                      {
-                        name: "Smile Lines",
-                        nameDescription: "",
-                        content:
-                          "Softens the creases that form around\nthe mouth when smiling.",
-                        face_dot: { left: "36.92%", top: "56.97%" },
-                        range: "$50 - $100",
-                        units: "5-10 units"
-                      },
-                      {
-                        name: "Gummy Smile",
-                        nameDescription: "",
-                        content:
-                          "Minimizes the appearance of excessive\ngum tissue when smiling.",
-                        face_dot: { left: "62.62%", top: "71.67%" },
-                        range: "$100",
-                        units: "Varies"
-                      },
-                      {
-                        name: "Double Chin",
-                        nameDescription: "",
-                        content:
-                          "Slims the neck area by relaxing muscles\ncontributing to a fuller chin.",
-                        face_dot: { left: "54.15%", top: "79.85%" },
-                        range: "$40 - $100",
-                        units: "4-10 units"
-                      },
-                      {
-                        name: "Under Eye Bags",
-                        nameDescription: "",
-                        content:
-                          "Smooths the appearance of puffiness\nand fine lines under the eyes.",
-                        face_dot: { left: "68.62%", top: "41.52%" },
-                        range: "$100 - $200",
-                        units: "10-20 units"
-                      },
-                      {
-                        name: "Hyperhidrosis",
-                        nameDescription: "",
-                        content:
-                          "Effectively reduces excessive sweating,\nparticularly in the underarms, hands, or feet.",
-                        face_dot: { left: "79.23%", top: "91.82%" },
-                        range: "$100 - $200",
-                        units: "10-20 units"
-                      },
-                      {
-                        name: "Sweating",
-                        nameDescription: "",
-                        content:
-                          "Controls overactive sweat glands\nin targeted areas.",
-                        face_dot: { left: "89.23%", top: "91.82%" },
-                        range: "$100 - $200",
-                        units: "10-20 units"
-                      }
-                    ]
-                  : [
-                      {
-                        name: "Forehead",
-                        nameDescription: "",
-                        content:
-                          "Reduces horizontal lines across\nthe forehead for a smoother look.",
-                        face_dot: { left: "53.23%", top: "11.67%" },
-                        range: "$100 - $200",
-                        units: "10-20 units"
-                      },
-                      {
-                        name: "Crow\u2019s Feet",
-                        nameDescription: "",
-                        content:
-                          "Smooths the fine lines that form\naround the outer corners of the eyes.",
-                        face_dot: { left: "29.85%", top: "38.94%" },
-                        range: "$50 - $150",
-                        units: "5-15 units"
-                      },
-                      {
-                        name: "Hooded Eyes",
-                        nameDescription: "",
-                        content:
-                          "Lifts and opens up the appearance\nof drooping eyelids.",
-                        face_dot: { left: "34.46%", top: "31.52%" },
-                        range: "$100 - $200",
-                        units: "10-20 units"
-                      },
-                      {
-                        name: "Jawline",
-                        nameDescription: "",
-                        content:
-                          "Helps contour and refine the jawline\nfor a more sculpted appearance.",
-                        face_dot: { left: "37.85%", top: "66.67%" },
-                        range: "$100 - $200",
-                        units: "10-20 units"
-                      },
-                      {
-                        name: "Under Eye Wrinkles",
-                        nameDescription: "",
-                        content:
-                          "Minimizes fine lines and wrinkles beneath\nthe eyes.",
-                        face_dot: { left: "44.62%", top: "41.36%" },
-                        range: "$100 - $200",
-                        units: "10-20 units"
-                      },
-                      {
-                        name: "Turkey Neck",
-                        nameDescription: "",
-                        content:
-                          "Tightens and smooths sagging skin\nalong the neck area.",
-                        face_dot: { left: "55.85%", top: "88.03%" },
-                        range: "$100 - $200",
-                        units: "10-20 units"
-                      },
-                      {
-                        name: "Bruxism",
-                        nameDescription: "",
-                        content:
-                          "Eases teeth grinding by relaxing\nthe jaw muscles.",
-                        face_dot: { left: "66.92%", top: "78.33%" },
-                        range: "$100 - $200",
-                        units: "10-20 units"
-                      },
-                      {
-                        name: "Frown Lines",
-                        nameDescription: "",
-                        content:
-                          "Softens vertical lines between the brows,\noften referred to as '11 lines.",
-                        face_dot: { left: "54.15%", top: "25.30%" },
-                        range: "$200 - $300",
-                        units: "20-30 units"
-                      },
-                      {
-                        name: "Jaw Clenching",
-                        nameDescription: "",
-                        content:
-                          "Reduces the strain on jaw muscles,\nalleviating tension and pain.",
-                        face_dot: { left: "62.62%", top: "56.97%" },
-                        range: "$100 - $200",
-                        units: "10-20 units"
-                      },
-                      {
-                        name: "TMJ",
-                        nameDescription: "(Temporomandibular Joint Disorders)",
-                        content:
-                          "(Temporomandibular Joint Disorders)\nRelieves tension and discomfort caused\nby jaw clenching and grinding.",
-                        face_dot: { left: "69.54%", top: "65.00%" },
-                        range: "$100 - $200",
-                        units: "10-20 units"
-                      },
-                      {
-                        name: "Jowls",
-                        nameDescription: "",
-                        content:
-                          "Lifts and tightens sagging skin along\nthe jawline for a more defined look.",
-                        face_dot: { left: "70.31%", top: "56.97%" },
-                        range: "$50 - $100",
-                        units: "5-10 units"
-                      },
-                      {
-                        name: "Headaches",
-                        nameDescription: "",
-                        content:
-                          "Provides relief from chronic migraines\nand tension headaches.",
-                        face_dot: { left: "77.54%", top: "21.06%" },
-                        range: "$100 - $200",
-                        units: "10-20 units"
-                      },
-                      {
-                        name: "Smile Lines",
-                        nameDescription: "",
-                        content:
-                          "Softens the creases that form around\nthe mouth when smiling.",
-                        face_dot: { left: "36.92%", top: "56.97%" },
-                        range: "$50 - $100",
-                        units: "5-10 units"
-                      },
-                      {
-                        name: "Gummy Smile",
-                        nameDescription: "",
-                        content:
-                          "Minimizes the appearance of excessive\ngum tissue when smiling.",
-                        face_dot: { left: "62.62%", top: "71.67%" },
-                        range: "$100",
-                        units: "Varies"
-                      },
-                      {
-                        name: "Double Chin",
-                        nameDescription: "",
-                        content:
-                          "Slims the neck area by relaxing muscles\ncontributing to a fuller chin.",
-                        face_dot: { left: "54.15%", top: "79.85%" },
-                        range: "$40 - $100",
-                        units: "4-10 units"
-                      },
-                      {
-                        name: "Under Eye Bags",
-                        nameDescription: "",
-                        content:
-                          "Smooths the appearance of puffiness\nand fine lines under the eyes.",
-                        face_dot: { left: "68.62%", top: "41.52%" },
-                        range: "$100 - $200",
-                        units: "10-20 units"
-                      },
-                      {
-                        name: "Hyperhidrosis",
-                        nameDescription: "",
-                        content:
-                          "Effectively reduces excessive sweating,\nparticularly in the underarms, hands, or feet.",
-                        face_dot: { left: "79.23%", top: "91.82%" },
-                        range: "$100 - $200",
-                        units: "10-20 units"
-                      },
-                      {
-                        name: "Sweating",
-                        nameDescription: "",
-                        content:
-                          "Controls overactive sweat glands\nin targeted areas.",
-                        face_dot: { left: "89.23%", top: "91.82%" },
-                        range: "$100 - $200",
-                        units: "10-20 units"
-                      }
-                    ]
-              }
-            />
-          ) : null}
-          <AreasInteractive
-            data-plasmic-name={"areasInteractive"}
-            data-plasmic-override={overrides.areasInteractive}
-            className={classNames("__wab_instance", sty.areasInteractive)}
-            data={generateStateValueProp($state, ["areasInteractive", "data"])}
-            onDataChange={async (...eventArgs) => {
-              generateStateOnChangeProp($state, [
-                "areasInteractive",
-                "data"
-              ]).apply(null, eventArgs);
-              if (
-                eventArgs.length > 1 &&
-                eventArgs[1] &&
-                eventArgs[1]._plasmic_state_init_
-              ) {
-                return;
-              }
-            }}
-            onSelectedChange={async (...eventArgs) => {
-              generateStateOnChangeProp($state, [
-                "areasInteractive",
-                "selected"
-              ]).apply(null, eventArgs);
-              if (
-                eventArgs.length > 1 &&
-                eventArgs[1] &&
-                eventArgs[1]._plasmic_state_init_
-              ) {
-                return;
-              }
-            }}
-            selected={generateStateValueProp($state, [
-              "areasInteractive",
-              "selected"
-            ])}
-          /> */}
-
-          <Stack__
-            as={"section"}
-            data-plasmic-name={"botoxResultsSection"}
-            data-plasmic-override={overrides.botoxResultsSection}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.botoxResultsSection)}
-          >
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__oZwOt)}
-            >
-              <BotoxResultCard
-                data-plasmic-name={"resultCard"}
-                data-plasmic-override={overrides.resultCard}
-                className={classNames("__wab_instance", sty.resultCard)}
-                data={(() => {
-                  try {
-                    return $state.botoxResultsList.find(
-                      item => item.title === $state.botoxResultArea
-                    );
-                  } catch (e) {
-                    if (
-                      e instanceof TypeError ||
-                      e?.plasmicType === "PlasmicUndefinedDataError"
-                    ) {
-                      return undefined;
-                    }
-                    throw e;
-                  }
-                })()}
-              />
-            </Stack__>
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox___9Yv7W)}
-            >
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__veN5E)}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__vMCv2
-                  )}
-                >
-                  <React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#080909" }}
-                    >
-                      {"How Long Do Botox"}
-                    </span>
-                    <React.Fragment>{" \n"}</React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#0C7A7B", fontStyle: "italic" }}
-                    >
-                      {"Results Last?"}
-                    </span>
-                  </React.Fragment>
-                </div>
-                <TextToggler
-                  className={classNames(
-                    "__wab_instance",
-                    sty.textToggler___5LRfG
-                  )}
-                  height={"120px"}
-                  text={
-                    "On average, Botox results last between 3 to 4 months. The duration varies based on factors like the treatment area, your metabolism, and how expressive your facial muscles are. For first-time users, results may fade slightly faster, while those with consistent Botox treatments may find their results lasting longer over time."
-                  }
-                />
-
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__njIi3
-                  )}
-                >
-                  {
-                    "On average, Botox results last between 3 to 4 months. The duration varies based on factors like the treatment area, your metabolism, and how expressive your facial muscles are. For first-time users, results may fade slightly faster, while those with consistent Botox treatments may find their results lasting longer over time."
-                  }
-                </div>
-              </Stack__>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__dKsGm)}
-              >
-                {(_par => (!_par ? [] : Array.isArray(_par) ? _par : [_par]))(
-                  (() => {
-                    try {
-                      return $state.botoxResultsList;
-                    } catch (e) {
-                      if (
-                        e instanceof TypeError ||
-                        e?.plasmicType === "PlasmicUndefinedDataError"
-                      ) {
-                        return [];
-                      }
-                      throw e;
-                    }
-                  })()
-                ).map((__plasmic_item_0, __plasmic_idx_0) => {
-                  const currentItem = __plasmic_item_0;
-                  const currentIndex = __plasmic_idx_0;
-                  return (
-                    <SelectPill
-                      className={classNames("__wab_instance")}
-                      handleClick={async () => {
-                        const $steps = {};
-                        $steps["updateBotoxResultArea"] = true
-                          ? (() => {
-                              const actionArgs = {
-                                variable: {
-                                  objRoot: $state,
-                                  variablePath: ["botoxResultArea"]
-                                },
-                                operation: 0,
-                                value: currentItem.title
-                              };
-                              return (({
-                                variable,
-                                value,
-                                startIndex,
-                                deleteCount
-                              }) => {
-                                if (!variable) {
-                                  return;
-                                }
-                                const { objRoot, variablePath } = variable;
-                                $stateSet(objRoot, variablePath, value);
-                                return value;
-                              })?.apply(null, [actionArgs]);
-                            })()
-                          : undefined;
-                        if (
-                          $steps["updateBotoxResultArea"] != null &&
-                          typeof $steps["updateBotoxResultArea"] === "object" &&
-                          typeof $steps["updateBotoxResultArea"].then ===
-                            "function"
-                        ) {
-                          $steps["updateBotoxResultArea"] = await $steps[
-                            "updateBotoxResultArea"
-                          ];
-                        }
-                      }}
-                      key={currentIndex}
-                      selected={(() => {
-                        try {
-                          return currentItem.title === $state.botoxResultArea;
-                        } catch (e) {
-                          if (
-                            e instanceof TypeError ||
-                            e?.plasmicType === "PlasmicUndefinedDataError"
-                          ) {
-                            return [];
-                          }
-                          throw e;
-                        }
-                      })()}
-                      value={(() => {
-                        try {
-                          return currentItem.title;
-                        } catch (e) {
-                          if (
-                            e instanceof TypeError ||
-                            e?.plasmicType === "PlasmicUndefinedDataError"
-                          ) {
-                            return undefined;
-                          }
-                          throw e;
-                        }
-                      })()}
-                    />
-                  );
-                })}
-              </Stack__>
-              {(
-                hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? true
-                  : hasVariant(globalVariants, "screen", "midsize")
-                  ? true
-                  : false
-              ) ? (
-                <Stack__
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__fsHi)}
-                >
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__xomq3)}
-                  >
-                    <SelectPill
-                      className={classNames("__wab_instance")}
-                      handleClick={async () => {
-                        const $steps = {};
-                        $steps["updateBotoxResultArea"] = true
-                          ? (() => {
-                              const actionArgs = {
-                                variable: {
-                                  objRoot: $state,
-                                  variablePath: ["botoxResultArea"]
-                                },
-                                operation: 0,
-                                value: "Metabolism"
-                              };
-                              return (({
-                                variable,
-                                value,
-                                startIndex,
-                                deleteCount
-                              }) => {
-                                if (!variable) {
-                                  return;
-                                }
-                                const { objRoot, variablePath } = variable;
-                                $stateSet(objRoot, variablePath, value);
-                                return value;
-                              })?.apply(null, [actionArgs]);
-                            })()
-                          : undefined;
-                        if (
-                          $steps["updateBotoxResultArea"] != null &&
-                          typeof $steps["updateBotoxResultArea"] === "object" &&
-                          typeof $steps["updateBotoxResultArea"].then ===
-                            "function"
-                        ) {
-                          $steps["updateBotoxResultArea"] = await $steps[
-                            "updateBotoxResultArea"
-                          ];
-                        }
-                      }}
-                      selected={
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? (() => {
-                              try {
-                                return "Metabolism" === $state.botoxResultArea;
-                              } catch (e) {
-                                if (
-                                  e instanceof TypeError ||
-                                  e?.plasmicType === "PlasmicUndefinedDataError"
-                                ) {
-                                  return [];
-                                }
-                                throw e;
-                              }
-                            })()
-                          : (() => {
-                              try {
-                                return "Metabolism" === $state.botoxResultArea;
-                              } catch (e) {
-                                if (
-                                  e instanceof TypeError ||
-                                  e?.plasmicType === "PlasmicUndefinedDataError"
-                                ) {
-                                  return [];
-                                }
-                                throw e;
-                              }
-                            })()
-                      }
-                      value={
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? "Metabolism"
-                          : "Metabolism"
-                      }
-                    />
-
-                    <SelectPill
-                      className={classNames("__wab_instance")}
-                      handleClick={async () => {
-                        const $steps = {};
-                        $steps["updateBotoxResultArea"] = true
-                          ? (() => {
-                              const actionArgs = {
-                                variable: {
-                                  objRoot: $state,
-                                  variablePath: ["botoxResultArea"]
-                                },
-                                operation: 0,
-                                value: "Treatment Area"
-                              };
-                              return (({
-                                variable,
-                                value,
-                                startIndex,
-                                deleteCount
-                              }) => {
-                                if (!variable) {
-                                  return;
-                                }
-                                const { objRoot, variablePath } = variable;
-                                $stateSet(objRoot, variablePath, value);
-                                return value;
-                              })?.apply(null, [actionArgs]);
-                            })()
-                          : undefined;
-                        if (
-                          $steps["updateBotoxResultArea"] != null &&
-                          typeof $steps["updateBotoxResultArea"] === "object" &&
-                          typeof $steps["updateBotoxResultArea"].then ===
-                            "function"
-                        ) {
-                          $steps["updateBotoxResultArea"] = await $steps[
-                            "updateBotoxResultArea"
-                          ];
-                        }
-                      }}
-                      selected={
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? (() => {
-                              try {
-                                return (
-                                  "Treatment Area" === $state.botoxResultArea
-                                );
-                              } catch (e) {
-                                if (
-                                  e instanceof TypeError ||
-                                  e?.plasmicType === "PlasmicUndefinedDataError"
-                                ) {
-                                  return [];
-                                }
-                                throw e;
-                              }
-                            })()
-                          : (() => {
-                              try {
-                                return (
-                                  "Treatment Area" === $state.botoxResultArea
-                                );
-                              } catch (e) {
-                                if (
-                                  e instanceof TypeError ||
-                                  e?.plasmicType === "PlasmicUndefinedDataError"
-                                ) {
-                                  return [];
-                                }
-                                throw e;
-                              }
-                            })()
-                      }
-                      value={
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? "Treatment Area"
-                          : "Treatment Area"
-                      }
-                    />
-                  </Stack__>
-                  <SelectPill
-                    className={classNames("__wab_instance")}
-                    handleClick={async () => {
-                      const $steps = {};
-                      $steps["updateBotoxResultArea"] = true
-                        ? (() => {
-                            const actionArgs = {
-                              variable: {
-                                objRoot: $state,
-                                variablePath: ["botoxResultArea"]
-                              },
-                              operation: 0,
-                              value: "Aftercare and Lifestyle"
-                            };
-                            return (({
-                              variable,
-                              value,
-                              startIndex,
-                              deleteCount
-                            }) => {
-                              if (!variable) {
-                                return;
-                              }
-                              const { objRoot, variablePath } = variable;
-                              $stateSet(objRoot, variablePath, value);
-                              return value;
-                            })?.apply(null, [actionArgs]);
-                          })()
-                        : undefined;
-                      if (
-                        $steps["updateBotoxResultArea"] != null &&
-                        typeof $steps["updateBotoxResultArea"] === "object" &&
-                        typeof $steps["updateBotoxResultArea"].then ===
-                          "function"
-                      ) {
-                        $steps["updateBotoxResultArea"] = await $steps[
-                          "updateBotoxResultArea"
-                        ];
-                      }
-                    }}
-                    selected={
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? (() => {
-                            try {
-                              return (
-                                "Aftercare and Lifestyle" ===
-                                $state.botoxResultArea
-                              );
-                            } catch (e) {
-                              if (
-                                e instanceof TypeError ||
-                                e?.plasmicType === "PlasmicUndefinedDataError"
-                              ) {
-                                return [];
-                              }
-                              throw e;
-                            }
-                          })()
-                        : (() => {
-                            try {
-                              return (
-                                "Aftercare and Lifestyle" ===
-                                $state.botoxResultArea
-                              );
-                            } catch (e) {
-                              if (
-                                e instanceof TypeError ||
-                                e?.plasmicType === "PlasmicUndefinedDataError"
-                              ) {
-                                return [];
-                              }
-                              throw e;
-                            }
-                          })()
-                    }
-                    value={
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? "Aftercare and Lifestyle"
-                        : "Aftercare and Lifestyle"
-                    }
-                  />
-                </Stack__>
-              ) : null}
-            </Stack__>
-          </Stack__>
-          <Stack__
-            as={"section"}
-            data-plasmic-name={"ctaSection"}
-            data-plasmic-override={overrides.ctaSection}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.ctaSection)}
-          >
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__dlFxX)}
-            >
-              <div
-                data-plasmic-name={"heading9"}
-                data-plasmic-override={overrides.heading9}
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.heading9
-                )}
-              >
-                {hasVariant(globalVariants, "screen", "mobileOnly") ? (
-                  <React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#FFFFFF" }}
-                    >
-                      {"Want to know how long your "}
-                    </span>
-                    <React.Fragment>{""}</React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#E4C08C" }}
-                    >
-                      {"Botox results"}
-                    </span>
-                    <React.Fragment> </React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#FFFFFF" }}
-                    >
-                      {"might last?"}
-                    </span>
-                  </React.Fragment>
-                ) : (
-                  <React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#FFFFFF" }}
-                    >
-                      {"Want to learn more about if "}
-                    </span>
-                    <React.Fragment>{""}</React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#E4C08C" }}
-                    >
-                      {"Botox is right"}
-                    </span>
-                    <React.Fragment>{""}</React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#FFFFFF" }}
-                    >
-                      {" for you?"}
-                    </span>
-                  </React.Fragment>
-                )}
-              </div>
-              <div
-                data-plasmic-name={"supportingText8"}
-                data-plasmic-override={overrides.supportingText8}
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.supportingText8
-                )}
-              >
-                {
-                  "Schedule a Consultation with Our Team to discuss a treatment \nplan tailored to you."
-                }
-              </div>
-            </Stack__>
-            <Button
-              data-plasmic-name={"ctaButton"}
-              data-plasmic-override={overrides.ctaButton}
-              className={classNames("__wab_instance", sty.ctaButton)}
-              color={"white"}
-            >
-              {"Book Now"}
-            </Button>
-          </Stack__>
-          <Stack__
-            as={"section"}
-            data-plasmic-name={"isBotoxSafeSection"}
-            data-plasmic-override={overrides.isBotoxSafeSection}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.isBotoxSafeSection)}
-          >
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__v99Kn)}
-            >
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__qZkcd)}
-              >
-                <Stack__
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__eg07R)}
-                >
-                  <div
-                    data-plasmic-name={"heading10"}
-                    data-plasmic-override={overrides.heading10}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.heading10
-                    )}
-                  >
-                    <React.Fragment>
-                      <React.Fragment>{"Is Botox "}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ fontStyle: "italic", color: "#D19D51" }}
-                      >
-                        {"Safe?"}
-                      </span>
-                    </React.Fragment>
-                  </div>
-                  <div
-                    data-plasmic-name={"supportingText9"}
-                    data-plasmic-override={overrides.supportingText9}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.supportingText9
-                    )}
-                  >
-                    {"Addressing Common Concerns"}
-                  </div>
-                </Stack__>
-                <div
-                  data-plasmic-name={"supportingText10"}
-                  data-plasmic-override={overrides.supportingText10}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.supportingText10
-                  )}
-                >
-                  {hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? "Botox is a safe, non-invasive treatment that smooths wrinkles and prevents signs of aging, delivering natural, long-lasting results. Tailored to your unique facial structure, it offers a refreshed, youthful look with minimal downtime, enhancing your beauty and boosting your confidence."
-                    : "Botox is a safe, non-invasive treatment that smooths wrinkles and prevents signs of aging, delivering natural, long-lasting results. Tailored to your unique facial structure, it offers a refreshed, youthful look with minimal downtime, enhancing your beauty and boosting your confidence."}
-                </div>
-              </Stack__>
-              <PlasmicImg__
-                alt={""}
-                className={classNames(sty.img__jTuEx)}
-                displayHeight={"auto"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={"100%"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={"auto"}
-                loading={"lazy"}
-                src={{
-                  src: "/plasmic/image_lab_2024/images/imagePng8.png",
-                  fullWidth: 686,
-                  fullHeight: 400,
-                  aspectRatio: undefined
-                }}
-              />
-
-              <div className={classNames(projectcss.all, sty.freeBox___5F1Wc)}>
-                <PlasmicImg__
-                  alt={""}
-                  className={classNames(sty.img__aViR)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  loading={"lazy"}
-                />
-
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__gqoDa
-                  )}
-                >
-                  {hasVariant(globalVariants, "screen", "mobileOnly") ? (
-                    <React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ fontWeight: 500 }}
-                      >
-                        {"Possible Side Effects: "}
-                      </span>
-                      <React.Fragment>
-                        {
-                          "Common side effects include minor bruising, swelling at the injection site, and, in rare cases, headaches or mild flu-like symptoms. These typically fade within a few days. More serious side effects, such as drooping eyelids, are rare and often related to improper technique, underscoring the importance of choosing a qualified provider."
-                        }
-                      </React.Fragment>
-                    </React.Fragment>
-                  ) : (
-                    <React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ fontWeight: 500 }}
-                      >
-                        {"Possible Side Effects:"}
-                      </span>
-                      <React.Fragment>
-                        {
-                          " Common side effects include minor bruising, swelling at the injection site, and, in rare cases, headaches or mild flu-like symptoms. These typically fade within a few days. More serious side effects, such as drooping eyelids, are rare and often related to improper technique, underscoring the importance of choosing a qualified provider."
-                        }
-                      </React.Fragment>
-                    </React.Fragment>
-                  )}
-                </div>
-              </div>
-            </Stack__>
-            <div className={classNames(projectcss.all, sty.freeBox__xP5Dv)} />
-          </Stack__>
-          <section
-            data-plasmic-name={"isBotoxRightSection"}
-            data-plasmic-override={overrides.isBotoxRightSection}
-            className={classNames(projectcss.all, sty.isBotoxRightSection)}
-          >
-            <Stack__
-              as={"div"}
-              data-plasmic-name={"isBotoxRightHeader"}
-              data-plasmic-override={overrides.isBotoxRightHeader}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.isBotoxRightHeader)}
-            >
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__nDUsm
-                )}
-              >
-                {hasVariant(globalVariants, "screen", "mobileOnly") ? (
-                  <React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#080909" }}
-                    >
-                      {"Is Botox Right"}
-                    </span>
-                    <React.Fragment>{"\n"}</React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#0C7A7B", fontStyle: "italic" }}
-                    >
-                      {"for You?"}
-                    </span>
-                  </React.Fragment>
-                ) : (
-                  <React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#080909" }}
-                    >
-                      {"Is Botox Right"}
-                    </span>
-                    <React.Fragment> </React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#0C7A7B", fontStyle: "italic" }}
-                    >
-                      {"for You?"}
-                    </span>
-                  </React.Fragment>
-                )}
-              </div>
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__cBFwh
-                )}
-              >
-                {
-                  "Before opting for Botox, it\u2019s essential to understand what the treatment can and cannot do. Here are some factors to help you determine if Botox aligns with your goals:"
-                }
-              </div>
-            </Stack__>
-            <Stack__
-              as={"div"}
-              data-plasmic-name={"isBotoxRightContent"}
-              data-plasmic-override={overrides.isBotoxRightContent}
-              hasGap={true}
-              className={classNames(
-                projectcss.all,
-                sty.isBotoxRightContent,
-                "hide-scrollbar"
-              )}
-            >
-              <HowItWorksCard
-                className={classNames(
-                  "__wab_instance",
-                  sty.howItWorksCard__c2E3P
-                )}
-                icon={
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img___3BDtp)}
-                    displayHeight={"24px"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"24px"}
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/image_lab_2024/images/starsSvg3.svg",
-                      fullWidth: 24,
-                      fullHeight: 25,
-                      aspectRatio: 0.96
-                    }}
-                  />
-                }
-                image={
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__c53Xu)}
-                    displayHeight={"146px"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"100%"}
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/image_lab_2024/images/imagePng32.png",
-                      fullWidth: 758,
-                      fullHeight: 513,
-                      aspectRatio: undefined
-                    }}
-                  />
-                }
-                title={
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___2CzsT
-                    )}
-                  >
-                    {"Targeted Wrinkle Type"}
-                  </div>
-                }
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text___7AIje
-                  )}
-                >
-                  {
-                    "Botox is most effective on dynamic wrinkles caused by repetitive facial movements, like frown lines, forehead creases, and crow\u2019s feet. If your primary concerns are fine lines and wrinkles that form with movement, Botox may be an ideal choice."
-                  }
-                </div>
-              </HowItWorksCard>
-              <HowItWorksCard
-                className={classNames(
-                  "__wab_instance",
-                  sty.howItWorksCard__iXhG6
-                )}
-                icon={
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__bfzB6)}
-                    displayHeight={"24px"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"24px"}
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/image_lab_2024/images/timeSvg2.svg",
-                      fullWidth: 24,
-                      fullHeight: 25,
-                      aspectRatio: 0.96
-                    }}
-                  />
-                }
-                image={
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img___6PGvz)}
-                    displayHeight={"146px"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"100%"}
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/image_lab_2024/images/imagePng33.png",
-                      fullWidth: 758,
-                      fullHeight: 513,
-                      aspectRatio: undefined
-                    }}
-                  />
-                }
-                title={
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___87NBt
-                    )}
-                  >
-                    {"Preventative Goals"}
-                  </div>
-                }
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__cmtrk
-                  )}
-                >
-                  {
-                    "Botox is popular among younger clients as a preventative measure. Starting in your 20s or 30s can help delay the formation of deeper wrinkles, preserving a youthful look over time."
-                  }
-                </div>
-              </HowItWorksCard>
-              <HowItWorksCard
-                className={classNames(
-                  "__wab_instance",
-                  sty.howItWorksCard__awWuZ
-                )}
-                icon={
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__fkiTa)}
-                    displayHeight={"24px"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"24px"}
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/image_lab_2024/images/face2Svg2.svg",
-                      fullWidth: 24,
-                      fullHeight: 25,
-                      aspectRatio: 0.96
-                    }}
-                  />
-                }
-                image={
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__x1Bii)}
-                    displayHeight={"146px"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"100%"}
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/image_lab_2024/images/imagePng34.png",
-                      fullWidth: 776,
-                      fullHeight: 513,
-                      aspectRatio: undefined
-                    }}
-                  />
-                }
-                title={
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__skGm
-                    )}
-                  >
-                    {"Natural Expectations"}
-                  </div>
-                }
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__mTv6
-                  )}
-                >
-                  {
-                    "Botox provides subtle enhancements, not drastic changes. If you\u2019re seeking a natural improvement without altering your facial expressions, Botox could be a good fit."
-                  }
-                </div>
-              </HowItWorksCard>
-              <HowItWorksCard
-                className={classNames(
-                  "__wab_instance",
-                  sty.howItWorksCard__w1GiC
-                )}
-                icon={
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__gk7NQ)}
-                    displayHeight={"24px"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"24px"}
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/image_lab_2024/images/hairSvg.svg",
-                      fullWidth: 24,
-                      fullHeight: 24,
-                      aspectRatio: 1
-                    }}
-                  />
-                }
-                image={
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__jzxW)}
-                    displayHeight={"146px"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"100%"}
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/image_lab_2024/images/imagePng35.png",
-                      fullWidth: 758,
-                      fullHeight: 512,
-                      aspectRatio: undefined
-                    }}
-                  />
-                }
-                title={
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__mfmmH
-                    )}
-                  >
-                    {"Commitment to Maintenance"}
-                  </div>
-                }
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__ksx49
-                  )}
-                >
-                  {
-                    "Botox is temporary, lasting about 3-4 months. If you\u2019re open to regular follow-up treatments, Botox can be a great addition to your beauty routine."
-                  }
-                </div>
-              </HowItWorksCard>
-            </Stack__>
-          </section>
+          {/* 7. Preparing for your hair restoration appointment */}
           <Stack__
             as={"section"}
             data-plasmic-name={"botoxAppointmentSection"}
@@ -3967,7 +1633,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                           }
                           style={{ color: "#D19D51" }}
                         >
-                          {"Botox Appointment"}
+                          {"Hair Restoration Appointment"}
                         </span>
                       </React.Fragment>
                     ) : (
@@ -3987,7 +1653,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                           }
                           style={{ color: "#D19D51" }}
                         >
-                          {"Botox Appointment"}
+                          {"Hair Restoration Appointment"}
                         </span>
                       </React.Fragment>
                     )}
@@ -3999,7 +1665,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                       sty.text__k235L
                     )}
                   >
-                    {"Here are some tips to ensure a smooth Botox experience:"}
+                    {"Here are some tips to ensure a smooth experience:"}
                   </div>
                 </div>
                 <Stack__
@@ -4007,6 +1673,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                   hasGap={true}
                   className={classNames(projectcss.all, sty.freeBox___87Pse)}
                 >
+                  {/* stay adequately hydrated */}
                   <div
                     className={classNames(projectcss.all, sty.freeBox__eqIOp)}
                   >
@@ -4029,7 +1696,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                           sty.text__a1TXf
                         )}
                       >
-                        {"Avoid Blood Thinners"}
+                        {"Stay Adequately Hydrated"}
                       </div>
                     </Stack__>
                     <div
@@ -4039,11 +1706,11 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                         sty.text___6Xz0B
                       )}
                     >
-                      {hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? "A few days before your appointment, avoid medications and supplements that can thin your blood, such as aspirin, ibuprofen, and fish oil. This reduces the risk of bruising at the injection site."
-                        : "A few days before your appointment, avoid medications and supplements that can thin your blood, such as aspirin, ibuprofen, and fish oil. This reduces the risk of bruising at the injection site."}
+                      {"During the day of your appointment, stay hydrated to ensure optimal results. For PRP Hair Restoration, we advise patients to be sufficiently hydrated to ensure an ample amount of blood can be drawn."}
                     </div>
                   </div>
+
+                  {/* skip alcohol and tobacco */}
                   <div
                     className={classNames(projectcss.all, sty.freeBox__p9P7X)}
                   >
@@ -4081,6 +1748,8 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                       }
                     </div>
                   </div>
+
+                  {/* inform your provider of medical history */}
                   <div
                     className={classNames(projectcss.all, sty.freeBox__qJgGy)}
                   >
@@ -4120,6 +1789,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                   </div>
                 </Stack__>
               </Stack__>
+
               <Button
                 data-plasmic-name={"botoxAppointmentButton"}
                 data-plasmic-override={overrides.botoxAppointmentButton}
@@ -4176,6 +1846,8 @@ function PlasmicBotoxLander2__RenderFunc(props) {
               </Button>
             </Stack__>
           </Stack__>
+
+          {/* 8. What to expect during and after the treatment */}
           <Stack__
             as={"section"}
             data-plasmic-name={"afterTheTreatmentSection"}
@@ -4254,9 +1926,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                       sty.text__wQcHr
                     )}
                   >
-                    {hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? "Botox injections are minimally invasive and generally quick, typically taking about 15 to 30 minutes. Most clients describe the feeling as a slight pinch, similar to a mosquito bite."
-                      : "Botox injections are minimally invasive and generally quick, typically taking about 15 to 30 minutes. Most clients describe the feeling as a slight pinch, similar to a mosquito bite."}
+                    {"Our hair restoration treatments are minimally invasive and quick, typically taking 30 minutes. Most patients describe the feeling as a slight pinch on your scalp."}
                   </div>
                 </Stack__>
                 <Stack__
@@ -4297,9 +1967,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                           }
                           style={{ color: "#535556" }}
                         >
-                          {
-                            "Avoid lying down or bending over for 4 hours after the treatment to prevent the Botox from migrating. "
-                          }
+                          {"Avoid showering and applying any hair products for at least 24 hours post-treatment to ensure full efficacy."}
                         </span>
                       </React.Fragment>
                     </div>
@@ -4321,7 +1989,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                         sty.text__gyFvG
                       )}
                     >
-                      {"Refrain from intense physical activities for 24 hours."}
+                      {"Stay hydrated throughout the day to support healing – this is recommended especially after PRP and Exosome treatments."}
                     </div>
                   </Stack__>
                   <Stack__
@@ -4341,9 +2009,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                         sty.text__zuWu4
                       )}
                     >
-                      {
-                        "Avoid rubbing or massaging the treated area, as this may cause the Botox to spread to unintended muscles."
-                      }
+                      {"Protect your scalp from direct sun exposure for atleast 24 hours."}
                     </div>
                   </Stack__>
                 </Stack__>
@@ -4354,11 +2020,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                     sty.text__bx3Iz
                   )}
                 >
-                  {hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? "Results will typically begin to appear within 3-5 days, with full effects visible at around two weeks. We invite you to schedule a Follow-Up Appointment to assess your results and make"
-                    : hasVariant(globalVariants, "screen", "midsize")
-                    ? "Results will typically begin to appear within 3-5 days, with full effects visible at around two weeks. We invite you to schedule a Follow-Up Appointment to assess your results and make"
-                    : "Results will typically begin to appear within 3-5 days, with full effects visible at around two weeks. We invite you to schedule a Follow-Up Appointment to assess your results and make"}
+                  {"Results typically begin to appear within 2-3 sessions, however it is critical to follow our post-treatment care to ensure you are getting optimal results."}
                 </div>
               </Stack__>
               <PlasmicImg__
@@ -4399,637 +2061,8 @@ function PlasmicBotoxLander2__RenderFunc(props) {
               </Button>
             </div>
           </Stack__>
-          <section
-            data-plasmic-name={"ageGroupsSection"}
-            data-plasmic-override={overrides.ageGroupsSection}
-            className={classNames(projectcss.all, sty.ageGroupsSection)}
-          >
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__ix2TJ)}
-            >
-              <div className={classNames(projectcss.all, sty.freeBox__ozSr)}>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__vmcTj
-                  )}
-                >
-                  {hasVariant(globalVariants, "screen", "mobileOnly") ? (
-                    <React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#FFFFFF" }}
-                      >
-                        {"Botox for Different "}
-                      </span>
-                      <React.Fragment>{""}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ fontStyle: "italic", color: "#E4C08C" }}
-                      >
-                        {"Age Groups: "}
-                      </span>
-                      <React.Fragment>{""}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#FFFFFF" }}
-                      >
-                        {"When Should You Start?"}
-                      </span>
-                    </React.Fragment>
-                  ) : (
-                    <React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#FFFFFF" }}
-                      >
-                        {"Botox for Different "}
-                      </span>
-                      <React.Fragment>{""}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ fontStyle: "italic", color: "#E4C08C" }}
-                      >
-                        {"Age Groups:"}
-                      </span>
-                      <React.Fragment>{"\n"}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#FFFFFF" }}
-                      >
-                        {"When Should You Start?"}
-                      </span>
-                    </React.Fragment>
-                  )}
-                </div>
-              </div>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__e9M1)}
-              >
-                <div className={classNames(projectcss.all, sty.freeBox__ib1Ff)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__roD3R
-                    )}
-                  >
-                    {hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? "Botox is often associated with older individuals who want to smooth out wrinkles, but it\u2019s actually a popular choice across various age groups. People in their 20s, 30s, 40s, and beyond are all potential candidates for Botox, each with different goals and considerations. This guide breaks down how Botox can be beneficial at different stages of life and helps you decide when the right time might be for you to start."
-                      : "Botox is often associated with older individuals who want to smooth out wrinkles, but it\u2019s actually a popular choice across various age groups. People in their 20s, 30s, 40s, and beyond are all potential candidates for Botox, each with different goals and considerations. This guide breaks down how Botox can be beneficial at different stages of life and helps you decide when the right time might be for you to start."}
-                  </div>
-                  <TextToggler
-                    className={classNames(
-                      "__wab_instance",
-                      sty.textToggler__fxfch
-                    )}
-                    height={"168px"}
-                    text={
-                      "Botox is often associated with older individuals who want to smooth out wrinkles, but it\u2019s actually a popular choice across various age groups. People in their 20s, 30s, 40s, and beyond are all potential candidates for Botox, each with different goals and considerations. This guide breaks down how Botox can be beneficial at different stages of life and helps you decide when the right time might be for you to start."
-                    }
-                    white={true}
-                  />
-                </div>
-                <Stack__
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__erEpa)}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__f3Yk
-                    )}
-                  >
-                    {hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? "When\u2019s the Best Time for You to Start?"
-                      : "When\u2019s the Best Time for You to Start?"}
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__hMhf1
-                    )}
-                  >
-                    {
-                      "There\u2019s no single \u201cperfect\u201d age to start Botox. The best approach is to consider your skin\u2019s unique needs and your personal aesthetic goals. Whether you\u2019re interested in preventative Botox in your 20s or looking to smooth established wrinkles in your 50s, ImageLab Medspa offers tailored Botox treatments for every stage of life."
-                    }
-                  </div>
-                </Stack__>
-              </Stack__>
-            </Stack__>
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox___0PPaX)}
-            >
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__cmass)}
-              >
-                {(_par => (!_par ? [] : Array.isArray(_par) ? _par : [_par]))(
-                  (() => {
-                    try {
-                      return $state.ageGroupsList;
-                    } catch (e) {
-                      if (
-                        e instanceof TypeError ||
-                        e?.plasmicType === "PlasmicUndefinedDataError"
-                      ) {
-                        return [];
-                      }
-                      throw e;
-                    }
-                  })()
-                ).map((__plasmic_item_0, __plasmic_idx_0) => {
-                  const currentItem = __plasmic_item_0;
-                  const currentIndex = __plasmic_idx_0;
-                  return (
-                    <SelectPill
-                      className={classNames("__wab_instance")}
-                      handleClick={async () => {
-                        const $steps = {};
-                        $steps["updateAgeGroupsArea"] = true
-                          ? (() => {
-                              const actionArgs = {
-                                variable: {
-                                  objRoot: $state,
-                                  variablePath: ["ageGroupsArea"]
-                                },
-                                operation: 0,
-                                value: currentItem.years
-                              };
-                              return (({
-                                variable,
-                                value,
-                                startIndex,
-                                deleteCount
-                              }) => {
-                                if (!variable) {
-                                  return;
-                                }
-                                const { objRoot, variablePath } = variable;
-                                $stateSet(objRoot, variablePath, value);
-                                return value;
-                              })?.apply(null, [actionArgs]);
-                            })()
-                          : undefined;
-                        if (
-                          $steps["updateAgeGroupsArea"] != null &&
-                          typeof $steps["updateAgeGroupsArea"] === "object" &&
-                          typeof $steps["updateAgeGroupsArea"].then ===
-                            "function"
-                        ) {
-                          $steps["updateAgeGroupsArea"] = await $steps[
-                            "updateAgeGroupsArea"
-                          ];
-                        }
-                      }}
-                      key={currentIndex}
-                      selected={(() => {
-                        try {
-                          return currentItem.years === $state.ageGroupsArea;
-                        } catch (e) {
-                          if (
-                            e instanceof TypeError ||
-                            e?.plasmicType === "PlasmicUndefinedDataError"
-                          ) {
-                            return [];
-                          }
-                          throw e;
-                        }
-                      })()}
-                      value={(() => {
-                        try {
-                          return currentItem.years;
-                        } catch (e) {
-                          if (
-                            e instanceof TypeError ||
-                            e?.plasmicType === "PlasmicUndefinedDataError"
-                          ) {
-                            return undefined;
-                          }
-                          throw e;
-                        }
-                      })()}
-                    />
-                  );
-                })}
-              </Stack__>
-              {(
-                hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? true
-                  : false
-              ) ? (
-                <Stack__
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox___5YIjJ)}
-                >
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__wtF2)}
-                  >
-                    <SelectPill
-                      className={classNames("__wab_instance")}
-                      handleClick={async () => {
-                        const $steps = {};
-                        $steps["updateAgeGroupsArea"] = true
-                          ? (() => {
-                              const actionArgs = {
-                                variable: {
-                                  objRoot: $state,
-                                  variablePath: ["ageGroupsArea"]
-                                },
-                                operation: 0,
-                                value: "20 years"
-                              };
-                              return (({
-                                variable,
-                                value,
-                                startIndex,
-                                deleteCount
-                              }) => {
-                                if (!variable) {
-                                  return;
-                                }
-                                const { objRoot, variablePath } = variable;
-                                $stateSet(objRoot, variablePath, value);
-                                return value;
-                              })?.apply(null, [actionArgs]);
-                            })()
-                          : undefined;
-                        if (
-                          $steps["updateAgeGroupsArea"] != null &&
-                          typeof $steps["updateAgeGroupsArea"] === "object" &&
-                          typeof $steps["updateAgeGroupsArea"].then ===
-                            "function"
-                        ) {
-                          $steps["updateAgeGroupsArea"] = await $steps[
-                            "updateAgeGroupsArea"
-                          ];
-                        }
-                      }}
-                      selected={
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? (() => {
-                              try {
-                                return "20 years" === $state.ageGroupsArea;
-                              } catch (e) {
-                                if (
-                                  e instanceof TypeError ||
-                                  e?.plasmicType === "PlasmicUndefinedDataError"
-                                ) {
-                                  return [];
-                                }
-                                throw e;
-                              }
-                            })()
-                          : (() => {
-                              try {
-                                return (
-                                  currentItem.years === $state.ageGroupsArea
-                                );
-                              } catch (e) {
-                                if (
-                                  e instanceof TypeError ||
-                                  e?.plasmicType === "PlasmicUndefinedDataError"
-                                ) {
-                                  return [];
-                                }
-                                throw e;
-                              }
-                            })()
-                      }
-                      value={
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? "20 years"
-                          : (() => {
-                              try {
-                                return currentItem.years;
-                              } catch (e) {
-                                if (
-                                  e instanceof TypeError ||
-                                  e?.plasmicType === "PlasmicUndefinedDataError"
-                                ) {
-                                  return undefined;
-                                }
-                                throw e;
-                              }
-                            })()
-                      }
-                    />
 
-                    <SelectPill
-                      className={classNames("__wab_instance")}
-                      handleClick={async () => {
-                        const $steps = {};
-                        $steps["updateAgeGroupsArea"] = true
-                          ? (() => {
-                              const actionArgs = {
-                                variable: {
-                                  objRoot: $state,
-                                  variablePath: ["ageGroupsArea"]
-                                },
-                                operation: 0,
-                                value: "30 years"
-                              };
-                              return (({
-                                variable,
-                                value,
-                                startIndex,
-                                deleteCount
-                              }) => {
-                                if (!variable) {
-                                  return;
-                                }
-                                const { objRoot, variablePath } = variable;
-                                $stateSet(objRoot, variablePath, value);
-                                return value;
-                              })?.apply(null, [actionArgs]);
-                            })()
-                          : undefined;
-                        if (
-                          $steps["updateAgeGroupsArea"] != null &&
-                          typeof $steps["updateAgeGroupsArea"] === "object" &&
-                          typeof $steps["updateAgeGroupsArea"].then ===
-                            "function"
-                        ) {
-                          $steps["updateAgeGroupsArea"] = await $steps[
-                            "updateAgeGroupsArea"
-                          ];
-                        }
-                      }}
-                      selected={
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? (() => {
-                              try {
-                                return "30 years" === $state.ageGroupsArea;
-                              } catch (e) {
-                                if (
-                                  e instanceof TypeError ||
-                                  e?.plasmicType === "PlasmicUndefinedDataError"
-                                ) {
-                                  return [];
-                                }
-                                throw e;
-                              }
-                            })()
-                          : (() => {
-                              try {
-                                return (
-                                  currentItem.years === $state.ageGroupsArea
-                                );
-                              } catch (e) {
-                                if (
-                                  e instanceof TypeError ||
-                                  e?.plasmicType === "PlasmicUndefinedDataError"
-                                ) {
-                                  return [];
-                                }
-                                throw e;
-                              }
-                            })()
-                      }
-                      value={
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? "30 years"
-                          : (() => {
-                              try {
-                                return currentItem.years;
-                              } catch (e) {
-                                if (
-                                  e instanceof TypeError ||
-                                  e?.plasmicType === "PlasmicUndefinedDataError"
-                                ) {
-                                  return undefined;
-                                }
-                                throw e;
-                              }
-                            })()
-                      }
-                    />
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__u8Wai)}
-                  >
-                    <SelectPill
-                      className={classNames("__wab_instance")}
-                      handleClick={async () => {
-                        const $steps = {};
-                        $steps["updateAgeGroupsArea"] = true
-                          ? (() => {
-                              const actionArgs = {
-                                variable: {
-                                  objRoot: $state,
-                                  variablePath: ["ageGroupsArea"]
-                                },
-                                operation: 0,
-                                value: "40 years"
-                              };
-                              return (({
-                                variable,
-                                value,
-                                startIndex,
-                                deleteCount
-                              }) => {
-                                if (!variable) {
-                                  return;
-                                }
-                                const { objRoot, variablePath } = variable;
-                                $stateSet(objRoot, variablePath, value);
-                                return value;
-                              })?.apply(null, [actionArgs]);
-                            })()
-                          : undefined;
-                        if (
-                          $steps["updateAgeGroupsArea"] != null &&
-                          typeof $steps["updateAgeGroupsArea"] === "object" &&
-                          typeof $steps["updateAgeGroupsArea"].then ===
-                            "function"
-                        ) {
-                          $steps["updateAgeGroupsArea"] = await $steps[
-                            "updateAgeGroupsArea"
-                          ];
-                        }
-                      }}
-                      selected={
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? (() => {
-                              try {
-                                return "40 years" === $state.ageGroupsArea;
-                              } catch (e) {
-                                if (
-                                  e instanceof TypeError ||
-                                  e?.plasmicType === "PlasmicUndefinedDataError"
-                                ) {
-                                  return [];
-                                }
-                                throw e;
-                              }
-                            })()
-                          : (() => {
-                              try {
-                                return (
-                                  currentItem.years === $state.ageGroupsArea
-                                );
-                              } catch (e) {
-                                if (
-                                  e instanceof TypeError ||
-                                  e?.plasmicType === "PlasmicUndefinedDataError"
-                                ) {
-                                  return [];
-                                }
-                                throw e;
-                              }
-                            })()
-                      }
-                      value={
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? "40 years"
-                          : (() => {
-                              try {
-                                return currentItem.years;
-                              } catch (e) {
-                                if (
-                                  e instanceof TypeError ||
-                                  e?.plasmicType === "PlasmicUndefinedDataError"
-                                ) {
-                                  return undefined;
-                                }
-                                throw e;
-                              }
-                            })()
-                      }
-                    />
-
-                    <SelectPill
-                      className={classNames("__wab_instance")}
-                      handleClick={async () => {
-                        const $steps = {};
-                        $steps["updateAgeGroupsArea"] = true
-                          ? (() => {
-                              const actionArgs = {
-                                variable: {
-                                  objRoot: $state,
-                                  variablePath: ["ageGroupsArea"]
-                                },
-                                operation: 0,
-                                value: "50 years"
-                              };
-                              return (({
-                                variable,
-                                value,
-                                startIndex,
-                                deleteCount
-                              }) => {
-                                if (!variable) {
-                                  return;
-                                }
-                                const { objRoot, variablePath } = variable;
-                                $stateSet(objRoot, variablePath, value);
-                                return value;
-                              })?.apply(null, [actionArgs]);
-                            })()
-                          : undefined;
-                        if (
-                          $steps["updateAgeGroupsArea"] != null &&
-                          typeof $steps["updateAgeGroupsArea"] === "object" &&
-                          typeof $steps["updateAgeGroupsArea"].then ===
-                            "function"
-                        ) {
-                          $steps["updateAgeGroupsArea"] = await $steps[
-                            "updateAgeGroupsArea"
-                          ];
-                        }
-                      }}
-                      selected={
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? (() => {
-                              try {
-                                return "50 years" === $state.ageGroupsArea;
-                              } catch (e) {
-                                if (
-                                  e instanceof TypeError ||
-                                  e?.plasmicType === "PlasmicUndefinedDataError"
-                                ) {
-                                  return [];
-                                }
-                                throw e;
-                              }
-                            })()
-                          : (() => {
-                              try {
-                                return (
-                                  currentItem.years === $state.ageGroupsArea
-                                );
-                              } catch (e) {
-                                if (
-                                  e instanceof TypeError ||
-                                  e?.plasmicType === "PlasmicUndefinedDataError"
-                                ) {
-                                  return [];
-                                }
-                                throw e;
-                              }
-                            })()
-                      }
-                      value={
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? "50 years"
-                          : (() => {
-                              try {
-                                return currentItem.years;
-                              } catch (e) {
-                                if (
-                                  e instanceof TypeError ||
-                                  e?.plasmicType === "PlasmicUndefinedDataError"
-                                ) {
-                                  return undefined;
-                                }
-                                throw e;
-                              }
-                            })()
-                      }
-                    />
-                  </Stack__>
-                </Stack__>
-              ) : null}
-              <div className={classNames(projectcss.all, sty.freeBox__a1MJg)}>
-                <AgeGroupsCard
-                  data-plasmic-name={"ageGroupsCard"}
-                  data-plasmic-override={overrides.ageGroupsCard}
-                  className={classNames("__wab_instance", sty.ageGroupsCard)}
-                  data={(() => {
-                    try {
-                      return $state.ageGroupsList.find(
-                        item => item.years === $state.ageGroupsArea
-                      );
-                    } catch (e) {
-                      if (
-                        e instanceof TypeError ||
-                        e?.plasmicType === "PlasmicUndefinedDataError"
-                      ) {
-                        return undefined;
-                      }
-                      throw e;
-                    }
-                  })()}
-                />
-              </div>
-            </Stack__>
-          </section>
+          {/* 9. alternating image section */}
           <section
             data-plasmic-name={"chooseBotoxSection"}
             data-plasmic-override={overrides.chooseBotoxSection}
@@ -5056,6 +2089,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                   hasGap={true}
                   className={classNames(projectcss.all, sty.chooseBotoxContent)}
                 >
+                  {/* The Best Hair Restoration Treatments: Why Clients Choose CADMEN Clinic */}
                   <Stack__
                     as={"div"}
                     hasGap={true}
@@ -5095,6 +2129,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                         )}
                       />
                     </div>
+
                     <div
                       className={classNames(projectcss.all, sty.freeBox__pEyQ)}
                     >
@@ -5107,7 +2142,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                         )}
                       >
                         {
-                          "The Best Botox in Chicago:\nWhy Clients Choose ImageLab Medspa"
+                          "The Best Hair Restoration Treatments: \n Why Clients Choose CADMEN Clinic"
                         }
                       </h3>
                       <p
@@ -5119,7 +2154,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                         )}
                       >
                         {
-                          "Then it comes to getting Botox in Chicago, clients continually choose ImageLab Medspa for our commitment to quality, safety, and exceptional results. Let\u2019s explore what sets ImageLab apart and why so many clients consider us the best Botox provider in Chicago."
+                          "When it comes to hair restoration, clients choose CADMEN Clinic for our commitment to quality, safety, and exception results. Let’s explore what sets CADMEN Clinic apart and why so many clients consider us the go-to for natural hair restoration."
                         }
                       </p>
                       <Stack__
@@ -5280,6 +2315,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                       }}
                     />
                   </Stack__>
+
                   <Stack__
                     as={"div"}
                     hasGap={true}
@@ -5501,6 +2537,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                       }}
                     />
                   </Stack__>
+
                   <Stack__
                     as={"div"}
                     hasGap={true}
@@ -5722,6 +2759,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                       }}
                     />
                   </Stack__>
+
                   <Stack__
                     as={"div"}
                     hasGap={true}
@@ -5945,6 +2983,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                       }}
                     />
                   </Stack__>
+
                   <Stack__
                     as={"div"}
                     hasGap={true}
@@ -6166,6 +3205,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                       }}
                     />
                   </Stack__>
+
                   <Stack__
                     as={"div"}
                     hasGap={true}
@@ -6356,6 +3396,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                       }}
                     />
                   </Stack__>
+
                   <Stack__
                     as={"div"}
                     hasGap={true}
@@ -6538,7 +3579,8 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                     />
                   </Stack__>
                 </Stack__>
-                <div
+                
+                {/* <div
                   data-plasmic-name={"chooseBotoxImages"}
                   data-plasmic-override={overrides.chooseBotoxImages}
                   className={classNames(projectcss.all, sty.chooseBotoxImages)}
@@ -6690,10 +3732,12 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                       }}
                     />
                   </div>
-                </div>
+                </div> */}
               </div>
             </Stack__>
           </section>
+
+          {/* 10. faq, question and answer */}
           <section
             data-plasmic-name={"faqSection"}
             data-plasmic-override={overrides.faqSection}
@@ -6789,551 +3833,112 @@ function PlasmicBotoxLander2__RenderFunc(props) {
               />
             </Stack__>
           </section>
-          <section
-            data-plasmic-name={"botoxRisksSection"}
-            data-plasmic-override={overrides.botoxRisksSection}
-            className={classNames(projectcss.all, sty.botoxRisksSection)}
+
+          {/* 11. want to learn more if our hair restoration treatments are right for you */}
+          <Stack__
+            as={"section"}
+            data-plasmic-name={"ctaSection"}
+            data-plasmic-override={overrides.ctaSection}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.ctaSection)}
           >
-            <div className={classNames(projectcss.all, sty.freeBox__bOtqw)}>
+            <Stack__
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox__dlFxX)}
+            >
               <div
+                data-plasmic-name={"heading9"}
+                data-plasmic-override={overrides.heading9}
                 className={classNames(
                   projectcss.all,
-                  sty.freeBox__b4Zsq,
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? "people-choose-botox-grid"
-                    : "people-choose-botox-grid"
+                  projectcss.__wab_text,
+                  sty.heading9
                 )}
               >
-                <Stack__
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__o11Ry)}
-                >
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__j9Ntg)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__noOp3
-                      )}
+                {hasVariant(globalVariants, "screen", "mobileOnly") ? (
+                  <React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "#FFFFFF" }}
                     >
-                      {hasVariant(globalVariants, "screen", "midsize") ? (
-                        <React.Fragment>
-                          <span
-                            className={
-                              "plasmic_default__all plasmic_default__span"
-                            }
-                            style={{ color: "#080909" }}
-                          >
-                            {"Understanding "}
-                          </span>
-                          <React.Fragment>{""}</React.Fragment>
-                          <span
-                            className={
-                              "plasmic_default__all plasmic_default__span"
-                            }
-                            style={{ color: "#D19D51", fontStyle: "italic" }}
-                          >
-                            {"the Risks"}
-                          </span>
-                          <React.Fragment> </React.Fragment>
-                          <span
-                            className={
-                              "plasmic_default__all plasmic_default__span"
-                            }
-                            style={{ color: "#080909" }}
-                          >
-                            {"of Botox"}
-                          </span>
-                        </React.Fragment>
-                      ) : (
-                        <React.Fragment>
-                          <span
-                            className={
-                              "plasmic_default__all plasmic_default__span"
-                            }
-                            style={{ color: "#080909" }}
-                          >
-                            {"Understanding "}
-                          </span>
-                          <React.Fragment>{""}</React.Fragment>
-                          <span
-                            className={
-                              "plasmic_default__all plasmic_default__span"
-                            }
-                            style={{ color: "#D19D51", fontStyle: "italic" }}
-                          >
-                            {"the Risks"}
-                          </span>
-                          <React.Fragment> </React.Fragment>
-                          <span
-                            className={
-                              "plasmic_default__all plasmic_default__span"
-                            }
-                            style={{ color: "#080909" }}
-                          >
-                            {"of Botox"}
-                          </span>
-                        </React.Fragment>
-                      )}
-                    </div>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__zebec
-                      )}
+                      {"Want to know how long your "}
+                    </span>
+                    <React.Fragment>{""}</React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "#E4C08C" }}
                     >
-                      {
-                        "Although Botox is considered safe when administered by a qualified provider, it\u2019s important to be aware of the potential risks. Here are some possible side effects and how we manage them at ImageLab Medspa:"
-                      }
-                    </div>
-                  </Stack__>
-                  {(
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? true
-                      : false
-                  ) ? (
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__qbAob)}
+                      {"Botox results"}
+                    </span>
+                    <React.Fragment> </React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "#FFFFFF" }}
                     >
-                      <div
-                        data-plasmic-name={"botoxRisksNumberProgressMobile"}
-                        data-plasmic-override={
-                          overrides.botoxRisksNumberProgressMobile
-                        }
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.botoxRisksNumberProgressMobile
-                        )}
-                      >
-                        {"1"}
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__szYxH
-                        )}
-                      >
-                        <div
-                          data-plasmic-name={"botoxRisksProgressBarMobile"}
-                          data-plasmic-override={
-                            overrides.botoxRisksProgressBarMobile
-                          }
-                          className={classNames(
-                            projectcss.all,
-                            sty.botoxRisksProgressBarMobile
-                          )}
-                        />
-
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__c6I7
-                          )}
-                        />
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__jlQuq
-                        )}
-                      >
-                        {"4"}
-                      </div>
-                    </div>
-                  ) : null}
-                  <Stack__
-                    as={"div"}
-                    data-plasmic-name={"botoxRisksContent"}
-                    data-plasmic-override={overrides.botoxRisksContent}
-                    hasGap={true}
-                    className={classNames(
-                      projectcss.all,
-                      sty.botoxRisksContent
-                    )}
-                  >
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__guuKj)}
+                      {"might last?"}
+                    </span>
+                  </React.Fragment>
+                ) : (
+                  <React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "#FFFFFF" }}
                     >
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img__jtUaW)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"auto"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/image_lab_2024/images/imagePng46.png",
-                          fullWidth: 686,
-                          fullHeight: 401,
-                          aspectRatio: undefined
-                        }}
-                      />
-
-                      <Stack__
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox___8Kdnv
-                        )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__lb1Tq
-                          )}
-                        >
-                          {"Temporary Redness, \nSwelling, or Bruising"}
-                        </div>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__ehQ45
-                          )}
-                        >
-                          {hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? "These are the most common side effects and typically resolve within a day or two. Our injectors use advanced techniques \nto minimize bruising, and we provide aftercare guidance to help you recover quickly."
-                            : hasVariant(globalVariants, "screen", "midsize")
-                            ? "These are the most common side effects and typically resolve within a day or two. Our injectors use advanced techniques \nto minimize bruising, and we provide aftercare guidance to help you recover quickly."
-                            : "These are the most common side effects and typically resolve within a day or two. Our injectors use advanced techniques \nto minimize bruising, and we provide aftercare guidance to help you recover quickly."}
-                        </div>
-                      </Stack__>
-                    </div>
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__fqSgq)}
+                      {"Want to learn more about if "}
+                    </span>
+                    <React.Fragment>{""}</React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "#E4C08C" }}
                     >
-                      {(
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? true
-                          : hasVariant(globalVariants, "screen", "midsize")
-                          ? true
-                          : false
-                      ) ? (
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img__i7P6W)}
-                          displayHeight={"auto"}
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"auto"}
-                          loading={"lazy"}
-                          src={{
-                            src: "/plasmic/image_lab_2024/images/imagePng47.png",
-                            fullWidth: 686,
-                            fullHeight: 401,
-                            aspectRatio: undefined
-                          }}
-                        />
-                      ) : null}
-                      <Stack__
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__vMaGn
-                        )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__aNLsi
-                          )}
-                        >
-                          {"Headaches or Minor Discomfort"}
-                        </div>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__gk7SD
-                          )}
-                        >
-                          {
-                            "Some clients experience mild headaches or discomfort after Botox. These effects are usually short-lived and can be managed with over-the-counter pain relief if needed."
-                          }
-                        </div>
-                      </Stack__>
-                    </div>
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__l0H7S)}
+                      {"Botox is right"}
+                    </span>
+                    <React.Fragment>{""}</React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "#FFFFFF" }}
                     >
-                      {(
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? true
-                          : hasVariant(globalVariants, "screen", "midsize")
-                          ? true
-                          : false
-                      ) ? (
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img__zzd3D)}
-                          displayHeight={"auto"}
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"auto"}
-                          loading={"lazy"}
-                          src={{
-                            src: "/plasmic/image_lab_2024/images/imagePng48.png",
-                            fullWidth: 686,
-                            fullHeight: 401,
-                            aspectRatio: undefined
-                          }}
-                        />
-                      ) : null}
-                      <Stack__
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox___3LDgu
-                        )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__notpt
-                          )}
-                        >
-                          {"Drooping Eyelid or Asymmetry"}
-                        </div>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__dAOsc
-                          )}
-                        >
-                          {
-                            "Rarely, Botox can migrate to unintended muscles, potentially causing eyelid drooping or asymmetry. To minimize this risk, our injectors use precise techniques and provide post-treatment guidelines to prevent migration."
-                          }
-                        </div>
-                      </Stack__>
-                    </div>
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__tf1Hq)}
-                    >
-                      {(
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? true
-                          : hasVariant(globalVariants, "screen", "midsize")
-                          ? true
-                          : false
-                      ) ? (
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img__e67Gf)}
-                          displayHeight={"auto"}
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"auto"}
-                          loading={"lazy"}
-                          src={{
-                            src: "/plasmic/image_lab_2024/images/imagePng49.png",
-                            fullWidth: 686,
-                            fullHeight: 401,
-                            aspectRatio: undefined
-                          }}
-                        />
-                      ) : null}
-                      <Stack__
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__fcAcO
-                        )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__uFtfW
-                          )}
-                        >
-                          {"Allergic Reactions"}
-                        </div>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__gIrN
-                          )}
-                        >
-                          {
-                            "While very rare, allergic reactions to Botox can occur. During your consultation, we\u2019ll review your medical history to ensure you\u2019re a good candidate and discuss any potential allergies."
-                          }
-                        </div>
-                      </Stack__>
-                    </div>
-                  </Stack__>
-                </Stack__>
-                <Stack__
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__uMiLz)}
-                >
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__iBd2L)}
-                  >
-                    <div
-                      data-plasmic-name={"botoxRisksNumberProgress"}
-                      data-plasmic-override={overrides.botoxRisksNumberProgress}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.botoxRisksNumberProgress
-                      )}
-                    >
-                      {"1"}
-                    </div>
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__p5NVg)}
-                    >
-                      <div
-                        data-plasmic-name={"botoxRisksProgressBar"}
-                        data-plasmic-override={overrides.botoxRisksProgressBar}
-                        className={classNames(
-                          projectcss.all,
-                          sty.botoxRisksProgressBar
-                        )}
-                      />
-
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__xZnwk
-                        )}
-                      />
-                    </div>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__b47Lm
-                      )}
-                    >
-                      {"4"}
-                    </div>
-                  </div>
-                  <div
-                    data-plasmic-name={"botoxRisksImages"}
-                    data-plasmic-override={overrides.botoxRisksImages}
-                    className={classNames(projectcss.all, sty.botoxRisksImages)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        sty.freeBox___0AzJd
-                      )}
-                    >
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img__tKDak)}
-                        displayHeight={"550px"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"auto"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/image_lab_2024/images/imagePng42.png",
-                          fullWidth: 1264,
-                          fullHeight: 1100,
-                          aspectRatio: undefined
-                        }}
-                      />
-                    </div>
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__iw3CM)}
-                    >
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img__nuUlx)}
-                        displayHeight={"550px"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"auto"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/image_lab_2024/images/imagePng43.png",
-                          fullWidth: 1264,
-                          fullHeight: 1100,
-                          aspectRatio: undefined
-                        }}
-                      />
-                    </div>
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__iSue8)}
-                    >
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img__hMEhk)}
-                        displayHeight={"550px"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"auto"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/image_lab_2024/images/imagePng44.png",
-                          fullWidth: 1264,
-                          fullHeight: 1100,
-                          aspectRatio: undefined
-                        }}
-                      />
-                    </div>
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__f6HtR)}
-                    >
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img__p6SvX)}
-                        displayHeight={"550px"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"auto"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/image_lab_2024/images/imagePng45.png",
-                          fullWidth: 1264,
-                          fullHeight: 1100,
-                          aspectRatio: undefined
-                        }}
-                      />
-                    </div>
-                  </div>
-                </Stack__>
+                      {" for you?"}
+                    </span>
+                  </React.Fragment>
+                )}
               </div>
-            </div>
-          </section>
-          <section
+              <div
+                data-plasmic-name={"supportingText8"}
+                data-plasmic-override={overrides.supportingText8}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.supportingText8
+                )}
+              >
+                {
+                  "Schedule a Consultation with Our Team to discuss a treatment \nplan tailored to you."
+                }
+              </div>
+            </Stack__>
+            <Button
+              data-plasmic-name={"ctaButton"}
+              data-plasmic-override={overrides.ctaButton}
+              className={classNames("__wab_instance", sty.ctaButton)}
+              color={"white"}
+            >
+              {"Book Now"}
+            </Button>
+          </Stack__>
+
+          {/* 12. our location */}
+          <OurLocationSection
+            data-plasmic-name={"ourLocationSection"}
+            data-plasmic-override={overrides.ourLocationSection}
+            className={classNames("__wab_instance", sty.ourLocationSection)}
+          />
+
+          {/* ---------EXTRA STUFF TO BE REMOVED---------- */}
+
+          {/* who should avoid botox */}
+          {/* <section
             data-plasmic-name={"avoidBotoxSection"}
             data-plasmic-override={overrides.avoidBotoxSection}
             className={classNames(projectcss.all, sty.avoidBotoxSection)}
@@ -7528,8 +4133,10 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                 </div>
               </div>
             </Stack__>
-          </section>
-          <section
+          </section> */}
+
+          {/* safety measures */}
+          {/* <section
             data-plasmic-name={"safetyMeasuresSection"}
             data-plasmic-override={overrides.safetyMeasuresSection}
             className={classNames(projectcss.all, sty.safetyMeasuresSection)}
@@ -7883,8 +4490,10 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                 </Stack__>
               </Stack__>
             </Stack__>
-          </section>
-          <section
+          </section> */}
+
+          {/* myths about botox */}
+          {/* <section
             data-plasmic-name={"botoxMythsSection"}
             data-plasmic-override={overrides.botoxMythsSection}
             className={classNames(projectcss.all, sty.botoxMythsSection)}
@@ -8030,8 +4639,10 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                 />
               </BotoxMythsSlider>
             </div>
-          </section>
-          <section
+          </section> */}
+
+          {/* post treatment guide */}
+          {/* <section
             data-plasmic-name={"postTreatmentGuideSection"}
             data-plasmic-override={overrides.postTreatmentGuideSection}
             className={classNames(
@@ -8525,8 +5136,10 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                 {"Learn more"}
               </Button>
             </Stack__>
-          </section>
-          <section
+          </section> */}
+
+          {/* faq 2? */}
+          {/* <section
             data-plasmic-name={"faq2Section"}
             data-plasmic-override={overrides.faq2Section}
             className={classNames(projectcss.all, sty.faq2Section)}
@@ -8629,14 +5242,10 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                 question={"Is Botox Only for Women?"}
               />
             </Stack__>
-          </section>
-          <OurLocationSection
-            data-plasmic-name={"ourLocationSection"}
-            data-plasmic-override={overrides.ourLocationSection}
-            className={classNames("__wab_instance", sty.ourLocationSection)}
-          />
+          </section> */}
 
-          <section
+          {/* join the club section */}
+          {/* <section
             data-plasmic-name={"joinTheClubSection"}
             data-plasmic-override={overrides.joinTheClubSection}
             className={classNames(projectcss.all, sty.joinTheClubSection)}
@@ -8737,12 +5346,1743 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                 {"Book My Consultation Now"}
               </Button>
             </div>
-          </section>
-          <FooterNew
-            data-plasmic-name={"footerNew"}
-            data-plasmic-override={overrides.footerNew}
-            className={classNames("__wab_instance", sty.footerNew)}
-          />
+          </section> */}
+
+          {/* how long do results last */}
+          {/* <Stack__
+            as={"section"}
+            data-plasmic-name={"botoxResultsSection"}
+            data-plasmic-override={overrides.botoxResultsSection}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.botoxResultsSection)}
+          >
+            <Stack__
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox__oZwOt)}
+            >
+              <BotoxResultCard
+                data-plasmic-name={"resultCard"}
+                data-plasmic-override={overrides.resultCard}
+                className={classNames("__wab_instance", sty.resultCard)}
+                data={(() => {
+                  try {
+                    return $state.botoxResultsList.find(
+                      item => item.title === $state.botoxResultArea
+                    );
+                  } catch (e) {
+                    if (
+                      e instanceof TypeError ||
+                      e?.plasmicType === "PlasmicUndefinedDataError"
+                    ) {
+                      return undefined;
+                    }
+                    throw e;
+                  }
+                })()}
+              />
+            </Stack__>
+            <Stack__
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox___9Yv7W)}
+            >
+              <Stack__
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__veN5E)}
+              >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__vMCv2
+                  )}
+                >
+                  <React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "#080909" }}
+                    >
+                      {"How Long Do Botox"}
+                    </span>
+                    <React.Fragment>{" \n"}</React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "#9a7f71", fontStyle: "italic" }}
+                    >
+                      {"Results Last?"}
+                    </span>
+                  </React.Fragment>
+                </div>
+                <TextToggler
+                  className={classNames(
+                    "__wab_instance",
+                    sty.textToggler___5LRfG
+                  )}
+                  height={"120px"}
+                  text={
+                    "On average, Botox results last between 3 to 4 months. The duration varies based on factors like the treatment area, your metabolism, and how expressive your facial muscles are. For first-time users, results may fade slightly faster, while those with consistent Botox treatments may find their results lasting longer over time."
+                  }
+                />
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__njIi3
+                  )}
+                >
+                  {
+                    "On average, Botox results last between 3 to 4 months. The duration varies based on factors like the treatment area, your metabolism, and how expressive your facial muscles are. For first-time users, results may fade slightly faster, while those with consistent Botox treatments may find their results lasting longer over time."
+                  }
+                </div>
+              </Stack__>
+              <Stack__
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__dKsGm)}
+              >
+                {(_par => (!_par ? [] : Array.isArray(_par) ? _par : [_par]))(
+                  (() => {
+                    try {
+                      return $state.botoxResultsList;
+                    } catch (e) {
+                      if (
+                        e instanceof TypeError ||
+                        e?.plasmicType === "PlasmicUndefinedDataError"
+                      ) {
+                        return [];
+                      }
+                      throw e;
+                    }
+                  })()
+                ).map((__plasmic_item_0, __plasmic_idx_0) => {
+                  const currentItem = __plasmic_item_0;
+                  const currentIndex = __plasmic_idx_0;
+                  return (
+                    <SelectPill
+                      className={classNames("__wab_instance")}
+                      handleClick={async () => {
+                        const $steps = {};
+                        $steps["updateBotoxResultArea"] = true
+                          ? (() => {
+                              const actionArgs = {
+                                variable: {
+                                  objRoot: $state,
+                                  variablePath: ["botoxResultArea"]
+                                },
+                                operation: 0,
+                                value: currentItem.title
+                              };
+                              return (({
+                                variable,
+                                value,
+                                startIndex,
+                                deleteCount
+                              }) => {
+                                if (!variable) {
+                                  return;
+                                }
+                                const { objRoot, variablePath } = variable;
+                                $stateSet(objRoot, variablePath, value);
+                                return value;
+                              })?.apply(null, [actionArgs]);
+                            })()
+                          : undefined;
+                        if (
+                          $steps["updateBotoxResultArea"] != null &&
+                          typeof $steps["updateBotoxResultArea"] === "object" &&
+                          typeof $steps["updateBotoxResultArea"].then ===
+                            "function"
+                        ) {
+                          $steps["updateBotoxResultArea"] = await $steps[
+                            "updateBotoxResultArea"
+                          ];
+                        }
+                      }}
+                      key={currentIndex}
+                      selected={(() => {
+                        try {
+                          return currentItem.title === $state.botoxResultArea;
+                        } catch (e) {
+                          if (
+                            e instanceof TypeError ||
+                            e?.plasmicType === "PlasmicUndefinedDataError"
+                          ) {
+                            return [];
+                          }
+                          throw e;
+                        }
+                      })()}
+                      value={(() => {
+                        try {
+                          return currentItem.title;
+                        } catch (e) {
+                          if (
+                            e instanceof TypeError ||
+                            e?.plasmicType === "PlasmicUndefinedDataError"
+                          ) {
+                            return undefined;
+                          }
+                          throw e;
+                        }
+                      })()}
+                    />
+                  );
+                })}
+              </Stack__>
+              {(
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? true
+                  : hasVariant(globalVariants, "screen", "midsize")
+                  ? true
+                  : false
+              ) ? (
+                <Stack__
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__fsHi)}
+                >
+                  <Stack__
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__xomq3)}
+                  >
+                    <SelectPill
+                      className={classNames("__wab_instance")}
+                      handleClick={async () => {
+                        const $steps = {};
+                        $steps["updateBotoxResultArea"] = true
+                          ? (() => {
+                              const actionArgs = {
+                                variable: {
+                                  objRoot: $state,
+                                  variablePath: ["botoxResultArea"]
+                                },
+                                operation: 0,
+                                value: "Metabolism"
+                              };
+                              return (({
+                                variable,
+                                value,
+                                startIndex,
+                                deleteCount
+                              }) => {
+                                if (!variable) {
+                                  return;
+                                }
+                                const { objRoot, variablePath } = variable;
+                                $stateSet(objRoot, variablePath, value);
+                                return value;
+                              })?.apply(null, [actionArgs]);
+                            })()
+                          : undefined;
+                        if (
+                          $steps["updateBotoxResultArea"] != null &&
+                          typeof $steps["updateBotoxResultArea"] === "object" &&
+                          typeof $steps["updateBotoxResultArea"].then ===
+                            "function"
+                        ) {
+                          $steps["updateBotoxResultArea"] = await $steps[
+                            "updateBotoxResultArea"
+                          ];
+                        }
+                      }}
+                      selected={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? (() => {
+                              try {
+                                return "Metabolism" === $state.botoxResultArea;
+                              } catch (e) {
+                                if (
+                                  e instanceof TypeError ||
+                                  e?.plasmicType === "PlasmicUndefinedDataError"
+                                ) {
+                                  return [];
+                                }
+                                throw e;
+                              }
+                            })()
+                          : (() => {
+                              try {
+                                return "Metabolism" === $state.botoxResultArea;
+                              } catch (e) {
+                                if (
+                                  e instanceof TypeError ||
+                                  e?.plasmicType === "PlasmicUndefinedDataError"
+                                ) {
+                                  return [];
+                                }
+                                throw e;
+                              }
+                            })()
+                      }
+                      value={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? "Metabolism"
+                          : "Metabolism"
+                      }
+                    />
+
+                    <SelectPill
+                      className={classNames("__wab_instance")}
+                      handleClick={async () => {
+                        const $steps = {};
+                        $steps["updateBotoxResultArea"] = true
+                          ? (() => {
+                              const actionArgs = {
+                                variable: {
+                                  objRoot: $state,
+                                  variablePath: ["botoxResultArea"]
+                                },
+                                operation: 0,
+                                value: "Treatment Area"
+                              };
+                              return (({
+                                variable,
+                                value,
+                                startIndex,
+                                deleteCount
+                              }) => {
+                                if (!variable) {
+                                  return;
+                                }
+                                const { objRoot, variablePath } = variable;
+                                $stateSet(objRoot, variablePath, value);
+                                return value;
+                              })?.apply(null, [actionArgs]);
+                            })()
+                          : undefined;
+                        if (
+                          $steps["updateBotoxResultArea"] != null &&
+                          typeof $steps["updateBotoxResultArea"] === "object" &&
+                          typeof $steps["updateBotoxResultArea"].then ===
+                            "function"
+                        ) {
+                          $steps["updateBotoxResultArea"] = await $steps[
+                            "updateBotoxResultArea"
+                          ];
+                        }
+                      }}
+                      selected={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? (() => {
+                              try {
+                                return (
+                                  "Treatment Area" === $state.botoxResultArea
+                                );
+                              } catch (e) {
+                                if (
+                                  e instanceof TypeError ||
+                                  e?.plasmicType === "PlasmicUndefinedDataError"
+                                ) {
+                                  return [];
+                                }
+                                throw e;
+                              }
+                            })()
+                          : (() => {
+                              try {
+                                return (
+                                  "Treatment Area" === $state.botoxResultArea
+                                );
+                              } catch (e) {
+                                if (
+                                  e instanceof TypeError ||
+                                  e?.plasmicType === "PlasmicUndefinedDataError"
+                                ) {
+                                  return [];
+                                }
+                                throw e;
+                              }
+                            })()
+                      }
+                      value={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? "Treatment Area"
+                          : "Treatment Area"
+                      }
+                    />
+                  </Stack__>
+                  <SelectPill
+                    className={classNames("__wab_instance")}
+                    handleClick={async () => {
+                      const $steps = {};
+                      $steps["updateBotoxResultArea"] = true
+                        ? (() => {
+                            const actionArgs = {
+                              variable: {
+                                objRoot: $state,
+                                variablePath: ["botoxResultArea"]
+                              },
+                              operation: 0,
+                              value: "Aftercare and Lifestyle"
+                            };
+                            return (({
+                              variable,
+                              value,
+                              startIndex,
+                              deleteCount
+                            }) => {
+                              if (!variable) {
+                                return;
+                              }
+                              const { objRoot, variablePath } = variable;
+                              $stateSet(objRoot, variablePath, value);
+                              return value;
+                            })?.apply(null, [actionArgs]);
+                          })()
+                        : undefined;
+                      if (
+                        $steps["updateBotoxResultArea"] != null &&
+                        typeof $steps["updateBotoxResultArea"] === "object" &&
+                        typeof $steps["updateBotoxResultArea"].then ===
+                          "function"
+                      ) {
+                        $steps["updateBotoxResultArea"] = await $steps[
+                          "updateBotoxResultArea"
+                        ];
+                      }
+                    }}
+                    selected={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? (() => {
+                            try {
+                              return (
+                                "Aftercare and Lifestyle" ===
+                                $state.botoxResultArea
+                              );
+                            } catch (e) {
+                              if (
+                                e instanceof TypeError ||
+                                e?.plasmicType === "PlasmicUndefinedDataError"
+                              ) {
+                                return [];
+                              }
+                              throw e;
+                            }
+                          })()
+                        : (() => {
+                            try {
+                              return (
+                                "Aftercare and Lifestyle" ===
+                                $state.botoxResultArea
+                              );
+                            } catch (e) {
+                              if (
+                                e instanceof TypeError ||
+                                e?.plasmicType === "PlasmicUndefinedDataError"
+                              ) {
+                                return [];
+                              }
+                              throw e;
+                            }
+                          })()
+                    }
+                    value={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "Aftercare and Lifestyle"
+                        : "Aftercare and Lifestyle"
+                    }
+                  />
+                </Stack__>
+              ) : null}
+            </Stack__>
+          </Stack__> */}
+
+          {/* is botox safe */}
+          {/* <Stack__
+            as={"section"}
+            data-plasmic-name={"isBotoxSafeSection"}
+            data-plasmic-override={overrides.isBotoxSafeSection}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.isBotoxSafeSection)}
+          >
+            <Stack__
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox__v99Kn)}
+            >
+              <Stack__
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__qZkcd)}
+              >
+                <Stack__
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__eg07R)}
+                >
+                  <div
+                    data-plasmic-name={"heading10"}
+                    data-plasmic-override={overrides.heading10}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.heading10
+                    )}
+                  >
+                    <React.Fragment>
+                      <React.Fragment>{"Is Botox "}</React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ fontStyle: "italic", color: "#D19D51" }}
+                      >
+                        {"Safe?"}
+                      </span>
+                    </React.Fragment>
+                  </div>
+                  <div
+                    data-plasmic-name={"supportingText9"}
+                    data-plasmic-override={overrides.supportingText9}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.supportingText9
+                    )}
+                  >
+                    {"Addressing Common Concerns"}
+                  </div>
+                </Stack__>
+                <div
+                  data-plasmic-name={"supportingText10"}
+                  data-plasmic-override={overrides.supportingText10}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.supportingText10
+                  )}
+                >
+                  {hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? "Botox is a safe, non-invasive treatment that smooths wrinkles and prevents signs of aging, delivering natural, long-lasting results. Tailored to your unique facial structure, it offers a refreshed, youthful look with minimal downtime, enhancing your beauty and boosting your confidence."
+                    : "Botox is a safe, non-invasive treatment that smooths wrinkles and prevents signs of aging, delivering natural, long-lasting results. Tailored to your unique facial structure, it offers a refreshed, youthful look with minimal downtime, enhancing your beauty and boosting your confidence."}
+                </div>
+              </Stack__>
+              <PlasmicImg__
+                alt={""}
+                className={classNames(sty.img__jTuEx)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                loading={"lazy"}
+                src={{
+                  src: "/plasmic/image_lab_2024/images/imagePng8.png",
+                  fullWidth: 686,
+                  fullHeight: 400,
+                  aspectRatio: undefined
+                }}
+              />
+
+              <div className={classNames(projectcss.all, sty.freeBox___5F1Wc)}>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__aViR)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                />
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__gqoDa
+                  )}
+                >
+                  {hasVariant(globalVariants, "screen", "mobileOnly") ? (
+                    <React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ fontWeight: 500 }}
+                      >
+                        {"Possible Side Effects: "}
+                      </span>
+                      <React.Fragment>
+                        {
+                          "Common side effects include minor bruising, swelling at the injection site, and, in rare cases, headaches or mild flu-like symptoms. These typically fade within a few days. More serious side effects, such as drooping eyelids, are rare and often related to improper technique, underscoring the importance of choosing a qualified provider."
+                        }
+                      </React.Fragment>
+                    </React.Fragment>
+                  ) : (
+                    <React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ fontWeight: 500 }}
+                      >
+                        {"Possible Side Effects:"}
+                      </span>
+                      <React.Fragment>
+                        {
+                          " Common side effects include minor bruising, swelling at the injection site, and, in rare cases, headaches or mild flu-like symptoms. These typically fade within a few days. More serious side effects, such as drooping eyelids, are rare and often related to improper technique, underscoring the importance of choosing a qualified provider."
+                        }
+                      </React.Fragment>
+                    </React.Fragment>
+                  )}
+                </div>
+              </div>
+            </Stack__>
+            <div className={classNames(projectcss.all, sty.freeBox__xP5Dv)} />
+          </Stack__> */}
+
+          {/* is botox right for you */}
+          {/* <section
+            data-plasmic-name={"isBotoxRightSection"}
+            data-plasmic-override={overrides.isBotoxRightSection}
+            className={classNames(projectcss.all, sty.isBotoxRightSection)}
+          >
+            <Stack__
+              as={"div"}
+              data-plasmic-name={"isBotoxRightHeader"}
+              data-plasmic-override={overrides.isBotoxRightHeader}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.isBotoxRightHeader)}
+            >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__nDUsm
+                )}
+              >
+                {hasVariant(globalVariants, "screen", "mobileOnly") ? (
+                  <React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "#080909" }}
+                    >
+                      {"Is Botox Right"}
+                    </span>
+                    <React.Fragment>{"\n"}</React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "#9a7f71", fontStyle: "italic" }}
+                    >
+                      {"for You?"}
+                    </span>
+                  </React.Fragment>
+                ) : (
+                  <React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "#080909" }}
+                    >
+                      {"Is Botox Right"}
+                    </span>
+                    <React.Fragment> </React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "#9a7f71", fontStyle: "italic" }}
+                    >
+                      {"for You?"}
+                    </span>
+                  </React.Fragment>
+                )}
+              </div>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__cBFwh
+                )}
+              >
+                {
+                  "Before opting for Botox, it\u2019s essential to understand what the treatment can and cannot do. Here are some factors to help you determine if Botox aligns with your goals:"
+                }
+              </div>
+            </Stack__>
+            <Stack__
+              as={"div"}
+              data-plasmic-name={"isBotoxRightContent"}
+              data-plasmic-override={overrides.isBotoxRightContent}
+              hasGap={true}
+              className={classNames(
+                projectcss.all,
+                sty.isBotoxRightContent,
+                "hide-scrollbar"
+              )}
+            >
+              <HowItWorksCard
+                className={classNames(
+                  "__wab_instance",
+                  sty.howItWorksCard__c2E3P
+                )}
+                icon={
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img___3BDtp)}
+                    displayHeight={"24px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"24px"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/image_lab_2024/images/starsSvg3.svg",
+                      fullWidth: 24,
+                      fullHeight: 25,
+                      aspectRatio: 0.96
+                    }}
+                  />
+                }
+                image={
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__c53Xu)}
+                    displayHeight={"146px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"100%"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/image_lab_2024/images/imagePng32.png",
+                      fullWidth: 758,
+                      fullHeight: 513,
+                      aspectRatio: undefined
+                    }}
+                  />
+                }
+                title={
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___2CzsT
+                    )}
+                  >
+                    {"Targeted Wrinkle Type"}
+                  </div>
+                }
+              >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text___7AIje
+                  )}
+                >
+                  {
+                    "Botox is most effective on dynamic wrinkles caused by repetitive facial movements, like frown lines, forehead creases, and crow\u2019s feet. If your primary concerns are fine lines and wrinkles that form with movement, Botox may be an ideal choice."
+                  }
+                </div>
+              </HowItWorksCard>
+              <HowItWorksCard
+                className={classNames(
+                  "__wab_instance",
+                  sty.howItWorksCard__iXhG6
+                )}
+                icon={
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__bfzB6)}
+                    displayHeight={"24px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"24px"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/image_lab_2024/images/timeSvg2.svg",
+                      fullWidth: 24,
+                      fullHeight: 25,
+                      aspectRatio: 0.96
+                    }}
+                  />
+                }
+                image={
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img___6PGvz)}
+                    displayHeight={"146px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"100%"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/image_lab_2024/images/imagePng33.png",
+                      fullWidth: 758,
+                      fullHeight: 513,
+                      aspectRatio: undefined
+                    }}
+                  />
+                }
+                title={
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___87NBt
+                    )}
+                  >
+                    {"Preventative Goals"}
+                  </div>
+                }
+              >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__cmtrk
+                  )}
+                >
+                  {
+                    "Botox is popular among younger clients as a preventative measure. Starting in your 20s or 30s can help delay the formation of deeper wrinkles, preserving a youthful look over time."
+                  }
+                </div>
+              </HowItWorksCard>
+              <HowItWorksCard
+                className={classNames(
+                  "__wab_instance",
+                  sty.howItWorksCard__awWuZ
+                )}
+                icon={
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__fkiTa)}
+                    displayHeight={"24px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"24px"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/image_lab_2024/images/face2Svg2.svg",
+                      fullWidth: 24,
+                      fullHeight: 25,
+                      aspectRatio: 0.96
+                    }}
+                  />
+                }
+                image={
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__x1Bii)}
+                    displayHeight={"146px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"100%"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/image_lab_2024/images/imagePng34.png",
+                      fullWidth: 776,
+                      fullHeight: 513,
+                      aspectRatio: undefined
+                    }}
+                  />
+                }
+                title={
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__skGm
+                    )}
+                  >
+                    {"Natural Expectations"}
+                  </div>
+                }
+              >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__mTv6
+                  )}
+                >
+                  {
+                    "Botox provides subtle enhancements, not drastic changes. If you\u2019re seeking a natural improvement without altering your facial expressions, Botox could be a good fit."
+                  }
+                </div>
+              </HowItWorksCard>
+              <HowItWorksCard
+                className={classNames(
+                  "__wab_instance",
+                  sty.howItWorksCard__w1GiC
+                )}
+                icon={
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__gk7NQ)}
+                    displayHeight={"24px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"24px"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/image_lab_2024/images/hairSvg.svg",
+                      fullWidth: 24,
+                      fullHeight: 24,
+                      aspectRatio: 1
+                    }}
+                  />
+                }
+                image={
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__jzxW)}
+                    displayHeight={"146px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"100%"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/image_lab_2024/images/imagePng35.png",
+                      fullWidth: 758,
+                      fullHeight: 512,
+                      aspectRatio: undefined
+                    }}
+                  />
+                }
+                title={
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__mfmmH
+                    )}
+                  >
+                    {"Commitment to Maintenance"}
+                  </div>
+                }
+              >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__ksx49
+                  )}
+                >
+                  {
+                    "Botox is temporary, lasting about 3-4 months. If you\u2019re open to regular follow-up treatments, Botox can be a great addition to your beauty routine."
+                  }
+                </div>
+              </HowItWorksCard>
+            </Stack__>
+          </section> */}
+
+          {/* benefits of botox */}
+          {/* <section
+            data-plasmic-name={"benefitsOfBotoxSection"}
+            data-plasmic-override={overrides.benefitsOfBotoxSection}
+            className={classNames(projectcss.all, sty.benefitsOfBotoxSection)}
+          >
+            <Stack__
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox__yD9Qq)}
+            >
+              <Stack__
+                as={"div"}
+                data-plasmic-name={"benefitsOfBotoxHeader"}
+                data-plasmic-override={overrides.benefitsOfBotoxHeader}
+                hasGap={true}
+                className={classNames(
+                  projectcss.all,
+                  sty.benefitsOfBotoxHeader
+                )}
+              >
+                <h2
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h2,
+                    projectcss.__wab_text,
+                    sty.h2__wqj6R
+                  )}
+                >
+                  {hasVariant(globalVariants, "screen", "mobileOnly") ? (
+                    <React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "#080909" }}
+                      >
+                        {"Benefits of"}
+                      </span>
+                      <React.Fragment>{"\n"}</React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "#080909" }}
+                      >
+                        {"Botox Procedure for "}
+                      </span>
+                      <React.Fragment>{""}</React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "#9a7f71", fontStyle: "italic" }}
+                      >
+                        {"Radiant, Confident You"}
+                      </span>
+                    </React.Fragment>
+                  ) : (
+                    <React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "#080909" }}
+                      >
+                        {"Benefits of Botox Procedure for a"}
+                      </span>
+                      <React.Fragment> </React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ fontStyle: "italic", color: "#9a7f71" }}
+                      >
+                        {"Radiant, Confident You"}
+                      </span>
+                    </React.Fragment>
+                  )}
+                </h2>
+                <p
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.p,
+                    projectcss.__wab_text,
+                    sty.p__d1OAm
+                  )}
+                >
+                  {hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? "Smooth wrinkles with natural results\nand minimal downtime."
+                    : "Smooth wrinkles with natural results and minimal downtime."}
+                </p>
+              </Stack__>
+              {(
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? false
+                  : true
+              ) ? (
+                <Stack__
+                  as={"div"}
+                  data-plasmic-name={"benefitsOfBotoxCards"}
+                  data-plasmic-override={overrides.benefitsOfBotoxCards}
+                  hasGap={true}
+                  className={classNames(
+                    projectcss.all,
+                    sty.benefitsOfBotoxCards,
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "how-botox-works-cards"
+                      : undefined
+                  )}
+                >
+                  <BenefitsOfBotoxCard
+                    className={classNames(
+                      "__wab_instance",
+                      sty.benefitsOfBotoxCard___8NOwx
+                    )}
+                    slot={
+                      <div
+                        data-plasmic-name={"supportingText12"}
+                        data-plasmic-override={overrides.supportingText12}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.supportingText12
+                        )}
+                      >
+                        {
+                          "Botox softens wrinkles and fine lines for a refreshed, youthful appearance that looks completely natural. Our expert team ensures a subtle enhancement tailored to your unique features."
+                        }
+                      </div>
+                    }
+                    title={
+                      <div
+                        data-plasmic-name={"text2"}
+                        data-plasmic-override={overrides.text2}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text2
+                        )}
+                      >
+                        <React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ fontWeight: 700 }}
+                          >
+                            {"Natural-Looking"}
+                          </span>
+                          <React.Fragment>{" Results"}</React.Fragment>
+                        </React.Fragment>
+                      </div>
+                    }
+                  />
+
+                  <BenefitsOfBotoxCard
+                    className={classNames(
+                      "__wab_instance",
+                      sty.benefitsOfBotoxCard__zGwHq
+                    )}
+                    icon={
+                      <TimeSvgIcon
+                        className={classNames(projectcss.all, sty.svg__k3VXt)}
+                        role={"img"}
+                      />
+                    }
+                    slot={
+                      <div
+                        data-plasmic-name={"supportingText13"}
+                        data-plasmic-override={overrides.supportingText13}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.supportingText13
+                        )}
+                      >
+                        {
+                          "Botox treatments are fast, taking as little as 10 minutes, making it easy to fit into even the busiest schedule. With no significant downtime, you can return to your day right after your appointment."
+                        }
+                      </div>
+                    }
+                    title={
+                      <div
+                        data-plasmic-name={"text3"}
+                        data-plasmic-override={overrides.text3}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text3
+                        )}
+                      >
+                        <React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ fontWeight: 700 }}
+                          >
+                            {"Quick & Convenient"}
+                          </span>
+                        </React.Fragment>
+                      </div>
+                    }
+                  />
+
+                  <BenefitsOfBotoxCard
+                    className={classNames(
+                      "__wab_instance",
+                      sty.benefitsOfBotoxCard__wksbv
+                    )}
+                    icon={
+                      <Face2SvgIcon
+                        className={classNames(projectcss.all, sty.svg__gi1B3)}
+                        role={"img"}
+                      />
+                    }
+                    slot={
+                      <div
+                        data-plasmic-name={"supportingText14"}
+                        data-plasmic-override={overrides.supportingText14}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.supportingText14
+                        )}
+                      >
+                        {
+                          "A single Botox treatment provides results that can last up to 4 months, keeping your skin smooth and youthful for longer. Regular treatments help maintain your look effortlessly over time."
+                        }
+                      </div>
+                    }
+                    title={
+                      <div
+                        data-plasmic-name={"text4"}
+                        data-plasmic-override={overrides.text4}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text4
+                        )}
+                      >
+                        <React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ fontWeight: 700 }}
+                          >
+                            {"Long-Lasting "}
+                          </span>
+                          <React.Fragment>{"Effects"}</React.Fragment>
+                        </React.Fragment>
+                      </div>
+                    }
+                  />
+
+                  <BenefitsOfBotoxCard
+                    className={classNames(
+                      "__wab_instance",
+                      sty.benefitsOfBotoxCard__o1Xu8
+                    )}
+                    icon={
+                      <HeartSvg3Icon
+                        className={classNames(projectcss.all, sty.svg__f8Ns5)}
+                        role={"img"}
+                      />
+                    }
+                    slot={
+                      <div
+                        data-plasmic-name={"supportingText18"}
+                        data-plasmic-override={overrides.supportingText18}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.supportingText18
+                        )}
+                      >
+                        {
+                          "Botox not only reduces existing wrinkles but also helps prevent new ones from forming by relaxing facial muscles. It\u2019s a proactive approach to maintaining your youthful glow for years to come."
+                        }
+                      </div>
+                    }
+                    title={
+                      <div
+                        data-plasmic-name={"text8"}
+                        data-plasmic-override={overrides.text8}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text8
+                        )}
+                      >
+                        <React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ fontWeight: 700 }}
+                          >
+                            {"Preventative Care"}
+                          </span>
+                        </React.Fragment>
+                      </div>
+                    }
+                  />
+                </Stack__>
+              ) : null}
+              <Stack__
+                as={"div"}
+                data-plasmic-name={"benefitsOfBotoxCardsMobile"}
+                data-plasmic-override={overrides.benefitsOfBotoxCardsMobile}
+                hasGap={true}
+                className={classNames(
+                  projectcss.all,
+                  sty.benefitsOfBotoxCardsMobile,
+                  "how-botox-works-cards"
+                )}
+              >
+                <BenefitsOfBotoxCard
+                  className={classNames(
+                    "__wab_instance",
+                    sty.benefitsOfBotoxCard__fWOzA
+                  )}
+                  slot={
+                    <div
+                      data-plasmic-name={"supportingText15"}
+                      data-plasmic-override={overrides.supportingText15}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.supportingText15
+                      )}
+                    >
+                      {
+                        "Botox softens wrinkles and fine lines for a refreshed, youthful appearance that looks completely natural. Our expert team ensures a subtle enhancement tailored to your unique features."
+                      }
+                    </div>
+                  }
+                  title={
+                    <div
+                      data-plasmic-name={"text5"}
+                      data-plasmic-override={overrides.text5}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text5
+                      )}
+                    >
+                      <React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ fontWeight: 700 }}
+                        >
+                          {"Natural-Looking"}
+                        </span>
+                        <React.Fragment>{" Results"}</React.Fragment>
+                      </React.Fragment>
+                    </div>
+                  }
+                />
+
+                <BenefitsOfBotoxCard
+                  className={classNames(
+                    "__wab_instance",
+                    sty.benefitsOfBotoxCard__pkMZh
+                  )}
+                  icon={
+                    <TimeSvg3Icon
+                      className={classNames(projectcss.all, sty.svg__pUPpd)}
+                      role={"img"}
+                    />
+                  }
+                  slot={
+                    <div
+                      data-plasmic-name={"supportingText6"}
+                      data-plasmic-override={overrides.supportingText6}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.supportingText6
+                      )}
+                    >
+                      {
+                        "Botox treatments are fast, taking as little as 10 minutes, making it easy to fit into even the busiest schedule. With no significant downtime, you can return to your day right after your appointment."
+                      }
+                    </div>
+                  }
+                  title={
+                    <div
+                      data-plasmic-name={"text6"}
+                      data-plasmic-override={overrides.text6}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text6
+                      )}
+                    >
+                      <React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ fontWeight: 700 }}
+                        >
+                          {"Quick & Convenient"}
+                        </span>
+                      </React.Fragment>
+                    </div>
+                  }
+                />
+
+                <BenefitsOfBotoxCard
+                  className={classNames(
+                    "__wab_instance",
+                    sty.benefitsOfBotoxCard__dNrRw
+                  )}
+                  icon={
+                    <IconFace2Icon
+                      className={classNames(projectcss.all, sty.svg___4Yc0S)}
+                      role={"img"}
+                    />
+                  }
+                  slot={
+                    <div
+                      data-plasmic-name={"supportingText7"}
+                      data-plasmic-override={overrides.supportingText7}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.supportingText7
+                      )}
+                    >
+                      {
+                        "A single Botox treatment provides results that can last up to 4 months, keeping your skin smooth and youthful for longer. Regular treatments help maintain your look effortlessly over time."
+                      }
+                    </div>
+                  }
+                  title={
+                    <div
+                      data-plasmic-name={"text7"}
+                      data-plasmic-override={overrides.text7}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text7
+                      )}
+                    >
+                      <React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ fontWeight: 700 }}
+                        >
+                          {"Long-Lasting"}
+                        </span>
+                        <React.Fragment>{" Effects"}</React.Fragment>
+                      </React.Fragment>
+                    </div>
+                  }
+                />
+
+                <BenefitsOfBotoxCard
+                  className={classNames(
+                    "__wab_instance",
+                    sty.benefitsOfBotoxCard__bn72K
+                  )}
+                  icon={
+                    <HeartSvg4Icon
+                      className={classNames(projectcss.all, sty.svg___5GP77)}
+                      role={"img"}
+                    />
+                  }
+                  slot={
+                    <div
+                      data-plasmic-name={"supportingText16"}
+                      data-plasmic-override={overrides.supportingText16}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.supportingText16
+                      )}
+                    >
+                      {
+                        "Botox not only reduces existing wrinkles but also helps prevent new ones from forming by relaxing facial muscles. It\u2019s a proactive approach to maintaining your youthful glow for years to come."
+                      }
+                    </div>
+                  }
+                  title={
+                    <div
+                      data-plasmic-name={"text9"}
+                      data-plasmic-override={overrides.text9}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text9
+                      )}
+                    >
+                      <React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ fontWeight: 700 }}
+                        >
+                          {"Preventative Care"}
+                        </span>
+                      </React.Fragment>
+                    </div>
+                  }
+                />
+              </Stack__>
+            </Stack__>
+          </section> */}
+
+          {/* what is botox and how does it work */}
+          {/* <Stack__
+            as={"section"}
+            data-plasmic-name={"whatIsBotoxSection"}
+            data-plasmic-override={overrides.whatIsBotoxSection}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.whatIsBotoxSection)}
+          >
+            <Stack__
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox___9V4GE)}
+            >
+              <div
+                data-plasmic-name={"heading6"}
+                data-plasmic-override={overrides.heading6}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.heading6
+                )}
+              >
+                <React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ fontStyle: "italic", color: "#D19D51" }}
+                  >
+                    {"What Is Botox"}
+                  </span>
+                  <React.Fragment> </React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#080909" }}
+                  >
+                    {"and \nHow Does It Work?"}
+                  </span>
+                </React.Fragment>
+              </div>
+              <div
+                data-plasmic-name={"supportingText5"}
+                data-plasmic-override={overrides.supportingText5}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.supportingText5
+                )}
+              >
+                {hasVariant(globalVariants, "screen", "mobileOnly") ? (
+                  <React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "#434445" }}
+                    >
+                      {"Botox, short for Botulinum Toxin Type A,"}
+                    </span>
+                    <React.Fragment>{"\n"}</React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "#434445" }}
+                    >
+                      {"is a neurotoxin derived from"}
+                    </span>
+                    <React.Fragment>{"\n"}</React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "#434445" }}
+                    >
+                      {"Clostridium botulinum. "}
+                    </span>
+                  </React.Fragment>
+                ) : (
+                  <React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "#434445" }}
+                    >
+                      {
+                        "Botox, short for Botulinum Toxin Type A, is a neurotoxin derived from Clostridium botulinum. "
+                      }
+                    </span>
+                  </React.Fragment>
+                )}
+              </div>
+            </Stack__>
+            <Stack__
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox__ilt4D)}
+            >
+              <Stack__
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__asLdy)}
+              >
+                <Stack__
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__rGvkf)}
+                >
+                  <div
+                    data-plasmic-name={"whatIsBotoxMobileText"}
+                    data-plasmic-override={overrides.whatIsBotoxMobileText}
+                    className={classNames(
+                      projectcss.all,
+                      sty.whatIsBotoxMobileText
+                    )}
+                  >
+                    <TextToggler
+                      className={classNames(
+                        "__wab_instance",
+                        sty.textToggler__ekCr
+                      )}
+                      height={"140px"}
+                      text={
+                        "Despite its intimidating name, Botox is FDA-approved and widely used in medical and aesthetic treatments. By temporarily blocking signals from nerves to muscles, Botox prevents these muscles from contracting.<br> <br> This relaxation smooths the skin and reduces the appearance of wrinkles, making it an effective treatment for fine lines and dynamic wrinkles caused by repeated facial expressions."
+                      }
+                    />
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__tstww)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__iigR
+                      )}
+                    >
+                      {"Science Behind Botox"}
+                    </div>
+                    <Stack__
+                      as={"div"}
+                      hasGap={true}
+                      className={classNames(
+                        projectcss.all,
+                        sty.freeBox___3NXhV
+                      )}
+                    >
+                      <Stack__
+                        as={"div"}
+                        data-plasmic-name={"title20"}
+                        data-plasmic-override={overrides.title20}
+                        hasGap={true}
+                        className={classNames(projectcss.all, sty.title20)}
+                      >
+                        <PointIcon
+                          className={classNames(projectcss.all, sty.svg__lVZh)}
+                          role={"img"}
+                        />
+
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__iHtP
+                          )}
+                        >
+                          {
+                            "Botox is FDA-approved and trusted worldwide for both medical and aesthetic uses. This remarkable treatment works by temporarily relaxing targeted muscles, helping to reduce the appearance of fine lines and wrinkles caused by repeated facial expressions."
+                          }
+                        </div>
+                      </Stack__>
+                      <Stack__
+                        as={"div"}
+                        data-plasmic-name={"title21"}
+                        data-plasmic-override={overrides.title21}
+                        hasGap={true}
+                        className={classNames(projectcss.all, sty.title21)}
+                      >
+                        <PointIcon
+                          className={classNames(projectcss.all, sty.svg__zfHU)}
+                          role={"img"}
+                        />
+
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__azzsu
+                          )}
+                        >
+                          {
+                            "Whether you\u2019re looking to soften crow\u2019s feet, forehead lines, or frown lines, Botox offers a safe and effective solution for achieving a rejuvenated appearance."
+                          }
+                        </div>
+                      </Stack__>
+                    </Stack__>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text___9KZd
+                      )}
+                    >
+                      {
+                        "Here\u2019s how it works: Botox blocks nerve signals to specific muscles, preventing them from contracting. By targeting the neuromuscular junction, it inhibits the release of acetylcholine\u2014a neurotransmitter that triggers muscle movement. This temporary \u201cfreeze\u201d allows the skin above these muscles to appear smoother and more refreshed."
+                      }
+                    </div>
+                  </div>
+                </Stack__>
+                <Button
+                  data-plasmic-name={"whatIsBotoxButton"}
+                  data-plasmic-override={overrides.whatIsBotoxButton}
+                  className={classNames(
+                    "__wab_instance",
+                    sty.whatIsBotoxButton
+                  )}
+                >
+                  {"Book Now"}
+                </Button>
+              </Stack__>
+              <Stack__
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox___9QOqV)}
+              >
+                <div className={classNames(projectcss.all, sty.freeBox__xG7Va)}>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox___1W2Th)}
+                  >
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img___2GbSe)}
+                      displayHeight={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? "200px"
+                          : hasVariant(globalVariants, "screen", "midsize")
+                          ? "100%"
+                          : "auto"
+                      }
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? "100%"
+                          : hasVariant(globalVariants, "screen", "midsize")
+                          ? "100%"
+                          : "650px"
+                      }
+                      loading={"lazy"}
+                      src={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? {
+                              src: "/plasmic/image_lab_2024/images/imagePng65.png",
+                              fullWidth: 686,
+                              fullHeight: 400,
+                              aspectRatio: undefined
+                            }
+                          : {
+                              src: "/plasmic/image_lab_2024/images/imagePng66.png",
+                              fullWidth: 1300,
+                              fullHeight: 1036,
+                              aspectRatio: undefined
+                            }
+                      }
+                    />
+                  </div>
+                  <Stack__
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__gu8Ol)}
+                  >
+                    <div
+                      data-plasmic-name={"supportingText3"}
+                      data-plasmic-override={overrides.supportingText3}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.supportingText3
+                      )}
+                    >
+                      {"Science Behind Botox"}
+                    </div>
+                    <span
+                      data-plasmic-name={"supportingText4"}
+                      data-plasmic-override={overrides.supportingText4}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.span,
+                        projectcss.__wab_text,
+                        sty.supportingText4
+                      )}
+                    >
+                      {hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "Botox works by targeting the neuromuscular junction, where it inhibits the release of acetylcholine\u2014a neurotransmitter responsible for muscle contractions. This process temporarily \u201cfreezes\u201d the muscle, creating a smoother appearance on the skin's surface."
+                        : "Botox works by targeting the neuromuscular junction, where it inhibits the release of acetylcholine\u2014a neurotransmitter responsible for muscle contractions. This process temporarily \u201cfreezes\u201d the muscle, creating a smoother appearance on the skin's surface."}
+                    </span>
+                  </Stack__>
+                </div>
+              </Stack__>
+            </Stack__>
+          </Stack__> */}
+
         </div>
       </div>
     </React.Fragment>

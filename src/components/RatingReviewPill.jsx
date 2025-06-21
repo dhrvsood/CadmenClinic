@@ -13,7 +13,7 @@ const RatingReviewPill = ({ rating, reviewCount }) => {
         <Link href='https://www.google.com/search?q=cadmenclinic&oq=cadmenclinic&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTISCAEQLhgKGK8BGMcBGIAEGI4FMgkIAhAAGAoYgAQyEggDEC4YChivARjHARiABBiOBTIGCAQQRRg8MgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEINjMxMGoxajGoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x882b350228b56b63:0x114171d25aa4df4d,1,,,,' target='_blank'>
           <Image src='/graphics/google-icon.svg' width={24} height={24} alt='Google icon' />
         </Link>
-        <p className='font-semibold'>200+ reviews</p>
+        <p className='font-semibold text-black'>200+ reviews</p>
       </div>
     </div>
   )

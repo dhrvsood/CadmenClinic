@@ -125,7 +125,7 @@
   width: 100%;
   height: auto;
   max-width: 100%;
-  color: #0c7a7b;
+  color: #9a7f71;
   font-family: "Cormorant Garamond", serif;
   font-size: 32px;
   line-height: 130%;
@@ -224,7 +224,7 @@
 .svg {
   object-fit: cover;
   max-width: 100%;
-  color: #0c7a7b;
+  color: #9a7f71;
   width: 8px;
   height: 8px;
   display: block;
@@ -238,7 +238,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   letter-spacing: 0em;
-  color: #0c7a7b;
+  color: #9a7f71;
   position: relative;
 }
 @media (min-width: 0px) and (max-width: 768px) {

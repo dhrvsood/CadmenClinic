@@ -112,7 +112,7 @@ function PlasmicReviewsPill__RenderFunc(props) {
           <React.Fragment>
             <span
               className={"plasmic_default__all plasmic_default__span"}
-              style={{ fontWeight: 600, color: "#0C7A7B" }}
+              style={{ fontWeight: 600, color: "#9a7f71" }}
             >
               {"4.9"}
             </span>

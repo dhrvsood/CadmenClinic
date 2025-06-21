@@ -63,8 +63,8 @@ function PlasmicAffordableBotoxCard__RenderFunc(props) {
           price: "$11.00",
           perUnit: "$14.00",
           items: [],
-          unitWording: "/Unit member price",
-          pillUnit: "/Per unit"
+          unitWording: "/ First session price",
+          pillUnit: "/ Session regular price"
         },
         Object.fromEntries(
           Object.entries(props.args).filter(([_, v]) => v !== undefined)

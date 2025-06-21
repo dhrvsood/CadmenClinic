@@ -392,7 +392,7 @@ function PlasmicLipFillersSeo__RenderFunc(props) {
                 <React.Fragment> </React.Fragment>
                 <span
                   className={"plasmic_default__all plasmic_default__span"}
-                  style={{ fontStyle: "italic", color: "#0C7A7B" }}
+                  style={{ fontStyle: "italic", color: "#9a7f71" }}
                 >
                   {"Radiant, Confident You"}
                 </span>
@@ -1915,7 +1915,7 @@ function PlasmicLipFillersSeo__RenderFunc(props) {
               <React.Fragment> </React.Fragment>
               <span
                 className={"plasmic_default__all plasmic_default__span"}
-                style={{ color: "#0C7A7B", fontStyle: "italic" }}
+                style={{ color: "#9a7f71", fontStyle: "italic" }}
               >
                 {"Tailored to You"}
               </span>
@@ -2711,7 +2711,7 @@ function PlasmicLipFillersSeo__RenderFunc(props) {
                   <React.Fragment>{"\n"}</React.Fragment>
                   <span
                     className={"plasmic_default__all plasmic_default__span"}
-                    style={{ color: "#0C7A7B", fontStyle: "italic" }}
+                    style={{ color: "#9a7f71", fontStyle: "italic" }}
                   >
                     {"Results Last?"}
                   </span>
@@ -3405,7 +3405,7 @@ function PlasmicLipFillersSeo__RenderFunc(props) {
               <React.Fragment> </React.Fragment>
               <span
                 className={"plasmic_default__all plasmic_default__span"}
-                style={{ color: "#0C7A7B", fontStyle: "italic" }}
+                style={{ color: "#9a7f71", fontStyle: "italic" }}
               >
                 {"for You?"}
               </span>

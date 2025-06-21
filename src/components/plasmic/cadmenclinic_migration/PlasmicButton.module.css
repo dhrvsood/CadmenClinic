@@ -2,7 +2,7 @@
   display: flex;
   position: relative;
   flex-direction: row;
-  /* background: linear-gradient(-72deg, #0c7a7b 0%, #39a7a8 68%, #1a6364 100%) 0% */
+  /* background: linear-gradient(-72deg, #9a7f71 0%, #39a7a8 68%, #1a6364 100%) 0% */
     /* 0% / 110% 100%; */
   background: linear-gradient(-72deg, #9a7f71 0%, #ebdbd6 68%, #9a7f71 100%) 0% 0% / 110% 100%;
   cursor: pointer;

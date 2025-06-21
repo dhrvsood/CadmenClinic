@@ -281,7 +281,7 @@
   align-content: flex-start;
   justify-items: center;
   width: 100%;
-  background: #ecf6f6;
+  background: #ebdbd6;
   grid-column-start: 1 !important;
   grid-column-end: -1 !important;
   grid-template-columns:
@@ -3335,7 +3335,7 @@
   height: auto;
   max-width: 100%;
   text-decoration-line: underline !important;
-  color: #0c7a7b;
+  color: #9a7f71;
   font-weight: 600;
   font-size: 18px;
 }

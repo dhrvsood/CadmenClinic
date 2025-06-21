@@ -17,7 +17,7 @@
   justify-content: center;
   align-items: center;
   border: 1px solid #EAECEE;
-  background-color: #4C8D91;
+  background-color: #9a7f71;
 }
 
 .prev {
@@ -29,7 +29,7 @@
 }
 
 .disabled {
-  background-color: #ECF6F6;
+  background-color: #ebdbd6;
   pointer-events: none;
 }
 
@@ -56,7 +56,7 @@
 }
 
 .dot {
-  background-color: #ECF6F6;
+  background-color: #ebdbd6;
   border-radius: 100%;
   width: 12px;
   height: 12px;
