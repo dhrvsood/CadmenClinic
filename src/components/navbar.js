@@ -151,12 +151,12 @@ const Navbar = () => {
                                                 <Popover.Button
                                                   as={Link}
                                                   href="/services/hair-restoration"
-                                                  className='mb-1 max-w-[150px] border-b border-gray-400 pb-1 text-base font-medium text-black hover:underline'
+                                                  className='text-lg mb-1 max-w-[300px] border-b border-black pb-1 text-base font-medium text-black hover:underline'
                                                 >
                                                   {key}
                                                 </Popover.Button>
                                               ) : (
-                                                <p className='mb-1 max-w-[150px] border-b border-gray-400 pb-1 text-base font-medium text-black'>
+                                                <p className='text-lg mb-1 max-w-[300px] border-b border-black pb-1 text-base font-medium text-black'>
                                                   {key}
                                                 </p>
                                               )}
@@ -172,7 +172,7 @@ const Navbar = () => {
                                                 <div className="text-black" key={`${i}-${j}`}>
                                                   <Popover.Button
                                                     as={Link}
-                                                    className='text-sm tracking-widest hover:underline'
+                                                    className='text-md tracking-widest hover:underline'
                                                     href={`/services${service.slug}`}
                                                   >
                                                     {service.title}
