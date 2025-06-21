@@ -48,6 +48,38 @@ export const hairServices = {
                 img: "/media/services/prp/section4/4.jpeg"
             },
         ],
+        beforeAfters: [
+            {
+                id: 1,
+                title: "Marcus’ Results",
+                subtitle: "Results after 3 PRP Sessions",
+                img: "/media/services/prp/section6/Marcus.jpeg"
+            },
+            {
+                id: 2,
+                title: "Jacob’s Results",
+                subtitle: "Results after 4 PRP Sessions",
+                img: "/media/services/prp/section6/Jacob.jpeg"
+            },
+            {
+                id: 3,
+                title: "Anna’s Results",
+                subtitle: "Results after 3 PRP Sessions",
+                img: "/media/services/prp/section6/Anna.jpeg"
+            },
+            {
+                id: 4,
+                title: "Monica’s Results",
+                subtitle: "Results after 4 PRP Sessions",
+                img: "/media/services/prp/section6/Monica.jpeg"
+            },
+            {
+                id: 5,
+                title: "Michael’s Results",
+                subtitle: "Results after 6 PRP Sessions",
+                img: "/media/services/prp/section6/Michael.jpeg"
+            },
+        ],
         transformations: {
             title: {
                 first: "PRP Hair Restoration Has Already ",
@@ -139,24 +171,24 @@ export const hairServices = {
         },
         "hero": {
             "img": "/media/services/exosome.jpg",
-            "tagline": "Block DHT & Boost Growth",
+            "tagline": "Block DHT & \nBoost Growth",
             "description": "clinically proven Exosomes – maximum results with minimum hassle."
         },
         "whyPeopleChoose": {
             "description": "Chosen by thousands of clients and backed by a 98% success rate, Exosome Hair Therapy offers a safe and effective solution for natural hair regrowth",
             "what": {
-                "description": "Exosomes are microscopic powerhouses derived from stem cells, packed with growth factors, proteins, and signaling molecules. Ideal for anyone dealing with thinning hair, androgenetic alopecia (male/female pattern baldness), or early-stage baldness. Exosomes blocks DHT levels to ensure the root cause of your hair loss is under control.",
+                "description": "Exosomes are microscopic powerhouses derived from stem cells, packed with growth factors, proteins, and signaling molecules. Ideal for dealing with thinning hair, male/female pattern baldness, or early-stage baldness. Exosomes blocks DHT levels to ensure the root cause of your hair loss is under control.",
                 "img": "/media/services/prp/section3/1.jpeg",
             },
             "why": {
-                "description": "If you are experiencing early-stage hair loss and are focused on addressing its root cause while stimulating new hair growth then Exosome Hair Therapy is for you. This therapy is 100% natural, non-invasive, and has no downtime.",
+                "description": "Ideal for early-stage hair loss and addressing its root cause while stimulating growth. This therapy is 100% natural, non-invasive, and has no downtime. Exosomes at CADMEN Clinic are proprietarily developed with our in-house doctors and scientists based in Canada and Spain.",
                 "img": "/media/services/prp/section3/2.jpeg",
             }
         },
         howItWorks: [
             {
                 id: 1,
-                title: "Scalp Cleanings & Preparation",
+                title: "Scalp Cleaning & Preparation",
                 description: "The scalp is thoroughly cleansed and prepped to create a clean, sterile surface. A numbing cream may be applied to make the procedure more comfortable (free of charge).",
                 img: "/media/services/prp/section4/1.jpeg"
             },
@@ -173,28 +205,60 @@ export const hairServices = {
                 img: "/media/services/prp/section4/3.jpeg"
             }
         ],
+        beforeAfters: [
+            {
+                id: 1,
+                title: "Jasmine’s Results",
+                subtitle: "Results after 3 Exosome Sessions",
+                img: "/media/services/prp/section6/Marcus.jpeg"
+            },
+            {
+                id: 2,
+                title: "Nick’s Results",
+                subtitle: "Results after 6 Exosome Sessions",
+                img: "/media/services/prp/section6/Jacob.jpeg"
+            },
+            {
+                id: 3,
+                title: "Brandon’s Results",
+                subtitle: "Results after 3 PRP and 3 Exosome Sessions",
+                img: "/media/services/prp/section6/Anna.jpeg"
+            },
+            {
+                id: 4,
+                title: "Amy’s Results",
+                subtitle: "Results are 3 Exosomes and 6 Mesotherapy Sessions",
+                img: "/media/services/prp/section6/Monica.jpeg"
+            },
+            {
+                id: 5,
+                title: "Nithin’s Results",
+                subtitle: "Results after 3 Exosomes Sessions",
+                img: "/media/services/prp/section6/Michael.jpeg"
+            },
+        ],
         transformations: {
             title: {
-                first: "Exosome Hair Therapy is ",
+                first: "Exosomes are ",
                 emphasis: "Transforming",
                 last: " the Future of Hair Restoration "
             },
             cards: [
                 {
                     id: 1,
-                    title: "Block the Root Cause of Hair Loss",
+                    title: "Block DHT Levels",
                     subtitle: "Dihydrotestosterone (DHT) is one of the key drivers of hair loss amongst men and women. Exosomes blocks DHT levels to ensure your hair thinning and hair loss is addressed immediately.",
                     img: "/media/services/prp/section7/1.jpeg"
                 },
                 {
                     id: 2,
-                    title: "Activate Dormant Hair Follicles",
+                    title: "Activate Dormant Follicles",
                     subtitle: "Exosomes are ideal for anyone experiencing bald spots on their scalp because of dormant hair follicles. By activating these dormant follicles, you can expect to see meaningful hair growth in 3 sessions.",
                     img: "/media/services/prp/section7/2.jpeg"
                 },
                 {
                     id: 3,
-                    title: "Increase Overall Scalp Health",
+                    title: "Increase Scalp Health",
                     subtitle: "Reduce dandruff and nourish your scalp with stem-cell derived nutrition proven to revitalize your hair follicles.",
                     img: "/media/services/prp/section7/3.jpeg"
                 },
@@ -282,7 +346,7 @@ export const hairServices = {
         howItWorks: [
             {
                 id: 1,
-                title: "Scalp Cleanings & Preparation",
+                title: "Scalp Cleaning & Preparation",
                 description: "The scalp is thoroughly cleansed and prepped to create a clean, sterile surface. A numbing cream may be applied to make the procedure more comfortable (free of charge).",
                 img: "/media/services/prp/section4/1.jpeg"
             },
@@ -298,6 +362,38 @@ export const hairServices = {
                 description: "Over time, the injected vitamins provides your scalp with the essential building blocks to promote stronger, thicker hair growth all while nourishing your follicles. Patients also experience significantly less dandruff and scalp itchiness as a result of a healthier scalp.",
                 img: "/media/services/prp/section4/3.jpeg"
             }
+        ],
+        beforeAfters: [
+            {
+                id: 1,
+                title: "Raj’s Results",
+                subtitle: "Results after 6 Mesotherapy Sessions",
+                img: "/media/services/prp/section6/Marcus.jpeg"
+            },
+            {
+                id: 2,
+                title: "Heidi’s Results",
+                subtitle: "Results after 3 PRP + 6 Mesotherapy Sessions",
+                img: "/media/services/prp/section6/Jacob.jpeg"
+            },
+            {
+                id: 3,
+                title: "Ron’s Results",
+                subtitle: "Results after 6 Mesotherapy Sessions",
+                img: "/media/services/prp/section6/Anna.jpeg"
+            },
+            {
+                id: 4,
+                title: "Dave’s Results",
+                subtitle: "Results after 3 Exosomes + 6 Mesotherapy Sessions",
+                img: "/media/services/prp/section6/Monica.jpeg"
+            },
+            {
+                id: 5,
+                title: "Sam’s Results",
+                subtitle: "Results after 6 Mesotherapy Sessions",
+                img: "/media/services/prp/section6/Michael.jpeg"
+            },
         ],
         transformations: {
             title: {

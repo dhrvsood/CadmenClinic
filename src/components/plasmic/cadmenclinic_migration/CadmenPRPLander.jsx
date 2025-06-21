@@ -74,40 +74,6 @@ function useNextRouter() {
 }
 
 function PlasmicBotoxLander__RenderFunc(props) {
-
-  const beforeAfters = [
-    {
-      id: 1,
-      title: "Marcus’ Results",
-      subtitle: "Results after 3 PRP Sessions",
-      img: "/media/services/prp/section6/Marcus.jpeg"
-    },
-    {
-      id: 2,
-      title: "Jacob’s Results",
-      subtitle: "Results after 4 PRP Sessions",
-      img: "/media/services/prp/section6/Jacob.jpeg"
-    },
-    {
-      id: 3,
-      title: "Anna’s Results",
-      subtitle: "Results after 3 PRP Sessions",
-      img: "/media/services/prp/section6/Anna.jpeg"
-    },
-    {
-      id: 4,
-      title: "Monica’s Results",
-      subtitle: "Results after 4 PRP Sessions",
-      img: "/media/services/prp/section6/Monica.jpeg"
-    },
-    {
-      id: 5,
-      title: "Michael’s Results",
-      subtitle: "Results after 6 PRP Sessions",
-      img: "/media/services/prp/section6/Michael.jpeg"
-    },
-  ];
-
   const { variants, overrides, forNode } = props;
   const args = React.useMemo(
     () =>
@@ -131,152 +97,7 @@ function PlasmicBotoxLander__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const stateSpecs = React.useMemo(
-    () => [
-      {
-        path: "selectedArea",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => "Forehead"
-      },
-      {
-        path: "areasList",
-        type: "private",
-        variableType: "array",
-        initFunc: ({ $props, $state, $queries, $ctx }) => [
-          {
-            name: "Forehead",
-            range: "$100 - $200",
-            units: "10-20 units",
-            face_dot: { left: "51.5%", top: "10%" }
-          },
-          {
-            name: "Brow Lift",
-            range: "$50 - $100",
-            units: "5-10 units",
-            face_dot: { left: "67%", top: "22%" }
-          },
-          {
-            name: "Crow's Feet",
-            range: "$50 - $150",
-            units: "5-15 units",
-            face_dot: { left: "75%", top: "37%" }
-          },
-          {
-            name: "11'S",
-            range: "$200 - $300",
-            units: "20-30 units",
-            face_dot: { left: "51.5%", top: "27%" }
-          },
-          {
-            name: "Nasolabial Folds",
-            range: "$50 - $100",
-            units: "5-10 units",
-            face_dot: { left: "36%", top: "61%" }
-          },
-          {
-            name: "Gummy Smile",
-            range: "$100",
-            units: "Varies",
-            face_dot: { left: "49%", top: "65%" }
-          },
-          {
-            name: "Lip Flip",
-            range: "$125",
-            units: "Varies",
-            face_dot: { left: "58%", top: "73%" }
-          },
-          {
-            name: "Chin Dimpling",
-            range: "$40 - $100",
-            units: "4-10 units",
-            face_dot: { left: "51.5%", top: "91%" }
-          },
-          {
-            name: "Masseter",
-            range: "$200 - $400",
-            units: "20-40 units",
-            face_dot: { left: "65%", top: "63%" }
-          }
-        ]
-      },
-      {
-        path: "areasInteractive.data",
-        type: "private",
-        variableType: "array",
-        initFunc: ({ $props, $state, $queries, $ctx }) => [
-          {
-            name: "Thinning Hair",
-            range: "$100 - $200",
-            units: "10-20 units",
-            face_dot: { left: "51.5%", top: "10%" }
-          },
-          {
-            name: "Brow Lift",
-            range: "$50 - $100",
-            units: "5-10 units",
-            face_dot: { left: "67%", top: "22%" }
-          },
-          {
-            name: "Crow's Feet",
-            range: "$50 - $150",
-            units: "5-15 units",
-            face_dot: { left: "75%", top: "37%" }
-          },
-          {
-            name: "11'S",
-            range: "$200 - $300",
-            units: "20-30 units",
-            face_dot: { left: "51.5%", top: "27%" }
-          },
-          {
-            name: "Nasolabial Folds",
-            range: "$50 - $100",
-            units: "5-10 units",
-            face_dot: { left: "36%", top: "61%" }
-          },
-          {
-            name: "Gummy Smile",
-            range: "$100",
-            units: "Varies",
-            face_dot: { left: "49%", top: "65%" }
-          },
-          {
-            name: "Lip Flip",
-            range: "$125",
-            units: "Varies",
-            face_dot: { left: "58%", top: "73%" }
-          },
-          {
-            name: "Chin Dimpling",
-            range: "$40 - $100",
-            units: "4-10 units",
-            face_dot: { left: "51.5%", top: "91%" }
-          },
-          {
-            name: "Masseter",
-            range: "$200 - $400",
-            units: "20-40 units",
-            face_dot: { left: "65%", top: "63%" }
-          }
-        ]
-      },
-      {
-        path: "areasInteractive.selected",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => "Thinning Hair"
-      }
-    ],
 
-    [$props, $ctx, $refs]
-  );
-  const $state = useDollarState(stateSpecs, {
-    $props,
-    $ctx,
-    $queries: {},
-    $refs
-  });
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariants_4IUcgkiijTv2()
   });
@@ -760,14 +581,12 @@ function PlasmicBotoxLander__RenderFunc(props) {
                       }
                 }
               >
-                {beforeAfters.map((beforeAfter) => (
+                {service.beforeAfters.map((beforeAfter) => (
                   <TestimonialCard
                     className={classNames(
                       "__wab_instance",
                       sty.testimonialCard__rFqgo
                     )}
-                    // insta={"@anna_green"}
-                    // patient={"Anna Green"}
                     id={beforeAfter.id}
                     subtitle={beforeAfter.subtitle}
                     title={beforeAfter.title}
