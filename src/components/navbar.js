@@ -142,9 +142,21 @@ const Navbar = () => {
                                                 key={i}
                                                 className='flex flex-col space-y-2'
                                               >
-                                                <p className='mb-1 max-w-[150px] border-b border-gray-300 pb-1 text-base font-medium text-black'>
-                                                  {key}
-                                                </p>
+                                                {/* Add a link for Hair Restoration Landing Page */}
+                                                {key === 'Hair Restoration' ? (
+                                                  <Popover.Button
+                                                    as={Link}
+                                                    href="/services/hair-restoration"
+                                                    className='mb-1 max-w-[150px] border-b border-gray-300 pb-1 text-base font-medium text-black hover:underline'
+                                                  >
+                                                    {key}
+                                                  </Popover.Button>
+                                                ) : (
+                                                  <p className='mb-1 max-w-[150px] border-b border-gray-300 pb-1 text-base font-medium text-black'>
+                                                    {key}
+                                                  </p>
+                                                )}
+
                                                 {orderBy(
                                                   category.services,
                                                   [
