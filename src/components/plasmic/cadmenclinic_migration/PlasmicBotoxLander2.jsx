@@ -1502,7 +1502,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                 slidesToShow: windowWidth > 768 ? 3.1 : 1.1,
                 slidesToScroll: windowWidth > 768 ? 3 : 1
               }}
-              handleButtonClick={() => router.push('/book-now')}
+              handleButtonClick={() => router.push('https://cadmenclinic.ca.zenoti.com/webstoreNew/services')}
             >
               {/* 1. 4 PRP Hair Restoration Sessions */}
               <AffordableBotoxCard
@@ -6455,7 +6455,7 @@ export const PlasmicBotoxLander2 = Object.assign(
     internalArgProps: PlasmicBotoxLander2__ArgProps,
     // Page metadata
     pageMetadata: {
-      title: "ImageLab | Botox",
+      title: "CadmenClinic | Hair Restoration",
       description: "",
       ogImageSrc: "",
       canonical: ""

@@ -269,7 +269,7 @@ const SeeTheResultsSlider = ({ settings, handleButtonClick }) => {
             <p className={styles.description}>{data[activeTab].description}</p>
             {
               data[activeTab].showCta && (
-                <Link href='/book-now'>
+                <Link href='https://cadmenclinic.ca.zenoti.com/webstoreNew/services'>
                   <button className='button max-sm:w-full mt-10'>Book Consultation</button>
                 </Link>
               )

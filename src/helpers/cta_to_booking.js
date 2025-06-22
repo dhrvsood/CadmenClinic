@@ -3,5 +3,5 @@ export const ctaToBooking = (selectedService) => {
 
   document.cookie = "selectedService=" + encodedSelectedService + "; path=/; max-age=3600; SameSite=Strict"
   
-  window.location.href = '/book-now'
+  window.location.href = 'https://cadmenclinic.ca.zenoti.com/webstoreNew/services'
 }

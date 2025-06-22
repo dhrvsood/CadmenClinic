@@ -289,7 +289,7 @@ function PlasmicTopNav__RenderFunc(props) {
               </Stack__>
               <Button
                 className={classNames("__wab_instance", sty.button___5F3Pk)}
-                link={"/book-now"}
+                link={"https://cadmenclinic.ca.zenoti.com/webstoreNew/services"}
                 size={"compact"}
               >
                 <div
@@ -543,7 +543,7 @@ function PlasmicTopNav__RenderFunc(props) {
             </Stack__>
             <Button
               className={classNames("__wab_instance", sty.button___3YkKx)}
-              link={"/book-now"}
+              link={"https://cadmenclinic.ca.zenoti.com/webstoreNew/services"}
               size={"compact"}
             >
               <div

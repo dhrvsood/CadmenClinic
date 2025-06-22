@@ -207,8 +207,8 @@ const Navbar = () => {
                             <PhoneIcon className='w-4' />
                             <p>(416) 551-1137</p>
                           </a>
-                          {!router.pathname.includes('/book-now') ? (
-                            <Link href='/book-now' className=''>
+                          {!router.pathname.includes('https://cadmenclinic.ca.zenoti.com/webstoreNew/services') ? (
+                            <Link href='https://cadmenclinic.ca.zenoti.com/webstoreNew/services' className=''>
                               <button className='button !py-[14px] !px-5 max-sm:w-full'>Book Now</button>
                             </Link>
                           ) : null}
@@ -248,7 +248,7 @@ const Navbar = () => {
                   </div>
 
                   <div className='ml-auto md:hidden'>
-                    {!router.pathname.includes('/book-now') ? (
+                    {!router.pathname.includes('https://cadmenclinic.ca.zenoti.com/webstoreNew/services') ? (
                       <Link
                         href={'https://cadmenclinic.ca.zenoti.com/webstoreNew/services'}
                         className='rounded border border-beaver/90 bg-beaver/90 px-1 sm:px-2 py-2 md:px-2 text-xs font-light text-white hover:bg-beaver'

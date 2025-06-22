@@ -12,7 +12,7 @@ import 'swiper/css'
 import { A11y, Navigation } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 const SlideContent = ({ cat }) => (
-  <Link href={`/book-now`}>
+  <Link href={`https://cadmenclinic.ca.zenoti.com/webstoreNew/services`}>
 
     <div className='relative cursor-grab rounded-md'>
       {/* <h2 className='font-display text-xl mb-5 p-3 bg-teal-50'>{cat.title}</h2> */}

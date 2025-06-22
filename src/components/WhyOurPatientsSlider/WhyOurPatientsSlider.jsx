@@ -47,7 +47,7 @@ const WhyOurPatientsSlider = ({ children, settings, handleButtonClick }) => {
         ))}
       </Slider>
       <div className={styles.bottom}>
-        <Link href='/book-now' className='mt-[40px]'>
+        <Link href='https://cadmenclinic.ca.zenoti.com/webstoreNew/services' className='mt-[40px]'>
           <button className='button max-sm:w-full'>Book Now</button>
         </Link>
 

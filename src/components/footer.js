@@ -136,7 +136,7 @@ const Footer = () => {
         </div>
       </Container>
     </footer>
-     {!router.pathname.includes('/book-now') ? (              
+     {!router.pathname.includes('https://cadmenclinic.ca.zenoti.com/webstoreNew/services') ? (              
       <div className="floating-btn-wrap flex justify-center">
         <a className="floating-btn shadow-2xl fixed right-4 z-50 bg-quicksand-normal px-5 py-2 font-medium text-white hover:bg-quicksand-dark" href="tel:+14165511137">
           <i className="fa-solid fa-phone"></i><span className="ml-3">Questions? Click to call</span>

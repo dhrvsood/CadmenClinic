@@ -105,17 +105,17 @@ function PlasmicBotoxLander__RenderFunc(props) {
     <React.Fragment>
       <Head>
         <meta name="twitter:card" content="summary" />
-        <title key="title">{CadmenPRPLander.pageMetadata.title}</title>
+        <title key="title">CadmenClinic | {service.general.shortTitle}</title>
         <meta
           key="og:title"
           property="og:title"
-          content={CadmenPRPLander.pageMetadata.title}
+          content={service.general.longTitle}
         />
 
         <meta
           key="twitter:title"
           name="twitter:title"
-          content={CadmenPRPLander.pageMetadata.title}
+          content={service.general.longTitle}
         />
       </Head>
 
@@ -141,12 +141,6 @@ function PlasmicBotoxLander__RenderFunc(props) {
             sty.root
           )}
         >
-          {/* <TopNav
-            data-plasmic-name={"topNav"}
-            data-plasmic-override={overrides.topNav}
-            className={classNames("__wab_instance", sty.topNav)}
-          /> */}
-
           {/* HERO SECTION */}
           <section
             data-plasmic-name={"hero"}
@@ -172,7 +166,6 @@ function PlasmicBotoxLander__RenderFunc(props) {
                 <div className={classNames(projectcss.all, sty.freeBox__xeJeY)}>
                   <div
                     className={classNames(projectcss.all, sty.freeBox___6RoWb)}
-                    // style={{ display: "inline" }}
                   >
                     <h1
                       className={classNames(
@@ -182,7 +175,6 @@ function PlasmicBotoxLander__RenderFunc(props) {
                         sty.h1___1NJ,
                         ".h1-plasmic"
                       )}
-                      // style={{ display: "inline" }}
                     >
                       <React.Fragment>
                         <React.Fragment>{service.hero.tagline}{" with \n"}</React.Fragment>
@@ -195,7 +187,6 @@ function PlasmicBotoxLander__RenderFunc(props) {
                           }}
                         >
                           {service.general.longTitle}
-                          {/* {"PRP Hair Restoration"} */}
                         </span>
                       </React.Fragment>
                     </h1>
@@ -227,24 +218,10 @@ function PlasmicBotoxLander__RenderFunc(props) {
                   <RatingReviewPill />
                 </div>
                 
-
-                <div className={classNames(projectcss.all, sty.freeBox__mLw8)}>
-                  <Button
-                    data-plasmic-name={"heroButton"}
-                    data-plasmic-override={overrides.heroButton}
-                    className={classNames("__wab_instance", sty.heroButton)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__vVmFi
-                      )}
-                    >
-                      {"Book Now"}
-                    </div>
-                  </Button>
-                </div>
+                <Link href='https://cadmenclinic.ca.zenoti.com/webstoreNew/services' target="_blank" className='mt-[10px] w-full md:w-auto'>
+                  <button className='button w-full md:w-auto'>Book Now</button>
+                </Link>
+              
               </div>
               <div className={classNames(projectcss.all, sty.freeBox__wyX9A)}>
                 <PlasmicImg__
@@ -369,21 +346,9 @@ function PlasmicBotoxLander__RenderFunc(props) {
               />
             </div>
 
-            <Button
-              data-plasmic-name={"heroButton"}
-              data-plasmic-override={overrides.heroButton}
-              className={classNames("__wab_instance", sty.heroButton)}
-            >
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__vVmFi
-                )}
-              >
-                {"Book Now"}
-              </div>
-            </Button>
+            <Link href='https://cadmenclinic.ca.zenoti.com/webstoreNew/services' className='mt-[40px] w-full md:w-auto'>
+              <button className='button w-full md:w-auto'>Book Now</button>
+            </Link>
 
             <style jsx>{`
               .cards-container {
@@ -914,14 +879,9 @@ function PlasmicBotoxLander__RenderFunc(props) {
                   muted={service.video.muted}
                 />
               </div>
-              <Button
-                data-plasmic-name={"videoCtaButton"}
-                data-plasmic-override={overrides.videoCtaButton}
-                className={classNames("__wab_instance", sty.videoCtaButton)}
-                color={"white"}
-              >
-                {"Try It Now"}
-              </Button>
+              <Link href='https://cadmenclinic.ca.zenoti.com/webstoreNew/services' target="_blank" className='mt-[10px] w-full md:w-auto'>
+                <button className='button white w-full md:w-auto'>Try It Now</button>
+              </Link>
             </Stack__>
           </section>
 
@@ -1001,14 +961,9 @@ function PlasmicBotoxLander__RenderFunc(props) {
                   </React.Fragment>
                 </p>
               </Stack__>
-              <Button
-                data-plasmic-name={"specialOfferButton"}
-                data-plasmic-override={overrides.specialOfferButton}
-                className={classNames("__wab_instance", sty.specialOfferButton)}
-                color={"white"}
-              >
-                {"Book Now"}
-              </Button>
+              <Link href='https://cadmenclinic.ca.zenoti.com/webstoreNew/services' target="_blank" className='mt-[10px] w-full md:w-auto'>
+                <button className='button white w-full md:w-auto'>Book Now</button>
+              </Link>
             </div>
           </section>
         </div>
@@ -1189,12 +1144,12 @@ export const CadmenPRPLander = Object.assign(
     internalVariantProps: PlasmicBotoxLander__VariantProps,
     internalArgProps: PlasmicBotoxLander__ArgProps,
     // Page metadata
-    pageMetadata: {
-      title: "CadmenClinic | PRP",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+    // pageMetadata: {
+    //   title: `CadmenClinic | ${args.serviceData.general.shortTitle}`,
+    //   description: "",
+    //   ogImageSrc: "",
+    //   canonical: ""
+    // }
   }
 );
 

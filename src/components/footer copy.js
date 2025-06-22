@@ -18,7 +18,7 @@ const navigation = {
       href: '/appointment-cancellation-policy'
     }
   ],
-  connect: [{ name: 'Book Now', href: '/book-now' }],
+  connect: [{ name: 'Book Now', href: 'https://cadmenclinic.ca.zenoti.com/webstoreNew/services' }],
   legal: [
     { name: 'Privacy', href: '/privacy' },
     { name: 'Accessiblity', href: '/accessibility' },
@@ -145,7 +145,7 @@ const Footer = () => {
         </div>
       </Container>
     </footer>
-     {!router.pathname.includes('/book-now') ? (              
+     {!router.pathname.includes('https://cadmenclinic.ca.zenoti.com/webstoreNew/services') ? (              
       <div className="floating-btn-wrap flex justify-center">
         <a className="floating-btn shadow-2xl fixed right-4 z-50 bg-teal-600 px-5 py-2 font-medium text-white hover:bg-teal-700" href="tel:+18722856769">
           <i className="fa-solid fa-phone"></i><span className="ml-3">Questions? Click to call</span>

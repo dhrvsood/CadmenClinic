@@ -84,7 +84,7 @@ const SlideContent = ({ cat, bookNow, categoryTitle }) => {
       <div>
         {/* {bookNow ? (  */}
         {/* <Link
-          href={`/book-now`}
+          href={`https://cadmenclinic.ca.zenoti.com/webstoreNew/services`}
           className='rounded border border-white px-3 py-2 text-sm text-white hover:bg-white hover:text-black'
         >
           Book Now

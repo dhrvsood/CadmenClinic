@@ -190,9 +190,9 @@ const Navbar = ({ isServiceClass = false }) => {
                           </Link>
                         ))}
                         <div className='menu-btn-first ml-auto'>
-                          {!router.pathname.includes('/book-now') ? (
+                          {!router.pathname.includes('https://cadmenclinic.ca.zenoti.com/webstoreNew/services') ? (
                             <Link
-                              href='/book-now'
+                              href='https://cadmenclinic.ca.zenoti.com/webstoreNew/services'
                               className={`rounded border border-teal-600 ${isServiceClass && !scrolled ? 'bg-transparent border-white text-white' : 'bg-teal-600 text-white hover:bg-teal-700'} px-10 py-3 text-center text-sm font-light`}
                             >
                               Book Now
@@ -242,9 +242,9 @@ const Navbar = ({ isServiceClass = false }) => {
                     </Link>
                   </div>
                   <div className='ml-auto pl-3 md:hidden'>
-                    {!router.pathname.includes('/book-now') ? (
+                    {!router.pathname.includes('https://cadmenclinic.ca.zenoti.com/webstoreNew/services') ? (
                       <Link
-                        href='/book-now'
+                        href='https://cadmenclinic.ca.zenoti.com/webstoreNew/services'
                         className={`${isServiceClass && !scrolled ? 'bg-transparent border-white text-white' : 'bg-teal-600 text-white hover:bg-teal-700'} rounded border border-teal-600 px-5 py-2 text-xs font-light text-white hover:bg-teal-700`}
                       >
                         Book Now

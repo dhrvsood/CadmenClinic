@@ -16,7 +16,7 @@ const ContactBanner = () => (
           </p>
         </div>
         <Link
-            href='/book-now'
+            href='https://cadmenclinic.ca.zenoti.com/webstoreNew/services'
             className='rounded border py-5 text-center font-medium tracking-wider text-teal-900 hover:bg-teal-900 hover:text-white bg-white'
           >
             Schedule A Free Consultation

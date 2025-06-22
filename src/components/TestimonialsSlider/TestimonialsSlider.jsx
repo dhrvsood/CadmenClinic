@@ -1,12 +1,10 @@
-// import { client as sanityClient } from '@/sanity/lib/client'
-// import imageUrlBuilder from '@sanity/image-url'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick-theme.css'
 import 'slick-carousel/slick/slick.css'
 
-import Button from '/src/components/Button'
 import styles from './TestimonialsSlider.module.css'
 // import TestimonialCardBig from '../TestimonialCardBig'
 
@@ -70,13 +68,16 @@ const TestimonialsSlider = ({
           </div>
         </div>
         {ctaLink && ctaText && (
-          <Button
-            link={ctaLink}
-            color={isDarkBg ? 'white' : ''}
-            onClick={handleButtonClick}
-          >
-            {ctaText}
-          </Button>
+          // <Button
+          //   link={ctaLink}
+          //   color={isDarkBg ? 'white' : ''}
+          //   onClick={handleButtonClick}
+          // >
+          //   {ctaText}
+          // </Button>
+          <Link href='https://cadmenclinic.ca.zenoti.com/webstoreNew/services' target="_blank" className='mt-[10px] w-full md:w-auto'>
+              <button className='button w-full md:w-auto'>Book Now</button>
+          </Link>
         )}
       </div>
     </div>

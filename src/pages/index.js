@@ -219,7 +219,7 @@ const Home = () => {
             <div className='mt-[24px] flex'>
               <RatingReviewPill />
             </div>
-            <Link href='/book-now' className='mt-[40px] w-full md:w-auto'>
+            <Link href='https://cadmenclinic.ca.zenoti.com/webstoreNew/services' className='mt-[40px] w-full md:w-auto'>
               <button className='button w-full md:w-auto'>Book Consultation</button>
             </Link>
           </div>
@@ -254,7 +254,7 @@ const Home = () => {
               slidesToShow: windowWidth > 768 ? 3.1 : 1.1,
               slidesToScroll: windowWidth > 768 ? 3 : 1
             }}
-            handleButtonClick={() => router.push('/book-now')}
+            handleButtonClick={() => router.push('https://cadmenclinic.ca.zenoti.com/webstoreNew/services')}
           >
             {whyChooseCards.map((card, index) => (
               <IconImageTextCard
@@ -290,7 +290,7 @@ const Home = () => {
                 slidesToShow: windowWidth > 768 ? 3.1 : 1.1,
                 slidesToScroll: windowWidth > 768 ? 3 : 1
               }}
-              handleButtonClick={() => router.push('/book-now')}
+              handleButtonClick={() => router.push('https://cadmenclinic.ca.zenoti.com/webstoreNew/services')}
             >
               {whyChooseCards.map((card, index) => (
                 <IconImageTextCard
@@ -327,7 +327,7 @@ const Home = () => {
               slidesToShow: windowWidth > 1200 ? 2 : 1,
               slidesToScroll: 2
             }}
-            handleButtonClick={() => router.push('/book-now')}
+            handleButtonClick={() => router.push('https://cadmenclinic.ca.zenoti.com/webstoreNew/services')}
           />
         </div>
       </section>
@@ -390,7 +390,7 @@ const Home = () => {
                 slidesToShow: 1,
                 slidesToScroll: 1
               }}
-              ctaLink='/book-now'
+              ctaLink='https://cadmenclinic.ca.zenoti.com/webstoreNew/services'
               ctaText='Book Now'
             >
               {reviews.map((child, i) => (
@@ -425,7 +425,7 @@ const Home = () => {
               Book a consultation today to learn more about our services and
               see which treatments are right for you.
             </p>
-            <Link href='/book-now'>
+            <Link href='https://cadmenclinic.ca.zenoti.com/webstoreNew/services'>
               <button className='button white mt-[28px] w-full md:w-auto'>
                 Book My Consultation Now
               </button>
