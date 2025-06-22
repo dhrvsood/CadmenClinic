@@ -62,6 +62,7 @@ import PointIcon from "./icons/PlasmicIcon__Point"; // plasmic-import: dMjm7kjmX
 import AffordableHairRestoration from "@/components/AffordableHairRestoration";
 import HairLandingHero from "@/components/HairLandingHero";
 import WhyOurPatientsSlider from "@/components/WhyOurPatientsSlider/WhyOurPatientsSlider";
+import AlternatingInfoCard from "@/components/AlternatingInfoCard/AlternatingInfoCard";
 
 import { useWindowSize } from 'react-use'
 
@@ -81,6 +82,152 @@ function useNextRouter() {
 }
 
 function PlasmicBotoxLander2__RenderFunc(props) {
+  const section8cards = [
+    {
+      id: 1,
+      icon: "verified",
+      img: "/media/services/ivy-1.jpg",
+      title: "The Best Hair Restoration Treatments:\nWhy Clients Choose CADMEN Clinic",
+      description: "When it comes to hair restoration, clients choose CADMEN Clinic for our commitment to quality, safety, and exception results. Let’s explore what sets CADMEN Clinic apart and why so many clients consider us the go-to for natural hair restoration.",
+      points: [
+        {
+          heading: "Expertise & Precision of Our Skilled Injections"
+        },
+        {
+          heading: "Comprehensive Consultation Process"
+        },
+        {
+          heading: "State-of-the-Art Facility"
+        },
+        {
+          heading: "Commitment to Safety & Quality" 
+        },
+        {
+          heading: "Transparent Pricing"
+        }
+      ]
+    },
+    {
+      id: 2,
+      icon: "sparkle",
+      img: "/media/services/ivy-2.jpg",
+      title: "Real Client Transformations",
+      description: "We're proud of the incredible transformations our clients achieve with our treatments, and our before-and-after gallery showcases the natural, impactful results our injectors create. By addressing each client's unique hair goals and concerns, we're able to deliver outcomes that exceed expectations.",
+      points: [
+        {
+          heading: "Before and After Gallery",
+          subheading: "Our gallery features real clients who have achieved exceptional hair re-growth and prevented further hair loss."
+        },
+        {
+          heading: "Client Testimonials",
+          subheading: "Many clients leave glowing testimonials about their experiences, highlighting the professionalism, care, and expertise of our team."
+        }
+      ]
+    },
+    {
+      id: 3,
+      icon: "portrait",
+      img: "/media/services/ivy-3.jpg",
+      title: "Expertise and Precision of Our Skilled Injectors",
+      description: "At CADMEN Clinic, hair restoration treatments are administered by experienced, licensed injectors who specialize in hair growth. Our injectors have extensive training in hair and advanced injection techniques, ensuring that every treatment is both safe and precisely tailored to your unique features.",
+      points: [
+        {
+          heading: "Personalized Approach",
+          subheading: "Our injectors take the time to understand your goals, whether you're looking for a subtle refresh or a more dramatic improvement."
+        },
+        {
+          heading: "Natural Results",
+          subheading: "We prioritize a natural look, only offering 100% natural treatments to give you the highest-quality result."
+        },
+        {
+          heading: "Experienced Team",
+          subheading: "With years of experience in cosmetic injectables, our team has a deep understanding of how to customize our treatments for each client's needs."
+        }
+      ]
+    },
+    {
+      id: 4,
+      icon: "headset",
+      img: "/media/services/ivy-4.jpg",
+      title: "Comprehensive Consultation Process",
+      description: "We believe that a successful hair restoration experience starts with a thorough consultation. During your initial appointment, we take the time to assess your scalp, discuss your hair goals, and explain our treatments in detail. This personalized approach helps us create a treatment plan tailored to your needs.",
+      points: [
+        {
+          heading: "Detailed Assessment",
+          subheading: "We analyze your hair type, scalp, and specific concerns to ensure which hair restoration treatment is right for you."
+        },
+        {
+          heading: "Goal-Setting",
+          subheading: "Our team works with you to establish realistic goals and answer any questions, so you feel confident and informed."
+        },
+        {
+          heading: "Transparent Communication",
+          subheading: "We explain all aspects of the procedure, from the expected results to post-care and maintenance."
+        }
+      ]
+    },
+    {
+      id: 5,
+      icon: "heart",
+      img: "/media/services/ivy-5.jpg",
+      title: "State-of-the-Art Facility and \nComfort-Focused Experience",
+      description: "Our medspa is designed to provide a relaxing and luxurious experience from the moment you walk in. We use advanced tools and techniques to deliver the highest level of care in a clean, modern, and comfortable environment.",
+      points: [
+        {
+          heading: "Advanced Technology",
+          subheading: "Our facility is equipped with cutting-edge tools that enhance the hair restoration experience, ensuring precise and effective treatments."
+        },
+        {
+          heading: "Client-Centered Atmosphere",
+          subheading: "We prioritize comfort and confidentiality, creating an environment where clients feel at ease."
+        },
+        {
+          heading: "Safety Standards",
+          subheading: "We adhere to the highest safety protocols to ensure a safe experience with every visit."
+        }
+      ]
+    },
+    {
+      id: 6,
+      icon: "syringe",
+      img: "/media/services/ivy-1.jpg",
+      title: "Commitment to Safety and Quality",
+      description: "Safety is a top priority at CADMEN Clinic. Our injectors follow strict safety protocols, and we only use approved solutions from trusted manufacturers. With our commitment to the highest standards, you can rest assured that you're in safe, professional hands.",
+      points: [
+        {
+          heading: "Certified Providers",
+          subheading: "Our team is fully certified in Botox administration, ensuring that each injector has the skills and knowledge required to deliver safe and effective treatments."
+        },
+        {
+          heading: "Health Canada-Approved Product",
+          subheading: "We use authentic, Health Canada-approved solutions to provide you with the best and safest results."
+        },
+        {
+          heading: "Stringent Protocols",
+          subheading: "From sterilization to injection techniques, we follow rigorous protocols to ensure your safety and satisfaction."
+        }
+      ]
+    },
+    {
+      id: 7,
+      icon: "moneybag",
+      img: "/media/services/ivy-2.jpg",
+      title: "Transparent Pricing",
+      description: "At CADMEN Clinic, we believe in clear, upfront pricing for all of our services. Our clients appreciate knowing exactly what to expect in terms of cost, with no hidden fees. Plus, we offer a membership program to reward our clients for their continued trust in us.",
+      points: [
+        {
+          heading: "Transparent Pricing",
+          subheading: "Our pricing is straightforward, and we're happy to provide an estimate during your consultation."
+        },
+        {
+          heading: "Exclusive Discounts",
+          subheading: "New patients receive <strong>50% off their first treatment and exclusive package discounts</strong>."
+        }
+      ]
+
+    }
+  ];
+
   const { width: windowWidth, height: windowHeight } = useWindowSize();
   
   const { variants, overrides, forNode } = props;
@@ -1507,19 +1654,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
             </WhyOurPatientsSlider>
 
             </Stack__>
-
-            {/* <Button
-              data-plasmic-name={"affordableBotoxButton"}
-              data-plasmic-override={overrides.affordableBotoxButton}
-              className={classNames(
-                "__wab_instance",
-                sty.affordableBotoxButton
-              )}
-            >
-              {"Book Now"}
-            </Button> */}
           </Stack__>
-
 
           {/* 6. our hair restoration program */}
           <Stack__
@@ -2071,7 +2206,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                 }
                 loading={"lazy"}
                 src={{
-                  src: "/plasmic/image_lab_2024/images/imagePng9.png",
+                  src: "/media/services/ivy-1.jpg",
                   fullWidth: 1300,
                   fullHeight: 1115,
                   aspectRatio: undefined
@@ -2115,7 +2250,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                 displayWidth={"auto"}
                 loading={"lazy"}
                 src={{
-                  src: "/plasmic/image_lab_2024/images/imagePng10.png",
+                  src: "/media/services/ivy-1.jpg",
                   fullWidth: 1300,
                   fullHeight: 1423,
                   aspectRatio: undefined
@@ -2312,1673 +2447,18 @@ function PlasmicBotoxLander2__RenderFunc(props) {
             data-plasmic-override={overrides.chooseBotoxSection}
             className={classNames(projectcss.all, sty.chooseBotoxSection)}
           >
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__wRid5)}
+            <div
+              style={{
+                width: '95%',
+                // maxWidth: '1100px',
+                margin: '0 auto',
+                padding: '2rem 0',
+              }}
             >
-              <div
-                className={classNames(
-                  projectcss.all,
-                  sty.freeBox__pbRy5,
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? "people-choose-botox-grid"
-                    : "people-choose-botox-grid"
-                )}
-              >
-                <Stack__
-                  as={"div"}
-                  data-plasmic-name={"chooseBotoxContent"}
-                  data-plasmic-override={overrides.chooseBotoxContent}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.chooseBotoxContent)}
-                >
-                  {/* The Best Hair Restoration Treatments: Why Clients Choose CADMEN Clinic */}
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__hJsH)}
-                  >
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__kIhA)}
-                    >
-                      <IconLayeredCircles
-                        className={classNames(
-                          "__wab_instance",
-                          sty.iconLayeredCircles___9PIox
-                        )}
-                      >
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img__r1XiP)}
-                          displayHeight={"32px"}
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"32px"}
-                          loading={"lazy"}
-                          src={{
-                            src: "/plasmic/image_lab_2024/images/checkSvg3.svg",
-                            fullWidth: 32,
-                            fullHeight: 32,
-                            aspectRatio: 1
-                          }}
-                        />
-                      </IconLayeredCircles>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__anTim
-                        )}
-                      />
-                    </div>
-
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__pEyQ)}
-                    >
-                      <h3
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.h3,
-                          projectcss.__wab_text,
-                          sty.h3__xrFV
-                        )}
-                      >
-                        {
-                          "The Best Hair Restoration Treatments: \n Why Clients Choose CADMEN Clinic"
-                        }
-                      </h3>
-                      <p
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.p,
-                          projectcss.__wab_text,
-                          sty.p__cwd87
-                        )}
-                      >
-                        {
-                          "When it comes to hair restoration, clients choose CADMEN Clinic for our commitment to quality, safety, and exception results. Let’s explore what sets CADMEN Clinic apart and why so many clients consider us the go-to for natural hair restoration."
-                        }
-                      </p>
-                      <Stack__
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__ahav3
-                        )}
-                      >
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__lhRrk
-                          )}
-                        >
-                          <PointIcon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__rTdZ
-                            )}
-                            role={"img"}
-                          />
-
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__tJkT
-                            )}
-                          >
-                            {"Expertise & Precision of Our Skilled Injectors"}
-                          </div>
-                        </Stack__>
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__py23L
-                          )}
-                        >
-                          <PointIcon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__dJskx
-                            )}
-                            role={"img"}
-                          />
-
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__luB6I
-                            )}
-                          >
-                            {"Comprehensive Consultation Process"}
-                          </div>
-                        </Stack__>
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox___3Esbt
-                          )}
-                        >
-                          <PointIcon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__ogsZn
-                            )}
-                            role={"img"}
-                          />
-
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__fb056
-                            )}
-                          >
-                            {"State-of-the-Art Facility"}
-                          </div>
-                        </Stack__>
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__wzWwe
-                          )}
-                        >
-                          <PointIcon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__iC4Y2
-                            )}
-                            role={"img"}
-                          />
-
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__lcyWa
-                            )}
-                          >
-                            {"Commitment to Safety & Quality"}
-                          </div>
-                        </Stack__>
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__robUg
-                          )}
-                        >
-                          <PointIcon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg___95Zk
-                            )}
-                            role={"img"}
-                          />
-
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__miLin
-                            )}
-                          >
-                            {"Transparent Pricing"}
-                          </div>
-                        </Stack__>
-                      </Stack__>
-                    </div>
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img___1Up3V)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/image_lab_2024/images/imagePng50.png",
-                        fullWidth: 686,
-                        fullHeight: 444,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  </Stack__>
-
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__iogD)}
-                  >
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__hzVe)}
-                    >
-                      <IconLayeredCircles
-                        className={classNames(
-                          "__wab_instance",
-                          sty.iconLayeredCircles___1M1MD
-                        )}
-                      >
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img__xr1CB)}
-                          displayHeight={"32px"}
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"32px"}
-                          loading={"lazy"}
-                          src={{
-                            src: "/plasmic/image_lab_2024/images/personSvg2.svg",
-                            fullWidth: 32,
-                            fullHeight: 32,
-                            aspectRatio: 1
-                          }}
-                        />
-                      </IconLayeredCircles>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__gzQdO
-                        )}
-                      />
-                    </div>
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__oOjQg)}
-                    >
-                      <h3
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.h3,
-                          projectcss.__wab_text,
-                          sty.h3__d9WRc
-                        )}
-                      >
-                        {"Expertise and Precision \nof Our Skilled Injectors"}
-                      </h3>
-                      <p
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.p,
-                          projectcss.__wab_text,
-                          sty.p__o07Xi
-                        )}
-                      >
-                        {
-                          "At ImageLab Medspa, Botox treatments are administered by experienced, licensed injectors who specialize in creating natural, balanced results. Our injectors have extensive training in facial anatomy and advanced Botox techniques, ensuring that every treatment is both safe and precisely tailored to your unique features."
-                        }
-                      </p>
-                      <Stack__
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__iHjJu
-                        )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox___0VM6Q
-                          )}
-                        >
-                          <Stack__
-                            as={"div"}
-                            data-plasmic-name={"title4"}
-                            data-plasmic-override={overrides.title4}
-                            hasGap={true}
-                            className={classNames(projectcss.all, sty.title4)}
-                          >
-                            <PointIcon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg___2X0Mw
-                              )}
-                              role={"img"}
-                            />
-
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text___2Okcp
-                              )}
-                            >
-                              {"Personalized Approach"}
-                            </div>
-                          </Stack__>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__dzOei
-                            )}
-                          >
-                            {
-                              "Our injectors take the time to understand your goals, whether you're looking for a subtle refresh or a more dramatic improvement."
-                            }
-                          </div>
-                        </div>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__ureG
-                          )}
-                        >
-                          <Stack__
-                            as={"div"}
-                            data-plasmic-name={"title5"}
-                            data-plasmic-override={overrides.title5}
-                            hasGap={true}
-                            className={classNames(projectcss.all, sty.title5)}
-                          >
-                            <PointIcon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg__up93
-                              )}
-                              role={"img"}
-                            />
-
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__ccArp
-                              )}
-                            >
-                              {"Natural Results"}
-                            </div>
-                          </Stack__>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__stPld
-                            )}
-                          >
-                            {
-                              "We prioritize a natural look, using precise doses to soften lines without over-freezing your facial expressions."
-                            }
-                          </div>
-                        </div>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__vqFe
-                          )}
-                        >
-                          <Stack__
-                            as={"div"}
-                            data-plasmic-name={"title6"}
-                            data-plasmic-override={overrides.title6}
-                            hasGap={true}
-                            className={classNames(projectcss.all, sty.title6)}
-                          >
-                            <PointIcon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg__i9Up4
-                              )}
-                              role={"img"}
-                            />
-
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__w3OLj
-                              )}
-                            >
-                              {"Experienced Team"}
-                            </div>
-                          </Stack__>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__tAk5G
-                            )}
-                          >
-                            {
-                              "With ears of experience in cosmetic injectables, our team has a deep understanding of how to customize Botox for each client's needs."
-                            }
-                          </div>
-                        </div>
-                      </Stack__>
-                    </div>
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img___1AMuM)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/image_lab_2024/images/imagePng51.png",
-                        fullWidth: 686,
-                        fullHeight: 444,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  </Stack__>
-
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox___3NqYh)}
-                  >
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__jIzNd)}
-                    >
-                      <IconLayeredCircles
-                        className={classNames(
-                          "__wab_instance",
-                          sty.iconLayeredCircles__m64B0
-                        )}
-                      >
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img__rF5Z9)}
-                          displayHeight={"32px"}
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"32px"}
-                          loading={"lazy"}
-                          src={{
-                            src: "/plasmic/image_lab_2024/images/supportSvg2.svg",
-                            fullWidth: 32,
-                            fullHeight: 32,
-                            aspectRatio: 1
-                          }}
-                        />
-                      </IconLayeredCircles>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__ngz4Y
-                        )}
-                      />
-                    </div>
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__wE2Kw)}
-                    >
-                      <h3
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.h3,
-                          projectcss.__wab_text,
-                          sty.h3__qz09E
-                        )}
-                      >
-                        {"Comprehensive Consultation Process"}
-                      </h3>
-                      <p
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.p,
-                          projectcss.__wab_text,
-                          sty.p__q3FCc
-                        )}
-                      >
-                        {
-                          "We believe that a successful Botox experience starts with a thorough consultation. During your initial appointment, we take the time to assess your skin, discuss your  aesthetic goals, and explain the Botox process in detail. This personalized approach helps us create a treatment plan tailored to your needs."
-                        }
-                      </p>
-                      <Stack__
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__eLoh
-                        )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__eh4
-                          )}
-                        >
-                          <Stack__
-                            as={"div"}
-                            data-plasmic-name={"title7"}
-                            data-plasmic-override={overrides.title7}
-                            hasGap={true}
-                            className={classNames(projectcss.all, sty.title7)}
-                          >
-                            <PointIcon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg__wfN3C
-                              )}
-                              role={"img"}
-                            />
-
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__m1EEj
-                              )}
-                            >
-                              {"Detailed Assessment"}
-                            </div>
-                          </Stack__>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__w0Yca
-                            )}
-                          >
-                            {
-                              "We analyze your skin type, facial structure, and specific concerns to ensure Botox is the right solution."
-                            }
-                          </div>
-                        </div>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__wPwI
-                          )}
-                        >
-                          <Stack__
-                            as={"div"}
-                            data-plasmic-name={"title8"}
-                            data-plasmic-override={overrides.title8}
-                            hasGap={true}
-                            className={classNames(projectcss.all, sty.title8)}
-                          >
-                            <PointIcon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg___64PsE
-                              )}
-                              role={"img"}
-                            />
-
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__oQnRh
-                              )}
-                            >
-                              {"Goal-Setting"}
-                            </div>
-                          </Stack__>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__jQBz
-                            )}
-                          >
-                            {
-                              "Our team works with you to establish realistic goals and answer any questions, so you feel confident and informed."
-                            }
-                          </div>
-                        </div>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__q4VvS
-                          )}
-                        >
-                          <Stack__
-                            as={"div"}
-                            data-plasmic-name={"title9"}
-                            data-plasmic-override={overrides.title9}
-                            hasGap={true}
-                            className={classNames(projectcss.all, sty.title9)}
-                          >
-                            <PointIcon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg__aDJ
-                              )}
-                              role={"img"}
-                            />
-
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__xIpIc
-                              )}
-                            >
-                              {"Transparent Communication"}
-                            </div>
-                          </Stack__>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text___1AjfO
-                            )}
-                          >
-                            {
-                              "We explain all aspects of the procedure, from the expected results to post-care and maintenance."
-                            }
-                          </div>
-                        </div>
-                      </Stack__>
-                    </div>
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img___6XZjk)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/image_lab_2024/images/imagePng52.png",
-                        fullWidth: 686,
-                        fullHeight: 444,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  </Stack__>
-
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox___5Frry)}
-                  >
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__klEdu)}
-                    >
-                      <IconLayeredCircles
-                        className={classNames(
-                          "__wab_instance",
-                          sty.iconLayeredCircles__i1YCh
-                        )}
-                      >
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img___4K3C)}
-                          displayHeight={"32px"}
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"32px"}
-                          loading={"lazy"}
-                          src={{
-                            src: "/plasmic/image_lab_2024/images/heartSvg2.svg",
-                            fullWidth: 32,
-                            fullHeight: 32,
-                            aspectRatio: 1
-                          }}
-                        />
-                      </IconLayeredCircles>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__u0Yy7
-                        )}
-                      />
-                    </div>
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__kKux6)}
-                    >
-                      <h3
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.h3,
-                          projectcss.__wab_text,
-                          sty.h3__q1R2M
-                        )}
-                      >
-                        {hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? "State-of-the-Art Facility and Comfort-Focused Experience"
-                          : "State-of-the-Art Facility and \nComfort-Focused Experience"}
-                      </h3>
-                      <p
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.p,
-                          projectcss.__wab_text,
-                          sty.p__rnpOp
-                        )}
-                      >
-                        {
-                          "Our Chicago medspa is designed to provide a relaxing  and luxurious experience from the moment you walk in.  We use advanced tools and techniques to deliver the highest level of care in a clean, modern, and comfortable environment."
-                        }
-                      </p>
-                      <Stack__
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__kpxuf
-                        )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__o2Pjh
-                          )}
-                        >
-                          <Stack__
-                            as={"div"}
-                            data-plasmic-name={"title10"}
-                            data-plasmic-override={overrides.title10}
-                            hasGap={true}
-                            className={classNames(projectcss.all, sty.title10)}
-                          >
-                            <PointIcon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg___2WIvr
-                              )}
-                              role={"img"}
-                            />
-
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text___8GUcD
-                              )}
-                            >
-                              {"Advanced Technology"}
-                            </div>
-                          </Stack__>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__vTiuS
-                            )}
-                          >
-                            {
-                              "Our facility is equipped with cutting-edge tools that enhance the Botox experience, ensuring precise and effective treatments."
-                            }
-                          </div>
-                        </div>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__jItH
-                          )}
-                        >
-                          <Stack__
-                            as={"div"}
-                            data-plasmic-name={"title11"}
-                            data-plasmic-override={overrides.title11}
-                            hasGap={true}
-                            className={classNames(projectcss.all, sty.title11)}
-                          >
-                            <PointIcon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg___3Pvq
-                              )}
-                              role={"img"}
-                            />
-
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text___7Mdl5
-                              )}
-                            >
-                              {"Client-Centered Atmosphere"}
-                            </div>
-                          </Stack__>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__j1E
-                            )}
-                          >
-                            {
-                              "We prioritize comfort and confidentiality, creating an environment where clients feel at ease."
-                            }
-                          </div>
-                        </div>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__rjP
-                          )}
-                        >
-                          <Stack__
-                            as={"div"}
-                            data-plasmic-name={"title12"}
-                            data-plasmic-override={overrides.title12}
-                            hasGap={true}
-                            className={classNames(projectcss.all, sty.title12)}
-                          >
-                            <PointIcon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg__uC9P
-                              )}
-                              role={"img"}
-                            />
-
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__qFb5D
-                              )}
-                            >
-                              {"Safety Standards"}
-                            </div>
-                          </Stack__>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__qAvOs
-                            )}
-                          >
-                            {
-                              "We adhere to the highest safety protocols to ensure a safe experience with every visit."
-                            }
-                          </div>
-                        </div>
-                      </Stack__>
-                    </div>
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__ce8G2)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/image_lab_2024/images/imagePng53.png",
-                        fullWidth: 686,
-                        fullHeight: 444,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  </Stack__>
-
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__fDgr)}
-                  >
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__sJkne)}
-                    >
-                      <IconLayeredCircles
-                        className={classNames(
-                          "__wab_instance",
-                          sty.iconLayeredCircles__bg1Iy
-                        )}
-                      >
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img___5DEpV)}
-                          displayHeight={"32px"}
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"32px"}
-                          loading={"lazy"}
-                          src={{
-                            src: "/plasmic/image_lab_2024/images/injectionSvg2.svg",
-                            fullWidth: 32,
-                            fullHeight: 32,
-                            aspectRatio: 1
-                          }}
-                        />
-                      </IconLayeredCircles>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__sv1YE
-                        )}
-                      />
-                    </div>
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__qhop)}
-                    >
-                      <h3
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.h3,
-                          projectcss.__wab_text,
-                          sty.h3__cpc6J
-                        )}
-                      >
-                        {"Commitment to Safety and Quality"}
-                      </h3>
-                      <p
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.p,
-                          projectcss.__wab_text,
-                          sty.p__sXbtT
-                        )}
-                      >
-                        {
-                          "Safety is a top priority at ImageLab Medspa. Our injectors follow strict safety protocols, and we only use FDA-approved Botox from trusted manufacturers. With our commitment to the highest standards, you can rest assured that you're in safe, professional hands."
-                        }
-                      </p>
-                      <Stack__
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__iMddq
-                        )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox___8OpXg
-                          )}
-                        >
-                          <Stack__
-                            as={"div"}
-                            data-plasmic-name={"title13"}
-                            data-plasmic-override={overrides.title13}
-                            hasGap={true}
-                            className={classNames(projectcss.all, sty.title13)}
-                          >
-                            <PointIcon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg__yjne
-                              )}
-                              role={"img"}
-                            />
-
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__l8MD
-                              )}
-                            >
-                              {"Certified Providers"}
-                            </div>
-                          </Stack__>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__dupvE
-                            )}
-                          >
-                            {
-                              "Our team is fully certified in Botox administration, ensuring that each injector has the skills and knowledge required to deliver safe and effective treatments."
-                            }
-                          </div>
-                        </div>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__tJIx5
-                          )}
-                        >
-                          <Stack__
-                            as={"div"}
-                            data-plasmic-name={"title14"}
-                            data-plasmic-override={overrides.title14}
-                            hasGap={true}
-                            className={classNames(projectcss.all, sty.title14)}
-                          >
-                            <PointIcon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg___13KZj
-                              )}
-                              role={"img"}
-                            />
-
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__mk1P1
-                              )}
-                            >
-                              {"FDA-Approved Product"}
-                            </div>
-                          </Stack__>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__bD1Bu
-                            )}
-                          >
-                            {
-                              "We use authentic, FDA-approved Botox to provide you with the best and safest results."
-                            }
-                          </div>
-                        </div>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__inBq5
-                          )}
-                        >
-                          <Stack__
-                            as={"div"}
-                            data-plasmic-name={"title15"}
-                            data-plasmic-override={overrides.title15}
-                            hasGap={true}
-                            className={classNames(projectcss.all, sty.title15)}
-                          >
-                            <PointIcon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg__sEKxC
-                              )}
-                              role={"img"}
-                            />
-
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__vd8D
-                              )}
-                            >
-                              {"Stringent Protocols"}
-                            </div>
-                          </Stack__>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__z7MHg
-                            )}
-                          >
-                            {
-                              "From sterilization to injection techniques, we follow rigorous protocols to ensure your safety and satisfaction."
-                            }
-                          </div>
-                        </div>
-                      </Stack__>
-                    </div>
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__o3AVr)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/image_lab_2024/images/imagePng54.png",
-                        fullWidth: 686,
-                        fullHeight: 444,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  </Stack__>
-
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__jt0X7)}
-                  >
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__u2Uba)}
-                    >
-                      <IconLayeredCircles
-                        className={classNames(
-                          "__wab_instance",
-                          sty.iconLayeredCircles___8K3Kn
-                        )}
-                      >
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img__y0I7G)}
-                          displayHeight={"32px"}
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"32px"}
-                          loading={"lazy"}
-                          src={{
-                            src: "/plasmic/image_lab_2024/images/priceSvg2.svg",
-                            fullWidth: 32,
-                            fullHeight: 32,
-                            aspectRatio: 1
-                          }}
-                        />
-                      </IconLayeredCircles>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__ne6Kp
-                        )}
-                      />
-                    </div>
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__xmrn2)}
-                    >
-                      <h3
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.h3,
-                          projectcss.__wab_text,
-                          sty.h3__sYtdq
-                        )}
-                      >
-                        {"Transparent Pricing"}
-                      </h3>
-                      <p
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.p,
-                          projectcss.__wab_text,
-                          sty.p___4Bqj2
-                        )}
-                      >
-                        {
-                          "At ImageLab Medspa, we believe in clear, upfront pricing for all of our services. Our clients appreciate knowing exactly what to expect in terms of cost, with no hidden  fees. Plus, we offer a membership program to reward our clients for their continued trust in us."
-                        }
-                      </p>
-                      <Stack__
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__pfsGx
-                        )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__c0Hq
-                          )}
-                        >
-                          <Stack__
-                            as={"div"}
-                            data-plasmic-name={"title16"}
-                            data-plasmic-override={overrides.title16}
-                            hasGap={true}
-                            className={classNames(projectcss.all, sty.title16)}
-                          >
-                            <PointIcon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg___7YosM
-                              )}
-                              role={"img"}
-                            />
-
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text___7AnRb
-                              )}
-                            >
-                              {"Transparent Pricing"}
-                            </div>
-                          </Stack__>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text___7GyWf
-                            )}
-                          >
-                            {
-                              "Our Botox pricing is straightforward, and we're happy to provide an estimate during your consultation."
-                            }
-                          </div>
-                        </div>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__qjRs9
-                          )}
-                        >
-                          <Stack__
-                            as={"div"}
-                            data-plasmic-name={"title17"}
-                            data-plasmic-override={overrides.title17}
-                            hasGap={true}
-                            className={classNames(projectcss.all, sty.title17)}
-                          >
-                            <PointIcon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg__c7Di
-                              )}
-                              role={"img"}
-                            />
-
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__f27Zh
-                              )}
-                            >
-                              {"Exclusive Discounts"}
-                            </div>
-                          </Stack__>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__b7PJv
-                            )}
-                          >
-                            <React.Fragment>
-                              <React.Fragment>
-                                {
-                                  "Members receive special discounts, including "
-                                }
-                              </React.Fragment>
-                              <span
-                                className={
-                                  "plasmic_default__all plasmic_default__span"
-                                }
-                                style={{ fontWeight: 700 }}
-                              >
-                                {"$3 off per Botox unit."}
-                              </span>
-                            </React.Fragment>
-                          </div>
-                        </div>
-                      </Stack__>
-                    </div>
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img___3Ag6L)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/image_lab_2024/images/imagePng55.png",
-                        fullWidth: 686,
-                        fullHeight: 444,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  </Stack__>
-
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__dfht2)}
-                  >
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__howga)}
-                    >
-                      <IconLayeredCircles
-                        className={classNames(
-                          "__wab_instance",
-                          sty.iconLayeredCircles__z245X
-                        )}
-                      >
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img__xNdwi)}
-                          displayHeight={"32px"}
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"32px"}
-                          loading={"lazy"}
-                          src={{
-                            src: "/plasmic/image_lab_2024/images/starsSvg2.svg",
-                            fullWidth: 32,
-                            fullHeight: 33,
-                            aspectRatio: 0.969697
-                          }}
-                        />
-                      </IconLayeredCircles>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__wzzw2
-                        )}
-                      />
-                    </div>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        sty.freeBox___3TAmr
-                      )}
-                    >
-                      <h3
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.h3,
-                          projectcss.__wab_text,
-                          sty.h3__gqCw3
-                        )}
-                      >
-                        {"Real Client Transformations"}
-                      </h3>
-                      <p
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.p,
-                          projectcss.__wab_text,
-                          sty.p___2QwXa
-                        )}
-                      >
-                        {
-                          "We're proud of the incredible transformations our clients achieve with Botox, and our before-and-after gallery showcases the natural, youthful results our injectors create. By addressing each client's unique facial structure and concerns, we're able to deliver outcomes that exceed expectations."
-                        }
-                      </p>
-                      <Stack__
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__gIj6Z
-                        )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__e2NY
-                          )}
-                        >
-                          <Stack__
-                            as={"div"}
-                            data-plasmic-name={"title18"}
-                            data-plasmic-override={overrides.title18}
-                            hasGap={true}
-                            className={classNames(projectcss.all, sty.title18)}
-                          >
-                            <PointIcon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg__iWqU8
-                              )}
-                              role={"img"}
-                            />
-
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__gK5V
-                              )}
-                            >
-                              {"Before and After Gallery"}
-                            </div>
-                          </Stack__>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__xbBd4
-                            )}
-                          >
-                            {
-                              "Our gallery features real clients who have achieved smoother skin, softened lines, and a rejuvenated look with Botox."
-                            }
-                          </div>
-                        </div>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__nzJ3G
-                          )}
-                        >
-                          <Stack__
-                            as={"div"}
-                            data-plasmic-name={"title19"}
-                            data-plasmic-override={overrides.title19}
-                            hasGap={true}
-                            className={classNames(projectcss.all, sty.title19)}
-                          >
-                            <PointIcon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg__xyby
-                              )}
-                              role={"img"}
-                            />
-
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__tXl1R
-                              )}
-                            >
-                              {"Client Testimonials"}
-                            </div>
-                          </Stack__>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__jHhYf
-                            )}
-                          >
-                            {
-                              "Many clients leave glowing testimonials about their experiences, highlighting the professionalism, care, and expertise of our team."
-                            }
-                          </div>
-                        </div>
-                      </Stack__>
-                    </div>
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__yMkP8)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/image_lab_2024/images/imagePng56.png",
-                        fullWidth: 686,
-                        fullHeight: 444,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  </Stack__>
-                </Stack__>
-                
-                {/* <div
-                  data-plasmic-name={"chooseBotoxImages"}
-                  data-plasmic-override={overrides.chooseBotoxImages}
-                  className={classNames(projectcss.all, sty.chooseBotoxImages)}
-                >
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__picct)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__xlT3H)}
-                      displayHeight={"120%"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/image_lab_2024/images/imagePng23.png",
-                        fullWidth: 1300,
-                        fullHeight: 860,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox___8R1J)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img___73KDw)}
-                      displayHeight={"120%"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/image_lab_2024/images/imagePng22.png",
-                        fullWidth: 1300,
-                        fullHeight: 860,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__l1SH5)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__eyl)}
-                      displayHeight={"120%"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/image_lab_2024/images/imagePng24.png",
-                        fullWidth: 1300,
-                        fullHeight: 860,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox___5PztR)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__yV1Bf)}
-                      displayHeight={"120%"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/image_lab_2024/images/imagePng25.png",
-                        fullWidth: 1300,
-                        fullHeight: 860,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__nug6)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__kE0Da)}
-                      displayHeight={"120%"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/image_lab_2024/images/imagePng28.png",
-                        fullWidth: 1300,
-                        fullHeight: 860,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox___8S8Yk)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__jvFbA)}
-                      displayHeight={"120%"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/image_lab_2024/images/imagePng27.png",
-                        fullWidth: 1300,
-                        fullHeight: 860,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox___9Sgcz)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__jfrVl)}
-                      displayHeight={"120%"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/image_lab_2024/images/imagePng26.png",
-                        fullWidth: 1300,
-                        fullHeight: 860,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  </div>
-                </div> */}
-              </div>
-            </Stack__>
+              {section8cards.map(card => (
+                <AlternatingInfoCard key={card.id} card={card} />
+              ))}
+            </div>
           </section>
 
           {/* 10. faq, question and answer */}
