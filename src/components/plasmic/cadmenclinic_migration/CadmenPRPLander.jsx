@@ -353,7 +353,7 @@ function PlasmicBotoxLander__RenderFunc(props) {
 
             <style jsx>{`
               .cards-container {
-                max-width: 1920px;
+                max-width: 100%;
                 width: 100%;
                 margin: 0 auto;
                 padding-top: 25px;
