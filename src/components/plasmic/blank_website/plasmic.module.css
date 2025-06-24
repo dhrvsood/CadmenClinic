@@ -30,7 +30,8 @@
 }
 
 .plasmic_tokens {
-  --plsmc-standard-width: 100%;
+  --plsmc-standard-width: 1400px;
+  --plsmc-wide-width: 1920px;
   --plsmc-wide-width: 100%;
   --plsmc-viewport-gap: 0px;
   --plsmc-wide-chunk: calc(
@@ -488,6 +489,7 @@
 .plasmic_page_wrapper {
   display: flex;
   width: 100%;
+  /* max-width: 1440px; */
   min-height: 100vh;
   align-items: stretch;
   align-self: start;

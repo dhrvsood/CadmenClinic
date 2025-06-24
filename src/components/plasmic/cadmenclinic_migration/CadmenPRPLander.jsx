@@ -119,11 +119,11 @@ function PlasmicBotoxLander__RenderFunc(props) {
         />
       </Head>
 
-      <style>{`
+      {/* <style>{`
         body {
           margin: 0;
         }
-      `}</style>
+      `}</style> */}
 
       <div className={projectcss.plasmic_page_wrapper}>
         <div
@@ -281,6 +281,7 @@ function PlasmicBotoxLander__RenderFunc(props) {
             </Stack__>
           </section>
 
+
           {/* CHOOSE SERVICE SECTION */}
           <section className={classNames(projectcss.all, sty.chooseBotoxSection)}>
             <h2
@@ -352,13 +353,15 @@ function PlasmicBotoxLander__RenderFunc(props) {
 
             <style jsx>{`
               .cards-container {
-                display: flex; /* Makes items arrange in a row */
-                flex-wrap: wrap; /* Allows items to wrap to the next line if space runs out */
-                justify-content: center; /* Centers the cards horizontally */
-                gap: 20px; /* Adds space between cards (optional, but good for visual separation) */
-                padding: 20px; /* Adds some padding around the container */
-                box-sizing: border-box; /* Ensures padding doesn't add to total width unexpectedly */
-                max-width: 100%; /* Ensures the container takes full available width *
+                max-width: 1920px;
+                width: 100%;
+                margin: 0 auto;
+                padding-top: 25px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+                box-sizing: border-box;
               }
             `}</style>
           </section>
