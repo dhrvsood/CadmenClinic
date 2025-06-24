@@ -342,7 +342,7 @@ function PlasmicBotoxLander__RenderFunc(props) {
               <WhyPeopleChooseCard
                 icon="/icons/heart-icon.svg"
                 title="<strong><em>Safe & Professional</em></strong> Care"
-                img="/media/services/prp/section3/3.jpeg"
+                img="/media/services/prp/3.3.jpg"
                 description="Your safety is our top priority. Our licensed professionals use industry-leading techniques in a controlled, sterile environment. We believe in natural-looking results that allow your natural beauty to shine."
               />
             </div>

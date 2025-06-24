@@ -76,7 +76,7 @@ const TestimonialsSlider = ({
           //   {ctaText}
           // </Button>
           <Link href='https://cadmenclinic.ca.zenoti.com/webstoreNew/services' target="_blank" className='mt-[10px] w-full md:w-auto'>
-              <button className='button w-full md:w-auto'>Book Now</button>
+              <button className='button white w-full md:w-auto'>Book Now</button>
           </Link>
         )}
       </div>

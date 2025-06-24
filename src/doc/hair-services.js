@@ -15,11 +15,11 @@ export const hairServices = {
             description: "Chosen by 2,100+ clients and backed by a 98% success rate, PRP Hair Restoration offers a safe and effective solution for natural hair regrowth",
             what: {
                 "description": "PRP Hair Restoration uses the body’s own platelet-rich plasma to naturally stimulate hair growth. It is a safe, non-surgical treatment that is 100% natural with no synthetic additives.",
-                "img": "/media/services/prp/section3/1.jpeg",
+                "img": "/media/services/prp/3.1.jpg",
             },
             why: {
                 "description": "If you are seeking to stimulate hair growth with a 100% natural solution then PRP is for you. PRP Hair Restoration has been clinically proven to regrow lost hair and is the most popular form of natural hair restoration.",
-                "img": "/media/services/prp/section3/2.jpeg",
+                "img": "/media/services/prp/3.2.jpg",
             }
         },
         howItWorks: [
@@ -27,25 +27,25 @@ export const hairServices = {
                 id: 1,
                 title: "Blood <em>Collection</em>",
                 description: "A small sample of your blood is drawn, similar to a routine blood test. This sample is the key to unlocking the healing power within your body.",
-                img: "/media/services/prp/section4/1.jpeg"
+                img: "/media/services/prp/4.1.jpg"
             },
             {
                 id: 2,
                 title: "PRP <em>Separation</em>",
                 description: "The blood is processed in a centrifuge to isolate the platelet-rich plasma (PRP), which contains powerful growth factors essential for hair regeneration.",
-                img: "/media/services/prp/section4/2.jpeg"
+                img: "/media/services/prp/4.2.jpg"
             },
             {
                 id: 3,
                 title: "<em>Targeted</em> Scalp Injections",
                 description: "The PRP is injected into areas of your scalp where hair thinning or loss has occurred. This targeted approach stimulates the natural healing process in your follicles.",
-                img: "/media/services/prp/section4/3.jpeg"
+                img: "/media/services/prp/4.3.jpg"
             },
             {
                 id: 4,
                 title: "<em>Regrowth</em> and Restoration",
                 description: "Over time, the PRP activates your dormant follicles, leading to the regrowth of thicker, healthier hair, and restoring your confidence with natural-looking results.",
-                img: "/media/services/prp/section4/4.jpeg"
+                img: "/media/services/prp/4.4.jpg"
             },
         ],
         beforeAfters: [
@@ -53,31 +53,31 @@ export const hairServices = {
                 id: 1,
                 title: "Marcus’ Results",
                 subtitle: "Results after 3 PRP Sessions",
-                img: "/media/services/prp/section6/Marcus.jpeg"
+                img: "/media/services/prp/Marcus.jpg"
             },
             {
                 id: 2,
                 title: "Jacob’s Results",
                 subtitle: "Results after 4 PRP Sessions",
-                img: "/media/services/prp/section6/Jacob.jpeg"
+                img: "/media/services/prp/Jacob.jpg"
             },
             {
                 id: 3,
                 title: "Anna’s Results",
                 subtitle: "Results after 3 PRP Sessions",
-                img: "/media/services/prp/section6/Anna.jpeg"
+                img: "/media/services/prp/Anna.jpg"
             },
             {
                 id: 4,
                 title: "Monica’s Results",
                 subtitle: "Results after 4 PRP Sessions",
-                img: "/media/services/prp/section6/Monica.jpeg"
+                img: "/media/services/prp/Monica.jpg"
             },
             {
                 id: 5,
                 title: "Michael’s Results",
                 subtitle: "Results after 6 PRP Sessions",
-                img: "/media/services/prp/section6/Michael.jpeg"
+                img: "/media/services/prp/Michael.jpg"
             },
         ],
         transformations: {
@@ -91,25 +91,25 @@ export const hairServices = {
                     id: 1,
                     title: "Thinning Hair and Receding Hairline",
                     subtitle: "Restore volume and strengthen thinning hair along the hairline for a fuller, thicker appearance.",
-                    img: "/media/services/prp/section7/1.jpeg"
+                    img: "/media/services/prp/7.1.jpg"
                 },
                 {
                     id: 2,
                     title: "Bald Spots",
                     subtitle: "Stimulate growth in bald areas to encourage new hair follicles and promote even regrowth across the scalp.",
-                    img: "/media/services/prp/section7/2.jpeg"
+                    img: "/media/services/prp/7.2.jpg"
                 },
                 {
                     id: 3,
                     title: "Hair Thinning on Crown and Temples",
                     subtitle: "Target areas of thinning around the crown and temples for more density and healthier-looking hair",
-                    img: "/media/services/prp/section7/3.jpeg"
+                    img: "/media/services/prp/7.3.jpg"
                 },
                 {
                     id: 4,
                     title: "Overall Hair Density",
                     subtitle: "Increase the thickness and fullness of your hair, enhancing its natural volume for a refreshed and revitalized appearance.",
-                    img: "/media/services/prp/section7/4.jpeg"
+                    img: "/media/services/prp/7.4.jpg"
                 }
             ]
         },
@@ -178,11 +178,11 @@ export const hairServices = {
             "description": "Chosen by thousands of clients and backed by a 98% success rate, Exosome Hair Therapy offers a safe and effective solution for natural hair regrowth",
             "what": {
                 "description": "Exosomes are microscopic powerhouses derived from stem cells, packed with growth factors, proteins, and signaling molecules. Ideal for dealing with thinning hair, male/female pattern baldness, or early-stage baldness. Exosomes blocks DHT levels to ensure the root cause of your hair loss is under control.",
-                "img": "/media/services/prp/section3/1.jpeg",
+                "img": "/media/services/prp/3.1.jpg",
             },
             "why": {
                 "description": "Ideal for early-stage hair loss and addressing its root cause while stimulating growth. This therapy is 100% natural, non-invasive, and has no downtime. Exosomes at CADMEN Clinic are proprietarily developed with our in-house doctors and scientists based in Canada and Spain.",
-                "img": "/media/services/prp/section3/2.jpeg",
+                "img": "/media/services/prp/3.2.jpg",
             }
         },
         howItWorks: [
@@ -190,19 +190,19 @@ export const hairServices = {
                 id: 1,
                 title: "Scalp Cleaning & Preparation",
                 description: "The scalp is thoroughly cleansed and prepped to create a clean, sterile surface. A numbing cream may be applied to make the procedure more comfortable (free of charge).",
-                img: "/media/services/prp/section4/1.jpeg"
+                img: "/media/services/prp/4.1.jpg"
             },
             {
                 id: 2,
                 title: "Microneedling with Exosomes",
                 description: "Our Dermapen device is then used to microneedle our Exosomes solution on to your scalp, creating tiny microchannels on your scalp for deeper absorption of Exosomes.",
-                img: "/media/services/prp/section4/2.jpeg"
+                img: "/media/services/prp/4.2.jpg"
             },
             {
                 id: 3,
                 title: "Regrowth and Regeneration",
                 description: "Over time, the Exosomes block DHT levels and activate dormant hair follicles. This results in less hair thinning, shedding, and significantly more hair growth. Patients have also experienced less dandruff, healthier scalp, and nourished hair follicles after their treatments.",
-                img: "/media/services/prp/section4/3.jpeg"
+                img: "/media/services/prp/4.3.jpg"
             }
         ],
         beforeAfters: [
@@ -210,31 +210,31 @@ export const hairServices = {
                 id: 1,
                 title: "Jasmine’s Results",
                 subtitle: "Results after 3 Exosome Sessions",
-                img: "/media/services/prp/section6/Marcus.jpeg"
+                img: "/media/services/prp/Marcus.jpg"
             },
             {
                 id: 2,
                 title: "Nick’s Results",
                 subtitle: "Results after 6 Exosome Sessions",
-                img: "/media/services/prp/section6/Jacob.jpeg"
+                img: "/media/services/prp/Jacob.jpg"
             },
             {
                 id: 3,
                 title: "Brandon’s Results",
                 subtitle: "Results after 3 PRP and 3 Exosome Sessions",
-                img: "/media/services/prp/section6/Anna.jpeg"
+                img: "/media/services/prp/Anna.jpg"
             },
             {
                 id: 4,
                 title: "Amy’s Results",
                 subtitle: "Results are 3 Exosomes and 6 Mesotherapy Sessions",
-                img: "/media/services/prp/section6/Monica.jpeg"
+                img: "/media/services/prp/Monica.jpg"
             },
             {
                 id: 5,
                 title: "Nithin’s Results",
                 subtitle: "Results after 3 Exosomes Sessions",
-                img: "/media/services/prp/section6/Michael.jpeg"
+                img: "/media/services/prp/Michael.jpg"
             },
         ],
         transformations: {
@@ -248,25 +248,25 @@ export const hairServices = {
                     id: 1,
                     title: "Block DHT Levels",
                     subtitle: "Dihydrotestosterone (DHT) is one of the key drivers of hair loss amongst men and women. Exosomes blocks DHT levels to ensure your hair thinning and hair loss is addressed immediately.",
-                    img: "/media/services/prp/section7/1.jpeg"
+                    img: "/media/services/prp/7.1.jpg"
                 },
                 {
                     id: 2,
                     title: "Activate Dormant Follicles",
                     subtitle: "Exosomes are ideal for anyone experiencing bald spots on their scalp because of dormant hair follicles. By activating these dormant follicles, you can expect to see meaningful hair growth in 3 sessions.",
-                    img: "/media/services/prp/section7/2.jpeg"
+                    img: "/media/services/prp/7.2.jpg"
                 },
                 {
                     id: 3,
                     title: "Increase Scalp Health",
                     subtitle: "Reduce dandruff and nourish your scalp with stem-cell derived nutrition proven to revitalize your hair follicles.",
-                    img: "/media/services/prp/section7/3.jpeg"
+                    img: "/media/services/prp/7.3.jpg"
                 },
                 {
                     id: 4,
                     title: "Overall Hair Density",
                     subtitle: "Increase the thickness and fullness of your hair, enhancing its natural volume for a refreshed and revitalized appearance.",
-                    img: "/media/services/prp/section7/4.jpeg"
+                    img: "/media/services/prp/7.4.jpg"
                 }
             ]
         },
@@ -335,11 +335,11 @@ export const hairServices = {
             "description": "Chosen by 1,500+ clients and backed by a 99% success rate, Mesotherapy Vitamins offers a safe and effective solution for natural hair regrowth and scalp nourishment",
             "what": {
                 "description": "Mesotherapy Vitamins is a non-invasive treatment that helps revive your scalp, reactivate dormant hair follicles, and stimulate natural hair growth. Packed with a powerful blend of minerals, amino acids, and growth factors, the vitamins nourish your scalp directly at the root.",
-                "img": "/media/services/prp/section3/1.jpeg",
+                "img": "/media/services/prp/3.1.jpg",
             },
             "why": {
                 "description": "If you are experiencing thinning, hair fall, or just want to bring your hair back to life, mesotherapy is the customized, science-backed solution that delivers real, visible 100% natural results.",
-                "img": "/media/services/prp/section3/2.jpeg",
+                "img": "/media/services/prp/3.2.jpg",
                 "icon": "/icons/portrait-icon.svg"
             }
         },
@@ -348,19 +348,19 @@ export const hairServices = {
                 id: 1,
                 title: "Scalp Cleaning & Preparation",
                 description: "The scalp is thoroughly cleansed and prepped to create a clean, sterile surface. A numbing cream may be applied to make the procedure more comfortable (free of charge).",
-                img: "/media/services/prp/section4/1.jpeg"
+                img: "/media/services/prp/4.1.jpg"
             },
             {
                 id: 2,
                 title: "Microinjections with Mesotherapy",
                 description: "Our mesotherapy vitamins, containing vitamins, amino acids, DHT blockers, and other growth factors, is then lightly injected into your scalp. Injections are not as deep as PRP Hair Restoration treatments, the goal of Mesotherapy is to stimulate local blood flow while increasing oxygen and nutrient delivery to the follicles.",
-                img: "/media/services/prp/section4/2.jpeg"
+                img: "/media/services/prp/4.2.jpg"
             },
             {
                 id: 3,
                 title: "Nourishment and Hair Revitalization",
                 description: "Over time, the injected vitamins provides your scalp with the essential building blocks to promote stronger, thicker hair growth all while nourishing your follicles. Patients also experience significantly less dandruff and scalp itchiness as a result of a healthier scalp.",
-                img: "/media/services/prp/section4/3.jpeg"
+                img: "/media/services/prp/4.3.jpg"
             }
         ],
         beforeAfters: [
@@ -368,31 +368,31 @@ export const hairServices = {
                 id: 1,
                 title: "Raj’s Results",
                 subtitle: "Results after 6 Mesotherapy Sessions",
-                img: "/media/services/prp/section6/Marcus.jpeg"
+                img: "/media/services/prp/Marcus.jpg"
             },
             {
                 id: 2,
                 title: "Heidi’s Results",
                 subtitle: "Results after 3 PRP + 6 Mesotherapy Sessions",
-                img: "/media/services/prp/section6/Jacob.jpeg"
+                img: "/media/services/prp/Jacob.jpg"
             },
             {
                 id: 3,
                 title: "Ron’s Results",
                 subtitle: "Results after 6 Mesotherapy Sessions",
-                img: "/media/services/prp/section6/Anna.jpeg"
+                img: "/media/services/prp/Anna.jpg"
             },
             {
                 id: 4,
                 title: "Dave’s Results",
                 subtitle: "Results after 3 Exosomes + 6 Mesotherapy Sessions",
-                img: "/media/services/prp/section6/Monica.jpeg"
+                img: "/media/services/prp/Monica.jpg"
             },
             {
                 id: 5,
                 title: "Sam’s Results",
                 subtitle: "Results after 6 Mesotherapy Sessions",
-                img: "/media/services/prp/section6/Michael.jpeg"
+                img: "/media/services/prp/Michael.jpg"
             },
         ],
         transformations: {
@@ -406,25 +406,25 @@ export const hairServices = {
                     id: 1,
                     title: "Nourish Your Scalp",
                     subtitle: "Combat a dry, flaky scalp and dandruff with Mesotherapy Vitamins. A nourished scalp is key to activating hair follicle growth. ",
-                    img: "/media/services/prp/section7/1.jpeg"
+                    img: "/media/services/prp/7.1.jpg"
                 },
                 {
                     id: 2,
                     title: "Improve Scalp Circulation",
                     subtitle: "Unleash the power of our complex Mesotherapy Vitamin blend to boost circulation through microinjections and DHT blockers.",
-                    img: "/media/services/prp/section7/2.jpeg"
+                    img: "/media/services/prp/7.2.jpg"
                 },
                 {
                     id: 3,
                     title: "Stimulate Hair Growth",
                     subtitle: "Feed your follicles exactly what they need to thrive with our complex blend of Mesotherapy Vitamins. ",
-                    img: "/media/services/prp/section7/3.jpeg"
+                    img: "/media/services/prp/7.3.jpg"
                 },
                 {
                     id: 4,
                     title: "Great for Post-Treatment Maintenance",
                     subtitle: "75%+ of our patients transition to our light-touch maintenance program, consisting of a Mesotherapy injection every 4 months to ensure you have a healthy scalp.",
-                    img: "/media/services/prp/section7/4.jpeg"
+                    img: "/media/services/prp/7.4.jpg"
                 }
             ]
         },
