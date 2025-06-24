@@ -98,6 +98,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 8px;
   background: linear-gradient(97deg, #9A6B63 0%, #E0C2B8 33.56%, #9A6B63 115.73%);
   padding: 20px 32px;
+  margin: 15px 0px;
   position: relative;
   color: white;
   width: fit-content;
@@ -107,6 +108,14 @@ h1, h2, h3, h4, h5, h6 {
   &.white {
     background: white;
     color: #1b1b18;
+  }
+}
+
+@media (max-width: 768px) {
+  .button {
+    width: 100%;
+    display: block;
+    text-align: center;
   }
 }
 

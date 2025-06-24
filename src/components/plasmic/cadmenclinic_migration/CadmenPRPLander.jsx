@@ -347,7 +347,7 @@ function PlasmicBotoxLander__RenderFunc(props) {
               />
             </div>
 
-            <Link href='https://cadmenclinic.ca.zenoti.com/webstoreNew/services' className='mt-[40px] w-full md:w-auto'>
+            <Link href='https://cadmenclinic.ca.zenoti.com/webstoreNew/services' target="_blank" className='mt-[40px] w-full md:w-auto'>
               <button className='button w-full md:w-auto'>Book Now</button>
             </Link>
 

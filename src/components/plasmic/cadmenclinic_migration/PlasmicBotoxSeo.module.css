@@ -1822,10 +1822,11 @@
   flex-direction: column;
   position: relative;
   height: auto;
-  max-width: 90%;
+  /* max-width: 90%; */
+  max-width: var(--plsmc-standard-width);
   justify-content: flex-start;
   align-items: center;
-  padding: 0px;
+  padding: 0px 40px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .freeBox__sfxyV {
@@ -3922,7 +3923,8 @@
   position: relative;
   width: 100%;
   height: auto;
-  max-width: 100%;
+  /* max-width: 100%; */
+  max-width: var(--plsmc-standard-width);
   grid-column-start: 1 !important;
   grid-column-end: -1 !important;
   padding: 80px 60px 40px;
@@ -4053,6 +4055,7 @@
   width: 100%;
   height: auto;
   max-width: 100%;
+  /* max-width: var(--plsmc-standard-width); */
   min-width: 0;
   padding: 0px 113px 0px 0px;
 }
@@ -4562,7 +4565,8 @@
   position: relative;
   width: 100%;
   height: auto;
-  max-width: 100%;
+  /* max-width: 100%; */
+  max-width: var(--plsmc-standard-width);
   grid-column-start: 1 !important;
   grid-column-end: -1 !important;
   padding: 80px 60px;

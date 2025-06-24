@@ -1,7 +1,7 @@
 'use client';
 
 import RatingReviewPill from './RatingReviewPill';
-import Button from './Button';
+import Link from 'next/link';
 
 export default function HairLandingHero() {
   return (
@@ -32,9 +32,13 @@ export default function HairLandingHero() {
         </p>
 
         {/* Button */}
-        <div className="mb-6">
+        {/* <div className="mb-6">
           <Button color={"white"}>Book Now</Button>
-        </div>
+        </div> */}
+
+        <Link href='https://cadmenclinic.ca.zenoti.com/webstoreNew/services' target="_blank" className='mt-[10px] w-full md:w-auto'>
+          <button className='button white w-full md:w-auto'>Book Now</button>
+        </Link>
 
         {/* Reviews */}
         <RatingReviewPill />
