@@ -7,7 +7,7 @@ const RatingReviewPill = ({ rating, reviewCount }) => {
     '>
       <div className='flex items-center gap-[8px] border border-quicksand-dark rounded-full px-[12px] py-[6px] bg-wildSand'>
         <Image src='/graphics/5-stars.svg' width={82} height={12} alt='5 stars' />
-        <p className='text-gold-base'><b>4.9</b>/5.0</p>
+        <p className='text-quicksand-dark'><b>4.9</b>/5.0</p>
       </div>
       <div className='flex items-center gap-[10px]'>
         <Link href='https://www.google.com/search?q=cadmenclinic&oq=cadmenclinic&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTISCAEQLhgKGK8BGMcBGIAEGI4FMgkIAhAAGAoYgAQyEggDEC4YChivARjHARiABBiOBTIGCAQQRRg8MgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEINjMxMGoxajGoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x882b350228b56b63:0x114171d25aa4df4d,1,,,,' target='_blank'>

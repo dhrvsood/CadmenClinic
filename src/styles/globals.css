@@ -105,6 +105,10 @@ h1, h2, h3, h4, h5, h6 {
   justify-self: right;
   font-weight: 600;
 
+  &.navbar {
+    margin: 0px;
+  }
+
   &.white {
     background: white;
     color: #1b1b18;

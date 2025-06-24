@@ -209,7 +209,7 @@ const Navbar = () => {
                           </a>
                           {!router.pathname.includes('https://cadmenclinic.ca.zenoti.com/webstoreNew/services') ? (
                             <Link href='https://cadmenclinic.ca.zenoti.com/webstoreNew/services' className=''>
-                              <button className='button !py-[14px] !px-5 max-sm:w-full'>Book Now</button>
+                              <button className='button navbar !py-[14px] !px-5 max-sm:w-full'>Book Now</button>
                             </Link>
                           ) : null}
                         </div>
