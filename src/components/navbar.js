@@ -136,7 +136,7 @@ const Navbar = () => {
                                   <Popover.Panel
                                     className='absolute inset-x-0 top-full text-base text-black shadow-md z-100'
                                     style={{
-                                      background: `url("/graphics/circlesSvg.svg") bottom 0px right 0px / cover no-repeat, #ebdbd6`,
+                                      background: `url("/graphics/circlesSvg.svg") bottom 0px right 0px / cover no-repeat, #9a7f71`
                                     }}
                                   >
                                     <div className='relative' style={{ backgroundColor: 'transparent' }}>
@@ -151,12 +151,12 @@ const Navbar = () => {
                                                 <Popover.Button
                                                   as={Link}
                                                   href="/services/hair-restoration"
-                                                  className='text-lg mb-1 max-w-[300px] border-b border-black pb-1 text-base font-medium text-black hover:underline'
+                                                  className='text-lg mb-1 max-w-[300px] border-b border-black pb-1 text-base font-medium text-white hover:underline'
                                                 >
                                                   {key}
                                                 </Popover.Button>
                                               ) : (
-                                                <p className='text-lg mb-1 max-w-[300px] border-b border-black pb-1 text-base font-medium text-black'>
+                                                <p className='text-lg mb-1 max-w-[300px] border-b border-black pb-1 text-base font-medium text-white'>
                                                   {key}
                                                 </p>
                                               )}
@@ -169,7 +169,7 @@ const Navbar = () => {
                                                 ],
                                                 ['asc', 'asc']
                                               ).map((service, j) => (
-                                                <div className="text-black" key={`${i}-${j}`}>
+                                                <div className="text-white" key={`${i}-${j}`}>
                                                   <Popover.Button
                                                     as={Link}
                                                     className='text-md tracking-widest hover:underline'
