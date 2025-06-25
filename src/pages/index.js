@@ -251,8 +251,8 @@ const Home = () => {
               infinite: false,
               arrows: false,
               speed: 500,
-              slidesToShow: windowWidth > 768 ? 3.1 : 1.1,
-              slidesToScroll: windowWidth > 768 ? 3 : 1
+              slidesToShow: windowWidth > 768 ? 2.1 : 1.1,
+              slidesToScroll: windowWidth > 768 ? 2 : 1
             }}
             handleButtonClick={() => router.push('https://cadmenclinic.ca.zenoti.com/webstoreNew/services')}
           >

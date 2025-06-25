@@ -39,8 +39,8 @@ const WhyOurPatientsSlider = ({ children, settings, handleButtonClick }) => {
         {...settings}
         beforeChange={handleBeforeChange}
       >
+
         {children.map((child, i) => (
-          // <div key={i} className={styles.card}>
           <div key={i} className="px-[8px]">
             {child}
           </div>
