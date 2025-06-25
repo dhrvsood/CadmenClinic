@@ -367,7 +367,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Testimontials */}
+      {/* Video */}
       <section className='bg-dawnPink py-[80px] max-sm:py-[40px]'>
         <div className='wrapper'>
           <div className='mb-[48px] flex flex-col items-center gap-[12px]'>
@@ -379,28 +379,13 @@ const Home = () => {
               Over thousands of people have transformed their lives with our hair restoration and aesthetic treatments.
             </p>
           </div>
-          <div className='m-auto max-w-full'>
-            <TestimonialsSlider
-              slides={reviews}
-              settings={{
-                dots: false,
-                arrows: false,
-                infinite: true,
-                speed: 500,
-                slidesToShow: 1,
-                slidesToScroll: 1
-              }}
-              ctaLink='https://cadmenclinic.ca.zenoti.com/webstoreNew/services'
-              ctaText='Book Now'
-            >
-              {reviews.map((child, i) => (
-                <TestimonialCardBig
-                  key={i}
-                  quote={child.content}
-                  imageUrl={child.image}
-                />
-              ))}
-            </TestimonialsSlider>
+
+          <div className="aspect-video max-w-[960px] w-full m-auto rounded-[16px] overflow-hidden">
+            <video
+              src="/media/videos/Cadmen_promo_video.mp4"
+              controls
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
       </section>
