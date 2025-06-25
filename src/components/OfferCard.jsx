@@ -22,8 +22,16 @@ const OfferCard = ({
 
   return (
     <div>
-      <div className='flex'>
-        <Image className="flex-shrink-0" src={image} width={120} height={115} alt='' />
+      <div className='flex items-stretch'>
+        <div className="w-[120px] h-[123px] relative flex-shrink-0 overflow-hidden rounded-[16px]">
+          <Image
+            src={image}
+            alt=""
+            fill
+            className="object-cover"
+          />
+        </div>
+
         <div className='flex w-full flex-col rounded-[16px] bg-dawnPink p-5'>
           <div className='flex min-h-[22px] items-center justify-between gap-[16px]'>
             <h5 className='text-[20px] font-medium text-customBlack'>{service}</h5>

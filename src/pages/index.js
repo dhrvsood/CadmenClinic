@@ -97,7 +97,7 @@ const Home = () => {
   const offerCards = [
     {
       "service": "PRP Hair Restoration",
-      "image": "/media/home/offers/o1.webp",
+      "image": "/media/home/offers/PRP.jpg",
       "percentOff": 50,
       "price": 299,
       "unitText": "per session",
@@ -106,7 +106,7 @@ const Home = () => {
     },
     {
       "service": "Exosome Hair Therapy",
-      "image": "/media/home/offers/o2.webp",
+      "image": "/media/home/offers/Exosomes.jpg",
       "percentOff": 50,
       "price": 399,
       "unitText": "per session",
@@ -115,7 +115,7 @@ const Home = () => {
     },
     {
       "service": "Mesotherapy Vitamins",
-      "image": "/media/home/offers/o3.webp",
+      "image": "/media/home/offers/Mesotherapy.jpg",
       "percentOff": 50,
       "price": 199,
       "unitText": "per session",
@@ -124,7 +124,7 @@ const Home = () => {
     },
     {
       "service": "Botox",
-      "image": "/media/home/offers/o4.webp",
+      "image": "/media/home/offers/Botox.jpg",
       "percentOff": 30,
       "price": 9.99,
       "unitText": "per unit",
@@ -133,7 +133,7 @@ const Home = () => {
     },
     {
       "service": "Lip / Dermal Filler",
-      "image": "/media/home/offers/o5.webp",
+      "image": "/media/home/offers/Lip Filler.jpg",
       "percentOff": 30,
       "price": 599,
       "unitText": "per sryinge",
@@ -141,10 +141,10 @@ const Home = () => {
       "serviceId": "dermal-filler"
     },
     {
-      "service": "SCULPTRA®",
-      "image": "/media/home/offers/o6.webp",
-      "percentOff": 30,
-      "price": 2499,
+      "service": "PRP Facial",
+      "image": "/media/home/offers/PRP Facial.jpg",
+      "percentOff": 25,
+      "price": 599,
       "unitText": "3 Vails",
       "priceFrom": false,
       "serviceId": "sculptra"
