@@ -59,7 +59,7 @@ export const hairServices = {
                 id: 2,
                 title: "Jacob’s Results",
                 subtitle: "Results after 4 PRP Sessions",
-                img: "/media/services/prp/Jacob.jpg"
+                img: "/media/services/prp/jacob_2.jpg"
             },
             {
                 id: 3,
