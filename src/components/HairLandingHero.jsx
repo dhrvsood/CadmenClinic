@@ -23,12 +23,15 @@ export default function HairLandingHero() {
 
         {/* Heading */}
         <h1 className="italic text-4xl md:text-6xl lg:text-7xl  text-white leading-tight mb-6">
-          Proven Hair Restoration Treatments
+          Toronto’s #1 Hair Loss Clinic
         </h1>
 
         {/* Description */}
         <p className="mt-2 mb-6 text-sm md:text-base max-w-3xl text-white/90">
-          Revitalize your hair with our non-surgical, 100% natural, science-backed hair restoration services for men and women. Proven results, minimal downtime, and trusted by over 2,100 patients since 2019. Book a free consultation with our expert providers to craft a treatment plan with premium-quality results tailored just for you.
+          Revitalize your hair with our non-surgical, 100% natural, science-backed hair
+          restoration services for men and women. Proven results, minimal downtime, and trusted by
+          over 2,100 patients since 2019. Book a free consultation with our expert providers to craft a
+          treatment plan with premium-quality results tailored just for you.        
         </p>
 
         {/* Button */}

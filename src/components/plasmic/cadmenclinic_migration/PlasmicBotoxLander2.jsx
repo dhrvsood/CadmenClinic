@@ -864,9 +864,15 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ color: "#080909" }}
                     >
-                      {"Affordable Hair Restoration Treatments"}
+                      {"Affordable Hair Restoration"}
                     </span>
                     <br></br>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "#080909" }}
+                    >
+                      {"Treatments "}
+                    </span>
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ color: "#9a7f71", fontStyle: "italic" }}
@@ -910,41 +916,23 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                   sty.affordableBotoxCard__v1OXt
                 )}
                 items={
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? [
-                        {
-                          title: "Stimulate New Hair Growth",
-                          description:
-                            "Use your own body’s plasma to boost hair growth in targeted regions"
-                        },
-                        {
-                          title: "Clinically Backed, Proven Results",
-                          description:
-                            "The most studied natural hair restoration service – 100% natural, no chemicals or foreign substances"
-                        },
-                        {
-                          title: "Over 7,000 Treatments Performed at CADMEN",
-                          description:
-                            "We are the only clinic in Ontario with medical-grade PRP Hair Restoration practices "
-                        }
-                      ]
-                    : [
-                        {
-                          title: "Stimulate New Hair Growth",
-                          description:
-                            "Use your own body’s plasma to boost hair growth in targeted regions"
-                        },
-                        {
-                          title: "Clinically Backed, Proven Results",
-                          description:
-                            "The most studied natural hair restoration service – 100% natural, no chemicals or foreign substances"
-                        },
-                        {
-                          title: "Over 7,000 Treatments Performed at CADMEN",
-                          description:
-                            "We are the only clinic in Ontario with medical-grade PRP Hair Restoration practices "
-                        }
-                      ]
+                  [
+                    {
+                      title: "Stimulate New Hair Growth",
+                      description:
+                        "Use your own body’s plasma to boost hair growth in targeted regions"
+                    },
+                    {
+                      title: "Clinically Backed, Proven Results",
+                      description:
+                        "The most studied natural hair restoration service – 100% natural, no chemicals or foreign substances"
+                    },
+                    {
+                      title: "Over 7,000 Treatments Performed at CADMEN",
+                      description:
+                        "We are the only clinic in Ontario with medical-grade PRP Hair Restoration practices, we laser-focused on results to ensure spectacular results"
+                    }
+                  ]
                 }
               />
 
@@ -966,12 +954,12 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                   {
                     title: "Stimulate Rapid Hair Growth",
                     description:
-                      "Activate healing dormant hair follicles to stimulate new hair growth faster"
+                      "Activate healing dormant hair follicles to stimulate new hair growth faster driven by the powerful growth vectors in our propriety solution"
                   },
                   {
                     title: "Next-Gen Regenerative Science",
                     description:
-                      "Our stem cell-derived Exosomes have disrupted the industry due to its unparallelled levels of efficacy"
+                      "Our stem cell-derived proprietary Exosomes solution has disrupted the industry due to its unparallelled levels of efficacy"
                   }
                 ]}
               />
@@ -989,7 +977,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                   {
                     title: "Strengthen Thinning Hair",
                     description:
-                      "Nourish your scalp from the root up to prevent further hair thinning and shedding"
+                      "Nourish your scalp from the root up to prevent further hair loss"
                   },
                   {
                     title: "Improve Scalp Circulation for Hair Growth",
