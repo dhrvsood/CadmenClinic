@@ -184,7 +184,7 @@ const data = [
           title: 'Färsk IV Drip Therapy',
           description:
             'Select from a range of IV drips targeting revitalizing energy levels, providing a youthful glow, promoting cellular regeneration, and combatting anti-aging.',
-          image: '/seeTheResultsSlider/skinTreatments/skin-1a.avif',
+          image: '/media/home/IV Drip Therapy.jpg',
           link: 'https://www.imagelabmedspa.com/services/diamondglow-facial'
         }
       },
@@ -193,7 +193,7 @@ const data = [
           title: 'Semaglutide Therapy',
           description:
             'In-person, medically-supervised Semaglutide injections for safe and effective weight loss. The same active ingredient in Wegovy® and Ozempic®.',
-          image: '/seeTheResultsSlider/skinTreatments/skin-3a.avif',
+          image: '/media/home/Semaglutide.jpg',
           link: 'https://www.imagelabmedspa.com/services/microneedling'
         }
       }
