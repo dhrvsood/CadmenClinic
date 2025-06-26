@@ -190,9 +190,9 @@ function PlasmicAffordableBotoxCard__RenderFunc(props) {
                 }
               )}
             >
-              {"\u00ae"}
             </div>
           </div>
+          {/* MOST POPULAR */}
           <div
             className={classNames(
               projectcss.all,
@@ -356,27 +356,6 @@ function PlasmicAffordableBotoxCard__RenderFunc(props) {
           </Stack__>
         </Stack__>
       </Stack__>
-      {/* {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : false) ? (
-        <PlasmicImg__
-          data-plasmic-name={"img"}
-          data-plasmic-override={overrides.img}
-          alt={""}
-          className={classNames(sty.img)}
-          displayHeight={"2px"}
-          displayMaxHeight={"none"}
-          displayMaxWidth={"100%"}
-          displayMinHeight={"0"}
-          displayMinWidth={"0"}
-          displayWidth={"266px"}
-          loading={"lazy"}
-          src={{
-            src: "/plasmic/image_lab_2024/images/line11.svg",
-            fullWidth: 266,
-            fullHeight: 2,
-            aspectRatio: 133
-          }}
-        />
-      ) : null} */}
       <Stack__
         as={"div"}
         hasGap={true}

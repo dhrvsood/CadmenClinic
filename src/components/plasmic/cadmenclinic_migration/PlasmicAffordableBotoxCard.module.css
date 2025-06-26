@@ -142,6 +142,7 @@
   display: block;
   font-size: 54px;
   font-family: "Cormorant Garamond", serif;
+  font-variant-numeric: lining-nums;
   font-weight: 500;
   letter-spacing: 0em;
   color: #944839;
@@ -522,6 +523,9 @@
   display: block;
   position: relative;
   flex-shrink: 0;
+  /* ensure bullet point aligns with top instead of middle of component */
+  align-self: flex-start;
+  margin-top: 0.5em;
 }
 .text__nYrNm {
   display: block;
