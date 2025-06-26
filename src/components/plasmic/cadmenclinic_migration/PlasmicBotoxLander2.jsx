@@ -2168,53 +2168,6 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                     {" for you?"}
                   </span>
                 </React.Fragment>
-                {/* {hasVariant(globalVariants, "screen", "mobileOnly") ? (
-                  <React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#FFFFFF" }}
-                    >
-                      {"Want to know how long your "}
-                    </span>
-                    <React.Fragment>{""}</React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#E4C08C" }}
-                    >
-                      {"Botox results"}
-                    </span>
-                    <React.Fragment> </React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#FFFFFF" }}
-                    >
-                      {"might last?"}
-                    </span>
-                  </React.Fragment>
-                ) : (
-                  <React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#FFFFFF" }}
-                    >
-                      {"Want to learn more about if "}
-                    </span>
-                    <React.Fragment>{""}</React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#E4C08C" }}
-                    >
-                      {"Botox is right"}
-                    </span>
-                    <React.Fragment>{""}</React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#FFFFFF" }}
-                    >
-                      {" for you?"}
-                    </span>
-                  </React.Fragment>
-                )} */}
               </div>
               <div
                 data-plasmic-name={"supportingText8"}

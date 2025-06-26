@@ -3,6 +3,7 @@
 .plasmic_tokens {
   --light-brown: #ebdbd6;
   --dark-brown: #9a7f71;
+  --darkest-brown: rgba(148, 72, 57, 1);
   --token-NtkC24ykrcxQ: #9a7f71;
   --plasmic-token-unnamed-style-token: var(--token-NtkC24ykrcxQ);
   --token-WqmKFbtStDOp: #d19d51;

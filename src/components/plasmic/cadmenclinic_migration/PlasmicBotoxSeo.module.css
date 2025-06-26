@@ -2982,8 +2982,8 @@
   }
 }
 .ctaSection {
-  background: url("../../../../public/graphics/ctaBgSvg.svg") top 50% left 50% / contain no-repeat,
-    rgba(148, 72, 57, 1);
+  background: url("../../../../public/graphics/circlesSvgNoMidLine.svg") bottom 0px right 0px / cover no-repeat,
+    #9a7f71;
   width: 100%;
   height: auto;
   display: flex;
