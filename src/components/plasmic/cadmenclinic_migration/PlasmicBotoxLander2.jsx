@@ -728,35 +728,6 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                       }
                 }
               >
-                
-                {/* <TestimonialCard
-                  className={classNames(
-                    "__wab_instance",
-                    sty.testimonialCard___3XFxL
-                  )}
-                  insta={"@juliaaa2000"}
-                  patient={"Julia Bing"}
-                  subtitle={"Results after one month with Botox"}
-                  title={"Julia\u2019s Results"}
-                >
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__s7X19)}
-                    displayHeight={"auto"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"100%"}
-                    loading={"lazy"}
-                    src={{
-                      src: "/media/hair-landing/testimonials/1. Jacob.jpg",
-                      fullWidth: 486,
-                      fullHeight: 480,
-                      aspectRatio: undefined
-                    }}
-                  />
-                </TestimonialCard> */}
                 {beforeAfters.map((beforeAfter) => (
                   <TestimonialCard
                     className={classNames(
@@ -786,101 +757,6 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                     />
                   </TestimonialCard>
                 ))}
-                
-                {/* <TestimonialCard
-                  avatar={
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__zuxSd)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"44px"}
-                      displayMaxWidth={"44px"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/image_lab_2024/images/imagePng30.png",
-                        fullWidth: 88,
-                        fullHeight: 88,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  }
-                  className={classNames(
-                    "__wab_instance",
-                    sty.testimonialCard___5Kva4
-                  )}
-                  insta={"@melnyk_dasha"}
-                  patient={"Daria Melnyk"}
-                  subtitle={"Results after three weeks with Botox"}
-                  title={"Daria\u2019s Results"}
-                >
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__hQ2Dl)}
-                    displayHeight={"auto"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"100%"}
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/image_lab_2024/images/image301ResultAvif.avif",
-                      fullWidth: 379,
-                      fullHeight: 379,
-                      aspectRatio: undefined
-                    }}
-                  />
-                </TestimonialCard>
-                <TestimonialCard
-                  avatar={
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__rwyL0)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"44px"}
-                      displayMaxWidth={"44px"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/image_lab_2024/images/imagePng31.png",
-                        fullWidth: 88,
-                        fullHeight: 88,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  }
-                  className={classNames(
-                    "__wab_instance",
-                    sty.testimonialCard__sEbS9
-                  )}
-                  insta={"@annajohnson"}
-                  patient={"Anna Johnson"}
-                  subtitle={"Results after two weeks with Botox"}
-                  title={"Anna\u2019s Results"}
-                >
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__jcskn)}
-                    displayHeight={"auto"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"100%"}
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/image_lab_2024/images/_66Cc8477C61D4Fc872E5B045ImagelabBotoxResult1P800ResultAvif.avif",
-                      fullWidth: 800,
-                      fullHeight: 800,
-                      aspectRatio: undefined
-                    }}
-                  />
-                </TestimonialCard> */}
               </TestimonialsSlider>
             </div>
           </section>

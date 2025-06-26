@@ -519,7 +519,7 @@ function PlasmicBotoxLander__RenderFunc(props) {
                 className={classNames("__wab_instance", sty.beforeAfterSlider)}
                 ctaLink={"#"}
                 ctaText={"Act Now"}
-                isDarkBg={false}
+                isDarkBg={true}
                 settings={
                   hasVariant(globalVariants, "screen", "mobileOnly")
                     ? {

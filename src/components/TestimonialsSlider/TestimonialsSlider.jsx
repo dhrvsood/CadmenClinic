@@ -68,15 +68,12 @@ const TestimonialsSlider = ({
           </div>
         </div>
         {ctaLink && ctaText && (
-          // <Button
-          //   link={ctaLink}
-          //   color={isDarkBg ? 'white' : ''}
-          //   onClick={handleButtonClick}
-          // >
-          //   {ctaText}
-          // </Button>
           <Link href='https://cadmenclinic.ca.zenoti.com/webstoreNew/services' target="_blank" className='mt-[10px] w-full md:w-auto'>
-              <button className='button white w-full md:w-auto'>Book Now</button>
+            <button
+              className={`${isDarkBg ? 'button white' : 'button'} w-full md:w-auto`}
+            >
+              Book Now
+            </button>
           </Link>
         )}
       </div>
