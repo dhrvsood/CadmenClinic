@@ -60,6 +60,7 @@ import IconFace2Icon from "./icons/PlasmicIcon__IconFace2"; // plasmic-import: X
 import HeartSvg4Icon from "./icons/PlasmicIcon__HeartSvg4"; // plasmic-import: QQ0zzfq_LES4/icon
 import PointIcon from "./icons/PlasmicIcon__Point"; // plasmic-import: dMjm7kjmXw_d/icon
 
+import RatingReviewPill from "@/components/RatingReviewPill";
 import AffordableHairRestoration from "@/components/AffordableHairRestoration";
 import HairLandingHero from "@/components/HairLandingHero";
 import WhyOurPatientsSlider from "@/components/WhyOurPatientsSlider/WhyOurPatientsSlider";
@@ -143,7 +144,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
     {
       id: 1,
       icon: "verified",
-      img: "/media/services/ivy-1.jpg",
+      img: "/media/services/prp/3.1.jpg",
       title: "We ONLY Offer Proven and Effective Hair Restoration Treatments",
       description: "When it comes to hair restoration, clients choose CADMEN Clinic for our commitment to quality, safety, and exception results. Let’s explore what sets CADMEN Clinic apart and why so many clients consider us the go-to for natural hair restoration.",
       points: [
@@ -167,7 +168,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
     {
       id: 2,
       icon: "sparkle",
-      img: "/media/services/ivy-2.jpg",
+      img: "/media/hair-landing/4.jpg",
       title: "Real Client Transformations",
       description: "We're proud of the incredible transformations our clients achieve with our treatments, and our before-and-after gallery showcases the natural, impactful results our injectors create. By addressing each client's unique hair goals and concerns, we're able to deliver outcomes that exceed expectations.",
       points: [
@@ -184,7 +185,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
     {
       id: 3,
       icon: "portrait",
-      img: "/media/services/ivy-3.jpg",
+      img: "/media/services/prp/7.1.jpg",
       title: "Expertise and Precision of Our Skilled Injectors",
       description: "At CADMEN Clinic, hair restoration treatments are administered by experienced, licensed injectors who specialize in hair growth. Our injectors have extensive training in hair and advanced injection techniques, ensuring that every treatment is both safe and precisely tailored to your unique features.",
       points: [
@@ -205,7 +206,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
     {
       id: 4,
       icon: "headset",
-      img: "/media/services/ivy-4.jpg",
+      img: "/media/hair-landing/6.jpg",
       title: "Comprehensive Consultation Process",
       description: "We believe that a successful hair restoration experience starts with a thorough consultation. During your initial appointment, we take the time to assess your scalp, discuss your hair goals, and explain our treatments in detail. This personalized approach helps us create a treatment plan tailored to your needs.",
       points: [
@@ -226,7 +227,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
     {
       id: 5,
       icon: "heart",
-      img: "/media/services/ivy-5.jpg",
+      img: "/media/hair-landing/7.jpg",
       title: "State-of-the-Art Facility and \nComfort-Focused Experience",
       description: "Our medspa is designed to provide a relaxing and luxurious experience from the moment you walk in. We use advanced tools and techniques to deliver the highest level of care in a clean, modern, and comfortable environment.",
       points: [
@@ -247,7 +248,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
     {
       id: 6,
       icon: "syringe",
-      img: "/media/services/ivy-1.jpg",
+      img: "/media/services/prp/4.1.jpg",
       title: "Commitment to Safety and Quality",
       description: "Safety is a top priority at CADMEN Clinic. Our injectors follow strict safety protocols, and we only use approved solutions from trusted manufacturers. With our commitment to the highest standards, you can rest assured that you're in safe, professional hands.",
       points: [
@@ -268,7 +269,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
     {
       id: 7,
       icon: "moneybag",
-      img: "/media/services/ivy-2.jpg",
+      img: "/media/hair-landing/9.jpg",
       title: "Transparent Pricing",
       description: "At CADMEN Clinic, we believe in clear, upfront pricing for all of our services. Our clients appreciate knowing exactly what to expect in terms of cost, with no hidden fees. Plus, we offer a membership program to reward our clients for their continued trust in us.",
       points: [
@@ -1832,7 +1833,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                 }
                 loading={"lazy"}
                 src={{
-                  src: "/media/services/ivy-1.jpg",
+                  src: "/media/services/prp/4.4.jpg",
                   fullWidth: 1300,
                   fullHeight: 1115,
                   aspectRatio: undefined
@@ -1865,7 +1866,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                 displayWidth={"auto"}
                 loading={"lazy"}
                 src={{
-                  src: "/media/services/ivy-1.jpg",
+                  src: "/media/hair-landing/2.jpg",
                   fullWidth: 1300,
                   fullHeight: 1423,
                   aspectRatio: undefined
@@ -2073,6 +2074,29 @@ function PlasmicBotoxLander2__RenderFunc(props) {
               {section8cards.map(card => (
                 <AlternatingInfoCard key={card.id} card={card} />
               ))}
+            </div>
+          </section>
+
+          {/* 9.5 Video Section */}
+          <section className='py-[80px] max-sm:py-[40px]'>
+            <div className='wrapper'>
+              <div className='mb-[48px] flex flex-col items-center gap-[12px]'>
+                <RatingReviewPill />
+                <h2 className='d-h2 text-center'>
+                  Join Our Satisfied <span className='blue-italic text-gold-base'>Clients</span>
+                </h2>
+                <p className='text-center'>
+                  Over thousands of people have transformed their lives with our hair restoration and aesthetic treatments.
+                </p>
+              </div>
+    
+              <div className="aspect-video max-w-[960px] w-full m-auto rounded-[16px] overflow-hidden">
+                <video
+                  src="/media/videos/Cadmen_promo_video.mp4"
+                  controls
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
           </section>
 

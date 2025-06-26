@@ -9923,7 +9923,8 @@
   width: 100%;
   justify-self: flex-start;
   grid-row-gap: 56px;
-  background: url("/plasmic/image_lab_2024/images/circlesSvg6.svg") top 50% left 50% / cover repeat;
+  /* background: url("/plasmic/image_lab_2024/images/circlesSvg.svg") top 50% left 50% / cover repeat; */
+  background: url("../../../../public/graphics/circlesSvgDarkBrown.svg") bottom 0px right 0px / cover no-repeat, var(--light-brown);
   grid-column-start: 1 !important;
   grid-column-end: -1 !important;
   grid-template-columns:
