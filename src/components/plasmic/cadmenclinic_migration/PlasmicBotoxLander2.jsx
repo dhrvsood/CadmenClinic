@@ -67,6 +67,7 @@ import WhyOurPatientsSlider from "@/components/WhyOurPatientsSlider/WhyOurPatien
 import AlternatingInfoCard from "@/components/AlternatingInfoCard/AlternatingInfoCard";
 
 import { useWindowSize } from 'react-use'
+import VideoSection from "@/components/VideoSection/VideoSection";
 
 createPlasmicElementProxy;
 
@@ -2078,27 +2079,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
           </section>
 
           {/* 9.5 Video Section */}
-          <section className='py-[80px] max-sm:py-[40px]'>
-            <div className='wrapper'>
-              <div className='mb-[48px] flex flex-col items-center gap-[12px]'>
-                <RatingReviewPill />
-                <h2 className='d-h2 text-center'>
-                  Join Our Satisfied <span className='blue-italic text-gold-base'>Clients</span>
-                </h2>
-                <p className='text-center'>
-                  Over thousands of people have transformed their lives with our hair restoration and aesthetic treatments.
-                </p>
-              </div>
-    
-              <div className="aspect-video max-w-[960px] w-full m-auto rounded-[16px] overflow-hidden">
-                <video
-                  src="/media/videos/Cadmen_promo_video.mp4"
-                  controls
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-          </section>
+          <VideoSection bgColor="bg-white" />
 
           {/* 10. faq, question and answer */}
           <section

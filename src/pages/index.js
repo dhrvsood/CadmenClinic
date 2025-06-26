@@ -12,6 +12,7 @@ import IconImageTextCard from '@/components/IconImageTextCard/IconImageTextCard'
 
 // plasmic our location section
 import OurLocationSection from '@/components/OurLocationSection'
+import VideoSection from '@/components/VideoSection/VideoSection'
 
 
 const Home = () => {
@@ -346,29 +347,9 @@ const Home = () => {
       </section>
 
       {/* Video */}
-      <section className='bg-dawnPink py-[80px] max-sm:py-[40px]'>
-        <div className='wrapper'>
-          <div className='mb-[48px] flex flex-col items-center gap-[12px]'>
-            <RatingReviewPill />
-            <h2 className='d-h2 text-center'>
-              Join Our Satisfied <span className='blue-italic text-gold-base'>Clients</span>
-            </h2>
-            <p className='text-center'>
-              Over thousands of people have transformed their lives with our hair restoration and aesthetic treatments.
-            </p>
-          </div>
+      <VideoSection bgColor="bg-dawnPink"/>
 
-          <div className="aspect-video max-w-[960px] w-full m-auto rounded-[16px] overflow-hidden">
-            <video
-              src="/media/videos/Cadmen_promo_video.mp4"
-              controls
-              className="w-full h-full object-cover"
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* Contact */}
+      {/* Our Location */}
       <OurLocationSection />
 
       {/* First Step Banner */}
