@@ -88,7 +88,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
       id: 1,
       icon: "verified",
       img: "/media/services/ivy-1.jpg",
-      title: "The Best Hair Restoration Treatments:\nWhy Clients Choose CADMEN Clinic",
+      title: "We ONLY Offer Proven and Effective Hair Restoration Treatments",
       description: "When it comes to hair restoration, clients choose CADMEN Clinic for our commitment to quality, safety, and exception results. Let’s explore what sets CADMEN Clinic apart and why so many clients consider us the go-to for natural hair restoration.",
       points: [
         {
@@ -1956,7 +1956,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
             </div>
           </Stack__>
 
-          {/* 9. alternating image section */}
+          {/* 9. why do clients trust cadmen clinic */}
           <section
             data-plasmic-name={"chooseBotoxSection"}
             data-plasmic-override={overrides.chooseBotoxSection}
