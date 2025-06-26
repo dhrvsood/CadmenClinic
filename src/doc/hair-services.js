@@ -53,31 +53,31 @@ export const hairServices = {
                 id: 1,
                 title: "Marcus’ Results",
                 subtitle: "Results after 3 PRP Sessions",
-                img: "/media/services/prp/Marcus.jpg"
+                img: "/media/testimonials/Marcus.jpg"
             },
             {
                 id: 2,
                 title: "Jacob’s Results",
                 subtitle: "Results after 4 PRP Sessions",
-                img: "/media/services/prp/jacob_2.jpg"
+                img: "/media/testimonials/Jacob.jpg"
             },
             {
                 id: 3,
                 title: "Anna’s Results",
                 subtitle: "Results after 3 PRP Sessions",
-                img: "/media/services/prp/Anna.jpg"
+                img: "/media/testimonials/Anna.jpg"
             },
             {
                 id: 4,
                 title: "Monica’s Results",
                 subtitle: "Results after 4 PRP Sessions",
-                img: "/media/services/prp/Monica.jpg"
+                img: "/media/testimonials/Monica.jpg"
             },
             {
                 id: 5,
                 title: "Michael’s Results",
                 subtitle: "Results after 6 PRP Sessions",
-                img: "/media/services/prp/Michael.jpg"
+                img: "/media/testimonials/Michael.jpg"
             },
         ],
         transformations: {
@@ -210,31 +210,31 @@ export const hairServices = {
                 id: 1,
                 title: "Jasmine’s Results",
                 subtitle: "Results after 3 Exosome Sessions",
-                img: "/media/services/prp/Marcus.jpg"
+                img: "/media/testimonials/Jasmine.jpg"
             },
             {
                 id: 2,
                 title: "Nick’s Results",
                 subtitle: "Results after 6 Exosome Sessions",
-                img: "/media/services/prp/Jacob.jpg"
+                img: "/media/testimonials/Nick.jpg"
             },
             {
                 id: 3,
                 title: "Brandon’s Results",
                 subtitle: "Results after 3 PRP and 3 Exosome Sessions",
-                img: "/media/services/prp/Anna.jpg"
+                img: "/media/testimonials/Brandon.jpg"
             },
             {
                 id: 4,
                 title: "Amy’s Results",
-                subtitle: "Results are 3 Exosomes and 6 Mesotherapy Sessions",
-                img: "/media/services/prp/Monica.jpg"
+                subtitle: "Results after 3 Exosomes and 6 Meso Sessions",
+                img: "/media/testimonials/Amy.jpg"
             },
             {
                 id: 5,
                 title: "Nithin’s Results",
                 subtitle: "Results after 3 Exosomes Sessions",
-                img: "/media/services/prp/Michael.jpg"
+                img: "/media/testimonials/Nithin.jpg"
             },
         ],
         transformations: {
@@ -368,31 +368,31 @@ export const hairServices = {
                 id: 1,
                 title: "Raj’s Results",
                 subtitle: "Results after 6 Mesotherapy Sessions",
-                img: "/media/services/prp/Marcus.jpg"
+                img: "/media/testimonials/Raj.jpg"
             },
             {
                 id: 2,
                 title: "Heidi’s Results",
                 subtitle: "Results after 3 PRP + 6 Mesotherapy Sessions",
-                img: "/media/services/prp/Jacob.jpg"
+                img: "/media/testimonials/Heidi.jpg"
             },
             {
                 id: 3,
                 title: "Ron’s Results",
                 subtitle: "Results after 6 Mesotherapy Sessions",
-                img: "/media/services/prp/Anna.jpg"
+                img: "/media/testimonials/Ron.jpg"
             },
             {
                 id: 4,
                 title: "Dave’s Results",
-                subtitle: "Results after 3 Exosomes + 6 Mesotherapy Sessions",
-                img: "/media/services/prp/Monica.jpg"
+                subtitle: "Results after 3 Exosomes + 6 Meso Sessions",
+                img: "/media/testimonials/Dave.jpg"
             },
             {
                 id: 5,
                 title: "Sam’s Results",
                 subtitle: "Results after 6 Mesotherapy Sessions",
-                img: "/media/services/prp/Michael.jpg"
+                img: "/media/testimonials/Sam.jpg"
             },
         ],
         transformations: {

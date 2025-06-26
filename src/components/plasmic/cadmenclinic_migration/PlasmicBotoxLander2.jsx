@@ -83,6 +83,62 @@ function useNextRouter() {
 }
 
 function PlasmicBotoxLander2__RenderFunc(props) {
+  const beforeAfters = [
+    {
+        id: 1,
+        title: "Jacob’s Results",
+        subtitle: "Results after 4 PRP Sessions",
+        img: "/media/testimonials/Jacob.jpg"
+    },
+    {
+        id: 2,
+        title: "Amy’s Results",
+        subtitle: "Results after 3 Exosome and 6 Meso Sessions",
+        img: "/media/testimonials/Amy.jpg"
+    },
+    {
+        id: 3,
+        title: "Nithin’s Results",
+        subtitle: "Results after 3 Exosome Sessions",
+        img: "/media/testimonials/Nithin.jpg"
+    },
+    {
+        id: 4,
+        title: "Anna’s Results",
+        subtitle: "Results after 3 PRP Sessions",
+        img: "/media/testimonials/Anna.jpg"
+    },
+    {
+        id: 5,
+        title: "Brandon’s Results",
+        subtitle: "Results after 3 PRP and 3 Exosome Sessions",
+        img: "/media/testimonials/Brandon.jpg"
+    },
+    {
+        id: 6,
+        title: "Ritu’s Results",
+        subtitle: "Results after 6 Mesotherapy Sessions",
+        img: "/media/testimonials/Ritu.jpg"
+    },
+    {
+        id: 7,
+        title: "Ron’s Results",
+        subtitle: "Results after 6 Mesotherapy Sessions",
+        img: "/media/testimonials/Ron.jpg"
+    },
+    {
+        id: 8,
+        title: "Michael's Results",
+        subtitle: "Results after 6 PRP Sessions",
+        img: "/media/testimonials/Michael.jpg"
+    },
+    {
+        id: 9,
+        title: "Nick's Results",
+        subtitle: "Results after 6 Exosome Sessions",
+        img: "/media/testimonials/Nick.jpg"
+    },
+  ];
   const section8cards = [
     {
       id: 1,
@@ -670,26 +726,8 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                       }
                 }
               >
-                <TestimonialCard
-                  avatar={
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__cVxVg)}
-                      displayHeight={"44px"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"44px"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/image_lab_2024/images/imagePng29.png",
-                        fullWidth: 88,
-                        fullHeight: 88,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  }
+                
+                {/* <TestimonialCard
                   className={classNames(
                     "__wab_instance",
                     sty.testimonialCard___3XFxL
@@ -710,14 +748,44 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                     displayWidth={"100%"}
                     loading={"lazy"}
                     src={{
-                      src: "/plasmic/image_lab_2024/images/contentResultAvif.avif",
+                      src: "/media/hair-landing/testimonials/1. Jacob.jpg",
                       fullWidth: 486,
                       fullHeight: 480,
                       aspectRatio: undefined
                     }}
                   />
-                </TestimonialCard>
-                <TestimonialCard
+                </TestimonialCard> */}
+                {beforeAfters.map((beforeAfter) => (
+                  <TestimonialCard
+                    className={classNames(
+                      "__wab_instance",
+                      sty.testimonialCard__rFqgo
+                    )}
+                    id={beforeAfter.id}
+                    subtitle={beforeAfter.subtitle}
+                    title={beforeAfter.title}
+                  >
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img___2Nkey)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"100%"}
+                      loading={"lazy"}
+                      src={{
+                        src: beforeAfter.img,
+                        fullWidth: 486,
+                        fullHeight: 480,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  </TestimonialCard>
+                ))}
+                
+                {/* <TestimonialCard
                   avatar={
                     <PlasmicImg__
                       alt={""}
@@ -810,7 +878,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                       aspectRatio: undefined
                     }}
                   />
-                </TestimonialCard>
+                </TestimonialCard> */}
               </TestimonialsSlider>
             </div>
           </section>
