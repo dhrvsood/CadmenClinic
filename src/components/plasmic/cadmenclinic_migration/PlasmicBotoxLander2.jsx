@@ -1949,23 +1949,6 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                   {"Results typically begin to appear within 2-3 sessions, however it is critical to follow our post-treatment care to ensure you are getting optimal results."}
                 </div>
               </Stack__>
-              <PlasmicImg__
-                alt={""}
-                className={classNames(sty.img__hKjVf)}
-                displayHeight={"auto"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={"100%"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={"auto"}
-                loading={"lazy"}
-                src={{
-                  src: "/plasmic/image_lab_2024/images/imagePng11.png",
-                  fullWidth: 686,
-                  fullHeight: 400,
-                  aspectRatio: undefined
-                }}
-              />
 
               <Link href='https://cadmenclinic.ca.zenoti.com/webstoreNew/services' target="_blank" className='mt-[10px] w-full md:w-auto'>
                 <button className='button w-full md:w-auto'>Book Now</button>

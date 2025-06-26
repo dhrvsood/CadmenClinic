@@ -3944,7 +3944,8 @@
 }
 .botoxAppointmentSection > :global(.__wab_flex-container) {
   flex-direction: row;
-  align-items: center;
+  /* align-items: center; */
+  align-items: flex-start;
   justify-content: center;
   margin-left: calc(0px - 20px);
   width: calc(100% + 20px);
@@ -4517,6 +4518,7 @@
 .img__m5RlW {
   object-fit: cover;
   max-width: 100%;
+  border-radius: 12px;
 }
 .img__m5RlW > picture > img {
   object-fit: cover;
@@ -4586,7 +4588,8 @@
 }
 .afterTheTreatmentSection > :global(.__wab_flex-container) {
   flex-direction: row;
-  align-items: center;
+  /* align-items: center; */
+  align-items: flex-start;
   justify-content: center;
   margin-left: calc(0px - 132px);
   width: calc(100% + 132px);
@@ -4713,6 +4716,7 @@
   }
 }
 .img__pM6Cj {
+  border-radius: 12px;
   object-fit: cover;
   max-width: 100%;
 }
