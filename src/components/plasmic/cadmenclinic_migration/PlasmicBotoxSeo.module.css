@@ -841,7 +841,8 @@
   position: relative;
   width: 100%;
   height: auto;
-  max-width: 660px;
+  /* max-width: 660px; */
+  max-width: 1200px;
   min-width: 0;
   padding: 0px;
 }
@@ -5660,6 +5661,7 @@
   }
 }
 .chooseBotoxSection {
+  background: url("../../../../public/graphics/circlesSvg.svg") var(--light-brown);
   display: grid;
   position: relative;
   align-content: flex-start;

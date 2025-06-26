@@ -1962,6 +1962,38 @@ function PlasmicBotoxLander2__RenderFunc(props) {
             data-plasmic-override={overrides.chooseBotoxSection}
             className={classNames(projectcss.all, sty.chooseBotoxSection)}
           >
+            <Stack__
+              as={"div"}
+              data-plasmic-name={"beforeAfterHeader"}
+              data-plasmic-override={overrides.beforeAfterHeader}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.beforeAfterHeader)}
+            >
+              <h2
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h2,
+                  projectcss.__wab_text,
+                  sty.h2__vb63O
+                )}
+              >
+                <React.Fragment>
+                  <React.Fragment>{"Why Do Clients Trust "}</React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{
+                      fontStyle: "italic",
+                      fontWeight: 500,
+                      color: "#D19D51"
+                    }}
+                  >
+                    {"CADMEN Clinic"}
+                  </span>
+                  <React.Fragment>{"?"}</React.Fragment>
+                </React.Fragment>
+              </h2>
+            </Stack__>
+
             <div
               style={{
                 width: '95%',
