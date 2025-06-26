@@ -1073,7 +1073,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                 infinite: false,
                 arrows: false,
                 speed: 500,
-                slidesToShow: windowWidth > 768 ? 3.1 : 1.1,
+                slidesToShow: windowWidth > 768 ? 3.2 : 1.1,
                 slidesToScroll: windowWidth > 768 ? 3 : 1
               }}
               handleButtonClick={() => router.push('https://cadmenclinic.ca.zenoti.com/webstoreNew/services')}
@@ -1087,7 +1087,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                 pillUnit={"/ Regular price"}
                 className={classNames(
                   "__wab_instance",
-                  sty.affordableBotoxCard__v1OXt
+                  sty.affordableBotoxCard__package
                 )}
                 items={
                   [
@@ -1111,7 +1111,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                 pillUnit={"/ Regular price"}
                 className={classNames(
                   "__wab_instance",
-                  sty.affordableBotoxCard__v1OXt
+                  sty.affordableBotoxCard__package
                 )}
                 items={
                   [
@@ -1128,14 +1128,14 @@ function PlasmicBotoxLander2__RenderFunc(props) {
               />
               {/* 3. 6 Mesotherapy Vitamin Sessions */}
               <AffordableBotoxCard
-                name={'6 Mesotherapy ("Meso") Vitamin Sessions'}
+                name={'6 Mesotherapy Vitamin Sessions'}
                 perUnit={"$2,399"}
                 unitWording={"/ New Patient Special"}
                 price={"$1,999"}
                 pillUnit={"/ Regular price"}
                 className={classNames(
                   "__wab_instance",
-                  sty.affordableBotoxCard__v1OXt
+                  sty.affordableBotoxCard__package
                 )}
                 items={
                   [
@@ -1146,7 +1146,6 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                     },
                     {
                       title: "Ideal for patients seeking a healthier and nourished scalp while combatting hair loss through blocking DHT levels and stimulating new follicle growth",
-                      description: "throughout your PRP process increases longevity of your results"
                     }
                   ]
                 }
@@ -1161,7 +1160,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                 pillUnit={"/ Regular price"}
                 className={classNames(
                   "__wab_instance",
-                  sty.affordableBotoxCard__v1OXt
+                  sty.affordableBotoxCard__package
                 )}
                 items={
                   [
@@ -1186,7 +1185,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                 pillUnit={"/ Regular price"}
                 className={classNames(
                   "__wab_instance",
-                  sty.affordableBotoxCard__v1OXt
+                  sty.affordableBotoxCard__package
                 )}
                 items={
                   [
@@ -1211,7 +1210,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                 pillUnit={"/ Regular price"}
                 className={classNames(
                   "__wab_instance",
-                  sty.affordableBotoxCard__v1OXt
+                  sty.affordableBotoxCard__package
                 )}
                 items={
                   [
