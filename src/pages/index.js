@@ -91,7 +91,7 @@ const Home = () => {
           "markDefs": []
         }
       ],
-      "text": "We provide results-driven, medical-grade services backed by science and carefully selected to ensure our treatments truly make a difference.",
+      "text": "We provide results-driven, medical-grade services backed by science and carefully selected to ensure our treatments truly make a difference - that is what sets CADMEN Clinic apart.",
     }
   ]
   const offerCards = [
@@ -148,28 +148,6 @@ const Home = () => {
       "unitText": "3 Vails",
       "priceFrom": false,
       "serviceId": "sculptra"
-    }
-  ]
-  const reviews = [
-    {
-      "content": "CADMEN Clinic has been my go-to for my hair restoration needs. They take a better approach to <b>PRP</b> which produced much better results than my experience at other clinics. I was seeing noticeable improvements within 2 <b>PRP</b> treatments. Definitely recommend to anyone who’s evaluating a fully natural solution – their nurses are the best in the business!",
-      "image": "/media/home/testimonials/user1.jpeg"
-    },
-    {
-      "content": "I had a great experience going to this hair-focused clinic, where they truly take pride in their results. I was unfamiliar with Exosomes until Mikaela explained the advantages of combining them with <b>PRP</b>. I'm very happy with my results and am now on my fourth treatment.",
-      "image": "/media/home/testimonials/user2.jpeg"
-    },
-    {
-      "content": "I had an amazing time at CADMEN clinic. Team had performed 5 <b>PRP</b> Treatment and result are amazing and drastically improved my hair density and texture. Thank you to CADMEN clinic for their amazing service and hope to see you soon.",
-      "image": "/media/home/testimonials/user3.jpeg"
-    },
-    {
-      "content": "The team here is 10/10. They’re knowledgeable but also super personable—like you're chatting with a friend who just happens to be amazing at aesthetics. My Sculptra treatment was done so precisely, and I love how it turned out! I wouldn’t trust anyone else now",
-      "image": "/media/home/testimonials/user4.avif"
-    },
-    {
-      "content": "Excellent experience getting <b>botox</b> here. From the providers to the front desk staff, this place is the gold standard in aesthetics in Toronto. If you are considering getting any kind of cosmetic treatment, look no further than CADMEN!",
-      "image": "/media/home/testimonials/user5.avif"
     }
   ]
 
@@ -251,7 +229,7 @@ const Home = () => {
               infinite: false,
               arrows: false,
               speed: 500,
-              slidesToShow: windowWidth > 768 ? 2.1 : 1.1,
+              slidesToShow: windowWidth > 768 ? 3.1 : 1.1,
               slidesToScroll: windowWidth > 768 ? 2 : 1
             }}
             handleButtonClick={() => router.push('https://cadmenclinic.ca.zenoti.com/webstoreNew/services')}
