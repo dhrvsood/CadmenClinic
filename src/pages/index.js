@@ -54,7 +54,7 @@ const Home = () => {
           "markDefs": []
         }
       ],
-      "text": "Our license professionals brings decades of experience in medical-grade hair restoration and aesthetics, ensuring each treatment is safe, effective, and delivered with precision.",
+      "text": "Our license professionals brings decades of experience in medical-grade hair restoration and aesthetics, ensuring each treatment is safe, effective, and delivered with expert precision.",
     },
     {
       "icon": '/icons/star.svg',
