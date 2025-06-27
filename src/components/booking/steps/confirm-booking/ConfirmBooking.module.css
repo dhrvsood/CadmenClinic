@@ -1,0 +1,114 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  max-width: 874px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.top {
+  display: flex;
+  width: 100%;
+}
+
+.topLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #EAECEE;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.topRight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #EAECEE;
+  border-radius: 12px;
+  flex: 1;
+  padding-left: 20px;
+}
+
+.edit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.bottom {
+  padding: 20px;
+  border: 1px solid #EAECEE;
+  border-radius: 12px;
+}
+
+.serviceInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.serviceDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: 600;
+  color: #D19D51;
+}
+
+.personalInfoList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.personalInfoItem {
+  display: flex;
+  align-items: center;
+  gap: 12px
+}
+
+.totalWrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.totalText {
+  font-size: 32px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.totalPrice {
+  font-size: 20px;
+  font-weight: 600;
+  color: #4C8D91;
+}
+
+.textLeft {
+  text-align: left;
+}

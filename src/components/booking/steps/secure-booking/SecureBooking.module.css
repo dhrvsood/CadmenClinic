@@ -1,0 +1,52 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 874px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 720px) {
+  .bold {
+    font-size: 13px;
+  }
+}
+
+.stacked {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.addCardWrap {
+  width: 100%;
+}
+
+.paymentForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.disclaimer {
+  font-size: 14px;
+  color: #595959;
+  font-style: italic;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 700px;
+}

@@ -208,7 +208,7 @@ const Navbar = () => {
                             <p>(416) 551-1137</p>
                           </a>
                           {!router.pathname.includes('https://cadmenclinic.ca.zenoti.com/webstoreNew/services') ? (
-                            <Link href='https://cadmenclinic.ca.zenoti.com/webstoreNew/services' className=''>
+                            <Link href='/book-now' className=''>
                               <button className='button navbar !py-[14px] !px-5 max-sm:w-full'>Book Now</button>
                             </Link>
                           ) : null}
