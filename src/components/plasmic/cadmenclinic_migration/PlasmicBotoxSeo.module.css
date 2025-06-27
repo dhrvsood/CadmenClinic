@@ -3012,17 +3012,14 @@
 }
 @media (max-width: 1200px) {
   .ctaSection {
-    /* background: url("/plasmic/image_lab_2024/images/ctaBgSvg.svg") top 50% left 50% / cover no-repeat,
-      rgba(6, 67, 67, 1); */
-    background: #944839;
+    background: url("../../../../public/graphics/circlesSvgNoMidLine.svg") top 50% right 50% / cover no-repeat,
+    #9a7f71;
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .ctaSection {
+    background: #9a7f71;
     width: 100%;
-    /* background: url("/plasmic/image_lab_2024/images/ctaMobileBgSvg.svg") top 50% left 50% / contain no-repeat,
-      rgba(6, 67, 67, 1); */
-      background: #944839;
     grid-column-start: 1 !important;
     grid-column-end: -1 !important;
     padding: 80px 16px;

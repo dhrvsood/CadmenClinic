@@ -1615,7 +1615,8 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                 <button className='button w-full md:w-auto'>Book Now</button>
               </Link>
 
-              
+            
+            {/* image section for "preparing for your hair restoration appointment " */}
             </div>
             <Stack__
               as={"div"}
@@ -1630,7 +1631,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                     ? "200px"
                     : hasVariant(globalVariants, "screen", "midsize")
                     ? "100%"
-                    : "auto"
+                    : "641px"
                 }
                 displayMaxHeight={"none"}
                 displayMaxWidth={"100%"}
@@ -1639,7 +1640,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                 displayWidth={
                   hasVariant(globalVariants, "screen", "mobileOnly")
                     ? "100%"
-                    : "auto"
+                    : "641px"
                 }
                 loading={"lazy"}
                 src={{
@@ -1648,6 +1649,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                   fullHeight: 1115,
                   aspectRatio: undefined
                 }}
+                style={{ height: "641px", width: "100%", objectFit: "cover" }}
               />
             </Stack__>
           </Stack__>
@@ -1664,11 +1666,15 @@ function PlasmicBotoxLander2__RenderFunc(props) {
               <PlasmicImg__
                 alt={""}
                 className={classNames(sty.img__pM6Cj)}
+                // displayHeight={
+                //   hasVariant(globalVariants, "screen", "midsize")
+                //     ? "100%"
+                //     : "auto"
+                // }
                 displayHeight={
-                  hasVariant(globalVariants, "screen", "midsize")
-                    ? "100%"
-                    : "auto"
+                  hasVariant(globalVariants, "screen", "midsize") ? "300px" : "auto"
                 }
+                displayWidth="100%"
                 displayMaxHeight={"none"}
                 displayMaxWidth={"100%"}
                 displayMinHeight={"0"}
@@ -1681,6 +1687,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                   fullHeight: 1423,
                   aspectRatio: undefined
                 }}
+                style={{ height: "auto", width: "100%", objectFit: "cover" }}
               />
             </div>
             <div className={classNames(projectcss.all, sty.freeBox__fBcEx)}>
