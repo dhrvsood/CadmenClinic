@@ -13,7 +13,15 @@ const IconImageTextCard = ({ icon, image, title, text }) => {
         </h4>
       </div>
       <div className='flex flex-col p-[20px] pt-[50px] mt-[-30px] bg-white rounded-[16px] gap-[24px]'>
-        <Image src={image} width={386} height={262} alt='' />
+        {/* <Image src={image} width={386} height={262} alt=''/> */}
+        <div className="relative w-full h-[262px] rounded-[16px] overflow-hidden">
+          <Image
+            src={image}
+            alt=''
+            fill
+            className='object-cover'
+          />
+        </div>
         <p>{text}</p>
       </div>
     </div>

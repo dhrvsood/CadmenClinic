@@ -216,7 +216,7 @@ const Home = () => {
 
       {/* Choosing CADMEN */}
       <section className='overflow-hidden bg-dawnPink bg-[url(/bg/patients-choose-bg.svg)] bg-cover py-[80px] max-sm:py-[40px]'>
-        <div className='wrapper'>
+        <div className='wideWrapper'>
           <div className='m-auto mb-[58px] max-w-[840px] text-center'>
             <h2 className='d-h2'>
               Why Our Patients <span className='blue-italic text-gold-base'>Choose</span>{' '}
@@ -224,7 +224,7 @@ const Home = () => {
             </h2>
           </div>
 
-          <WhyOurPatientsSlider
+          {/* <WhyOurPatientsSlider
             settings={{
               dots: false,
               infinite: false,
@@ -244,10 +244,10 @@ const Home = () => {
                 text={card.text}
               />
             ))}
-          </WhyOurPatientsSlider>
+          </WhyOurPatientsSlider> */}
 
           {/* CONDITIONAL LOGIC TO REMOVE SLIDER ON DESKTOP SCREENS */}
-          {/* {isDesktop ? (
+          {isDesktop ? (
             <div className='flex justify-between gap-[20px]'>
               {whyChooseCards.map((card, index) => (
                 <IconImageTextCard
@@ -281,7 +281,7 @@ const Home = () => {
                 />
               ))}
             </WhyOurPatientsSlider>
-          )} */}
+          )}
         </div>
       </section>
 
