@@ -202,7 +202,7 @@ export const hairServices = {
                 id: 3,
                 title: "Regrowth and Regeneration",
                 description: "Over time, the Exosomes block DHT levels and activate dormant hair follicles. This results in less hair thinning, shedding, and significantly more hair growth. Patients have also experienced less dandruff, healthier scalp, and nourished hair follicles after their treatments.",
-                img: "/media/services/common/3-nourshiment.jpg"
+                img: "/media/services/common/3-nourishment.jpg"
             }
         ],
         beforeAfters: [
