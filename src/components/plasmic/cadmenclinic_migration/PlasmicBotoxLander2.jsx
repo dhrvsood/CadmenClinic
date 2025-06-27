@@ -68,6 +68,7 @@ import AlternatingInfoCard from "@/components/AlternatingInfoCard/AlternatingInf
 
 import { useWindowSize } from 'react-use'
 import VideoSection from "@/components/VideoSection/VideoSection";
+import TreatmentPackagesSlider from "@/components/TreatmentPackagesSlider/TreatmentPackagesSlider";
 
 createPlasmicElementProxy;
 
@@ -140,6 +141,98 @@ function PlasmicBotoxLander2__RenderFunc(props) {
         subtitle: "Results after 6 Exosome Sessions",
         img: "/media/testimonials/Nick.jpg"
     },
+  ];
+  const treatmentPackages = [
+    {
+      id: 1,
+      title: "4 PRP Hair Restoration",
+      specialPrice: "$1,799",
+      regularPrice: "$2,399",
+      items: [
+        {
+          title: "7-Week Program to Re-Grow Your Hair",
+          description: "Treatments scheduled every 2 weeks to ensure optimal results"
+        }, 
+        {
+          title: "Ideal for patients seeking to effectively stimulate natural hair growth to combat ongoing hair loss, shedding, and thinning"
+        }
+      ]
+    },
+    {
+      id: 2,
+      title: "3 Exosome Therapy",
+      specialPrice: "$1,799",
+      regularPrice: "$2,399",
+      items: [
+        {
+          title: "7-Week Program to Prevent Hair Loss",
+          description: "Treatments scheduled every 2 weeks to ensure optimal results"
+        }, 
+        {
+          title: "Ideal for patients seeking to address the root cause of hair loss and stimulate hair growth by blocking DHT levels and leverage powerful growth factors"
+        }
+      ]
+    }, 
+    {
+      id: 3,
+      title: "6 Mesotherapy Vitamin",
+      specialPrice: "$1,999",
+      regularPrice: "$2,399",
+      items: [
+        {
+          title: "11-Week Program to Nourish Scalp & Prevent Loss",
+          description: "Treatments scheduled every 2 weeks to ensure optimal results"
+        }, 
+        {
+          title: "Ideal for patients seeking a healthier and nourished scalp while combatting hair loss through blocking DHT levels and stimulating new follicle growth"
+        }
+      ]
+    }, 
+    {
+      id: 4,
+      title: "3 PRP + \n3 Exosome",
+      specialPrice: "$3,099",
+      regularPrice: "$4,199",
+      items: [
+        {
+          title: "11-Week Program to Re-Grow Your Hair and Prevent Further Hair Loss",
+          description: "Treatments scheduled every 2 weeks to ensure optimal results"
+        }, 
+        {
+          title: "Our BEST-SELLING package for anyone seeking the full solution – re-grow your hair while blocking DHT to prevent further hair loss"
+        }
+      ]
+    }, 
+    {
+      id: 5,
+      title: "3 PRP + \n6 Mesotherapy",
+      specialPrice: "$2,999",
+      regularPrice: "$4,199",
+      items: [
+        {
+          title: "9-Week Program to Re-Grow Your Hair and Nourish Your Scalp with Essential Vitamins & Growth Factors",
+          description: "Treatments scheduled every 1 week for optimal result"
+        }, 
+        {
+          title: "Ideal for patients seeking optimal results for new hair growth – a nourished scalp throughout your PRP process increases longevity of your results"
+        }
+      ]
+    }, 
+    {
+      id: 6,
+      title: "3 Exosome + \n3 Mesotherapy",
+      specialPrice: "$3,499",
+      regularPrice: "$4,799",
+      items: [
+        {
+          title: "9-Week Program to Re-Grow Your Hair, Prevent Further Hair Loss, and Nourish Your Scalp",
+          description: "Treatments scheduled every 1 week for optimal result"
+        }, 
+        {
+          title: "Curated for patients ineligible for PRP Hair Restoration, pair Exosome Hair Therapy with Mesotherapy Vitamins to unlock powerful results"
+        }
+      ]
+    }, 
   ];
   const section8cards = [
     {
@@ -1012,167 +1105,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__hib93)}
             >
-            
-            <WhyOurPatientsSlider
-              settings={{
-                dots: false,
-                infinite: false,
-                arrows: false,
-                speed: 500,
-                slidesToShow: windowWidth > 768 ? 3.2 : 1.1,
-                slidesToScroll: windowWidth > 768 ? 3 : 1
-              }}
-              handleButtonClick={() => router.push('https://cadmenclinic.ca.zenoti.com/webstoreNew/services')}
-            >
-              {/* 1. 4 PRP Hair Restoration Sessions */}
-              <AffordableBotoxCard
-                name={"4 PRP Hair Restoration Sessions"}
-                perUnit={"$2,399"}
-                unitWording={"/ New Patient Special"}
-                price={"$1,799"}
-                pillUnit={"/ Regular price"}
-                className={classNames(
-                  "__wab_instance",
-                  sty.affordableBotoxCard__package
-                )}
-                items={
-                  [
-                    {
-                      title: "7-Week Program to Re-Grow Your Hair",
-                      description:
-                        "Treatments scheduled every 2 weeks to ensure optimal results"
-                    },
-                    {
-                      title: "Ideal for patients seeking to effectively stimulate natural hair growth to combat ongoing hair loss, shedding, and thinning",
-                    }
-                  ]
-                }
-              />
-              {/* 2. 3 Exosome Hair Therapy Sessions */}
-              <AffordableBotoxCard
-                name={"3 Exosome Hair Therapy Sessions"}
-                perUnit={"$2,399"}
-                unitWording={"/ New Patient Special"}
-                price={"$1,799"}
-                pillUnit={"/ Regular price"}
-                className={classNames(
-                  "__wab_instance",
-                  sty.affordableBotoxCard__package
-                )}
-                items={
-                  [
-                    {
-                      title: "7-Week Program to Prevent Hair Loss",
-                      description:
-                        "Treatments scheduled every 2 weeks to ensure optimal results"
-                    },
-                    {
-                      title: "Ideal for patients seeking to address the root cause of hair loss and stimulate hair growth by blocking DHT levels and leverage powerful growth factors",
-                    }
-                  ]
-                }
-              />
-              {/* 3. 6 Mesotherapy Vitamin Sessions */}
-              <AffordableBotoxCard
-                name={'6 Mesotherapy Vitamin Sessions'}
-                perUnit={"$2,399"}
-                unitWording={"/ New Patient Special"}
-                price={"$1,999"}
-                pillUnit={"/ Regular price"}
-                className={classNames(
-                  "__wab_instance",
-                  sty.affordableBotoxCard__package
-                )}
-                items={
-                  [
-                    {
-                      title: "11-Week Program to Nourish Scalp & Prevent Loss",
-                      description:
-                        "Treatments scheduled every 1 week to ensure optimal results"
-                    },
-                    {
-                      title: "Ideal for patients seeking a healthier and nourished scalp while combatting hair loss through blocking DHT levels and stimulating new follicle growth",
-                    }
-                  ]
-                }
-              />
-              {/* 4. 3 PRP + 3 Exosome Sessions */}
-              <AffordableBotoxCard
-                // best
-                name={"3 PRP + 3 Exosome Sessions"}
-                perUnit={"$4,199"}
-                unitWording={"/ New Patient Special"}
-                price={"$3,099"}
-                pillUnit={"/ Regular price"}
-                className={classNames(
-                  "__wab_instance",
-                  sty.affordableBotoxCard__package
-                )}
-                items={
-                  [
-                    {
-                      title: "11-Week Program to Re-Grow Your Hair and Prevent Further Hair Loss",
-                      description:
-                        "Treatments scheduled every 2 weeks for optimal results"
-                    },
-                    {
-                      title: "Our BEST-SELLING package for anyone seeking the full solution – re-grow your hair while blocking DHT to prevent further hair loss",
-                    }
-                  ]
-                
-                }
-              />
-              {/* 5. 3 PRP + 6 Meso Sessions */}
-              <AffordableBotoxCard
-                name={"3 PRP + 6 Meso Sessions"}
-                perUnit={"$4,199"}
-                unitWording={"/ New Patient Special"}
-                price={"$2,999"}
-                pillUnit={"/ Regular price"}
-                className={classNames(
-                  "__wab_instance",
-                  sty.affordableBotoxCard__package
-                )}
-                items={
-                  [
-                    {
-                      title: "9-Week Program to Re-Grow Your Hair and Nourish Your Scalp with Essential Vitamins & Growth Factors",
-                      description:
-                        "Treatments scheduled every 1 week for optimal result"
-                    },
-                    {
-                      title: "Ideal for patients seeking optimal results for new hair growth – a nourished scalp throughout your PRP process increases longevity of your results",
-                    }
-                  ]
-                
-                }
-              />
-              {/* 6. 3 Exosome + 6 Meso Sessions */}
-              <AffordableBotoxCard
-                name={"3 Exosome + 6 Meso Sessions"}
-                perUnit={"$4,799"}
-                unitWording={"/ New Patient Special"}
-                price={"$3,499"}
-                pillUnit={"/ Regular price"}
-                className={classNames(
-                  "__wab_instance",
-                  sty.affordableBotoxCard__package
-                )}
-                items={
-                  [
-                    {
-                      title: "9-Week Program to Re-Grow Your Hair, Prevent Further Hair Loss, and Nourish Your Scalp",
-                      description:
-                        "Treatments scheduled every 1 week for optimal results"
-                    },
-                    {
-                      title: "Curated for patients ineligible for PRP Hair Restoration, pair Exosome Hair Therapy with Mesotherapy Vitamins to unlock powerful results",
-                    }
-                  ]
-                
-                }
-              />
-            </WhyOurPatientsSlider>
+            <TreatmentPackagesSlider treatmentPackages={treatmentPackages} />
 
             </Stack__>
           </Stack__>

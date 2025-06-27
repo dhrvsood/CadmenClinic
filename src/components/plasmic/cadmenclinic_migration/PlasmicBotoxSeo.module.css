@@ -2370,8 +2370,8 @@
 .affordableBotoxCard__package:global(.__wab_instance) {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Ensures items are evenly spaced */
   height: 100%;
+  flex: 1;
 }
 
 .affordableBotoxCard__v1OXt:global(.__wab_instance) {

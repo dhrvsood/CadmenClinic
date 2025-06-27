@@ -33,12 +33,15 @@
 }
 
 .card {
-  display: flex;
+  /* display: flex;
   position: relative;
   perspective: 1000px;
   overflow: hidden;
   max-width: 426px;
   min-width: 426px;
+  flex-direction: column; */
+  height: 100%;
+  display: flex;
   flex-direction: column;
 }
 
