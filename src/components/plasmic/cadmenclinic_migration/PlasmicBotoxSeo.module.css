@@ -5661,7 +5661,7 @@
   }
 }
 .chooseBotoxSection {
-  background: url("../../../../public/graphics/circlesSvg.svg") var(--light-brown);
+  background: var(--light-brown);
   display: grid;
   position: relative;
   align-content: flex-start;

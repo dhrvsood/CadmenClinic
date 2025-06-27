@@ -1,8 +1,41 @@
 .card {
-  margin: 3rem 0;
+  /* margin: 3rem 0;
+  width: 100%; */
+  display: flex;
+  flex-direction: column;
   width: 100%;
+  margin: 3rem 0;
+  position: relative;
 }
 
+.textContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 48px;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 50%;
+  border-radius: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+  /* display: flex; new addition */
+}
+
+/* Odd: text left, image right → push image inward */
+.card[data-id]:nth-child(odd) .imageWrapper {
+  margin-left: 3rem;
+  max-width: calc(50% - 3rem);
+}
+
+/* Even: image left, text right → pull image inward */
+.card[data-id]:nth-child(even) .imageWrapper {
+  margin-right: 3rem;
+  max-width: calc(50% - 3rem);
+}
 .contentWrapper {
   display: flex;
   flex-direction: row;
@@ -49,13 +82,6 @@
   z-index: 2;
 }
 
-.textContent {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
 .title {
   font-weight: 500;
   font-size: 32px;
@@ -99,13 +125,6 @@
 }
 
 /* === IMAGE === */
-.imageWrapper {
-  position: relative;
-  width: 50%;
-  border-radius: 16px;
-  overflow: hidden;
-  flex-shrink: 0;
-}
 
 .image {
   border-radius: 16px;
@@ -153,5 +172,11 @@
   .image {
     border-radius: 12px;
     object-fit: cover !important;
+  }
+
+  .card[data-id]:nth-child(odd) .imageWrapper,
+  .card[data-id]:nth-child(even) .imageWrapper {
+    margin: 0;
+    max-width: 100%;
   }
 }
