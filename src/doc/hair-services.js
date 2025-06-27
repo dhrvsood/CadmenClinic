@@ -163,24 +163,24 @@ export const hairServices = {
         }
     },
     exosomes: {
-        "general": {
-            "strikePrice": "$799",
-            "salePrice": "$399",
-            "shortTitle": "Exosomes",
-            "longTitle": "Exosome Hair Therapy"
+        general: {
+            strikePrice: "$799",
+            salePrice: "$399",
+            shortTitle: "Exosomes",
+            longTitle: "Exosome Hair Therapy"
         },
-        "hero": {
-            "img": "/media/services/exosome.jpg",
-            "tagline": "Block DHT & \nBoost Growth",
-            "description": "clinically proven Exosomes – maximum results with minimum hassle."
+        hero: {
+            img: "/media/services/exosome.jpg",
+            tagline: "Block DHT & \nBoost Growth",
+            description: "clinically proven Exosomes – maximum results with minimum hassle."
         },
-        "whyPeopleChoose": {
-            "description": "Chosen by thousands of clients and backed by a 98% success rate, Exosome Hair Therapy offers a safe and effective solution for natural hair regrowth",
-            "what": {
+        whyPeopleChoose: {
+            description: "Chosen by thousands of clients and backed by a 98% success rate, Exosome Hair Therapy offers a safe and effective solution for natural hair regrowth",
+            what: {
                 "description": "Exosomes are microscopic powerhouses derived from stem cells, packed with growth factors, proteins, and signaling molecules. Ideal for dealing with thinning hair, male/female pattern baldness, or early-stage baldness. Exosomes blocks DHT levels to ensure the root cause of your hair loss is under control.",
                 "img": "/media/services/prp/3.1.jpg",
             },
-            "why": {
+            why: {
                 "description": "Ideal for early-stage hair loss and addressing its root cause while stimulating growth. This therapy is 100% natural, non-invasive, and has no downtime. Exosomes at CADMEN Clinic are proprietarily developed with our in-house doctors and scientists based in Canada and Spain.",
                 "img": "/media/services/prp/3.2.jpg",
             }
@@ -190,19 +190,19 @@ export const hairServices = {
                 id: 1,
                 title: "Scalp Cleaning & Preparation",
                 description: "The scalp is thoroughly cleansed and prepped to create a clean, sterile surface. A numbing cream may be applied to make the procedure more comfortable (free of charge).",
-                img: "/media/services/prp/4.1.jpg"
+                img: "/media/services/common/1-scalp-cleaning.jpg"
             },
             {
                 id: 2,
                 title: "Microneedling with Exosomes",
                 description: "Our Dermapen device is then used to microneedle our Exosomes solution on to your scalp, creating tiny microchannels on your scalp for deeper absorption of Exosomes.",
-                img: "/media/services/prp/4.2.jpg"
+                img: "/media/services/exo/2-microneedling.jpg"
             },
             {
                 id: 3,
                 title: "Regrowth and Regeneration",
                 description: "Over time, the Exosomes block DHT levels and activate dormant hair follicles. This results in less hair thinning, shedding, and significantly more hair growth. Patients have also experienced less dandruff, healthier scalp, and nourished hair follicles after their treatments.",
-                img: "/media/services/prp/4.3.jpg"
+                img: "/media/services/common/3-nourshiment.jpg"
             }
         ],
         beforeAfters: [
@@ -320,27 +320,26 @@ export const hairServices = {
         }
     },
     mesotherapy: {
-        "general": {
-            "strikePrice": "$399",
-            "salePrice": "$199",
-            "shortTitle": "Mesotherapy",
-            "longTitle": "Mesotherapy Vitamins"
+        general: {
+            strikePrice: "$399",
+            salePrice: "$199",
+            shortTitle: "Mesotherapy",
+            longTitle: "Mesotherapy Vitamins"
         },
-        "hero": {
-            "img": "/media/services/meso.webp",
-            "tagline": "Regrow Hair & Nourish Scalp",
-            "description": "clinically proven Mesotherapy Vitamins."
+        hero: {
+            img: "/media/services/meso/meso landing.jpg",
+            tagline: "Regrow Hair & Nourish Scalp",
+            description: "clinically proven Mesotherapy Vitamins."
         },
-        "whyPeopleChoose": {
-            "description": "Chosen by 1,500+ clients and backed by a 99% success rate, Mesotherapy Vitamins offers a safe and effective solution for natural hair regrowth and scalp nourishment",
-            "what": {
-                "description": "Mesotherapy Vitamins is a non-invasive treatment that helps revive your scalp, reactivate dormant hair follicles, and stimulate natural hair growth. Packed with a powerful blend of minerals, amino acids, and growth factors, the vitamins nourish your scalp directly at the root.",
-                "img": "/media/services/prp/3.1.jpg",
+        whyPeopleChoose: {
+            description: "Chosen by 1,500+ clients and backed by a 99% success rate, Mesotherapy Vitamins offers a safe and effective solution for natural hair regrowth and scalp nourishment",
+            what: {
+                description: "Mesotherapy Vitamins is a non-invasive treatment that helps revive your scalp, reactivate dormant hair follicles, and stimulate natural hair growth. Packed with a powerful blend of minerals, amino acids, and growth factors, the vitamins nourish your scalp directly at the root.",
+                img: "/media/services/prp/3.1.jpg",
             },
-            "why": {
-                "description": "If you are experiencing thinning, hair fall, or just want to bring your hair back to life, mesotherapy is the customized, science-backed solution that delivers real, visible 100% natural results.",
-                "img": "/media/services/prp/3.2.jpg",
-                "icon": "/icons/portrait-icon.svg"
+            why: {
+                description: "If you are experiencing thinning, hair fall, or just want to bring your hair back to life, mesotherapy is the customized, science-backed solution that delivers real, visible 100% natural results.",
+                img: "/media/services/prp/3.2.jpg",
             }
         },
         howItWorks: [
@@ -348,19 +347,19 @@ export const hairServices = {
                 id: 1,
                 title: "Scalp Cleaning & Preparation",
                 description: "The scalp is thoroughly cleansed and prepped to create a clean, sterile surface. A numbing cream may be applied to make the procedure more comfortable (free of charge).",
-                img: "/media/services/prp/4.1.jpg"
+                img: "/media/services/common/1-scalp-cleaning.jpg"
             },
             {
                 id: 2,
                 title: "Microinjections with Mesotherapy",
                 description: "Our mesotherapy vitamins, containing vitamins, amino acids, DHT blockers, and other growth factors, is then lightly injected into your scalp. Injections are not as deep as PRP Hair Restoration treatments, the goal of Mesotherapy is to stimulate local blood flow while increasing oxygen and nutrient delivery to the follicles.",
-                img: "/media/services/prp/4.2.jpg"
+                img: "/media/services/meso/2-microinjections.jpg"
             },
             {
                 id: 3,
                 title: "Nourishment and Hair Revitalization",
                 description: "Over time, the injected vitamins provides your scalp with the essential building blocks to promote stronger, thicker hair growth all while nourishing your follicles. Patients also experience significantly less dandruff and scalp itchiness as a result of a healthier scalp.",
-                img: "/media/services/prp/4.3.jpg"
+                img: "/media/services/common/3-nourishment.jpg"
             }
         ],
         beforeAfters: [
