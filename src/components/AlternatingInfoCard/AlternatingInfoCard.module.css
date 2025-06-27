@@ -33,8 +33,10 @@
 
 /* Even: image left, text right → pull image inward */
 .card[data-id]:nth-child(even) .imageWrapper {
-  margin-right: 3rem;
-  max-width: calc(50% - 3rem);
+  /* margin-right: 3rem;
+  max-width: calc(50% - 3rem); */
+  margin-left: 1rem;
+  max-width: calc(50% - 1rem);
 }
 .contentWrapper {
   display: flex;
