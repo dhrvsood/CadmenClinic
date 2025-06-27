@@ -166,7 +166,7 @@ function PlasmicOurLocationSection__RenderFunc(props) {
           <ContactCardNew
             className={classNames("__wab_instance", sty.contactCardNew__mSwSe)}
             content={"240 Queen St W (2nd Floor), Toronto, ON"}
-            destination={"https://maps.app.goo.gl/RizTXzKMnXVkUewB7"}
+            destination={"https://maps.app.goo.gl/wjAFNX9PbZc2AZ3z9"}
             title={"Visit Us"}
           >
             <PinIconSvgIcon
