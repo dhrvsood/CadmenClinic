@@ -163,7 +163,7 @@
 
 .gradButton {
   border-radius: 8px;
-  background: linear-gradient(97deg, #0C7A7B 0%, #39A7A8 33.56%, #1A6364 115.73%);
+  background: linear-gradient(97deg, #9A6B63 0%, #E0C2B8 33.56%, #9A6B63 115.73%);
   padding: 20px 82px;
   position: relative;
   width: 100%;
@@ -172,7 +172,7 @@
 }
 
 .gradButton:hover {
-  background: linear-gradient(97deg, #0C7A7B 0%, #39A7A8 33.56%, #1A6364 115.73%);
+  background: linear-gradient(97deg, #9A6B63 0%, #E0C2B8 33.56%, #9A6B63 115.73%);
 }
 
 .gradButton:hover .gradButtonOverlay {
