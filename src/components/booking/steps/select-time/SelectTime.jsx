@@ -1,6 +1,5 @@
 import { formatTime } from '@/helpers/time/datetime_formatter'
 import { useBookingStore } from '@/zustand/useBookingStore'
-import { DotLottiePlayer } from '@dotlottie/react-player'
 import { useEffect, useRef } from 'react'
 import Calendar from 'react-calendar'
 
@@ -93,7 +92,7 @@ const SelectTime = () => {
       />
       <div className={styles.selectors}>
       <div className={styles.calendarWrap}>
-        <LocalizationProvider dateAdapter={AdapterDayjs}>
+        {/* <LocalizationProvider dateAdapter={AdapterDayjs}>
           <DateCalendar
             className='rounded border border-gray-300 bg-white shadow'
             // classes={calClasses}
@@ -107,8 +106,8 @@ const SelectTime = () => {
             // disabled={showSkeleton}
             sx={styles.calendar}
           />
-        </LocalizationProvider>
-        {/* <Calendar
+        </LocalizationProvider> */}
+        <Calendar
           onChange={handleDateChange}
           value={selectedDate}
           className={styles.calendar}
@@ -116,8 +115,8 @@ const SelectTime = () => {
           prev2Label={null}
           minDate={
             new Date(
-              new Date().toLocaleString('en-US', {
-                timeZone: 'America/Chicago'
+              new Date().toLocaleString('en-CA', {
+                timeZone: 'America/Toronto'
               })
             )
           }
@@ -126,15 +125,11 @@ const SelectTime = () => {
           onActiveStartDateChange={handleMonthChange}
           maxDetail='month'
           minDetail='month'
-        /> */}
+        />
         {
           initialLoading && (
             <div className={styles.calendarLoader}>
-              <DotLottiePlayer
-                src='/lotties/pulsing-loader.lottie'
-                autoplay
-                loop
-              />
+              <div className={styles.spinner}></div>
             </div>
           )
         }
@@ -164,11 +159,7 @@ const SelectTime = () => {
               </div>
             ))
           ) : (
-            <DotLottiePlayer
-              src='/lotties/pulsing-loader.lottie'
-              autoplay
-              loop
-            />
+            <div className={styles.spinner}></div>
           )}
         </div>
       </div>
