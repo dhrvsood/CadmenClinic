@@ -84,6 +84,7 @@ const SecureBooking = () => {
         event.data.status === 'successful'
       ) {
         const bookingIsConfirmed = await confirmBooking()
+        console.log("Booking Confirmed?", bookingIsConfirmed)
 
         if (!bookingIsConfirmed) {
           addToast('Problem confirming booking. Please try again or select a new time.', 'error')

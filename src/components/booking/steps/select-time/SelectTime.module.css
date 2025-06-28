@@ -90,12 +90,12 @@
 }
 
 .active {
-  background-color: #4C8D91;
+  background-color: #9a7f71;
   color: white;
-  border-color: #4C8D91;
+  border-color: #9a7f71;
 
   &.active:hover {
-    background-color: #4C8D91;
+    background-color: #9a7f71;
   }
 }
 

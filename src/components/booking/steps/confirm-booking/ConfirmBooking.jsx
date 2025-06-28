@@ -68,11 +68,11 @@ const ConfirmBooking = () => {
           </div>
           <div className={styles.bottom}>
             <Link
-              href='https://maps.app.goo.gl/odiNPdCuBoCvJ6zn7'
+              href='https://maps.app.goo.gl/wjAFNX9PbZc2AZ3z9'
               target='_blank'
               className={`${sharedStyles.p} ${styles.textLeft}`}
             >
-              2033 W Roscoe St, Chicago, IL 60618
+              240 Queen St W (2nd Floor), Toronto, ON
             </Link>
           </div>
         </div>

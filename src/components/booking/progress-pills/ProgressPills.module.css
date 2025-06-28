@@ -21,9 +21,9 @@
   }
 
   &.complete {
-    border-color: #ECF6F6;
-    background: #ECF6F6;
-    color: #0C7A7B;
+    border-color: #ebdbd6;
+    background: #ebdbd6;
+    color: #9a7f71;
   }
 }
 

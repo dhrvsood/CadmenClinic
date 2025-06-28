@@ -23,7 +23,7 @@ const BookingConfirmed = () => {
   }, [])
 
   const calendarEvent = {
-    title: 'Appointment at ImageLab',
+    title: 'Appointment at CADMEN Clinic',
     description: bookingData.service.title,
     startDate: confirmedAppointment
       ? confirmedAppointment.invoice.items[0].start_time
@@ -31,7 +31,7 @@ const BookingConfirmed = () => {
     endDate: confirmedAppointment
       ? confirmedAppointment.invoice.items[0].end_time
       : devEndDate,
-    location: '2033 W Roscoe St, Chicago, IL 60618'
+    location: '240 Queen St W (2nd Floor), Toronto, ON'
   }
 
   const generateGoogleCalendarUrl = (event) => {
@@ -85,7 +85,7 @@ const BookingConfirmed = () => {
               icon='/icons/clock-icon-small-grey.svg'
             />
             <TextDetail
-              text='2033 W Roscoe St, Chicago, IL 60618'
+              text='240 Queen St W (2nd Floor), Toronto, ON'
               icon='/icons/map-pin-icon-small-grey.svg'
             />
           </div>

@@ -78,7 +78,7 @@
 .salePrice {
   font-size: 16px;
   font-weight: 500;
-  color: #4C8D91;
+  color: #9a7f71;
 }
 
 .strikePrice {
@@ -89,14 +89,14 @@
 
 .percentOff {
   font-size: 12px;
-  color: #4C8D91;
+  color: #9a7f71;
   font-weight: 500;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 6px 16px;
   border-radius: 999px;
-  background: #CDE7E6;
+  background: #ebdbd6;
 }
 
 .services {
@@ -116,7 +116,7 @@
   align-items: center;
 
   &.selected {
-    background-color: #4C8D91;
+    background-color: #9a7f71;
 
     &.service p {
       color: white;
@@ -246,7 +246,7 @@
   min-height: 100%;
   object-fit: cover;
 }
-
+s
 .modalTop {
   display: flex;
   gap: 8px;
@@ -260,13 +260,13 @@
 
 .modalPrice {
   font-size: 16px;
-  color: #4C8D91;
+  color: #9a7f71;
   font-weight: 500;
 }
 
 .checkBadge {
   margin-top: 3px;
-}
+} 
 
 .modalPriceWrap {
   display: flex;

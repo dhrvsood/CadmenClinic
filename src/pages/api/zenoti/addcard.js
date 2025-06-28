@@ -15,7 +15,7 @@ const addCard = async (req, res) => {
 
   try {
     const data = {
-      center_id: '497c7c01-c72a-4969-9d4c-54ba4726f13e',
+      center_id: process.env.ZENOTI_CENTER_ID,
       redirect_uri: `${'https://imagelab-full-git-shivang991-staging-image-lab.vercel.app'}/paymentsuccess`
     }
 
@@ -23,7 +23,7 @@ const addCard = async (req, res) => {
       method: 'post',
       url: `https://api.zenoti.com/v1/guests/${guestId}/accounts`,
       headers: {
-        Authorization: `${process.env.ZENOTI_AUTH}`,
+        Authorization: `apikey ${process.env.ZENOTI_AUTH}`,
         'Content-Type': 'application/json'
       },
       data: data
