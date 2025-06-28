@@ -1,7 +1,6 @@
 import { fetchPost } from '@/helpers/requests'
 import { removeDashes } from '@/helpers/strings/string_modifiers'
 import { useBookingStore } from '@/zustand/useBookingStore'
-import { DotLottiePlayer } from '@dotlottie/react-player'
 import { useEffect, useState } from 'react'
 
 import BookingHeader from '../../booking-header/BookingHeader'
@@ -105,7 +104,7 @@ const SecureBooking = () => {
   return (
     <div className={styles.wrap}>
       {checkingCard ? (
-        <DotLottiePlayer src='/lotties/pulsing-loader.lottie' autoplay loop />
+        <div className={styles.spinner}></div>
       ) : (
         <>
           <BookingHeader
@@ -118,11 +117,7 @@ const SecureBooking = () => {
           </BookingHeader>
           <div className={styles.addCardWrap}>
             {!paymentForm ? (
-              <DotLottiePlayer
-                src='/lotties/pulsing-loader.lottie'
-                autoplay
-                loop
-              />
+              <div className={styles.spinner}></div>
             ) : (
               <div className={styles.paymentForm}>
                 <CountdownTimer />
