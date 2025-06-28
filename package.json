@@ -6,11 +6,9 @@
     "dev": "next dev",
     "build": "next build && ts-node ./src/utils/sitemap.mjs",
     "start": "next start",
-    "lint": "next lint",
-    "postinstall": "prisma generate"
+    "lint": "next lint"
   },
   "dependencies": {
-    "@dotlottie/react-player": "^1.6.19",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
@@ -38,7 +36,6 @@
     "@plasmicpkgs/react-aria": "^0.0.99",
     "@plasmicpkgs/react-slick": "^0.0.228",
     "@plasmicpkgs/react-youtube": "^7.13.214",
-    "@prisma/client": "5.5.2",
     "@react-hook/media-query": "^1.1.1",
     "@sanity/block-content-to-react": "^3.0.0",
     "@sanity/client": "^6.4.9",
@@ -119,7 +116,6 @@
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-unused-imports": "^3.0.0",
     "prettier": "^3.0.0",
-    "prettier-plugin-tailwindcss": "^0.4.1",
-    "prisma": "^5.5.2"
+    "prettier-plugin-tailwindcss": "^0.4.1"
   }
 }
