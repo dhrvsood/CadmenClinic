@@ -109,7 +109,7 @@ const GuestInfo = () => {
           />
           {errors.name && <span>{errors.name.message}</span>}
         </div>
-        <p className={styles.consent}>* By clicking next, I agree to receive calls, texts, and emails from ImageLab and its communications partner for marketing and transactional purposes.</p>
+        <p className={styles.consent}>* By clicking next, I agree to receive calls, texts, and emails from CADMEN Clinic and its communications partner for marketing and transactional purposes.</p>
       </form>
       <NavButtons nextFunction={handleSubmit(handleNext)} />
     </div>

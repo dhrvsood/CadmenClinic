@@ -5,7 +5,7 @@ const findAppointment = async ({ appointmentId }) => {
     method: 'get',
     url: `https://api.zenoti.com/v1/appointments/${appointmentId}`,
     headers: {
-      Authorization: `${process.env.ZENOTI_AUTH}`
+      Authorization: `apikey ${process.env.ZENOTI_AUTH}`
     }
   }
   try {

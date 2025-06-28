@@ -76,7 +76,7 @@ const createBooking = async ({ date, serviceId, customerId, therapistId }) => {
       maxBodyLength: Infinity,
       url: 'https://api.zenoti.com/v1/bookings?is_double_booking_enabled=false',
       headers: {
-        Authorization: `${process.env.ZENOTI_AUTH}`,
+        Authorization: `apikey ${process.env.ZENOTI_AUTH}`,
         'Content-Type': 'application/json'
       },
       data

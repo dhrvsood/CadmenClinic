@@ -6,7 +6,7 @@ const confirmSlot = async (bookingId, guestId, serviceInfo) => {
       method: 'post',
       url: `https://api.zenoti.com/v1/bookings/${bookingId}/slots/confirm`,
       headers: {
-        Authorization: `${process.env.ZENOTI_AUTH}`,
+        Authorization: `apikey ${process.env.ZENOTI_AUTH}`,
         'Content-Type': 'application/json'
       }
     }

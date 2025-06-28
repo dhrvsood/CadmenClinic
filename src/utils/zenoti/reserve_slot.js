@@ -9,7 +9,7 @@ const reserveSlot = async (bookingId, time) => {
       method: 'post',
       url: `https://api.zenoti.com/v1/bookings/${bookingId}/slots/reserve`,
       headers: {
-        Authorization: `${process.env.ZENOTI_AUTH}`,
+        Authorization: `apikey ${process.env.ZENOTI_AUTH}`,
         'Content-Type': 'application/json'
       },
       data: data

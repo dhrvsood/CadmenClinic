@@ -23,7 +23,7 @@ const BookingLander = () => {
           I am a new patient
         </button>
         <Link
-          href='https://bookings.imagelabmedspa.com/?_gl=1*wziyk7*_gcl_au*ODU1MTIzNzc1LjE3MzU3NjI0MzY.'
+          href='https://cadmenclinic.ca.zenoti.com/webstoreNew/services'
           target='_blank'
           className={styles.bigButtonLink}
         >

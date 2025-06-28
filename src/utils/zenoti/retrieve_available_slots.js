@@ -6,7 +6,7 @@ const retrieveAvailableSlots = async (bookingId) => {
     method: 'get',
     url: `https://api.zenoti.com/v1/bookings/${bookingId}/slots?check_future_day_availability=true`,
     headers: {
-      Authorization: `${process.env.ZENOTI_AUTH}`
+      Authorization: `apikey ${process.env.ZENOTI_AUTH}`
     }
   }
 

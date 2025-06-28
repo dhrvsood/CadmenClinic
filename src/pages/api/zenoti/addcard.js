@@ -1,0 +1,40 @@
+import axios from 'axios'
+
+const baseURL =
+  process.env.NODE_ENV === 'production'
+    ? 'https://imagelabmedspa.com'
+    : 'http://localhost:3000'
+const addCard = async (req, res) => {
+  const params = JSON.parse(req.body)
+
+  const { guestId } = params
+
+  if (!guestId) {
+    return res.status(400).json({ error: 'Guest ID is required' })
+  }
+
+  try {
+    const data = {
+      center_id: '497c7c01-c72a-4969-9d4c-54ba4726f13e',
+      redirect_uri: `${'https://imagelab-full-git-shivang991-staging-image-lab.vercel.app'}/paymentsuccess`
+    }
+
+    const config = {
+      method: 'post',
+      url: `https://api.zenoti.com/v1/guests/${guestId}/accounts`,
+      headers: {
+        Authorization: `${process.env.ZENOTI_AUTH}`,
+        'Content-Type': 'application/json'
+      },
+      data: data
+    }
+
+    const response = await axios(config)
+    return res.status(200).json(response.data)
+  } catch (err) {
+    console.error(err)
+    return res.status(500).json({ error: 'Failed to add card' })
+  }
+}
+
+export default addCard

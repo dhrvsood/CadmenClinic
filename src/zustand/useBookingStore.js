@@ -205,8 +205,10 @@ export const useBookingStore = create((set, get) => ({
     // window.lsq('track', 'UserInformationSubmitted')
 
     get().incrementStep()
+
+    console.log("Payload:", payload)
     const guestId = await createOpportunity(payload)
-    // set({ guestId: guestId.id })
+    set({ guestId: guestId.id })
     get().setSelectedMonth(new Date().getMonth(), new Date().getFullYear())
   },
   setDateTime: (dateTime) =>
@@ -255,13 +257,13 @@ export const useBookingStore = create((set, get) => ({
 
     va.track('Booking Complete')
 
-    window.lsq('set', 'ContactInfo', {
-      email: get().bookingData.guestInfo.email,
-      phoneNumber: get().bookingData.guestInfo.phone,
-      firstName: get().bookingData.guestInfo.firstName,
-      lastName: get().bookingData.guestInfo.lastName,
-      service: get().bookingData.service.title
-    })
+    // window.lsq('set', 'ContactInfo', {
+    //   email: get().bookingData.guestInfo.email,
+    //   phoneNumber: get().bookingData.guestInfo.phone,
+    //   firstName: get().bookingData.guestInfo.firstName,
+    //   lastName: get().bookingData.guestInfo.lastName,
+    //   service: get().bookingData.service.title
+    // })
 
     TagManager.dataLayer({
       dataLayer: {

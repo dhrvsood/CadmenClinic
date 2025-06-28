@@ -11,7 +11,7 @@ const searchGuest = async (payload, center_id) => {
     url: 'https://api.zenoti.com/v1/guests/search',
     method: 'get',
     headers: {
-      Authorization: `${process.env.ZENOTI_AUTH}`
+      Authorization: `apikey ${process.env.ZENOTI_AUTH}`
     }
   }
 

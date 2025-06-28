@@ -11,7 +11,7 @@ const formServices = [
           'Our general aesthetic consultation includes a computerized skin analysis and medical intake, to tailor treatments that address your specific skincare concerns. Whether you seek rejuvenation, correction, or enhancement, our experts will create a personalized plan to help you achieve your desired look',
         category: 'Consultation',
         notes: '',
-        id: '3a2b077b-3e98-4f16-9183-8c0cb9aeccfb',
+        id: '6f0346d5-f8cd-4f89-833e-e7189b854f01',
         price: {
           original: 'free',
           discounted: '',
@@ -28,7 +28,7 @@ const formServices = [
       },
       {
         code: 'IC101',
-        title: 'Injectables Consultation',
+        title: 'Hair Restoration Consultation',
         description:
           'During the injectables consultation, we assess your facial structure and skin to recommend the best neuromodulators or fillers for your needs. Our goal is to provide natural-looking enhancements that smooth wrinkles, add volume, and rejuvenate your appearance.',
         category: 'Consultation',
@@ -83,6 +83,237 @@ const formServices = [
       //   ],
       //   duration: '30 mins'
       // }
+    ]
+  },
+  {
+    category: 'Hair Restoration',
+    icon: '/icons/head-hair-icon.svg',
+    services: [
+      {
+        code: 'S0013',
+        slugs: ['prp-hair-restoration'],
+        stay: true,
+        title: 'PRP Hair Restoration',
+        description:
+          "Promote new hair growth and achieve thicker, fuller hair using your body's own plasma",
+        category: 'Hair + Wellness',
+        notes: '',
+        id: '01864f55-152e-4718-8827-c42f13a1d17d',
+        price: {
+          original: '$800',
+          discounted: '$640',
+          percent: '20% off'
+        },
+        image: '/booking-photos/prp.avif',
+        points: [
+          {
+            title: 'Natural hair regrowth with your own platelets',
+            body: 'Stimulate hair growth using Platelet-Rich Plasma (PRP) derived from your own blood to rejuvenate hair follicles and promote stronger, thicker hair.'
+          },
+          {
+            title: 'Non-surgical and minimally invasive',
+            body: 'This safe, non-invasive treatment targets thinning or balding areas, offering a natural solution for hair restoration with minimal downtime.'
+          },
+        ],
+        duration: ''
+      },
+      {
+        code: 'S0014',
+        slugs: [],
+        title: 'Microneedling + PRP Hair',
+        description:
+          'Combine microneedling with PRP to enhance hair growth and scalp health',
+        category: 'Hair + Wellness',
+        notes: '',
+        id: '2d5ba900-2e2c-4e54-97e7-e688cc84e60d',
+        price: {
+          original: '$1,000',
+          discounted: '$800',
+          percent: '20% off'
+        },
+        image: '/booking-photos/microneedling-prp.avif',
+        points: [
+          {
+            title: 'Boost hair regrowth with advanced technology',
+            body: 'Combine the power of microneedling and PRP to stimulate hair follicles and promote natural hair growth, improving thickness and density.'
+          },
+          {
+            title: 'Personalized, tailored solution',
+            body: 'Our experts will customize the treatment to your specific needs, helping you achieve fuller, healthier hair with minimal downtime'
+          },
+        ],
+        duration: ''
+      },
+      {
+        code: 'S0015',
+        slugs: [],
+        title: 'Microneedling + Exosomes Hair',
+        description:
+          'Boost hair regeneration with the combined power of microneedling and exosomes',
+        category: 'Hair + Wellness',
+        notes: '',
+        id: 'ba81af0c-7691-4cf2-8bb5-69b1c1d51815',
+        price: {
+          original: '$700',
+          discounted: '$560',
+          percent: '20% off'
+        },
+        image: '/booking-photos/mironeedling-exosomes.avif',
+        points: [
+          {
+            title: 'Promote thicker, healthier hair',
+            body: 'Exosomes, packed with regenerative proteins, enhance the results of microneedling, encouraging natural hair regrowth and improving scalp health.'
+          },
+          {
+            title: 'Customized, minimally invasive treatment',
+            body: 'This non-surgical solution is tailored to your unique needs, helping you achieve stronger, denser hair with minimal downtime and lasting results.'
+          },
+        ],
+        duration: ''
+      }
+    ]
+  },
+  {
+    category: 'Skin Treatments',
+    icon: '/icons/head-icon.svg',
+    services: [
+      {
+        code: 'S0001',
+        slugs: ['diamondglow-facial'],
+        title: 'DiamondGlow Facial',
+        description:
+          'Refresh and nourish your skin with our signature facial for a glowing complexion',
+        category: 'Skin',
+        notes: '',
+        id: '3132689b-a06e-455f-b524-976c5c4588da',
+        price: {
+          original: '$200',
+          discounted: '$160',
+          percent: '20% off'
+        },
+        image: '/booking-photos/diamondglow.avif',
+        points: [
+          {
+            title: 'Boost hydration and radiance',
+            body: 'Infuse your skin with customized serums to address specific concerns like dryness, dullness, or uneven texture, leaving your skin glowing and refreshed.'
+          },
+          {
+            title: 'Exfoliate, extract, and infuse',
+            body: 'Experience a next-level skin resurfacing treatment that deeply cleanses, exfoliates, and nourishes your skin in one seamless process.'
+          },
+        ],
+        duration: ''
+      },
+      {
+        code: 'S0006',
+        slugs: ['microneedling', 'microneedling-imagelab'],
+        stay: true,
+        title: 'Microneedling',
+        description:
+          'Stimulate collagen and elastin production for a smoother, more vibrant complexion with SkinPen microneedling',
+        category: 'Skin',
+        notes: '',
+        id: '4eb7f4a1-8cfd-4853-a5af-b68bac053757',
+        price: {
+          original: '$400',
+          discounted: '$240',
+          percent: '40% off'
+        },
+        image: '/booking-photos/microneedling.avif',
+        points: [
+          {
+            title: 'Stimulate collagen for smoother skin',
+            body: 'Tiny, controlled micro-injuries trigger your skin’s natural healing process, promoting collagen and elastin production for smoother, firmer skin.'
+          },
+          {
+            title: 'Target fine lines, scars, and texture',
+            body: 'Improve the appearance of acne scars, fine lines, and uneven skin texture for a more youthful, rejuvenated complexion.'
+          },
+        ],
+        duration: ''
+      },
+      {
+        code: 'S0008',
+        slugs: [],
+        title: 'Microneedling + Exosomes',
+        description:
+          'Enhance microneedling with exosomes to boost skin regeneration and repair',
+        category: 'Skin',
+        notes: '',
+        id: '6aa8223d-1132-4b82-8ce3-57f1c7c14950',
+        price: {
+          original: '$600',
+          discounted: '$360',
+          percent: '40% off'
+        },
+        image: '/booking-photos/microneedling-exosomes.avif',
+        points: [
+          {
+            title: 'Enhanced skin rejuvenation',
+            body: 'Combine the power of microneedling with exosome therapy to accelerate healing and boost collagen production, delivering more dramatic, long-lasting results.'
+          },
+          {
+            title: 'Target a variety of skin concerns',
+            body: 'Improve texture, reduce fine lines, minimize scars, and promote overall skin health for a smoother, youthful appearance.'
+          },
+        ],
+        duration: ''
+      },
+      {
+        code: 'S0125',
+        slugs: ['chemical-peels'],
+        title: 'Chemical Peels',
+        description:
+          'Revitalize your skin with our anti-aging chemical peel, designed to exfoliate and rejuvenate',
+        category: 'Skin',
+        notes: '',
+        id: '625674f3-cd2a-49d1-83d9-afba0c3eb69e',
+        price: {
+          original: '$350',
+          discounted: '$210',
+          percent: '40% off'
+        },
+        image: '/booking-photos/chem-peels.avif',
+        points: [
+          {
+            title: 'Renew and refresh your skin',
+            body: 'Exfoliate and remove dead skin cells to reveal a smoother, more radiant complexion, addressing concerns like dullness, acne, and uneven texture.'
+          },
+          {
+            title: 'Customized treatment for your skin needs',
+            body: 'Our specialists tailor the peel to target your unique skin concerns, from fine lines and pigmentation to acne scars and sun damage.'
+          },
+        ],
+        duration: ''
+      },
+      {
+        code: 'S0007',
+        slugs: ['blood-facial-prp-microneedling'],
+        stay: true,
+        title: 'Blood Facial (Microneedling + PRP)',
+        description:
+          'Reverse signs of aging with microneedling combined with PRP for youthful, radiant skin',
+        category: 'Skin',
+        notes: '',
+        id: '8a8f9dd5-940d-43b2-9fa9-e26370bf9ac1',
+        price: {
+          original: '$765',
+          discounted: '$612',
+          percent: '20% off'
+        },
+        image: '/booking-photos/blood-facial.avif',
+        points: [
+          {
+            title: 'Revitalize your skin with your own blood',
+            body: 'This powerful treatment combines microneedling with platelet-rich plasma (PRP) to stimulate collagen production and promote skin healing, using your own blood to enhance results.'
+          },
+          {
+            title: 'Target fine lines, texture, and overall radiance',
+            body: 'Reduce the appearance of fine lines, acne scars, and uneven texture, while boosting skin tone and elasticity for a rejuvenated, youthful glow.'
+          },
+        ],
+        duration: ''
+      }
     ]
   },
   {
@@ -307,149 +538,7 @@ const formServices = [
       }
     ]
   },
-  {
-    category: 'Skin',
-    icon: '/icons/head-icon.svg',
-    services: [
-      {
-        code: 'S0001',
-        slugs: ['diamondglow-facial'],
-        title: 'DiamondGlow Facial',
-        description:
-          'Refresh and nourish your skin with our signature facial for a glowing complexion',
-        category: 'Skin',
-        notes: '',
-        id: '3132689b-a06e-455f-b524-976c5c4588da',
-        price: {
-          original: '$200',
-          discounted: '$160',
-          percent: '20% off'
-        },
-        image: '/booking-photos/diamondglow.avif',
-        points: [
-          {
-            title: 'Boost hydration and radiance',
-            body: 'Infuse your skin with customized serums to address specific concerns like dryness, dullness, or uneven texture, leaving your skin glowing and refreshed.'
-          },
-          {
-            title: 'Exfoliate, extract, and infuse',
-            body: 'Experience a next-level skin resurfacing treatment that deeply cleanses, exfoliates, and nourishes your skin in one seamless process.'
-          },
-        ],
-        duration: ''
-      },
-      {
-        code: 'S0006',
-        slugs: ['microneedling', 'microneedling-imagelab'],
-        stay: true,
-        title: 'Microneedling',
-        description:
-          'Stimulate collagen and elastin production for a smoother, more vibrant complexion with SkinPen microneedling',
-        category: 'Skin',
-        notes: '',
-        id: '4eb7f4a1-8cfd-4853-a5af-b68bac053757',
-        price: {
-          original: '$400',
-          discounted: '$240',
-          percent: '40% off'
-        },
-        image: '/booking-photos/microneedling.avif',
-        points: [
-          {
-            title: 'Stimulate collagen for smoother skin',
-            body: 'Tiny, controlled micro-injuries trigger your skin’s natural healing process, promoting collagen and elastin production for smoother, firmer skin.'
-          },
-          {
-            title: 'Target fine lines, scars, and texture',
-            body: 'Improve the appearance of acne scars, fine lines, and uneven skin texture for a more youthful, rejuvenated complexion.'
-          },
-        ],
-        duration: ''
-      },
-      {
-        code: 'S0008',
-        slugs: [],
-        title: 'Microneedling + Exosomes',
-        description:
-          'Enhance microneedling with exosomes to boost skin regeneration and repair',
-        category: 'Skin',
-        notes: '',
-        id: '6aa8223d-1132-4b82-8ce3-57f1c7c14950',
-        price: {
-          original: '$600',
-          discounted: '$360',
-          percent: '40% off'
-        },
-        image: '/booking-photos/microneedling-exosomes.avif',
-        points: [
-          {
-            title: 'Enhanced skin rejuvenation',
-            body: 'Combine the power of microneedling with exosome therapy to accelerate healing and boost collagen production, delivering more dramatic, long-lasting results.'
-          },
-          {
-            title: 'Target a variety of skin concerns',
-            body: 'Improve texture, reduce fine lines, minimize scars, and promote overall skin health for a smoother, youthful appearance.'
-          },
-        ],
-        duration: ''
-      },
-      {
-        code: 'S0125',
-        slugs: ['chemical-peels'],
-        title: 'Chemical Peels',
-        description:
-          'Revitalize your skin with our anti-aging chemical peel, designed to exfoliate and rejuvenate',
-        category: 'Skin',
-        notes: '',
-        id: '625674f3-cd2a-49d1-83d9-afba0c3eb69e',
-        price: {
-          original: '$350',
-          discounted: '$210',
-          percent: '40% off'
-        },
-        image: '/booking-photos/chem-peels.avif',
-        points: [
-          {
-            title: 'Renew and refresh your skin',
-            body: 'Exfoliate and remove dead skin cells to reveal a smoother, more radiant complexion, addressing concerns like dullness, acne, and uneven texture.'
-          },
-          {
-            title: 'Customized treatment for your skin needs',
-            body: 'Our specialists tailor the peel to target your unique skin concerns, from fine lines and pigmentation to acne scars and sun damage.'
-          },
-        ],
-        duration: ''
-      },
-      {
-        code: 'S0007',
-        slugs: ['blood-facial-prp-microneedling'],
-        stay: true,
-        title: 'Blood Facial (Microneedling + PRP)',
-        description:
-          'Reverse signs of aging with microneedling combined with PRP for youthful, radiant skin',
-        category: 'Skin',
-        notes: '',
-        id: '8a8f9dd5-940d-43b2-9fa9-e26370bf9ac1',
-        price: {
-          original: '$765',
-          discounted: '$612',
-          percent: '20% off'
-        },
-        image: '/booking-photos/blood-facial.avif',
-        points: [
-          {
-            title: 'Revitalize your skin with your own blood',
-            body: 'This powerful treatment combines microneedling with platelet-rich plasma (PRP) to stimulate collagen production and promote skin healing, using your own blood to enhance results.'
-          },
-          {
-            title: 'Target fine lines, texture, and overall radiance',
-            body: 'Reduce the appearance of fine lines, acne scars, and uneven texture, while boosting skin tone and elasticity for a rejuvenated, youthful glow.'
-          },
-        ],
-        duration: ''
-      }
-    ]
-  },
+
   {
     category: 'Lasers',
     icon: '/icons/laser-icon.svg',
@@ -669,94 +758,7 @@ const formServices = [
       }
     ]
   },
-  {
-    category: 'Hair + Wellness',
-    icon: '/icons/head-hair-icon.svg',
-    services: [
-      {
-        code: 'S0013',
-        slugs: ['prp-hair-restoration'],
-        stay: true,
-        title: 'PRP Hair Restoration',
-        description:
-          "Promote new hair growth and achieve thicker, fuller hair using your body's own plasma",
-        category: 'Hair + Wellness',
-        notes: '',
-        id: '566be043-981e-4d67-9e54-8d8215f37adc',
-        price: {
-          original: '$800',
-          discounted: '$640',
-          percent: '20% off'
-        },
-        image: '/booking-photos/prp.avif',
-        points: [
-          {
-            title: 'Natural hair regrowth with your own platelets',
-            body: 'Stimulate hair growth using Platelet-Rich Plasma (PRP) derived from your own blood to rejuvenate hair follicles and promote stronger, thicker hair.'
-          },
-          {
-            title: 'Non-surgical and minimally invasive',
-            body: 'This safe, non-invasive treatment targets thinning or balding areas, offering a natural solution for hair restoration with minimal downtime.'
-          },
-        ],
-        duration: ''
-      },
-      {
-        code: 'S0014',
-        slugs: [],
-        title: 'Microneedling + PRP Hair',
-        description:
-          'Combine microneedling with PRP to enhance hair growth and scalp health',
-        category: 'Hair + Wellness',
-        notes: '',
-        id: '2d5ba900-2e2c-4e54-97e7-e688cc84e60d',
-        price: {
-          original: '$1,000',
-          discounted: '$800',
-          percent: '20% off'
-        },
-        image: '/booking-photos/microneedling-prp.avif',
-        points: [
-          {
-            title: 'Boost hair regrowth with advanced technology',
-            body: 'Combine the power of microneedling and PRP to stimulate hair follicles and promote natural hair growth, improving thickness and density.'
-          },
-          {
-            title: 'Personalized, tailored solution',
-            body: 'Our experts will customize the treatment to your specific needs, helping you achieve fuller, healthier hair with minimal downtime'
-          },
-        ],
-        duration: ''
-      },
-      {
-        code: 'S0015',
-        slugs: [],
-        title: 'Microneedling + Exosomes Hair',
-        description:
-          'Boost hair regeneration with the combined power of microneedling and exosomes',
-        category: 'Hair + Wellness',
-        notes: '',
-        id: 'ba81af0c-7691-4cf2-8bb5-69b1c1d51815',
-        price: {
-          original: '$700',
-          discounted: '$560',
-          percent: '20% off'
-        },
-        image: '/booking-photos/mironeedling-exosomes.avif',
-        points: [
-          {
-            title: 'Promote thicker, healthier hair',
-            body: 'Exosomes, packed with regenerative proteins, enhance the results of microneedling, encouraging natural hair regrowth and improving scalp health.'
-          },
-          {
-            title: 'Customized, minimally invasive treatment',
-            body: 'This non-surgical solution is tailored to your unique needs, helping you achieve stronger, denser hair with minimal downtime and lasting results.'
-          },
-        ],
-        duration: ''
-      }
-    ]
-  }
+
 ]
 
 export default formServices
