@@ -11,6 +11,9 @@ import { DateCalendar } from '@mui/x-date-pickers/DateCalendar'
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider'
 import dayjs from 'dayjs'
 
+import { useCallback } from 'react'
+import { debounce } from 'lodash'
+
 const tod = [
   { title: 'Morning:', startTime: 0, endTime: 12 },
   { title: 'Afternoon:', startTime: 12, endTime: 17 },
@@ -71,10 +74,17 @@ const SelectTime = () => {
     );
   }
 
-  const handleMonthChange = (date) => {
-    setSelectedMonth(dayjs(date).month(), dayjs(date).year())
-    // setSelectedDate(dayjs(activeStartDate))
-  }
+  // Debounce month changes to avoid sending more requests than needed
+  const handleMonthChange = useCallback(
+    debounce((date) => {
+      setSelectedMonth(dayjs(date).month(), dayjs(date).year())
+    }, 400), // delay in ms, adjust as needed
+    []
+  )
+  // const handleMonthChange = (date) => {
+  //   setSelectedMonth(dayjs(date).month(), dayjs(date).year())
+  //   // setSelectedDate(dayjs(activeStartDate))
+  // }
 
   const todTimeslots = tod.map((period) => {
     const periodAppointments = availableTimeslots.filter((slot) => {
@@ -92,7 +102,7 @@ const SelectTime = () => {
       />
       <div className={styles.selectors}>
       <div className={styles.calendarWrap}>
-        {/* <LocalizationProvider dateAdapter={AdapterDayjs}>
+        <LocalizationProvider dateAdapter={AdapterDayjs}>
           <DateCalendar
             className='rounded border border-gray-300 bg-white shadow'
             // classes={calClasses}
@@ -103,11 +113,15 @@ const SelectTime = () => {
             onChange={handleDateChange}
             onMonthChange={handleMonthChange}
             shouldDisableDate={tileDisabled}
-            // disabled={showSkeleton}
+            disabled={loadingTimeslots}
             sx={styles.calendar}
+            slotProps={{
+              leftArrowButton: { disabled: loadingTimeslots },
+              rightArrowButton: { disabled: loadingTimeslots },
+            }}
           />
-        </LocalizationProvider> */}
-        <Calendar
+        </LocalizationProvider>
+        {/* <Calendar
           onChange={handleDateChange}
           value={selectedDate}
           className={styles.calendar}
@@ -125,7 +139,7 @@ const SelectTime = () => {
           onActiveStartDateChange={handleMonthChange}
           maxDetail='month'
           minDetail='month'
-        />
+        /> */}
         {
           initialLoading && (
             <div className={styles.calendarLoader}>

@@ -9,7 +9,7 @@ export default async function handler(req, res) {
   const { date, serviceId, customerId, separateTherapists } = req.body.params
 
   // Check for missing fields
-  if (!date || !serviceId || !customerId) {
+  if (!date || date === "Invalid Date" || !serviceId || !customerId) {
     return res.status(400).json({ message: 'All fields are required' })
   }
 
