@@ -8,6 +8,11 @@ import CountdownTimer from '../../countdown-timer/CountdownTimer'
 import styles from './SecureBooking.module.css'
 import { useNotificationStore } from '@/zustand/useNotificationStore'
 
+const baseURL =
+  process.env.NODE_ENV === 'production'
+    ? 'https://cadmenclinic.ca'
+    : 'http://localhost:3000'
+
 const SecureBooking = () => {
   const {
     setNextDisabled,
@@ -25,6 +30,29 @@ const SecureBooking = () => {
   const { addToast } = useNotificationStore()
   const [checkingCard, setCheckingCard] = useState(true)
   const [paymentForm, setPaymentForm] = useState(null)
+
+  const handleSendInvoiceEmail = async (invoiceId) => {
+    try {
+      const res = await fetch('/api/zenoti/send-invoice-email', {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ invoiceId }),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        console.error('Failed to send invoice email:', data.error, data.details);
+        return;
+      }
+
+      console.log('Invoice email sent successfully:', data);
+    } catch (err) {
+      console.error('Unexpected error:', err);
+    }
+  };
 
   useEffect(() => {
     const reserveAndCheckCard = async () => {
@@ -50,6 +78,8 @@ const SecureBooking = () => {
   
           return
         }
+        const invoiceId = bookingIsConfirmed.invoice.invoice_id
+        handleSendInvoiceEmail(invoiceId)
         incrementStep()
       }
   
@@ -62,11 +92,8 @@ const SecureBooking = () => {
 
   useEffect(() => {
     const handleMessage = async (event) => {
-      if (
-        event.origin !==
-        'https://imagelab-full-git-shivang991-staging-image-lab.vercel.app'
-      )
-      return
+      if (event.origin !== baseURL)
+        return
 
       fetch('/api/logger', {
         method: 'POST',
@@ -88,9 +115,10 @@ const SecureBooking = () => {
         if (!bookingIsConfirmed) {
           addToast('Problem confirming booking. Please try again or select a new time.', 'error')
           decrementStep()
-
           return
         }
+        const invoiceId = bookingIsConfirmed.invoice.invoice_id
+        handleSendInvoiceEmail(invoiceId)
         incrementStep()
       }
     }

@@ -2,7 +2,7 @@ import axios from 'axios'
 
 const baseURL =
   process.env.NODE_ENV === 'production'
-    ? 'https://imagelabmedspa.com'
+    ? 'https://cadmenclinic.ca'
     : 'http://localhost:3000'
 const addCard = async (req, res) => {
   const params = JSON.parse(req.body)
@@ -16,7 +16,7 @@ const addCard = async (req, res) => {
   try {
     const data = {
       center_id: process.env.ZENOTI_CENTER_ID,
-      redirect_uri: `${'https://imagelab-full-git-shivang991-staging-image-lab.vercel.app'}/paymentsuccess`
+      redirect_uri: `${baseURL}/paymentsuccess`
     }
 
     const config = {
