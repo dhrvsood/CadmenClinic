@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "postinstall": "npm rebuild sharp --force",
     "dev": "next dev",
     "build": "next build && ts-node ./src/utils/sitemap.mjs",
     "start": "next start",
