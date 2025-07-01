@@ -1,5 +1,3 @@
-import { fetchPost } from '@/helpers/requests'
-import { removeDashes } from '@/helpers/strings/string_modifiers'
 import { useBookingStore } from '@/zustand/useBookingStore'
 import { useEffect, useState } from 'react'
 
@@ -31,29 +29,6 @@ const SecureBooking = () => {
   const [checkingCard, setCheckingCard] = useState(true)
   const [paymentForm, setPaymentForm] = useState(null)
 
-  const handleSendInvoiceEmail = async (invoiceId) => {
-    try {
-      const res = await fetch('/api/zenoti/send-invoice-email', {
-        method: 'PUT',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ invoiceId }),
-      });
-
-      const data = await res.json();
-
-      if (!res.ok) {
-        console.error('Failed to send invoice email:', data.error, data.details);
-        return;
-      }
-
-      console.log('Invoice email sent successfully:', data);
-    } catch (err) {
-      console.error('Unexpected error:', err);
-    }
-  };
-
   useEffect(() => {
     const reserveAndCheckCard = async () => {
       setNextDisabled(true)
@@ -78,8 +53,6 @@ const SecureBooking = () => {
   
           return
         }
-        const invoiceId = bookingIsConfirmed.invoice.invoice_id
-        handleSendInvoiceEmail(invoiceId)
         incrementStep()
       }
   
@@ -117,8 +90,6 @@ const SecureBooking = () => {
           decrementStep()
           return
         }
-        const invoiceId = bookingIsConfirmed.invoice.invoice_id
-        handleSendInvoiceEmail(invoiceId)
         incrementStep()
       }
     }
