@@ -7,9 +7,9 @@ import styles from './SecureBooking.module.css'
 import { useNotificationStore } from '@/zustand/useNotificationStore'
 
 const baseURL =
-  process.env.NODE_ENV === 'production'
+  process.env.CONTEXT === 'production'
     ? 'https://cadmenclinic.ca'
-    : 'http://localhost:3000'
+    : process.env.URL || 'http://localhost:3000';
 
 const SecureBooking = () => {
   const {
