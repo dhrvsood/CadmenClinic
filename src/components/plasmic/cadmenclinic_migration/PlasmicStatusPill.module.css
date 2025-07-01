@@ -1,0 +1,36 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  position: relative;
+  min-width: 0;
+  border-radius: 999px;
+  padding: 8px 20px 6px;
+  border: 1px solid #eaecee;
+}
+.rootstatus_current {
+  background: #9a7f71;
+}
+.rootstatus_completed {
+  background: #ebdbd6;
+  border-color: #ebdbd6;
+}
+.text {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  color: #95999c;
+  white-space: pre;
+}
+.textstatus_current {
+  color: #ffffff;
+}
+.textstatus_completed {
+  color: #9a7f71;
+}

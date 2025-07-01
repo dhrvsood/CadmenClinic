@@ -53,7 +53,7 @@ module.exports = withMT({
           'ui-serif',
           'Georgia',
         ],
-        sans: ['Montserrat', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        sans: ['Poppins', 'ui-sans-serif', 'system-ui', 'sans-serif'],
         serif: ['ui-serif', 'Georgia'],
         mono: ['Courier', 'Inconsolata']
       }

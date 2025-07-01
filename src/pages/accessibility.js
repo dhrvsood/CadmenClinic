@@ -75,8 +75,8 @@ const Accessibility = () => (
         </div>
         <div className='flex flex-row'>
           Phone:
-          <a className='pl-2' href='tel:+14165111337'>
-            (416) 511-1337
+          <a className='pl-2' href='tel:+14165511137'>
+            (416) 551-1137
           </a>
         </div>
         <p>

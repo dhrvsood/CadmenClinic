@@ -1,0 +1,42 @@
+.wrap {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 650px;
+  margin-bottom: 20px;
+}
+
+.pill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  border: 1px solid #D9DCDE;
+  color: #95999C;
+  padding: 6px 44px;
+
+  &.current {
+    background: #8f7162e6;
+    color: white;
+  }
+
+  &.complete {
+    border-color: #ebdbd6;
+    background: #ebdbd6;
+    color: #9a7f71;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .pill {
+    font-size: 12px;
+    padding: 4px 12px;
+  }
+}
+
+.line {
+  display: flex;
+  flex: 1;
+  height: 1px;
+  background: #D9DCDE;
+}

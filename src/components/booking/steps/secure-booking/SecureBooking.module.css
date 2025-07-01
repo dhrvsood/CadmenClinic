@@ -1,0 +1,62 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 874px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 720px) {
+  .bold {
+    font-size: 13px;
+  }
+}
+
+.stacked {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.addCardWrap {
+  width: 100%;
+}
+
+.paymentForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.disclaimer {
+  font-size: 14px;
+  color: #595959;
+  font-style: italic;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border-left-color: #9a7f71; /* Indigo color */
+  animation: spin 1s linear infinite;
+  margin: auto;
+}

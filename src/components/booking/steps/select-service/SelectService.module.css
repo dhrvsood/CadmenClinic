@@ -1,0 +1,312 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  max-width: 874px;
+  position: relative;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.categoryTop {
+  display: flex;
+  width: 100%;
+}
+
+.left {
+  padding: 20px;
+  border: 1px solid #EAECEE;
+  border-radius: 12px;
+}
+
+.right {
+  padding: 20px;
+  border: 1px solid #EAECEE;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.carat {
+  color: #535556;
+  font-size: 13px;
+  font-weight: 500;
+  transform: rotate(180deg);
+  transition-duration: 0.3s;
+
+  &.active {
+    transform: rotate(0deg);
+  }
+}
+
+.onSale {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.regularPrice {
+  font-size: 13px;
+  font-weight: 500;
+  color: #535556;
+}
+
+.salePrice {
+  font-size: 16px;
+  font-weight: 500;
+  color: #9a7f71;
+}
+
+.strikePrice {
+  text-decoration: line-through;
+  color: #95999C;
+  font-size: 12px;
+}
+
+.percentOff {
+  font-size: 12px;
+  color: #9a7f71;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 16px;
+  border-radius: 999px;
+  background: #ebdbd6;
+}
+
+.services {
+  height: 0;
+  overflow: hidden;
+
+  &.active {
+    height: auto;
+  }
+}
+
+.service {
+  display: flex;
+  border: 1px solid #EAECEE;
+  border-radius: 12px;
+  justify-content: space-between;
+  align-items: center;
+
+  &.selected {
+    background-color: #9a7f71;
+
+    &.service p {
+      color: white;
+    }
+  }
+
+  &.service p {
+    user-select: none;
+  }
+}
+
+.serviceLeft {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 20px;
+  height: 100%;
+}
+
+.serviceRight {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 20px 20px 0;
+  gap: 16px;
+}
+
+.serviceTitle {
+  font-size: 16px;
+  color: #535556;
+}
+
+@media screen and (max-width: 720px) {
+  .serviceTitle {
+    font-size: 20px;
+  }
+}
+
+.infoIcon {
+  height: 20px;
+  width: 20px;
+}
+
+.gradButton {
+  border-radius: 8px;
+  background: linear-gradient(97deg, #9A6B63 0%, #E0C2B8 33.56%, #9A6B63 115.73%);
+  padding: 20px 82px;
+  position: relative;
+  width: 100%;
+  font-weight: 500;
+  color: white;
+}
+
+.gradButton:hover {
+  background: linear-gradient(97deg, #9A6B63 0%, #E0C2B8 33.56%, #9A6B63 115.73%);
+}
+
+.gradButton:hover .gradButtonOverlay {
+  opacity: 0.1;
+}
+
+.gradButtonOverlay {
+  background: black;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition-duration: 0.3s;
+}
+
+.contentWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.modalContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  width: 100%;
+}
+
+.modalList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modalItem {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.modalItemContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.modalPointTitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #535556;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.modalPointBody {
+  font-size: 13px;
+  color: #7B7D7F;
+}
+
+.imageWrap {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.modalImage {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+s
+.modalTop {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.modalHead {
+  font-size: 32px;
+}
+
+.modalPrice {
+  font-size: 16px;
+  color: #9a7f71;
+  font-weight: 500;
+}
+
+.checkBadge {
+  margin-top: 3px;
+} 
+
+.modalPriceWrap {
+  display: flex;
+  gap: 12px;
+  align-items: center; 
+  margin-top: 10px;
+}
+
+.durationText {
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+.disclaimer {
+  font-size: 13px;
+  color: #595959;
+  font-style: italic;
+  margin-bottom: -20px;
+}
+
+@media screen and (max-width: 720px) {
+  .modalContent {
+    grid-template-columns: 1fr;
+    margin-bottom: 80px;
+  }
+
+  .serviceTitle {
+    font-size: 14px;
+  }
+
+  .serviceRight {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .modalButtonWrap {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    left: 10px;
+  }
+}
+

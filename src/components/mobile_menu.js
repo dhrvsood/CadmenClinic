@@ -49,7 +49,19 @@ const MobileMenu = ({ open, setOpen, navItems, navigation }) => {
                       {({ open }) => (
                         <>
                           <Disclosure.Button className='flex w-full items-center justify-between p-4 text-left'>
-                            <p className='text-sm font-bold'>{key}</p>
+                            {key === 'Hair Restoration' ? (
+                              <Link
+                                href='/services/hair-restoration'
+                                onClick={() => setOpen(false)}
+                                className='text-sm font-bold hover:underline'
+                              >
+                                {key}
+                              </Link>
+                            ) : (
+                              <p className='text-sm font-bold'>{key}</p>
+                            )}
+
+                            {/* <p className='text-sm font-bold'>{key}</p> */}
                             <ChevronRightIcon
                               className={`h-5 w-5 ${
                                 open ? 'rotate-90 transform' : ''
