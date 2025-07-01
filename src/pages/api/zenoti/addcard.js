@@ -1,9 +1,6 @@
 import axios from 'axios'
 
-const baseURL =
-  process.env.CONTEXT === 'production'
-    ? 'https://cadmenclinic.ca'
-    : process.env.URL || 'http://localhost:3000';
+const baseURL = process.env.URL || 'http://localhost:3000';
 
 const addCard = async (req, res) => {
   const params = JSON.parse(req.body)
