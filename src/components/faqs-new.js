@@ -47,7 +47,7 @@ const FaqsNew = ({ data }) => (
           ))}
         </ul>
           <Link
-            href='https://cadmenclinic.ca.zenoti.com/webstoreNew/services'
+            href='/book-now'
             className='rounded border font-bold border-teal-600 bg-teal-600 my-10 px-10 py-2 w-full text-center text-white hover:bg-teal-700'
           >
             Get Started Now

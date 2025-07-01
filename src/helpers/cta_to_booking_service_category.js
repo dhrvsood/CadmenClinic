@@ -3,5 +3,5 @@ export const ctaToBookingServiceCategory = (selectedCategory) => {
 
   document.cookie = "selectedCategory=" + encodedSelectedCategory + "; path=/; max-age=3600; SameSite=Strict"
   
-  window.location.href = 'https://cadmenclinic.ca.zenoti.com/webstoreNew/services'
+  window.location.href = '/book-now'
 }

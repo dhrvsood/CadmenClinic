@@ -218,7 +218,7 @@ function PlasmicBotoxLander__RenderFunc(props) {
                   <RatingReviewPill />
                 </div>
                 
-                <Link href='https://cadmenclinic.ca.zenoti.com/webstoreNew/services' target="_blank" className='mt-[10px] w-full md:w-auto'>
+                <Link href='/book-now'  className='mt-[10px] w-full md:w-auto'>
                   <button className='button w-full md:w-auto'>Book Now</button>
                 </Link>
               
@@ -347,7 +347,7 @@ function PlasmicBotoxLander__RenderFunc(props) {
               />
             </div>
 
-            <Link href='https://cadmenclinic.ca.zenoti.com/webstoreNew/services' target="_blank" className='mt-[40px] w-full md:w-auto'>
+            <Link href='/book-now'  className='mt-[40px] w-full md:w-auto'>
               <button className='button w-full md:w-auto'>Book Now</button>
             </Link>
 
@@ -882,7 +882,7 @@ function PlasmicBotoxLander__RenderFunc(props) {
                   muted={service.video.muted}
                 />
               </div>
-              <Link href='https://cadmenclinic.ca.zenoti.com/webstoreNew/services' target="_blank" className='mt-[10px] w-full md:w-auto'>
+              <Link href='/book-now'  className='mt-[10px] w-full md:w-auto'>
                 <button className='button white w-full md:w-auto'>Try It Now</button>
               </Link>
             </Stack__>
@@ -964,7 +964,7 @@ function PlasmicBotoxLander__RenderFunc(props) {
                   </React.Fragment>
                 </p>
               </Stack__>
-              <Link href='https://cadmenclinic.ca.zenoti.com/webstoreNew/services' target="_blank" className='mt-[10px] w-full md:w-auto'>
+              <Link href='/book-now'  className='mt-[10px] w-full md:w-auto'>
                 <button className='button white w-full md:w-auto'>Book Now</button>
               </Link>
             </div>

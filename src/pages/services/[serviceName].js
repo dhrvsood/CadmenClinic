@@ -94,7 +94,7 @@ const ServicePage = () => {
                                         style={{
                                             boxShadow: 'rgb(198,156,147) -9px 9px 0px 0px'
                                         }}
-                                        href='https://cadmenclinic.ca.zenoti.com/webstoreNew/services'
+                                        href='/book-now'
                                         className='w-full rounded border border-beaver/90 bg-beaver/90 px-10 py-3 text-center font-light text-white hover:bg-beaver'
                                     >
                                         Book Now

@@ -39,7 +39,7 @@ export default function HairLandingHero() {
           <Button color={"white"}>Book Now</Button>
         </div> */}
 
-        <Link href='https://cadmenclinic.ca.zenoti.com/webstoreNew/services' target="_blank" className='mt-[10px] w-full md:w-auto'>
+        <Link href='/book-now'  className='mt-[10px] w-full md:w-auto'>
           <button className='button white w-full md:w-auto'>Book Now</button>
         </Link>
 

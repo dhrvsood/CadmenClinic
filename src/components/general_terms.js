@@ -96,7 +96,7 @@ const GeneralTerms = ({ data, categories }) => {
             <FadeInOnScroll>
               <div className='flex w-full mt-8'>
                 <Link
-                  href='https://cadmenclinic.ca.zenoti.com/webstoreNew/services'
+                  href='/book-now'
                   className='w-full text-bold rounded border border-teal-600 bg-teal-600 px-10 py-3 text-right text-white hover:bg-teal-700 flex justify-center font-bold'
                 >
                   Get Started Now
@@ -149,7 +149,7 @@ const GeneralTerms = ({ data, categories }) => {
                 {data.serviceSelectionTitle}
               </h2>
               <Link
-                href='https://cadmenclinic.ca.zenoti.com/webstoreNew/services'
+                href='/book-now'
                 className='rounded mx-5 mb-5 md:w-1/3 border border-white py-2 h-full text-center font-medium tracking-wider text-white hover:bg-white hover:text-black'
               >
                 Schedule Consultation

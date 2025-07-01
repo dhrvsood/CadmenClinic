@@ -133,7 +133,7 @@ const TreatmentPackagesSlider = ({ treatmentPackages }) => {
       </div>
 
       {/* Book Now Button */}
-      <Link href='https://cadmenclinic.ca.zenoti.com/webstoreNew/services' className='mt-[40px]'>
+      <Link href='/book-now' className='mt-[40px]'>
         <button className='button max-sm:w-full'>Book Now</button>
       </Link>
     </div>

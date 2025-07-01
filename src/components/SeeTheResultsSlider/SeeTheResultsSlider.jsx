@@ -97,14 +97,14 @@ const data = [
           description:
             'Achieve beautifully defined, balanced lips with personalized care.',
           image: '/seeTheResultsSlider/injectables/injectables-6a.avif',
-          link: 'https://www.imagelabmedspa.com/services/lip-fillers'
+          link: '/coming-soon'
         },
         backCard: {
           title: 'Lip Fillers and Augmentation',
           description:
             'Achieve beautifully defined, balanced lips with personalized care.',
           image: '/seeTheResultsSlider/injectables/injectables-6b.avif',
-          link: 'https://www.imagelabmedspa.com/services/lip-fillers'
+          link: '/coming-soon'
         }
       },
       {
@@ -129,14 +129,14 @@ const data = [
           description:
             'Stimulates collagen production for long-lasting, natural results.',
           image: '/seeTheResultsSlider/injectables/injectables-3a.avif',
-          link: 'https://www.imagelabmedspa.com/services/sculptra-radiesse-filler'
+          link: '/coming-soon'
         },
         backCard: {
           title: 'SCULPTRA®',
           description:
             'Stimulates collagen production for long-lasting, natural results.',
           image: '/seeTheResultsSlider/injectables/injectables-3b.avif',
-          link: 'https://www.imagelabmedspa.com/services/sculptra-radiesse-filler'
+          link: '/coming-soon'
         }
       },
       {
@@ -144,13 +144,13 @@ const data = [
           title: 'Microneedling Facial',
           description: 'Stimulates collagen for firmer, younger-looking skin.',
           image: '/seeTheResultsSlider/skinTreatments/skin-3a.avif',
-          link: 'https://www.imagelabmedspa.com/services/microneedling'
+          link: '/services/microneedling'
         },
         backCard: {
           title: 'Microneedling Facial',
           description: 'Stimulates collagen for firmer, younger-looking skin.',
           image: '/seeTheResultsSlider/skinTreatments/skin-3b.avif',
-          link: 'https://www.imagelabmedspa.com/services/microneedling'
+          link: '/services/microneedling'
         }
       },
       {
@@ -159,14 +159,14 @@ const data = [
           description:
             'Combines PRP therapy with microneedling for ultimate skin rejuvenation.',
           image: '/seeTheResultsSlider/skinTreatments/skin-4a.avif',
-          link: 'https://www.imagelabmedspa.com/services/blood-facial-prp-microneedling'
+          link: '/services/blood-facial-prp-microneedling'
         },
         backCard: {
           title: 'PRP (Vampire) Facial',
           description:
             'Combines PRP therapy with microneedling for ultimate skin rejuvenation.',
           image: '/seeTheResultsSlider/skinTreatments/skin-4b.avif',
-          link: 'https://www.imagelabmedspa.com/services/blood-facial-prp-microneedling'
+          link: '/services/blood-facial-prp-microneedling'
         }
       }
     ]
@@ -185,7 +185,7 @@ const data = [
           description:
             'Select from a range of IV drips targeting revitalizing energy levels, providing a youthful glow, promoting cellular regeneration, and combatting anti-aging.',
           image: '/media/home/IV Drip Therapy.jpg',
-          link: 'https://www.imagelabmedspa.com/services/diamondglow-facial'
+          link: '/services/farsk-nad-iv'
         }
       },
       {
@@ -194,7 +194,7 @@ const data = [
           description:
             'In-person, medically-supervised Semaglutide injections for safe and effective weight loss. The same active ingredient in Wegovy® and Ozempic®.',
           image: '/media/home/Semaglutide.jpg',
-          link: 'https://www.imagelabmedspa.com/services/microneedling'
+          link: '/services/semaglutide-therapy'
         }
       }
     ]
@@ -269,7 +269,7 @@ const SeeTheResultsSlider = ({ settings, handleButtonClick }) => {
             <p className={styles.description}>{data[activeTab].description}</p>
             {
               data[activeTab].showCta && (
-                <Link href='https://cadmenclinic.ca.zenoti.com/webstoreNew/services'>
+                <Link href='/book-now'>
                   <button className='button max-sm:w-full mt-10'>Book Consultation</button>
                 </Link>
               )

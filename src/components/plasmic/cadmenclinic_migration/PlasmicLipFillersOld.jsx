@@ -350,7 +350,7 @@ function PlasmicLipFillersOld__RenderFunc(props) {
                   const $steps = {};
                   $steps["goToBookNow"] = true
                     ? (() => {
-                        const actionArgs = { destination: "https://cadmenclinic.ca.zenoti.com/webstoreNew/services" };
+                        const actionArgs = { destination: "/book-now" };
                         return (({ destination }) => {
                           if (
                             typeof destination === "string" &&
@@ -1039,7 +1039,7 @@ function PlasmicLipFillersOld__RenderFunc(props) {
                 const $steps = {};
                 $steps["goToBookNow"] = true
                   ? (() => {
-                      const actionArgs = { destination: "https://cadmenclinic.ca.zenoti.com/webstoreNew/services" };
+                      const actionArgs = { destination: "/book-now" };
                       return (({ destination }) => {
                         if (
                           typeof destination === "string" &&

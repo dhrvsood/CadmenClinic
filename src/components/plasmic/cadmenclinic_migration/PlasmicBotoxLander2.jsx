@@ -1032,7 +1032,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
               />
             </Stack__>
 
-            <Link href='https://cadmenclinic.ca.zenoti.com/webstoreNew/services' target="_blank" className='mt-[10px] w-full md:w-auto'>
+            <Link href='/book-now'  className='mt-[10px] w-full md:w-auto'>
               <button className='button w-full md:w-auto'>Book Now</button>
             </Link>
           </Stack__>
@@ -1407,7 +1407,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                 />
               </Stack__>
 
-              <Link href='https://cadmenclinic.ca.zenoti.com/webstoreNew/services' target="_blank" className='mt-[10px] w-full md:w-auto'>
+              <Link href='/book-now'  className='mt-[10px] w-full md:w-auto'>
                 <button className='button white w-full md:w-auto'>Book Now</button>
               </Link>
             </div>
@@ -1611,7 +1611,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                 </Stack__>
               </Stack__>
 
-              <Link href='https://cadmenclinic.ca.zenoti.com/webstoreNew/services' target="_blank" className='mt-[10px] w-full md:w-auto'>
+              <Link href='/book-now'  className='mt-[10px] w-full md:w-auto'>
                 <button className='button w-full md:w-auto'>Book Now</button>
               </Link>
 
@@ -1836,7 +1836,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                 </div>
               </Stack__>
 
-              <Link href='https://cadmenclinic.ca.zenoti.com/webstoreNew/services' target="_blank" className='mt-[10px] w-full md:w-auto'>
+              <Link href='/book-now'  className='mt-[10px] w-full md:w-auto'>
                 <button className='button w-full md:w-auto'>Book Now</button>
               </Link>
             </div>
@@ -2071,7 +2071,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
               </div>
             </Stack__>
 
-            <Link href='https://cadmenclinic.ca.zenoti.com/webstoreNew/services' target="_blank" className='mt-[10px] w-full md:w-auto'>
+            <Link href='/book-now'  className='mt-[10px] w-full md:w-auto'>
               <button className='button white w-full md:w-auto'>Book Now</button>
             </Link>
           </Stack__>

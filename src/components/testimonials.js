@@ -9,7 +9,7 @@ const Testimonials = () => (
       </h2>
       <div className='flex justify-center py-10'>
         <Link
-          href='https://cadmenclinic.ca.zenoti.com/webstoreNew/services'
+          href='/book-now'
           className='rounded bg-teal-600 px-5 py-3 font-light uppercase text-white hover:bg-teal-700'
         >
           See All Services
