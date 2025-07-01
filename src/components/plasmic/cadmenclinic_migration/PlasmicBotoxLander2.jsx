@@ -160,7 +160,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
     },
     {
       id: 2,
-      title: "3 Exosome Therapy",
+      title: "3 Exosome Hair Therapy",
       specialPrice: "$1,799",
       regularPrice: "$2,399",
       items: [
@@ -220,7 +220,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
     }, 
     {
       id: 6,
-      title: "3 Exosome + \n3 Mesotherapy",
+      title: "3 Exosome + \n6 Mesotherapy",
       specialPrice: "$3,499",
       regularPrice: "$4,799",
       items: [

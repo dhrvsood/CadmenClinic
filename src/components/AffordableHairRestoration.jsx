@@ -3,6 +3,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import { useEffect } from 'react';
 
 const affordables = [
   {
@@ -58,6 +59,16 @@ const affordables = [
 const AffordableHairRestoration = () => {
   const [activeTab, setActiveTab] = useState(affordables[0]); // Initialize with the first item
 
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      affordables.forEach(item => {
+        const img = new window.Image();
+        img.src = item.img;
+      });
+    }
+  }, []);
+
+
   return (
     <section className="container max-w-full mx-auto px-16 py-16">
       <div className="flex flex-col lg:flex-row gap-8 items-center lg:items-start lg:justify-between">
@@ -88,8 +99,8 @@ const AffordableHairRestoration = () => {
                     : 'border border-[#9a7f71] text-[#9a7f71] hover:bg-[#f5f0ed]' // Not selected state (added a subtle hover)
                   }`}
               >
-  {item.name}
-</button>
+                {item.name}
+              </button>
             ))}
           </div>
         </div>
@@ -101,12 +112,15 @@ const AffordableHairRestoration = () => {
                style={{ paddingTop: 'calc(300 / 700 * 100%)' }}> {/* This sets the aspect ratio (height / width * 100%) */}
 
             <Image
+              key={activeTab.img}
               src={activeTab.img}
               alt={activeTab.name}
               layout="fill" // Makes the image fill its parent container
               objectFit="cover" // Crops the image to fit the container while maintaining aspect ratio
               className="absolute inset-0 w-full h-full"
+              loading="eager"
             />
+
           </div>
 
 
