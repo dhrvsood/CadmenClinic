@@ -68,10 +68,17 @@ const SelectService = () => {
             >
               {category.services.map((service, j) => (
                 <>
-                  <div
+                  {/* <div
                     key={j}
                     className={styles.service}
                     onClick={() => handleOpenModal(service.code)}
+                  > */}
+                  <div
+                    key={j}
+                    className={`${styles.service} ${service.comingSoon ? styles.comingSoon : ''}`}
+                    onClick={() => {
+                      if (!service.comingSoon) handleOpenModal(service.code)
+                    }}
                   >
                     <div className={styles.serviceLeft}>
                       <Image
@@ -86,10 +93,14 @@ const SelectService = () => {
                       <p className={`${sharedStyles.p} ${styles.serviceTitle}`}>
                         {service.title}
                       </p>
-                      {!service.price.discounted ? (
+                      {/* {!service.price.discounted ? (
                         <p className={styles.salePrice}>
                           {service.price.original}
-                        </p>
+                        </p> */}
+                      {service.comingSoon ? (
+                        <p className={styles.percentOff}>Coming soon!</p>
+                      ) : !service.price.discounted ? (
+                        <p className={styles.salePrice}>{service.price.original}</p>
                       ) : (
                         <p className={styles.onSale}>
                           <p className={styles.strikePrice}>
@@ -105,6 +116,7 @@ const SelectService = () => {
                       )}
                     </div>
                   </div>
+                  {!service.comingSoon && (
                   <ServiceModal
                     id={service.code}
                     isOpen={openModal === service.code}
@@ -188,6 +200,7 @@ const SelectService = () => {
                       </div>
                     </div>
                   </ServiceModal>
+                  )}
                 </>
               ))}
             </div>

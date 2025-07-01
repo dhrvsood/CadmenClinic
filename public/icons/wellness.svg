@@ -1,0 +1,9 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Circular border -->
+  <rect x="0.25" y="0.25" width="31.5" height="31.5" rx="15.75" stroke="#EAECEE" stroke-width="0.5"/>
+
+  <!-- Star icon, scaled and centered -->
+  <g transform="translate(6 5) scale(0.6)">
+    <path d="M25.336 1.531l-1.68 3.667-3.653 1.667 3.653 1.68 1.68 3.653 1.667-3.653 3.666-1.68-3.666-1.667m-15 .333l-3.334 7.334-7.333 3.333 7.333 3.333 3.334 7.334 3.333-7.334 7.333-3.333-7.333-3.333m10 7.333l-1.68 3.653-3.653 1.68 3.653 1.667 1.68 3.667 1.667-3.667 3.666-1.667-3.666-1.68" fill="#9a7f71"/>
+  </g>
+</svg>
