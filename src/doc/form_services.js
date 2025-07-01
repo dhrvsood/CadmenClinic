@@ -158,7 +158,7 @@ const formServices = [
         id: '3a2b077b-3e98-4f16-9183-8c0cb9aeccfb',
         price: {
           original: '$14.00',
-          discounted: '$9.99 /unit',
+          discounted: '$9.99 / unit',
           percent: '30% off'
         },
         image: '/booking-photos/botox.webp',
@@ -213,8 +213,8 @@ const formServices = [
         notes: '',
         id: '4a873bb4-8780-46ed-996a-77fec4b76cda',
         price: {
-          original: '$750',
-          discounted: '$525 / Syringe',
+          original: '$799',
+          discounted: '$599 / Syringe',
           percent: '30% off'
         },
         image: '/booking-photos/dermal-fillers.webp',

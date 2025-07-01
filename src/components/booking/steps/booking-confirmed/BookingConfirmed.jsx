@@ -64,6 +64,9 @@ const BookingConfirmed = () => {
           Please arrive 10 minutes early and feel free to reach out if you have
           any questions.
         </p>
+        <p className={sharedStyles.p}>
+          You will receive an email confirmation of your appointment within the next 10 minutes - thank you for choosing CADMEN!
+        </p>
       </div>
       <div className={styles.list}>
         <InfoFlex title='Your Booking' leftIcon='/icons/star-icon.svg'>

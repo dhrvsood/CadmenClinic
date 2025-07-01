@@ -6,11 +6,6 @@ import CountdownTimer from '../../countdown-timer/CountdownTimer'
 import styles from './SecureBooking.module.css'
 import { useNotificationStore } from '@/zustand/useNotificationStore'
 
-const baseURL =
-  process.env.CONTEXT === 'production'
-    ? 'https://cadmenclinic.ca'
-    : process.env.URL || 'http://localhost:3000';
-
 const SecureBooking = () => {
   const {
     setNextDisabled,
@@ -65,7 +60,7 @@ const SecureBooking = () => {
 
   useEffect(() => {
     const handleMessage = async (event) => {
-      if (event.origin !== baseURL)
+      if (event.origin !== window.location.origin)
         return
 
       fetch('/api/logger', {
