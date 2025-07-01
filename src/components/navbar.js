@@ -14,7 +14,7 @@ import { ChevronDownIcon } from '@heroicons/react/20/solid'
 const navigation = {
   pages: [
     // { name: 'Conditions', href: '/conditions' },
-    { name: 'Shop', href: '/shop' },
+    { name: 'Shop', href: '/coming-soon' },
     { name: 'Learn More', href: '/about' },
     { name: 'Blog', href: '/blog' },
   ]
@@ -146,6 +146,7 @@ const Navbar = () => {
                                           className='grid grid-cols-3 gap-5 px-5 py-10'
                                         >
                                           {Object.entries(navItems).map(([key, category], i) => (
+                                            // Navbar header -- Set link just for Hair Restoration Lander
                                             <li key={i} className='flex flex-col space-y-2'>
                                               {key === 'Hair Restoration' ? (
                                                 <Popover.Button
@@ -161,6 +162,7 @@ const Navbar = () => {
                                                 </p>
                                               )}
 
+                                              {/* Services within each category */}
                                               {orderBy(
                                                 category.services,
                                                 [
@@ -170,13 +172,22 @@ const Navbar = () => {
                                                 ['asc', 'asc']
                                               ).map((service, j) => (
                                                 <div className="text-black" key={`${i}-${j}`}>
+                                                  {/* conditional logic for coming soon pages in categories.js */}
                                                   <Popover.Button
+                                                    as={Link}
+                                                    className='text-md tracking-widest hover:underline'
+                                                    href={service.slug.startsWith('/') ? service.slug : `/services/${service.slug}`}
+                                                  >
+                                                    {service.title}
+                                                  </Popover.Button>
+
+                                                  {/* <Popover.Button
                                                     as={Link}
                                                     className='text-md tracking-widest hover:underline'
                                                     href={`/services${service.slug}`}
                                                   >
                                                     {service.title}
-                                                  </Popover.Button>
+                                                  </Popover.Button> */}
                                                 </div>
                                               ))}
                                             </li>
