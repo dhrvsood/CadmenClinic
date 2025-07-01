@@ -3,6 +3,7 @@ import axios from 'axios'
 const baseURL = process.env.URL || 'http://localhost:3000';
 
 const addCard = async (req, res) => {
+  console.log("BaseURL:", baseURL)
   const params = JSON.parse(req.body)
 
   const { guestId } = params
