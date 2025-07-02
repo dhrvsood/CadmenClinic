@@ -263,7 +263,7 @@ const Navbar = () => {
                       </Link>
                     ) : (
                       <a
-                        href="tel:1416551137"
+                        href="tel:14165511137"
                         className="header-btn rounded border border-beaver/90 bg-beaver/90 px-3 py-3 text-base font-light text-white hover:quicsand-dark flex items-center"
                       >
                         <PhoneIcon className='w-4' />

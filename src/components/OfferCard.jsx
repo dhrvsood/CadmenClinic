@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import { ctaToBooking } from '@/helpers/cta_to_booking'
 import { ctaToBookingServiceCategory } from '@/helpers/cta_to_booking_service_category'
+import { useWindowSize } from 'react-use'
+
 
 const OfferCard = ({
   service,
@@ -19,11 +21,16 @@ const OfferCard = ({
       ctaToBooking(serviceId)
     }
   }
+  const { width: windowWidth } = useWindowSize();
+  const isDesktop = windowWidth >= 1345
 
   return (
     <div>
       <div className='flex items-stretch'>
-        <div className="w-[120px] h-[123px] relative flex-shrink-0 overflow-hidden rounded-[16px]">
+        <div 
+          className="w-[120px] relative flex-shrink-0 overflow-hidden rounded-[16px]"
+          style={{ height: isDesktop ? "123px" : "147px" }}
+        >
           <Image
             src={image}
             alt=""

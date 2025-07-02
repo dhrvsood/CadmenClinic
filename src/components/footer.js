@@ -8,9 +8,9 @@ import siteLogoWhite from '../../public/site-logo-white.png';
 
 const navigation = {
   company: [
-    { name: 'Services', href: '/services' },
-    { name: 'Conditions', href: '/conditions' },
-    { name: 'About', href: '/about' },
+    // { name: 'Services', href: '/services' },
+    // { name: 'Conditions', href: '/conditions' },
+    { name: 'Learn More', href: '/about' },
     { name: 'Blog', href: '/blog' },
     {
       name: 'Appointment Cancellation Policy',
@@ -45,7 +45,7 @@ const Footer = () => {
               <p className='text-sm'>240 Queen St W (2nd Floor)</p>
               <p className='text-sm'>Toronto, ON, M5V1Z7</p>
               <p className='text-sm'>
-                <a href='tel:+1416551137' className='text-sm  hover:underline'>
+                <a href='tel:+14165511137' className='text-sm  hover:underline'>
                 (416) 551-1137
                 </a>
               </p>

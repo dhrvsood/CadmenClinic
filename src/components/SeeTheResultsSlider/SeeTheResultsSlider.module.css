@@ -173,7 +173,8 @@
 }
 
 .link {
-  color: #C69C93;
+  /* color: #C69C93; */
+  color: #8f7162e6;
   font-family: Poppins;
   font-size: 18px;
   font-style: normal;
@@ -244,7 +245,6 @@
   width: 56px;
   justify-content: center;
   align-items: center;
-  border: 1px solid #eaecee;
   background-color: #8f7162e6;
 }
 
@@ -257,7 +257,7 @@
 }
 
 .disabled {
-  background-color: #8f7162e6;
+  background-color: #8f716271;
   pointer-events: none;
 }
 
@@ -525,7 +525,7 @@
   }
 
   .dotActive {
-    background-color: #edbbd6;
+    background-color: #8f7162e6;
   }
   .nav {
     gap: 16px;

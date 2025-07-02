@@ -97,14 +97,14 @@ const data = [
           description:
             'Achieve beautifully defined, balanced lips with personalized care.',
           image: '/seeTheResultsSlider/injectables/injectables-6a.avif',
-          link: '/coming-soon'
+          link: '/services/coming-soon'
         },
         backCard: {
           title: 'Lip Fillers and Augmentation',
           description:
             'Achieve beautifully defined, balanced lips with personalized care.',
           image: '/seeTheResultsSlider/injectables/injectables-6b.avif',
-          link: '/coming-soon'
+          link: '/services/coming-soon'
         }
       },
       {
@@ -129,14 +129,14 @@ const data = [
           description:
             'Stimulates collagen production for long-lasting, natural results.',
           image: '/seeTheResultsSlider/injectables/injectables-3a.avif',
-          link: '/coming-soon'
+          link: '/services/coming-soon'
         },
         backCard: {
           title: 'SCULPTRA®',
           description:
             'Stimulates collagen production for long-lasting, natural results.',
           image: '/seeTheResultsSlider/injectables/injectables-3b.avif',
-          link: '/coming-soon'
+          link: '/services/coming-soon'
         }
       },
       {
@@ -425,7 +425,8 @@ const SeeTheResultsSlider = ({ settings, handleButtonClick }) => {
                     onClick={previous}
                   >
                     <Image
-                      src={`/arrows/prev-arrow-${!currentSlide ? 'green' : 'white'}.svg`}
+                      // src={`/arrows/prev-arrow-${!currentSlide ? 'green' : 'white'}.svg`}
+                      src={`/arrows/prev-arrow-white.svg`}
                       width={14}
                       height={14}
                       alt=''
@@ -437,8 +438,8 @@ const SeeTheResultsSlider = ({ settings, handleButtonClick }) => {
                     onClick={next}
                   >
                     <Image
-                      src={`/arrows/next-arrow-${currentSlide === totalPages - 1 ? 'green' : 'white'
-                        }.svg`}
+                      // src={`/arrows/next-arrow-${currentSlide === totalPages - 1 ? 'green' : 'white'}.svg`}
+                      src={`/arrows/next-arrow-white.svg`}
                       width={14}
                       height={14}
                       alt=''

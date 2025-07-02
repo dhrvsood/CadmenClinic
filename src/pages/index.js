@@ -152,7 +152,7 @@ const Home = () => {
     }
   ]
 
-  const isDesktop = windowWidth >= 1200
+  const isDesktop = windowWidth > 1200
 
   return (
     <>
@@ -303,8 +303,8 @@ const Home = () => {
               dots: false,
               infinite: false,
               speed: 500,
-              slidesToShow: windowWidth > 1200 ? 2 : 1,
-              slidesToScroll: 2
+              slidesToShow: isDesktop ? 2 : 1,
+              slidesToScroll: isDesktop ? 2 : 1
             }}
             handleButtonClick={() => router.push('/book-now')}
           />
