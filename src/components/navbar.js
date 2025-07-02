@@ -14,7 +14,7 @@ import { ChevronDownIcon } from '@heroicons/react/20/solid'
 const navigation = {
   pages: [
     // { name: 'Conditions', href: '/conditions' },
-    { name: 'Shop', href: '/coming-soon' },
+    // { name: 'Shop', href: '/coming-soon' },
     { name: 'Learn More', href: '/about' },
     { name: 'Blog', href: '/blog' },
   ]
@@ -172,22 +172,13 @@ const Navbar = () => {
                                                 ['asc', 'asc']
                                               ).map((service, j) => (
                                                 <div className="text-black" key={`${i}-${j}`}>
-                                                  {/* conditional logic for coming soon pages in categories.js */}
                                                   <Popover.Button
                                                     as={Link}
                                                     className='text-md tracking-widest hover:underline'
-                                                    href={service.slug.startsWith('/') ? service.slug : `/services/${service.slug}`}
+                                                    href={`/services/${service.slug}`}
                                                   >
                                                     {service.title}
                                                   </Popover.Button>
-
-                                                  {/* <Popover.Button
-                                                    as={Link}
-                                                    className='text-md tracking-widest hover:underline'
-                                                    href={`/services${service.slug}`}
-                                                  >
-                                                    {service.title}
-                                                  </Popover.Button> */}
                                                 </div>
                                               ))}
                                             </li>
@@ -247,29 +238,36 @@ const Navbar = () => {
                     </div>
                   </div>
                   {/* Logo (lg-) */}
-                  <div className='md:hidden'>
+                  <div className='md:hidden max-w-[160px]'>
                     <Link href='/'>
                       <span className='sr-only'>CADMEN Clinic</span>
                       <Image
-                        className='h-8 object-cover xxs:h-8 w-full'
                         src={siteLogo}
                         alt='CADMEN logo'
+                        className='h-auto w-full object-contain'
+                        width={160}
+                        height={50}
+                        priority
                       />
                     </Link>
                   </div>
+
 
                   <div className='ml-auto md:hidden'>
                     {!router.pathname.includes('/book-now') ? (
                       <Link
                         href={'/book-now'}
-                        className='rounded border border-beaver/90 bg-beaver/90 px-1 sm:px-2 py-2 md:px-2 text-xs font-light text-white hover:bg-beaver'
+                        className='rounded border border-beaver/90 bg-beaver/90 px-1 sm:px-2 py-2 md:px-2 text-xs font-light text-white hover:bg-beaver max-sm:w-full max-sm:text-sm whitespace-nowrap'
                       >
                         Book Now
                       </Link>
                     ) : (
-                      <a href='tel:8722856769'
-                        className='header-btn rounded border border-beaver/90 bg-beaver/90 px-3 py-3 text-base font-light text-white hover:quicsand-dark'>
-                        <i className="fa-solid fa-phone mr-2"></i>Click To Call
+                      <a
+                        href="tel:1416551137"
+                        className="header-btn rounded border border-beaver/90 bg-beaver/90 px-3 py-3 text-base font-light text-white hover:quicsand-dark flex items-center"
+                      >
+                        <PhoneIcon className='w-4' />
+                        <span className="hidden sm:inline px-1">Call Now</span>
                       </a>
 
                     )}

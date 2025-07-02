@@ -4,7 +4,7 @@ export const categories = {
       {
         "title": "PRP Hair Restoration",
         "subTitle": "Naturally promote new hair growth and thicker, fuller hair by using your body's own plasma",
-        "slug": "hair-restoration/prp",
+        "slug": "/hair-restoration/prp",
         "categoryOrder": 1,
         "heroImage": {
           "asset": {
@@ -16,7 +16,7 @@ export const categories = {
       {
         "title": "Exosome Hair Therapy",
         "subTitle": "Non-invasive treatment that stimulates hair growth and reduces hair loss by blocking DHT.",
-        "slug": "hair-restoration/exosomes",
+        "slug": "/hair-restoration/exosomes",
         "categoryOrder": 2,
         "heroImage": {
           "asset": {
@@ -28,7 +28,7 @@ export const categories = {
       {
         "title": "Mesotherapy Vitamins",
         "subTitle": "Natural treatment which includes injecting vitamins, minerals, amino acids and growth factors that nourish hair follicles into the scalp.",
-        "slug": "hair-restoration/mesotherapy",
+        "slug": "/hair-restoration/mesotherapy",
         "categoryOrder": 3,
         "heroImage": {
           "asset": {
@@ -44,7 +44,7 @@ export const categories = {
       {
         "title": "Botox® Wrinkle Relaxer Treatment",
         "subTitle": "The perfect solution for those seeking to soften the appearance of fine lines and wrinkles.",
-        "slug": "botox",
+        "slug": "/botox",
         "categoryOrder": 1,
         "heroImage": {
           "asset": {
@@ -56,7 +56,7 @@ export const categories = {
       {
         "title": "Chemical Peels",
         "subTitle": "Define, increase volume, and enhance the natural fullness of the jaw, cheeks, and lips",
-        "slug": "chemical-peels",
+        "slug": "/chemical-peels",
         "categoryOrder": 2,
         "heroImage": {
           "asset": {
@@ -80,7 +80,7 @@ export const categories = {
       {
         "title": "Dermal Fillers",
         "subTitle": "Define, increase volume, and enhance the natural fullness of the jaw, cheeks, and lips",
-        "slug": "dermal-fillers",
+        "slug": "/dermal-fillers",
         "categoryOrder": 4,
         "heroImage": {
           "asset": {
@@ -104,7 +104,7 @@ export const categories = {
       {
         "title": "Microneedling Facial",
         "subTitle": "Define, increase volume, and enhance the natural fullness of the jaw, cheeks, and lips",
-        "slug": "microneedling",
+        "slug": "/microneedling",
         "categoryOrder": 6,
         "heroImage": {
           "asset": {
@@ -116,7 +116,7 @@ export const categories = {
       {
         "title": "PRP (Vampire) Facial",
         "subTitle": "Define, increase volume, and enhance the natural fullness of the jaw, cheeks, and lips",
-        "slug": "blood-facial-prp-microneedling",
+        "slug": "/blood-facial-prp-microneedling",
         "categoryOrder": 7,
         "heroImage": {
           "asset": {
@@ -132,7 +132,7 @@ export const categories = {
       {
         "title": "IV Drip Therapy",
         "subTitle": "Define, increase volume, and enhance the natural fullness of the jaw, cheeks, and lips",
-        "slug": "farsk-nad-iv",
+        "slug": "/farsk-nad-iv",
         "categoryOrder": 1,
         "heroImage": {
           "asset": {
@@ -144,7 +144,7 @@ export const categories = {
       {
         "title": "Semaglutide Therapy",
         "subTitle": "Define, increase volume, and enhance the natural fullness of the jaw, cheeks, and lips",
-        "slug": "semaglutide-therapy",
+        "slug": "/semaglutide-therapy",
         "categoryOrder": 2,
         "heroImage": {
           "asset": {
