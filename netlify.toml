@@ -1,3 +1,0 @@
-[build.environment]
-  NODE_VERSION = "20"
-  NPM_CONFIG_SHARP_IGNORE_GLOBAL_LIBVIPS = "1"
