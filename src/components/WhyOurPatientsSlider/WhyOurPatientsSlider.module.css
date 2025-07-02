@@ -59,7 +59,6 @@
   width: 56px;
   justify-content: center;
   align-items: center;
-  border: 1px solid #eaecee;
   background-color: #8f7162e6;
 }
 
@@ -68,8 +67,7 @@
 }
 
 .disabled {
-  background-color: #8f7162e6;
-  border-color: #d9dcde;
+  background-color: #8f716271;
   pointer-events: none;
 }
 
