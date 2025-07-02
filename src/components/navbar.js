@@ -10,8 +10,6 @@ import { PhoneIcon } from '@heroicons/react/24/solid'
 import Image from 'next/image'
 import siteLogo from '../../public/site-logo.png';
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
 const navigation = {
   pages: [
@@ -174,7 +172,6 @@ const Navbar = () => {
                                                 ['asc', 'asc']
                                               ).map((service, j) => (
                                                 <div className="text-black" key={`${i}-${j}`}>
-                                                  {/* conditional logic for coming soon pages in categories.js */}
                                                   <Popover.Button
                                                     as={Link}
                                                     className='text-md tracking-widest hover:underline'
@@ -182,14 +179,6 @@ const Navbar = () => {
                                                   >
                                                     {service.title}
                                                   </Popover.Button>
-
-                                                  {/* <Popover.Button
-                                                    as={Link}
-                                                    className='text-md tracking-widest hover:underline'
-                                                    href={`/services${service.slug}`}
-                                                  >
-                                                    {service.title}
-                                                  </Popover.Button> */}
                                                 </div>
                                               ))}
                                             </li>
@@ -249,16 +238,6 @@ const Navbar = () => {
                     </div>
                   </div>
                   {/* Logo (lg-) */}
-                  {/* <div className='md:hidden'>
-                    <Link href='/'>
-                      <span className='sr-only'>CADMEN Clinic</span>
-                      <Image
-                        className='h-8 object-cover xxs:h-8 w-full'
-                        src={siteLogo}
-                        alt='CADMEN logo'
-                      />
-                    </Link>
-                  </div> */}
                   <div className='md:hidden max-w-[160px]'>
                     <Link href='/'>
                       <span className='sr-only'>CADMEN Clinic</span>
@@ -282,29 +261,11 @@ const Navbar = () => {
                       >
                         Book Now
                       </Link>
-                      // <Link href='/book-now' className=''>
-                      //   <button className='button navbar !py-[14px] !px-5 max-sm:w-full'>Book Now</button>
-                      // </Link>
-                      // <Link href='/book-now' className=''>
-                      //   <button
-                      //     className='button navbar !py-[14px] !px-5 max-sm:w-full max-sm:text-sm whitespace-nowrap'
-                      //   >
-                      //     Book Now
-                      //   </button>
-                      // </Link>
-
                     ) : (
-                      // <Link href='tel:1416551137' className=''>
-                      //   <button className='button navbar !py-[14px] !px-5 max-sm:w-full'>
-                      //     <FontAwesomeIcon icon={faPhone} className="mr-2" />
-                      //     <span className="hidden sm:inline">Call</span>
-                      //   </button>
-                      // </Link>
                       <a
                         href="tel:1416551137"
                         className="header-btn rounded border border-beaver/90 bg-beaver/90 px-3 py-3 text-base font-light text-white hover:quicsand-dark flex items-center"
                       >
-                        {/* <FontAwesomeIcon icon={faPhone} className="mr-2" /> */}
                         <PhoneIcon className='w-4' />
                         <span className="hidden sm:inline px-1">Call Now</span>
                       </a>
