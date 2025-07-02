@@ -98,7 +98,8 @@ const MobileMenu = ({ open, setOpen, navItems, navigation }) => {
                 ))}
               </div>
               <div className='flex flex-col divide-y'>
-                <div className='flex p-5'>
+                {/* View All Services */}
+                {/* <div className='flex p-5'>
                   <Link
                     onClick={() => setOpen(false)}
                     href='/services'
@@ -106,7 +107,7 @@ const MobileMenu = ({ open, setOpen, navItems, navigation }) => {
                   >
                     View All Services
                   </Link>
-                </div>
+                </div> */}
                 {navigation.pages.map((page) => (
                   <div key={page.name} className='flex p-5'>
                     <Link
