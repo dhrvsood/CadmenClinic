@@ -24,7 +24,6 @@
     "@mui/lab": "^5.0.0-alpha.143",
     "@mui/material": "^5.14.8",
     "@mui/x-date-pickers": "^6.12.1",
-    "@netlify/plugin-nextjs": "^4.41.3",
     "@notionhq/client": "^2.2.15",
     "@plasmicapp/host": "^1.0.207",
     "@plasmicapp/loader": "^0.0.59",
