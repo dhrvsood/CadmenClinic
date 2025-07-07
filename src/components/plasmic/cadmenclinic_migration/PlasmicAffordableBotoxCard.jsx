@@ -28,6 +28,8 @@ import projectcss from "../blank_website/plasmic.module.css"; // plasmic-import:
 import sty from "./PlasmicAffordableBotoxCard.module.css"; // plasmic-import: dCCKAyC8oXyh/css
 import PointIcon from "./icons/PlasmicIcon__Point"; // plasmic-import: dMjm7kjmXw_d/icon
 
+import Link from "next/link";
+
 createPlasmicElementProxy;
 
 export const PlasmicAffordableBotoxCard__VariantProps = new Array(
@@ -37,6 +39,7 @@ export const PlasmicAffordableBotoxCard__VariantProps = new Array(
 
 export const PlasmicAffordableBotoxCard__ArgProps = new Array(
   "name",
+  "link",
   "price",
   "perUnit",
   "items",
@@ -59,9 +62,6 @@ function PlasmicAffordableBotoxCard__RenderFunc(props) {
     () =>
       Object.assign(
         {
-          name: "Botox",
-          price: "$11.00",
-          perUnit: "$14.00",
           items: [],
           unitWording: "/ First Session Price",
           pillUnit: "/ Regular Session Price"
@@ -165,20 +165,13 @@ function PlasmicAffordableBotoxCard__RenderFunc(props) {
               )}
             >
               <React.Fragment>
-                {(() => {
-                  try {
-                    return $props.name;
-                  } catch (e) {
-                    if (
-                      e instanceof TypeError ||
-                      e?.plasmicType === "PlasmicUndefinedDataError"
-                    ) {
-                      return "Botox";
-                    }
-                    throw e;
-                  }
-                })()}
+                <Link href={$props.link || "/"}>
+                  <span className="hover:underline hover:text-[#9a7f71] transition-colors duration-200">
+                    {$props.name}
+                  </span>
+                </Link>
               </React.Fragment>
+
             </div>
             <div
               className={classNames(
@@ -232,21 +225,7 @@ function PlasmicAffordableBotoxCard__RenderFunc(props) {
                 }
               )}
             >
-              <React.Fragment>
-                {(() => {
-                  try {
-                    return $props.price;
-                  } catch (e) {
-                    if (
-                      e instanceof TypeError ||
-                      e?.plasmicType === "PlasmicUndefinedDataError"
-                    ) {
-                      return "$11.00";
-                    }
-                    throw e;
-                  }
-                })()}
-              </React.Fragment>
+              <React.Fragment>{$props.price}</React.Fragment>
             </div>
             <div
               data-plasmic-name={"heading"}
@@ -258,21 +237,7 @@ function PlasmicAffordableBotoxCard__RenderFunc(props) {
                 { [sty.headingsize_small]: hasVariant($state, "size", "small") }
               )}
             >
-              <React.Fragment>
-                {(() => {
-                  try {
-                    return $props.unitWording;
-                  } catch (e) {
-                    if (
-                      e instanceof TypeError ||
-                      e?.plasmicType === "PlasmicUndefinedDataError"
-                    ) {
-                      return "/Unit member price";
-                    }
-                    throw e;
-                  }
-                })()}
-              </React.Fragment>
+              <React.Fragment>{$props.unitWording}</React.Fragment>
             </div>
           </Stack__>
           <Stack__
@@ -300,21 +265,7 @@ function PlasmicAffordableBotoxCard__RenderFunc(props) {
                   sty.heading2
                 )}
               >
-                <React.Fragment>
-                  {(() => {
-                    try {
-                      return $props.perUnit;
-                    } catch (e) {
-                      if (
-                        e instanceof TypeError ||
-                        e?.plasmicType === "PlasmicUndefinedDataError"
-                      ) {
-                        return "$14.00";
-                      }
-                      throw e;
-                    }
-                  })()}
-                </React.Fragment>
+                <React.Fragment>{$props.perUnit}</React.Fragment>
               </div>
               <div
                 data-plasmic-name={"heading3"}
@@ -325,21 +276,7 @@ function PlasmicAffordableBotoxCard__RenderFunc(props) {
                   sty.heading3
                 )}
               >
-                <React.Fragment>
-                  {(() => {
-                    try {
-                      return $props.pillUnit;
-                    } catch (e) {
-                      if (
-                        e instanceof TypeError ||
-                        e?.plasmicType === "PlasmicUndefinedDataError"
-                      ) {
-                        return "/Per unit";
-                      }
-                      throw e;
-                    }
-                  })()}
-                </React.Fragment>
+                <React.Fragment>{$props.pillUnit}</React.Fragment>
               </div>
             </Stack__>
             <div
@@ -363,17 +300,7 @@ function PlasmicAffordableBotoxCard__RenderFunc(props) {
       >
         {(_par => (!_par ? [] : Array.isArray(_par) ? _par : [_par]))(
           (() => {
-            try {
-              return $props.items;
-            } catch (e) {
-              if (
-                e instanceof TypeError ||
-                e?.plasmicType === "PlasmicUndefinedDataError"
-              ) {
-                return [];
-              }
-              throw e;
-            }
+            return $props.items;
           })()
         ).map((__plasmic_item_0, __plasmic_idx_0) => {
           const currentItem = __plasmic_item_0;
@@ -411,8 +338,8 @@ function PlasmicAffordableBotoxCard__RenderFunc(props) {
                     }
                   )}
                 >
-                  <React.Fragment>
-                    {(() => {
+                  <React.Fragment>{currentItem.title}
+                    {/* {(() => {
                       try {
                         return currentItem.title;
                       } catch (e) {
@@ -424,7 +351,7 @@ function PlasmicAffordableBotoxCard__RenderFunc(props) {
                         }
                         throw e;
                       }
-                    })()}
+                    })()} */}
                   </React.Fragment>
                 </div>
               </Stack__>
@@ -442,8 +369,8 @@ function PlasmicAffordableBotoxCard__RenderFunc(props) {
                   }
                 )}
               >
-                <React.Fragment>
-                  {(() => {
+                <React.Fragment>{currentItem.description}
+                  {/* {(() => {
                     try {
                       return currentItem.description;
                     } catch (e) {
@@ -455,7 +382,7 @@ function PlasmicAffordableBotoxCard__RenderFunc(props) {
                       }
                       throw e;
                     }
-                  })()}
+                  })()} */}
                 </React.Fragment>
               </div>
             </div>
