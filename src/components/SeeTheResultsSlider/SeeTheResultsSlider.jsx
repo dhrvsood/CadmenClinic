@@ -248,7 +248,9 @@ const SeeTheResultsSlider = ({ settings, handleButtonClick }) => {
             <div
               className={`${styles.tabContent} ${i === activeTab ? styles.tabContentActive : ''}`}
             >
-              <img
+              <Image
+                height={25}
+                width={25}
                 src={i === activeTab ? tab.activeIcon : tab.icon}
                 alt='tab icon'
               />
@@ -347,7 +349,9 @@ const SeeTheResultsSlider = ({ settings, handleButtonClick }) => {
                       className={`${styles.frontCard} ${flippedCards.includes(i) ? styles.hide : ''
                         }`}
                     >
-                      <img
+                      <Image
+                        width={372}
+                        height={300}
                         className={styles.cardImage}
                         src={card.frontCard.image}
                         alt='image'
@@ -380,7 +384,9 @@ const SeeTheResultsSlider = ({ settings, handleButtonClick }) => {
                         className={`${styles.backCard} ${flippedCards.includes(i) ? styles.show : ''
                           }`}
                       >
-                        <img
+                        <Image
+                          width={372}
+                          height={300}
                           className={styles.cardImage}
                           src={card.backCard.image}
                           alt='image'
