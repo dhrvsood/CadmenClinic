@@ -38,7 +38,7 @@ const Home = () => {
       "text": "Our non-invasive treatments deliver noticeable results with little to no downtime, allowing you to look and feel your best without interrupting your daily routine.",
     },
     {
-      "icon": '/icons/Group.svg',
+      "icon": '/icons/group.svg',
       "mainImage": '/media/home/expert-provider.webp',
       "title": [
         {
@@ -76,7 +76,7 @@ const Home = () => {
       "text": "Join 2,100+ satisfied patients who have trusted CADMEN with hair restoration and aesthetic journey. We are dedicated to delivering results that keep patients coming back.",
     },
     {
-      "icon": '/icons/Lab.svg',
+      "icon": '/icons/lab.svg',
       "mainImage": '/media/home/clinically-proven.webp',
       "title": [
         {

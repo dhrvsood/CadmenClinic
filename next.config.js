@@ -1,6 +1,8 @@
 // next.config.js
-module.exports = {
+const nextConfig = {
   images: {
-    unoptimized: true
-  }
-}
+    formats: ['image/avif', 'image/webp'],
+  },
+};
+
+module.exports = nextConfig;
