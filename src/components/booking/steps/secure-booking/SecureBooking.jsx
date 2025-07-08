@@ -6,6 +6,8 @@ import CountdownTimer from '../../countdown-timer/CountdownTimer'
 import styles from './SecureBooking.module.css'
 import { useNotificationStore } from '@/zustand/useNotificationStore'
 
+const baseURL = `https://${process.env.VERCEL_URL || 'localhost:3000'}`;
+
 const SecureBooking = () => {
   const {
     setNextDisabled,
@@ -60,8 +62,8 @@ const SecureBooking = () => {
 
   useEffect(() => {
     const handleMessage = async (event) => {
-      if (event.origin !== window.location.origin)
-        return
+      if (event.origin !== baseURL)
+        return "Error, event.origin is not the same as baseURL"
 
       fetch('/api/logger', {
         method: 'POST',
