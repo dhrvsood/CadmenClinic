@@ -4,7 +4,7 @@ const addCard = async (req, res) => {
   if (req.method !== 'POST') {
     return res.status(405).json({ message: 'Method Not Allowed' })
   }
-  
+
   const params = JSON.parse(req.body)
 
   const { guestId } = params
@@ -23,7 +23,7 @@ const addCard = async (req, res) => {
       method: 'post',
       url: `https://api.zenoti.com/v1/guests/${guestId}/accounts`,
       headers: {
-        Authorization: `${process.env.ZENOTI_AUTH}`,
+        Authorization: `apikey ${process.env.ZENOTI_AUTH}`,
         'Content-Type': 'application/json'
       },
       data: data
