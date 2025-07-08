@@ -6,7 +6,9 @@ import CountdownTimer from '../../countdown-timer/CountdownTimer'
 import styles from './SecureBooking.module.css'
 import { useNotificationStore } from '@/zustand/useNotificationStore'
 
-const baseURL = `https://${process.env.VERCEL_URL || 'localhost:3000'}`;
+const baseURL =
+  typeof window !== 'undefined' ? window.location.origin : '';
+
 
 const SecureBooking = () => {
   const {

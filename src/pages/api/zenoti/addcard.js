@@ -1,6 +1,8 @@
 import axios from 'axios';
 
-const baseURL = `https://${process.env.VERCEL_URL || 'localhost:3000'}`;
+const protocol = req.headers['x-forwarded-proto'] || 'https';
+const host = req.headers.host || 'localhost:3000';
+const baseURL = `${protocol}://${host}`;
 
 const addCard = async (req, res) => {
   try {
@@ -10,8 +12,6 @@ const addCard = async (req, res) => {
     if (!guestId) {
       return res.status(400).json({ error: 'Guest ID is required' });
     }
-
-    console.log("Base URL from Addcard.js", baseURL);
 
     const data = {
       center_id: process.env.ZENOTI_CENTER_ID,
