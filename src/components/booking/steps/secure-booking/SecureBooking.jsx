@@ -6,10 +6,6 @@ import CountdownTimer from '../../countdown-timer/CountdownTimer'
 import styles from './SecureBooking.module.css'
 import { useNotificationStore } from '@/zustand/useNotificationStore'
 
-const baseURL =
-  typeof window !== 'undefined' ? window.location.origin : '';
-
-
 const SecureBooking = () => {
   const {
     setNextDisabled,
@@ -64,10 +60,10 @@ const SecureBooking = () => {
 
   useEffect(() => {
     const handleMessage = async (event) => {
-      if (event.origin !== baseURL) {
+      if (event.origin !== `https://cadmenclinic.ca/paymentsuccess`) {
         console.log("Event origin:", event.origin)
         console.log("Base URL:", baseURL)
-        console.log("Error, event.origin is not the same as baseURL");
+        console.error("Error, event.origin is not the same as baseURL");
         return;
       }
 
