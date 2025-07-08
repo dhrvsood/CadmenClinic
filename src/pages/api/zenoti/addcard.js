@@ -11,6 +11,8 @@ const addCard = async (req, res) => {
       return res.status(400).json({ error: 'Guest ID is required' });
     }
 
+    console.log("Base URL from Addcard.js", baseURL);
+
     const data = {
       center_id: process.env.ZENOTI_CENTER_ID,
       redirect_uri: `${baseURL}/paymentsuccess`,
