@@ -15,7 +15,7 @@ const addCard = async (req, res) => {
 
     const data = {
       center_id: process.env.ZENOTI_CENTER_ID,
-      redirect_uri: `https://cadmenclinic.ca/paymentsuccess`,
+      redirect_uri: `${'https://cadmen-clinic-m8tfbifdv-dhruv-soods-projects-cc84876a.vercel.app'}/paymentsuccess`,
     };
 
     const config = {
