@@ -62,8 +62,12 @@ const SecureBooking = () => {
 
   useEffect(() => {
     const handleMessage = async (event) => {
-      if (event.origin !== baseURL)
-        return "Error, event.origin is not the same as baseURL"
+      if (event.origin !== baseURL) {
+        console.log("Event origin:", event.origin)
+        console.log("Base URL:", baseURL)
+        console.log("Error, event.origin is not the same as baseURL");
+        return;
+      }
 
       fetch('/api/logger', {
         method: 'POST',
