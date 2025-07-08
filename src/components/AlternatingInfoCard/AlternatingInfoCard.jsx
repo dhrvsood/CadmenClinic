@@ -7,7 +7,7 @@ const iconsMap = {
   syringe: "/icons/alt-icons/injectionSvg2.svg",
   sparkle: "/icons/alt-icons/starsSvg2.svg",
   portrait: "/icons/alt-icons/personSvg2.svg",
-  headset: "/icons/alt-icons/SupportSvg2.svg",
+  headset: "/icons/alt-icons/supportSvg2.svg",
   heart: "/icons/alt-icons/heartSvg2.svg",
   moneybag: "/icons/alt-icons/priceSvg2.svg",
 };
