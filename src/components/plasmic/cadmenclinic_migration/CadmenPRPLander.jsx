@@ -61,6 +61,7 @@ import ServicesCarousel from "@/components/blog_categories_carousel";
 import CadmenOurProcess from "./CadmenOurProcess";
 import CadmenPreparingForAppointment from "./CadmenPreparingForAppointment";
 import CadmenTreatmentCardsSection from "./CadmenTreatmentCardsSection";
+import CadmenWantToLearnMore from "./CadmenWantToLearnMore";
 
 createPlasmicElementProxy;
 
@@ -650,6 +651,10 @@ function PlasmicBotoxLander__RenderFunc(props) {
               {/* 7. INTERACTIVE COMPONENT */}
 
               {/* 8. WANT TO LEARN MORE */}
+              <CadmenWantToLearnMore 
+                title={service.wantToLearnMore.title}
+                description={service.wantToLearnMore.description}
+              />
 
               {/* 9. PREPARING FOR YOUR APPOINTMENT / WHAT TO EXPECT DURING AND AFTER THE TREATMENT */}
             </>
