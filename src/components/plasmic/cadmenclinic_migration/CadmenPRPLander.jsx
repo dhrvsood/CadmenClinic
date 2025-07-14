@@ -58,6 +58,8 @@ import ServiceStepCard from "@/components/ServiceStepCard";
 import WhyPeopleChooseCard from "@/components/WhyPeopleChooseCard";
 import SmallInfoCard from "@/components/SmallInfoCard";
 import ServicesCarousel from "@/components/blog_categories_carousel";
+import CadmenOurProcess from "./CadmenOurProcess";
+import CadmenPreparingForAppointment from "./CadmenPreparingForAppointment";
 
 createPlasmicElementProxy;
 
@@ -119,12 +121,6 @@ function PlasmicBotoxLander__RenderFunc(props) {
           content={service.general.longTitle}
         />
       </Head>
-
-      {/* <style>{`
-        body {
-          margin: 0;
-        }
-      `}</style> */}
 
       <div className={projectcss.plasmic_page_wrapper}>
         <div
@@ -264,10 +260,14 @@ function PlasmicBotoxLander__RenderFunc(props) {
             >
               <SmallInfoCard
                 icon="/icons/portrait-icon.svg"
-                emphasis="FREE"
-                title=" Consultation"
-                subtitle="Claim your first consultation for <strong>FREE</strong>"
+                emphasis={service.general.longTitle === "Färsk IV Drips" ? "Proven" : "FREE"}
+                title={service.general.longTitle === "Färsk IV Drips" ? " Results You Can Feel" : " Consultation"}
+                subtitle={service.general.longTitle === "Färsk IV Drips"
+                  ? "Proudly Formulated and made in Canada"
+                  : "Claim your first consultation for <strong>FREE</strong>"
+                }
               />
+              
               <SmallInfoCard
                 icon="/icons/discount.svg"
                 emphasis={ 
@@ -298,9 +298,13 @@ function PlasmicBotoxLander__RenderFunc(props) {
             </Stack__>
           </section>
 
-
-          {/* CHOOSE SERVICE SECTION */}
-          <section className={classNames(projectcss.all, sty.chooseBotoxSection)}>
+          {
+            service.category === "hair-restoration"
+            // FOR HAIR RESTORATION PAGES
+            ?
+            <>
+              {/* CHOOSE SERVICE SECTION */}
+              <section className={classNames(projectcss.all, sty.chooseBotoxSection)}>
             <h2
                   className={classNames(
                     projectcss.all,
@@ -381,35 +385,137 @@ function PlasmicBotoxLander__RenderFunc(props) {
                 box-sizing: border-box;
               }
             `}</style>
-          </section>
+              </section>
 
-          {/* HOW SERVICE WORKS */}
-          <section
-            data-plasmic-name={"howBotoxWorksSection"}
-            data-plasmic-override={overrides.howBotoxWorksSection}
-            className={classNames(projectcss.all, sty.howBotoxWorksSection)}
-          >
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__jomPy)}
+              {/* HOW SERVICE WORKS */}
+              <section
+                data-plasmic-name={"howBotoxWorksSection"}
+                data-plasmic-override={overrides.howBotoxWorksSection}
+                className={classNames(projectcss.all, sty.howBotoxWorksSection)}
+              >
+                <Stack__
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__jomPy)}
+                >
+                  <Stack__
+                    as={"div"}
+                    data-plasmic-name={"howBotoxWorksHeader"}
+                    data-plasmic-override={overrides.howBotoxWorksHeader}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.howBotoxWorksHeader)}
+                  >
+                    <h2
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h2,
+                        projectcss.__wab_text,
+                        sty.h2__egivG
+                      )}
+                    >
+                      <React.Fragment>
+                        <span
+                          className={"plasmic_default__all plasmic_default__span"}
+                          style={{
+                            fontStyle: "italic",
+                            fontWeight: 500,
+                            color: "#FAD8A7"
+                          }}
+                        >
+                          {"How"}
+                        </span>
+                        <React.Fragment>{""}</React.Fragment>
+                        <span
+                          className={"plasmic_default__all plasmic_default__span"}
+                          style={{ color: "#FAD8A7" }}
+                        >
+                          {" "}
+                        </span>
+                        <React.Fragment>
+                          {service.general.longTitle}
+                          {" Works"}
+                        </React.Fragment>
+                      </React.Fragment>
+                    </h2>
+                    <p
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.p,
+                        projectcss.__wab_text,
+                        sty.p__l5CD
+                      )}
+                    >
+                      {
+                        "Our patients have experienced significant hair regrowth with our science-backed approach, ensuring safe, long-lasting, and incredible results"
+                      }
+                    </p>
+                  </Stack__>
+                  <div className="cards-container">
+                    {service.howItWorks.map((step) => (
+                      <ServiceStepCard 
+                        key={step.id}
+                        img={step.img}
+                        id={step.id}
+                        title={step.title}
+                        description={step.description}
+                      />
+                    ))}
+                  </div>
+
+                  <style jsx>{`
+                    .cards-container {
+                      display: flex;
+                      flex-wrap: wrap;
+                      justify-content: space-between;
+                      gap: 20px;
+                      padding: 20px;
+                      box-sizing: border-box;
+                      width: 100%;
+                    }
+
+                    @media (max-width: 1023px) {
+                      .cards-container {
+                        flex-direction: column;
+                      }
+                    }
+                  `}</style>
+                </Stack__>
+              </section>
+
+              <AffordableHairRestoration/>
+            </>
+
+            // FOR ALL OTHERS
+            : <></>
+
+          }
+
+          {/* BEFORE AFTER */}
+          {
+            service.beforeAfters
+            ?
+            <section
+              data-plasmic-name={"beforeAfterSection"}
+              data-plasmic-override={overrides.beforeAfterSection}
+              className={classNames(projectcss.all, sty.beforeAfterSection)}
             >
               <Stack__
                 as={"div"}
-                data-plasmic-name={"howBotoxWorksHeader"}
-                data-plasmic-override={overrides.howBotoxWorksHeader}
+                data-plasmic-name={"beforeAfterHeader"}
+                data-plasmic-override={overrides.beforeAfterHeader}
                 hasGap={true}
-                className={classNames(projectcss.all, sty.howBotoxWorksHeader)}
+                className={classNames(projectcss.all, sty.beforeAfterHeader)}
               >
                 <h2
                   className={classNames(
                     projectcss.all,
                     projectcss.h2,
                     projectcss.__wab_text,
-                    sty.h2__egivG
+                    sty.h2__yHrxl
                   )}
                 >
                   <React.Fragment>
+                    <React.Fragment>{"Before & "}</React.Fragment>
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{
@@ -418,19 +524,8 @@ function PlasmicBotoxLander__RenderFunc(props) {
                         color: "#FAD8A7"
                       }}
                     >
-                      {"How"}
+                      {"After"}
                     </span>
-                    <React.Fragment>{""}</React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#FAD8A7" }}
-                    >
-                      {" "}
-                    </span>
-                    <React.Fragment>
-                      {service.general.longTitle}
-                      {" Works"}
-                    </React.Fragment>
                   </React.Fragment>
                 </h2>
                 <p
@@ -438,166 +533,122 @@ function PlasmicBotoxLander__RenderFunc(props) {
                     projectcss.all,
                     projectcss.p,
                     projectcss.__wab_text,
-                    sty.p__l5CD
+                    sty.p__en7Rd
                   )}
                 >
-                  {
-                    "Our patients have experienced significant hair regrowth with our science-backed approach, ensuring safe, long-lasting, and incredible results"
-                  }
+                  {"Results speak for themselves."}
                 </p>
               </Stack__>
-              <div className="cards-container">
-                {/* img, id, title, description */}
-                {service.howItWorks.map((step) => (
-                  <ServiceStepCard 
-                    key={step.id}
-                    img={step.img}
-                    id={step.id}
-                    title={step.title}
-                    description={step.description}
-                  />
-                ))}
-              </div>
-
-              {/* Add a style block for the container */}
-              <style jsx>{`
-                .cards-container {
-                  display: flex;
-                  flex-wrap: wrap;
-                  justify-content: space-between;
-                  gap: 20px;
-                  padding: 20px;
-                  box-sizing: border-box;
-                  width: 100%;
-                }
-
-                @media (max-width: 1023px) {
-                  .cards-container {
-                    flex-direction: column;
+              <div className={classNames(projectcss.all, sty.freeBox__bOf5N)}>
+                <TestimonialsSlider
+                  data-plasmic-name={"beforeAfterSlider"}
+                  data-plasmic-override={overrides.beforeAfterSlider}
+                  className={classNames("__wab_instance", sty.beforeAfterSlider)}
+                  ctaLink={"#"}
+                  ctaText={"Act Now"}
+                  isDarkBg={true}
+                  settings={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? {
+                          dots: false,
+                          arrows: false,
+                          infinite: true,
+                          speed: 500,
+                          slidesToShow: 1,
+                          slidesToScroll: 1
+                        }
+                      : hasVariant(globalVariants, "screen", "midsize")
+                      ? {
+                          dots: false,
+                          arrows: false,
+                          infinite: true,
+                          speed: 500,
+                          slidesToShow: 2,
+                          slidesToScroll: 1
+                        }
+                      : {
+                          dots: false,
+                          arrows: false,
+                          infinite: true,
+                          speed: 500,
+                          slidesToShow: 3,
+                          slidesToScroll: 1
+                        }
                   }
-                }
-              `}</style>
-            </Stack__>
-          </section>
+                >
+                  {service.beforeAfters.map((beforeAfter) => (
+                    <TestimonialCard
+                      className={classNames(
+                        "__wab_instance",
+                        sty.testimonialCard__rFqgo
+                      )}
+                      id={beforeAfter.id}
+                      subtitle={beforeAfter.subtitle}
+                      title={beforeAfter.title}
+                    >
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img___2Nkey)}
+                        displayHeight={"auto"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"100%"}
+                        loading={"lazy"}
+                        src={{
+                          src: beforeAfter.img,
+                          fullWidth: 486,
+                          fullHeight: 480,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    </TestimonialCard>
+                  ))}
+                </TestimonialsSlider>
+              </div>
+            </section>
+            : <></>
+          }
 
-          {/* INTERACTIVE AREA */}
-          <AffordableHairRestoration/>
 
-          {/* BEFORE AFTER */}
-          <section
-            data-plasmic-name={"beforeAfterSection"}
-            data-plasmic-override={overrides.beforeAfterSection}
-            className={classNames(projectcss.all, sty.beforeAfterSection)}
-          >
-            <Stack__
-              as={"div"}
-              data-plasmic-name={"beforeAfterHeader"}
-              data-plasmic-override={overrides.beforeAfterHeader}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.beforeAfterHeader)}
-            >
-              <h2
-                className={classNames(
-                  projectcss.all,
-                  projectcss.h2,
-                  projectcss.__wab_text,
-                  sty.h2__yHrxl
-                )}
-              >
-                <React.Fragment>
-                  <React.Fragment>{"Before & "}</React.Fragment>
-                  <span
-                    className={"plasmic_default__all plasmic_default__span"}
-                    style={{
-                      fontStyle: "italic",
-                      fontWeight: 500,
-                      color: "#FAD8A7"
-                    }}
-                  >
-                    {"After"}
-                  </span>
-                </React.Fragment>
-              </h2>
-              <p
-                className={classNames(
-                  projectcss.all,
-                  projectcss.p,
-                  projectcss.__wab_text,
-                  sty.p__en7Rd
-                )}
-              >
-                {"Results speak for themselves."}
-              </p>
-            </Stack__>
-            <div className={classNames(projectcss.all, sty.freeBox__bOf5N)}>
-              <TestimonialsSlider
-                data-plasmic-name={"beforeAfterSlider"}
-                data-plasmic-override={overrides.beforeAfterSlider}
-                className={classNames("__wab_instance", sty.beforeAfterSlider)}
-                ctaLink={"#"}
-                ctaText={"Act Now"}
-                isDarkBg={true}
-                settings={
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? {
-                        dots: false,
-                        arrows: false,
-                        infinite: true,
-                        speed: 500,
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                      }
-                    : hasVariant(globalVariants, "screen", "midsize")
-                    ? {
-                        dots: false,
-                        arrows: false,
-                        infinite: true,
-                        speed: 500,
-                        slidesToShow: 2,
-                        slidesToScroll: 1
-                      }
-                    : {
-                        dots: false,
-                        arrows: false,
-                        infinite: true,
-                        speed: 500,
-                        slidesToShow: 3,
-                        slidesToScroll: 1
-                      }
-                }
-              >
-                {service.beforeAfters.map((beforeAfter) => (
-                  <TestimonialCard
-                    className={classNames(
-                      "__wab_instance",
-                      sty.testimonialCard__rFqgo
-                    )}
-                    id={beforeAfter.id}
-                    subtitle={beforeAfter.subtitle}
-                    title={beforeAfter.title}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img___2Nkey)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"100%"}
-                      loading={"lazy"}
-                      src={{
-                        src: beforeAfter.img,
-                        fullWidth: 486,
-                        fullHeight: 480,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  </TestimonialCard>
-                ))}
-              </TestimonialsSlider>
-            </div>
-          </section>
+          {
+            service.category === "hair-restoration"
+
+            // IF HAIR RESTORATION
+            ? <></>
+
+            // FOR ALL OTHERS
+            : 
+            <>
+              {/* 4. WHAT IS SERVICE AND HOW DOES IT WORK */}
+              <CadmenPreparingForAppointment
+                titlePrefix={service.whatAndHowItWorks.titlePrefix}
+                titleEmphasis={service.whatAndHowItWorks.titleEmphasis}
+                points={service.whatAndHowItWorks.points}
+                img={service.whatAndHowItWorks.img}
+              />
+
+              {/* 5. OUR SERVICE PROCESS (Consultation, Treatment, Results) */}
+              <CadmenOurProcess 
+                title={service.ourProcess.title}
+                consultation={service.ourProcess.consultation}
+                treatment={service.ourProcess.treatment}
+                results={service.ourProcess.results}
+              />
+
+              {/* 6. CARDS FOR OUR TREATMENTS */}
+                            
+
+              {/* 7. INTERACTIVE COMPONENT */}
+
+              {/* 8. WANT TO LEARN MORE */}
+
+              {/* 9. PREPARING FOR YOUR APPOINTMENT / WHAT TO EXPECT DURING AND AFTER THE TREATMENT */}
+            </>
+
+          }
+
 
           {/* SERVICE TRANSFORMED/HELPED */}
           <section
@@ -704,86 +755,95 @@ function PlasmicBotoxLander__RenderFunc(props) {
           </section>
 
 
-          {/* TESTIMONIALS */}
-          <section className={classNames(projectcss.all, sty.section__p5T3P)}>
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__rD1Um)}
-            >
+          {
+            service.category === "hair-restoration"
+
+            // IF HAIR RESTORATION
+            ?
+            <section className={classNames(projectcss.all, sty.section__p5T3P)}>
               <Stack__
                 as={"div"}
                 hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__eeq1)}
+                className={classNames(projectcss.all, sty.freeBox__rD1Um)}
               >
-                <RatingReviewPill />
+                <Stack__
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__eeq1)}
+                >
+                  <RatingReviewPill />
 
-                <h2
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h2,
-                    projectcss.__wab_text,
-                    sty.h2__otgId
-                  )}
-                >
-                  <React.Fragment>
-                    <React.Fragment>{"Join Our Satisfied \n"}</React.Fragment>
-                    {/* <React.Fragment>{"PRP Hair Restoration"}</React.Fragment> */}
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{
-                        fontWeight: 500,
-                        fontStyle: "italic",
-                        color: "#d09d45"
-                      }}
-                    >
-                      {service.general.longTitle}
-                      {" Clients"}
-                    </span>
-                  </React.Fragment>
-                </h2>
-                <p
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.p,
-                    projectcss.__wab_text,
-                    sty.p__qhN8C
-                  )}
-                >
-                  {"Over thousands of people have transformed their lives with "}
-                  {service.general.longTitle}
-                </p>
+                  <h2
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h2,
+                      projectcss.__wab_text,
+                      sty.h2__otgId
+                    )}
+                  >
+                    <React.Fragment>
+                      <React.Fragment>{"Join Our Satisfied \n"}</React.Fragment>
+                      {/* <React.Fragment>{"PRP Hair Restoration"}</React.Fragment> */}
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{
+                          fontWeight: 500,
+                          fontStyle: "italic",
+                          color: "#d09d45"
+                        }}
+                      >
+                        {service.general.longTitle}
+                        {" Clients"}
+                      </span>
+                    </React.Fragment>
+                  </h2>
+                  <p
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.p,
+                      projectcss.__wab_text,
+                      sty.p__qhN8C
+                    )}
+                  >
+                    {"Over thousands of people have transformed their lives with "}
+                    {service.general.longTitle}
+                  </p>
+                </Stack__>
+                <div className={classNames(projectcss.all, sty.freeBox__llpLu)}>
+                  <TestimonialsSlider
+                    data-plasmic-name={"satisfiedClientsSlider"}
+                    data-plasmic-override={overrides.satisfiedClientsSlider}
+                    className={classNames(
+                      "__wab_instance",
+                      sty.satisfiedClientsSlider
+                    )}
+                    ctaLink={"#"}
+                    ctaText={"Book Now"}
+                    isDarkBg={true}
+                    settings={{
+                      dots: false,
+                      arrows: false,
+                      infinite: true,
+                      speed: 500,
+                      slidesToShow: 1,
+                      slidesToScroll: 1
+                    }}
+                  >
+                    {service.testimonials.map((testimonial) => (
+                      <BigTestimonial
+                        key={testimonial.id}
+                        quote={testimonial.quote}
+                      />
+                    ))}
+                  </TestimonialsSlider>
+                </div>
               </Stack__>
-              <div className={classNames(projectcss.all, sty.freeBox__llpLu)}>
-                <TestimonialsSlider
-                  data-plasmic-name={"satisfiedClientsSlider"}
-                  data-plasmic-override={overrides.satisfiedClientsSlider}
-                  className={classNames(
-                    "__wab_instance",
-                    sty.satisfiedClientsSlider
-                  )}
-                  ctaLink={"#"}
-                  ctaText={"Book Now"}
-                  isDarkBg={true}
-                  settings={{
-                    dots: false,
-                    arrows: false,
-                    infinite: true,
-                    speed: 500,
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                  }}
-                >
-                  {service.testimonials.map((testimonial) => (
-                    <BigTestimonial
-                      key={testimonial.id}
-                      quote={testimonial.quote}
-                    />
-                  ))}
-                </TestimonialsSlider>
-              </div>
-            </Stack__>
-          </section>
+            </section>
+            
+
+            // FOR ALL OTHERS
+            : <></> // No testimonials
+          }
 
           {/* QUESTION ANSWERS FAQ */}
           <section className={classNames(projectcss.all, sty.section__qz9Z)}>
@@ -849,62 +909,69 @@ function PlasmicBotoxLander__RenderFunc(props) {
             </Stack__>
           </section>
 
-
           {/* VIDEO */}
-          <section className={classNames(projectcss.all, sty.section__kI06)}>
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__zva01)}
-            >
-              <h1
-                className={classNames(
-                  projectcss.all,
-                  projectcss.h1,
-                  projectcss.__wab_text,
-                  sty.h1__alzRe
-                )}
-              >
-                {hasVariant(globalVariants, "screen", "mobileOnly") ? (
-                  <React.Fragment>
-                    <React.Fragment>{"Watch the\n"}</React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ fontStyle: "italic", fontWeight: 500 }}
-                    >
-                      {service.general.longTitle}
-                      {" Process"}
-                    </span>
-                  </React.Fragment>
-                ) : (
-                  <React.Fragment>
-                    <React.Fragment>{"Watch the "}</React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ fontStyle: "italic", fontWeight: 500 }}
-                    >
-                      {service.general.longTitle}
-                      {" Process"}
-                    </span>
-                  </React.Fragment>
-                )}
-              </h1>
-              <div className={classNames(projectcss.all, sty.freeBox__vQFwz)}>
-                <Video
-                  data-plasmic-name={"htmlVideo"}
-                  data-plasmic-override={overrides.htmlVideo}
-                  className={classNames("__wab_instance", sty.htmlVideo)}
-                  controls={true}
-                  src={service.video.src}
-                  muted={service.video.muted}
-                />
-              </div>
-              <Link href='/book-now'  className='mt-[10px] w-full md:w-auto'>
-                <button className='button white w-full md:w-auto'>Try It Now</button>
-              </Link>
-            </Stack__>
-          </section>
+          {
+            service.category === "hair-restoration"
 
+            // IF HAIR RESTORATION
+            ?
+            <section className={classNames(projectcss.all, sty.section__kI06)}>
+              <Stack__
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__zva01)}
+              >
+                <h1
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h1,
+                    projectcss.__wab_text,
+                    sty.h1__alzRe
+                  )}
+                >
+                  {hasVariant(globalVariants, "screen", "mobileOnly") ? (
+                    <React.Fragment>
+                      <React.Fragment>{"Watch the\n"}</React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ fontStyle: "italic", fontWeight: 500 }}
+                      >
+                        {service.general.longTitle}
+                        {" Process"}
+                      </span>
+                    </React.Fragment>
+                  ) : (
+                    <React.Fragment>
+                      <React.Fragment>{"Watch the "}</React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ fontStyle: "italic", fontWeight: 500 }}
+                      >
+                        {service.general.longTitle}
+                        {" Process"}
+                      </span>
+                    </React.Fragment>
+                  )}
+                </h1>
+                <div className={classNames(projectcss.all, sty.freeBox__vQFwz)}>
+                  <Video
+                    data-plasmic-name={"htmlVideo"}
+                    data-plasmic-override={overrides.htmlVideo}
+                    className={classNames("__wab_instance", sty.htmlVideo)}
+                    controls={true}
+                    src={service.video.src}
+                    muted={service.video.muted}
+                  />
+                </div>
+                <Link href='/book-now'  className='mt-[10px] w-full md:w-auto'>
+                  <button className='button white w-full md:w-auto'>Try It Now</button>
+                </Link>
+              </Stack__>
+            </section>
+
+            // FOR ALL OTHERS
+            : <></>
+          }
 
           {/* OUR LOCATION */}
           <OurLocationSection
@@ -915,78 +982,85 @@ function PlasmicBotoxLander__RenderFunc(props) {
 
 
           {/* CLAIM SPECIAL OFFER */}
-          <section className={classNames(projectcss.all, sty.section__h2TW)}>
-            <div className={classNames(projectcss.all, sty.freeBox__lSnUu)}>
-              <DiscountPricingPill
-                className={classNames(
-                  "__wab_instance",
-                  sty.discountPricingPill__dvwCm
-                )}
-                perUnit={service.general.perUnit}
-                salePrice={service.general.salePrice}
-                strikePrice={service.general.strikePrice}
-              />
+          {
+            service.category === "hair-restoration"
 
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__yjqrs)}
-              >
-                <h2
+            // IF HAIR RESTORATION
+            ?
+            <section className={classNames(projectcss.all, sty.section__h2TW)}>
+              <div className={classNames(projectcss.all, sty.freeBox__lSnUu)}>
+                <DiscountPricingPill
                   className={classNames(
-                    projectcss.all,
-                    projectcss.h2,
-                    projectcss.__wab_text,
-                    sty.h2__lhEX
+                    "__wab_instance",
+                    sty.discountPricingPill__dvwCm
                   )}
+                  perUnit={service.general.perUnit}
+                  salePrice={service.general.salePrice}
+                  strikePrice={service.general.strikePrice}
+                />
+
+                <Stack__
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__yjqrs)}
                 >
-                  <React.Fragment>
-                    <React.Fragment>{"Claim Your "}</React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{
-                        fontStyle: "italic",
-                        fontWeight: 500,
-                        color: "#FAD8A7"
-                      }}
-                    >
-                      {"Special Offer"}
-                    </span>
-                    <React.Fragment>{" Now!"}</React.Fragment>
-                  </React.Fragment>
-                </h2>
-                <p
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.p,
-                    projectcss.__wab_text,
-                    sty.p__meiVy
-                  )}
-                >
-                  <React.Fragment>
+                  <h2
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h2,
+                      projectcss.__wab_text,
+                      sty.h2__lhEX
+                    )}
+                  >
                     <React.Fragment>
-                      {"Book your FREE consultation and get "}
+                      <React.Fragment>{"Claim Your "}</React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{
+                          fontStyle: "italic",
+                          fontWeight: 500,
+                          color: "#FAD8A7"
+                        }}
+                      >
+                        {"Special Offer"}
+                      </span>
+                      <React.Fragment>{" Now!"}</React.Fragment>
                     </React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ fontWeight: 700 }}
-                    >
-                      {service.general.discount}
-                      {" DISCOUNT"}
-                    </span>
+                  </h2>
+                  <p
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.p,
+                      projectcss.__wab_text,
+                      sty.p__meiVy
+                    )}
+                  >
                     <React.Fragment>
-                      {" for first "}
-                      {service.general.longTitle}
-                      {" procedure!"}
+                      <React.Fragment>
+                        {"Book your FREE consultation and get "}
+                      </React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ fontWeight: 700 }}
+                      >
+                        {service.general.discount}
+                        {" DISCOUNT"}
+                      </span>
+                      <React.Fragment>
+                        {" for first "}
+                        {service.general.longTitle}
+                        {" procedure!"}
+                      </React.Fragment>
                     </React.Fragment>
-                  </React.Fragment>
-                </p>
-              </Stack__>
-              <Link href='/book-now'  className='mt-[10px] w-full md:w-auto'>
-                <button className='button white w-full md:w-auto'>Book Now</button>
-              </Link>
-            </div>
-          </section>
+                  </p>
+                </Stack__>
+                <Link href='/book-now'  className='mt-[10px] w-full md:w-auto'>
+                  <button className='button white w-full md:w-auto'>Book Now</button>
+                </Link>
+              </div>
+            </section>
+            : <></>
+          }
         </div>
       </div>
     </React.Fragment>
@@ -1164,13 +1238,6 @@ export const CadmenPRPLander = Object.assign(
     // Metadata about props expected for CadmenPRPLander
     internalVariantProps: PlasmicBotoxLander__VariantProps,
     internalArgProps: PlasmicBotoxLander__ArgProps,
-    // Page metadata
-    // pageMetadata: {
-    //   title: `CadmenClinic | ${args.serviceData.general.shortTitle}`,
-    //   description: "",
-    //   ogImageSrc: "",
-    //   canonical: ""
-    // }
   }
 );
 
