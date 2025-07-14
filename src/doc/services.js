@@ -547,6 +547,55 @@ export const servicesData = {
             treatment: "During your Botox session, a skilled practitioner will administer precise injections to targeted areas.The procedure is quick, minimally invasive, and designed for your comfort.",
             results: "Enjoy smoother, younger-looking skin as the Botox begins to work over the next few days. With minimal downtime, you’ll look refreshed and confident in no time."
         },
+        treatmentCards: {
+            title: {
+                prefix: "Affordable Botox Treatments",
+                emphasis: "Tailored to You"
+            },
+            description: "Affordable, transparent Botox pricing tailored to your goals and budget.",
+            regularUnit: "unit regular",
+            specialUnit: "unit",
+            cards: [
+                {
+                    name: "Dysport",
+                    regularPrice: "14",
+                    specialPrice: "9.99",
+                    points: [
+                        {
+                            title: "Targeted for Larger Areas",
+                            description: "Dysport’s unique diffusion pattern effectively addresses broader treatment zones."
+                        },
+                        {
+                            title: "Dynamic Wrinkle Reduction",
+                            description: "Designed to minimize the appearance of dynamic wrinkles across the face."
+                        },
+                        {
+                            title: "Rapid Action",
+                            description: "Spreads quickly to cover a wider surface for efficient, natural-looking results."
+                        }
+                    ]
+                },
+                {
+                    name: "Botox",
+                    regularPrice: "15",
+                    specialPrice: "12.99",
+                    points: [
+                        {
+                            title: "Versatile Treatment",
+                            description: "Botox targets facial muscles to address a variety of cosmetic concerns."
+                        },
+                        {
+                            title: "Wrinkle Reduction",
+                            description: "Effectively minimizes fine lines and wrinkles for a smoother appearance."
+                        },
+                        {
+                            title: "Natural Results",
+                            description: "Delivers a refreshed, rejuvenated look while preserving natural expressions."
+                        }
+                    ]
+                }
+            ]
+        },
         transformations: {
             title: {
                 first: "PRP Hair Restoration Has Already ",
@@ -686,28 +735,6 @@ export const servicesData = {
                 }
             ]
         },
-        testimonials: [
-            {
-                id: 1,
-                quote: "CADMEN Clinic has been my go-to for my hair restoration needs. They take a better approach to <strong>PRP</strong> which produced much better results than my experience at other clinics. I was seeing noticeable improvements within 2 <strong>PRP</strong> treatments. Definitely recommend to anyone who’s evaluating a fully natural solution – their nurses are the best in the business!"
-            },
-            {
-                id: 2,
-                quote: "CADMEN’s results speak for themselves! Definitely recommend anyone to check out their <strong>PRP</strong> treatments. Best in the business"
-            },
-            {
-                id: 3,
-                quote: "I had an amazing time at CADMEN clinic. Team had performed 5 <strong>PRP</strong> Treatment and result are amazing and drastically improved my hair density and texture. Thank you to CADMEN clinic for their amazing service and hope to see you soon."
-            },
-            {
-                id: 4,
-                quote: "Was looking for a reliable and professional spot for <strong>PRP</strong> treatment when I came across CADMEN Clinic. The staff were super knowledgable and helpful with a professionalism I much appreciated. The service was quick and much less painful than I would have imagined! More importantly the follow up was what was most encouraging. Highly recommend and look forward to going back"
-            },
-            {
-                id: 5,
-                quote: "Gifted my Best friend a few sessions of <strong>PRP</strong> and Botox and the results were great! Staff is very professional and he won’t need to worry about Hair loss much longer! Highly RECOMMEND"
-            }
-        ],
         faqs: [
             {
                 id: 1,
@@ -729,10 +756,6 @@ export const servicesData = {
                 question: "Can I do PRP the same day of my consultation?",
                 answer: "Yes you can!"
             }
-        ],
-        video: {
-            src: "/media/videos/PRP.mp4",
-            muted: true
-        }
+        ]
     },
 }

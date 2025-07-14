@@ -60,6 +60,7 @@ import SmallInfoCard from "@/components/SmallInfoCard";
 import ServicesCarousel from "@/components/blog_categories_carousel";
 import CadmenOurProcess from "./CadmenOurProcess";
 import CadmenPreparingForAppointment from "./CadmenPreparingForAppointment";
+import CadmenTreatmentCardsSection from "./CadmenTreatmentCardsSection";
 
 createPlasmicElementProxy;
 
@@ -638,7 +639,13 @@ function PlasmicBotoxLander__RenderFunc(props) {
               />
 
               {/* 6. CARDS FOR OUR TREATMENTS */}
-                            
+              <CadmenTreatmentCardsSection 
+                title={service.treatmentCards.title}
+                description={service.treatmentCards.description}
+                regularUnit={service.treatmentCards.regularUnit}
+                specialUnit={service.treatmentCards.specialUnit}
+                cards={service.treatmentCards.cards}
+              />
 
               {/* 7. INTERACTIVE COMPONENT */}
 

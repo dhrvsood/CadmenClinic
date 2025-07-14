@@ -63,8 +63,8 @@ function PlasmicAffordableBotoxCard__RenderFunc(props) {
       Object.assign(
         {
           items: [],
-          unitWording: "/ First Session Price",
-          pillUnit: "/ Regular Session Price"
+          // unitWording: "/ First Session Price",
+          // pillUnit: "/ Regular Session Price"
         },
         Object.fromEntries(
           Object.entries(props.args).filter(([_, v]) => v !== undefined)

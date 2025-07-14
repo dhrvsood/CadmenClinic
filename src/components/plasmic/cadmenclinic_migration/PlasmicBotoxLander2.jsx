@@ -1125,7 +1125,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
           />
 
           {/* 7. Preparing for your hair restoration appointment */}
-          <CadmenPreparingForAppointment />
+          {/* <CadmenPreparingForAppointment /> */}
           <Stack__
             as={"section"}
             data-plasmic-name={"botoxAppointmentSection"}
