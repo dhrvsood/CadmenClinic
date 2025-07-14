@@ -57,6 +57,7 @@ import AffordableHairRestoration from "@/components/AffordableHairRestoration";
 import ServiceStepCard from "@/components/ServiceStepCard";
 import WhyPeopleChooseCard from "@/components/WhyPeopleChooseCard";
 import SmallInfoCard from "@/components/SmallInfoCard";
+import ServicesCarousel from "@/components/blog_categories_carousel";
 
 createPlasmicElementProxy;
 
@@ -158,7 +159,7 @@ function PlasmicBotoxLander__RenderFunc(props) {
                     "__wab_instance",
                     sty.discountPricingPill__lyb
                   )}
-                  perUnit={"/session"}
+                  perUnit={service.general.perUnit}
                   salePrice={service.general.salePrice}
                   strikePrice={service.general.strikePrice}
                 />
@@ -205,10 +206,11 @@ function PlasmicBotoxLander__RenderFunc(props) {
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ fontWeight: 700, color: "#000000" }}
                       >
-                        {"50% offer"}
+                        {service.general.discount}
+                        {" offer"}
                       </span>
                       <React.Fragment>
-                        {" now & naturally promote new hair growth using "}
+                        {" now & "}
                         {service.hero.description}
                       </React.Fragment>
                     </React.Fragment>
@@ -268,16 +270,31 @@ function PlasmicBotoxLander__RenderFunc(props) {
               />
               <SmallInfoCard
                 icon="/icons/discount.svg"
-                emphasis={service.general.salePrice}
+                emphasis={ 
+                  service.category === "hair-restoration" 
+                    ? `${service.general.salePrice}`
+                    : `${service.general.salePrice}${service.general.perUnit}` 
+                  }
                 title=" Special Price!"
-                subtitle="Exclusive <strong>50% discount</strong> for your first procedure"
+                subtitle={`Exclusive <strong>${service.general.discount} discount</strong> for your first procedure`}
               />
-              <SmallInfoCard
-                icon="/icons/star.svg"
-                emphasis="Trusted"
-                title=" by 2,100+ Patients"
-                subtitle="Proven results, 100% natural, minimal downtime"
-              />
+              {
+                service.category === "hair-restoration"
+                  ?
+                  <SmallInfoCard
+                    icon="/icons/star.svg"
+                    emphasis="Trusted"
+                    title=" by 2,100+ Patients"
+                    subtitle="Proven results, 100% natural, minimal downtime"
+                  />
+                  :
+                  <SmallInfoCard
+                    icon="/icons/star.svg"
+                    emphasis="Certified"
+                    title=" Professionals"
+                    subtitle="Only experienced experts for safe results"
+                  />
+              }
             </Stack__>
           </section>
 
@@ -905,7 +922,7 @@ function PlasmicBotoxLander__RenderFunc(props) {
                   "__wab_instance",
                   sty.discountPricingPill__dvwCm
                 )}
-                perUnit={" /session"}
+                perUnit={service.general.perUnit}
                 salePrice={service.general.salePrice}
                 strikePrice={service.general.strikePrice}
               />
@@ -954,7 +971,8 @@ function PlasmicBotoxLander__RenderFunc(props) {
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ fontWeight: 700 }}
                     >
-                      {"50% DISCOUNT"}
+                      {service.general.discount}
+                      {" DISCOUNT"}
                     </span>
                     <React.Fragment>
                       {" for first "}
