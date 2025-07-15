@@ -1,4 +1,4 @@
-const botox = {
+const dermal_fillers = {
     category: "skin-treatments",
     general: {
         strikePrice: "$14.00",
@@ -109,61 +109,49 @@ const botox = {
         ]
     },
     faceInteractive: [
-                  {
-                    name: "Forehead",
-                    range: "$100 - $200",
-                    units: "10-20 units",
-                    face_dot: { left: "51.5%", top: "10%" }
-                  },
-                  {
-                    name: "Brow Lift",
-                    range: "$50 - $100",
-                    units: "5-10 units",
-                    face_dot: { left: "67%", top: "22%" }
-                  },
-                  {
-                    name: "Crow's Feet",
-                    range: "$50 - $150",
-                    units: "5-15 units",
-                    face_dot: { left: "75%", top: "37%" }
-                  },
-                  {
-                    name: "11'S",
-                    range: "$200 - $300",
-                    units: "20-30 units",
-                    face_dot: { left: "51.5%", top: "27%" }
-                  },
-                  {
-                    name: "Nasolabial Folds",
-                    range: "$50 - $100",
-                    units: "5-10 units",
-                    face_dot: { left: "36%", top: "61%" }
-                  },
-                  {
-                    name: "Gummy Smile",
-                    range: "$100",
-                    units: "Varies",
-                    face_dot: { left: "49%", top: "65%" }
-                  },
-                  {
-                    name: "Lip Flip",
-                    range: "$125",
-                    units: "Varies",
-                    face_dot: { left: "58%", top: "73%" }
-                  },
-                  {
-                    name: "Chin Dimpling",
-                    range: "$40 - $100",
-                    units: "4-10 units",
-                    face_dot: { left: "51.5%", top: "91%" }
-                  },
-                  {
-                    name: "Masseter",
-                    range: "$200 - $400",
-                    units: "20-40 units",
-                    face_dot: { left: "65%", top: "63%" }
-                  }
-                ],
+          {
+            name: "Undereye Wrinkles",
+            range: "1",
+            units: "syringe per side",
+            face_dot: { top: "42%", left: "63%" }
+          },
+          {
+            name: "Jawline",
+            range: "1 - 4",
+            units: "syringes total",
+            face_dot: { top: "85%", left: "64%" }
+          },
+          {
+            name: "Jowls",
+            range: "1 - 3",
+            units: "syringes total",
+            face_dot: { top: "78%", left: "70%" }
+          },
+          {
+            name: "Smile Lines",
+            range: "1 - 2",
+            units: "syringes total",
+            face_dot: { top: "58%", left: "38%" }
+          },
+          {
+            name: "Cheeks",
+            range: "1 - 2",
+            units: "syringes",
+            face_dot: { top: "55%", left: "65%" }
+          },
+          {
+            name: "Chin",
+            range: "1 - 2",
+            units: "syringes",
+            face_dot: { top: "91%", left: "51%" }
+          },
+          {
+            name: "Under Eye Bags",
+            range: "1",
+            units: "syringe per side",
+            face_dot: { top: "42%", left: "38%" }
+          }
+        ],
     wantToLearnMore: {
         title: {
             emphasis: "Botox is right"
@@ -257,4 +245,4 @@ const botox = {
     ]
 }
 
-export default botox;
+export default dermal_fillers;

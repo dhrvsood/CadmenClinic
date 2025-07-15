@@ -104,6 +104,38 @@ function PlasmicBotoxLander__RenderFunc(props) {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
+  // NECESSARY DATA FOR AREA INTERACTIVE
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "selectedArea",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $ctx }) => service.faceInteractive[0].name
+      },
+      {
+        path: "areasInteractive.data",
+        type: "private",
+        variableType: "array",
+        initFunc: ({ $props, $state, $queries, $ctx }) => service.faceInteractive
+      },
+      {
+        path: "areasInteractive.selected",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $ctx }) => service.faceInteractive[0].name
+      }
+    ],
+    [$props, $ctx, $refs]
+  );
+  const $state = useDollarState(stateSpecs, {
+    $props,
+    $ctx,
+    $queries: {},
+    $refs
+  });
+
+
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariants_4IUcgkiijTv2()
   });
@@ -650,6 +682,43 @@ function PlasmicBotoxLander__RenderFunc(props) {
               />
 
               {/* 7. INTERACTIVE COMPONENT */}
+              <AreasInteractive
+                data-plasmic-name={"areasInteractive"}
+                data-plasmic-override={overrides.areasInteractive}
+                className={classNames("__wab_instance", sty.areasInteractive)}
+                data={generateStateValueProp($state, ["areasInteractive", "data"])}
+                onDataChange={async (...eventArgs) => {
+                  generateStateOnChangeProp($state, [
+                    "areasInteractive",
+                    "data"
+                  ]).apply(null, eventArgs);
+                  if (
+                    eventArgs.length > 1 &&
+                    eventArgs[1] &&
+                    eventArgs[1]._plasmic_state_init_
+                  ) {
+                    return;
+                  }
+                }}
+                onSelectedChange={async (...eventArgs) => {
+                  generateStateOnChangeProp($state, [
+                    "areasInteractive",
+                    "selected"
+                  ]).apply(null, eventArgs);
+                  if (
+                    eventArgs.length > 1 &&
+                    eventArgs[1] &&
+                    eventArgs[1]._plasmic_state_init_
+                  ) {
+                    return;
+                  }
+                }}
+                selected={generateStateValueProp($state, [
+                  "areasInteractive",
+                  "selected"
+                ])}
+              />
+
 
               {/* 8. WANT TO LEARN MORE */}
               <CadmenWantToLearnMore 

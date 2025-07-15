@@ -174,7 +174,7 @@ function PlasmicAreasInteractive__RenderFunc(props) {
                     >
                       <React.Fragment>
                         <React.Fragment>
-                          {"Restore Fuller Hair  \nat "}
+                          {"Achieve Flawless Skin  \nat "}
                         </React.Fragment>
                         <span
                           className={
@@ -389,7 +389,7 @@ function PlasmicAreasInteractive__RenderFunc(props) {
                 displayWidth={"auto"}
                 loading={"lazy"}
                 src={{
-                  src: "/plasmic/image_lab_2024/images/image15.heic",
+                  src: "/media/services/interactiveFaceDesktop.avif",
                   fullWidth: 650,
                   fullHeight: 494,
                   aspectRatio: undefined
@@ -410,7 +410,7 @@ function PlasmicAreasInteractive__RenderFunc(props) {
                 displayWidth={"auto"}
                 loading={"lazy"}
                 src={{
-                  src: "/plasmic/image_lab_2024/images/image23.avif",
+                  src: "/media/services/interactiveFaceMobile.avif",
                   fullWidth: 828,
                   fullHeight: 1182,
                   aspectRatio: undefined
