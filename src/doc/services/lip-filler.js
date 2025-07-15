@@ -5,107 +5,113 @@ const lip_fillers = {
         salePrice: "$599",
         perUnit: " / syringe",
         discount: "25%",
-        shortTitle: "Dermal Filler",
-        longTitle: "Dermal Filler"
+        shortTitle: "Lip Filler",
+        longTitle: "Lip Filler"
     },
     hero: {
         img: "/media/services/dermal-filters.webp",
-        tagline: "Enhance Your Confidence",
-        description: "reduce the signs of aging with quick, minimally invasive Botox treatments."
+        tagline: "Achieve Defined & Balanced Lips",
+        description: "achieve beautifully defined, balanced lips with personalized care from our expert team."
     },
     beforeAfters: [
         {
             id: 1,
-            title: "Kyra's Results",
-            subtitle: "After one month with revanesse versa",
-            img: "/media/testimonials/dermalKyra.avif"
+            title: "Tina's Results",
+            subtitle: "After two weeks with lip fillers",
+            img: "/media/testimonials/lipfillers_Tina.avif"
         },
         {
             id: 2,
-            title: "Joceyln's Results",
-            subtitle: "After three weeks with cheek, lip, and chin fillers",
-            img: "/media/testimonials/dermalJocelyn.avif"
+            title: "Gina's Results",
+            subtitle: "After two weeks with lip fillers",
+            img: "/media/testimonials/lipfillers_Gina.avif"
         },
         {
             id: 3,
-            title: "Amy’s Results",
-            subtitle: "After two weeks with cheek, lip, and chin fillers",
-            img: "/media/testimonials/dermalAmy.avif"
+            title: "Olivia's Results",
+            subtitle: "After two weeks with lip fillers",
+            img: "/media/testimonials/lipfillers_Olivia.avif"
+        },
+        {
+            id: 4,
+            title: "Kelsey's Results",
+            subtitle: "After two weeks with lip fillers",
+            img: "/media/testimonials/lipfillers_Kelsey.avif"
         }
     ],
     whatAndHowItWorks: {
-        titlePrefix: "What is Dermal Filler",
+        titlePrefix: "What is Lip Filler",
         titleEmphasis: "and How Does It Work?",
         points: [
             {
-                heading: "Dermal Fillers are FDA-approved and trusted worldwide",
-                description: "From softening deep nasolabial folds to augmenting lip volume or enhancing cheek contours, dermal fillers offer a safe, versatile solution for anyone seeking a refreshed yet natural-looking transformation."
+                heading: "Lip Fillers are FDA-approved and trusted worldwide",
+                description: "Lip fillers offer a safe, versatile solution for anyone looking to achieve a naturally beautiful, confident smile. With minimal downtime and immediate results, they’re the perfect choice for enhancing your lips without invasive procedures."
             },
             {
-                heading: "Targeted Injections",
-                description: "A filler is precisely injected beneath the skin to enhance or restore volume in specific areas.",
+                heading: "Precise Injections",
+                description: "A filler is carefully injected into specific areas of the lips to add definition, restore balance, or subtly enhance volume.",
             },
             {
                 heading: "Hydration & Support",
-                description: "Hyaluronic acid or other active components bind with water molecules, plumping the skin and creating a firmer, more youthful look."
+                description: "Hyaluronic acid binds to water molecules, creating soft, hydrated lips with a natural, youthful texture."
             },
             {
-                heading: "Collagen Boost",
-                description: "Some fillers stimulate the body’s natural collagen production, offering longer-lasting improvements in skin texture and elasticity."                
+                heading: "Customizable Results",
+                description: "The treatment is tailored to your unique goals—whether it’s adding symmetry, refining lip borders, or creating a gently enhanced shape."                
             }
         ],
         img: "/media/botox-what-and-how.png"
     },
     ourProcess: {
-        title: "Dermal Fillers",
-        consultation: "Begin with a personalized consultation where our experts assess your facial structure, skin concerns, and aesthetic goals. We’ll create a tailored dermal filler treatment plan designed to deliver optimal results that align perfectly with your needs.",
-        treatment: "During your dermal filler session, a skilled practitioner will carefully administer precise injections to targeted areas. The procedure is relatively quick, minimally invasive, and designed for your comfort and safety.",
-        results: "Enjoy fuller, smoother, and more youthful-looking features as the filler integrates with your skin. While many notice immediate improvements, final results continue to refine over the next few days. With minimal downtime, you’ll look refreshed and confident in no time."
+        title: "Lip Fillers",
+        consultation: "Start with a personalized consultation where our experts assess your lip shape, symmetry, and aesthetic goals. We’ll design a tailored lip filler treatment plan to enhance your natural beauty and achieve your desired look.",
+        treatment: "During your lip filler session, a skilled practitioner will administer precise injections to specific areas of your lips, focusing on creating balance and definition. The procedure is quick, minimally invasive, and designed to ensure your comfort and safety throughout.",
+        results: "Enjoy beautifully defined, hydrated, and naturally enhanced lips as the filler integrates with your tissue. While you’ll notice immediate improvements, your final look refines over the next few days. With minimal downtime, you’ll leave feeling confident and radiant in no time."
     },
     treatmentCards: {
         title: {
-            prefix: "Affordable Dermal Fillers Treatments",
+            prefix: "Affordable Lip Fillers Treatments",
             emphasis: "Tailored to You"
         },
-        description: "Affordable, transparent Dermal Fillers pricing tailored to your goals and budget.",
-        regularUnit: "syringe regular price",
-        specialUnit: "syringe new patient price",
+        description: "Affordable, transparent Lip Fillers pricing tailored to your goals and budget.",
+        regularUnit: "Syringe Regular",
+        specialUnit: "Syringe Special",
         cards: [
             {
-                name: "Restylane",
+                name: "Revanesse",
                 regularPrice: 799,
                 specialPrice: 599,
                 points: [
                     {
-                        title: "Wide Range of Formulas",
-                        description: "With multiple Restylane variants, each designed for different areas and concerns, this family of fillers offers tailored solutions for lips, cheeks, under-eye hollows, and more."
+                        title: "Enhanced Lip Definition",
+                        description: "Ideal for creating soft, natural contours and enhancing lip borders for a polished look."
                     },
                     {
-                        title: "Precise Wrinkle Correction",
-                        description: "Smooths lines and folds, such as nasolabial folds, providing a naturally youthful appearance without looking overdone."
+                        title: "Smooth, Hydrated Appearance",
+                        description: "Formulated with hyaluronic acid to provide lips with subtle volume and a hydrated, refreshed appearance."
                     },
                     {
-                        title: "Minimal Downtime",
-                        description: "Most patients can resume daily activities almost immediately, making it a convenient option for busy lifestyles."
+                        title: "Long-Lasting Effects",
+                        description: "Results can last up to 12 months, making it a great choice for maintaining naturally beautiful lips."
                     }
                 ]
             },
             {
-                name: "RHA Filler",
+                name: "RHA Collection",
                 regularPrice: 799,
                 specialPrice: 599,
                 points: [
                     {
-                        title: "Adaptive Movement Technology",
-                        description: "RHA (Resilient Hyaluronic Acid) fillers are designed to move seamlessly with facial expressions, preserving a natural look even in highly dynamic areas of the face."
+                        title: "Natural Movement with Expressions",
+                        description: "Perfect for lips that need enhancement while maintaining full, natural movement during expressions."
                     },
                     {
-                        title: "Dynamic Wrinkle Reduction",
-                        description: "Ideal for treating moderate to deep dynamic wrinkles, such as around the mouth and eyes, with results that remain soft and flexible."
+                        title: "Soft, Flexible Results",
+                        description: "Adds volume and smoothness to lips, ensuring they look and feel completely natural."
                     },
                     {
-                        title: "Preserves Facial Expressions",
-                        description: "Because of RHA’s unique formulation, you’ll enjoy a rejuvenated appearance without compromising your authentic range of expression."
+                        title: "Dynamic Lip Rejuvenation",
+                        description: "Especially suited for lips with fine lines or dynamic movement, offering a subtle, youthful boost."
                     }
                 ]
             }
@@ -151,25 +157,33 @@ const lip_fillers = {
     },
     wantToLearnMore: {
         title: {
-            emphasis: "Dermal Fillers is right"
+            emphasis: "Lip Fillers is right"
         }
     },
     preparingForAppointment: {
         titlePrefix: "Preparing for Your",
-        titleEmphasis: "Dermal Filler Appointment",
-        subheading: "Here are some tips to help ensure a comfortable, successful experience:",
+        titleEmphasis: "Lip Filler Appointment",
+        subheading: "To ensure a comfortable and successful lip filler experience, follow these tips:",
         points: [
             {
                 heading: "Avoid Blood Thinners",
-                description: "A few days before your appointment, avoid medications and supplements that can thin your blood, such as aspirin, ibuprofen, and fish oil. This reduces the risk of bruising at the injection site."
+                description: "A few days before your appointment, try to avoid medications and supplements that can thin your blood, such as aspirin, ibuprofen, and fish oil. This simple step helps minimize bruising at the injection site."
             },
             {
                 heading: "Skip Alcohol and Tobacco",
-                description: "WBoth can increase bruising and affect your skin’s recovery. Try to avoid alcohol for at least 24 hours before and after treatment.",
+                description: "Alcohol and tobacco can increase the likelihood of bruising and slow your skin’s recovery. Refrain from consuming alcohol for at least 24 hours before and after your treatment, and try to limit tobacco use.",
             },
             {
-                heading: "Inform Your Provider of Medical History",
-                description: "Be transparent about any medical conditions, allergies, or medications you’re taking. This information helps us customize your treatment and prevent potential complications."
+                heading: "Stay Hydrated",
+                description: "Well-hydrated skin responds better to treatment. Drink plenty of water in the days leading up to your appointment to help your lips look and feel their best."
+            },
+            {
+                heading: "Inform Your Provider of Your Medical History",
+                description: "Be transparent about any medical conditions, allergies, or medications you’re taking. Share any history of cold sores, as your provider may recommend preventative medication to avoid a flare-up. This ensures your treatment plan is tailored to your needs and minimizes the risk of complications."
+            },
+            {
+                heading: "Arrive with Clean Skin",
+                description: "Avoid wearing makeup, lip balm, or other products on your lips or around the treatment area on the day of your appointment. Clean, bare skin allows for a more hygienic and effective procedure."
             }
         ],
         img: "/media/services/botox/preparingForAppointment.png"
@@ -188,50 +202,50 @@ const lip_fillers = {
         title: {
             first: "Understanding ",
             emphasis: "the Risks",
-            last: " of Dermal Fillers"
+            last: " of Lip Fillers"
         },
-        description: "Although dermal fillers are generally considered safe when administered by an experienced professional, it’s important to be aware of the potential risks. Here are some possible side effects and how we manage them at Cadmen Clinic:",
+        description: "While lip fillers are generally safe when performed by skilled professionals, it’s important to be aware of potential risks. At Cadmen Clinic, we prioritize your safety and satisfaction, and we’re transparent about possible side effects and how we manage them.",
         cards: [
             {
                 id: 1,
                 title: "Temporary Redness, Swelling, or Bruising",
-                subtitle: "These are the most common side effects and typically subside within a few days. Our injectors use advanced techniques to minimize bruising, and we’ll provide detailed aftercare guidance (like cold compresses) to help you recover quickly.",
+                subtitle: "What to Expect: These are the most common side effects, especially due to the delicate nature of the lips. Swelling is often more noticeable within the first 24–48 hours but typically resolves within a few days.\n\nHow We Manage It: Our injectors use advanced techniques to minimize trauma, and we’ll provide aftercare tips, such as applying cold compresses, to help reduce swelling and bruising quickly.",
                 img: "/media/services/botox/redness.png"
             },
             {
                 id: 2,
                 title: "Mild Discomfort or Tenderness",
-                subtitle: "Some clients experience minor soreness or pressure at the injection site. This usually fades within a few days and can often be managed with over-the-counter pain relief if needed.",
+                subtitle: "What to Expect: Some clients experience minor soreness, tenderness, or pressure in the lips following the procedure. This is usually temporary and fades within a few days.\n\nHow We Manage It: We use fillers containing lidocaine to minimize discomfort during the treatment, and any post-procedure soreness can typically be managed with over-the-counter pain relievers.",
                 img: "/media/services/botox/headaches.png"
             },
             {
                 id: 3,
                 title: "Lumps or Nodules",
-                subtitle: "Fillers can occasionally form small lumps or nodules under the skin. To reduce this risk, our skilled injectors use precise placement techniques and may gently massage the area immediately after injection. In some cases, lumps can be dissolved or adjusted with additional treatment.",
+                subtitle: "What to Expect: Occasionally, fillers may create small lumps or uneven areas beneath the skin. These are often temporary and can sometimes occur as the filler settles.\n\nHow We Manage It: Our skilled injectors use precise placement techniques and may massage the area immediately after treatment to ensure smooth results. If needed, lumps can be dissolved or adjusted with additional care.",
                 img: "/media/services/botox/eyelid.png"
             },
             {
                 id: 4,
                 title: "Asymmetry or Unintended Results",
-                subtitle: "If filler is not placed with precision, there’s a chance of unevenness or asymmetry. At Cadmen Clinic, our injectors have extensive training in facial anatomy to help ensure a balanced, natural-looking outcome. We also schedule follow-up appointments to make any necessary refinements.",
+                subtitle: "What to Expect: Without precise injection, unevenness or asymmetry can occur, especially in lips where balance is critical to the aesthetic outcome.\n\nHow We Manage It: At Cadmen Clinic, our injectors are experts in lip anatomy and carefully tailor each injection to create balanced, natural results. Follow-up appointments are included to make any necessary refinements.",
                 img: "/media/services/botox/allergy.png"
             },
             {
                 id: 5,
                 title: "Allergic Reactions",
-                subtitle: "While rare, allergic reactions to certain filler ingredients can occur. During your consultation, we’ll thoroughly review your medical history, discuss any known allergies, and help determine the safest product for you.",
+                subtitle: "What to Expect: Although rare, allergic reactions to filler ingredients can happen, such as swelling or itching.\n\nHow We Manage It: During your consultation, we’ll thoroughly review your medical history, discuss any known allergies, and select the safest filler for you.",
                 img: "/media/services/dermal-fillers/dermalAllergicReactions.avif"
             },
             {
                 id: 6,
                 title: "Vascular Occlusion (VO)",
-                subtitle: "In very rare cases, filler can accidentally block a blood vessel, compromising blood flow to the surrounding tissue. This is a serious complication that requires prompt recognition and treatment. Our injectors are trained to identify early signs of VO, and we keep hyaluronidase on hand to dissolve the filler if needed. Quick action significantly reduces the risk of long-term effects.",
+                subtitle: "What to Expect: In extremely rare cases, filler may block a blood vessel, reducing blood flow to the surrounding tissue. This is a serious complication requiring immediate treatment.\n\nHow We Manage It: Our injectors are trained to recognize early signs of VO and take prompt action. We always keep hyaluronidase on hand to dissolve filler if necessary, ensuring swift resolution and minimizing the risk of long-term effects.",
                 img: "/media/services/dermal-fillers/dermalVO.avif"
             },
             {
                 id: 7,
                 title: "Your Safety is Our Priority",
-                subtitle: "At Cadmen Clinic, we follow strict safety protocols, use FDA-approved fillers, and stay current with best practices to minimize risks. If you have any questions or concerns, our team is here to guide you through every step of the treatment process, ensuring a safe and positive experience.",
+                subtitle: "At Cadmen Clinic, we adhere to the highest safety standards, use only FDA-approved fillers, and stay updated on best practices to minimize risks. Our team is here to guide you through every step of the process, ensuring a safe, positive, and satisfying experience. If you have any concerns, don’t hesitate to reach out—we’re here to help.",
                 img: "/media/services/dermal-fillers/dermalYourSafety.avif"
             }
         ]
@@ -239,23 +253,23 @@ const lip_fillers = {
     faqs: [
         {
             id: 1,
-            question: "How Soon Will I See Results?",
-            answer: "With most dermal fillers, you’ll notice instant volume and contour improvement right after your treatment. However, you may experience some swelling or mild bruising, which typically subsides within a few days. Final results often become apparent after 1–2 weeks once the filler fully settles."
+            question: "How Soon Will I See Results with Lip Fillers?",
+            answer: "Lip fillers provide an immediate enhancement in volume and shape right after your treatment. However, mild swelling or bruising is common and usually subsides within a few days. Final results typically become visible within 1–2 weeks as the filler settles, leaving your lips looking naturally enhanced and balanced."
         },
         {
             id: 2,
-            question: "How Often Should I Get Dermal Fillers?",
-            answer: "The longevity of dermal fillers depends on the product used, the treatment area, and individual factors like your metabolism. Most fillers last anywhere from 6 to 18 months. Scheduling maintenance touch-ups as recommended by your injector helps you maintain consistent, natural-looking results over time."
+            question: "How Often Should I Get Lip Fillers?",
+            answer: "The longevity of lip fillers depends on the product used, your metabolism, and your aesthetic goals. Most lip fillers last between 6 to 12 months. To maintain your desired look, it's best to schedule regular touch-ups as recommended by your injector."
         },
         {
             id: 3,
             question: "Can Fillers Help with Medical or Reconstructive Needs?",
-            answer: "While not as widely recognized for medical conditions as neuromodulators (like Botox), dermal fillers can sometimes be used for reconstructive purposes—for example, to correct certain facial asymmetries, fill acne scars, or address volume loss due to medical issues. Your provider can evaluate your specific needs and discuss if dermal fillers are an appropriate option."
+            answer: "Yes, lip fillers can address certain medical or reconstructive concerns, such as correcting lip asymmetry, rebuilding volume after trauma, or improving the appearance of congenital defects like cleft lips. Your provider will assess your specific needs and recommend whether fillers are a suitable option for you."
         },
         {
             id: 4,
-            question: "Are Dermal Fillers Only for Women?",
-            answer: "Absolutely not! Dermal fillers are a popular option for clients of all genders. At CADMEN Clinic, we tailor each filler treatment to your unique facial structure and desired outcome, regardless of gender. Many men opt for dermal fillers to enhance facial contours, soften lines, or add definition to the jawline—without appearing “overdone.”"
+            question: "Are Lip Fillers Only for Women?",
+            answer: "Not at all! Lip fillers are increasingly popular among men who want to enhance symmetry, improve lip shape, or add subtle volume for a more defined appearance. At CADMEN Clinic, we customize treatments for every client, ensuring natural-looking results that align with their unique anatomy and personal goals, regardless of gender."
         }
     ]
 }
