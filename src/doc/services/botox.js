@@ -192,13 +192,19 @@ const botox = {
     expectDuringAfter: {
         img: "/media/services/botox/expectDuringAfter.png",
         subheading: "Botox injections are minimally invasive and generally quick, typically taking about 15 to 30 minutes. Most clients describe the feeling as a slight pinch, similar to a mosquito bite.",
-        points: [
-            "Avoid lying down or bending over for 4 hours after the treatment to prevent the Botox from migrating.",
-            "Refrain from intense physical activities for 24 hours.",
-            "Avoid rubbing or massaging the treated area, as this may cause the Botox to spread to unintended muscles."
+        sections: [
+            {
+                title: "Post-Treatment Care",
+                points: [
+                    "Avoid lying down or bending over for 4 hours after the treatment to prevent the Botox from migrating.",
+                    "Refrain from intense physical activities for 24 hours.",
+                    "Avoid rubbing or massaging the treated area, as this may cause the Botox to spread to unintended muscles."
+                ],
+            }
         ],
         footer: "Results will typically begin to appear within 3-5 days, with full effects visible at around two weeks. We invite you to schedule a Follow-Up Appointment to assess your results and make"
     },
+
     transformations: {
         title: {
             first: "Understanding ",

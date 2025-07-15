@@ -182,13 +182,32 @@ const dermal_fillers = {
     },
     expectDuringAfter: {
         img: "/media/services/botox/expectDuringAfter.png",
-        subheading: "Botox injections are minimally invasive and generally quick, typically taking about 15 to 30 minutes. Most clients describe the feeling as a slight pinch, similar to a mosquito bite.",
-        points: [
-            "Avoid lying down or bending over for 4 hours after the treatment to prevent the Botox from migrating.",
-            "Refrain from intense physical activities for 24 hours.",
-            "Avoid rubbing or massaging the treated area, as this may cause the Botox to spread to unintended muscles."
-        ],
-        footer: "Results will typically begin to appear within 3-5 days, with full effects visible at around two weeks. We invite you to schedule a Follow-Up Appointment to assess your results and make"
+        sections: [
+            {
+                title: "During the Procedure",
+                points: [
+                    "Numbing Options: We often apply a topical anesthetic or use ice packs to minimize any discomfort. Certain filler products also contain lidocaine for an added layer of pain relief.",
+                    "Quick and Minimally Invasive: Dermal filler injections typically take 15–30 minutes. Most clients describe the sensation as a slight pinch or pressure. Your provider may gently massage the area during the procedure to ensure an even distribution."
+                ]
+            },
+            {
+                title: "Post-Treatment Care",
+                points: [
+                    "Avoid Intense Activity: Refrain from vigorous exercise, prolonged sun exposure, or extreme temperatures (hot tubs, saunas) for the first 24–48 hours to minimize swelling and bruising.",
+                    "No Excessive Touching: Avoid rubbing or massaging the treated areas unless specifically instructed by your provider, as this can cause the filler to migrate.",
+                    "Reduce Swelling & Bruising: Use cold compresses or ice packs if recommended by your injector. Avoid alcohol and blood-thinning medications or supplements (unless medically necessary) for a short period post-treatment to further reduce bruising.",
+                    "Stay Hydrated: Drinking plenty of water supports overall skin health and may help the filler integrate more smoothly."
+                ]
+            },
+            {
+                title: "When to Expect Results",
+                points: [
+                    "Immediate Improvement: You’ll see an instant boost in volume and contour, though some swelling or bruising can last for a few days.",
+                    "Full, Settled Results: Most people notice their final outcome within 1–2 weeks, once the filler has fully integrated with your skin.",
+                    "Follow-Up Appointment: We recommend scheduling a check-in to evaluate your results and discuss any desired refinements or future maintenance treatments."
+                ]
+            }
+        ]
     },
     transformations: {
         title: {

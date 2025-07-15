@@ -753,7 +753,7 @@ function PlasmicBotoxLander__RenderFunc(props) {
               <CadmenExpectDuringAndAfter 
                 img={service.expectDuringAfter.img}
                 subheading={service.expectDuringAfter.subheading}
-                points={service.expectDuringAfter.points}
+                sections={service.expectDuringAfter.sections}
                 footer={service.expectDuringAfter.footer}
               />
             </>

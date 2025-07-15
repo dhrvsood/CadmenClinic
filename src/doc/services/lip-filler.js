@@ -190,13 +190,32 @@ const lip_fillers = {
     },
     expectDuringAfter: {
         img: "/media/services/botox/expectDuringAfter.png",
-        subheading: "Botox injections are minimally invasive and generally quick, typically taking about 15 to 30 minutes. Most clients describe the feeling as a slight pinch, similar to a mosquito bite.",
-        points: [
-            "Avoid lying down or bending over for 4 hours after the treatment to prevent the Botox from migrating.",
-            "Refrain from intense physical activities for 24 hours.",
-            "Avoid rubbing or massaging the treated area, as this may cause the Botox to spread to unintended muscles."
-        ],
-        footer: "Results will typically begin to appear within 3-5 days, with full effects visible at around two weeks. We invite you to schedule a Follow-Up Appointment to assess your results and make"
+        sections: [
+            {
+                title: "During the Procedure",
+                points: [
+                    "Numbing Options: To ensure your comfort, we often apply a topical anesthetic or use ice packs before treatment. Many lip fillers also contain lidocaine, which provides additional pain relief during the procedure.",
+                    "Quick and Minimally Invasive: Lip filler injections usually take 15–30 minutes. Most clients describe the sensation as a mild pinch or pressure. Your provider may gently massage your lips during the process to ensure smooth, even distribution."
+                ]
+            },
+            {
+                title: "Post-Treatment Care",
+                points: [
+                    "Avoid Intense Activity: Refrain from strenuous exercise, excessive sun exposure, or extreme temperatures (like saunas or hot tubs) for the first 24–48 hours to minimize swelling and bruising.",
+                    "No Excessive Touching: Avoid rubbing, pressing, or massaging your lips unless instructed by your provider, as this could displace the filler.",
+                    "Reduce Swelling & Bruising: Apply cold compresses or ice packs as recommended to reduce swelling. Avoid alcohol and blood-thinning medications or supplements (unless medically necessary) to further minimize bruising.",
+                    "Stay Hydrated: Drink plenty of water to support hydration and help the filler settle naturally."
+                ]
+            },
+            {
+                title: "When to Expect Results",
+                points: [
+                    "Immediate Improvement: You’ll notice an instant boost in lip volume and definition, but some swelling or minor bruising may be present for the first few days.",
+                    "Full, Settled Results: Most clients see their final, refined results within 1–2 weeks as any swelling subsides and the filler integrates fully with your tissue.",
+                    "Follow-Up Appointment: We recommend scheduling a follow-up visit to assess your results, ensure you’re satisfied, and discuss any potential refinements or maintenance treatments."
+                ]
+            }
+        ]
     },
     transformations: {
         title: {

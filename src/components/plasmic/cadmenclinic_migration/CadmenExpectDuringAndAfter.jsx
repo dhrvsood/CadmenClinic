@@ -15,10 +15,8 @@ const CadmenExpectDuringAndAfter = ({
     overrides = {}, 
     globalVariants = {},
     img,
-    titlePrefix,
-    titleEmphasis,
     subheading,
-    points,
+    sections,
     footer
 }) => (
           <Stack__
@@ -101,54 +99,57 @@ const CadmenExpectDuringAndAfter = ({
                     {subheading}
                   </div>
                 </Stack__>
-                <Stack__
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__xk3C)}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___9EBfz
-                    )}
+
+
+                {sections.map((section, index) => (
+                  <Stack__
+                    key={`section-${index}`}
+                    as="div"
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__xk3C)}
                   >
-                    {"Post-Treatment Care:"}
-                  </div>
-
-                  {
-                    points.map((point) => (
-                    <Stack__
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.freeBox__pqLf)}
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text___9EBfz
+                      )}
                     >
-                      <PointIcon
-                        className={classNames(projectcss.all, sty.svg___4KuWw)}
-                        role={"img"}
-                      />
+                      {section.title}
+                    </div>
 
+                    {section.points.map((point, pointIndex) => (
                       <div
+                        key={`point-${index}-${pointIndex}`}
                         className={classNames(
+                          "flex items-start gap-2", // keeps dot in line instead of vertically centered
                           projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text___0Op2E
+                          sty.freeBox__pqLf
                         )}
                       >
-                        <React.Fragment>
+                        <PointIcon
+                          className={classNames("mt-1", projectcss.all, sty.svg___4KuWw)}
+                          role="img"
+                        />
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text___0Op2E
+                          )}
+                        >
                           <span
-                            className={
-                              "plasmic_default__all plasmic_default__span"
-                            }
+                            className="plasmic_default__all plasmic_default__span"
                             style={{ color: "#535556" }}
                           >
                             {point}
                           </span>
-                        </React.Fragment>
+                        </div>
                       </div>
-                    </Stack__>
-                  ))}
-                </Stack__>
+                    ))}
+                  </Stack__>
+                ))}
+
                 <div
                   className={classNames(
                     projectcss.all,
