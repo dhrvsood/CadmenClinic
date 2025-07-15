@@ -113,6 +113,36 @@ const botox = {
             emphasis: "Botox is right"
         }
     },
+    preparingForAppointment: {
+        titlePrefix: "Preparing for Your",
+        titleEmphasis: "Botox Appointment",
+        subheading: "Here are some tips to ensure a smooth Botox experience:",
+        points: [
+            {
+                heading: "Avoid Blood Thinners",
+                description: "A few days before your appointment, avoid medications and supplements that can thin your blood, such as aspirin, ibuprofen, and fish oil. This reduces the risk of bruising at the injection site."
+            },
+            {
+                heading: "Skip Alcohol and Tobacco",
+                description: "WBoth can increase bruising and affect your skin’s recovery. Try to avoid alcohol for at least 24 hours before and after treatment.",
+            },
+            {
+                heading: "Inform Your Provider of Medical History",
+                description: "Be transparent about any medical conditions, allergies, or medications you’re taking. This information helps us customize your treatment and prevent potential complications."
+            }
+        ],
+        img: "/media/services/botox/preparingForAppointment.png"
+    },
+    expectDuringAfter: {
+        img: "/media/services/botox/expectDuringAfter.png",
+        subheading: "Botox injections are minimally invasive and generally quick, typically taking about 15 to 30 minutes. Most clients describe the feeling as a slight pinch, similar to a mosquito bite.",
+        points: [
+            "Avoid lying down or bending over for 4 hours after the treatment to prevent the Botox from migrating.",
+            "Refrain from intense physical activities for 24 hours.",
+            "Avoid rubbing or massaging the treated area, as this may cause the Botox to spread to unintended muscles."
+        ],
+        footer: "Results will typically begin to appear within 3-5 days, with full effects visible at around two weeks. We invite you to schedule a Follow-Up Appointment to assess your results and make"
+    },
     transformations: {
         title: {
             first: "Understanding ",

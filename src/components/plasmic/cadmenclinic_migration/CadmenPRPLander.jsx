@@ -62,6 +62,7 @@ import CadmenOurProcess from "./CadmenOurProcess";
 import CadmenPreparingForAppointment from "./CadmenPreparingForAppointment";
 import CadmenTreatmentCardsSection from "./CadmenTreatmentCardsSection";
 import CadmenWantToLearnMore from "./CadmenWantToLearnMore";
+import CadmenExpectDuringAndAfter from "./CadmenExpectDuringAndAfter";
 
 createPlasmicElementProxy;
 
@@ -657,6 +658,20 @@ function PlasmicBotoxLander__RenderFunc(props) {
               />
 
               {/* 9. PREPARING FOR YOUR APPOINTMENT / WHAT TO EXPECT DURING AND AFTER THE TREATMENT */}
+              <CadmenPreparingForAppointment
+                titlePrefix={service.preparingForAppointment.titlePrefix}
+                titleEmphasis={service.preparingForAppointment.titleEmphasis}
+                subheading={service.preparingForAppointment.subheading}
+                points={service.preparingForAppointment.points}
+                img={service.preparingForAppointment.img}
+              />
+              
+              <CadmenExpectDuringAndAfter 
+                img={service.expectDuringAfter.img}
+                subheading={service.expectDuringAfter.subheading}
+                points={service.expectDuringAfter.points}
+                footer={service.expectDuringAfter.footer}
+              />
             </>
 
           }
