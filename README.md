@@ -4,10 +4,10 @@ Website and bookings flow for Toronto’s #1 choice for medical-grade hair resto
 ## Technologies
 ### Frontend
 - [**Next.js**](https://nextjs.org/docs/pages): JavaScript, pages router
-- [**Zustand**](https://nextjs.org/docs/pages): global stores
-- [**Tailwind**](https://tailwindcss.com/docs/): styling
+- [**Zustand**](https://zustand.docs.pmnd.rs/getting-started/introduction): Global stores
+- [**Tailwind**](https://tailwindcss.com/docs/): Styling
 ### Backend
-- [**Vercel**](https://vercel.com/image-lab) (serverless)
+- [**Vercel**](https://vercel.com) (serverless)
 ### APIs
 - [**Bookings & EMR System**](https://docs.zenoti.com/docs/overview): Zenoti
 - [**Email**](https://resend.com/docs/introduction): Resend
@@ -37,3 +37,4 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to see the a
 - [ ] Sunsetting Plasmic and cleaning up auto-generated code within codebase
 - [ ] Integration of membership program
 - [ ] Use Notion for blog setup
+- [ ] Sandbox environment and automated tests for bookings API
