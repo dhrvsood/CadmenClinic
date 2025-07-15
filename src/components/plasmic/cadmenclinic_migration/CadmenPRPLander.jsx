@@ -682,43 +682,51 @@ function PlasmicBotoxLander__RenderFunc(props) {
               />
 
               {/* 7. INTERACTIVE COMPONENT */}
-              <AreasInteractive
-                data-plasmic-name={"areasInteractive"}
-                data-plasmic-override={overrides.areasInteractive}
-                className={classNames("__wab_instance", sty.areasInteractive)}
-                data={generateStateValueProp($state, ["areasInteractive", "data"])}
-                onDataChange={async (...eventArgs) => {
-                  generateStateOnChangeProp($state, [
-                    "areasInteractive",
-                    "data"
-                  ]).apply(null, eventArgs);
-                  if (
-                    eventArgs.length > 1 &&
-                    eventArgs[1] &&
-                    eventArgs[1]._plasmic_state_init_
-                  ) {
-                    return;
-                  }
-                }}
-                onSelectedChange={async (...eventArgs) => {
-                  generateStateOnChangeProp($state, [
+              {
+                service.faceInteractive
+
+                // Show interactive face dot component for Botox and Dermal Fillers
+                ?
+                <AreasInteractive
+                  data-plasmic-name={"areasInteractive"}
+                  data-plasmic-override={overrides.areasInteractive}
+                  className={classNames("__wab_instance", sty.areasInteractive)}
+                  data={generateStateValueProp($state, ["areasInteractive", "data"])}
+                  onDataChange={async (...eventArgs) => {
+                    generateStateOnChangeProp($state, [
+                      "areasInteractive",
+                      "data"
+                    ]).apply(null, eventArgs);
+                    if (
+                      eventArgs.length > 1 &&
+                      eventArgs[1] &&
+                      eventArgs[1]._plasmic_state_init_
+                    ) {
+                      return;
+                    }
+                  }}
+                  onSelectedChange={async (...eventArgs) => {
+                    generateStateOnChangeProp($state, [
+                      "areasInteractive",
+                      "selected"
+                    ]).apply(null, eventArgs);
+                    if (
+                      eventArgs.length > 1 &&
+                      eventArgs[1] &&
+                      eventArgs[1]._plasmic_state_init_
+                    ) {
+                      return;
+                    }
+                  }}
+                  selected={generateStateValueProp($state, [
                     "areasInteractive",
                     "selected"
-                  ]).apply(null, eventArgs);
-                  if (
-                    eventArgs.length > 1 &&
-                    eventArgs[1] &&
-                    eventArgs[1]._plasmic_state_init_
-                  ) {
-                    return;
-                  }
-                }}
-                selected={generateStateValueProp($state, [
-                  "areasInteractive",
-                  "selected"
-                ])}
-              />
+                  ])}
+                />
 
+                // Show interactive info component for rest
+                : <></>
+              }
 
               {/* 8. WANT TO LEARN MORE */}
               <CadmenWantToLearnMore 

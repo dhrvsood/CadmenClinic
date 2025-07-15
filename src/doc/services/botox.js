@@ -236,23 +236,23 @@ const botox = {
     faqs: [
         {
             id: 1,
-            question: "How do I know if I’m a candidate?",
-            answer: "Come in for a complimentary consultation with our expert providers, who will assess your hair and scalp to recommend a customized treatment plan unique for you."
+            question: "How Soon Will I See Results?",
+            answer: "Results from Botox typically start to appear within 3–5 days, with full effects visible at around two weeks. You’ll notice a gradual reduction in lines and smoother skin as the Botox takes effect."
         },
         {
             id: 2,
-            question: "When will I see results?",
-            answer: "From our experience with over 2,000 clients, results start to show within 3-4 sessions. It is critical to take good care of your scalp and hair outside of the clinic such as using safe shampoos and lotions."
+            question: "How Often Should I Get Botox?",
+            answer: "Most clients find that Botox lasts about 3–4 months. For best results, we recommend scheduling treatments every 3–4 months to maintain a smooth, youthful appearance. Consistent treatments can help “train” your muscles to stay relaxed, potentially extending the longevity of your results over time."
         },
         {
             id: 3,
-            question: "Are there side effects or any recovery time needed?",
-            answer: "The great thing about PRP is that there is no recovery time needed - most patients feel good enough to immediately go back about their day."
+            question: "Can Botox Help with Medical Conditions?",
+            answer: "Botox is FDA-approved for several medical uses, including chronic migraines, TMJ (jaw clenching), and excessive sweating (hyperhidrosis). By relaxing specific muscles, Botox can provide relief from these conditions and improve quality of life."
         },
         {
             id: 4,
-            question: "Can I do PRP the same day of my consultation?",
-            answer: "Yes you can!"
+            question: "Is Botox Only for Women?",
+            answer: "Not at all! Botox is a popular treatment for both men and women. At CADMEN Clinic, we tailor Botox treatments to meet the unique needs of each client, regardless of gender. Many men choose Botox to achieve a refreshed look and reduce lines without appearing overdone."
         }
     ]
 }
