@@ -9,7 +9,7 @@ const botox = {
         longTitle: "Botox®"
     },
     hero: {
-        img: "/media/services/prp-hair-restoration.webp",
+        img: "/media/services/botox-and-wrinkle-relaxers.jpg",
         tagline: "Soften Fine Lines & Wrinkles",
         description: "reduce the signs of aging with quick, minimally invasive Botox treatments."
     },
@@ -18,19 +18,19 @@ const botox = {
             id: 1,
             title: "Julia's Results",
             subtitle: "Results after one month with Botox",
-            img: "/media/testimonials/Marcus.jpg"
+            img: "/media/testimonials/botox_Julia.avif"
         },
         {
             id: 2,
             title: "Daria's Results",
             subtitle: "Results after three weeks with Botox",
-            img: "/media/testimonials/Jacob.jpg"
+            img: "/media/testimonials/botox_Daria.avif"
         },
         {
             id: 3,
             title: "Anna’s Results",
             subtitle: "Results after 3 PRP Sessions",
-            img: "/media/testimonials/Anna.jpg"
+            img: "/media/testimonials/botox_Anna.avif"
         }
     ],
     whatAndHowItWorks: {
@@ -70,8 +70,8 @@ const botox = {
         cards: [
             {
                 name: "Dysport",
-                regularPrice: "14",
-                specialPrice: "9.99",
+                regularPrice: 14,
+                specialPrice: 9.99,
                 points: [
                     {
                         title: "Targeted for Larger Areas",
@@ -89,8 +89,8 @@ const botox = {
             },
             {
                 name: "Botox",
-                regularPrice: "15",
-                specialPrice: "12.99",
+                regularPrice: 15,
+                specialPrice: 12.99,
                 points: [
                     {
                         title: "Versatile Treatment",
@@ -115,34 +115,35 @@ const botox = {
     },
     transformations: {
         title: {
-            first: "PRP Hair Restoration Has Already ",
-            emphasis: "Transformed",
-            last: " 100,000+ Lives"
+            first: "Understanding ",
+            emphasis: "the Risks",
+            last: " of Botox"
         },
+        description: "Although Botox is considered safe when administered by a qualified provider, it’s important to be aware of the potential risks. Here are some possible side effects and how we manage them at Cadmen Clinic.",
         cards: [
             {
                 id: 1,
-                title: "Thinning Hair and Receding Hairline",
-                subtitle: "Restore volume and strengthen thinning hair along the hairline for a fuller, thicker appearance.",
-                img: "/media/services/prp/7.1.jpg"
+                title: "Temporary Redness, Swelling, or Bruising",
+                subtitle: "These are the most common side effects and typically resolve within a day or two. Our injectors use advanced techniques to minimize bruising, and we provide aftercare guidance to help you recover quickly.",
+                img: "/media/services/botox/redness.png"
             },
             {
                 id: 2,
-                title: "Bald Spots",
-                subtitle: "Stimulate growth in bald areas to encourage new hair follicles and promote even regrowth across the scalp.",
-                img: "/media/services/prp/7.2.jpg"
+                title: "Headaches or Minor Discomfort",
+                subtitle: "Some clients experience mild headaches or discomfort after Botox. These effects are usually short-lived and can be managed with over-the-counter pain relief if needed.",
+                img: "/media/services/botox/headaches.png"
             },
             {
                 id: 3,
-                title: "Hair Thinning on Crown and Temples",
-                subtitle: "Target areas of thinning around the crown and temples for more density and healthier-looking hair",
-                img: "/media/services/prp/7.3.jpg"
+                title: "Drooping Eyelid or Asymmetry",
+                subtitle: "Rarely, Botox can migrate to unintended muscles, potentially causing eyelid drooping or asymmetry. To minimize this risk, our injectors use precise techniques and provide post-treatment guidelines to prevent migration.",
+                img: "/media/services/botox/eyelid.png"
             },
             {
                 id: 4,
-                title: "Overall Hair Density",
-                subtitle: "Increase the thickness and fullness of your hair, enhancing its natural volume for a refreshed and revitalized appearance.",
-                img: "/media/services/prp/7.4.jpg"
+                title: "Allergic Reactions",
+                subtitle: "While very rare, allergic reactions to Botox can occur. During your consultation, we’ll review your medical history to ensure you’re a good candidate and discuss any potential allergies.",
+                img: "/media/services/botox/allergy.png"
             }
         ]
     },

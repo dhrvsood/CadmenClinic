@@ -713,9 +713,11 @@ function PlasmicBotoxLander__RenderFunc(props) {
                       sty.p__aWpbi
                     )}
                   >
-                    {"Don’t wait any longer to restore your hair – join the many satisfied clients who have already experienced the benefits of "}
-                    {service.general.longTitle}
+                    {service.transformations?.description
+                      ? service.transformations.description
+                      : `Don’t wait any longer to restore your hair – join the many satisfied clients who have already experienced the benefits of ${service.general.longTitle}`}
                   </p>
+
               </Stack__>
 
               <div className={classNames(projectcss.all, sty.freeBox___5Wi9P)}>
