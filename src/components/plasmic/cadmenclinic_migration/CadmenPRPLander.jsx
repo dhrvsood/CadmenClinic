@@ -63,6 +63,7 @@ import CadmenPreparingForAppointment from "./CadmenPreparingForAppointment";
 import CadmenTreatmentCardsSection from "./CadmenTreatmentCardsSection";
 import CadmenWantToLearnMore from "./CadmenWantToLearnMore";
 import CadmenExpectDuringAndAfter from "./CadmenExpectDuringAndAfter";
+import InteractiveInfo from "@/components/InteractiveInfo";
 
 createPlasmicElementProxy;
 
@@ -725,7 +726,13 @@ function PlasmicBotoxLander__RenderFunc(props) {
                 />
 
                 // Show interactive info component for rest
-                : <></>
+                :
+                <InteractiveInfo
+                  title={service.infoInteractive.title}
+                  description={service.infoInteractive.description}
+                  data={service.infoInteractive.data}
+                />
+
               }
 
               {/* 8. WANT TO LEARN MORE */}
@@ -754,7 +761,7 @@ function PlasmicBotoxLander__RenderFunc(props) {
           }
 
 
-          {/* SERVICE TRANSFORMED/HELPED */}
+          {/* SERVICE TRANSFORMED/HELPED // UNDERSTANDING THE RISKS */}
           <section
             data-plasmic-name={"botoxHelpedSection"}
             data-plasmic-override={overrides.botoxHelpedSection}
@@ -1076,7 +1083,7 @@ function PlasmicBotoxLander__RenderFunc(props) {
             </section>
 
             // FOR ALL OTHERS
-            : <></>
+            : <></> // No video
           }
 
           {/* OUR LOCATION */}
