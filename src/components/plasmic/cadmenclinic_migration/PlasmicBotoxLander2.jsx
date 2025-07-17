@@ -950,7 +950,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
               {/* PRP Hair Restoration */}
               <AffordableBotoxCard
                 name={"PRP Hair Restoration"}
-                link={"/services/hair-restoration/prp"}
+                link={"/services/prp-hair-restoration"}
                 perUnit={"$599"}
                 price={"$299"}
                 className={classNames(
@@ -981,7 +981,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
               {/* Exosome Hair Therapy */}
               <AffordableBotoxCard
                 name={"Exosome Hair Therapy"}
-                link={"/services/hair-restoration/exosomes"}
+                link={"/services/exosomes"}
                 perUnit={"$799"}
                 price={"$399"}
                 className={classNames(
@@ -1010,7 +1010,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
               {/* Mesotherapy Vitamins */}
               <AffordableBotoxCard
                 name={"Mesotherapy Vitamins"}
-                link={"/services/hair-restoration/mesotherapy"}
+                link={"/services/mesotherapy"}
                 perUnit={"$399"}
                 price={"$199"}
                 className={classNames(

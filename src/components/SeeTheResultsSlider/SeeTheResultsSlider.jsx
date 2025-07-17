@@ -23,14 +23,14 @@ const data = [
           description:
             "Promote new hair growth and achieve thicker, fuller hair using your body's own plasma.",
           image: '/seeTheResultsSlider/hair/prp-1a.jpeg',
-          link: '/services/hair-restoration/prp'
+          link: '/services/prp-hair-restoration'
         },
         backCard: {
           title: 'PRP Hair Restoration',
           description:
             "Promote new hair growth and achieve thicker, fuller hair using your body's own plasma.",
           image: '/seeTheResultsSlider/hair/prp-1b.jpeg',
-          link: '/services/hair-restoration/prp'
+          link: '/services/prp-hair-restoration'
         },
       },
       {
@@ -39,14 +39,14 @@ const data = [
           description:
             'Block DHT levels and boost hair regeneration with the combined power of microneedling and exosomes.',
           image: '/seeTheResultsSlider/hair/exo-1a.jpeg',
-          link: '/services/hair-restoration/exosomes'
+          link: '/services/exosomes'
         },
         backCard: {
           title: 'Exosomes Hair Therapy',
           description:
             'Block DHT levels and boost hair regeneration with the combined power of microneedling and exosomes.',
           image: '/seeTheResultsSlider/hair/exo-1b.jpeg',
-          link: '/services/hair-restoration/exosomes'
+          link: '/services/exosomes'
         }
       },
       {
@@ -55,14 +55,14 @@ const data = [
           description:
             'Complex blend of amino acids, minerals, vitamins, and co-enzymes to stimulate hair follicle growth.',
           image: '/seeTheResultsSlider/hair/meso-1a.jpeg',
-          link: '/services/hair-restoration/mesotherapy'
+          link: '/services/mesotherapy'
         },
         backCard: {
           title: 'Mesotherapy Vitamins',
           description:
             'Complex blend of amino acids, minerals, vitamins, and co-enzymes to stimulate hair follicle growth.',
           image: '/seeTheResultsSlider/hair/meso-1b.jpeg',
-          link: '/services/hair-restoration/mesotherapy'
+          link: '/services/mesotherapy'
         },
       }
     ]
@@ -97,14 +97,14 @@ const data = [
           description:
             'Achieve beautifully defined, balanced lips with personalized care.',
           image: '/seeTheResultsSlider/injectables/injectables-6a.avif',
-          link: '/services/coming-soon'
+          link: '/services/lip-fillers'
         },
         backCard: {
           title: 'Lip Fillers and Augmentation',
           description:
             'Achieve beautifully defined, balanced lips with personalized care.',
           image: '/seeTheResultsSlider/injectables/injectables-6b.avif',
-          link: '/services/coming-soon'
+          link: '/services/lip-fillers'
         }
       },
       {
