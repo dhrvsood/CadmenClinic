@@ -1,4 +1,5 @@
 const prp_hair_restoration = {
+    isMigrated: true,
     category: "hair-restoration",
     general: {
         strikePrice: "$599",

@@ -1,4 +1,5 @@
 const exosomes = {
+    isMigrated: true,
     general: {
         strikePrice: "$799",
         salePrice: "$399",

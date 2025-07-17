@@ -1,4 +1,5 @@
 const dermal_fillers = {
+    isMigrated: true,
     category: "skin-treatments",
     general: {
         strikePrice: "$799",

@@ -1,4 +1,5 @@
 const mesotherapy = {
+    isMigrated: true,
     general: {
         strikePrice: "$399",
         salePrice: "$199",

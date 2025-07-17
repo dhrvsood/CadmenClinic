@@ -1,4 +1,5 @@
 const botox = {
+    isMigrated: true,
     category: "skin-treatments",
     general: {
         strikePrice: "$14.00",

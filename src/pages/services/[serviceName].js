@@ -1,16 +1,48 @@
-import { useRouter } from "next/router";
-import CadmenPRPLander from "@/components/plasmic/cadmenclinic_migration/CadmenPRPLander";
-import { servicesData } from "@/doc/services";
+// pages/services/[serviceName].js
+import { useRouter } from 'next/router';
+import { servicesData as newServices } from '@/doc/services';
+import { servicesData as oldServices } from '@/doc/old_services'
 
-export default function HairServicePage() {
-  const router = useRouter();
-  const { serviceName } = router.query;
+import CadmenPRPLander from '@/components/plasmic/cadmenclinic_migration/CadmenPRPLander';
+import OldServicePage from '@/components/OldServicePage'; 
+import Page404 from '@/pages/404';
 
-  if (!serviceName || !servicesData[serviceName]) {
-    return <p>Invalid service</p>;
+export default function ServiceRouterPage() {
+  const { query } = useRouter();
+  const { serviceName } = query;
+
+  if (!serviceName) return <p>Loading...</p>;
+
+  const newService = newServices[serviceName];
+  const oldService = oldServices[serviceName];
+
+  if (!newService && !oldService) {
+    return <Page404 />
   }
 
-  const serviceData = servicesData[serviceName];
+  if (newService?.isMigrated) {
+    return <CadmenPRPLander args={{ serviceData: newService }} />;
+  }
 
-  return <CadmenPRPLander args={{ serviceData }} />;
+  if (oldService) {
+    return <OldServicePage serviceData={oldService} />;
+  }
 }
+
+
+// import { useRouter } from "next/router";
+// import CadmenPRPLander from "@/components/plasmic/cadmenclinic_migration/CadmenPRPLander";
+// import { servicesData } from "@/doc/services";
+
+// export default function HairServicePage() {
+//   const router = useRouter();
+//   const { serviceName } = router.query;
+
+//   if (!serviceName || !servicesData[serviceName]) {
+//     return <p>Invalid service</p>;
+//   }
+
+//   const serviceData = servicesData[serviceName];
+
+//   return <CadmenPRPLander args={{ serviceData }} />;
+// }
