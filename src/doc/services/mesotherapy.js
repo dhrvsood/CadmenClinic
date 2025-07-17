@@ -1,5 +1,6 @@
 const mesotherapy = {
     isMigrated: true,
+    category: "hair-restoration",
     general: {
         strikePrice: "$399",
         salePrice: "$199",

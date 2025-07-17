@@ -1,5 +1,6 @@
 const exosomes = {
     isMigrated: true,
+    category: "hair-restoration",
     general: {
         strikePrice: "$799",
         salePrice: "$399",
