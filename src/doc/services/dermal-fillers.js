@@ -17,7 +17,7 @@ const dermal_fillers = {
         {
             id: 1,
             title: "Kyra's Results",
-            subtitle: "After one month with revanesse versa",
+            subtitle: "After two weeks with chin fillers",
             img: "/media/testimonials/dermalKyra.avif"
         },
         {
@@ -186,7 +186,6 @@ const dermal_fillers = {
             {
                 title: "During the Procedure",
                 points: [
-                    "Numbing Options: We often apply a topical anesthetic or use ice packs to minimize any discomfort. Certain filler products also contain lidocaine for an added layer of pain relief.",
                     "Quick and Minimally Invasive: Dermal filler injections typically take 15–30 minutes. Most clients describe the sensation as a slight pinch or pressure. Your provider may gently massage the area during the procedure to ensure an even distribution."
                 ]
             },
@@ -194,7 +193,6 @@ const dermal_fillers = {
                 title: "Post-Treatment Care",
                 points: [
                     "Avoid Intense Activity: Refrain from vigorous exercise, prolonged sun exposure, or extreme temperatures (hot tubs, saunas) for the first 24–48 hours to minimize swelling and bruising.",
-                    "No Excessive Touching: Avoid rubbing or massaging the treated areas unless specifically instructed by your provider, as this can cause the filler to migrate.",
                     "Reduce Swelling & Bruising: Use cold compresses or ice packs if recommended by your injector. Avoid alcohol and blood-thinning medications or supplements (unless medically necessary) for a short period post-treatment to further reduce bruising.",
                     "Stay Hydrated: Drinking plenty of water supports overall skin health and may help the filler integrate more smoothly."
                 ]
@@ -203,8 +201,7 @@ const dermal_fillers = {
                 title: "When to Expect Results",
                 points: [
                     "Immediate Improvement: You’ll see an instant boost in volume and contour, though some swelling or bruising can last for a few days.",
-                    "Full, Settled Results: Most people notice their final outcome within 1–2 weeks, once the filler has fully integrated with your skin.",
-                    "Follow-Up Appointment: We recommend scheduling a check-in to evaluate your results and discuss any desired refinements or future maintenance treatments."
+                    "Full, Settled Results: Most people notice their final outcome within 1–2 weeks, once the filler has fully integrated with your skin."
                 ]
             }
         ]
@@ -215,7 +212,7 @@ const dermal_fillers = {
             emphasis: "the Risks",
             last: " of Dermal Fillers"
         },
-        description: "Although dermal fillers are generally considered safe when administered by an experienced professional, it’s important to be aware of the potential risks. Here are some possible side effects and how we manage them at Cadmen Clinic:",
+        description: "Although dermal fillers are generally considered safe when administered by an experienced professional, it’s important to be aware of the potential risks. Here are some possible side effects and how we manage them at CADMEN Clinic:",
         cards: [
             {
                 id: 1,
@@ -238,7 +235,7 @@ const dermal_fillers = {
             {
                 id: 4,
                 title: "Asymmetry or Unintended Results",
-                subtitle: "If filler is not placed with precision, there’s a chance of unevenness or asymmetry. At Cadmen Clinic, our injectors have extensive training in facial anatomy to help ensure a balanced, natural-looking outcome. We also schedule follow-up appointments to make any necessary refinements.",
+                subtitle: "If filler is not placed with precision, there’s a chance of unevenness or asymmetry. At CADMEN Clinic, our injectors have extensive training in facial anatomy to help ensure a balanced, natural-looking outcome. We also schedule follow-up appointments to make any necessary refinements.",
                 img: "/media/services/botox/allergy.png"
             },
             {
@@ -249,14 +246,8 @@ const dermal_fillers = {
             },
             {
                 id: 6,
-                title: "Vascular Occlusion (VO)",
-                subtitle: "In very rare cases, filler can accidentally block a blood vessel, compromising blood flow to the surrounding tissue. This is a serious complication that requires prompt recognition and treatment. Our injectors are trained to identify early signs of VO, and we keep hyaluronidase on hand to dissolve the filler if needed. Quick action significantly reduces the risk of long-term effects.",
-                img: "/media/services/dermal-fillers/dermalVO.avif"
-            },
-            {
-                id: 7,
                 title: "Your Safety is Our Priority",
-                subtitle: "At Cadmen Clinic, we follow strict safety protocols, use FDA-approved fillers, and stay current with best practices to minimize risks. If you have any questions or concerns, our team is here to guide you through every step of the treatment process, ensuring a safe and positive experience.",
+                subtitle: "At CADMEN Clinic, we follow strict safety protocols, use FDA-approved fillers, and stay current with best practices to minimize risks. If you have any questions or concerns, our team is here to guide you through every step of the treatment process, ensuring a safe and positive experience.",
                 img: "/media/services/dermal-fillers/dermalYourSafety.avif"
             }
         ]

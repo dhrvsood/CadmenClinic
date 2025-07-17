@@ -184,7 +184,7 @@ const CadmenPreparingForAppointment = ({
                   fullHeight: 1115,
                   aspectRatio: undefined
                 }}
-                style={{ height: "641px", width: "100%", objectFit: "cover" }}
+                style={{ width: "100%", objectFit: "cover" }}
               />
             </Stack__>
           </Stack__>

@@ -2176,6 +2176,7 @@
   height: 1em;
 }
 .affordableBotoxSection {
+  /* background: url("../../../../public/graphics/circlesSvgDarkBrown.svg") bottom 0px right 0px / cover no-repeat, #ebdbd6; */
   background: #ebdbd6;
   width: 100%;
   display: flex;
@@ -2367,6 +2368,19 @@
     margin-top: 20px;
   }
 }
+
+/* narrow version for service pages */
+.freeBox__hib93--narrow {
+  max-width: 100%;
+}
+
+@media (min-width: 1300px) {
+  .freeBox__hib93--narrow {
+    max-width: 60%;
+  }
+}
+
+
 .affordableBotoxCard__package:global(.__wab_instance) {
   display: flex;
   flex-direction: column;
@@ -2375,17 +2389,20 @@
 }
 
 .affordableBotoxCard__v1OXt:global(.__wab_instance) {
-  max-width: 100%;
+  /* max-width: 100%; */
+  max-width: 550px;
   height: 100%;
   min-height: 100%;
 }
 .affordableBotoxCard___844NL:global(.__wab_instance) {
-  max-width: 100%;
+  /* max-width: 100%; */
+  max-width: 550px;
   height: 100%;
   min-height: 100%;
 }
 .affordableBotoxCard__rVlvw:global(.__wab_instance) {
-  max-width: 100%;
+  /* max-width: 100%; */
+  max-width: 550px;
   height: 100%;
   min-height: 100%;
 }

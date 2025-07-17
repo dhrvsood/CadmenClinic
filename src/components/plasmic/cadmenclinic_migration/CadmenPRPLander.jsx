@@ -684,6 +684,7 @@ function PlasmicBotoxLander__RenderFunc(props) {
                 regularUnit={service.treatmentCards.regularUnit}
                 specialUnit={service.treatmentCards.specialUnit}
                 cards={service.treatmentCards.cards}
+                wide={service.treatmentCards.wide}
               />
 
               {/* 7. INTERACTIVE COMPONENT */}

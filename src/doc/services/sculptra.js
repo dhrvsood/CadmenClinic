@@ -96,6 +96,51 @@ const sculptra = {
             }
         ]
     },
+    infoInteractive: {
+        title: {
+            prefix: "Skin Concerns",
+            emphasis: "Sculptra Can Address"
+        },
+        description: "These bio-stimulating treatments target the root causes of facial aging, not just surface symptoms. Unlike temporary fillers that mask problems briefly, Sculptra and Radiesse rebuild your facial foundation from within. Here are the most common concerns our clients successfully address with these transformative treatments:",
+        data: [
+            {
+                id: 1,
+                name: "Hollow Cheeks or Temples",
+                description: "Shadows form where fullness once lived. The temples sink. Cheeks lose their curve. It creates that drawn, exhausted appearance nobody wants. Treatment rebuilds what time took away—dimension returns, contours soften, and suddenly you recognize yourself in photos again.",
+                img: "/media/services/skin_interactive.webp"
+            },
+            {
+                id: 2,
+                name: "Nasolabial Folds (Smile Lines)",
+                description: "Those grooves from nose to mouth corners? They deepen year by year. Treatment doesn't erase them completely (that would look strange). Instead, it softens their depth. The transition becomes gentler. Natural. Like turning back the clock just enough.",
+                img: "/media/services/skin_interactive.webp"
+            },
+            {
+                id: 3,
+                name: "Marionette Lines",
+                description: "Eliminate downturned lines at the mouth corners that create a perpetually sad or tired expression. These treatments lift and fill the area, restoring a more pleasant, youthful appearance to your lower face.",
+                img: "/media/services/skin_interactive.webp"
+            },
+            {
+                id: 4,
+                name: `Jawline Definition`,
+                description: `Restore sharp jawline contours lost to aging and early jowling. Treatment rebuilds structure along the jaw, creating defined edges that frame your face beautifully and combat sagging in this critical area.`,
+                img: "/media/services/skin_interactive.webp"
+            },
+            {
+                id: 5,
+                name: "General Loss of Facial Volume",
+                description: "Collagen production slows. It's inevitable. The whole face loses its plumpness, not dramatically at first, just enough to notice something's different. Treatment reverses this deflation systematically. Fullness returns where it matters. That tired, drawn quality? Gone.",
+                img: "/media/services/skin_interactive.webp"
+            },
+            {
+                id: 6,
+                name: "Chin Wrinkles",
+                description: "Horizontal lines etch themselves across the chin. They age the lower face, creating unwanted texture. Treatment addresses both issues—filling the lines while reinforcing what's beneath. The chin becomes smooth again. Firm. Youthful in its contours.",
+                img: "/media/services/skin_interactive.webp"
+            }
+        ]
+    },
     wantToLearnMore: {
         title: {
             prefix: "Curious About ",
@@ -103,6 +148,57 @@ const sculptra = {
             end: "\nStart here"
         },
         description: "New to injectables? Already tried other fillers? Our team can walk you through your options. We've helped hundreds of patients make informed choices, and we start with a free, pressure-free chat about what might work for you."
+    },
+    preparingForAppointment: {
+        titlePrefix: "Preparing for Your",
+        titleEmphasis: "Lip Filler Appointment",
+        subheading: "To ensure a comfortable and successful lip filler experience, follow these tips:",
+        points: [
+            {
+                heading: "Avoid Blood Thinners",
+                description: "A few days before your appointment, try to avoid medications and supplements that can thin your blood, such as aspirin, ibuprofen, and fish oil. This simple step helps minimize bruising at the site."
+            },
+            {
+                heading: "Skip Alcohol and Tobacco",
+                description: "Alcohol and tobacco can increase the likelihood of bruising and slow your skin’s recovery. Refrain from consuming alcohol for at least 24 hours before and after your treatment.",
+            },
+            {
+                heading: "Stay Hydrated",
+                description: "Well-hydrated skin responds better to treatment. Drink plenty of water in the days leading up to your appointment to help your lips look and feel their best."
+            },
+            {
+                heading: "Arrive with Clean Skin",
+                description: "Avoid wearing makeup, lip balm, or other products on your lips or around the treatment area on the day of your appointment. Clean, bare skin allows for a more hygienic and effective procedure."
+            }
+        ],
+        img: "/media/services/botox/preparingForAppointment.png"
+    },
+    expectDuringAfter: {
+        img: "/media/services/botox/expectDuringAfter.png",
+        sections: [
+            {
+                title: "During the Procedure",
+                points: [
+                    "Quick and Minimally Invasive: Lip filler injections usually take 15–30 minutes. Most clients describe the sensation as a mild pinch or pressure. Your provider may gently massage your lips during the process to ensure smooth, even distribution."
+                ]
+            },
+            {
+                title: "Post-Treatment Care",
+                points: [
+                    "Avoid Intense Activity: Refrain from strenuous exercise, excessive sun exposure, or extreme temperatures (like saunas or hot tubs) for the first 24–48 hours to minimize swelling and bruising.",
+                    "Reduce Swelling & Bruising: Apply cold compresses or ice packs as recommended to reduce swelling. Avoid alcohol and blood-thinning medications or supplements (unless medically necessary).",
+                    "Stay Hydrated: Drink plenty of water to support hydration and help the filler settle naturally."
+                ]
+            },
+            {
+                title: "When to Expect Results",
+                points: [
+                    "Immediate Improvement: You’ll notice an instant boost in lip volume and definition, but some swelling or minor bruising may be present for the first few days.",
+                    "Full, Settled Results: Most clients see their final, refined results within 1–2 weeks as any swelling subsides and the filler integrates fully with your tissue.",
+                    "Follow-Up Appointment: We recommend scheduling a follow-up visit to assess your results, ensure you’re satisfied, and discuss any potential refinements or maintenance treatments."
+                ]
+            }
+        ]
     },
     transformations: {
         title: {

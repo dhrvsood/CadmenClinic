@@ -15,7 +15,8 @@ const CadmenTreatmentCardsSection = ({
     description,
     regularUnit,
     specialUnit,
-    cards
+    cards,
+    wide=false
 }) => (
     <Stack__
     as={"section"}
@@ -69,10 +70,15 @@ const CadmenTreatmentCardsSection = ({
         </div>
     </Stack__>
     <Stack__
-        as={"div"}
+        as="div"
         hasGap={true}
-        className={classNames(projectcss.all, sty.freeBox__hib93)}
+        className={classNames(
+            projectcss.all,
+            sty.freeBox__hib93,
+            !wide && sty["freeBox__hib93--narrow"]
+        )}
     >
+
         {cards.map((card, idx) => (
             <AffordableBotoxCard
                 key={idx}
