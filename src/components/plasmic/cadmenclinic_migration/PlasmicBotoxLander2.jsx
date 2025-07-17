@@ -953,6 +953,8 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                 link={"/services/prp-hair-restoration"}
                 perUnit={"$599"}
                 price={"$299"}
+                unitWording={"/ First session Price"}
+                pillUnit={"/ Regular Session Price"}
                 className={classNames(
                   "__wab_instance",
                   sty.affordableBotoxCard__v1OXt
@@ -984,6 +986,8 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                 link={"/services/exosomes"}
                 perUnit={"$799"}
                 price={"$399"}
+                unitWording={"/ First session Price"}
+                pillUnit={"/ Regular Session Price"}
                 className={classNames(
                   "__wab_instance",
                   sty.affordableBotoxCard___844NL
@@ -1013,6 +1017,8 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                 link={"/services/mesotherapy"}
                 perUnit={"$399"}
                 price={"$199"}
+                unitWording={"/ First session Price"}
+                pillUnit={"/ Regular Session Price"}
                 className={classNames(
                   "__wab_instance",
                   sty.affordableBotoxCard__rVlvw
