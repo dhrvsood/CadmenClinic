@@ -10,7 +10,7 @@ const lip_fillers = {
         longTitle: "Lip Filler"
     },
     hero: {
-        img: "/media/services/dermal-filters.webp",
+        img: "/media/services/lip-fillers/hero.jpeg",
         tagline: "Enhance & Define Your Lips",
         description: "achieve beautifully defined, balanced lips with personalized care from our expert team."
     },
@@ -183,10 +183,10 @@ const lip_fillers = {
                 description: "Avoid wearing makeup, lip balm, or other products on your lips or around the treatment area on the day of your appointment. Clean, bare skin allows for a more hygienic and effective procedure."
             }
         ],
-        img: "/media/services/botox/preparingForAppointment.png"
+        img: "/media/services/lip-fillers/preparingForAppointment.jpeg"
     },
     expectDuringAfter: {
-        img: "/media/services/botox/expectDuringAfter.png",
+        img: "/media/services/lip-fillers/expectDuringAfter.jpeg",
         sections: [
             {
                 title: "During the Procedure",

@@ -10,7 +10,7 @@ const dermal_fillers = {
         longTitle: "Dermal Filler"
     },
     hero: {
-        img: "/media/services/dermal-filters.webp",
+        img: "/media/services/dermal-fillers/hero.jpeg",
         tagline: "Enhance Your Confidence",
         description: "reduce the signs of aging with quick, minimally invasive Botox treatments."
     },
