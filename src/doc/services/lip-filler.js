@@ -167,19 +167,15 @@ const lip_fillers = {
         points: [
             {
                 heading: "Avoid Blood Thinners",
-                description: "A few days before your appointment, try to avoid medications and supplements that can thin your blood, such as aspirin, ibuprofen, and fish oil. This simple step helps minimize bruising at the injection site."
+                description: "A few days before your appointment, try to avoid medications and supplements that can thin your blood, such as aspirin, ibuprofen, and fish oil. This simple step helps minimize bruising at the site."
             },
             {
                 heading: "Skip Alcohol and Tobacco",
-                description: "Alcohol and tobacco can increase the likelihood of bruising and slow your skin’s recovery. Refrain from consuming alcohol for at least 24 hours before and after your treatment, and try to limit tobacco use.",
+                description: "Alcohol and tobacco can increase the likelihood of bruising and slow your skin’s recovery. Refrain from consuming alcohol for at least 24 hours before and after your treatment.",
             },
             {
                 heading: "Stay Hydrated",
                 description: "Well-hydrated skin responds better to treatment. Drink plenty of water in the days leading up to your appointment to help your lips look and feel their best."
-            },
-            {
-                heading: "Inform Your Provider of Your Medical History",
-                description: "Be transparent about any medical conditions, allergies, or medications you’re taking. Share any history of cold sores, as your provider may recommend preventative medication to avoid a flare-up. This ensures your treatment plan is tailored to your needs and minimizes the risk of complications."
             },
             {
                 heading: "Arrive with Clean Skin",
@@ -194,7 +190,6 @@ const lip_fillers = {
             {
                 title: "During the Procedure",
                 points: [
-                    "Numbing Options: To ensure your comfort, we often apply a topical anesthetic or use ice packs before treatment. Many lip fillers also contain lidocaine, which provides additional pain relief during the procedure.",
                     "Quick and Minimally Invasive: Lip filler injections usually take 15–30 minutes. Most clients describe the sensation as a mild pinch or pressure. Your provider may gently massage your lips during the process to ensure smooth, even distribution."
                 ]
             },
@@ -202,8 +197,7 @@ const lip_fillers = {
                 title: "Post-Treatment Care",
                 points: [
                     "Avoid Intense Activity: Refrain from strenuous exercise, excessive sun exposure, or extreme temperatures (like saunas or hot tubs) for the first 24–48 hours to minimize swelling and bruising.",
-                    "No Excessive Touching: Avoid rubbing, pressing, or massaging your lips unless instructed by your provider, as this could displace the filler.",
-                    "Reduce Swelling & Bruising: Apply cold compresses or ice packs as recommended to reduce swelling. Avoid alcohol and blood-thinning medications or supplements (unless medically necessary) to further minimize bruising.",
+                    "Reduce Swelling & Bruising: Apply cold compresses or ice packs as recommended to reduce swelling. Avoid alcohol and blood-thinning medications or supplements (unless medically necessary).",
                     "Stay Hydrated: Drink plenty of water to support hydration and help the filler settle naturally."
                 ]
             },
@@ -223,48 +217,42 @@ const lip_fillers = {
             emphasis: "the Risks",
             last: " of Lip Fillers"
         },
-        description: "While lip fillers are generally safe when performed by skilled professionals, it’s important to be aware of potential risks. At Cadmen Clinic, we prioritize your safety and satisfaction, and we’re transparent about possible side effects and how we manage them.",
+        description: "While lip fillers are generally safe when performed by skilled professionals, it’s important to be aware of potential risks. At CADMEN Clinic, we prioritize your safety and satisfaction, and we’re transparent about possible side effects and how we manage them.",
         cards: [
             {
                 id: 1,
                 title: "Temporary Redness, Swelling, or Bruising",
-                subtitle: "What to Expect: These are the most common side effects, especially due to the delicate nature of the lips. Swelling is often more noticeable within the first 24–48 hours but typically resolves within a few days.\n\nHow We Manage It: Our injectors use advanced techniques to minimize trauma, and we’ll provide aftercare tips, such as applying cold compresses, to help reduce swelling and bruising quickly.",
+                subtitle: "These are the most common side effects, especially due to the delicate nature of the lips. Swelling is often more noticeable within the first 24–48 hours but typically resolves within a few days.",
                 img: "/media/services/botox/redness.png"
             },
             {
                 id: 2,
                 title: "Mild Discomfort or Tenderness",
-                subtitle: "What to Expect: Some clients experience minor soreness, tenderness, or pressure in the lips following the procedure. This is usually temporary and fades within a few days.\n\nHow We Manage It: We use fillers containing lidocaine to minimize discomfort during the treatment, and any post-procedure soreness can typically be managed with over-the-counter pain relievers.",
+                subtitle: "Some clients experience minor soreness, tenderness, or pressure in the lips following the procedure. This is usually temporary and fades within a few days.",
                 img: "/media/services/botox/headaches.png"
             },
             {
                 id: 3,
                 title: "Lumps or Nodules",
-                subtitle: "What to Expect: Occasionally, fillers may create small lumps or uneven areas beneath the skin. These are often temporary and can sometimes occur as the filler settles.\n\nHow We Manage It: Our skilled injectors use precise placement techniques and may massage the area immediately after treatment to ensure smooth results. If needed, lumps can be dissolved or adjusted with additional care.",
+                subtitle: "Occasionally, fillers may create small lumps or uneven areas beneath the skin. These are often temporary and can sometimes occur as the filler settles.",
                 img: "/media/services/botox/eyelid.png"
             },
             {
                 id: 4,
                 title: "Asymmetry or Unintended Results",
-                subtitle: "What to Expect: Without precise injection, unevenness or asymmetry can occur, especially in lips where balance is critical to the aesthetic outcome.\n\nHow We Manage It: At Cadmen Clinic, our injectors are experts in lip anatomy and carefully tailor each injection to create balanced, natural results. Follow-up appointments are included to make any necessary refinements.",
+                subtitle: "Without precise injection, unevenness or asymmetry can occur, especially in lips where balance is critical to the aesthetic outcome.",
                 img: "/media/services/botox/allergy.png"
             },
             {
                 id: 5,
                 title: "Allergic Reactions",
-                subtitle: "What to Expect: Although rare, allergic reactions to filler ingredients can happen, such as swelling or itching.\n\nHow We Manage It: During your consultation, we’ll thoroughly review your medical history, discuss any known allergies, and select the safest filler for you.",
+                subtitle: "Although rare, allergic reactions to filler ingredients can happen, such as swelling or itching.",
                 img: "/media/services/dermal-fillers/dermalAllergicReactions.avif"
             },
             {
                 id: 6,
-                title: "Vascular Occlusion (VO)",
-                subtitle: "What to Expect: In extremely rare cases, filler may block a blood vessel, reducing blood flow to the surrounding tissue. This is a serious complication requiring immediate treatment.\n\nHow We Manage It: Our injectors are trained to recognize early signs of VO and take prompt action. We always keep hyaluronidase on hand to dissolve filler if necessary, ensuring swift resolution and minimizing the risk of long-term effects.",
-                img: "/media/services/dermal-fillers/dermalVO.avif"
-            },
-            {
-                id: 7,
                 title: "Your Safety is Our Priority",
-                subtitle: "At Cadmen Clinic, we adhere to the highest safety standards, use only FDA-approved fillers, and stay updated on best practices to minimize risks. Our team is here to guide you through every step of the process, ensuring a safe, positive, and satisfying experience. If you have any concerns, don’t hesitate to reach out—we’re here to help.",
+                subtitle: "At CADMEN Clinic, we adhere to the highest safety standards, use only FDA-approved fillers, and stay updated on best practices to minimize risks. Our team is here to guide you through every step of the process, ensuring a safe, positive, and satisfying experience. If you have any concerns, don’t hesitate to reach out—we’re here to help.",
                 img: "/media/services/dermal-fillers/dermalYourSafety.avif"
             }
         ]
