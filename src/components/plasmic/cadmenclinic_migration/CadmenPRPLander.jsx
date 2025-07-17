@@ -210,7 +210,11 @@ function PlasmicBotoxLander__RenderFunc(props) {
                       )}
                     >
                       <React.Fragment>
-                        <React.Fragment>{service.hero.tagline}{" with \n"}</React.Fragment>
+                        <React.Fragment>
+                          {service.hero.tagline}
+                          {service.general.longTitle.length > 10 ? " with\n" : " with "}
+                        </React.Fragment>
+                        
                         <span
                           style={{
                             fontWeight: 500,

@@ -10,7 +10,7 @@ const lip_fillers = {
     },
     hero: {
         img: "/media/services/dermal-filters.webp",
-        tagline: "Achieve Defined & Balanced Lips",
+        tagline: "Enhance & Define Your Lips",
         description: "achieve beautifully defined, balanced lips with personalized care from our expert team."
     },
     beforeAfters: [

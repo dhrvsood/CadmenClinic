@@ -202,7 +202,7 @@ const botox = {
                 ],
             }
         ],
-        footer: "Results will typically begin to appear within 3-5 days, with full effects visible at around two weeks. We invite you to schedule a Follow-Up Appointment to assess your results and make"
+        footer: "Results will typically begin to appear within 3-5 days, with full effects visible at around two weeks. We invite you to schedule a Follow-Up Appointment to assess your results 2 weeks post-treatment."
     },
 
     transformations: {
