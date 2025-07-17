@@ -222,19 +222,7 @@ function PlasmicAreasInteractive__RenderFunc(props) {
                   className={classNames(projectcss.all, sty.facePills)}
                 >
                   {(_par => (!_par ? [] : Array.isArray(_par) ? _par : [_par]))(
-                    (() => {
-                      try {
-                        return $state.data;
-                      } catch (e) {
-                        if (
-                          e instanceof TypeError ||
-                          e?.plasmicType === "PlasmicUndefinedDataError"
-                        ) {
-                          return [];
-                        }
-                        throw e;
-                      }
-                    })()
+                    ($state.data)
                   ).map((__plasmic_item_0, __plasmic_idx_0) => {
                     const currentItem = __plasmic_item_0;
                     const currentIndex = __plasmic_idx_0;
@@ -282,32 +270,8 @@ function PlasmicAreasInteractive__RenderFunc(props) {
                           }
                         }}
                         key={currentIndex}
-                        selected={(() => {
-                          try {
-                            return currentItem.name === $state.selected;
-                          } catch (e) {
-                            if (
-                              e instanceof TypeError ||
-                              e?.plasmicType === "PlasmicUndefinedDataError"
-                            ) {
-                              return [];
-                            }
-                            throw e;
-                          }
-                        })()}
-                        value={(() => {
-                          try {
-                            return currentItem.name;
-                          } catch (e) {
-                            if (
-                              e instanceof TypeError ||
-                              e?.plasmicType === "PlasmicUndefinedDataError"
-                            ) {
-                              return undefined;
-                            }
-                            throw e;
-                          }
-                        })()}
+                        selected={currentItem.name === $state.selected}
+                        value={currentItem.name}
                       />
                     );
                   })}
@@ -336,21 +300,7 @@ function PlasmicAreasInteractive__RenderFunc(props) {
                   "noImage"
                 )
               })}
-              data={(() => {
-                try {
-                  return $state.data.find(
-                    item => item.name === $state.selected
-                  );
-                } catch (e) {
-                  if (
-                    e instanceof TypeError ||
-                    e?.plasmicType === "PlasmicUndefinedDataError"
-                  ) {
-                    return undefined;
-                  }
-                  throw e;
-                }
-              })()}
+              data={$state.data.find(item => item.name === $state.selected)}
               types={"content"}
             />
           ) : null}
@@ -429,19 +379,7 @@ function PlasmicAreasInteractive__RenderFunc(props) {
               })}
             >
               {(_par => (!_par ? [] : Array.isArray(_par) ? _par : [_par]))(
-                (() => {
-                  try {
-                    return $state.data;
-                  } catch (e) {
-                    if (
-                      e instanceof TypeError ||
-                      e?.plasmicType === "PlasmicUndefinedDataError"
-                    ) {
-                      return [];
-                    }
-                    throw e;
-                  }
-                })()
+                ($state.data)
               ).map((__plasmic_item_0, __plasmic_idx_0) => {
                 const currentItem = __plasmic_item_0;
                 const currentIndex = __plasmic_idx_0;
@@ -488,46 +426,10 @@ function PlasmicAreasInteractive__RenderFunc(props) {
                       }
                     }}
                     key={currentIndex}
-                    left={(() => {
-                      try {
-                        return currentItem.face_dot.left;
-                      } catch (e) {
-                        if (
-                          e instanceof TypeError ||
-                          e?.plasmicType === "PlasmicUndefinedDataError"
-                        ) {
-                          return undefined;
-                        }
-                        throw e;
-                      }
-                    })()}
-                    selected={(() => {
-                      try {
-                        return currentItem.name === $state.selected;
-                      } catch (e) {
-                        if (
-                          e instanceof TypeError ||
-                          e?.plasmicType === "PlasmicUndefinedDataError"
-                        ) {
-                          return [];
-                        }
-                        throw e;
-                      }
-                    })()}
-                    top={(() => {
-                      try {
-                        return currentItem.face_dot.top;
-                      } catch (e) {
-                        if (
-                          e instanceof TypeError ||
-                          e?.plasmicType === "PlasmicUndefinedDataError"
-                        ) {
-                          return undefined;
-                        }
-                        throw e;
-                      }
-                    })()}
-                    value={"Forehead"}
+                    left={currentItem.face_dot.left}
+                    selected={currentItem.name === $state.selected}
+                    top={currentItem.face_dot.top}
+                    // value={"Forehead"}
                   />
                 );
               })}
@@ -542,21 +444,7 @@ function PlasmicAreasInteractive__RenderFunc(props) {
                   "noImage"
                 )
               })}
-              data={(() => {
-                try {
-                  return $state.data.find(
-                    item => item.name === $state.selected
-                  );
-                } catch (e) {
-                  if (
-                    e instanceof TypeError ||
-                    e?.plasmicType === "PlasmicUndefinedDataError"
-                  ) {
-                    return undefined;
-                  }
-                  throw e;
-                }
-              })()}
+              data={$state.data.find(item => item.name === $state.selected)}
             />
           </div>
           {(
@@ -583,19 +471,7 @@ function PlasmicAreasInteractive__RenderFunc(props) {
                 })}
               >
                 {(_par => (!_par ? [] : Array.isArray(_par) ? _par : [_par]))(
-                  (() => {
-                    try {
-                      return $state.data;
-                    } catch (e) {
-                      if (
-                        e instanceof TypeError ||
-                        e?.plasmicType === "PlasmicUndefinedDataError"
-                      ) {
-                        return [];
-                      }
-                      throw e;
-                    }
-                  })()
+                  ($state.data)
                 ).map((__plasmic_item_0, __plasmic_idx_0) => {
                   const currentItem = __plasmic_item_0;
                   const currentIndex = __plasmic_idx_0;
@@ -647,32 +523,8 @@ function PlasmicAreasInteractive__RenderFunc(props) {
                         }
                       }}
                       key={currentIndex}
-                      selected={(() => {
-                        try {
-                          return currentItem.name === $state.selected;
-                        } catch (e) {
-                          if (
-                            e instanceof TypeError ||
-                            e?.plasmicType === "PlasmicUndefinedDataError"
-                          ) {
-                            return [];
-                          }
-                          throw e;
-                        }
-                      })()}
-                      value={(() => {
-                        try {
-                          return currentItem.name;
-                        } catch (e) {
-                          if (
-                            e instanceof TypeError ||
-                            e?.plasmicType === "PlasmicUndefinedDataError"
-                          ) {
-                            return undefined;
-                          }
-                          throw e;
-                        }
-                      })()}
+                      selected={currentItem.name === $state.selected}
+                      value={currentItem.name}
                     />
                   );
                 })}
