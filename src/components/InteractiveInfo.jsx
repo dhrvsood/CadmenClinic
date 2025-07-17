@@ -69,7 +69,7 @@ const InteractiveInfo = ({
         <div className="w-full lg:w-1/2 lg:justify-between">
           {activeTab.img && (
             <div
-              className="relative w-full max-w-full mx-auto overflow-hidden rounded-lg shadow-lg"
+              className="relative w-full max-w-full mx-auto overflow-hidden rounded-lg"
               style={{ paddingTop: 'calc(300 / 700 * 100%)' }}
             >
               <Image
@@ -84,16 +84,29 @@ const InteractiveInfo = ({
             </div>
           )}
 
-          <div className="w-full max-w-full mx-auto p-4 sm:p-6 bg-white rounded-b-lg shadow-lg mt-4">
-            <div className="flex items-center mb-2">
-              <div className="plasmic_all__lGI85 PlasmicAreaCard_text__qxbqb__MHJZI">{activeTab.name}</div>
+{/* #eaecee */}
+          <div className="w-full max-w-full mx-auto p-4 sm:p-6 bg-white mt-4">
+            <div className="flex items-center">
+              <div className="border border-[#eaecee]-300 rounded-2xl px-4 py-4">
+                <Image
+                  src={"/icons/headArrow.svg"}
+                  width={35}
+                  height={35}
+                />
+              </div>
+              <h3
+                className="w-full border border-[#eaecee]-300 rounded-2xl px-4 py-4 text-2xl text-[#6c6e6f]"
+              >
+                {activeTab.name}
+              </h3>
             </div>
+
             <p
-              className="plasmic_all__lGI85 plasmic_p__gkQGD CadmenPRPLander_p__yiW7R__5meA0"
+              className="text-[#6c6e6f] px-4 py-4 plasmic_all__lGI85 plasmic_p__gkQGD CadmenPRPLander_p__yiW7R__5meA0"
               dangerouslySetInnerHTML={{ __html: activeTab.description }}
             />
             {activeTab.recommended && (
-              <p className="plasmic_all__lGI85 plasmic_p__gkQGD CadmenPRPLander_p__yiW7R__5meA0 mt-2">
+              <p className="text-[#6c6e6f] plasmic_all__lGI85 plasmic_p__gkQGD CadmenPRPLander_p__yiW7R__5meA0 mt-2">
                 <strong>Recommended Treatment: </strong>{activeTab.recommended}
               </p>
             )}
