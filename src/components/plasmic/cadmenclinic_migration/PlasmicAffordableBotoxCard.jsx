@@ -61,11 +61,6 @@ function PlasmicAffordableBotoxCard__RenderFunc(props) {
   const args = React.useMemo(
     () =>
       Object.assign(
-        {
-          items: [],
-          unitWording: "/ First Session Price",
-          pillUnit: "/ Regular Session Price"
-        },
         Object.fromEntries(
           Object.entries(props.args).filter(([_, v]) => v !== undefined)
         )
@@ -164,13 +159,20 @@ function PlasmicAffordableBotoxCard__RenderFunc(props) {
                 }
               )}
             >
-              <React.Fragment>
-                <Link href={$props.link || "/"}>
+            <React.Fragment>
+              {$props.link ? (
+                <Link href={$props.link}>
                   <span className="hover:underline hover:text-[#9a7f71] transition-colors duration-200">
                     {$props.name}
                   </span>
                 </Link>
-              </React.Fragment>
+              ) : (
+                <span>
+                  {$props.name}
+                </span>
+              )}
+            </React.Fragment>
+
 
             </div>
             <div
@@ -288,7 +290,6 @@ function PlasmicAffordableBotoxCard__RenderFunc(props) {
                 sty.heading4
               )}
             >
-              {/* {"regular price"} */}
             </div>
           </Stack__>
         </Stack__>
@@ -338,21 +339,7 @@ function PlasmicAffordableBotoxCard__RenderFunc(props) {
                     }
                   )}
                 >
-                  <React.Fragment>{currentItem.title}
-                    {/* {(() => {
-                      try {
-                        return currentItem.title;
-                      } catch (e) {
-                        if (
-                          e instanceof TypeError ||
-                          e?.plasmicType === "PlasmicUndefinedDataError"
-                        ) {
-                          return "Versatile Treatment";
-                        }
-                        throw e;
-                      }
-                    })()} */}
-                  </React.Fragment>
+                  <React.Fragment>{currentItem.title}</React.Fragment>
                 </div>
               </Stack__>
               <div
@@ -369,21 +356,7 @@ function PlasmicAffordableBotoxCard__RenderFunc(props) {
                   }
                 )}
               >
-                <React.Fragment>{currentItem.description}
-                  {/* {(() => {
-                    try {
-                      return currentItem.description;
-                    } catch (e) {
-                      if (
-                        e instanceof TypeError ||
-                        e?.plasmicType === "PlasmicUndefinedDataError"
-                      ) {
-                        return "Botox targets facial muscles to address \u2028a variety of cosmetic concerns.";
-                      }
-                      throw e;
-                    }
-                  })()} */}
-                </React.Fragment>
+                <React.Fragment>{currentItem.description}</React.Fragment>
               </div>
             </div>
           );

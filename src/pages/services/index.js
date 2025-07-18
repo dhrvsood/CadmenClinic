@@ -1,7 +1,7 @@
 import ContactBanner from '@/components/contact_banner'
 import { NextSeo } from 'next-seo'
 import ServiceTable from '@/components/service_table'
-import { servicesData } from '@/doc/services'
+import { servicesData } from '@/doc/old_services'
 
 const Services = () => {
     return (
