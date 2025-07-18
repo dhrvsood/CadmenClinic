@@ -10,8 +10,8 @@ const lip_fillers = {
         longTitle: "Lip Filler"
     },
     hero: {
-        img: "/media/services/lip-fillers/hero.jpeg",
-        tagline: "Enhance & Define Your Lips",
+        img: "/media/services/lip-fillers/hero.avif",
+        tagline: "Achieve Defined & Balanced Lips",
         description: "achieve beautifully defined, balanced lips with personalized care from our expert team."
     },
     beforeAfters: [
@@ -79,7 +79,7 @@ const lip_fillers = {
         specialUnit: "Syringe Special",
         cards: [
             {
-                name: "Revanesse",
+                name: "Stylage",
                 regularPrice: 799,
                 specialPrice: 599,
                 points: [
@@ -177,10 +177,6 @@ const lip_fillers = {
             {
                 heading: "Stay Hydrated",
                 description: "Well-hydrated skin responds better to treatment. Drink plenty of water in the days leading up to your appointment to help your lips look and feel their best."
-            },
-            {
-                heading: "Arrive with Clean Skin",
-                description: "Avoid wearing makeup, lip balm, or other products on your lips or around the treatment area on the day of your appointment. Clean, bare skin allows for a more hygienic and effective procedure."
             }
         ],
         img: "/media/services/lip-fillers/preparingForAppointment.jpeg"
@@ -198,7 +194,7 @@ const lip_fillers = {
                 title: "Post-Treatment Care",
                 points: [
                     "Avoid Intense Activity: Refrain from strenuous exercise, excessive sun exposure, or extreme temperatures (like saunas or hot tubs) for the first 24–48 hours to minimize swelling and bruising.",
-                    "Reduce Swelling & Bruising: Apply cold compresses or ice packs as recommended to reduce swelling. Avoid alcohol and blood-thinning medications or supplements (unless medically necessary).",
+                    "Reduce Swelling & Bruising: Apply cold compresses or ice packs as recommended to reduce swelling.",
                     "Stay Hydrated: Drink plenty of water to support hydration and help the filler settle naturally."
                 ]
             },

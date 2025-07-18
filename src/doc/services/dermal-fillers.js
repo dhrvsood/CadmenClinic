@@ -10,7 +10,7 @@ const dermal_fillers = {
         longTitle: "Dermal Filler"
     },
     hero: {
-        img: "/media/services/dermal-fillers/hero.jpeg",
+        img: "/seeTheResultsSlider/injectables/injectables-1a.avif",
         tagline: "Enhance Your Confidence",
         description: "reduce the signs of aging with quick, minimally invasive Botox treatments."
     },
@@ -40,7 +40,7 @@ const dermal_fillers = {
         points: [
             {
                 heading: "Dermal Fillers are FDA-approved and trusted worldwide",
-                description: "From softening deep nasolabial folds to augmenting lip volume or enhancing cheek contours, dermal fillers offer a safe, versatile solution for anyone seeking a refreshed yet natural-looking transformation."
+                description: "From softening deep nasolabial folds to enhancing cheek contours, dermal fillers offer a safe, versatile solution for anyone seeking a refreshed yet natural-looking transformation."
             },
             {
                 heading: "Targeted Injections",
@@ -48,7 +48,7 @@ const dermal_fillers = {
             },
             {
                 heading: "Hydration & Support",
-                description: "Hyaluronic acid or other active components bind with water molecules, plumping the skin and creating a firmer, more youthful look."
+                description: "Hyaluronic acid components bind with water molecules, plumping the skin and creating a firmer, more youthful look."
             },
             {
                 heading: "Collagen Boost",
@@ -73,13 +73,13 @@ const dermal_fillers = {
         specialUnit: "syringe new patient price",
         cards: [
             {
-                name: "Restylane",
+                name: "Stylage",
                 regularPrice: 799,
                 specialPrice: 599,
                 points: [
                     {
                         title: "Wide Range of Formulas",
-                        description: "With multiple Restylane variants, each designed for different areas and concerns, this family of fillers offers tailored solutions for lips, cheeks, under-eye hollows, and more."
+                        description: "With multiple Stylage variants, each designed for different areas and concerns, this family of fillers offers tailored solutions for lips, cheeks, under-eye hollows, and more."
                     },
                     {
                         title: "Precise Wrinkle Correction",
@@ -102,11 +102,11 @@ const dermal_fillers = {
                     },
                     {
                         title: "Dynamic Wrinkle Reduction",
-                        description: "Ideal for treating moderate to deep dynamic wrinkles, such as around the mouth and eyes, with results that remain soft and flexible."
+                        description: "Ideal for moderate to deep dynamic wrinkles, such as around the mouth and eyes, with results that remain soft and flexible."
                     },
                     {
                         title: "Preserves Facial Expressions",
-                        description: "Because of RHA’s unique formulation, you’ll enjoy a rejuvenated appearance without compromising your authentic range of expression."
+                        description: "RHA’s unique formulation allows you to enjoy a rejuvenated appearance without compromising your authentic range of expression."
                     }
                 ]
             }
@@ -172,7 +172,7 @@ const dermal_fillers = {
             },
             {
                 heading: "Skip Alcohol and Tobacco",
-                description: "WBoth can increase bruising and affect your skin’s recovery. Try to avoid alcohol for at least 24 hours before and after treatment.",
+                description: "Both can increase bruising and affect your skin’s recovery. Try to avoid alcohol for at least 24 hours before and after treatment.",
             },
             {
                 heading: "Inform Your Provider of Medical History",
