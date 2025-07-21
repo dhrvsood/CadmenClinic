@@ -22,7 +22,8 @@ const InteractiveInfo = ({
   }, [data]);
 
   return (
-    <section className="container max-w-full mx-auto px-16 py-16">
+    // <section className="container max-w-full mx-auto px-16 py-16">
+    <section className="container max-w-full mx-auto px-6 py-16">
       <div className="flex flex-col lg:flex-row gap-8 items-center lg:items-start lg:justify-between">
         {/* Left Section: Title, Tagline, Buttons */}
         <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left max-w-[550px]">
@@ -85,7 +86,7 @@ const InteractiveInfo = ({
           )}
 
 {/* #eaecee */}
-          <div className="w-full max-w-full mx-auto p-4 sm:p-6 bg-white mt-4">
+          <div className="w-full max-w-full mx-auto bg-white mt-4">
             <div className="flex items-center">
               <div className="border border-[#eaecee]-300 rounded-2xl px-4 py-4">
                 <Image

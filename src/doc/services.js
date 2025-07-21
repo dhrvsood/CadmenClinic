@@ -5,9 +5,10 @@ import mesotherapy from "./services/mesotherapy";
 
 // SKIN TREATMENTS
 import botox from "./services/botox";
-import sculptra from "./services/sculptra";
-import dermal_fillers from "./services/dermal-fillers";
+import chemical_peels from "./services/chemical-peels";
 import lip_fillers from "./services/lip-filler";
+import dermal_fillers from "./services/dermal-fillers";
+import sculptra from "./services/sculptra";
 
 // WELLNESS
 import farsk_iv_drip from "./services/farsk_iv_drip";
@@ -16,9 +17,12 @@ export const servicesData = {
     "prp-hair-restoration": prp_hair_restoration,
     "exosomes": exosomes,
     "mesotherapy": mesotherapy,
+
     "botox": botox,
-    "sculptra": sculptra,
-    "dermal-fillers": dermal_fillers,
+    "chemical-peels": chemical_peels, 
     "lip-fillers": lip_fillers,
+    "dermal-fillers": dermal_fillers,
+    "sculptra": sculptra,
+    
     "farsk-iv-drip": farsk_iv_drip
 }
