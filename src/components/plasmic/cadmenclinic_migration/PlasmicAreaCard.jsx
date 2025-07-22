@@ -121,7 +121,7 @@ function PlasmicAreaCard__RenderFunc(props) {
             displayWidth={"32px"}
             loading={"lazy"}
             src={{
-              src: "/plasmic/image_lab_2024/images/iconSvg14.svg",
+              src: "/icons/headArrow.svg",
               fullWidth: 32,
               fullHeight: 33,
               aspectRatio: 0.969697

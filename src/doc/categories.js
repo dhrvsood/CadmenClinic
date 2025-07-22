@@ -4,7 +4,7 @@ export const categories = {
       {
         "title": "PRP Hair Restoration",
         "subTitle": "Naturally promote new hair growth and thicker, fuller hair by using your body's own plasma",
-        "slug": "/hair-restoration/prp",
+        "slug": "/prp-hair-restoration",
         "categoryOrder": 1,
         "heroImage": {
           "asset": {
@@ -16,7 +16,7 @@ export const categories = {
       {
         "title": "Exosome Hair Therapy",
         "subTitle": "Non-invasive treatment that stimulates hair growth and reduces hair loss by blocking DHT.",
-        "slug": "/hair-restoration/exosomes",
+        "slug": "/exosomes",
         "categoryOrder": 2,
         "heroImage": {
           "asset": {
@@ -28,7 +28,7 @@ export const categories = {
       {
         "title": "Mesotherapy Vitamins",
         "subTitle": "Natural treatment which includes injecting vitamins, minerals, amino acids and growth factors that nourish hair follicles into the scalp.",
-        "slug": "/hair-restoration/mesotherapy",
+        "slug": "/mesotherapy",
         "categoryOrder": 3,
         "heroImage": {
           "asset": {
@@ -68,7 +68,7 @@ export const categories = {
       {
         "title": "Lip Fillers",
         "subTitle": "Define, increase volume, and enhance the natural fullness of the jaw, cheeks, and lips",
-        "slug": "/coming-soon",
+        "slug": "/lip-fillers",
         "categoryOrder": 3,
         "heroImage": {
           "asset": {

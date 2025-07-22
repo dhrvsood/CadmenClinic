@@ -143,8 +143,10 @@
   position: relative;
   align-items: flex-start;
   justify-content: flex-start;
-  width: 60%;
-  max-width: 60%;
+  /* width: 60%; */
+  /* max-width: 60%; */
+  width: 62%;
+  max-width: 62%;
   height: auto;
   min-width: 0;
   padding: 0px;
@@ -259,8 +261,10 @@
   position: relative;
   align-items: center;
   justify-content: center;
-  width: 40%;
-  max-width: 40%;
+  /* width: 40%;
+  max-width: 40%; */
+  width: 38%;
+  max-width: 38%;
   height: auto;
   overflow: hidden;
   min-width: 0;
@@ -2501,6 +2505,11 @@
   max-width: 100%;
   color: #157ad9;
   height: 20px;
+}
+.dark_faq {
+  background: url("../../../../public/graphics/circlesSvgFaq.svg") bottom 0px right 0px / cover no-repeat,
+#9a7f71;
+  color: white;
 }
 .section__qz9Z {
   display: grid;

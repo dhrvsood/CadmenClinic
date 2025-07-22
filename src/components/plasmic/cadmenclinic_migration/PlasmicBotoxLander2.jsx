@@ -69,6 +69,9 @@ import AlternatingInfoCard from "@/components/AlternatingInfoCard/AlternatingInf
 import { useWindowSize } from 'react-use'
 import VideoSection from "@/components/VideoSection/VideoSection";
 import TreatmentPackagesSlider from "@/components/TreatmentPackagesSlider/TreatmentPackagesSlider";
+import CadmenOurProcess from "./CadmenOurProcess";
+import CadmenPreparingForAppointment from "./CadmenPreparingForAppointment";
+import CadmenExpectDuringAndAfter from "./CadmenExpectDuringAndAfter";
 
 createPlasmicElementProxy;
 
@@ -948,9 +951,11 @@ function PlasmicBotoxLander2__RenderFunc(props) {
               {/* PRP Hair Restoration */}
               <AffordableBotoxCard
                 name={"PRP Hair Restoration"}
-                link={"/services/hair-restoration/prp"}
+                link={"/services/prp-hair-restoration"}
                 perUnit={"$599"}
                 price={"$299"}
+                unitWording={"/ First session Price"}
+                pillUnit={"/ Regular Session Price"}
                 className={classNames(
                   "__wab_instance",
                   sty.affordableBotoxCard__v1OXt
@@ -979,9 +984,11 @@ function PlasmicBotoxLander2__RenderFunc(props) {
               {/* Exosome Hair Therapy */}
               <AffordableBotoxCard
                 name={"Exosome Hair Therapy"}
-                link={"/services/hair-restoration/exosomes"}
+                link={"/services/exosomes"}
                 perUnit={"$799"}
                 price={"$399"}
+                unitWording={"/ First session Price"}
+                pillUnit={"/ Regular Session Price"}
                 className={classNames(
                   "__wab_instance",
                   sty.affordableBotoxCard___844NL
@@ -1008,9 +1015,11 @@ function PlasmicBotoxLander2__RenderFunc(props) {
               {/* Mesotherapy Vitamins */}
               <AffordableBotoxCard
                 name={"Mesotherapy Vitamins"}
-                link={"/services/hair-restoration/mesotherapy"}
+                link={"/services/mesotherapy"}
                 perUnit={"$399"}
                 price={"$199"}
+                unitWording={"/ First session Price"}
+                pillUnit={"/ Regular Session Price"}
                 className={classNames(
                   "__wab_instance",
                   sty.affordableBotoxCard__rVlvw
@@ -1114,309 +1123,16 @@ function PlasmicBotoxLander2__RenderFunc(props) {
           </Stack__>
 
           {/* 6. our hair restoration program */}
-          <Stack__
-            as={"div"}
-            data-plasmic-name={"ourBotoxProcessSection"}
-            data-plasmic-override={overrides.ourBotoxProcessSection}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.ourBotoxProcessSection)}
-          >
-            {/* heading and description */}
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox___2OIGn)}
-            >
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__ubNkL
-                )}
-              >
-                <React.Fragment>
-                  <span
-                    className={"plasmic_default__all plasmic_default__span"}
-                    style={{ color: "#FFFFFF" }}
-                  >
-                    {"Our Hair Restoration "}
-                  </span>
-                  <span
-                    className={"plasmic_default__all plasmic_default__span"}
-                    style={{ color: "#E4C08C", fontStyle: "italic" }}
-                  >
-                    {"Program"}
-                  </span>
-                </React.Fragment>
-              </div>
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text___63Mxp
-                )}
-              >
-                {hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? "From consultation to treatment,\nwe make the process simpleand comfortable for natural, lasting results."
-                  : "From consultation to treatment, we make the process\n simpleand comfortable for natural, lasting results."}
-              </div>
-            </Stack__>
-
-            {/* icons and description */}
-            <div className={classNames(projectcss.all, sty.freeBox__sfxyV)}>
-              <div
-                data-plasmic-name={"ourBotoxProcessCircle"}
-                data-plasmic-override={overrides.ourBotoxProcessCircle}
-                className={classNames(
-                  projectcss.all,
-                  sty.ourBotoxProcessCircle
-                )}
-              />
-
-              <div
-                data-plasmic-name={"ourBotoxProcessCircleBg"}
-                data-plasmic-override={overrides.ourBotoxProcessCircleBg}
-                className={classNames(
-                  projectcss.all,
-                  sty.ourBotoxProcessCircleBg
-                )}
-              >
-                <div
-                  data-plasmic-name={"ourBotoxProcessEllipse1"}
-                  data-plasmic-override={overrides.ourBotoxProcessEllipse1}
-                  className={classNames(
-                    projectcss.all,
-                    sty.ourBotoxProcessEllipse1
-                  )}
-                />
-
-                <div
-                  data-plasmic-name={"ourBotoxProcessEllipse2"}
-                  data-plasmic-override={overrides.ourBotoxProcessEllipse2}
-                  className={classNames(
-                    projectcss.all,
-                    sty.ourBotoxProcessEllipse2
-                  )}
-                />
-
-                <div
-                  data-plasmic-name={"ourBotoxProcessEllipse3"}
-                  data-plasmic-override={overrides.ourBotoxProcessEllipse3}
-                  className={classNames(
-                    projectcss.all,
-                    sty.ourBotoxProcessEllipse3
-                  )}
-                />
-              </div>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__f83H1)}
-              >
-                {/* <div
-                  data-plasmic-name={"ourBotoxProcessIcons"}
-                  data-plasmic-override={overrides.ourBotoxProcessIcons}
-                  className={classNames(
-                    projectcss.all,
-                    sty.ourBotoxProcessIcons
-                  )}
-                >
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img___1Lawf)}
-                    displayHeight={"16px"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"16px"}
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/image_lab_2024/images/documentSvg.svg",
-                      fullWidth: 17,
-                      fullHeight: 17,
-                      aspectRatio: 1
-                    }}
-                  />
-
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img___2Mp5)}
-                    displayHeight={"16px"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"16px"}
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/image_lab_2024/images/injectionSvg3.svg",
-                      fullWidth: 17,
-                      fullHeight: 17,
-                      aspectRatio: 1
-                    }}
-                  />
-
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__jhzDk)}
-                    displayHeight={"16px"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"16px"}
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/image_lab_2024/images/checkSvg4.svg",
-                      fullWidth: 17,
-                      fullHeight: 17,
-                      aspectRatio: 1
-                    }}
-                  />
-                </div> */}
-                <div className={classNames(projectcss.all, sty.freeBox__wjfNi)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__or5Lo
-                    )}
-                  >
-                    {"Step "}
-                  </div>
-                  <div
-                    data-plasmic-name={"ourBotoxProcessNumber"}
-                    data-plasmic-override={overrides.ourBotoxProcessNumber}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.ourBotoxProcessNumber
-                    )}
-                  >
-                    {"1"}
-                  </div>
-                </div>
-              </Stack__>
-              <Stack__
-                as={"div"}
-                data-plasmic-name={"ourBotoxProcessContent"}
-                data-plasmic-override={overrides.ourBotoxProcessContent}
-                hasGap={true}
-                className={classNames(
-                  projectcss.all,
-                  sty.ourBotoxProcessContent
-                )}
-              >
-                {/* CONSULTATION */}
-                <BotoxProcessCard
-                  className={classNames(
-                    "__wab_instance",
-                    sty.botoxProcessCard___1RJzs
-                  )}
-                  description={
-                    "Begin with a personalized consultation where our experts assess your hair and discuss your goals. We\u2019ll create a tailored treatment plan to ensure optimal results that align with your needs."
-                  }
-                  icon={
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__r7ScN)}
-                      displayHeight={
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? "48px"
-                          : "100%"
-                      }
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? "48px"
-                          : "100%"
-                      }
-                      loading={"lazy"}
-                      src={{
-                        src: "/icons/document-icon.svg",
-                        fullWidth: 73,
-                        fullHeight: 72,
-                        aspectRatio: 1.013889
-                      }}
-                    />
-                  }
-                  title={"\u00a0Consultation"}
-                />
-
-                {/* Treatment */}
-                <BotoxProcessCard
-                  className={classNames(
-                    "__wab_instance",
-                    sty.botoxProcessCard__yVyJm
-                  )}
-                  description={
-                    "During your hair restoration session, a skilled practitioner will administer precise injections and/or microneedling to targeted areas. The procedure is quick, minimally invasive, and designed for your comfort."
-                  }
-                  icon={
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__kFeTq)}
-                      displayHeight={"100%"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"100%"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/icons/syringe-icon copy.svg",
-                        fullWidth: 73,
-                        fullHeight: 72,
-                        aspectRatio: 1.013889
-                      }}
-                    />
-                  }
-                  title={"Treatment"}
-                />
-
-                {/* Results */}
-                <BotoxProcessCard
-                  className={classNames(
-                    "__wab_instance",
-                    sty.botoxProcessCard__kRbN
-                  )}
-                  description={
-                    "Enjoy thicker, fuller hair while significantly reducing hair loss with our proven treatments. With minimal downtime, you’ll look refreshed and confident in no time."
-                  }
-                  icon={
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__p6Fxk)}
-                      displayHeight={"100%"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"100%"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/icons/verified-icon.svg",
-                        fullWidth: 73,
-                        fullHeight: 72,
-                        aspectRatio: 1.013889
-                      }}
-                    />
-                  }
-                  title={"Results"}
-                />
-              </Stack__>
-
-              <Link href='/book-now'  className='mt-[10px] w-full md:w-auto'>
-                <button className='button white w-full md:w-auto'>Book Now</button>
-              </Link>
-            </div>
-          </Stack__>
+          <CadmenOurProcess 
+            title="Hair Restoration"
+            program=" Program"
+            consultation="Begin with a personalized consultation where our experts assess your hair and discuss your goals. We’ll create a tailored treatment plan to ensure optimal results that align with your needs."
+            treatment="During your hair restoration session, a skilled practitioner will administer precise injections and/or microneedling to targeted areas. The procedure is quick, minimally invasive, and designed for your comfort."
+            results="Enjoy thicker, fuller hair while significantly reducing hair loss with our proven treatments. With minimal downtime, you’ll look refreshed and confident in no time."
+          />
 
           {/* 7. Preparing for your hair restoration appointment */}
+          {/* <CadmenPreparingForAppointment /> */}
           <Stack__
             as={"section"}
             data-plasmic-name={"botoxAppointmentSection"}
@@ -1658,192 +1374,21 @@ function PlasmicBotoxLander2__RenderFunc(props) {
           </Stack__>
 
           {/* 8. What to expect during and after the treatment */}
-          <Stack__
-            as={"section"}
-            data-plasmic-name={"afterTheTreatmentSection"}
-            data-plasmic-override={overrides.afterTheTreatmentSection}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.afterTheTreatmentSection)}
-          >
-            <div className={classNames(projectcss.all, sty.freeBox__avtMx)}>
-              <PlasmicImg__
-                alt={""}
-                className={classNames(sty.img__pM6Cj)}
-                // displayHeight={
-                //   hasVariant(globalVariants, "screen", "midsize")
-                //     ? "100%"
-                //     : "auto"
-                // }
-                displayHeight={
-                  hasVariant(globalVariants, "screen", "midsize") ? "300px" : "auto"
-                }
-                displayWidth="100%"
-                displayMaxHeight={"none"}
-                displayMaxWidth={"100%"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={"auto"}
-                loading={"lazy"}
-                src={{
-                  src: "/media/hair-landing/2.jpg",
-                  fullWidth: 1300,
-                  fullHeight: 1423,
-                  aspectRatio: undefined
-                }}
-                style={{ height: "auto", width: "100%", objectFit: "cover" }}
-              />
-            </div>
-            <div className={classNames(projectcss.all, sty.freeBox__fBcEx)}>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__jyaYg)}
-              >
-                <Stack__
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__xXnt1)}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__io7Fa
-                    )}
-                  >
-                    <React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#080909" }}
-                      >
-                        {"What to Expect"}
-                      </span>
-                      <React.Fragment> </React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#D19D51" }}
-                      >
-                        {"During and After "}
-                      </span>
-                      <React.Fragment>{""}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#080909" }}
-                      >
-                        {"the Treatment"}
-                      </span>
-                    </React.Fragment>
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__wQcHr
-                    )}
-                  >
-                    {"Our hair restoration treatments are minimally invasive and quick, typically taking 30 minutes. Most patients describe the feeling as a slight pinch on your scalp."}
-                  </div>
-                </Stack__>
-                <Stack__
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__xk3C)}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___9EBfz
-                    )}
-                  >
-                    {"Post-Treatment Care:"}
-                  </div>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__pqLf)}
-                  >
-                    <PointIcon
-                      className={classNames(projectcss.all, sty.svg___4KuWw)}
-                      role={"img"}
-                    />
-
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___0Op2E
-                      )}
-                    >
-                      <React.Fragment>
-                        <span
-                          className={
-                            "plasmic_default__all plasmic_default__span"
-                          }
-                          style={{ color: "#535556" }}
-                        >
-                          {"Avoid showering and applying any hair products for at least 24 hours post-treatment to ensure full efficacy."}
-                        </span>
-                      </React.Fragment>
-                    </div>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__j0AL)}
-                  >
-                    <PointIcon
-                      className={classNames(projectcss.all, sty.svg___5Xh4E)}
-                      role={"img"}
-                    />
-
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__gyFvG
-                      )}
-                    >
-                      {"Stay hydrated throughout the day to support healing – this is recommended especially after PRP and Exosome treatments."}
-                    </div>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__n3Sx)}
-                  >
-                    <PointIcon
-                      className={classNames(projectcss.all, sty.svg__dvNar)}
-                      role={"img"}
-                    />
-
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__zuWu4
-                      )}
-                    >
-                      {"Protect your scalp from direct sun exposure for atleast 24 hours."}
-                    </div>
-                  </Stack__>
-                </Stack__>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__bx3Iz
-                  )}
-                >
-                  {"Results typically begin to appear within 2-3 sessions, however it is critical to follow our post-treatment care to ensure you are getting optimal results."}
-                </div>
-              </Stack__>
-
-              <Link href='/book-now'  className='mt-[10px] w-full md:w-auto'>
-                <button className='button w-full md:w-auto'>Book Now</button>
-              </Link>
-            </div>
-          </Stack__>
+          <CadmenExpectDuringAndAfter 
+            img="/media/hair-landing/2.jpg"
+            subheading="Our hair restoration treatments are minimally invasive and quick, typically taking 30 minutes. Most patients describe the feeling as a slight pinch on your scalp."
+            sections={[
+              {
+                title: "Post-Treatment Care",
+                points: [
+                  "Avoid showering and applying any hair products for at least 24 hours post-treatment to ensure full efficacy.",
+                  "Stay hydrated throughout the day to support healing – this is recommended especially after PRP and Exosome treatments.",
+                  "Protect your scalp from direct sun exposure for atleast 24 hours.",
+                ],
+              }
+            ]}
+            footer="Results typically begin to appear within 2-3 sessions, however it is critical to follow our post-treatment care to ensure you are getting optimal results."
+          />
 
           {/* 9. why do clients trust cadmen clinic */}
           <section
