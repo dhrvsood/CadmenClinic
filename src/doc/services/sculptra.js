@@ -1,63 +1,77 @@
 const sculptra = {
+    // isMigrated: true,
     category: "skin-treatments",
     general: {
-        strikePrice: "$14.00",
-        salePrice: "$9.99",
-        perUnit: " / unit",
-        discount: "30%",
-        shortTitle: "Botox",
-        longTitle: "Botox®"
+        strikePrice: "$1,099",
+        salePrice: "$899",
+        perUnit: " / Vial",
+        discount: "20%",
+        shortTitle: "Sculptra",
+        longTitle: "Sculptra"
     },
     hero: {
         img: "/media/services/prp-hair-restoration.webp",
-        tagline: "Soften Fine Lines & Wrinkles",
-        description: "reduce the signs of aging with quick, minimally invasive Botox treatments."
+        tagline: "Restore Lost Facial Volume",
+        description: "rebuild your natural collagen for gradual, authentic results that last two years."
     },
     beforeAfters: [
         {
             id: 1,
-            title: "Julia's Results",
-            subtitle: "Results after one month with Botox",
-            img: "/media/testimonials/Marcus.jpg"
+            title: "Elisa’s Results",
+            subtitle: "After 5 Sculptra vials",
+            img: "/media/testimonials/sculptra_Elisa.jpg"
         },
         {
             id: 2,
-            title: "Daria's Results",
-            subtitle: "Results after three weeks with Botox",
-            img: "/media/testimonials/Jacob.jpg"
+            title: "Katherine’s Results",
+            subtitle: "After 3 Sculptra vials",
+            img: "/media/testimonials/sculptra_Katherine.jpg"
         },
         {
             id: 3,
+            title: "Marina’s Results",
+            subtitle: "After 4 Sculptra vials",
+            img: "/media/testimonials/sculptra_Marina.jpg"
+        },
+        {
+            id: 4,
+            title: "Franca’s Results",
+            subtitle: "After 4 Sculptra vials",
+            img: "/media/testimonials/sculptra_Franca.jpg"
+        },
+        {
+            id: 5,
             title: "Anna’s Results",
-            subtitle: "Results after 3 PRP Sessions",
-            img: "/media/testimonials/Anna.jpg"
+            subtitle: "After 6 Sculptra vials",
+            img: "/media/testimonials/sculptra_Anna.jpg"
         }
     ],
     whatAndHowItWorks: {
-        titlePrefix: "What is Botox",
-        titleEmphasis: "and How Does It Work?",
+        titlePrefix: "Why Choose Sculptra",
+        titleEmphasis: "for Volume Enhancement?",
         points: [
             {
-                heading: "Botox is FDA-approved and trusted worldwide",
-                description: "This remarkable treatment works by temporarily relaxing targeted muscles, helping to reduce the appearance of fine lines and wrinkles caused by repeated facial expressions."
+                heading: "Tired of Fillers that Fade Fast? ",
+                description: "Sculptra treatments trigger your body's collagen production for real, lasting change. Results build over months and last up to two years, not weeks."
             },
             {
-                heading: "Cater to Many Use Cases",
-                description: "Whether you’re looking to soften crow’s feet, forehead lines, or frown lines, Botox offers a safe and effective solution for achieving a rejuvenated appearance.",
+                heading: "Sculptra's Poly-L-Lactic Acid (PLLA)",
+                description: "Medical-grade microspheres dissolve gradually, creating scaffolding that stimulates deep collagen growth where aging hits hardest. Your body rebuilds facial structure from within for authentic, long-lasting volume restoration.",
 
             },
             {
-                heading: "How it Works",
-                description: "Botox blocks nerve signals to specific muscles, preventing them from contracting. By targeting the neuromuscular junction, it inhibits the release of acetylcholine—a neurotransmitter that triggers muscle movement. This temporary “freeze” allows the skin above these muscles to appear smoother and more refreshed."
+                heading: "What do You Get?",
+                description: "Sculptra treatments work with your body's natural healing process, not against it. The result? Facial rejuvenation that looks like you, just younger, without the telltale signs of cosmetic work."
             }
         ],
-        img: "/media/botox-what-and-how.png"
+        img: "/media/services/sculptra/whyChooseSculptra.webp"
     },
     ourProcess: {
-        title: "Botox",
-        consultation: "Begin with a personalized consultation where our experts assess your skin and discuss your goals. We’ll create a tailored treatment plan to ensure optimal results that align with your needs.",
-        treatment: "During your Botox session, a skilled practitioner will administer precise injections to targeted areas.The procedure is quick, minimally invasive, and designed for your comfort.",
-        results: "Enjoy smoother, younger-looking skin as the Botox begins to work over the next few days. With minimal downtime, you’ll look refreshed and confident in no time."
+        title: "Sculptra",
+        subheading: "Quick, comfortable appointments with immediate return to daily activities. Most treatments are completed in under 45 minutes with minimal discomfort.",
+        consultation: "Your face tells its own story. We study its unique architecture. Listen to what you envision. Some faces lose volume in the temples first. Others hollow at the cheeks. A detailed consultation reveals your pattern. Then we map out exactly how to address what bothers you most.",
+        treatment: "Precise injections using lidocaine for comfort. We carefully place product in targeted areas, then gently massage to ensure even distribution. The entire process is quick, virtually painless, and requires no downtime.",
+        results: "Gradual improvements appear over 2-3 sessions spaced weeks apart. Your transformation builds slowly, creating natural-looking volume that friends notice but can't identify. No dramatic changes or obvious cosmetic appearance."
     },
     treatmentCards: {
         title: {
@@ -150,109 +164,106 @@ const sculptra = {
         description: "New to injectables? Already tried other fillers? Our team can walk you through your options. We've helped hundreds of patients make informed choices, and we start with a free, pressure-free chat about what might work for you."
     },
     preparingForAppointment: {
-        titlePrefix: "Preparing for Your",
-        titleEmphasis: "Lip Filler Appointment",
-        subheading: "To ensure a comfortable and successful lip filler experience, follow these tips:",
+        titlePrefix: "Getting Ready for Your",
+        titleEmphasis: "Sculptra Appointment",
+        subheading: "A few simple steps make all the difference. They minimize bruising. Optimize results. Your treatment goes smoothly when you prepare properly.",
         points: [
             {
                 heading: "Avoid Blood Thinners",
-                description: "A few days before your appointment, try to avoid medications and supplements that can thin your blood, such as aspirin, ibuprofen, and fish oil. This simple step helps minimize bruising at the site."
+                description: "Those daily aspirin? Skip them for a few days (unless your doctor says otherwise). Same with ibuprofen. Vitamin E. Fish oil. They thin blood, which means more bruising. More healing time. Three to five days without them helps tremendously."
             },
             {
-                heading: "Skip Alcohol and Tobacco",
-                description: "Alcohol and tobacco can increase the likelihood of bruising and slow your skin’s recovery. Refrain from consuming alcohol for at least 24 hours before and after your treatment.",
+                heading: "Skip Alcohol & Active Skincare",
+                description: "Wine with dinner? Not the night before treatment. Alcohol increases sensitivity. As for your skincare routine, pause the strong stuff. Retinoids especially. Exfoliants too. Give them a 2-3 day break. Your skin will thank you.",
             },
             {
-                heading: "Stay Hydrated",
-                description: "Well-hydrated skin responds better to treatment. Drink plenty of water in the days leading up to your appointment to help your lips look and feel their best."
+                heading: "Stay Hydrated & Eat Beforehand",
+                description: "Water matters more than you'd think. Start drinking extra days before. The morning of? Eat something light but substantial. Nobody wants to feel faint during treatment. Plus, hydration helps everything—healing, collagen production, and reducing puffiness afterward."
             },
             {
-                heading: "Arrive with Clean Skin",
-                description: "Avoid wearing makeup, lip balm, or other products on your lips or around the treatment area on the day of your appointment. Clean, bare skin allows for a more hygienic and effective procedure."
+                heading: "Arrive with Clean, Product-Free Skin",
+                description: "Come with a freshly cleansed face free of makeup, moisturizers, sunscreen, or skincare products. This ensures safe, effective treatment with maximum product absorption and reduces the risk of infection or complications."
             }
         ],
-        img: "/media/services/botox/preparingForAppointment.png"
+        img: "/media/services/sculptra/preparingForAppointment.webp"
     },
     expectDuringAfter: {
-        img: "/media/services/botox/expectDuringAfter.png",
+        title: {
+            prefix: "How to Prepare for",
+            emphasis: "Your Sculptra",
+            end: " Treatment"
+        },
+        subheading: "Excellence requires attention to detail. We guide you through each step, customizing everything to your specific situation.",
+        img: "/media/services/sculptra/expectDuringAfter.webp",
         sections: [
             {
-                title: "During the Procedure",
+                title: "Pre-Treatment Preparation and Guidelines",
                 points: [
-                    "Quick and Minimally Invasive: Lip filler injections usually take 15–30 minutes. Most clients describe the sensation as a mild pinch or pressure. Your provider may gently massage your lips during the process to ensure smooth, even distribution."
+                    "Hydration becomes your friend. So does good nutrition. Follow medication guidelines carefully. Show up with clean skin, no products, no makeup. We'll send detailed instructions based on your medical history. Your specific treatment plan. Everything personalized."
                 ]
             },
             {
-                title: "Post-Treatment Care",
+                title: "Post-Treatment Care, Recovery, and Downtime",
                 points: [
-                    "Avoid Intense Activity: Refrain from strenuous exercise, excessive sun exposure, or extreme temperatures (like saunas or hot tubs) for the first 24–48 hours to minimize swelling and bruising.",
-                    "Reduce Swelling & Bruising: Apply cold compresses or ice packs as recommended to reduce swelling. Avoid alcohol and blood-thinning medications or supplements (unless medically necessary).",
-                    "Stay Hydrated: Drink plenty of water to support hydration and help the filler settle naturally."
-                ]
-            },
-            {
-                title: "When to Expect Results",
-                points: [
-                    "Immediate Improvement: You’ll notice an instant boost in lip volume and definition, but some swelling or minor bruising may be present for the first few days.",
-                    "Full, Settled Results: Most clients see their final, refined results within 1–2 weeks as any swelling subsides and the filler integrates fully with your tissue.",
-                    "Follow-Up Appointment: We recommend scheduling a follow-up visit to assess your results, ensure you’re satisfied, and discuss any potential refinements or maintenance treatments."
+                    "The 5-5-5 rule matters (we'll explain). Ice helps initially. Take it easy for 48 hours—no gym, no saunas, no happy hour. Questions arise? We're here. Always available. Recovery becomes straightforward when you have proper support."
                 ]
             }
         ]
     },
     transformations: {
         title: {
-            first: "PRP Hair Restoration Has Already ",
-            emphasis: "Transformed",
-            last: " 100,000+ Lives"
+            first: "Understanding ",
+            emphasis: "the Risks",
+            last: " of Sculptra"
         },
+        description: "While these treatments are generally very safe with minimal side effects, it's important to understand potential temporary reactions. Most side effects resolve within days, and proper aftercare minimizes any discomfort or complications.",
         cards: [
             {
                 id: 1,
-                title: "Thinning Hair and Receding Hairline",
-                subtitle: "Restore volume and strengthen thinning hair along the hairline for a fuller, thicker appearance.",
-                img: "/media/services/prp/7.1.jpg"
+                title: "Temporary Swelling and Bruising",
+                subtitle: "Common injection-related effects that typically subside within 3-7 days with proper ice application and gentle care.",
+                img: "/media/services/sculptra/swelling.webp"
             },
             {
                 id: 2,
-                title: "Bald Spots",
-                subtitle: "Stimulate growth in bald areas to encourage new hair follicles and promote even regrowth across the scalp.",
-                img: "/media/services/prp/7.2.jpg"
+                title: "Mild Injection Site Tenderness",
+                subtitle: "Normal sensitivity around treatment areas that resolves quickly with over-the-counter pain relief if needed.",
+                img: "/media/services/sculptra/tenderness.webp"
             },
             {
                 id: 3,
-                title: "Hair Thinning on Crown and Temples",
-                subtitle: "Target areas of thinning around the crown and temples for more density and healthier-looking hair",
-                img: "/media/services/prp/7.3.jpg"
+                title: "Temporary Redness and Sensitivity",
+                subtitle: "Light skin irritation at injection points that fades within 24-48 hours of treatment completion.",
+                img: "/media/services/sculptra/redness.webp"
             },
             {
                 id: 4,
-                title: "Overall Hair Density",
-                subtitle: "Increase the thickness and fullness of your hair, enhancing its natural volume for a refreshed and revitalized appearance.",
-                img: "/media/services/prp/7.4.jpg"
+                title: "Minor Firmness or Lumps",
+                subtitle: "Occasional product settling that resolves naturally or with gentle massage following our aftercare instructions.",
+                img: "/media/services/sculptra/firmness.webp"
             }
         ]
     },
     faqs: [
         {
             id: 1,
-            question: "How do I know if I’m a candidate?",
-            answer: "Come in for a complimentary consultation with our expert providers, who will assess your hair and scalp to recommend a customized treatment plan unique for you."
+            question: "How long until I see the results?",
+            answer: "Results from biostimulatory fillers like Sculptra develop gradually. With Sculptra, you’ll begin to see noticeable improvements in volume and skin texture after a few treatment sessions, spaced several weeks apart, with results emerging over the course of 4 to 6 months."
         },
         {
             id: 2,
-            question: "When will I see results?",
-            answer: "From our experience with over 2,000 clients, results start to show within 3-4 sessions. It is critical to take good care of your scalp and hair outside of the clinic such as using safe shampoos and lotions."
+            question: "How long do the results last?",
+            answer: "The results of biostimulatory fillers are long-lasting compared to traditional fillers. Sculptra results can last up to 2 years or more, depending on the individual and the number of treatment sessions. Sculptra stimulates natural collagen production, which helps maintain the effects over time, offering a more youthful and refreshed appearance."
         },
         {
             id: 3,
-            question: "Are there side effects or any recovery time needed?",
-            answer: "The great thing about PRP is that there is no recovery time needed - most patients feel good enough to immediately go back about their day."
+            question: "What is the downtime?",
+            answer: "Very little downtime, and you can go back to work immediately. You may experience minimal bruising, swelling, or redness."
         },
         {
             id: 4,
-            question: "Can I do PRP the same day of my consultation?",
-            answer: "Yes you can!"
+            question: "Does Sculptra treatment hurt?",
+            answer: "Prior to administering the injections, we apply a numbing cream to the area to alleviate any potential discomfort throughout the procedure. Additionally, we employ a cold pack both before and after the injections. If you wish, you can take Tylenol before and after the treatment to help alleviate any potential pain. It's important to note that there might be some bruising and swelling, which typically subside within 1–2 weeks."
         }
     ]
 }

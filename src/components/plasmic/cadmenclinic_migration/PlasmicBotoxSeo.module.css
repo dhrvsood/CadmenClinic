@@ -4589,14 +4589,21 @@
   width: auto;
   height: 1em;
 }
+.afterTheTreatmentContent {
+  max-width: 1300px;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
 .afterTheTreatmentSection {
+  background-color: var(--light-brown);
   display: flex;
   flex-direction: row;
   position: relative;
   width: 100%;
   height: auto;
   /* max-width: 100%; */
-  max-width: var(--plsmc-standard-width);
+  /* max-width: var(--plsmc-standard-width); */
   grid-column-start: 1 !important;
   grid-column-end: -1 !important;
   padding: 80px 60px;

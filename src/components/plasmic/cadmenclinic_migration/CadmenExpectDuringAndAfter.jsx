@@ -14,6 +14,7 @@ import PointIcon from "./icons/PlasmicIcon__Point";
 const CadmenExpectDuringAndAfter = ({
     overrides = {}, 
     globalVariants = {},
+    title,
     img,
     subheading,
     sections,
@@ -26,6 +27,7 @@ const CadmenExpectDuringAndAfter = ({
             hasGap={true}
             className={classNames(projectcss.all, sty.afterTheTreatmentSection)}
           >
+            <div className={classNames(projectcss.all, sty.afterTheTreatmentContent)}>
             <div className={classNames(projectcss.all, sty.freeBox__avtMx)}>
               <PlasmicImg__
                 alt={""}
@@ -41,8 +43,8 @@ const CadmenExpectDuringAndAfter = ({
                 loading={"lazy"}
                 src={{
                   src: img,
-                  fullWidth: 1300,
-                  fullHeight: 1423,
+                  // fullWidth: 1300,
+                  // fullHeight: 1423,
                   aspectRatio: undefined
                 }}
                 style={{ height: "auto", width: "100%", objectFit: "cover" }}
@@ -71,21 +73,30 @@ const CadmenExpectDuringAndAfter = ({
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ color: "#080909" }}
                       >
-                        {"What to Expect"}
+                        {title
+                          ? title.prefix
+                          : "What to Expect"
+                        }
                       </span>
                       <React.Fragment> </React.Fragment>
                       <span
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ color: "#D19D51" }}
                       >
-                        {"During and After "}
+                        {title
+                          ? title.emphasis
+                          : "During and After "
+                        }
                       </span>
                       <React.Fragment>{""}</React.Fragment>
                       <span
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ color: "#080909" }}
                       >
-                        {"the Treatment"}
+                        {title
+                          ? title.end
+                          :"the Treatment"
+                        }
                       </span>
                     </React.Fragment>
                   </div>
@@ -164,6 +175,7 @@ const CadmenExpectDuringAndAfter = ({
               <Link href='/book-now'  className='mt-[10px] w-full md:w-auto'>
                 <button className='button w-full md:w-auto'>Book Now</button>
               </Link>
+            </div>
             </div>
           </Stack__>
 );

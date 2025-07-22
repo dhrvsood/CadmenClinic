@@ -61,7 +61,7 @@ const chemical_peels = {
     },
     ourProcess: {
         title: "Chemical Peels",
-        subheading: "Professional treatments completed in comfortable office setting with immediate return to most daily activities.",
+        subheading: "Professional treatments completed in comfortable office setting \nwith immediate return to most daily activities.",
         consultation: "Your skin tells its unique story. We examine texture, pigmentation, and scarring patterns. Discuss your goals and concerns openly. Some faces need gentle resurfacing. Others require deeper intervention. A detailed analysis reveals your optimal treatment plan.",
         treatment: "Precise application using medical-grade acids tailored to your skin type. We carefully control penetration depth and contact time. The process feels like mild sunburn initially. Cool compresses provide immediate relief. Most treatments completed within 30-45 minutes.",
         results: "Gradual improvements appear over 7-14 days as damaged skin peels away. Your transformation builds slowly, revealing smoother texture and brighter tone. Multiple sessions spaced 4-6 weeks apart maximize results without overwhelming your skin."
@@ -203,6 +203,11 @@ const chemical_peels = {
         img: "/media/services/chemical-peels/preparingForAppointment.webp"
     },
     expectDuringAfter: {
+        title: {
+            prefix: "How to Prepare for",
+            emphasis: "Your Chemical Peel",
+            end: " Treatment"
+        },
         img: "/media/services/chemical-peels/expectDuringAfter.webp",
         subheading: "Specialized preparation protocol ensures VI peel safety and maximizes your skin transformation results.",
         sections: [
@@ -224,7 +229,7 @@ const chemical_peels = {
         title: {
             first: "Understanding ",
             emphasis: "the Risks",
-            last: " a Facial Chemical Peel"
+            last: " of a Facial Chemical Peel"
         },
         description: "When the procedure is done by a skilled professional, chemical peels are very safe, yet some temporary effects can happen as the skin heals.",
         cards: [

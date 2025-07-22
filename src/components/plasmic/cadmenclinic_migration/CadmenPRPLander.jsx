@@ -220,7 +220,7 @@ function PlasmicBotoxLander__RenderFunc(props) {
                       <React.Fragment>
                         <React.Fragment>
                           {service.hero.tagline}
-                          {service.general.longTitle.length > 7 ? " with\n" : " with "}
+                          {service.category === "hair-restoration" ? " with\n" : " with "}
                         </React.Fragment>
                         
                         <span
@@ -679,6 +679,7 @@ function PlasmicBotoxLander__RenderFunc(props) {
               {/* 5. OUR SERVICE PROCESS (Consultation, Treatment, Results) */}
               <CadmenOurProcess 
                 title={service.ourProcess.title}
+                subheading={service.ourProcess.subheading}
                 consultation={service.ourProcess.consultation}
                 treatment={service.ourProcess.treatment}
                 results={service.ourProcess.results}
@@ -764,6 +765,7 @@ function PlasmicBotoxLander__RenderFunc(props) {
               />
               
               <CadmenExpectDuringAndAfter 
+                title={service.expectDuringAfter.title}
                 img={service.expectDuringAfter.img}
                 subheading={service.expectDuringAfter.subheading}
                 sections={service.expectDuringAfter.sections}

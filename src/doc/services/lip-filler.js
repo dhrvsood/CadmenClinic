@@ -6,8 +6,8 @@ const lip_fillers = {
         salePrice: "$599",
         perUnit: " / syringe",
         discount: "25%",
-        shortTitle: "Lip Filler",
-        longTitle: "Lip Filler"
+        shortTitle: "\nLip Filler",
+        longTitle: "\nLip Filler"
     },
     hero: {
         img: "/media/services/lip-fillers/hero.avif",

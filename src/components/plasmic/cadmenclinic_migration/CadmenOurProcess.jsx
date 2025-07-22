@@ -15,6 +15,7 @@ const CadmenOurProcess = ({
     overrides = {}, 
     globalVariants = {},
     title,
+    subheading,
     program,
     consultation,
     treatment,
@@ -62,9 +63,13 @@ const CadmenOurProcess = ({
                 sty.text___63Mxp
             )}
             >
-            {hasVariant(globalVariants, "screen", "mobileOnly")
-                ? "From consultation to treatment,\nwe make the process simple and comfortable for natural, lasting results."
-                : "From consultation to treatment, we make the process\n simple and comfortable for natural, lasting results."}
+                {subheading 
+                    ? subheading
+                    : "From consultation to treatment, we make the process simple and comfortable for natural, lasting results."
+                }
+            {/* {hasVariant(globalVariants, "screen", "mobileOnly")
+                ? "From consultation to treatment, we make the process simple and comfortable for natural, lasting results."
+                : "From consultation to treatment, we make the process\n simple and comfortable for natural, lasting results."} */}
             </div>
         </Stack__>
 

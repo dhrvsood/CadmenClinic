@@ -51,7 +51,7 @@ const CadmenTreatmentCardsSection = ({
             >
                 {title.emphasis}
             </span>
-            </React.Fragment>
+        </React.Fragment>
         </div>
         <div
         className={classNames(
