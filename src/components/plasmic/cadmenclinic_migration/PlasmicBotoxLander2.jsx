@@ -71,6 +71,7 @@ import VideoSection from "@/components/VideoSection/VideoSection";
 import TreatmentPackagesSlider from "@/components/TreatmentPackagesSlider/TreatmentPackagesSlider";
 import CadmenOurProcess from "./CadmenOurProcess";
 import CadmenPreparingForAppointment from "./CadmenPreparingForAppointment";
+import CadmenExpectDuringAndAfter from "./CadmenExpectDuringAndAfter";
 
 createPlasmicElementProxy;
 
@@ -1373,192 +1374,21 @@ function PlasmicBotoxLander2__RenderFunc(props) {
           </Stack__>
 
           {/* 8. What to expect during and after the treatment */}
-          <Stack__
-            as={"section"}
-            data-plasmic-name={"afterTheTreatmentSection"}
-            data-plasmic-override={overrides.afterTheTreatmentSection}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.afterTheTreatmentSection)}
-          >
-            <div className={classNames(projectcss.all, sty.freeBox__avtMx)}>
-              <PlasmicImg__
-                alt={""}
-                className={classNames(sty.img__pM6Cj)}
-                // displayHeight={
-                //   hasVariant(globalVariants, "screen", "midsize")
-                //     ? "100%"
-                //     : "auto"
-                // }
-                displayHeight={
-                  hasVariant(globalVariants, "screen", "midsize") ? "300px" : "auto"
-                }
-                displayWidth="100%"
-                displayMaxHeight={"none"}
-                displayMaxWidth={"100%"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={"auto"}
-                loading={"lazy"}
-                src={{
-                  src: "/media/hair-landing/2.jpg",
-                  fullWidth: 1300,
-                  fullHeight: 1423,
-                  aspectRatio: undefined
-                }}
-                style={{ height: "auto", width: "100%", objectFit: "cover" }}
-              />
-            </div>
-            <div className={classNames(projectcss.all, sty.freeBox__fBcEx)}>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__jyaYg)}
-              >
-                <Stack__
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__xXnt1)}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__io7Fa
-                    )}
-                  >
-                    <React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#080909" }}
-                      >
-                        {"What to Expect"}
-                      </span>
-                      <React.Fragment> </React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#D19D51" }}
-                      >
-                        {"During and After "}
-                      </span>
-                      <React.Fragment>{""}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#080909" }}
-                      >
-                        {"the Treatment"}
-                      </span>
-                    </React.Fragment>
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__wQcHr
-                    )}
-                  >
-                    {"Our hair restoration treatments are minimally invasive and quick, typically taking 30 minutes. Most patients describe the feeling as a slight pinch on your scalp."}
-                  </div>
-                </Stack__>
-                <Stack__
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__xk3C)}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___9EBfz
-                    )}
-                  >
-                    {"Post-Treatment Care:"}
-                  </div>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__pqLf)}
-                  >
-                    <PointIcon
-                      className={classNames(projectcss.all, sty.svg___4KuWw)}
-                      role={"img"}
-                    />
-
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___0Op2E
-                      )}
-                    >
-                      <React.Fragment>
-                        <span
-                          className={
-                            "plasmic_default__all plasmic_default__span"
-                          }
-                          style={{ color: "#535556" }}
-                        >
-                          {"Avoid showering and applying any hair products for at least 24 hours post-treatment to ensure full efficacy."}
-                        </span>
-                      </React.Fragment>
-                    </div>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__j0AL)}
-                  >
-                    <PointIcon
-                      className={classNames(projectcss.all, sty.svg___5Xh4E)}
-                      role={"img"}
-                    />
-
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__gyFvG
-                      )}
-                    >
-                      {"Stay hydrated throughout the day to support healing – this is recommended especially after PRP and Exosome treatments."}
-                    </div>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__n3Sx)}
-                  >
-                    <PointIcon
-                      className={classNames(projectcss.all, sty.svg__dvNar)}
-                      role={"img"}
-                    />
-
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__zuWu4
-                      )}
-                    >
-                      {"Protect your scalp from direct sun exposure for atleast 24 hours."}
-                    </div>
-                  </Stack__>
-                </Stack__>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__bx3Iz
-                  )}
-                >
-                  {"Results typically begin to appear within 2-3 sessions, however it is critical to follow our post-treatment care to ensure you are getting optimal results."}
-                </div>
-              </Stack__>
-
-              <Link href='/book-now'  className='mt-[10px] w-full md:w-auto'>
-                <button className='button w-full md:w-auto'>Book Now</button>
-              </Link>
-            </div>
-          </Stack__>
+          <CadmenExpectDuringAndAfter 
+            img="/media/hair-landing/2.jpg"
+            subheading="Our hair restoration treatments are minimally invasive and quick, typically taking 30 minutes. Most patients describe the feeling as a slight pinch on your scalp."
+            sections={[
+              {
+                title: "Post-Treatment Care",
+                points: [
+                  "Avoid showering and applying any hair products for at least 24 hours post-treatment to ensure full efficacy.",
+                  "Stay hydrated throughout the day to support healing – this is recommended especially after PRP and Exosome treatments.",
+                  "Protect your scalp from direct sun exposure for atleast 24 hours.",
+                ],
+              }
+            ]}
+            footer="Results typically begin to appear within 2-3 sessions, however it is critical to follow our post-treatment care to ensure you are getting optimal results."
+          />
 
           {/* 9. why do clients trust cadmen clinic */}
           <section
