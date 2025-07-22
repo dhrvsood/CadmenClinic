@@ -1,4 +1,5 @@
 const chemical_peels = {
+    slug: "chemical-peels",
     // isMigrated: true,
     category: "skin-treatments",
     general: {

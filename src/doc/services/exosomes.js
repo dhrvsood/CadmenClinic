@@ -1,4 +1,5 @@
 const exosomes = {
+    slug: "exosomes",
     isMigrated: true,
     category: "hair-restoration",
     general: {

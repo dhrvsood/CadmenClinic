@@ -1,4 +1,5 @@
 const mesotherapy = {
+    slug: "mesotherapy",
     isMigrated: true,
     category: "hair-restoration",
     general: {

@@ -106,9 +106,9 @@ function PlasmicBotoxLander__RenderFunc(props) {
   const $refs = refsRef.current;
 
   // NECESSARY DATA FOR AREA INTERACTIVE (safeguards added to prevent runtime error)
-  const stateSpecs = React.useMemo(() => {
-    const faceInteractive = service?.faceInteractive;
+  const faceInteractive = service?.faceInteractive;
 
+  const stateSpecs = React.useMemo(() => {
     return [
       {
         path: "selectedArea",
@@ -135,7 +135,8 @@ function PlasmicBotoxLander__RenderFunc(props) {
             : null
       }
     ];
-  }, [$props, $ctx, $refs]);
+  }, [faceInteractive]);
+
 
   const $state = useDollarState(stateSpecs, {
     $props,
@@ -702,42 +703,44 @@ function PlasmicBotoxLander__RenderFunc(props) {
 
                 // Show interactive face dot component for Botox and Dermal Fillers
                 ?
-                <AreasInteractive
-                  data-plasmic-name={"areasInteractive"}
-                  data-plasmic-override={overrides.areasInteractive}
-                  className={classNames("__wab_instance", sty.areasInteractive)}
-                  data={generateStateValueProp($state, ["areasInteractive", "data"])}
-                  onDataChange={async (...eventArgs) => {
-                    generateStateOnChangeProp($state, [
-                      "areasInteractive",
-                      "data"
-                    ]).apply(null, eventArgs);
-                    if (
-                      eventArgs.length > 1 &&
-                      eventArgs[1] &&
-                      eventArgs[1]._plasmic_state_init_
-                    ) {
-                      return;
-                    }
-                  }}
-                  onSelectedChange={async (...eventArgs) => {
-                    generateStateOnChangeProp($state, [
+                // <div key={__nextRouter.query.serviceName}>
+                  <AreasInteractive
+                    data-plasmic-name={"areasInteractive"}
+                    data-plasmic-override={overrides.areasInteractive}
+                    className={classNames("__wab_instance", sty.areasInteractive)}
+                    data={generateStateValueProp($state, ["areasInteractive", "data"])}
+                    onDataChange={async (...eventArgs) => {
+                      generateStateOnChangeProp($state, [
+                        "areasInteractive",
+                        "data"
+                      ]).apply(null, eventArgs);
+                      if (
+                        eventArgs.length > 1 &&
+                        eventArgs[1] &&
+                        eventArgs[1]._plasmic_state_init_
+                      ) {
+                        return;
+                      }
+                    }}
+                    onSelectedChange={async (...eventArgs) => {
+                      generateStateOnChangeProp($state, [
+                        "areasInteractive",
+                        "selected"
+                      ]).apply(null, eventArgs);
+                      if (
+                        eventArgs.length > 1 &&
+                        eventArgs[1] &&
+                        eventArgs[1]._plasmic_state_init_
+                      ) {
+                        return;
+                      }
+                    }}
+                    selected={generateStateValueProp($state, [
                       "areasInteractive",
                       "selected"
-                    ]).apply(null, eventArgs);
-                    if (
-                      eventArgs.length > 1 &&
-                      eventArgs[1] &&
-                      eventArgs[1]._plasmic_state_init_
-                    ) {
-                      return;
-                    }
-                  }}
-                  selected={generateStateValueProp($state, [
-                    "areasInteractive",
-                    "selected"
-                  ])}
-                />
+                    ])}
+                  />
+                // </div>
 
                 // Show interactive info component for rest
                 :

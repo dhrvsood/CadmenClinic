@@ -1,4 +1,5 @@
 const botox = {
+    slug: "botox",
     isMigrated: true,
     category: "skin-treatments",
     general: {

@@ -1,4 +1,5 @@
 const prp_hair_restoration = {
+    slug: "prp-hair-restoration",
     isMigrated: true,
     category: "hair-restoration",
     general: {

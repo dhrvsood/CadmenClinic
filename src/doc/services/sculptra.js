@@ -1,4 +1,5 @@
 const sculptra = {
+    slug: "sculptra",
     // isMigrated: true,
     category: "skin-treatments",
     general: {

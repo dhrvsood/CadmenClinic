@@ -2,24 +2,40 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 
 const InteractiveInfo = ({
   title,
   description,
   data
 }) => {
-  const [activeTab, setActiveTab] = useState(data[0]); // Initialize with the first item
+  const router = useRouter();
+  const [activeTab, setActiveTab] = useState(data[0]);
 
+  // Reset active tab when route (serviceName) changes
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      data.forEach(item => {
-        if (item.img) {
-          const img = new window.Image();
-          img.src = item.img;
-        }
-      });
+    if (Array.isArray(data) && data.length > 0) {
+      setActiveTab(data[0]);
     }
-  }, [data]);
+  }, [router.query.serviceName, data]);
+
+// const InteractiveInfo = ({
+//   title,
+//   description,
+//   data
+// }) => {
+//   const [activeTab, setActiveTab] = useState(data[0]); // Initialize with the first item
+
+//   useEffect(() => {
+//     if (typeof window !== "undefined") {
+//       data.forEach(item => {
+//         if (item.img) {
+//           const img = new window.Image();
+//           img.src = item.img;
+//         }
+//       });
+//     }
+//   }, [data]);
 
   return (
     // <section className="container max-w-full mx-auto px-16 py-16">

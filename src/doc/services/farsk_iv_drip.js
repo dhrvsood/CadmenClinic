@@ -1,4 +1,5 @@
 const farsk_iv_drip = {
+    slug: "iv_drip",
     category: "wellness",
     general: {
         strikePrice: "$599",

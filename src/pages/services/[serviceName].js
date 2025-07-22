@@ -21,7 +21,7 @@ export default function ServiceRouterPage() {
   }
 
   if (newService?.isMigrated) {
-    return <CadmenPRPLander args={{ serviceData: newService }} />;
+    return <CadmenPRPLander key={newService.slug} args={{ serviceData: newService }} />;
   }
 
   if (oldService) {
