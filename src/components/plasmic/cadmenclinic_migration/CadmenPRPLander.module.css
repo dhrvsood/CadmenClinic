@@ -2506,6 +2506,11 @@
   color: #157ad9;
   height: 20px;
 }
+.dark_faq {
+  background: url("../../../../public/graphics/circlesSvgFaq.svg") bottom 0px right 0px / cover no-repeat,
+#9a7f71;
+  color: white;
+}
 .section__qz9Z {
   display: grid;
   position: relative;

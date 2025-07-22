@@ -149,6 +149,28 @@ function PlasmicBotoxLander__RenderFunc(props) {
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariants_4IUcgkiijTv2()
   });
+
+  const isHairRestoration = service.category === "hair-restoration"
+  const faqSectionClass = classNames(
+    projectcss.all,
+    sty.section__qz9Z,
+    !isHairRestoration && sty.dark_faq
+  );
+
+  const faqHeadingClass = classNames(
+    projectcss.all,
+    projectcss.h2,
+    projectcss.__wab_text,
+    sty.h2__nCrwW,
+    !isHairRestoration && "!text-white"
+  );
+
+  const faqSpanStyle = {
+    fontWeight: 500,
+    fontStyle: "italic",
+    color: isHairRestoration ? "#D19D51" : "#fad8a7"
+  };
+
   return (
     <React.Fragment>
       <Head>
@@ -221,7 +243,7 @@ function PlasmicBotoxLander__RenderFunc(props) {
                       <React.Fragment>
                         <React.Fragment>
                           {service.hero.tagline}
-                          {service.category === "hair-restoration" ? " with\n" : " with "}
+                          {isHairRestoration ? " with\n" : " with "}
                         </React.Fragment>
                         
                         <span
@@ -319,7 +341,7 @@ function PlasmicBotoxLander__RenderFunc(props) {
               <SmallInfoCard
                 icon="/icons/discount.svg"
                 emphasis={ 
-                  service.category === "hair-restoration" 
+                  isHairRestoration 
                     ? `${service.general.salePrice}`
                     : `${service.general.salePrice}${service.general.perUnit}` 
                   }
@@ -327,7 +349,7 @@ function PlasmicBotoxLander__RenderFunc(props) {
                 subtitle={`Exclusive <strong>${service.general.discount} discount</strong> for your first procedure`}
               />
               {
-                service.category === "hair-restoration"
+                isHairRestoration
                   ?
                   <SmallInfoCard
                     icon="/icons/star.svg"
@@ -347,7 +369,7 @@ function PlasmicBotoxLander__RenderFunc(props) {
           </section>
 
           {
-            service.category === "hair-restoration"
+            isHairRestoration
             // FOR HAIR RESTORATION PAGES
             ?
             <>
@@ -661,7 +683,7 @@ function PlasmicBotoxLander__RenderFunc(props) {
 
 
           {
-            service.category === "hair-restoration"
+            isHairRestoration
 
             // IF HAIR RESTORATION
             ? <></>
@@ -887,7 +909,7 @@ function PlasmicBotoxLander__RenderFunc(props) {
 
 
           {
-            service.category === "hair-restoration"
+            isHairRestoration
 
             // IF HAIR RESTORATION
             ?
@@ -977,39 +999,28 @@ function PlasmicBotoxLander__RenderFunc(props) {
           }
 
           {/* QUESTION ANSWERS FAQ */}
-          <section className={classNames(projectcss.all, sty.section__qz9Z)}>
+          <section className={faqSectionClass}>
             <Stack__
-              as={"div"}
+              as="div"
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__d6O5E)}
             >
               <Stack__
-                as={"div"}
+                as="div"
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__kmhJs)}
               >
-                <h2
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h2,
-                    projectcss.__wab_text,
-                    sty.h2__nCrwW
-                  )}
-                >
-                  <React.Fragment>
-                    <React.Fragment>{"Our "}</React.Fragment>
+                <h2 className={faqHeadingClass}>
+                  <>
+                    {"Our "}
                     <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{
-                        fontWeight: 500,
-                        fontStyle: "italic",
-                        color: "#D19D51"
-                      }}
+                      className="plasmic_default__all plasmic_default__span"
+                      style={faqSpanStyle}
                     >
                       {"Answers"}
                     </span>
-                    <React.Fragment>{"\nfor Your Questions"}</React.Fragment>
-                  </React.Fragment>
+                    {"\nfor Your Questions"}
+                  </>
                 </h2>
                 <p
                   className={classNames(
@@ -1024,13 +1035,15 @@ function PlasmicBotoxLander__RenderFunc(props) {
                   {", and you can join them today!"}
                 </p>
               </Stack__>
+
               <Stack__
-                as={"div"}
+                as="div"
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__rlxr1)}
               >
                 {service.faqs.map((faq) => (
                   <Faq
+                    key={faq.id}
                     id={faq.id}
                     answer={faq.answer}
                     question={faq.question}
@@ -1042,7 +1055,7 @@ function PlasmicBotoxLander__RenderFunc(props) {
 
           {/* VIDEO */}
           {
-            service.category === "hair-restoration"
+            isHairRestoration
 
             // IF HAIR RESTORATION
             ?
@@ -1114,7 +1127,7 @@ function PlasmicBotoxLander__RenderFunc(props) {
 
           {/* CLAIM SPECIAL OFFER */}
           {
-            service.category === "hair-restoration"
+            isHairRestoration
 
             // IF HAIR RESTORATION
             ?
