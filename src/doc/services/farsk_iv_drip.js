@@ -1,5 +1,6 @@
 const farsk_iv_drip = {
     slug: "iv_drip",
+    // isMigrated: true,
     category: "wellness",
     general: {
         strikePrice: "$599",
@@ -22,21 +23,20 @@ const farsk_iv_drip = {
         results: "Most clients feel refreshed, energized, and rebalanced within hours. With full nutrient absorption and zero digestion required, IV therapy delivers fast and lasting benefits you can feel."
     },
     whatAndHowItWorks: {
-        titlePrefix: "What is Botox",
+        titlePrefix: "What are Färsk IV Drips",
         titleEmphasis: "and How Does It Work?",
         points: [
             {
-                heading: "Botox is FDA-approved and trusted worldwide",
-                description: "This remarkable treatment works by temporarily relaxing targeted muscles, helping to reduce the appearance of fine lines and wrinkles caused by repeated facial expressions."
+                heading: "Targeted Wellness from the Inside Out",
+                description: "Advanced wellness treatment that delivers a potent blend of vitamins, minerals, antioxidants, and hydration directly into your bloodstream for fast, effective, and lasting results. Unlike oral supplements, IV therapy bypasses the digestive system—ensuring 100% absorption of essential nutrients."
             },
             {
-                heading: "Cater to Many Use Cases",
-                description: "Whether you’re looking to soften crow’s feet, forehead lines, or frown lines, Botox offers a safe and effective solution for achieving a rejuvenated appearance.",
-
+                heading: "How IV Therapy Nourishes Your Body",
+                description: "Each drip is custom-formulated to target specific health and beauty goals—whether it’s boosting energy, strengthening immunity, enhancing skin radiance, speeding up recovery, or fighting fatigue. Delivered by a trained medical professional, the infusion takes 30–60 minutes while you relax in-clinic.",
             },
             {
-                heading: "How it Works",
-                description: "Botox blocks nerve signals to specific muscles, preventing them from contracting. By targeting the neuromuscular junction, it inhibits the release of acetylcholine—a neurotransmitter that triggers muscle movement. This temporary “freeze” allows the skin above these muscles to appear smoother and more refreshed."
+                heading: "Feel Better. Look Better. Perform Better.",
+                description: "Whether you’re recharging after a long week, prepping for a big event, or maintaining peak wellness, FARSK IV Drip Therapy offers a safe, efficient, and rejuvenating solution with little to no downtime—so you leave feeling refreshed, rebalanced, and revitalized."
             }
         ],
         img: "/media/botox-what-and-how.png"
@@ -142,56 +142,56 @@ const farsk_iv_drip = {
     },
     infoInteractive: {
         title: {
-            prefix: "Skin Concerns",
-            emphasis: "Sculptra Can Address"
+            prefix: "Conditions Färsk IV Drips",
+            emphasis: "Can Help With"
         },
-        description: "These bio-stimulating treatments target the root causes of facial aging, not just surface symptoms. Unlike temporary fillers that mask problems briefly, Sculptra and Radiesse rebuild your facial foundation from within. Here are the most common concerns our clients successfully address with these transformative treatments:",
         data: [
             {
                 id: 1,
-                name: "Hollow Cheeks or Temples",
-                description: "Shadows form where fullness once lived. The temples sink. Cheeks lose their curve. It creates that drawn, exhausted appearance nobody wants. Treatment rebuilds what time took away—dimension returns, contours soften, and suddenly you recognize yourself in photos again.",
-                img: "/media/services/skin_interactive.webp"
+                name: "Fatigue & Low Energy",
+                description: "Whether it’s chronic tiredness, low stamina, or burnout from a busy lifestyle, Farsk’s Energy Drip delivers a high-potency blend of B12, magnesium, and amino acids to recharge your system and elevate energy levels quickly."
             },
             {
                 id: 2,
-                name: "Nasolabial Folds (Smile Lines)",
-                description: "Those grooves from nose to mouth corners? They deepen year by year. Treatment doesn't erase them completely (that would look strange). Instead, it softens their depth. The transition becomes gentler. Natural. Like turning back the clock just enough.",
-                img: "/media/services/skin_interactive.webp"
+                name: "Weakened Immune System",
+                description: "Our Immune Defense Drip helps you fight off illness and stay resilient with a powerful combination of Vitamin C, zinc, and antioxidants. Ideal during cold and flu season or when you're feeling run-down."
             },
             {
                 id: 3,
-                name: "Marionette Lines",
-                description: "Eliminate downturned lines at the mouth corners that create a perpetually sad or tired expression. These treatments lift and fill the area, restoring a more pleasant, youthful appearance to your lower face.",
-                img: "/media/services/skin_interactive.webp"
+                name: "Brain Fog & Focus Issues",
+                description: "The NAD+ Drip supports mitochondrial function, detoxification, and neuroregeneration — giving you better clarity, sharper focus, and improved memory. Often used by high performers, biohackers, and those recovering from stress or inflammation.",
             },
             {
                 id: 4,
-                name: `Jawline Definition`,
-                description: `Restore sharp jawline contours lost to aging and early jowling. Treatment rebuilds structure along the jaw, creating defined edges that frame your face beautifully and combat sagging in this critical area.`,
-                img: "/media/services/skin_interactive.webp"
+                name: "Dehydration & Jet Lag",
+                description: "Long flights, late nights, or just not enough water? Farsk IV therapy rehydrates your body at the cellular level. All our drips include a base of balanced electrolytes and fluids to help you feel refreshed fast.",
             },
             {
                 id: 5,
-                name: "General Loss of Facial Volume",
-                description: "Collagen production slows. It's inevitable. The whole face loses its plumpness, not dramatically at first, just enough to notice something's different. Treatment reverses this deflation systematically. Fullness returns where it matters. That tired, drawn quality? Gone.",
-                img: "/media/services/skin_interactive.webp"
+                name: "Dull Skin & Poor Complexion",
+                description: "Our Radiance Drip is a favorite for glowing skin. It combines glutathione, Vitamin C, and key nutrients to brighten tone, reduce inflammation, and boost collagen production for healthier, more luminous skin."
             },
             {
                 id: 6,
-                name: "Chin Wrinkles",
-                description: "Horizontal lines etch themselves across the chin. They age the lower face, creating unwanted texture. Treatment addresses both issues—filling the lines while reinforcing what's beneath. The chin becomes smooth again. Firm. Youthful in its contours.",
-                img: "/media/services/skin_interactive.webp"
+                name: "Stress & Burnout",
+                description: "Under pressure or running on fumes? IV drips deliver stress-fighting nutrients like magnesium and B-complex vitamins that regulate the nervous system and help your body reset."
+            },
+            {
+                id: 7,
+                name: "Recovery from Illness or Exercise",
+                description: "Whether you're getting over a cold or recovering from an intense workout, IV therapy replenishes nutrients lost during physical stress — helping speed up recovery, reduce inflammation, and restore your baseline faster."
+            },
+            {
+                id: 8,
+                name: "Nutrient Deficiencies",
+                description: "If your body isn’t absorbing nutrients properly — due to diet, medications, or digestive issues — IV therapy bypasses the gut for 100% absorption. Custom formulas can be adjusted based on your lifestyle or bloodwork."
             }
         ]
     },
     wantToLearnMore: {
         title: {
-            prefix: "Curious About ",
-            emphasis: "Sculptra?",
-            end: "\nStart here"
-        },
-        description: "New to injectables? Already tried other fillers? Our team can walk you through your options. We've helped hundreds of patients make informed choices, and we start with a free, pressure-free chat about what might work for you."
+            emphasis: "Färsk IV Drip Therapy is right"
+        }
     },
     preparingForAppointment: {
         titlePrefix: "Preparing for Your",
@@ -246,57 +246,58 @@ const farsk_iv_drip = {
     },
     transformations: {
         title: {
-            first: "PRP Hair Restoration Has Already ",
-            emphasis: "Transformed",
-            last: " 100,000+ Lives"
+            first: "Understanding ",
+            emphasis: "the Risks",
+            last: " of IV Drip Therapy"
         },
+        description: "IV therapy is low-risk and well-tolerated, but mild side effects can occasionally happen.",
         cards: [
             {
                 id: 1,
-                title: "Thinning Hair and Receding Hairline",
-                subtitle: "Restore volume and strengthen thinning hair along the hairline for a fuller, thicker appearance.",
-                img: "/media/services/prp/7.1.jpg"
+                title: "Minor Bruising or Discomfort",
+                subtitle: "You may notice a small bruise, tenderness, or bump where the IV was placed. This is common and fades quickly.",
+                img: "/media/services/botox/redness.png"
             },
             {
                 id: 2,
-                title: "Bald Spots",
-                subtitle: "Stimulate growth in bald areas to encourage new hair follicles and promote even regrowth across the scalp.",
-                img: "/media/services/prp/7.2.jpg"
+                title: "Feeling Lightheaded",
+                subtitle: "Some clients feel a little dizzy during or after treatment—especially if they haven’t eaten beforehand. A light snack usually helps.",
+                img: "/media/services/botox/headaches.png"
             },
             {
                 id: 3,
-                title: "Hair Thinning on Crown and Temples",
-                subtitle: "Target areas of thinning around the crown and temples for more density and healthier-looking hair",
-                img: "/media/services/prp/7.3.jpg"
+                title: "Cold Sensation During Drip",
+                subtitle: "A cool feeling in the arm or throughout the body is normal as fluids enter your system. It resolves quickly after the session.",
+                img: "/media/services/botox/eyelid.png"
             },
             {
                 id: 4,
-                title: "Overall Hair Density",
-                subtitle: "Increase the thickness and fullness of your hair, enhancing its natural volume for a refreshed and revitalized appearance.",
-                img: "/media/services/prp/7.4.jpg"
+                title: "Mild Detox Symptoms",
+                subtitle: "As your body processes the infusion, you may feel a temporary increase in urination, thirst, or fatigue. This passes as your system rebalances.",
+                img: "/media/services/botox/allergy.png"
             }
         ]
     },
     faqs: [
         {
             id: 1,
-            question: "How do I know if I’m a candidate?",
-            answer: "Come in for a complimentary consultation with our expert providers, who will assess your hair and scalp to recommend a customized treatment plan unique for you."
+            question: "How soon will I feel the effects?",
+            answer: "Many clients report feeling refreshed, energized, and mentally sharper within 24 hours of treatment. Some benefits, like immune support or skin clarity, become more noticeable over the next few days."
         },
         {
             id: 2,
-            question: "When will I see results?",
-            answer: "From our experience with over 2,000 clients, results start to show within 3-4 sessions. It is critical to take good care of your scalp and hair outside of the clinic such as using safe shampoos and lotions."
+            question: "How long does each session take?",
+            answer: "A typical IV therapy session takes 30 to 45 minutes, depending on the formulation and your hydration status. You can relax, scroll your phone, or read during your infusion."
         },
         {
             id: 3,
-            question: "Are there side effects or any recovery time needed?",
-            answer: "The great thing about PRP is that there is no recovery time needed - most patients feel good enough to immediately go back about their day."
+            question: "How often should I get IV therapy?",
+            answer: "Frequency depends on your individual goals. Some clients come in weekly for wellness maintenance or recovery, while others do monthly sessions for immunity or skin health. Our team will recommend a schedule based on your needs."
         },
         {
             id: 4,
-            question: "Can I do PRP the same day of my consultation?",
-            answer: "Yes you can!"
+            question: "Is IV therapy safe?",
+            answer: "Yes. IV therapy is performed by trained medical professionals using sterile, medical-grade ingredients and equipment. Your treatment is fully tailored to your health history and goals to ensure both safety and effectiveness."
         }
     ]
 }

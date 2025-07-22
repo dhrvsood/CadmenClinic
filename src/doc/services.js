@@ -9,6 +9,7 @@ import chemical_peels from "./services/chemical-peels";
 import lip_fillers from "./services/lip-filler";
 import dermal_fillers from "./services/dermal-fillers";
 import sculptra from "./services/sculptra";
+import microneedling from "./services/microneedling";
 
 // WELLNESS
 import farsk_iv_drip from "./services/farsk_iv_drip";
@@ -23,6 +24,7 @@ export const servicesData = {
     "lip-fillers": lip_fillers,
     "dermal-fillers": dermal_fillers,
     "sculptra": sculptra,
+    "microneedling": microneedling,
     
     "farsk-iv-drip": farsk_iv_drip
 }
