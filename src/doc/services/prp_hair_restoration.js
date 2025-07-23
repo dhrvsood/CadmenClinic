@@ -1,5 +1,6 @@
 const prp_hair_restoration = {
     slug: "prp-hair-restoration",
+    tabTitle: "PRP Hair Restoration",
     isMigrated: true,
     category: "hair-restoration",
     general: {

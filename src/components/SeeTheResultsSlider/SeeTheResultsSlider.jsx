@@ -129,14 +129,14 @@ const data = [
           description:
             'Stimulates collagen production for long-lasting, natural results.',
           image: '/seeTheResultsSlider/injectables/injectables-3a.avif',
-          link: '/services/coming-soon'
+          link: '/services/sculptra'
         },
         backCard: {
           title: 'SCULPTRA®',
           description:
             'Stimulates collagen production for long-lasting, natural results.',
           image: '/seeTheResultsSlider/injectables/injectables-3b.avif',
-          link: '/services/coming-soon'
+          link: '/services/sculptra'
         }
       },
       {
@@ -159,14 +159,30 @@ const data = [
           description:
             'Combines PRP therapy with microneedling for ultimate skin rejuvenation.',
           image: '/seeTheResultsSlider/skinTreatments/skin-4a.avif',
-          link: '/services/blood-facial-prp-microneedling'
+          link: '/services/prp-facial'
         },
         backCard: {
           title: 'PRP (Vampire) Facial',
           description:
             'Combines PRP therapy with microneedling for ultimate skin rejuvenation.',
           image: '/seeTheResultsSlider/skinTreatments/skin-4b.avif',
-          link: '/services/blood-facial-prp-microneedling'
+          link: '/services/prp-facial'
+        }
+      },
+      {
+        frontCard: {
+          title: 'PRP Injections',
+          description: 'Combines PRP therapy with microneedling for ultimate skin rejuvenation.',
+          image: '/seeTheResultsSlider/skinTreatments/skin-4a.avif',
+          link: '/services/prp-injections'
+        }
+      },
+      {
+        frontCard: {
+          title: 'Botox® Sweat Reduction',
+          description: 'Combines PRP therapy with microneedling for ultimate skin rejuvenation.',
+          image: '/seeTheResultsSlider/skinTreatments/skin-4a.avif',
+          link: '/services/botox-sweat-reduction'
         }
       }
     ]
@@ -181,11 +197,19 @@ const data = [
     items: [
       {
         frontCard: {
+          title: 'Kybella / Fat Melting',
+          description: 'Combines PRP therapy with microneedling for ultimate skin rejuvenation.',
+          image: '/seeTheResultsSlider/skinTreatments/skin-4a.avif',
+          link: '/services/kybella'
+        }
+      },
+      {
+        frontCard: {
           title: 'Färsk IV Drip Therapy',
           description:
             'Select from a range of IV drips targeting revitalizing energy levels, providing a youthful glow, promoting cellular regeneration, and combatting anti-aging.',
           image: '/media/home/IV Drip Therapy.jpg',
-          link: '/services/farsk-nad-iv'
+          link: '/services/farsk-iv-drip'
         }
       },
       {

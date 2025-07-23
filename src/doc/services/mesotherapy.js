@@ -1,5 +1,6 @@
 const mesotherapy = {
     slug: "mesotherapy",
+    tabTitle: "Mesotherapy Vitamins",
     isMigrated: true,
     category: "hair-restoration",
     general: {

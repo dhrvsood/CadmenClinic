@@ -1,6 +1,7 @@
 const chemical_peels = {
     slug: "chemical-peels",
-    // isMigrated: true,
+    tabTitle: "Chemical Peels",
+    isMigrated: true,
     category: "skin-treatments",
     general: {
         strikePrice: "$499",

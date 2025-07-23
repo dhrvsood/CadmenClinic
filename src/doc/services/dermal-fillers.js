@@ -1,5 +1,6 @@
 const dermal_fillers = {
     slug: "dermal-fillers",
+    tabTitle: "Dermal Fillers",
     isMigrated: true,
     category: "skin-treatments",
     general: {

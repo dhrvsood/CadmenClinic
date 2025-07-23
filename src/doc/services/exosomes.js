@@ -1,5 +1,6 @@
 const exosomes = {
     slug: "exosomes",
+    tabTitle: "Exosome Hair Therapy",
     isMigrated: true,
     category: "hair-restoration",
     general: {

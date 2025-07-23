@@ -1,11 +1,12 @@
 const botox_sweat_reduction = {
     slug: "botox-sweat-reduction",
-    // isMigrated: true,
+    tabTitle: "Botox® Sweat Reduction",
+    isMigrated: true,
     category: "skin-treatments",
     general: {
         strikePrice: "$999",
         salePrice: "$799",
-        perUnit: " / Session",
+        perUnit: " / session",
         discount: "20%",
         shortTitle: "Botox®",
         longTitle: "Botox®"
@@ -46,7 +47,6 @@ const botox_sweat_reduction = {
             prefix: "Personalized Botox Sweat Reduction Treatments",
             emphasis: "Designed for You"
         },
-        description: "At CADMEN Clinic, we've learned that no two faces age the same way. That's why we tailor your Sculptra treatment to your needs.",
         regularUnit: "Session Regular Price",
         specialUnit: "First Session Special",
         cards: [

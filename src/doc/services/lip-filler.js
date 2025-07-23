@@ -1,5 +1,6 @@
 const lip_fillers = {
     slug: "lip-fillers",
+    tabTitle: "Lip Fillers",
     isMigrated: true,
     category: "skin-treatments",
     general: {

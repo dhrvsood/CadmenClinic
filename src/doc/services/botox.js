@@ -1,5 +1,6 @@
 const botox = {
     slug: "botox",
+    tabTitle: "Botox® Wrinkle Relaxer Treatment",
     isMigrated: true,
     category: "skin-treatments",
     general: {
