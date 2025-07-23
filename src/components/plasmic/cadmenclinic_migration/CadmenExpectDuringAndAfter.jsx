@@ -10,6 +10,7 @@ import {
 import projectcss from "@/components/plasmic/blank_website/plasmic.module.css";
 import sty from "@/components/plasmic/cadmenclinic_migration/PlasmicBotoxSeo.module.css";   
 import PointIcon from "./icons/PlasmicIcon__Point";
+import parse from 'html-react-parser';
 
 const CadmenExpectDuringAndAfter = ({
     overrides = {}, 
@@ -153,7 +154,7 @@ const CadmenExpectDuringAndAfter = ({
                             className="plasmic_default__all plasmic_default__span"
                             style={{ color: "#535556" }}
                           >
-                            {point}
+                            {parse(point)}
                           </span>
                         </div>
                       </div>

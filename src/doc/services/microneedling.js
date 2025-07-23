@@ -1,11 +1,12 @@
 const microneedling = {
     slug: "microneedling",
-    // isMigrated: true,
+    tabTitle: "Microneedling Facial",
+    isMigrated: true,
     category: "skin-treatments",
     general: {
         strikePrice: "$599",
         salePrice: "$399",
-        perUnit: " / Session",
+        perUnit: " / session",
         discount: "30%",
         shortTitle: "Microneedling",
         longTitle: "Microneedling"

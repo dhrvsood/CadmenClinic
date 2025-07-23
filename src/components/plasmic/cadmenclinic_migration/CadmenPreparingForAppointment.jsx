@@ -10,7 +10,7 @@ import {
 import projectcss from "@/components/plasmic/blank_website/plasmic.module.css";
 import sty from "@/components/plasmic/cadmenclinic_migration/PlasmicBotoxSeo.module.css";   
 import PointIcon from "./icons/PlasmicIcon__Point";
-
+import parse from 'html-react-parser';
 
 const CadmenPreparingForAppointment = ({
     overrides = {}, 
@@ -139,7 +139,7 @@ const CadmenPreparingForAppointment = ({
                                 sty.text___6Xz0B
                             )}
                         >
-                            {point.description}
+                            {parse(point.description)}
                         </div>
                     </div>
                 ))}

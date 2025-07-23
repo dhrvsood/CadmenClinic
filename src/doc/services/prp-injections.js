@@ -1,11 +1,12 @@
 const prp_injections = {
     slug: "prp-injections",
-    // isMigrated: true,
+    tabTitle: "PRP Injections",
+    isMigrated: true,
     category: "skin-treatments",
     general: {
         strikePrice: "$599",
         salePrice: "$499",
-        perUnit: " / Session",
+        perUnit: " / session",
         discount: "20%",
         shortTitle: "PRP Injections",
         longTitle: "PRP Injections"

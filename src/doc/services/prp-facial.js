@@ -1,11 +1,12 @@
 const prp_facial = {
     slug: "prp-facial",
-    // isMigrated: true,
+    tabTitle: "PRP (Vampire) Facial",
+    isMigrated: true,
     category: "skin-treatments",
     general: {
         strikePrice: "$799",
         salePrice: "$599",
-        perUnit: " / Session",
+        perUnit: " / session",
         discount: "25%",
         shortTitle: "PRP Facial",
         longTitle: "PRP Facial"

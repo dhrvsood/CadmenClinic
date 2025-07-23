@@ -1,11 +1,12 @@
 const sculptra = {
     slug: "sculptra",
-    // isMigrated: true,
+    tabTitle: "SCULPTRA®",
+    isMigrated: true,
     category: "skin-treatments",
     general: {
         strikePrice: "$1,099",
         salePrice: "$899",
-        perUnit: " / Vial",
+        perUnit: " / vial",
         discount: "20%",
         shortTitle: "Sculptra",
         longTitle: "Sculptra"
@@ -69,7 +70,7 @@ const sculptra = {
     },
     ourProcess: {
         title: "Sculptra",
-        subheading: "Quick, comfortable appointments with immediate return to daily activities. Most treatments are completed in under 45 minutes with minimal discomfort.",
+        subheading: "Quick, comfortable appointments with immediate return to daily activities.\nMost treatments are completed in under 45 minutes with minimal discomfort.",
         consultation: "Your face tells its own story. We study its unique architecture. Listen to what you envision. Some faces lose volume in the temples first. Others hollow at the cheeks. A detailed consultation reveals your pattern. Then we map out exactly how to address what bothers you most.",
         treatment: "Precise injections using lidocaine for comfort. We carefully place product in targeted areas, then gently massage to ensure even distribution. The entire process is quick, virtually painless, and requires no downtime.",
         results: "Gradual improvements appear over 2-3 sessions spaced weeks apart. Your transformation builds slowly, creating natural-looking volume that friends notice but can't identify. No dramatic changes or obvious cosmetic appearance."

@@ -92,7 +92,7 @@ export const categories = {
       {
         "title": "SCULPTRA®",
         "subTitle": "Define, increase volume, and enhance the natural fullness of the jaw, cheeks, and lips",
-        "slug": "/coming-soon",
+        "slug": "/sculptra",
         "categoryOrder": 5,
         "heroImage": {
           "asset": {
@@ -116,7 +116,7 @@ export const categories = {
       {
         "title": "PRP (Vampire) Facial",
         "subTitle": "Define, increase volume, and enhance the natural fullness of the jaw, cheeks, and lips",
-        "slug": "/blood-facial-prp-microneedling",
+        "slug": "/prp-facial",
         "categoryOrder": 7,
         "heroImage": {
           "asset": {
@@ -124,16 +124,31 @@ export const categories = {
           },
           "alt": "Dermal Fillers Service Image"
         }
-      }
+      },
+      {
+        title: "PRP Injections",
+        slug: "prp-injections",
+        categoryOrder: 8
+      },
+      {
+        title: "Botox® Sweat Reduction",
+        slug: "botox-sweat-reduction",
+        categoryOrder: 9
+      },
     ]
   },
   "Wellness": {
     "services": [
       {
+        title: "Kybella / Fat Melting",
+        slug: "kybella",
+        categoryOrder: 1
+      },
+      {
         "title": "IV Drip Therapy",
         "subTitle": "Define, increase volume, and enhance the natural fullness of the jaw, cheeks, and lips",
-        "slug": "/farsk-nad-iv",
-        "categoryOrder": 1,
+        "slug": "/farsk-iv-drip",
+        "categoryOrder": 2,
         "heroImage": {
           "asset": {
             "url": "/media/services/dermal-filters.webp"
@@ -145,7 +160,7 @@ export const categories = {
         "title": "Semaglutide Therapy",
         "subTitle": "Define, increase volume, and enhance the natural fullness of the jaw, cheeks, and lips",
         "slug": "/semaglutide-therapy",
-        "categoryOrder": 2,
+        "categoryOrder": 3,
         "heroImage": {
           "asset": {
             "url": "/media/services/dermal-filters.webp"
