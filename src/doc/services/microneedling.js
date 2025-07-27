@@ -12,7 +12,7 @@ const microneedling = {
         longTitle: "Microneedling"
     },
     hero: {
-        img: "/media/services/prp-hair-restoration.webp",
+        img: "/media/services/microneedling/hero.avif",
         tagline: "Rejuvenate Your Skin",
         description: "enjoy smoother, firmer, and more radiant skin as your body begins to naturally produce collagen and renew itself from within."
     },
@@ -82,8 +82,8 @@ const microneedling = {
         cards: [
             {
                 name: "Microneedling",
-                regularPrice: "400",
-                specialPrice: "280",
+                regularPrice: "599",
+                specialPrice: "399",
                 points: [
                     {
                         title: "Stimulates Collagen and Elastin",
@@ -97,8 +97,8 @@ const microneedling = {
             },
             {
                 name: "Microneedling + Exosomes",
-                regularPrice: "600",
-                specialPrice: "420",
+                regularPrice: "799",
+                specialPrice: "599",
                 points: [
                     {
                         title: "Next-Level Rejuvenation with Exosomes",
@@ -163,33 +163,31 @@ const microneedling = {
             {
                 heading: "Stay Well-Hydrated",
                 description: "Hydrated skin is healthier and more resilient. Drink plenty of water in the days leading up to your appointment to support healing and collagen production."
-            },
-            {
-                heading: "Arrive with Clean, Product-Free Skin",
-                description: "On the day of your treatment, come with a freshly cleansed face free of makeup, moisturizers, sunscreen, or other skincare products. This ensures a safe and effective procedure with maximum absorption of any post-treatment serums."
             }
         ],
-        img: "/media/services/microneedling/preparingForAppointment.webp"
+        img: "/media/services/microneedling/preparingForAppointment.jpg"
     },
     expectDuringAfter: {
-        title: {
-            prefix: "How to Prepare for",
-            emphasis: "Your Microneedling",
-            end: " Treatment"
-        },
         subheading: "Proper preparation and aftercare are essential for maximizing your microneedling results. Following these simple guidelines will ensure your skin responds optimally to treatment while minimizing potential side effects. Here's everything you need to know before and after your session:",
         img: "/media/services/microneedling/expectDuringAfter.webp",
         sections: [
             {
                 title: "Pre-Treatment Preparation and Guidelines",
                 points: [
-                    "- Avoiding sun exposure, retinoids, and exfoliants for 3-5 days before treatment - Coming to your appointment with clean skin (no makeup, lotions, or sunscreen) - Postponing treatment if you have active acne breakouts, cold sores, or skin infections - Discussing any medications you're taking that might affect healing - Staying well-hydrated in the days leading up to your treatment"
+                    "Avoiding sun exposure, retinoids, and exfoliants for 3-5 days before treatment",
+                    "Coming to your appointment with clean skin (no makeup, lotions, or sunscreen)",
+                    "Postponing treatment if you have active acne breakouts, cold sores, or skin infections",
+                    "Discussing any medications you're taking that might affect healing",
+                    "Staying well-hydrated in the days leading up to your treatment"
                 ]
             },
             {
                 title: "Post-Treatment Care, Recovery, and Downtime",
                 points: [
-                    "- Mild redness and sensitivity (similar to a sunburn) for 24-48 hours - Minimal downtime—most clients return to normal activities the next day - Possible mild swelling, dryness, or flaking as your skin heals - Visible improvements beginning within 1-2 weeks as collagen production increases - Continued enhancement of skin texture for up to 6 months following treatment"
+                    "Mild redness and sensitivity (similar to a sunburn) for 24-48 hours",
+                    "Minimal downtime—most clients return to normal activities the next day",
+                    "Possible mild swelling, dryness, or flaking as your skin heals - Visible improvements beginning within 1-2 weeks as collagen production increases",
+                    "Continued enhancement of skin texture for up to 6 months following treatment"
                 ]
             }
         ]
@@ -204,7 +202,7 @@ const microneedling = {
         cards: [
             {
                 id: 1,
-                title: "Temporary Swelling and Bruising",
+                title: "Temporary Swelling and Sensitivity",
                 subtitle: "Most clients experience mild redness and skin sensitivity for 24-48 hours after treatment. This is a normal part of the healing process and typically subsides quickly with proper aftercare.",
                 img: "/media/services/botox/redness.png"
             },

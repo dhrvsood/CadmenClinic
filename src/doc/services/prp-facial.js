@@ -12,7 +12,7 @@ const prp_facial = {
         longTitle: "PRP Facial"
     },
     hero: {
-        img: "/media/services/prp-hair-restoration.webp",
+        img: "/media/services/prp-facial/hero.avif",
         tagline: "Attain a Youthful, Radiant Look",
         description: "enjoy smoother, firmer, and reverse the signs of aging and reclaim a youthful, radiant appearance."
     },
@@ -72,7 +72,7 @@ const prp_facial = {
             prefix: "Personalized PRP Facial Treatments",
             emphasis: "Designed for You"
         },
-        description: "At CADMEN Clinic, we've learned that no two faces age the same way. That's why we tailor your Sculptra treatment to your needs.",
+        description: "At CADMEN Clinic, we've learned that no two faces age the same way. That's why we tailor your PRP Facial treatment to your needs.",
         regularUnit: "Regular Price",
         specialUnit: "First Session Price",
         cards: [
