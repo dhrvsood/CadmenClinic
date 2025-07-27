@@ -12,7 +12,7 @@ const sculptra = {
         longTitle: "Sculptra"
     },
     hero: {
-        img: "/media/services/prp-hair-restoration.webp",
+        img: "/media/services/sculptra/hero.webp",
         tagline: "Restore Lost Facial Volume",
         description: "rebuild your natural collagen for gradual, authentic results that last two years."
     },
@@ -122,38 +122,32 @@ const sculptra = {
             {
                 id: 1,
                 name: "Hollow Cheeks or Temples",
-                description: "Shadows form where fullness once lived. The temples sink. Cheeks lose their curve. It creates that drawn, exhausted appearance nobody wants. Treatment rebuilds what time took away—dimension returns, contours soften, and suddenly you recognize yourself in photos again.",
-                img: "/media/services/skin_interactive.webp"
+                description: "Shadows form where fullness once lived. The temples sink. Cheeks lose their curve. It creates that drawn, exhausted appearance nobody wants. Treatment rebuilds what time took away—dimension returns, contours soften, and suddenly you recognize yourself in photos again."
             },
             {
                 id: 2,
                 name: "Nasolabial Folds (Smile Lines)",
-                description: "Those grooves from nose to mouth corners? They deepen year by year. Treatment doesn't erase them completely (that would look strange). Instead, it softens their depth. The transition becomes gentler. Natural. Like turning back the clock just enough.",
-                img: "/media/services/skin_interactive.webp"
+                description: "Those grooves from nose to mouth corners? They deepen year by year. Treatment doesn't erase them completely (that would look strange). Instead, it softens their depth. The transition becomes gentler. Natural. Like turning back the clock just enough."
             },
             {
                 id: 3,
                 name: "Marionette Lines",
                 description: "Eliminate downturned lines at the mouth corners that create a perpetually sad or tired expression. These treatments lift and fill the area, restoring a more pleasant, youthful appearance to your lower face.",
-                img: "/media/services/skin_interactive.webp"
             },
             {
                 id: 4,
                 name: `Jawline Definition`,
                 description: `Restore sharp jawline contours lost to aging and early jowling. Treatment rebuilds structure along the jaw, creating defined edges that frame your face beautifully and combat sagging in this critical area.`,
-                img: "/media/services/skin_interactive.webp"
             },
             {
                 id: 5,
                 name: "General Loss of Facial Volume",
                 description: "Collagen production slows. It's inevitable. The whole face loses its plumpness, not dramatically at first, just enough to notice something's different. Treatment reverses this deflation systematically. Fullness returns where it matters. That tired, drawn quality? Gone.",
-                img: "/media/services/skin_interactive.webp"
             },
             {
                 id: 6,
                 name: "Chin Wrinkles",
                 description: "Horizontal lines etch themselves across the chin. They age the lower face, creating unwanted texture. Treatment addresses both issues—filling the lines while reinforcing what's beneath. The chin becomes smooth again. Firm. Youthful in its contours.",
-                img: "/media/services/skin_interactive.webp"
             }
         ]
     },
