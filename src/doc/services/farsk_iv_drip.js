@@ -12,7 +12,7 @@ const farsk_iv_drip = {
         longTitle: "Färsk IV Drips"
     },
     hero: {
-        img: "/media/services/prp-hair-restoration.webp",
+        img: "/media/services/iv/hero.jpg",
         tagline: "Revitalize Your Body",
         description: "revitalize your energy levels, memory, focus, and skin with our range of Färsk IV Drips."
     },
@@ -40,7 +40,7 @@ const farsk_iv_drip = {
                 description: "Whether you’re recharging after a long week, prepping for a big event, or maintaining peak wellness, FARSK IV Drip Therapy offers a safe, efficient, and rejuvenating solution with little to no downtime—so you leave feeling refreshed, rebalanced, and revitalized."
             }
         ],
-        img: "/media/botox-what-and-how.png"
+        img: "/media/services/iv/howItWorks.webp"
     },
     treatmentCards: {
         wide: true,
@@ -52,7 +52,7 @@ const farsk_iv_drip = {
         specialUnit: "First Session Special",
         cards: [
             {
-                name: "Färsk NAD+ IV Drip",
+                name: "Färsk NAD+ IV",
                 regularPrice: "599",
                 specialPrice: "499",
                 points: [
@@ -69,12 +69,12 @@ const farsk_iv_drip = {
                     },
                     {
                         title: "Premium Medical-Grade NAD+",
-                        description: "Unlike traditional fillers, Sculptra results can last over 2 years with proper maintenance."
+                        description: "High-potency formula delivered under clinical supervision for maximum absorption and effect"
                     }
                 ]
             },
             {
-                name: "Färsk Immune IV Drip",
+                name: "Färsk Immune IV",
                 regularPrice: "499",
                 specialPrice: "399",
                 points: [
@@ -96,7 +96,7 @@ const farsk_iv_drip = {
                 ]
             },
             {
-                name: "Färsk Radiance IV Drip",
+                name: "Färsk Radiance IV",
                 regularPrice: "499",
                 specialPrice: "399",
                 points: [
@@ -118,7 +118,7 @@ const farsk_iv_drip = {
                 ]
             },
             {
-                name: "Färsk Energy IV Drip",
+                name: "Färsk Energy IV",
                 regularPrice: "399",
                 specialPrice: "299",
                 points: [
@@ -216,16 +216,11 @@ const farsk_iv_drip = {
                 description: "Skip alcohol for at least 24 hours prior, and avoid excess caffeine the day of — both can dehydrate you and reduce IV effectiveness."
             }
         ],
-        img: "/media/services/botox/preparingForAppointment.png"
+        img: "/media/services/iv/preparingForAppointment.webp"
     },
     expectDuringAfter: {
-        title: {
-            prefix: "What to Expect",
-            emphasis: "During & After",
-            end: " the Treatment"
-        },
         subheading: "IV Drip Therapy delivers essential vitamins, minerals, antioxidants, and fluids directly into your bloodstream for fast, effective absorption.",
-        img: "/media/services/sculptra/expectDuringAfter.webp",
+        img: "/media/home/IV Drip Therapy.jpg",
         sections: [
             {
                 title: "Stay Hydrated",

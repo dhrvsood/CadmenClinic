@@ -12,7 +12,7 @@ const kybella = {
         longTitle: "Fat Melting"
     },
     hero: {
-        img: "/media/services/prp-hair-restoration.webp",
+        img: "/media/services/kybella/hero.jpg",
         tagline: "Eliminate Stubborn Fat",
         description: "break down stubborn fat accumulations on your chin or body."
     },
@@ -59,7 +59,7 @@ const kybella = {
                 description: "Injections are precisely placed to sculpt the area, creating smoother contours and a slimmer profile—without surgery, liposuction, or downtime. Most clients need a series of treatments spaced a few weeks apart for optimal, permanent results."
             }
         ],
-        img: "/media/services/sculptra/whyChooseSculptra.webp"
+        img: "/media/services/kybella/howItWorks.jpg"
     },
     ourProcess: {
         title: "Fat Melting",
@@ -72,7 +72,7 @@ const kybella = {
             prefix: "Personalized Fat Melting Treatments",
             emphasis: "Designed for You"
         },
-        description: "At CADMEN Clinic, we've learned that no two faces age the same way. That's why we tailor your Sculptra treatment to your needs.",
+        description: "At CADMEN Clinic, we've learned that no two faces age the same way. That's why we tailor your Kybella treatment to your needs.",
         regularUnit: "Session Regular Price",
         specialUnit: "First Session Price",
         cards: [
@@ -169,7 +169,7 @@ const kybella = {
                 description: "Swelling, tenderness, and bruising are common post-treatment. Schedule your session at a time when you can rest for a few days if needed."
             }
         ],
-        img: "/media/services/sculptra/preparingForAppointment.webp"
+        img: "/media/services/kybella/preparingForAppointment.webp"
     },
     expectDuringAfter: {
         subheading: "Kybella or fat-dissolving injections work by breaking down fat cells using deoxycholic acid, a naturally occurring compound in the body. Most commonly used under the chin but can be used in other small, stubborn areas.",
