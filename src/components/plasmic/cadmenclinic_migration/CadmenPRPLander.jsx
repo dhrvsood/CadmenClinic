@@ -175,17 +175,17 @@ function PlasmicBotoxLander__RenderFunc(props) {
     <React.Fragment>
       <Head>
         <meta name="twitter:card" content="summary" />
-        <title key="title">CadmenClinic | {service.general.shortTitle}</title>
+        <title key="title">CADMEN Clinic | {service.tabTitle}</title>
         <meta
           key="og:title"
           property="og:title"
-          content={service.general.longTitle}
+          content={service.tabTitle}
         />
 
         <meta
           key="twitter:title"
           name="twitter:title"
-          content={service.general.longTitle}
+          content={service.tabTitle}
         />
       </Head>
 
@@ -1031,7 +1031,7 @@ function PlasmicBotoxLander__RenderFunc(props) {
                   )}
                 >
                   {"Our clients have eliminated their doubts about "}
-                  {service.general.longTitle}
+                  {service.tabTitle}
                   {", and you can join them today!"}
                 </p>
               </Stack__>

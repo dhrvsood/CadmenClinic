@@ -1,5 +1,6 @@
 const dermal_fillers = {
     slug: "dermal-fillers",
+    tabTitle: "Dermal Fillers",
     isMigrated: true,
     category: "skin-treatments",
     general: {
@@ -11,7 +12,7 @@ const dermal_fillers = {
         longTitle: "Dermal Filler"
     },
     hero: {
-        img: "/seeTheResultsSlider/injectables/injectables-1a.avif",
+        img: "/seeTheResultsSlider/skin/botox-front.avif",
         tagline: "Enhance Your Confidence",
         description: "reduce the signs of aging with quick, minimally invasive Botox treatments."
     },

@@ -70,9 +70,9 @@ const data = [
   {
     title: 'Skin Treatments',
     description:
-      'Smooth wrinkles, restore volume, and rejuvenate your skin with our expert injectable treatments.',
-    icon: '/seeTheResultsSlider/injectables/injection-gray.svg',
-    activeIcon: '/seeTheResultsSlider/injectables/injection-white.svg',
+      'Smooth wrinkles, restore volume, and rejuvenate your skin with our expert skin treatments.',
+    icon: '/seeTheResultsSlider/skin/injection-gray.svg',
+    activeIcon: '/seeTheResultsSlider/skin/injection-white.svg',
     showCta: true,
     items: [
       {
@@ -80,30 +80,30 @@ const data = [
           title: 'Botox® Wrinkle Relaxer Treatment',
           description:
             'Reduces wrinkles and fine lines for a smoother, younger-looking appearance.',
-          image: '/seeTheResultsSlider/injectables/injectables-1a.avif',
+          image: '/seeTheResultsSlider/skin/botox-front.avif',
           link: '/services/botox'
         },
         backCard: {
           title: 'Botox® Wrinkle Relaxer Treatment',
           description:
             'Reduces wrinkles and fine lines for a smoother, younger-looking appearance.',
-          image: '/seeTheResultsSlider/injectables/injectables-1b.avif',
+          image: '/seeTheResultsSlider/skin/botox-back.avif',
           link: '/services/botox'
         }
       },
       {
         frontCard: {
-          title: 'Lip Fillers and Augmentation',
+          title: 'Lip Fillers',
           description:
             'Achieve beautifully defined, balanced lips with personalized care.',
-          image: '/seeTheResultsSlider/injectables/injectables-6a.avif',
+          image: '/seeTheResultsSlider/skin/lip-fillers-front.avif',
           link: '/services/lip-fillers'
         },
         backCard: {
-          title: 'Lip Fillers and Augmentation',
+          title: 'Lip Fillers',
           description:
             'Achieve beautifully defined, balanced lips with personalized care.',
-          image: '/seeTheResultsSlider/injectables/injectables-6b.avif',
+          image: '/seeTheResultsSlider/skin/lip-fillers-back.avif',
           link: '/services/lip-fillers'
         }
       },
@@ -112,45 +112,59 @@ const data = [
           title: 'Dermal Fillers',
           description:
             'Enhances facial contours and adds natural volume to cheeks, lips, and more.',
-          image: '/seeTheResultsSlider/injectables/injectables-2a.avif',
+          image: '/seeTheResultsSlider/skin/dermal-fillers-front.avif',
           link: '/services/dermal-fillers'
         },
         backCard: {
           title: 'Dermal Fillers',
           description:
             'Enhances facial contours and adds natural volume to cheeks, lips, and more.',
-          image: '/seeTheResultsSlider/injectables/injectables-2b.avif',
+          image: '/seeTheResultsSlider/skin/dermal-fillers-back.avif',
           link: '/services/dermal-fillers'
         }
       },
       {
         frontCard: {
-          title: 'SCULPTRA®',
-          description:
-            'Stimulates collagen production for long-lasting, natural results.',
-          image: '/seeTheResultsSlider/injectables/injectables-3a.avif',
-          link: '/services/coming-soon'
+          title: 'Microneedling Facial',
+          description: 'Stimulates collagen for firmer, younger-looking skin.',
+          image: '/seeTheResultsSlider/skin/microneedling-front.avif',
+          link: '/services/microneedling'
         },
         backCard: {
-          title: 'SCULPTRA®',
-          description:
-            'Stimulates collagen production for long-lasting, natural results.',
-          image: '/seeTheResultsSlider/injectables/injectables-3b.avif',
-          link: '/services/coming-soon'
+          title: 'Microneedling Facial',
+          description: 'Stimulates collagen for firmer, younger-looking skin.',
+          image: '/seeTheResultsSlider/skin/microneedling-back.avif',
+          link: '/services/microneedling'
         }
       },
       {
         frontCard: {
-          title: 'Microneedling Facial',
-          description: 'Stimulates collagen for firmer, younger-looking skin.',
-          image: '/seeTheResultsSlider/skinTreatments/skin-3a.avif',
-          link: '/services/microneedling'
+          title: 'SCULPTRA®',
+          description:
+            'Stimulates collagen production for long-lasting, natural results.',
+          image: '/seeTheResultsSlider/skin/sculptra-front.avif',
+          link: '/services/sculptra'
         },
         backCard: {
-          title: 'Microneedling Facial',
-          description: 'Stimulates collagen for firmer, younger-looking skin.',
-          image: '/seeTheResultsSlider/skinTreatments/skin-3b.avif',
-          link: '/services/microneedling'
+          title: 'SCULPTRA®',
+          description:
+            'Stimulates collagen production for long-lasting, natural results.',
+          image: '/seeTheResultsSlider/skin/sculptra-back.avif',
+          link: '/services/sculptra'
+        }
+      },
+      {
+        frontCard: {
+          title: 'PRP Injections',
+          description: 'Target undereye or full face for a rejuvenated, refreshed look.',
+          image: '/seeTheResultsSlider/skin/prp-injections.webp',
+          link: '/services/prp-injections'
+        },
+        backCard: {
+          title: 'PRP Injections',
+          description: 'Target undereye or full face for a rejuvenated, refreshed look.',
+          image: '/media/testimonials/prpinjections_Emily.jpeg',
+          link: '/services/prp-injections'
         }
       },
       {
@@ -158,15 +172,39 @@ const data = [
           title: 'PRP (Vampire) Facial',
           description:
             'Combines PRP therapy with microneedling for ultimate skin rejuvenation.',
-          image: '/seeTheResultsSlider/skinTreatments/skin-4a.avif',
-          link: '/services/blood-facial-prp-microneedling'
+          image: '/seeTheResultsSlider/skin/prp-vampire-front.avif',
+          link: '/services/prp-facial'
         },
         backCard: {
           title: 'PRP (Vampire) Facial',
           description:
             'Combines PRP therapy with microneedling for ultimate skin rejuvenation.',
-          image: '/seeTheResultsSlider/skinTreatments/skin-4b.avif',
-          link: '/services/blood-facial-prp-microneedling'
+          image: '/seeTheResultsSlider/skin/prp-vampire-back.avif',
+          link: '/services/prp-facial'
+        }
+      },
+      {
+        frontCard: {
+          title: 'Chemical Peels',
+          description:
+            'Brightens and smooths skin by addressing fine lines, uneven tone, and blemishes.',
+          image: '/seeTheResultsSlider/skin/chemical-peels-front.avif',
+          link: '/services/prp-facial'
+        },
+        backCard: {
+          title: 'Chemical Peels',
+          description:
+            'Brightens and smooths skin by addressing fine lines, uneven tone, and blemishes.',
+          image: '/media/testimonials/chemicalpeel_Gina.webp',
+          link: '/services/prp-facial'
+        }
+      },
+      {
+        frontCard: {
+          title: 'Botox® Sweat Reduction',
+          description: 'Target overactive sweat glands to significantly reduce perspiration in areas like the underarms, hands, or feet.',
+          image: '/seeTheResultsSlider/skin/botox-sweat-reduction.webp',
+          link: '/services/botox-sweat-reduction'
         }
       }
     ]
@@ -175,17 +213,31 @@ const data = [
     title: 'Wellness',
     description:
       'Restore vitality and confidence with treatments that address overall wellness and weight loss.',
-    icon: '/seeTheResultsSlider/skinTreatments/stars-gray.svg',
-    activeIcon: '/seeTheResultsSlider/skinTreatments/stars-white.svg',
+    icon: '/seeTheResultsSlider/wellness/stars-gray.svg',
+    activeIcon: '/seeTheResultsSlider/wellness/stars-white.svg',
     showCta: true,
     items: [
+      {
+        frontCard: {
+          title: 'Kybella / Fat Melting',
+          description: 'Eliminates stubborn fat under the chin for a more defined jawline.',
+          image: '/seeTheResultsSlider/wellness/kybella.webp',
+          link: '/services/kybella'
+        },
+        backCard: {
+          title: 'Kybella / Fat Melting',
+          description: 'Eliminates stubborn fat under the chin for a more defined jawline.',
+          image: '/media/testimonials/kybella_Chantelle.jpeg',
+          link: '/services/kybella'
+        }
+      },
       {
         frontCard: {
           title: 'Färsk IV Drip Therapy',
           description:
             'Select from a range of IV drips targeting revitalizing energy levels, providing a youthful glow, promoting cellular regeneration, and combatting anti-aging.',
           image: '/media/home/IV Drip Therapy.jpg',
-          link: '/services/farsk-nad-iv'
+          link: '/services/farsk-iv-drip'
         }
       },
       {

@@ -1,17 +1,18 @@
 const botox_sweat_reduction = {
     slug: "botox-sweat-reduction",
-    // isMigrated: true,
+    tabTitle: "Botox® Sweat Reduction",
+    isMigrated: true,
     category: "skin-treatments",
     general: {
         strikePrice: "$999",
         salePrice: "$799",
-        perUnit: " / Session",
+        perUnit: " / session",
         discount: "20%",
         shortTitle: "Botox®",
         longTitle: "Botox®"
     },
     hero: {
-        img: "/media/services/prp-hair-restoration.webp",
+        img: "/seeTheResultsSlider/skin/botox-sweat-reduction.webp",
         tagline: "End Excessive Sweating",
         description: "reduce symptoms of excessive sweating, or hyperhidrosis, with Botox injections."
     },
@@ -33,7 +34,7 @@ const botox_sweat_reduction = {
                 description: "The procedure takes just 10–20 minutes with minimal discomfort and no downtime. Most clients experience noticeable dryness within 3–7 days, with results lasting 4 to 6 months—sometimes even longer with repeated treatments."
             }
         ],
-        img: "/media/services/sculptra/whyChooseSculptra.webp"
+        img: "/media/services/botox-sweat-reduction/howItWorks.webp"
     },
     ourProcess: {
         title: "Botox Sweat Reduction",
@@ -46,7 +47,6 @@ const botox_sweat_reduction = {
             prefix: "Personalized Botox Sweat Reduction Treatments",
             emphasis: "Designed for You"
         },
-        description: "At CADMEN Clinic, we've learned that no two faces age the same way. That's why we tailor your Sculptra treatment to your needs.",
         regularUnit: "Session Regular Price",
         specialUnit: "First Session Special",
         cards: [
@@ -134,14 +134,9 @@ const botox_sweat_reduction = {
                 description: "This will help reduce friction and irritation in the treated area post-treatment."
             }
         ],
-        img: "/media/services/sculptra/preparingForAppointment.webp"
+        img: "/media/services/botox-sweat-reduction/preparingForAppointment.png"
     },
     expectDuringAfter: {
-        title: {
-            prefix: "What to Expect",
-            emphasis: "During & After",
-            end: " the Treatment"
-        },
         subheading: "Botox for sweat reduction is a quick, minimally invasive procedure where small amounts of Botox are injected into the sweat glands to block excessive perspiration.",
         img: "/media/services/sculptra/expectDuringAfter.webp",
         sections: [

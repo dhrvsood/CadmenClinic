@@ -2507,8 +2507,8 @@
   height: 20px;
 }
 .dark_faq {
-  background: url("../../../../public/graphics/circlesSvgFaq.svg") bottom 0px right 0px / cover no-repeat,
-#9a7f71;
+  /* background: url("../../../../public/graphics/circlesSvgFaq.svg") bottom 0px right 0px / cover no-repeat, */
+  background: #9a7f71;
   color: white;
 }
 .section__qz9Z {

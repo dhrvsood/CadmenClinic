@@ -1,17 +1,18 @@
 const prp_injections = {
     slug: "prp-injections",
-    // isMigrated: true,
+    tabTitle: "PRP Injections",
+    isMigrated: true,
     category: "skin-treatments",
     general: {
         strikePrice: "$599",
         salePrice: "$499",
-        perUnit: " / Session",
+        perUnit: " / session",
         discount: "20%",
         shortTitle: "PRP Injections",
         longTitle: "PRP Injections"
     },
     hero: {
-        img: "/media/services/prp-hair-restoration.webp",
+        img: "/media/services/prp-injections/hero.webp",
         tagline: "Revitalize Your Face",
         description: "naturally revitalize your face by using your body's own plasma to naturally build collagen for smoother, firmer skin."
     },
@@ -71,7 +72,7 @@ const prp_injections = {
             prefix: "Personalized PRP Injection Treatments",
             emphasis: "Designed for You"
         },
-        description: "At CADMEN Clinic, we've learned that no two faces age the same way. That's why we tailor your Sculptra treatment to your needs.",
+        description: "At CADMEN Clinic, we've learned that no two faces age the same way. That's why we tailor your PRP Injection treatment to your needs.",
         regularUnit: "Regular Price",
         specialUnit: "First Session Special",
         cards: [
@@ -198,11 +199,6 @@ const prp_injections = {
         img: "/media/services/sculptra/preparingForAppointment.webp"
     },
     expectDuringAfter: {
-        title: {
-            prefix: "What to Expect",
-            emphasis: "During & After",
-            end: " the Treatment"
-        },
         subheading: "PRP involves drawing a small amount of your blood, spinning it in a centrifuge to isolate platelet-rich plasma, and applying (or injecting) it into your skin to stimulate collagen and rejuvenation.",
         img: "/media/services/sculptra/expectDuringAfter.webp",
         sections: [

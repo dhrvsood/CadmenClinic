@@ -2176,8 +2176,8 @@
   height: 1em;
 }
 .affordableBotoxSection {
-  /* background: url("../../../../public/graphics/circlesSvgDarkBrown.svg") bottom 0px right 0px / cover no-repeat, #ebdbd6; */
-  background: #ebdbd6;
+  background: url("../../../../public/graphics/circlesSvgDarkBrownTreatments.svg") bottom 0px right 0px / cover no-repeat, #ebdbd6;
+  /* background: #ebdbd6; */
   width: 100%;
   display: flex;
   overflow: hidden;
@@ -2376,7 +2376,7 @@
 
 @media (min-width: 1300px) {
   .freeBox__hib93--narrow {
-    max-width: 60%;
+    max-width: 65%;
   }
 }
 

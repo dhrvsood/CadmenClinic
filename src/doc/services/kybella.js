@@ -1,17 +1,18 @@
 const kybella = {
     slug: "kybella",
-    // isMigrated: true,
+    tabTitle: "Kybella / Fat Melting",
+    isMigrated: true,
     category: "wellness",
     general: {
         strikePrice: "$999",
         salePrice: "$799",
-        perUnit: " / Session",
+        perUnit: " / session",
         discount: "20%",
         shortTitle: "Fat Melting",
         longTitle: "Fat Melting"
     },
     hero: {
-        img: "/media/services/prp-hair-restoration.webp",
+        img: "/media/services/kybella/hero.jpg",
         tagline: "Eliminate Stubborn Fat",
         description: "break down stubborn fat accumulations on your chin or body."
     },
@@ -58,7 +59,7 @@ const kybella = {
                 description: "Injections are precisely placed to sculpt the area, creating smoother contours and a slimmer profile—without surgery, liposuction, or downtime. Most clients need a series of treatments spaced a few weeks apart for optimal, permanent results."
             }
         ],
-        img: "/media/services/sculptra/whyChooseSculptra.webp"
+        img: "/media/services/kybella/howItWorks.jpg"
     },
     ourProcess: {
         title: "Fat Melting",
@@ -71,7 +72,7 @@ const kybella = {
             prefix: "Personalized Fat Melting Treatments",
             emphasis: "Designed for You"
         },
-        description: "At CADMEN Clinic, we've learned that no two faces age the same way. That's why we tailor your Sculptra treatment to your needs.",
+        description: "At CADMEN Clinic, we've learned that no two faces age the same way. That's why we tailor your Kybella treatment to your needs.",
         regularUnit: "Session Regular Price",
         specialUnit: "First Session Price",
         cards: [
@@ -135,7 +136,7 @@ const kybella = {
                 description: "In small quantities, Kybella can be strategically placed to treat fat pads around the inner knees or upper arms, refining the silhouette in hard-to-target areas.",
             },
             {
-                id: 4,
+                id: 6,
                 name: "Stubborn Fat Unresponsive to Diet",
                 description: "When diet and exercise aren’t enough, Kybella offers a targeted approach to fat reduction — with visible results in just a few sessions and no surgical recovery.",
             },
@@ -148,63 +149,64 @@ const kybella = {
     },
     preparingForAppointment: {
         titlePrefix: "Preparing for Your",
-        titleEmphasis: "IV Drip Therapy Appointment",
+        titleEmphasis: "Fat Melting Appointment",
         subheading: "Here are some tips to ensure a smooth and successful experience:",
         points: [
             {
+                heading: "Avoid Blood Thinners",
+                description: "To minimize bruising and swelling, avoid blood-thinning medications and supplements like aspirin, ibuprofen, fish oil, and vitamin E for 5–7 days before your appointment (with physician approval)."
+            },
+            {
+                heading: "Skip Alcohol and Smoking",
+                description: "Avoid alcohol and tobacco for 24–48 hours pre- and post-treatment — both can impair healing and increase swelling.",
+            },
+            {
                 heading: "Stay Hydrated",
-                description: "Although you’ll be receiving fluids, it’s still important to drink plenty of water the day before and the day of your appointment. Hydration helps with easier vein access and better nutrient absorption."
+                description: "Drink plenty of water in the days leading up to your treatment. Hydration supports your body’s healing and metabolic process."
             },
             {
-                heading: "Eat a Light Meal",
-                description: "Eat a balanced snack or meal about <strong>1–2 hours before</strong> your appointment to avoid lightheadedness, especially if your IV includes ingredients that affect blood sugar or energy levels.",
-            },
-            {
-                heading: "Wear Comfortable Clothing",
-                description: "Short sleeves or loose sleeves that can be rolled up easily will make the process smoother for both you and your provider."
-            },
-            {
-                heading: "Avoid Alcohol & Excess Caffeine",
-                description: "Skip alcohol for at least 24 hours prior, and avoid excess caffeine the day of — both can dehydrate you and reduce IV effectiveness."
+                heading: "Plan for Downtime",
+                description: "Swelling, tenderness, and bruising are common post-treatment. Schedule your session at a time when you can rest for a few days if needed."
             }
         ],
-        img: "/media/services/sculptra/preparingForAppointment.webp"
+        img: "/media/services/kybella/preparingForAppointment.webp"
     },
     expectDuringAfter: {
-        title: {
-            prefix: "What to Expect",
-            emphasis: "During & After",
-            end: " the Treatment"
-        },
-        subheading: "IV Drip Therapy delivers essential vitamins, minerals, antioxidants, and fluids directly into your bloodstream for fast, effective absorption.",
+        subheading: "Kybella or fat-dissolving injections work by breaking down fat cells using deoxycholic acid, a naturally occurring compound in the body. Most commonly used under the chin but can be used in other small, stubborn areas.",
         img: "/media/services/sculptra/expectDuringAfter.webp",
         sections: [
             {
-                title: "Stay Hydrated",
+                title: "Expect Swelling",
                 points: [
-                    "Continue drinking water throughout the day to support detoxification and optimize results."
+                    "Significant swelling is normal and may last 3–10 days. Ice packs can be used in short intervals for comfort."
                 ]
             },
             {
-                title: "Resume Normal Activities",
+                title: "Avoid Touching or Massaging",
                 points: [
-                    "Most clients feel energized and refreshed immediately. You’re free to go about your day as usual."
+                    "Do not massage or apply pressure to the treated area. Let your body naturally process the dissolved fat."
                 ]
             },
             {
-                title: "Avoid Alcohol for 24 Hours",
+                title: "No Strenuous Activity for 48 Hours",
                 points: [
-                    "Let your body fully absorb the nutrients without interference from alcohol."
+                    "Avoid workouts, saunas, and anything that raises body heat to reduce swelling and promote healing."
                 ]
             },
             {
-                title: "Monitor for Minor Side Effects",
+                title: "Sleep With Your Head Elevated (if chin/neck treated)",
                 points: [
-                    "Mild bruising or tenderness at the injection site is normal and should resolve quickly. Let us know if you experience anything unusual."
+                    "Elevating your head at night can help reduce swelling faster."
+                ]
+            },
+            {
+                title: "Avoid Alcohol and Salty Foods for a Few Days",
+                points: [
+                    "These can increase water retention and slow down the healing process."
                 ]
             }
         ],
-        footer: "Many clients feel an immediate boost in energy, hydration, and mental clarity, while others notice cumulative benefits over several treatments. The effects can last several days to weeks, depending on your body’s needs and the type of drip used."
+        footer: "Fat reduction results begin to appear after 3–4 weeks, with full results visible in 6–8 weeks. Multiple sessions may be required for optimal contouring."
     },
     transformations: {
         title: {

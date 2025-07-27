@@ -1,6 +1,7 @@
 const farsk_iv_drip = {
     slug: "iv_drip",
-    // isMigrated: true,
+    tabTitle: "Färsk IV Drip Therapy",
+    isMigrated: true,
     category: "wellness",
     general: {
         strikePrice: "$599",
@@ -11,7 +12,7 @@ const farsk_iv_drip = {
         longTitle: "Färsk IV Drips"
     },
     hero: {
-        img: "/media/services/prp-hair-restoration.webp",
+        img: "/media/services/iv/hero.jpg",
         tagline: "Revitalize Your Body",
         description: "revitalize your energy levels, memory, focus, and skin with our range of Färsk IV Drips."
     },
@@ -39,7 +40,7 @@ const farsk_iv_drip = {
                 description: "Whether you’re recharging after a long week, prepping for a big event, or maintaining peak wellness, FARSK IV Drip Therapy offers a safe, efficient, and rejuvenating solution with little to no downtime—so you leave feeling refreshed, rebalanced, and revitalized."
             }
         ],
-        img: "/media/botox-what-and-how.png"
+        img: "/media/services/iv/howItWorks.webp"
     },
     treatmentCards: {
         wide: true,
@@ -51,7 +52,7 @@ const farsk_iv_drip = {
         specialUnit: "First Session Special",
         cards: [
             {
-                name: "Färsk NAD+ IV Drip",
+                name: "Färsk NAD+ IV",
                 regularPrice: "599",
                 specialPrice: "499",
                 points: [
@@ -68,12 +69,12 @@ const farsk_iv_drip = {
                     },
                     {
                         title: "Premium Medical-Grade NAD+",
-                        description: "Unlike traditional fillers, Sculptra results can last over 2 years with proper maintenance."
+                        description: "High-potency formula delivered under clinical supervision for maximum absorption and effect"
                     }
                 ]
             },
             {
-                name: "Färsk Immune IV Drip",
+                name: "Färsk Immune IV",
                 regularPrice: "499",
                 specialPrice: "399",
                 points: [
@@ -95,7 +96,7 @@ const farsk_iv_drip = {
                 ]
             },
             {
-                name: "Färsk Radiance IV Drip",
+                name: "Färsk Radiance IV",
                 regularPrice: "499",
                 specialPrice: "399",
                 points: [
@@ -117,7 +118,7 @@ const farsk_iv_drip = {
                 ]
             },
             {
-                name: "Färsk Energy IV Drip",
+                name: "Färsk Energy IV",
                 regularPrice: "399",
                 specialPrice: "299",
                 points: [
@@ -195,54 +196,58 @@ const farsk_iv_drip = {
     },
     preparingForAppointment: {
         titlePrefix: "Preparing for Your",
-        titleEmphasis: "Lip Filler Appointment",
-        subheading: "To ensure a comfortable and successful lip filler experience, follow these tips:",
+        titleEmphasis: "IV Drip Therapy Appointment",
+        subheading: "Here are some tips to ensure a smooth and successful experience:",
         points: [
             {
-                heading: "Avoid Blood Thinners",
-                description: "A few days before your appointment, try to avoid medications and supplements that can thin your blood, such as aspirin, ibuprofen, and fish oil. This simple step helps minimize bruising at the site."
-            },
-            {
-                heading: "Skip Alcohol and Tobacco",
-                description: "Alcohol and tobacco can increase the likelihood of bruising and slow your skin’s recovery. Refrain from consuming alcohol for at least 24 hours before and after your treatment.",
-            },
-            {
                 heading: "Stay Hydrated",
-                description: "Well-hydrated skin responds better to treatment. Drink plenty of water in the days leading up to your appointment to help your lips look and feel their best."
+                description: "Although you’ll be receiving fluids, it’s still important to drink plenty of water the day before and the day of your appointment. Hydration helps with easier vein access and better nutrient absorption."
             },
             {
-                heading: "Arrive with Clean Skin",
-                description: "Avoid wearing makeup, lip balm, or other products on your lips or around the treatment area on the day of your appointment. Clean, bare skin allows for a more hygienic and effective procedure."
+                heading: "Eat a Light Meal",
+                description: "Eat a balanced snack or meal about <strong>1–2 hours before</strong> your appointment to avoid lightheadedness, especially if your IV includes ingredients that affect blood sugar or energy levels.",
+            },
+            {
+                heading: "Wear Comfortable Clothing",
+                description: "Short sleeves or loose sleeves that can be rolled up easily will make the process smoother for both you and your provider."
+            },
+            {
+                heading: "Avoid Alcohol & Excess Caffeine",
+                description: "Skip alcohol for at least 24 hours prior, and avoid excess caffeine the day of — both can dehydrate you and reduce IV effectiveness."
             }
         ],
-        img: "/media/services/botox/preparingForAppointment.png"
+        img: "/media/services/iv/preparingForAppointment.webp"
     },
     expectDuringAfter: {
-        img: "/media/services/botox/expectDuringAfter.png",
+        subheading: "IV Drip Therapy delivers essential vitamins, minerals, antioxidants, and fluids directly into your bloodstream for fast, effective absorption.",
+        img: "/media/home/IV Drip Therapy.jpg",
         sections: [
             {
-                title: "During the Procedure",
+                title: "Stay Hydrated",
                 points: [
-                    "Quick and Minimally Invasive: Lip filler injections usually take 15–30 minutes. Most clients describe the sensation as a mild pinch or pressure. Your provider may gently massage your lips during the process to ensure smooth, even distribution."
+                    "Continue drinking water throughout the day to support detoxification and optimize results."
                 ]
             },
             {
-                title: "Post-Treatment Care",
+                title: "Resume Normal Activities",
                 points: [
-                    "Avoid Intense Activity: Refrain from strenuous exercise, excessive sun exposure, or extreme temperatures (like saunas or hot tubs) for the first 24–48 hours to minimize swelling and bruising.",
-                    "Reduce Swelling & Bruising: Apply cold compresses or ice packs as recommended to reduce swelling. Avoid alcohol and blood-thinning medications or supplements (unless medically necessary).",
-                    "Stay Hydrated: Drink plenty of water to support hydration and help the filler settle naturally."
+                    "Most clients feel energized and refreshed immediately. You’re free to go about your day as usual."
                 ]
             },
             {
-                title: "When to Expect Results",
+                title: "Avoid Alcohol for 24 Hours",
                 points: [
-                    "Immediate Improvement: You’ll notice an instant boost in lip volume and definition, but some swelling or minor bruising may be present for the first few days.",
-                    "Full, Settled Results: Most clients see their final, refined results within 1–2 weeks as any swelling subsides and the filler integrates fully with your tissue.",
-                    "Follow-Up Appointment: We recommend scheduling a follow-up visit to assess your results, ensure you’re satisfied, and discuss any potential refinements or maintenance treatments."
+                    "Let your body fully absorb the nutrients without interference from alcohol."
+                ]
+            },
+            {
+                title: "Monitor for Minor Side Effects",
+                points: [
+                    "Mild bruising or tenderness at the injection site is normal and should resolve quickly. Let us know if you experience anything unusual."
                 ]
             }
-        ]
+        ],
+        footer: "Many clients feel an immediate boost in energy, hydration, and mental clarity, while others notice cumulative benefits over several treatments. The effects can last several days to weeks, depending on your body’s needs and the type of drip used."
     },
     transformations: {
         title: {
