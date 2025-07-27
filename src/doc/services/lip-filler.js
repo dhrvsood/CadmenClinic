@@ -12,7 +12,7 @@ const lip_fillers = {
         longTitle: "\nLip Filler"
     },
     hero: {
-        img: "/media/services/lip-fillers/hero.avif",
+        img: "/media/services/lip-fillers/hero.jpeg",
         tagline: "Achieve Defined & Balanced Lips",
         description: "achieve beautifully defined, balanced lips with personalized care from our expert team."
     },
@@ -181,7 +181,7 @@ const lip_fillers = {
                 description: "Well-hydrated skin responds better to treatment. Drink plenty of water in the days leading up to your appointment to help your lips look and feel their best."
             }
         ],
-        img: "/media/services/lip-fillers/preparingForAppointment.jpeg"
+        img: "/media/services/botox/expectDuringAfter.png"
     },
     expectDuringAfter: {
         img: "/media/services/lip-fillers/expectDuringAfter.jpeg",
