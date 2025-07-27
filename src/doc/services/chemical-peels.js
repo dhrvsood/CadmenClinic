@@ -12,7 +12,7 @@ const chemical_peels = {
         longTitle: "Chemical Peels"
     },
     hero: {
-        img: "/media/services/lip-fillers/hero.avif",
+        img: "/media/services/chemical-peels/hero.webp",
         tagline: "Transform Damaged Skin",
         description: "transform damaged skin into radiant perfection."
     },
@@ -59,7 +59,7 @@ const chemical_peels = {
                 description: "Triggers your body's wound healing response, flooding treated areas with new collagen and elastin. Weeks pass. The improvements keep building. Scars fill in, texture smooths out naturally"
             }
         ],
-        img: "/media/botox-what-and-how.png"
+        img: "/media/services/chemical-peels/howItWorks.webp"
     },
     ourProcess: {
         title: "Chemical Peels",
@@ -78,7 +78,7 @@ const chemical_peels = {
         specialUnit: "First Session Special",
         cards: [
             {
-                name: "AlumierMD Glow Peel",
+                name: "Glow Peel",
                 regularPrice: 499,
                 specialPrice: 399,
                 points: [
@@ -104,7 +104,7 @@ const chemical_peels = {
                 ]
             },
             {
-                name: "AlumierMD Radiant 30 Peel",
+                name: "Radiant 30 Peel",
                 regularPrice: 799,
                 specialPrice: 599,
                 points: [
@@ -139,37 +139,31 @@ const chemical_peels = {
         description: "Chemical peeling tackles tough skin problems that over-the-counter treatments can’t fix, giving patients medical-grade options for long-lasting results and reassurance.",
         data: [
             {
-                img: "/media/services/skin_interactive.webp",
                 id: 1,
                 name: "Acne Scars",
                 description: "Transform pitted ice pick scars and raised keloids into a smooth, even texture. Medical-grade acids designed for use in medicine can fix scars and also encourage new collagen growth for lasting results."
             },
             {
-                img: "/media/services/skin_interactive.webp",
                 id: 2,
                 name: "Hyperpigmentation",
                 description: "Help get rid of tough dark areas brought on by hormones, sun or inflammation. Professional peels help remove too much melanin and keep new spots from appearing for clearer skin."
             },
             {
-                img: "/media/services/skin_interactive.webp",
                 id: 3,
                 name: "Dark Spots",
                 description: "Remove age spots, sun spots, and post-inflammatory marks that make you look older. Controlled exfoliation targets pigmented cells specifically while preserving surrounding healthy tissue for even results."
             },
             {
-                img: "/media/services/skin_interactive.webp",
                 id: 4,
                 name: "Wrinkles",
                 description: 'Smooth fine lines around eyes, mouth, and forehead by removing damaged surface layers. Deeper peels stimulate collagen production to fill wrinkles from within for natural anti-aging results.'
             },
             {
-                img: "/media/services/skin_interactive.webp",
                 id: 5,
                 name: "Melasma",
                 description: "Break the cycle of hormonal pigmentation with targeted treatments that clear existing patches and prevent recurrence. Professional-strength peels penetrate deeper than topical lighteners for lasting improvement."
             },
             {
-                img: "/media/services/skin_interactive.webp",
                 id: 6,
                 name: "Bad Pores",
                 description: "Bring down the size of pores by clearing oil and dead skin that may expand them. By having regular beauty treatments, pores are cleaned and refined and the skin’s texture and appearance improve."
@@ -179,8 +173,8 @@ const chemical_peels = {
     wantToLearnMore: {
         title: {
             prefix: "Curious About ",
-            emphasis: "Chemical Peels?",
-            end: "\nStart here"
+            emphasis: "Chemical Peels? ",
+            end: "Start here"
         },
         description: "New to professional peels? Already tried spa treatments? Our team can walk you through your options. We've helped hundreds of patients make informed choices, and we start with a free, pressure-free consultation about what might work for your skin."
     },
