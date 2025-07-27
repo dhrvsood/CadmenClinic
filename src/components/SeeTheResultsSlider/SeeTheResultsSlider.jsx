@@ -203,7 +203,7 @@ const data = [
         frontCard: {
           title: 'Botox® Sweat Reduction',
           description: 'Target overactive sweat glands to significantly reduce perspiration in areas like the underarms, hands, or feet.',
-          image: '/seeTheResultsSlider/skinTreatments/botox-sweat-reduction.webp',
+          image: '/seeTheResultsSlider/skin/botox-sweat-reduction.webp',
           link: '/services/botox-sweat-reduction'
         }
       }

@@ -1031,7 +1031,7 @@ function PlasmicBotoxLander__RenderFunc(props) {
                   )}
                 >
                   {"Our clients have eliminated their doubts about "}
-                  {service.general.longTitle}
+                  {service.tabTitle}
                   {", and you can join them today!"}
                 </p>
               </Stack__>
