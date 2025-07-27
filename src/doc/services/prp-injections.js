@@ -12,7 +12,7 @@ const prp_injections = {
         longTitle: "PRP Injections"
     },
     hero: {
-        img: "/media/services/prp-hair-restoration.webp",
+        img: "/media/services/prp-injections/hero.webp",
         tagline: "Revitalize Your Face",
         description: "naturally revitalize your face by using your body's own plasma to naturally build collagen for smoother, firmer skin."
     },
