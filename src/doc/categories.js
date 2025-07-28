@@ -71,7 +71,7 @@ export const categories = {
     services: [
       {
         title: "Kybella / Fat Melting",
-        slug: "kybella",
+        slug: "/kybella",
         categoryOrder: 1
       },
       {
