@@ -5,8 +5,6 @@ import RatingReviewPill from '@/components/RatingReviewPill'
 import SeeTheResultsSlider from '@/components/SeeTheResultsSlider/SeeTheResultsSlider'
 import { useWindowSize } from 'react-use'
 import OfferCard from '@/components/OfferCard'
-import TestimonialCardBig from '@/components/TestimonialCardBig'
-import TestimonialsSlider from '@/components/TestimonialsSlider/TestimonialsSlider'
 import WhyOurPatientsSlider from '@/components/WhyOurPatientsSlider/WhyOurPatientsSlider'
 import IconImageTextCard from '@/components/IconImageTextCard/IconImageTextCard'
 
@@ -103,7 +101,7 @@ const Home = () => {
       "price": 299,
       "unitText": "per session",
       "priceFrom": false,
-      "serviceId": "prp-hair-restoration"
+      "serviceId": '01864f55-152e-4718-8827-c42f13a1d17d'
     },
     {
       "service": "Exosome Hair Therapy",
@@ -112,7 +110,7 @@ const Home = () => {
       "price": 399,
       "unitText": "per session",
       "priceFrom": false,
-      "serviceId": "exosome-hair-therapy"
+      "serviceId": '60959f06-e338-4ab4-a1e0-eba10bafc46f'
     },
     {
       "service": "Mesotherapy Vitamins",
@@ -121,7 +119,7 @@ const Home = () => {
       "price": 199,
       "unitText": "per session",
       "priceFrom": false,
-      "serviceId": "mesotherapy-vitamins"
+      "serviceId": '06718072-ce12-4c7a-bebc-1465b01df998'
     },
     {
       "service": "Botox",
@@ -130,7 +128,7 @@ const Home = () => {
       "price": 9.99,
       "unitText": "per unit",
       "priceFrom": false,
-      "serviceId": "botox"
+      "serviceId": '3a2b077b-3e98-4f16-9183-8c0cb9aeccfb'
     },
     {
       "service": "Lip / Dermal Filler",
@@ -139,16 +137,16 @@ const Home = () => {
       "price": 599,
       "unitText": "per sryinge",
       "priceFrom": false,
-      "serviceId": "dermal-filler"
+      "serviceId": '95122e0f-849d-4e79-9f96-a4e5ae09c48d'
     },
     {
       "service": "PRP Facial",
       "image": "/media/home/offers/PRP Facial.jpg",
       "percentOff": 25,
       "price": 599,
-      "unitText": "3 Vails",
+      "unitText": "per session",
       "priceFrom": false,
-      "serviceId": "sculptra"
+      "serviceId": '0dcbef15-8fa6-4ed0-b5e3-f774f6ad5529'
     }
   ]
 

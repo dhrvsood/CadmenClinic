@@ -1,10 +1,12 @@
 import { assemblePayloadWithCookies } from '@/helpers/assemble_payload_with_cookies'
 import { getSundaysInCalendarView } from '@/helpers/calendar/get_sundays_in_calendar_view'
 import { fetchPost } from '@/helpers/requests'
+import { presentableDateTime } from '@/helpers/time/datetime_formatter'
 import {
   createOpportunity,
   fetchAvailableSlots,
-  fetchBookingIds
+  fetchBookingIds,
+  sendEmail
 } from '@/utils/endpoints'
 import va from '@vercel/analytics'
 import TagManager from 'react-gtm-module'
@@ -263,6 +265,31 @@ export const useBookingStore = create((set, get) => ({
     //   firstName: get().bookingData.guestInfo.firstName,
     //   lastName: get().bookingData.guestInfo.lastName,
     //   service: get().bookingData.service.title
+    // })
+
+    // send email
+    const firstName = get().bookingData.guestInfo.firstName
+    const lastName = get().bookingData.guestInfo.lastName
+    const email = get().bookingData.guestInfo.email
+    const phone = get().bookingData.guestInfo.phone
+    const serviceTitle = get().bookingData.service.title
+    const slotTime = presentableDateTime(get().bookingData.timeslot)
+    const emailHTML = `
+        <h1>New Booking</h1>
+        <p>Just informing you that you've received a new booking. Details below:</p>
+        <ul>
+          <li><strong>Name:</strong> ${firstName} ${lastName}</li>
+          <li><strong>Email:</strong> ${email}</li>
+          <li><strong>Phone:</strong> ${phone}</li>
+          <li><strong>Service:</strong> ${serviceTitle}</li>
+          <li><strong>Time:</strong> ${slotTime}</li>
+        </ul>
+      `
+
+    // sendEmail({
+    //   to: ['info@cadmenclinic.ca'],
+    //   subject: `${firstName} ${lastName} has booked ${serviceTitle}`,
+    //   html: emailHTML
     // })
 
     TagManager.dataLayer({

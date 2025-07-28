@@ -10,6 +10,9 @@ export const fetchAvailableSlots = (bookingId) =>
 export const createOpportunity = (vals) =>
   axiosPost('/api/zenoti/opportunity', vals)
 
+export const sendEmail = (vals) =>
+  axiosPost('/api/contact/email', vals)
+
 export const fbConversionsApi = (payload) =>
   axiosPost('https://sl-fb-conversions.herokuapp.com/', payload)
 

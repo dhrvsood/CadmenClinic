@@ -436,6 +436,33 @@ const formServices = [
     category: 'Wellness',
     icon: '/icons/wellness.svg',
     services: [
+      // Kybella / Fat Melting
+      {
+        code: 'kybella',
+        slugs: ['kybella'],
+        title: 'Kybella / Fat Melting',
+        category: 'Wellness',
+        notes: '',
+        id: '18ac585d-c861-4acf-92b6-f2c474c9ec1c',
+        price: {
+          original: '$599',
+          discounted: '$499',
+          percent: '20% off'
+        },
+        image: '/media/home/Semaglutide.jpg',
+        points: [
+          {
+            title: 'Reduce stubborn chin and body fat',
+            body: 'Significantly improves your energy levels and cognitive functions (including memory and focus) while promoting anti-aging and cellular regeneration to make you look and feel young.'
+          },
+          {
+            title: 'Non-surgical fat reduction',
+            body: 'Achieve noticeable results without the need for surgery or lengthy recovery time.'
+          },
+        ],
+        duration: '60 mins'
+      },
+
       // NAD+ IV Drip
       {
         code: 'nad_plus_iv',
