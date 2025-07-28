@@ -213,7 +213,8 @@ const Home = () => {
       </section>
 
       {/* Choosing CADMEN */}
-      <section className='overflow-hidden bg-dawnPink bg-[url(/graphics/circlesSvgDarkBrown.svg)] bg-cover py-[80px] max-sm:py-[40px]'>
+      {/* <section className='overflow-hidden bg-dawnPink bg-[url(/graphics/patients-choose-bg.svg)] bg-cover py-[80px] max-sm:py-[40px]'> */}
+      <section className='min-h-[300px] bg-dawnPink overflow-hidden bg-[url(/graphics/patients-choose-bg.svg)] bg-cover py-[80px] max-sm:py-[40px] bg-no-repeat'>
         <div className='wideWrapper'>
           <div className='m-auto mb-[58px] max-w-[840px] text-center'>
             <h2 className='d-h2'>

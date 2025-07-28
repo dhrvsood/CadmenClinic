@@ -136,7 +136,7 @@ const Navbar = () => {
                                   <Popover.Panel
                                     className='absolute inset-x-0 top-full text-base text-black shadow-md z-100'
                                     style={{
-                                      background: `url("/graphics/circlesSvgDarkBrown.svg") bottom 0px right 0px / cover no-repeat, #ebdbd6`
+                                      background: `url("/graphics/circlesSvgDarkBrown.svg") bottom 75px right 0px / cover no-repeat, #ebdbd6`
                                     }}
                                   >
                                     <div className='relative' style={{ backgroundColor: 'transparent' }}>
