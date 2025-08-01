@@ -6,6 +6,7 @@ import Head from 'next/head'
 import { useEffect } from 'react'
 import { ParallaxProvider } from 'react-scroll-parallax'
 import { v4 as uuid4 } from 'uuid'
+import TagManager from 'react-gtm-module'
 
 const CadmenClinic = ({ Component, pageProps }) => {
   useEffect(() => {
@@ -14,11 +15,11 @@ const CadmenClinic = ({ Component, pageProps }) => {
   }, [])
 
   useEffect(() => {
-    // const tagManagerArgs = {
-    //   gtmId: 'GTM-5KJH3J4'
-    // }
+    const tagManagerArgs = {
+      gtmId: 'GTM-T9T872SN'
+    }
 
-    // TagManager.initialize(tagManagerArgs)
+    TagManager.initialize(tagManagerArgs)
   }, [])
 
   return (
