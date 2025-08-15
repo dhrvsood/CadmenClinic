@@ -184,13 +184,13 @@ export const useBookingStore = create((set, get) => ({
       'lead'
     )
 
-    // window.lsq('set', 'ContactInfo', {
-    //   email: guestInfo.email,
-    //   phoneNumber: guestInfo.phone,
-    //   firstName: guestInfo.firstName,
-    //   lastName: guestInfo.lastName,
-    //   service: get().bookingData.service.title
-    // })
+    window.tlq('set', 'ContactInfo', {
+      email: guestInfo.email,
+      phoneNumber: guestInfo.phone,
+      firstName: guestInfo.firstName,
+      lastName: guestInfo.lastName,
+      service: get().bookingData.service.title
+    })
     TagManager.dataLayer({
       dataLayer: {
         event: 'user_information_submitted',
@@ -202,7 +202,6 @@ export const useBookingStore = create((set, get) => ({
         uuid: queryUuid
       }
     })
-    // window.lsq('track', 'UserInformationSubmitted')
 
     get().incrementStep()
 
@@ -257,13 +256,13 @@ export const useBookingStore = create((set, get) => ({
 
     va.track('Booking Complete')
 
-    // window.lsq('set', 'ContactInfo', {
-    //   email: get().bookingData.guestInfo.email,
-    //   phoneNumber: get().bookingData.guestInfo.phone,
-    //   firstName: get().bookingData.guestInfo.firstName,
-    //   lastName: get().bookingData.guestInfo.lastName,
-    //   service: get().bookingData.service.title
-    // })
+    window.tlq('set', 'ContactInfo', {
+      email: get().bookingData.guestInfo.email,
+      phoneNumber: get().bookingData.guestInfo.phone,
+      firstName: get().bookingData.guestInfo.firstName,
+      lastName: get().bookingData.guestInfo.lastName,
+      service: get().bookingData.service.title
+    })
 
     TagManager.dataLayer({
       dataLayer: {
