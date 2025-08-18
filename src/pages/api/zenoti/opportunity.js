@@ -11,32 +11,27 @@ const baseURL = process.env.URL || 'http://localhost:3000';
 
 
 export default async function handler(req, res) {
-  console.log("START OF OPPORTUNITY.JS")
-  
-
   const employeeId = process.env.ZENOTI_EMPLOYEE_ID
   const centerId = process.env.ZENOTI_CENTER_ID
   const payload = req.body
 
-  // console.log("Payload:", payload)
-  console.log("Center ID:", centerId)
-
   try {
     let guestId
 
-    console.log("opportunity.js before calling searchguest")
+    console.log("Searching for guest...")
     const existingGuests = await searchGuest(payload, centerId)
 
     if (existingGuests.length === 0) {
-      console.log("New Guest")
+      console.log("No guests found. Creating new guest.")
       const newGuest = await createGuest(payload, centerId)
       guestId = newGuest.id
     } else {
-      console.log("Existing Guest")
+      console.log("Existing guest found. ")
       guestId = existingGuests[0].id
     }
 
     if (process.env.NODE_ENV === 'production') {
+      console.log("Creating opportunity...")
       await createOpportunity(guestId, centerId, employeeId, payload)
     }
 

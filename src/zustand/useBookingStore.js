@@ -6,7 +6,7 @@ import {
   fetchAvailableSlots,
   fetchBookingIds
 } from '@/utils/endpoints'
-import va from '@vercel/analytics'
+import { track } from '@vercel/analytics'
 import TagManager from 'react-gtm-module'
 import { create } from 'zustand'
 import { zapierBookedAppointment } from '@/utils/endpoints'
@@ -202,7 +202,7 @@ export const useBookingStore = create((set, get) => ({
         uuid: queryUuid
       }
     })
-    va.track("User Information Submitted")
+    track('User Information Submitted')
 
     get().incrementStep()
 
@@ -258,7 +258,7 @@ export const useBookingStore = create((set, get) => ({
     const guestInfo = get().bookingData.guestInfo
     const service = get().bookingData.service.title
 
-    va.track(`Booking Complete: ${guestInfo.email}`)
+    track('Booking Complete', { email: guestInfo.email, service: service })
 
     window.tlq('set', 'ContactInfo', {
       email: guestInfo.email,
