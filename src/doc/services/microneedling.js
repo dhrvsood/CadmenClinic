@@ -1,6 +1,7 @@
 const microneedling = {
     slug: "microneedling",
     tabTitle: "Microneedling Facial",
+    ctaId: '6fde4a3d-0a6e-4a1e-97e5-32368abdcda3',
     isMigrated: true,
     category: "skin-treatments",
     general: {

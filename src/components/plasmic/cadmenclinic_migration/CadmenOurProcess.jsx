@@ -10,6 +10,7 @@ import {
 import BotoxProcessCard from "@/components/BotoxProcessCard";
 import projectcss from "@/components/plasmic/blank_website/plasmic.module.css";
 import sty from "@/components/plasmic/cadmenclinic_migration/PlasmicBotoxSeo.module.css";
+import BookNowButton from "@/components/ui/BookNowButton";
 
 const CadmenOurProcess = ({ 
     overrides = {}, 
@@ -19,6 +20,7 @@ const CadmenOurProcess = ({
     program,
     consultation,
     treatment,
+    ctaId,
     results
 }) => (
     <Stack__
@@ -254,9 +256,7 @@ const CadmenOurProcess = ({
             />
             </Stack__>
 
-            <Link href='/book-now'  className='mt-[10px] w-full md:w-auto'>
-            <button className='button white w-full md:w-auto'>Book Now</button>
-            </Link>
+            <BookNowButton color="white" ctaId={ctaId}/>
         </div>
     </Stack__>
 );

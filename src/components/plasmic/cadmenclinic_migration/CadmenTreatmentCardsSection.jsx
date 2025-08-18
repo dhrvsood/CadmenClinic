@@ -8,6 +8,7 @@ import {
 import projectcss from "@/components/plasmic/blank_website/plasmic.module.css";
 import sty from "@/components/plasmic/cadmenclinic_migration/PlasmicBotoxSeo.module.css";
 import AffordableBotoxCard from "@/components/AffordableBotoxCard";   
+import BookNowButton from "@/components/ui/BookNowButton";
 
 const CadmenTreatmentCardsSection = ({
     overrides = {}, 
@@ -16,6 +17,7 @@ const CadmenTreatmentCardsSection = ({
     regularUnit,
     specialUnit,
     cards,
+    ctaId,
     wide=false
 }) => (
     <Stack__
@@ -99,9 +101,7 @@ const CadmenTreatmentCardsSection = ({
         ))}
     </Stack__>
 
-    <Link href='/book-now'  className='mt-[10px] w-full md:w-auto'>
-        <button className='button w-full md:w-auto'>Book Now</button>
-    </Link>
+    <BookNowButton ctaId={ctaId}/>
     </Stack__>
 );
 

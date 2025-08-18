@@ -436,6 +436,33 @@ const formServices = [
     category: 'Wellness',
     icon: '/icons/wellness.svg',
     services: [
+      // Kybella
+      {
+        code: 'kybella',
+        slugs: ['kybella'],
+        title: 'Kybella / Fat Melting',
+        category: 'Wellness',
+        notes: '',
+        id: '18ac585d-c861-4acf-92b6-f2c474c9ec1c',
+        price: {
+          original: '$999',
+          discounted: '$799',
+          percent: '20% off'
+        },
+        image: '/booking-photos/kybella.webp',
+        points: [
+          {
+            title: 'Reduce stubborn chin fat',
+            body: 'Target and permanently dissolve fat beneath the chin for a slimmer, more contoured profile.'
+          },
+          {
+            title: 'Non-surgical fat reduction',
+            body: 'Achieve noticeable results without the need for surgery or lengthy recovery time.'
+          }
+        ],
+        duration: '60 mins'
+      },
+
       // NAD+ IV Drip
       {
         code: 'nad_plus_iv',

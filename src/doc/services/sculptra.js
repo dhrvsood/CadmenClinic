@@ -1,6 +1,7 @@
 const sculptra = {
     slug: "sculptra",
     tabTitle: "SCULPTRA®",
+    ctaId: '7aca0b0a-fc81-42ea-b644-4583e8acb9b0',
     isMigrated: true,
     category: "skin-treatments",
     general: {

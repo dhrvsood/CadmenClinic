@@ -5,11 +5,13 @@ import { Stack as Stack__ } from "@plasmicapp/react-web";
 
 import projectcss from "@/components/plasmic/blank_website/plasmic.module.css";
 import sty from "@/components/plasmic/cadmenclinic_migration/PlasmicBotoxSeo.module.css";
+import BookNowButton from "@/components/ui/BookNowButton";
 
 const CadmenWantToLearnMore = ({
   overrides = {},
   title = {},
   description,
+  ctaId
 }) => {
   const { prefix, emphasis, end } = title;
 
@@ -66,9 +68,7 @@ const CadmenWantToLearnMore = ({
         </div>
       </Stack__>
 
-      <Link href="/book-now" className="mt-[10px] w-full md:w-auto">
-        <button className="button white w-full md:w-auto">Book Now</button>
-      </Link>
+      <BookNowButton ctaId={ctaId} color="white"/>
     </Stack__>
   );
 };

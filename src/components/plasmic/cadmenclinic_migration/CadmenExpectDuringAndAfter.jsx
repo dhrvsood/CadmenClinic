@@ -11,6 +11,7 @@ import projectcss from "@/components/plasmic/blank_website/plasmic.module.css";
 import sty from "@/components/plasmic/cadmenclinic_migration/PlasmicBotoxSeo.module.css";   
 import PointIcon from "./icons/PlasmicIcon__Point";
 import parse from 'html-react-parser';
+import BookNowButton from "@/components/ui/BookNowButton";
 
 const CadmenExpectDuringAndAfter = ({
     overrides = {}, 
@@ -19,6 +20,7 @@ const CadmenExpectDuringAndAfter = ({
     img,
     subheading,
     sections,
+    ctaId,
     footer
 }) => (
           <Stack__
@@ -173,9 +175,7 @@ const CadmenExpectDuringAndAfter = ({
                 </div>
               </Stack__>
 
-              <Link href='/book-now'  className='mt-[10px] w-full md:w-auto'>
-                <button className='button w-full md:w-auto'>Book Now</button>
-              </Link>
+              <BookNowButton ctaId={ctaId}/>
             </div>
             </div>
           </Stack__>
