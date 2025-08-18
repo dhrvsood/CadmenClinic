@@ -2,8 +2,9 @@
 
 import RatingReviewPill from './RatingReviewPill';
 import Link from 'next/link';
+import BookNowButton from './ui/BookNowButton';
 
-export default function HairLandingHero() {
+export default function HairLandingHero({ ctaId, ctaText }) {
   return (
     <section
       className="relative w-full h-screen bg-cover bg-center bg-no-repeat overflow-hidden text-white"
@@ -39,9 +40,7 @@ export default function HairLandingHero() {
           <Button color={"white"}>Book Now</Button>
         </div> */}
 
-        <Link href='/book-now'  className='mt-[10px] w-full md:w-auto'>
-          <button className='button white w-full md:w-auto'>Book Now</button>
-        </Link>
+        <BookNowButton ctaId={ctaId} text={ctaText} color="white"/>
 
         {/* Reviews */}
         <RatingReviewPill />

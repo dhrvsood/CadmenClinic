@@ -21,6 +21,7 @@ const CadmenExpectDuringAndAfter = ({
     subheading,
     sections,
     ctaId,
+    ctaText="Book Now",
     footer
 }) => (
           <Stack__
@@ -175,7 +176,7 @@ const CadmenExpectDuringAndAfter = ({
                 </div>
               </Stack__>
 
-              <BookNowButton ctaId={ctaId}/>
+              <BookNowButton ctaId={ctaId} text={ctaText}/>
             </div>
             </div>
           </Stack__>

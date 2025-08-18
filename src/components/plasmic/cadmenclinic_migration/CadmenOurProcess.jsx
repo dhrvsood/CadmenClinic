@@ -21,6 +21,7 @@ const CadmenOurProcess = ({
     consultation,
     treatment,
     ctaId,
+    ctaText="Book Now",
     results
 }) => (
     <Stack__
@@ -256,7 +257,7 @@ const CadmenOurProcess = ({
             />
             </Stack__>
 
-            <BookNowButton color="white" ctaId={ctaId}/>
+            <BookNowButton color="white" ctaId={ctaId} text={ctaText}/>
         </div>
     </Stack__>
 );

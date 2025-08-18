@@ -4,8 +4,9 @@ import AffordableBotoxCard from "../AffordableBotoxCard";
 import styles from "../plasmic/cadmenclinic_migration/PlasmicBotoxSeo.module.css";
 import Link from "next/link";
 import Image from "next/image";
+import BookNowButton from "../ui/BookNowButton";
 
-const TreatmentPackagesSlider = ({ treatmentPackages }) => {
+const TreatmentPackagesSlider = ({ treatmentPackages, ctaId, ctaText }) => {
   const trackRef = useRef(null);
   const cardRefs = useRef([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -132,10 +133,7 @@ const TreatmentPackagesSlider = ({ treatmentPackages }) => {
         ))}
       </div>
 
-      {/* Book Now Button */}
-      <Link href='/book-now' className='mt-[40px]'>
-        <button className='button max-sm:w-full'>Book Now</button>
-      </Link>
+      <BookNowButton text={ctaText} ctaId={ctaId}/>
     </div>
   );
 };
