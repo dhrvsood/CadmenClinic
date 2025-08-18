@@ -83,7 +83,6 @@ const createBooking = async ({ date, serviceId, customerId, therapistId }) => {
     }
 
     const response = await axios(config)
-    console.log('Create Booking success response: ', response.data);
     return response.data
   } catch (err) {
     console.error(err)

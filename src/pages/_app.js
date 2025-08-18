@@ -9,6 +9,8 @@ import { ParallaxProvider } from 'react-scroll-parallax'
 import { v4 as uuid4 } from 'uuid'
 import TagManager from 'react-gtm-module'
 import { useRouter } from 'next/router'
+import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 const CadmenClinic = ({ Component, pageProps }) => {
   const router = useRouter()
@@ -84,6 +86,8 @@ const CadmenClinic = ({ Component, pageProps }) => {
       <ParallaxProvider>
         <Layout>
           <Component {...pageProps} />
+          <Analytics />
+          <SpeedInsights />
         </Layout>
       </ParallaxProvider>
     </>

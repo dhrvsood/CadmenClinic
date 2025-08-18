@@ -4,6 +4,8 @@ import Cookies from 'js-cookie'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
+import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 const Layout = ({ children }) => {
   const router = useRouter()
@@ -88,6 +90,8 @@ const Layout = ({ children }) => {
       </div>
       <div id='main' className={`${shouldShowNavbar ? 'pt-10' : ''}`}>
         {children}
+        <Analytics />
+        <SpeedInsights />
       </div>
       {shouldShowNavbar && <Footer />}
     </>

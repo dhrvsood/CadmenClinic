@@ -29,10 +29,10 @@ const createOpportunity = async (guestId, centerId, employeeId) => {
     }
 
     const response = await axios(config)
-    console.log('CREATING OPPORTUNITY SUCCESS')
+    console.log('Creating opportunity on Zenoti success')
     return response.data
   } catch (err) {
-    console.error('CREATING OPPORTUNITY FAILED')
+    console.error('Creating opportunity on Zenoti failure')
     console.error(JSON.stringify(err))
   }
 }

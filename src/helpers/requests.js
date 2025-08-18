@@ -4,7 +4,6 @@ import axios from 'axios'
 export const axiosPost = async (url, params) => {
   try {
     const response = await axios.post(url, params)
-    console.log("Axios Post response");
     console.log(response.data);
     return response.data
   } catch (error) {

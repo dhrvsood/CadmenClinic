@@ -11,76 +11,73 @@ const baseURL = process.env.URL || 'http://localhost:3000';
 
 
 export default async function handler(req, res) {
-  console.log("START OF OPPORTUNITY.JS")
-  
-
   const employeeId = process.env.ZENOTI_EMPLOYEE_ID
   const centerId = process.env.ZENOTI_CENTER_ID
   const payload = req.body
 
-  // console.log("Payload:", payload)
-  console.log("Center ID:", centerId)
-
   try {
     let guestId
 
-    console.log("opportunity.js before calling searchguest")
+    console.log("Searching for guest...")
     const existingGuests = await searchGuest(payload, centerId)
-    console.log("Existing Guests:", existingGuests)
 
     if (existingGuests.length === 0) {
+      console.log("No guests found. Creating new guest.")
       const newGuest = await createGuest(payload, centerId)
       guestId = newGuest.id
     } else {
+      console.log("Existing guest found. ")
       guestId = existingGuests[0].id
     }
 
     if (process.env.NODE_ENV === 'production') {
+      console.log("Creating opportunity...")
       await createOpportunity(guestId, centerId, employeeId, payload)
     }
 
     payload.guestId = guestId
 
-    await fetch(`${baseURL}/api/booking/step2`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(payload)
-    })
-    .catch(function (error) {
-      console.error(error)
-    })
+    // TODO: Lead Generation from IL code, commented for now
+    // await fetch(`${baseURL}/api/booking/step2`, {
+    //   method: 'POST',
+    //   headers: {
+    //     'Content-Type': 'application/json'
+    //   },
+    //   body: JSON.stringify(payload)
+    // })
+    // .catch(function (error) {
+    //   console.error(error)
+    // })
 
-    if (process.env.VERCEL_ENV === 'production') {
-      const leadTemplate = {
-        campaign: payload._u_c,
-        device: payload.device,
-        email: payload.email,
-        event: payload.event,
-        fbc: payload._fbc,
-        fbp: payload._fbp,
-        firstName: payload.firstName,
-        gclid: payload._u_gclid,
-        guestId: payload.guestId,
-        lastName: payload.lastName,
-        medium: payload._u_m,
-        phone: payload.phone,
-        pixels: payload.pixels,
-        referrer: payload.referrer,
-        serviceId: payload.serviceId,
-        serviceTitle: payload.serviceTitle,
-        source: payload._u_s,
-        userAgent: payload.userAgent,
-        url: payload.url
-      }
+    // if (process.env.VERCEL_ENV === 'production') {
+    //   const leadTemplate = {
+    //     campaign: payload._u_c,
+    //     device: payload.device,
+    //     email: payload.email,
+    //     event: payload.event,
+    //     fbc: payload._fbc,
+    //     fbp: payload._fbp,
+    //     firstName: payload.firstName,
+    //     gclid: payload._u_gclid,
+    //     guestId: payload.guestId,
+    //     lastName: payload.lastName,
+    //     medium: payload._u_m,
+    //     phone: payload.phone,
+    //     pixels: payload.pixels,
+    //     referrer: payload.referrer,
+    //     serviceId: payload.serviceId,
+    //     serviceTitle: payload.serviceTitle,
+    //     source: payload._u_s,
+    //     userAgent: payload.userAgent,
+    //     url: payload.url
+    //   }
 
-      axios
-        .post(`${baseURL}/api/db/create`, leadTemplate)
-        .catch(function (error) {
-          console.error('Error sending to /api/db/create:', error)
-        })
-    }
+    //   axios
+    //     .post(`${baseURL}/api/db/create`, leadTemplate)
+    //     .catch(function (error) {
+    //       console.error('Error sending to /api/db/create:', error)
+    //     })
+    // }
 
     res.status(200).json({ message: 'success', id: guestId })
   } catch (err) {
