@@ -202,6 +202,7 @@ export const useBookingStore = create((set, get) => ({
         uuid: queryUuid
       }
     })
+    va.track("User Information Submitted")
 
     get().incrementStep()
 
@@ -254,14 +255,17 @@ export const useBookingStore = create((set, get) => ({
 
     response && zapierBookedAppointment(assemblePayloadWithCookies(get().bookingData.guestInfo, 'schedule'))
 
-    va.track('Booking Complete')
+    const guestInfo = get().bookingData.guestInfo
+    const service = get().bookingData.service.title
+
+    va.track(`Booking Complete: ${guestInfo.email}`)
 
     window.tlq('set', 'ContactInfo', {
-      email: get().bookingData.guestInfo.email,
-      phoneNumber: get().bookingData.guestInfo.phone,
-      firstName: get().bookingData.guestInfo.firstName,
-      lastName: get().bookingData.guestInfo.lastName,
-      service: get().bookingData.service.title
+      email: guestInfo.email,
+      phoneNumber: guestInfo.phone,
+      firstName: guestInfo.firstName,
+      lastName: guestInfo.lastName,
+      service: service.title
     })
 
     TagManager.dataLayer({

@@ -22,8 +22,10 @@ export default async function handler(req, res) {
     })
 
     if (bookingResponse) {
+      console.log("Booking created successfully")
       res.status(200).json(bookingResponse)
     } else {
+      console.log("Invalid booking response")
       throw new Error('Invalid booking response')
     }
   } catch (err) {
