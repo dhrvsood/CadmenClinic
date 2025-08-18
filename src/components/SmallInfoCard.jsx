@@ -1,7 +1,7 @@
 import React from "react";
 import projectcss from ".//plasmic/blank_website/plasmic.module.css"; // plasmic-import: fpxTiFS69ULcX4wDGEfw3c/projectcss
 import { classNames, PlasmicImg as PlasmicImg__ } from "@plasmicapp/react-web"; // adjust import if needed
-import sty from ".//plasmic/cadmenclinic_migration/CadmenPRPLander.module.css"; // plasmic-import: 9rME71zJbGo1/css
+import sty from ".//plasmic/cadmenclinic_migration/CadmenServicePage.module.css"; // plasmic-import: 9rME71zJbGo1/css
 
 
 const SmallInfoCard = ({ icon, title, emphasis, subtitle }) => {

@@ -1,6 +1,6 @@
-import PlasmicBotoxLander2 from "@/components/plasmic/cadmenclinic_migration/PlasmicBotoxLander2";
+import CadmenHairRestorationLander from "@/components/plasmic/cadmenclinic_migration/CadmenHairRestorationLander";
 
 
 export default function HairRestorationLander() {
-    return <PlasmicBotoxLander2/>;
+    return <CadmenHairRestorationLander/>;
 }

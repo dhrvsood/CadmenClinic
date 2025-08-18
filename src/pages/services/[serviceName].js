@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import { servicesData as newServices } from '@/doc/services';
 import { servicesData as oldServices } from '@/doc/old_services'
 
-import CadmenPRPLander from '@/components/plasmic/cadmenclinic_migration/CadmenPRPLander';
+import CadmenServicePage from '@/components/plasmic/cadmenclinic_migration/CadmenServicePage';
 import OldServicePage from '@/components/OldServicePage'; 
 import Page404 from '@/pages/404';
 
@@ -21,7 +21,7 @@ export default function ServiceRouterPage() {
   }
 
   if (newService?.isMigrated) {
-    return <CadmenPRPLander key={newService.slug} args={{ serviceData: newService }} />;
+    return <CadmenServicePage key={newService.slug} args={{ serviceData: newService }} />;
   }
 
   if (oldService) {

@@ -130,11 +130,11 @@ const AffordableHairRestoration = () => {
               <div className="plasmic_all__lGI85 PlasmicAreaCard_text__qxbqb__MHJZI">{activeTab.name}</div>
             </div>
             <p
-              className="plasmic_all__lGI85 plasmic_p__gkQGD CadmenPRPLander_p__yiW7R__5meA0"
+              className="plasmic_all__lGI85 plasmic_p__gkQGD CadmenServicePage_p__yiW7R__5meA0"
               dangerouslySetInnerHTML={{ __html: activeTab.description }}
             ></p>
             <p>  </p>
-            <p className="plasmic_all__lGI85 plasmic_p__gkQGD CadmenPRPLander_p__yiW7R__5meA0">
+            <p className="plasmic_all__lGI85 plasmic_p__gkQGD CadmenServicePage_p__yiW7R__5meA0">
               <strong>Recommended Treatment: </strong>{activeTab.recommended}
             </p>
           </div>

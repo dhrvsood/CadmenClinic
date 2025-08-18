@@ -119,11 +119,11 @@ const InteractiveInfo = ({
             </div>
 
             <p
-              className="text-[#6c6e6f] px-4 py-4 plasmic_all__lGI85 plasmic_p__gkQGD CadmenPRPLander_p__yiW7R__5meA0"
+              className="text-[#6c6e6f] px-4 py-4 plasmic_all__lGI85 plasmic_p__gkQGD CadmenServicePage_p__yiW7R__5meA0"
               dangerouslySetInnerHTML={{ __html: activeTab.description }}
             />
             {activeTab.recommended && (
-              <p className="text-[#6c6e6f] plasmic_all__lGI85 plasmic_p__gkQGD CadmenPRPLander_p__yiW7R__5meA0 mt-2">
+              <p className="text-[#6c6e6f] plasmic_all__lGI85 plasmic_p__gkQGD CadmenServicePage_p__yiW7R__5meA0 mt-2">
                 <strong>Recommended Treatment: </strong>{activeTab.recommended}
               </p>
             )}
