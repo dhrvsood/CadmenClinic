@@ -8,7 +8,7 @@ import {
 } from '@/utils/endpoints'
 import TagManager from 'react-gtm-module'
 import { create } from 'zustand'
-import { zapierBookedAppointment } from '@/utils/endpoints'
+// import { zapierBookedAppointment } from '@/utils/endpoints'
 import { removeDashes } from '@/helpers/strings/string_modifiers'
 import dayjs from 'dayjs'
 
@@ -78,77 +78,81 @@ export const useBookingStore = create((set, get) => ({
 
     if (attempts >= 3) return
 
-    if (attempts === 0) {
-      TagManager.dataLayer({
-        dataLayer: {
-          event: 'fetch-time-slots',
-          guestId: get().guestId,
-          name: `${get().bookingData.guestInfo.firstName} ${get().bookingData.guestInfo.lastName}`,
-          email: get().bookingData.guestInfo.email
-        }
-      })
-    }
-
-    set({ selectedMonth: [month, year] })
-    set({ availableDays: [] })
-    const sundays = getSundaysInCalendarView(
-      get().selectedMonth[1],
-      get().selectedMonth[0]
-    )
-    console.log('Sundays:', sundays);
-
-    const bookingIdRequests = sundays.map((date) => {
-      const formattedDate = dayjs(date).format('MM-DD-YYYY')
+    const waitForData = () => {
       const serviceId = get().bookingData.service.id
       const guestId = get().guestId
 
-      return fetchBookingIds(formattedDate, serviceId, guestId, false)
-    })
+      if (!serviceId || !guestId) {
+        console.log("Service or guest ID not ready. Retrying...")
+        return setTimeout(waitForData, 100) // Retry every 100ms
+      }
 
-    Promise.all(bookingIdRequests)
-      .then((res) => {
-        const availability = res.map((booking) => {
-          return fetchAvailableSlots(booking.id)
+      if (attempts === 0) {
+        TagManager.dataLayer({
+          dataLayer: {
+            event: 'fetch-time-slots',
+            guestId: get().guestId,
+            name: `${get().bookingData.guestInfo.firstName} ${get().bookingData.guestInfo.lastName}`,
+            email: get().bookingData.guestInfo.email
+          }
         })
+      }
 
-        Promise.all(availability)
-          .then((res2) => {
-            const availableDays = res2
-              .map((week) => {
-                return week.response.future_days.map((day) => {
-                  return day
+      set({ selectedMonth: [month, year] })
+      set({ availableDays: [] })
+      const sundays = getSundaysInCalendarView(year, month)
+
+      const bookingIdRequests = sundays.map((date) => {
+        const formattedDate = dayjs(date).format('MM-DD-YYYY')
+        return fetchBookingIds(formattedDate, serviceId, guestId, false)
+      })
+
+      Promise.all(bookingIdRequests)
+        .then((res) => {
+          const availability = res.map((booking) => {
+            return fetchAvailableSlots(booking.id)
+          })
+
+          Promise.all(availability)
+            .then((res2) => {
+              const availableDays = res2
+                .map((week) => {
+                  return week.response.future_days.map((day) => {
+                    return day
+                  })
                 })
+                .flat()
+
+              const firstAvailableDay = availableDays.find((item) => {
+                const itemDate = new Date(item.Day)
+                return (
+                  item.IsAvailable &&
+                  // itemDate > currentDate &&
+                  itemDate.getMonth() === month &&
+                  itemDate.getFullYear() === year
+                )
               })
-              .flat()
 
-            const firstAvailableDay = availableDays.find((item) => {
-              const itemDate = new Date(item.Day)
-              return (
-                item.IsAvailable &&
-                // itemDate > currentDate &&
-                itemDate.getMonth() === month &&
-                itemDate.getFullYear() === year
-              )
+              if (!firstAvailableDay) {
+                return get().setSelectedMonth(month + 1, year, attempts + 1)
+              }
+
+              const nextAvailableDateInMonth = new Date(firstAvailableDay.Day)
+
+              get().setSelectedDate(dayjs(nextAvailableDateInMonth))
+              set({ initialLoading: false })
+
+              set({ availableDays })
             })
-
-            if (!firstAvailableDay) {
-              return get().setSelectedMonth(month + 1, year, attempts + 1)
-            }
-
-            const nextAvailableDateInMonth = new Date(firstAvailableDay.Day)
-
-            get().setSelectedDate(dayjs(nextAvailableDateInMonth))
-            set({ initialLoading: false })
-
-            set({ availableDays })
-          })
-          .catch((err2) => {
-            console.log(err2)
-          })
-      })
-      .catch((err) => {
-        console.log(err)
-      })
+            .catch((err2) => {
+              console.log(err2)
+            })
+        })
+        .catch((err) => {
+          console.log(err)
+        })
+    }
+    waitForData()
   },
   setSelectedDate: async (date) => {
     set({ selectedDate: date })
@@ -204,8 +208,6 @@ export const useBookingStore = create((set, get) => ({
     console.log('User Information Submitted')
 
     get().incrementStep()
-
-    console.log("Payload:", payload)
     const guestId = await createOpportunity(payload)
     set({ guestId: guestId.id })
     get().setSelectedMonth(new Date().getMonth(), new Date().getFullYear())
@@ -252,7 +254,7 @@ export const useBookingStore = create((set, get) => ({
       serviceInfo: {serviceId: get().bookingData.service.id, selectedTimeslot: get().bookingData.timeslot}
     })
 
-    response && zapierBookedAppointment(assemblePayloadWithCookies(get().bookingData.guestInfo, 'schedule'))
+    // response && zapierBookedAppointment(assemblePayloadWithCookies(get().bookingData.guestInfo, 'schedule'))
 
     const guestInfo = get().bookingData.guestInfo
     const service = get().bookingData.service.title

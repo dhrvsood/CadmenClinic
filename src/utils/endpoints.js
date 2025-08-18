@@ -19,8 +19,8 @@ export const reserveBookingSlot = (bookingId, time) =>
 export const confirmBookingSlot = (bookingId) =>
   axiosPost('/api/zenoti/confirm-slot', { params: { bookingId } })
 
-export const zapierBookedAppointment = (vals) =>
-  axiosPost('/api/contact/appointment', vals)
+// export const zapierBookedAppointment = (vals) =>
+//   axiosPost('/api/contact/appointment', vals)
 
 //  if (process.env.NODE_ENV === 'production') {
 //     return fetchPost(
