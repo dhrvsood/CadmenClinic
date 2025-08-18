@@ -1,6 +1,7 @@
 const chemical_peels = {
     slug: "chemical-peels",
     tabTitle: "Chemical Peels",
+    ctaId: '10479d9c-6bbe-4bd3-a020-449ecb100499',
     isMigrated: true,
     category: "skin-treatments",
     general: {

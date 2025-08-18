@@ -6,9 +6,7 @@ import 'slick-carousel/slick/slick-theme.css'
 import 'slick-carousel/slick/slick.css'
 
 import styles from './TestimonialsSlider.module.css'
-// import TestimonialCardBig from '../TestimonialCardBig'
-
-// const builder = imageUrlBuilder(sanityClient)
+import BookNowButton from '../ui/BookNowButton'
 
 const TestimonialsSlider = ({
   children,
@@ -68,13 +66,7 @@ const TestimonialsSlider = ({
           </div>
         </div>
         {ctaLink && ctaText && (
-          <Link href='/book-now'  className='mt-[10px] w-full md:w-auto'>
-            <button
-              className={`${isDarkBg ? 'button white' : 'button'} w-full md:w-auto`}
-            >
-              Book Now
-            </button>
-          </Link>
+          <BookNowButton text={ctaText} ctaId={ctaLink} color={isDarkBg ? "white" : ""}/>
         )}
       </div>
     </div>

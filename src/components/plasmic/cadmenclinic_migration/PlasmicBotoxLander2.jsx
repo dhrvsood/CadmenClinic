@@ -72,6 +72,7 @@ import TreatmentPackagesSlider from "@/components/TreatmentPackagesSlider/Treatm
 import CadmenOurProcess from "./CadmenOurProcess";
 import CadmenPreparingForAppointment from "./CadmenPreparingForAppointment";
 import CadmenExpectDuringAndAfter from "./CadmenExpectDuringAndAfter";
+import BookNowButton from "@/components/ui/BookNowButton";
 
 createPlasmicElementProxy;
 
@@ -89,6 +90,9 @@ function useNextRouter() {
 }
 
 function PlasmicBotoxLander2__RenderFunc(props) {
+  const ctaId = "9161df85-ab43-4b81-a5a8-1a5aa8eff1b9" // Hair Restoration Consultation Service ID for cta redirection
+  const ctaText = "Book Your Consultation Now"
+
   const beforeAfters = [
     {
         id: 1,
@@ -717,7 +721,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
       `}</style>
 
       {/* 1. hero page */}
-      <HairLandingHero/>
+      <HairLandingHero ctaId={ctaId} ctaText={ctaText}/>
 
 
       <div className={projectcss.plasmic_page_wrapper}>
@@ -792,8 +796,8 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                 data-plasmic-name={"beforeAfterSlider"}
                 data-plasmic-override={overrides.beforeAfterSlider}
                 className={classNames("__wab_instance", sty.beforeAfterSlider)}
-                ctaLink={"#"}
-                ctaText={"Act Now"}
+                ctaLink={ctaId}
+                ctaText={ctaText}
                 isDarkBg={false}
                 settings={
                   hasVariant(globalVariants, "screen", "mobileOnly")
@@ -1043,10 +1047,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                 ]}
               />
             </Stack__>
-
-            <Link href='/book-now'  className='mt-[10px] w-full md:w-auto'>
-              <button className='button w-full md:w-auto'>Book Now</button>
-            </Link>
+            <BookNowButton text={ctaText} ctaId={ctaId}/>
           </Stack__>
 
           {/* 4. afforadble prices interactive section (import) */}
@@ -1117,13 +1118,15 @@ function PlasmicBotoxLander2__RenderFunc(props) {
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__hib93)}
             >
-            <TreatmentPackagesSlider treatmentPackages={treatmentPackages} />
+            <TreatmentPackagesSlider ctaId={ctaId} ctaText={ctaText} treatmentPackages={treatmentPackages} />
 
             </Stack__>
           </Stack__>
 
           {/* 6. our hair restoration program */}
           <CadmenOurProcess 
+            ctaId={ctaId}
+            ctaText={ctaText}
             title="Hair Restoration"
             program=" Program"
             consultation="Begin with a personalized consultation where our experts assess your hair and discuss your goals. We’ll create a tailored treatment plan to ensure optimal results that align with your needs."
@@ -1329,10 +1332,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
                   </div>
                 </Stack__>
               </Stack__>
-
-              <Link href='/book-now'  className='mt-[10px] w-full md:w-auto'>
-                <button className='button w-full md:w-auto'>Book Now</button>
-              </Link>
+              <BookNowButton text={ctaText} ctaId={ctaId}/>
 
             
             {/* image section for "preparing for your hair restoration appointment " */}
@@ -1375,6 +1375,8 @@ function PlasmicBotoxLander2__RenderFunc(props) {
 
           {/* 8. What to expect during and after the treatment */}
           <CadmenExpectDuringAndAfter 
+            ctaId={ctaId}
+            ctaText={ctaText}
             img="/media/hair-landing/2.jpg"
             subheading="Our hair restoration treatments are minimally invasive and quick, typically taking 30 minutes. Most patients describe the feeling as a slight pinch on your scalp."
             sections={[
@@ -1619,9 +1621,7 @@ function PlasmicBotoxLander2__RenderFunc(props) {
               </div>
             </Stack__>
 
-            <Link href='/book-now'  className='mt-[10px] w-full md:w-auto'>
-              <button className='button white w-full md:w-auto'>Book Now</button>
-            </Link>
+            <BookNowButton text={ctaText} ctaId={ctaId} color="white"/>
           </Stack__>
 
           {/* 12. our location */}

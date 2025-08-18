@@ -1,6 +1,7 @@
 const prp_facial = {
     slug: "prp-facial",
     tabTitle: "PRP (Vampire) Facial",
+    ctaId: '0dcbef15-8fa6-4ed0-b5e3-f774f6ad5529',
     isMigrated: true,
     category: "skin-treatments",
     general: {

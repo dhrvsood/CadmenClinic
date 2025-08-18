@@ -11,6 +11,7 @@ import projectcss from "@/components/plasmic/blank_website/plasmic.module.css";
 import sty from "@/components/plasmic/cadmenclinic_migration/PlasmicBotoxSeo.module.css";   
 import PointIcon from "./icons/PlasmicIcon__Point";
 import parse from 'html-react-parser';
+import BookNowButton from "@/components/ui/BookNowButton";
 
 const CadmenPreparingForAppointment = ({
     overrides = {}, 
@@ -19,6 +20,7 @@ const CadmenPreparingForAppointment = ({
     titleEmphasis,
     subheading,
     points,
+    ctaId,
     img
 }) => (
           <Stack__
@@ -146,9 +148,7 @@ const CadmenPreparingForAppointment = ({
                 </Stack__>
               </Stack__>
 
-              <Link href='/book-now'  className='mt-[10px] w-full md:w-auto'>
-                <button className='button w-full md:w-auto'>Book Now</button>
-              </Link>
+              <BookNowButton text="Book Now" ctaId={ctaId}/>
 
             
             {/* image section for "preparing for your hair restoration appointment " */}
