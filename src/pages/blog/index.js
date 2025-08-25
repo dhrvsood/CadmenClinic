@@ -111,11 +111,11 @@ const BlogPage = () => {
           </div>
 
           {loading &&
-            <div className={`flex gap-4 pb-6 items-center text-center justify-center`}>
-              <div className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-e-transparent align-[-0.125em] text-surface motion-reduce:animate-[spin_1.5s_linear_infinite]">
-
+            <div className="flex items-center justify-center min-h-[500px] bg-white">
+              <div className="flex flex-col items-center space-y-4">
+                <div className="h-12 w-12 animate-spin rounded-full border-4 border-gray-300 border-t-gray-800"></div>
+                <p className="text-gray-600 text-lg">Loading blogs...</p>
               </div>
-              Loading
             </div>
           }
           {hasMore && !loading && (
