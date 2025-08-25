@@ -85,18 +85,14 @@ const BlogPage = () => {
         <Container classList='md:px-5 px-5'>
           <div className='grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3'>
             {pages.map((blog) => (
-              <div className='relative cursor-pointer mb-10' key={blog.id}>
-                <Image
-                  className='h-[450px] w-full rounded object-cover object-center'
-                  draggable='false'
-                  src={blog.icon}
-                  alt={blog.title || 'No title'}
-                  width={500}
-                  height={500}
-                />
-                <div className='absolute bottom-0 left-0 right-0 h-[60%] rounded-bl rounded-br bg-gradient-to-t from-black to-transparent' />
-                <div className='absolute bottom-3 left-3 flex flex-col p-5'>
-                  <p className='h-[100px] py-2 text-left text-sm text-white'>
+              <div
+                key={blog.id}
+                className='relative cursor-pointer rounded-xl bg-wildSand shadow-lg overflow-hidden'
+              >
+
+                {/* Content */}
+                <div className='relative flex flex-col p-5'>
+                  <p className='mb-4 text-left text-lg text-black line-clamp-3'>
                     {blog.title || 'No Title'}
                   </p>
                   <div>
@@ -104,7 +100,7 @@ const BlogPage = () => {
                       href={{
                         pathname: `/blog/${blog.id}`,
                       }}
-                      className='rounded border border-white px-3 py-2 text-sm text-white hover:bg-white hover:text-black'
+                      className='rounded border px-3 py-2 bg-beaver/90 hover:bg-beaver text-sm text-white transition'
                     >
                       Read More
                     </Link>
@@ -113,6 +109,7 @@ const BlogPage = () => {
               </div>
             ))}
           </div>
+
           {loading &&
             <div className={`flex gap-4 pb-6 items-center text-center justify-center`}>
               <div className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-e-transparent align-[-0.125em] text-surface motion-reduce:animate-[spin_1.5s_linear_infinite]">
@@ -122,7 +119,7 @@ const BlogPage = () => {
             </div>
           }
           {hasMore && !loading && (
-            <div className='flex justify-center mb-8'>
+            <div className='flex justify-center my-8'>
               <button
                 className='rounded border border-beaver/90 bg-beaver/90 px-10 py-3 font-light text-white hover:bg-beaver hover:border-beaver'
                 onClick={loadMorePages}
