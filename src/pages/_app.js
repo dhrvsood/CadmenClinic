@@ -16,7 +16,7 @@ const CadmenClinic = ({ Component, pageProps }) => {
   const router = useRouter()
 
   // Generate/store UUID
-  useEffect(() => {
+  useEffect(() => { 
     const uuid = localStorage.getItem('uuid') ?? uuid4()
     localStorage.setItem('uuid', uuid)
   }, [])

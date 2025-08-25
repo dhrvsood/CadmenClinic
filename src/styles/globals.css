@@ -7,6 +7,89 @@
 @import 'react-calendar/dist/Calendar.css';
 @import 'variables.css';
 
+/* Paragraphs */
+.prose p {
+  @apply leading-relaxed mb-6;
+}
+.prose p + p {
+  @apply mt-4; /* spacing between consecutive paragraphs */
+}
+
+/* Headings */
+.prose h1 {
+  @apply text-4xl font-display font-semibold leading-relaxed my-4;
+}
+.prose h2 {
+  @apply text-3xl font-semibold leading-relaxed my-4;
+}
+.prose h3 {
+  @apply text-2xl font-medium leading-relaxed my-4;
+}
+.prose h4 {
+  @apply text-xl font-medium leading-relaxed my-4;
+}
+.prose h5 {
+  @apply text-lg font-medium leading-relaxed my-3;
+}
+.prose h6 {
+  @apply text-base font-medium leading-relaxed my-3;
+}
+
+/* Lists */
+.prose ul,
+.prose ol {
+  @apply mt-4 mb-4 pl-6; /* spacing around lists */
+}
+
+.prose ul {
+  @apply list-disc;
+}
+.prose ol {
+  @apply list-decimal;
+}
+
+.prose li {
+  @apply mb-2; /* spacing between list items */
+}
+
+/* Tables */
+.prose table {
+  @apply mt-6 mb-6 table-auto border border-gray-300 w-full;
+}
+.prose th,
+.prose td {
+  @apply border border-gray-300 px-3 py-2 text-left;
+}
+
+/* Images */
+.prose img {
+  @apply my-6 w-full h-auto rounded;
+}
+
+/* Blockquotes */
+.prose blockquote {
+  @apply border-l-4 border-gray-300 pl-4 italic my-4 text-gray-700;
+}
+
+/* Code blocks */
+.prose pre {
+  @apply bg-gray-100 p-4 rounded my-4 overflow-x-auto;
+}
+.prose code {
+  @apply bg-gray-100 px-1 rounded;
+}
+
+/* Inline text formatting */
+.prose strong {
+  @apply font-bold;
+}
+.prose em {
+  @apply italic;
+}
+.prose u {
+  @apply underline;
+}
+
 
 /* html h1 {
   line-height: 1.16;

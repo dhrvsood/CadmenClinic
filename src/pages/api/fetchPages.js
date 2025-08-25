@@ -17,19 +17,14 @@ export default async function handler(req, res) {
   try {
     const response = await notion.databases.query({
       database_id: process.env.NEXT_PUBLIC_NOTION_DATABASE_ID,
-      filter: {
-        property: "Status",
-        select: {
-          equals: "Published",
-        },
-      },
       page_size: parseInt(limit, 10),
       start_cursor: cursor || undefined,
     });
 
+
     const minimalData = response.results.map((page) => ({
       id: page.id,
-      title: page.properties.Title.title[0]?.plain_text,
+      title: page.properties.Title.title[0].plain_text,
       icon: page.icon?.file?.url || null, // Handle missing icon
     }));
 
