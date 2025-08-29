@@ -34,10 +34,16 @@ const SecureBooking = () => {
       const checkIfCardExists = async () => {
         const cardExists = await checkCard()
         if (!cardExists) {
+          console.log("Card exists")
           setCheckingCard(false)
           const getAddCardForm = await addCard()
+          if (!getAddCardForm) {
+            console.log("getAddCardForm not found. Problem with booking store.")
+            addToast('Error. Please call or text (416) 551-1137 to complete your booking', 'error')
+            decrementStep()
+            return
+          }
           setPaymentForm(getAddCardForm.hosted_payment_uri)
-  
           return
         }
         const bookingIsConfirmed = await confirmBooking()
@@ -68,19 +74,13 @@ const SecureBooking = () => {
       // }
       if (
         event.origin !==
-        'https://cadmen-clinic-m8tfbifdv-dhruv-soods-projects-cc84876a.vercel.app'
-      )
-      return
+          'https://cadmen-clinic-m8tfbifdv-dhruv-soods-projects-cc84876a.vercel.app'
 
-      fetch('/api/logger', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          event: event.data
-        })
-      })
+        // 'https://cadmenclinic.ca'
+      )
+
+      // addToast(`Event Origin: ${event.origin}`, 'error')
+      return
 
       if (
         event.data.type === 'paymentStatus' &&
@@ -96,6 +96,7 @@ const SecureBooking = () => {
         }
         incrementStep()
       }
+      addToast('error has occurred', 'error')
     }
     window.addEventListener('message', handleMessage)
 
