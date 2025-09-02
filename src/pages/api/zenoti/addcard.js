@@ -19,6 +19,7 @@ const addCard = async (req, res) => {
       redirect_uri: `${'https://cadmen-clinic-m8tfbifdv-dhruv-soods-projects-cc84876a.vercel.app'}/paymentsuccess`
       // redirect_uri: 'https://cadmenclinic.ca/paymentsuccess'
     }
+    console.log("ADDCARD DATA:", data)
 
     const config = {
       method: 'post',
@@ -29,9 +30,10 @@ const addCard = async (req, res) => {
       },
       data: data
     }
+    console.log("ADDCARD CONFIG:", config)
 
     const response = await axios(config)
-    console.log("ADDCARD RESPONSE:", addCard)
+    console.log("ADDCARD RESPONSE:", response)
     const error = response.data.error
     if (error) {
       console.error("Error:", error.code, error.message)

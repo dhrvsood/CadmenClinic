@@ -34,7 +34,7 @@ const SecureBooking = () => {
       const checkIfCardExists = async () => {
         const cardExists = await checkCard()
         if (!cardExists) {
-          console.log("Card exists")
+          console.log("Card does not exist, adding card.")
           setCheckingCard(false)
           const getAddCardForm = await addCard()
           if (!getAddCardForm) {
@@ -78,7 +78,6 @@ const SecureBooking = () => {
 
         // 'https://cadmenclinic.ca'
       )
-
       // addToast(`Event Origin: ${event.origin}`, 'error')
       return
 
@@ -96,7 +95,6 @@ const SecureBooking = () => {
         }
         incrementStep()
       }
-      addToast('error has occurred', 'error')
     }
     window.addEventListener('message', handleMessage)
 
