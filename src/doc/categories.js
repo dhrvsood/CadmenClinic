@@ -21,13 +21,13 @@ export const categories = {
   "Skin Treatments": {
     services: [
       {
-        title: 'Botox for Men',
-        slug: "/botox-for-men",
+        title: "Botox® Wrinkle Relaxer Treatment",
+        slug: "/botox",
         categoryOrder: 1,
       },
       {
-        title: "Botox® Wrinkle Relaxer Treatment",
-        slug: "/botox",
+        title: 'Botox for Men',
+        slug: "/botox-for-men",
         categoryOrder: 2,
       },
       {

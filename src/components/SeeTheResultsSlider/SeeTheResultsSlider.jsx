@@ -77,15 +77,6 @@ const data = [
     items: [
       {
         frontCard: {
-          title: 'Botox for Men',
-          description:
-            'Smooths deep lines and restores a confident, refreshed look tailored for men',
-          image: '/seeTheResultsSlider/skin/botox-for-men.jpg',
-          link: '/services/botox-for-men'
-        },
-      },
-      {
-        frontCard: {
           title: 'Botox® Wrinkle Relaxer Treatment',
           description:
             'Reduces wrinkles and fine lines for a smoother, younger-looking appearance.',
@@ -99,6 +90,15 @@ const data = [
           image: '/seeTheResultsSlider/skin/botox-back.avif',
           link: '/services/botox'
         }
+      },
+      {
+        frontCard: {
+          title: 'Botox for Men',
+          description:
+            'Smooths deep lines and restores a confident, refreshed look tailored for men',
+          image: '/seeTheResultsSlider/skin/botox-for-men.jpg',
+          link: '/services/botox-for-men'
+        },
       },
       {
         frontCard: {
