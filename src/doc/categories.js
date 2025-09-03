@@ -26,44 +26,49 @@ export const categories = {
         categoryOrder: 1,
       },
       {
+        title: 'Botox for Men',
+        slug: "/botox-for-men",
+        categoryOrder: 2,
+      },
+      {
         title: "Lip Fillers",
         slug: "/lip-fillers",
-        categoryOrder: 2,
+        categoryOrder: 3,
       },
       {
         title: "Dermal Fillers",
         slug: "/dermal-fillers",
-        categoryOrder: 3,
+        categoryOrder: 4,
       },
       {
         title: "Microneedling Facial",
         slug: "/microneedling",
-        categoryOrder: 4,
+        categoryOrder: 5,
       },
       {
         title: "SCULPTRA®",
         slug: "/sculptra",
-        categoryOrder: 5,
+        categoryOrder: 6,
       },
       {
         title: "PRP Injections",
         slug: "/prp-injections",
-        categoryOrder: 6
+        categoryOrder: 7
       },
       {
         title: "PRP (Vampire) Facial",
         slug: "/prp-facial",
-        categoryOrder: 7,
+        categoryOrder: 8,
       },
       {
         title: "Chemical Peels",
         slug: "/chemical-peels",
-        categoryOrder: 8,
+        categoryOrder: 9,
       },
       {
         title: "Botox® Sweat Reduction",
         slug: "/botox-sweat-reduction",
-        categoryOrder: 9
+        categoryOrder: 10
       },
     ]
   },
