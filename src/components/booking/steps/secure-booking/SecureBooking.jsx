@@ -34,7 +34,7 @@ const SecureBooking = () => {
       const checkIfCardExists = async () => {
         const cardExists = await checkCard()
         if (!cardExists) {
-          console.log("Card exists")
+          console.log("Card does not exist, adding card.")
           setCheckingCard(false)
           const getAddCardForm = await addCard()
           if (!getAddCardForm) {
@@ -66,21 +66,39 @@ const SecureBooking = () => {
 
   useEffect(() => {
     const handleMessage = async (event) => {
-      // if (event.origin !== `https://cadmenclinic.ca/paymentsuccess`) {
-      //   console.log("Event origin:", event.origin)
-      //   console.log("Base URL:", baseURL)
-      //   console.error("Error, event.origin is not the same as baseURL");
-      //   return;
-      // }
-      if (
-        event.origin !==
-          'https://cadmen-clinic-m8tfbifdv-dhruv-soods-projects-cc84876a.vercel.app'
+      const correctOrigin = 'https://cadmen-clinic-2d9naa8g4-dhruv-soods-projects-cc84876a.vercel.app'
+      const eventOrigin = event.origin
+      // if (
+      //   event.origin !==
+      //   'https://cadmen-clinic-2d9naa8g4-dhruv-soods-projects-cc84876a.vercel.app'    // Updated paymentsuccess screen
+      //   // 'https://cadmen-clinic-m8tfbifdv-dhruv-soods-projects-cc84876a.vercel.app' // OLD paymentsuccess preview 
+      //   // 'https://cadmenclinic.ca'
+      // )
+      // return
+      if (eventOrigin !== correctOrigin) {
+        console.error("Event origin was not found to be correct for payment")
+        fetch('/api/logger', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            correctOrigin: correctOrigin,
+            event: event
+          })
+        })
+        return
+      }
 
-        // 'https://cadmenclinic.ca'
-      )
-
-      // addToast(`Event Origin: ${event.origin}`, 'error')
-      return
+      fetch('/api/logger', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          event: event.data
+        })
+      })
 
       if (
         event.data.type === 'paymentStatus' &&
@@ -96,7 +114,6 @@ const SecureBooking = () => {
         }
         incrementStep()
       }
-      addToast('error has occurred', 'error')
     }
     window.addEventListener('message', handleMessage)
 

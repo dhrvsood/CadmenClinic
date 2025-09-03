@@ -13,6 +13,15 @@ function PaymentSuccess() {
         : 'successful'
 
   useEffect(() => {
+    fetch('/api/logger', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        paymentStatus: paymentStatus
+      })
+    })
     if (typeof success !== 'undefined') {
       window.top.postMessage(
         { type: 'paymentStatus', status: paymentStatus },
@@ -55,7 +64,7 @@ function PaymentSuccess() {
             </svg>
 
             <p className='text-xl text-red-500'>
-              Something went wrong. Please try again.
+              Something went wrong. Please call/text (416) 551-1137 to complete your booking.
             </p>
           </div>
         ) : (
@@ -140,7 +149,7 @@ function PaymentSuccess() {
                 </svg>
 
                 <p className='text-xl text-red-500'>
-                  Card addition failed. Please try again.
+                  Card addition failed. Please call/text (416) 551-1137 to complete your booking.
                 </p>
               </div>
             )}
