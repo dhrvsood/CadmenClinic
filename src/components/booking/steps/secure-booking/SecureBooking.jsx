@@ -66,21 +66,23 @@ const SecureBooking = () => {
 
   useEffect(() => {
     const handleMessage = async (event) => {
-      // if (event.origin !== `https://cadmenclinic.ca/paymentsuccess`) {
-      //   console.log("Event origin:", event.origin)
-      //   console.log("Base URL:", baseURL)
-      //   console.error("Error, event.origin is not the same as baseURL");
-      //   return;
-      // }
       if (
         event.origin !==
           'https://cadmen-clinic-m8tfbifdv-dhruv-soods-projects-cc84876a.vercel.app'
-
         // 'https://cadmenclinic.ca'
       )
-      // addToast(`Event Origin: ${event.origin}`, 'error')
       return
 
+      fetch('/api/logger', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          event: event.data
+        })
+      })
+      
       if (
         event.data.type === 'paymentStatus' &&
         event.data.status === 'successful'
