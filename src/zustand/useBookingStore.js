@@ -275,7 +275,7 @@ export const useBookingStore = create((set, get) => {
         lastName: guestInfo.lastName,
         service: service.title
       })} catch(err) {
-        console.err("BOOKING COMPLETE: Couldn't send ContactInfo to Tracklution", err)
+        console.error("BOOKING COMPLETE: Couldn't send ContactInfo to Tracklution", err)
       }
 
       TagManager.dataLayer({

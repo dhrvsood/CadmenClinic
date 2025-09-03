@@ -66,13 +66,29 @@ const SecureBooking = () => {
 
   useEffect(() => {
     const handleMessage = async (event) => {
-      if (
-        event.origin !==
-        'https://cadmen-clinic-2d9naa8g4-dhruv-soods-projects-cc84876a.vercel.app'    // Updated paymentsuccess screen
-        // 'https://cadmen-clinic-m8tfbifdv-dhruv-soods-projects-cc84876a.vercel.app' // OLD paymentsuccess preview 
-        // 'https://cadmenclinic.ca'
-      )
-      return
+      const correctOrigin = 'https://cadmen-clinic-2d9naa8g4-dhruv-soods-projects-cc84876a.vercel.app'
+      const eventOrigin = event.origin
+      // if (
+      //   event.origin !==
+      //   'https://cadmen-clinic-2d9naa8g4-dhruv-soods-projects-cc84876a.vercel.app'    // Updated paymentsuccess screen
+      //   // 'https://cadmen-clinic-m8tfbifdv-dhruv-soods-projects-cc84876a.vercel.app' // OLD paymentsuccess preview 
+      //   // 'https://cadmenclinic.ca'
+      // )
+      // return
+      if (eventOrigin !== correctOrigin) {
+        console.error("Event origin was not found to be correct for payment")
+        fetch('/api/logger', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            correctOrigin: correctOrigin,
+            event: event
+          })
+        })
+        return
+      }
 
       fetch('/api/logger', {
         method: 'POST',
