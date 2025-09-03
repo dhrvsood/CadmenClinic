@@ -68,7 +68,8 @@ const SecureBooking = () => {
     const handleMessage = async (event) => {
       if (
         event.origin !==
-          'https://cadmen-clinic-m8tfbifdv-dhruv-soods-projects-cc84876a.vercel.app'
+        'https://cadmen-clinic-2d9naa8g4-dhruv-soods-projects-cc84876a.vercel.app'    // Updated paymentsuccess screen
+        // 'https://cadmen-clinic-m8tfbifdv-dhruv-soods-projects-cc84876a.vercel.app' // OLD paymentsuccess preview 
         // 'https://cadmenclinic.ca'
       )
       return
@@ -82,7 +83,7 @@ const SecureBooking = () => {
           event: event.data
         })
       })
-      
+
       if (
         event.data.type === 'paymentStatus' &&
         event.data.status === 'successful'
