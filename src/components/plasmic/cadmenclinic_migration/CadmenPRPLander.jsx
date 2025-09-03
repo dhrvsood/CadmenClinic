@@ -697,6 +697,7 @@ function PlasmicBotoxLander__RenderFunc(props) {
               <CadmenPreparingForAppointment
                 titlePrefix={service.whatAndHowItWorks.titlePrefix}
                 titleEmphasis={service.whatAndHowItWorks.titleEmphasis}
+                subheading={service.whatAndHowItWorks.subheading}
                 points={service.whatAndHowItWorks.points}
                 img={service.whatAndHowItWorks.img}
                 ctaId={service.ctaId}
