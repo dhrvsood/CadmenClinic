@@ -31,7 +31,6 @@ const addCard = async (req, res) => {
       },
       data: data
     }
-    console.log("ADDCARD CONFIG:", config)
 
     const response = await axios(config)
     console.log("ADDCARD RESPONSE:", response)

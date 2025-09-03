@@ -103,7 +103,7 @@ const botox_for_men = {
         data: [
             {
                 id: 1,
-                name: "Forhead Treatment",
+                name: "Forehead Treatment",
                 description: "Horizontal forehead lines age your appearance and create tired expressions during important meetings. Botox for men forehead treatment smooths these lines while preserving the masculine brow position. Results maintain your strong, authoritative presence while eliminating stress lines that undermine professional confidence.",
                 img: "/media/services/botox-for-men/forehead_treatment.webp"
             },
