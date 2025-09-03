@@ -22,7 +22,7 @@ export default async function handler(req, res) {
     })
 
     if (bookingResponse) {
-      console.log("Booking IDs created successfully")
+      console.log("Calendar View: Booking IDs created successfully")
       res.status(200).json(bookingResponse)
     } else {
       console.log("Invalid booking response")

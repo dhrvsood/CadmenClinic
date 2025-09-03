@@ -11,9 +11,12 @@ import TagManager from 'react-gtm-module'
 import { useRouter } from 'next/router'
 import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from '@vercel/speed-insights/next'
+import { useNotificationStore } from '@/zustand/useNotificationStore'
+import Notification from '@/components/notification/Notification'
 
 const CadmenClinic = ({ Component, pageProps }) => {
   const router = useRouter()
+  const { toasts } = useNotificationStore()
 
   // Generate/store UUID
   useEffect(() => { 
@@ -86,6 +89,15 @@ const CadmenClinic = ({ Component, pageProps }) => {
       <ParallaxProvider>
         <Layout>
           <Component {...pageProps} />
+          {toasts.length > 0 &&
+            toasts.map((toast) => (
+              <Notification
+                key={toast.id}
+                id={toast.id}
+                message={toast.message}
+                type={toast.type}
+              ></Notification>
+            ))}
           <Analytics />
           <SpeedInsights />
         </Layout>

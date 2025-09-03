@@ -93,6 +93,15 @@ const data = [
       },
       {
         frontCard: {
+          title: 'Botox for Men',
+          description:
+            'Smooths deep lines and restores a confident, refreshed look tailored for men',
+          image: '/seeTheResultsSlider/skin/botox-for-men.jpg',
+          link: '/services/botox-for-men'
+        },
+      },
+      {
+        frontCard: {
           title: 'Lip Fillers',
           description:
             'Achieve beautifully defined, balanced lips with personalized care.',
