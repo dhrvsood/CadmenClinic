@@ -1,53 +1,41 @@
-import Container from '@/components/container';
-import { useEffect, useState } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import { NextSeo } from 'next-seo';
+import fs from "fs"
+import path from "path"
+import matter from "gray-matter"
+import Link from "next/link"
+import Image from "next/image"
+import { useState } from "react"
+import Container from "@/components/container"
+import { NextSeo } from "next-seo"
 
-const BlogPage = () => {
-  const [pages, setPages] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [nextCursor, setNextCursor] = useState(null);
-  const [hasMore, setHasMore] = useState(true);
+export async function getStaticProps() {
+  const removeMd = require('remove-markdown')
+  const blogDir = path.join(process.cwd(), "src/doc/blog")
+  console.log(blogDir)
+  const files = fs.readdirSync(blogDir)
 
-  const fetchPages = async (cursor = null, limit = 9) => {
-    const url = cursor
-      ? `/api/fetchPages?limit=${limit}&cursor=${cursor}`
-      : `/api/fetchPages?limit=${limit}`;
-    const response = await fetch(url);
+  const posts = files.map((filename) => {
+    const id = filename.replace(".md", "")
+    const markdown = fs.readFileSync(path.join(blogDir, filename), "utf-8")
+    const { data, content } = matter(markdown)
+    const blurb = removeMd(content).substring(0, 100) + "..."
 
-    if (!response.ok) {
-      console.error("Failed to fetch data from the API");
-      return { results: [], nextCursor: null, hasMore: false };
+    return {
+      id,
+      title: data.title,
+      category: data.category,
+      image: data.image,
+      blurb: blurb,
     }
+  })
 
-    return await response.json();
-  };
+  return { props: { posts } }
+}
 
-  useEffect(() => {
-    const loadInitialData = async () => {
-      setLoading(true);
-      const data = await fetchPages();
-      setPages(data.results);
-      setNextCursor(data.nextCursor);
-      setHasMore(data.hasMore);
-      setLoading(false);
-      console.log(data.results)
-    };
+export default function BlogIndex({ posts }) {
+  const [filter, setFilter] = useState("All")
+  const categories = ["All", ...new Set(posts.map((p) => p.category))]
 
-    loadInitialData();
-  }, []);
-
-  const loadMorePages = async () => {
-    if (!hasMore || loading) return;
-
-    setLoading(true);
-    const data = await fetchPages(nextCursor);
-    setPages((prevPages) => [...prevPages, ...data.results]);
-    setNextCursor(data.nextCursor);
-    setHasMore(data.hasMore);
-    setLoading(false);
-  };
+  const filtered = filter === "All" ? posts : posts.filter((p) => p.category === filter)
 
   return (
     <>
@@ -71,7 +59,6 @@ const BlogPage = () => {
           siteName: 'CADMEN Clinic'
         }}
       />
-
       <section className='mt-10 bg-wildSand px-5 py-20'>
         <Container>
           <div className='grid items-center gap-10 space-y-5'>
@@ -81,61 +68,48 @@ const BlogPage = () => {
           </div>
         </Container>
       </section>
-      <section className='bg-white-200 py-10 mt-0'>
-        <Container classList='md:px-5 px-5'>
-          <div className='grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3'>
-            {pages.map((blog) => (
-              <div className='relative cursor-pointer mb-10' key={blog.id}>
+      <section className="py-10">
+        <Container>
+          {/* Category Dropdown */}
+          <div className="flex justify-center mb-8">
+            <select
+              className="border rounded px-3 py-2"
+              value={filter}
+              onChange={(e) => setFilter(e.target.value)}
+            >
+              {categories.map((c) => (
+                <option key={c} value={c}>{c}</option>
+              ))}
+            </select>
+          </div>
+
+          {/* Blog Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+            {filtered.map((post) => (
+              <div key={post.id} className="relative group rounded shadow-md overflow-hidden">
                 <Image
-                  className='h-[450px] w-full rounded object-cover object-center'
-                  draggable='false'
-                  src={blog.icon}
-                  alt={blog.title || 'No title'}
-                  width={500}
-                  height={500}
+                  src={post.image}
+                  alt={post.title}
+                  width={600}
+                  height={400}
+                  className="object-cover w-full h-64"
                 />
-                <div className='absolute bottom-0 left-0 right-0 h-[60%] rounded-bl rounded-br bg-gradient-to-t from-black to-transparent' />
-                <div className='absolute bottom-3 left-3 flex flex-col p-5'>
-                  <p className='h-[100px] py-2 text-left text-sm text-white'>
-                    {blog.title || 'No Title'}
-                  </p>
-                  <div>
-                    <Link
-                      href={{
-                        pathname: `/blog/${blog.id}`,
-                      }}
-                      className='rounded border border-white px-3 py-2 text-sm text-white hover:bg-white hover:text-black'
-                    >
-                      Read More
-                    </Link>
-                  </div>
+                <div className="p-5">
+                  <span className="text-sm text-gray-500">{post.category}</span>
+                  <h2 className="text-2xl font-semibold mt-2">{post.title}</h2>
+                  <p className="text-gray-600 mt-2">{post.blurb}</p>
+                  <Link
+                    href={`/blog/${post.id}`}
+                    className="inline-block mt-4 text-beaver hover:underline"
+                  >
+                    Read More →
+                  </Link>
                 </div>
               </div>
             ))}
           </div>
-          {loading &&
-            <div className={`flex gap-4 pb-6 items-center text-center justify-center`}>
-              <div className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-e-transparent align-[-0.125em] text-surface motion-reduce:animate-[spin_1.5s_linear_infinite]">
-
-              </div>
-              Loading
-            </div>
-          }
-          {hasMore && !loading && (
-            <div className='flex justify-center mb-8'>
-              <button
-                className='rounded border border-beaver/90 bg-beaver/90 px-10 py-3 font-light text-white hover:bg-beaver hover:border-beaver'
-                onClick={loadMorePages}
-                disabled={loading}
-              >
-                Load More
-              </button>
-            </div>
-          )}
         </Container>
       </section>
     </>
-  );
-};
-
-export default BlogPage;
+  )
+}

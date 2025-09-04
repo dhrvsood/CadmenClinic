@@ -19,7 +19,7 @@ const CadmenClinic = ({ Component, pageProps }) => {
   const { toasts } = useNotificationStore()
 
   // Generate/store UUID
-  useEffect(() => {
+  useEffect(() => { 
     const uuid = localStorage.getItem('uuid') ?? uuid4()
     localStorage.setItem('uuid', uuid)
   }, [])
