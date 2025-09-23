@@ -271,8 +271,8 @@ const formServices = [
         id: '6fde4a3d-0a6e-4a1e-97e5-32368abdcda3',
         price: {
           original: '$599',
-          discounted: '$399',
-          percent: '30% off'
+          discounted: '$299',
+          percent: '50% off'
         },
         image: '/booking-photos/microneedling.webp',
         points: [
