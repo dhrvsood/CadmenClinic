@@ -5,10 +5,10 @@ const botox_for_men = {
     isMigrated: true,
     category: "skin-treatments",
     general: {
-        strikePrice: "$14.00",
-        salePrice: "$9.99",
+        strikePrice: "$13.00",
+        salePrice: "$7.99",
         perUnit: " / unit",
-        discount: "30%",
+        discount: "40%",
         shortTitle: "Botox",
         longTitle: "\nBotox for Men"
     },
@@ -56,8 +56,8 @@ const botox_for_men = {
         cards: [
             {
                 name: "Dysport",
-                regularPrice: 14,
-                specialPrice: 9.99,
+                regularPrice: 13,
+                specialPrice: 7.99,
                 points: [
                     {
                         title: "Targeted for Larger Areas",
@@ -76,7 +76,7 @@ const botox_for_men = {
             {
                 name: "Botox",
                 regularPrice: 15,
-                specialPrice: 12.99,
+                specialPrice: 10.99,
                 points: [
                     {
                         title: "Versatile Treatment",

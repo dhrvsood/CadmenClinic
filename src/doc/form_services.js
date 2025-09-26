@@ -157,9 +157,9 @@ const formServices = [
         notes: '',
         id: '3a2b077b-3e98-4f16-9183-8c0cb9aeccfb',
         price: {
-          original: '$14.00',
-          discounted: '$9.99 / unit',
-          percent: '30% off'
+          original: '$13.00',
+          discounted: '$7.99 / unit',
+          percent: '40% off'
         },
         image: '/booking-photos/botox.webp',
         points: [

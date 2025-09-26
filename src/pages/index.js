@@ -126,8 +126,8 @@ const Home = () => {
     {
       "service": "Botox",
       "image": "/media/home/offers/Botox.jpg",
-      "percentOff": 30,
-      "price": 9.99,
+      "percentOff": 40,
+      "price": 7.99,
       "unitText": "per unit",
       "priceFrom": false,
       "serviceId": "3a2b077b-3e98-4f16-9183-8c0cb9aeccfb"
