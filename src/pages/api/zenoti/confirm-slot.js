@@ -20,6 +20,7 @@ export default async function handler(req, res) {
     const confirmed = await confirmSlot(bookingId, guestId, serviceInfo)
  
     if (confirmed && confirmed.is_confirmed) {
+      console.log('Booking Complete', { Guest: guestId, Service: serviceInfo.serviceId })
       return res.status(200).json({ ...confirmed })
     }
 

@@ -1,6 +1,7 @@
 const lip_fillers = {
     slug: "lip-fillers",
     tabTitle: "Lip Fillers",
+    ctaId: '95122e0f-849d-4e79-9f96-a4e5ae09c48d',
     isMigrated: true,
     category: "skin-treatments",
     general: {

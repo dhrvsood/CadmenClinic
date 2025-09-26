@@ -1,6 +1,7 @@
 const kybella = {
     slug: "kybella",
     tabTitle: "Kybella / Fat Melting",
+    ctaId: '18ac585d-c861-4acf-92b6-f2c474c9ec1c',
     isMigrated: true,
     category: "wellness",
     general: {

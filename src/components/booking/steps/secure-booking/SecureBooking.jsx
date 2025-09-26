@@ -34,10 +34,16 @@ const SecureBooking = () => {
       const checkIfCardExists = async () => {
         const cardExists = await checkCard()
         if (!cardExists) {
+          console.log("Card does not exist, adding card.")
           setCheckingCard(false)
           const getAddCardForm = await addCard()
+          if (!getAddCardForm) {
+            console.log("getAddCardForm not found. Problem with booking store.")
+            addToast('Error. Please call or text (416) 551-1137 to complete your booking', 'error')
+            decrementStep()
+            return
+          }
           setPaymentForm(getAddCardForm.hosted_payment_uri)
-  
           return
         }
         const bookingIsConfirmed = await confirmBooking()
@@ -60,17 +66,29 @@ const SecureBooking = () => {
 
   useEffect(() => {
     const handleMessage = async (event) => {
-      // if (event.origin !== `https://cadmenclinic.ca/paymentsuccess`) {
-      //   console.log("Event origin:", event.origin)
-      //   console.log("Base URL:", baseURL)
-      //   console.error("Error, event.origin is not the same as baseURL");
-      //   return;
-      // }
-      if (
-        event.origin !==
-        'https://cadmen-clinic-m8tfbifdv-dhruv-soods-projects-cc84876a.vercel.app'
-      )
-      return
+      const correctOrigin = 'https://cadmen-clinic-2d9naa8g4-dhruv-soods-projects-cc84876a.vercel.app'
+      const eventOrigin = event.origin
+      // if (
+      //   event.origin !==
+      //   'https://cadmen-clinic-2d9naa8g4-dhruv-soods-projects-cc84876a.vercel.app'    // Updated paymentsuccess screen
+      //   // 'https://cadmen-clinic-m8tfbifdv-dhruv-soods-projects-cc84876a.vercel.app' // OLD paymentsuccess preview 
+      //   // 'https://cadmenclinic.ca'
+      // )
+      // return
+      if (eventOrigin !== correctOrigin) {
+        console.error("Event origin was not found to be correct for payment")
+        fetch('/api/logger', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            correctOrigin: correctOrigin,
+            event: event
+          })
+        })
+        return
+      }
 
       fetch('/api/logger', {
         method: 'POST',

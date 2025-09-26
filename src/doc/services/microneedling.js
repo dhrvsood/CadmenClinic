@@ -1,13 +1,14 @@
 const microneedling = {
     slug: "microneedling",
     tabTitle: "Microneedling Facial",
+    ctaId: '6fde4a3d-0a6e-4a1e-97e5-32368abdcda3',
     isMigrated: true,
     category: "skin-treatments",
     general: {
         strikePrice: "$599",
-        salePrice: "$399",
+        salePrice: "$299",
         perUnit: " / session",
-        discount: "30%",
+        discount: "50%",
         shortTitle: "Microneedling",
         longTitle: "Microneedling"
     },
@@ -83,7 +84,7 @@ const microneedling = {
             {
                 name: "Microneedling",
                 regularPrice: "599",
-                specialPrice: "399",
+                specialPrice: "299",
                 points: [
                     {
                         title: "Stimulates Collagen and Elastin",
@@ -98,7 +99,7 @@ const microneedling = {
             {
                 name: "Microneedling + Exosomes",
                 regularPrice: "799",
-                specialPrice: "599",
+                specialPrice: "499",
                 points: [
                     {
                         title: "Next-Level Rejuvenation with Exosomes",

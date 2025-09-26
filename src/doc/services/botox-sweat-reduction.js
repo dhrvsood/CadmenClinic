@@ -1,6 +1,7 @@
 const botox_sweat_reduction = {
     slug: "botox-sweat-reduction",
     tabTitle: "Botox® Sweat Reduction",
+    ctaId: "552bb365-5f45-4c82-84b9-c743ed75c0b9",
     isMigrated: true,
     category: "skin-treatments",
     general: {

@@ -4,6 +4,7 @@ import exosomes from "./services/exosomes";
 import mesotherapy from "./services/mesotherapy";
 
 // SKIN TREATMENTS
+import botox_for_men from "./services/botox-for-men";
 import botox from "./services/botox";
 import chemical_peels from "./services/chemical-peels";
 import lip_fillers from "./services/lip-filler";
@@ -23,6 +24,7 @@ export const servicesData = {
     "exosomes": exosomes,
     "mesotherapy": mesotherapy,
 
+    "botox-for-men": botox_for_men,
     "botox": botox,
     "chemical-peels": chemical_peels, 
     "lip-fillers": lip_fillers,

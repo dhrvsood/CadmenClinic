@@ -1,6 +1,7 @@
 const dermal_fillers = {
     slug: "dermal-fillers",
     tabTitle: "Dermal Fillers",
+    ctaId: '662c6e71-73c3-47d3-8af9-e4277c1a2783',
     isMigrated: true,
     category: "skin-treatments",
     general: {

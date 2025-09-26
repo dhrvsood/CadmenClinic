@@ -54,6 +54,7 @@ import CadmenTreatmentCardsSection from "./CadmenTreatmentCardsSection";
 import CadmenWantToLearnMore from "./CadmenWantToLearnMore";
 import CadmenExpectDuringAndAfter from "./CadmenExpectDuringAndAfter";
 import InteractiveInfo from "@/components/InteractiveInfo";
+import BookNowButton from "@/components/ui/BookNowButton";
 
 createPlasmicElementProxy;
 
@@ -162,6 +163,10 @@ function CadmenServicePage__RenderFunc(props) {
     fontStyle: "italic",
     color: isHairRestoration ? "#D19D51" : "#fad8a7"
   };
+
+  // Booking Button id
+  const bookingButtonText = isHairRestoration ? "Book Your Consultation Now" : "Book Now"
+  const bookingButtonCtaId = isHairRestoration ? "9161df85-ab43-4b81-a5a8-1a5aa8eff1b9" : service.ctaId || ""
 
   return (
     <React.Fragment>
@@ -279,9 +284,7 @@ function CadmenServicePage__RenderFunc(props) {
                   <RatingReviewPill />
                 </div>
                 
-                <Link href='/book-now'  className='mt-[10px] w-full md:w-auto'>
-                  <button className='button w-full md:w-auto'>Book Now</button>
-                </Link>
+                <BookNowButton text={bookingButtonText} ctaId={bookingButtonCtaId} />
               
               </div>
               <div className={classNames(projectcss.all, sty.freeBox__wyX9A)}>
@@ -430,9 +433,8 @@ function CadmenServicePage__RenderFunc(props) {
               />
             </div>
 
-            <Link href='/book-now'  className='mt-[40px] w-full md:w-auto'>
-              <button className='button w-full md:w-auto'>Book Now</button>
-            </Link>
+            <BookNowButton text={bookingButtonText} ctaId={bookingButtonCtaId} mt="40"/>
+
 
             <style jsx>{`
               .cards-container {
@@ -606,8 +608,8 @@ function CadmenServicePage__RenderFunc(props) {
                   data-plasmic-name={"beforeAfterSlider"}
                   data-plasmic-override={overrides.beforeAfterSlider}
                   className={classNames("__wab_instance", sty.beforeAfterSlider)}
-                  ctaLink={"#"}
-                  ctaText={"Act Now"}
+                  ctaLink={bookingButtonCtaId}
+                  ctaText={bookingButtonText}
                   isDarkBg={true}
                   settings={
                     hasVariant(globalVariants, "screen", "mobileOnly")
@@ -687,8 +689,10 @@ function CadmenServicePage__RenderFunc(props) {
               <CadmenPreparingForAppointment
                 titlePrefix={service.whatAndHowItWorks.titlePrefix}
                 titleEmphasis={service.whatAndHowItWorks.titleEmphasis}
+                subheading={service.whatAndHowItWorks.subheading}
                 points={service.whatAndHowItWorks.points}
                 img={service.whatAndHowItWorks.img}
+                ctaId={service.ctaId}
               />
 
               {/* 5. OUR SERVICE PROCESS (Consultation, Treatment, Results) */}
@@ -698,6 +702,7 @@ function CadmenServicePage__RenderFunc(props) {
                 consultation={service.ourProcess.consultation}
                 treatment={service.ourProcess.treatment}
                 results={service.ourProcess.results}
+                ctaId={service.ctaId}
               />
 
               {/* 6. CARDS FOR OUR TREATMENTS */}
@@ -708,6 +713,7 @@ function CadmenServicePage__RenderFunc(props) {
                 specialUnit={service.treatmentCards.specialUnit}
                 cards={service.treatmentCards.cards}
                 wide={service.treatmentCards.wide}
+                ctaId={service.ctaId}
               />
 
               {/* 7. INTERACTIVE COMPONENT */}
@@ -768,6 +774,7 @@ function CadmenServicePage__RenderFunc(props) {
               <CadmenWantToLearnMore 
                 title={service.wantToLearnMore.title}
                 description={service.wantToLearnMore.description}
+                ctaId={service.ctaId}
               />
 
               {/* 9. PREPARING FOR YOUR APPOINTMENT / WHAT TO EXPECT DURING AND AFTER THE TREATMENT */}
@@ -777,6 +784,7 @@ function CadmenServicePage__RenderFunc(props) {
                 subheading={service.preparingForAppointment.subheading}
                 points={service.preparingForAppointment.points}
                 img={service.preparingForAppointment.img}
+                ctaId={service.ctaId}
               />
               
               <CadmenExpectDuringAndAfter 
@@ -785,6 +793,7 @@ function CadmenServicePage__RenderFunc(props) {
                 subheading={service.expectDuringAfter.subheading}
                 sections={service.expectDuringAfter.sections}
                 footer={service.expectDuringAfter.footer}
+                ctaId={service.ctaId}
               />
             </>
 
@@ -960,9 +969,9 @@ function CadmenServicePage__RenderFunc(props) {
                       "__wab_instance",
                       sty.satisfiedClientsSlider
                     )}
-                    ctaLink={"#"}
-                    ctaText={"Book Now"}
-                    isDarkBg={true}
+                    ctaLink={bookingButtonCtaId}
+                    ctaText={bookingButtonText}
+                    isDarkBg={false}
                     settings={{
                       dots: false,
                       arrows: false,
@@ -1097,9 +1106,8 @@ function CadmenServicePage__RenderFunc(props) {
                     muted={service.video.muted}
                   />
                 </div>
-                <Link href='/book-now'  className='mt-[10px] w-full md:w-auto'>
-                  <button className='button white w-full md:w-auto'>Try It Now</button>
-                </Link>
+
+                <BookNowButton text={bookingButtonText} ctaId={bookingButtonCtaId} color="white"/>
               </Stack__>
             </section>
 
@@ -1188,9 +1196,7 @@ function CadmenServicePage__RenderFunc(props) {
                     </React.Fragment>
                   </p>
                 </Stack__>
-                <Link href='/book-now'  className='mt-[10px] w-full md:w-auto'>
-                  <button className='button white w-full md:w-auto'>Book Now</button>
-                </Link>
+                <BookNowButton text={bookingButtonText} ctaId={bookingButtonCtaId} color="white"/>
               </div>
             </section>
             : <></>
