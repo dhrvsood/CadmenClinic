@@ -1,118 +1,63 @@
-import { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
-import Container from '@/components/container';
-import Image from 'next/image'
-import { NextSeo } from 'next-seo';
+import fs from "fs"
+import path from "path"
+import matter from "gray-matter"
+import Image from "next/image"
+import Container from "@/components/container"
+import { NextSeo } from "next-seo"
+import ReactMarkdown from "react-markdown"
+import remarkGfm from "remark-gfm"
+import rehypeSlug from "rehype-slug"
+import rehypeAutolinkHeadings from "rehype-autolink-headings"
 
-const BlogPost = () => {
-  const [post, setPost] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+export async function getStaticPaths() {
+  const blogDir = path.join(process.cwd(), "src/doc/blog")
+  const files = fs.readdirSync(blogDir)
 
-  const { query } = useRouter();
-  const { id } = query;  // Extract `id` from URL
+  const paths = files.map((filename) => ({
+    params: { id: filename.replace(".md", "") },
+  }))
 
-  useEffect(() => {
-    if (!id) return;  // Exit if no `id` is found
+  return { paths, fallback: false }
+}
 
-    const fetchData = async () => {
-      try {
-        const response = await fetch(`/api/fetchPageContent?id=${id}`);  // Call your API route
-        if (!response.ok) throw new Error('Failed to fetch page content');
+export async function getStaticProps({ params }) {
+  const blogDir = path.join(process.cwd(), "src/doc/blog")
+  const filePath = path.join(blogDir, params.id + ".md")
 
-        const data = await response.json();
-        console.log(data);
-        setPost(data);
-      } catch (err) {
-        setError(err.message);
-      } finally {
-        setLoading(false);
-      }
-    };
+  const fileContent = fs.readFileSync(filePath, "utf-8")
+  const { data, content } = matter(fileContent)
 
-    fetchData();
-  }, [id]);
+  return { props: { frontmatter: data, content, id: params.id } }
+}
 
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error: {error}</p>;
-  if (!post) return <p>Post not found</p>;
-
-  const renderBlock = (block) => {
-    switch (block.type) {
-      case 'paragraph':
-        if (block.paragraph.rich_text && block.paragraph.rich_text.length > 0) {
-          return <p key={block.id} className='leading-relaxed mb-6'>{block.paragraph.rich_text.map(text => text.plain_text).join(' ')}</p>;
-        }
-        return null;
-      case 'heading_1':
-        if (block.heading_1.rich_text && block.heading_1.rich_text.length > 0) {
-          return <h1 key={block.id} className='leading-relaxed text-4xl my-4 font-display font-semibold'>{block.heading_1.rich_text.map(text => text.plain_text).join(' ')}</h1>;
-        }
-        return null;
-      case 'heading_2':
-        if (block.heading_2.rich_text && block.heading_2.rich_text.length > 0) {
-          return <h2 key={block.id} className='leading-relaxed text-3xl'>{block.heading_2.rich_text.map(text => text.plain_text).join(' ')}</h2>;
-        }
-        return null;
-      case 'heading_3':
-        if (block.heading_3.rich_text && block.heading_3.rich_text.length > 0) {
-          return <h3 key={block.id} className='leading-relaxed text-2xl font-medium'>{block.heading_3.rich_text.map(text => text.plain_text).join(' ')}</h3>;
-        }
-        return null;
-      case 'image':
-        return (
-          <Image
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{ width: 'auto', height: 'auto' }}
-            key={block.id}
-            src={block.image.file.url}
-            alt={block.image.caption ? block.image.caption.map(c => c.plain_text).join(' ') : 'Image'}
-          />
-        );
-      default:
-        return null;
-    }
-  };
-
-
+export default function BlogPost({ frontmatter, content }) {
   return (
     <>
       <NextSeo
-        title={`${post.page.properties.Title.title[0].plain_text} | CADMEN Clinic`}
-        description='Explore our services including Botox, fillers, laser hair removal & PRP therapy at our Toronto medspa, tailored to enhance your beauty & wellness. See more.'
+        title={`${frontmatter.title} | CADMEN Clinic`}
+        description={frontmatter.description || "Blog post"}
         openGraph={{
-          url: 'https://www.cadmenclinic.ca/blog',
-          title: 'Our Services | See All Premium Treatments | CADMEN Clinic',
-          description:
-            'Explore our services including Botox, fillers, laser hair removal & PRP therapy at our Toronto medspa, tailored to enhance your beauty & wellness. See more.',
-          images: [
-            {
-              url: 'https://www.cadmenclinic.ca/media/clinic_interior.jpg',
-              width: 800,
-              height: 800,
-              alt: 'Interior of CADMEN Clinic',
-              type: 'image/jpeg'
-            }
-          ],
-          siteName: 'CADMEN Clinic'
+          title: frontmatter.title,
+          description: frontmatter.description || "Blog post",
+          images: [{ url: frontmatter.image }],
         }}
       />
-      <Container classList='my-24'>
-        <section className='overflow-hidden mb-5 mt-10'>
-          <Container classList='md:px-5'>
+
+      <section className="my-20">
+        <Container>
+          <section className='overflow-hidden mb-5 mt-10'>
+          <Container>
             <div className='grid h-full md:h-[530px] md:grid-cols-2 lg:h-[550px] '>
               <div className='order-2 flex h-full flex-col justify-center space-y-5 bg-gray-100 px-5 py-5 md:order-1 md:py-0 lg:px-10'>
                 <h1 className='font-display text-4xl font-light tracking-wide md:text-5xl xl:text-6xl'>
-                  {post.page.properties.Title.title[0].plain_text}
+                  {frontmatter.title}
                 </h1>
               </div>
               <div className='order-1 h-[250px] md:order-2 md:h-full'>
                 <Image
                   draggable='false'
-                  src={post.page.icon.file.url}
-                  alt={post.page.properties.Title.title[0].plain_text}
+                  src={frontmatter.image}
+                  alt={frontmatter.title}
                   sizes='100vw'
                   className='h-full w-full object-cover object-center'
                   width={1000}
@@ -123,13 +68,102 @@ const BlogPost = () => {
             </div>
           </Container>
         </section>
-        <article className='mx-5 py-16 px-12 border border-wildSand rounded-md'>
-          {post.blocks.map(block => renderBlock(block))}
-        </article>
-      </Container>
+        <section className="mx-5 md:mx-5 lg:mx-0">
+          <ReactMarkdown
+            remarkPlugins={[remarkGfm]}
+            rehypePlugins={[rehypeSlug, rehypeAutolinkHeadings]}
+            components={{
+              h1: ({ node, ...props }) => (
+                <h1
+                  className="text-4xl font-bold mt-8 mb-4 leading-tight"
+                  {...props}
+                />
+              ),
+              h2: ({ node, ...props }) => (
+                <h2
+                  className="text-3xl font-semibold mt-6 mb-3 leading-snug"
+                  {...props}
+                />
+              ),
+              h3: ({ node, ...props }) => (
+                <h3
+                  className="text-2xl font-semibold mt-5 mb-2 leading-snug"
+                  {...props}
+                />
+              ),
+              p: ({ node, ...props }) => (
+                <p
+                  className="my-4 leading-relaxed text-gray-800"
+                  {...props}
+                />
+              ),
+              a: ({ node, ...props }) => (
+                <a
+                  {...props}
+                  className="text-black underline hover:text-beaver"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                />
+              ),
+              ul: ({ node, ...props }) => (
+                <ul
+                  className="list-disc pl-6 my-4 space-y-2"
+                  {...props}
+                />
+              ),
+              ol: ({ node, ...props }) => (
+                <ol
+                  className="list-decimal pl-6 my-4 space-y-2"
+                  {...props}
+                />
+              ),
+              li: ({ node, ...props }) => (
+                <li className="leading-relaxed" {...props} />
+              ),
+              table: ({ node, ...props }) => (
+                <table
+                  className="border-collapse border border-gray-300 my-6 w-full"
+                  {...props}
+                />
+              ),
+              th: ({ node, ...props }) => (
+                <th
+                  className="border border-gray-300 px-3 py-2 bg-gray-100 text-left font-medium"
+                  {...props}
+                />
+              ),
+              td: ({ node, ...props }) => (
+                <td
+                  className="border border-gray-300 px-3 py-2"
+                  {...props}
+                />
+              ),
+              blockquote: ({ node, ...props }) => (
+                <blockquote
+                  className="border-l-4 border-blue-500 pl-4 italic text-gray-700 my-4"
+                  {...props}
+                />
+              ),
+              code: ({ node, inline, ...props }) =>
+                inline ? (
+                  <code
+                    className="bg-gray-100 px-1 py-0.5 rounded text-sm font-mono"
+                    {...props}
+                  />
+                ) : (
+                  <pre
+                    className="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto my-4"
+                  >
+                    <code {...props} />
+                  </pre>
+                ),
+            }}
+          >
+            {content}
+          </ReactMarkdown>
+        </section>
+        </Container>
+      </section>
     </>
-  );
-};
-
-export default BlogPost;
-
+  )
+}
