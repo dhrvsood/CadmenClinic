@@ -61,10 +61,11 @@ import HeartSvg4Icon from "./icons/PlasmicIcon__HeartSvg4"; // plasmic-import: Q
 import PointIcon from "./icons/PlasmicIcon__Point"; // plasmic-import: dMjm7kjmXw_d/icon
 
 import RatingReviewPill from "@/components/RatingReviewPill";
-import AffordableHairRestoration from "@/components/AffordableHairRestoration";
 import HairLandingHero from "@/components/HairLandingHero";
 import WhyOurPatientsSlider from "@/components/WhyOurPatientsSlider/WhyOurPatientsSlider";
 import AlternatingInfoCard from "@/components/AlternatingInfoCard/AlternatingInfoCard";
+import InteractiveInfo from "@/components/InteractiveInfo";
+import hair_info_interactive from "@/doc/services/hair_info_interactive";
 
 import { useWindowSize } from 'react-use'
 import VideoSection from "@/components/VideoSection/VideoSection";
@@ -1051,7 +1052,11 @@ function PlasmicBotoxLander2__RenderFunc(props) {
           </Stack__>
 
           {/* 4. afforadble prices interactive section (import) */}
-          <AffordableHairRestoration/>
+          <InteractiveInfo
+            title={hair_info_interactive.title}
+            description={hair_info_interactive.description}
+            data={hair_info_interactive.data}
+          />
 
           {/* 5. Proven & Affordable Treatment Packages Tailored for All Types of Hair Loss (slider) */}
           <Stack__

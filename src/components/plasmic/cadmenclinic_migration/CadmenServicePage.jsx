@@ -55,6 +55,7 @@ import CadmenWantToLearnMore from "./CadmenWantToLearnMore";
 import CadmenExpectDuringAndAfter from "./CadmenExpectDuringAndAfter";
 import InteractiveInfo from "@/components/InteractiveInfo";
 import BookNowButton from "@/components/ui/BookNowButton";
+import hair_info_interactive from "@/doc/services/hair_info_interactive";
 
 createPlasmicElementProxy;
 
@@ -545,8 +546,11 @@ function CadmenServicePage__RenderFunc(props) {
                   `}</style>
                 </Stack__>
               </section>
-
-              <AffordableHairRestoration/>
+              <InteractiveInfo
+                title={hair_info_interactive.title}
+                description={hair_info_interactive.description}
+                data={hair_info_interactive.data}
+              />
             </>
 
             // FOR ALL OTHERS
