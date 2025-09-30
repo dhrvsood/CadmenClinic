@@ -391,7 +391,7 @@ const SeeTheResultsSlider = ({ settings, handleButtonClick }) => {
               beforeChange={handleBeforeChange}
             >
               {data[activeTab].items.map((card, i) => (
-                <>
+                <div key={i}>
                   <div className={styles.mobileInfoWrap}>
                     {
                       card.backCard && (
@@ -478,7 +478,7 @@ const SeeTheResultsSlider = ({ settings, handleButtonClick }) => {
                       </div>
                     )}
                   </div>
-                </>
+                </div>
               ))}
               {data[activeTab].items.length === 1 && <div></div>}
             </Slider>
