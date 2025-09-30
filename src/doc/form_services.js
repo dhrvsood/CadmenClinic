@@ -270,8 +270,8 @@ const formServices = [
         notes: '',
         id: '6fde4a3d-0a6e-4a1e-97e5-32368abdcda3',
         price: {
-          original: '$599',
-          discounted: '$299',
+          original: '$399',
+          discounted: '$199',
           percent: '50% off'
         },
         image: '/booking-photos/microneedling.webp',
@@ -287,6 +287,35 @@ const formServices = [
         ],
         duration: '30 mins'
       },
+      // Microneedling + Exosomes
+      {
+        code: 'S0008',
+        slugs: [],
+        title: 'Microneedling + Exosomes',
+        description:
+          'Enhance microneedling with exosomes to boost skin regeneration and repair',
+        category: 'Skin',
+        notes: '',
+        id: 'af7950db-25b5-48e7-b984-807dfbfa368c',
+        price: {
+          original: '$599',
+          discounted: '$299',
+          percent: '50% off'
+        },
+        image: '/booking-photos/microneedling-exosomes.webp',
+        points: [
+          {
+            title: 'Enhanced skin rejuvenation',
+            body: 'Combine the power of microneedling with exosome therapy to accelerate healing and boost collagen production, delivering more dramatic, long-lasting results.'
+          },
+          {
+            title: 'Target a variety of skin concerns',
+            body: 'Improve texture, reduce fine lines, minimize scars, and promote overall skin health for a smoother, youthful appearance.'
+          },
+        ],
+        duration: ''
+      },
+
       // PRP Facial
       {
         code: 'S0007',
