@@ -5,8 +5,8 @@ const microneedling = {
     isMigrated: true,
     category: "skin-treatments",
     general: {
-        strikePrice: "$599",
-        salePrice: "$299",
+        strikePrice: "$399",
+        salePrice: "$199",
         perUnit: " / session",
         discount: "50%",
         shortTitle: "Microneedling",
@@ -83,8 +83,8 @@ const microneedling = {
         cards: [
             {
                 name: "Microneedling",
-                regularPrice: "599",
-                specialPrice: "299",
+                regularPrice: "399",
+                specialPrice: "199",
                 points: [
                     {
                         title: "Stimulates Collagen and Elastin",
@@ -98,8 +98,8 @@ const microneedling = {
             },
             {
                 name: "Microneedling + Exosomes",
-                regularPrice: "799",
-                specialPrice: "499",
+                regularPrice: "599",
+                specialPrice: "299",
                 points: [
                     {
                         title: "Next-Level Rejuvenation with Exosomes",
