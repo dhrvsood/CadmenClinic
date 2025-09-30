@@ -43,7 +43,6 @@ import sty from "./CadmenServicePage.module.css"; // plasmic-import: 9rME71zJbGo
 
 // newly created components
 import RatingReviewPill from "@/components/RatingReviewPill";
-import AffordableHairRestoration from "@/components/AffordableHairRestoration";
 import ServiceStepCard from "@/components/ServiceStepCard";
 import WhyPeopleChooseCard from "@/components/WhyPeopleChooseCard";
 import SmallInfoCard from "@/components/SmallInfoCard";
