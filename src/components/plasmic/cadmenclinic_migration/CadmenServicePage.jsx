@@ -26,7 +26,6 @@ import {
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import DiscountPricingPill from "../../DiscountPricingPill"; // plasmic-import: TO66K8qjr8TP/component
 import Button from "../../Button"; // plasmic-import: 0o-OkGmTYJg3/component
-import HowItWorksCard from "../../HowItWorksCard"; // plasmic-import: w7EJDoU6NMVc/component
 import AreasInteractive from "../../AreasInteractive"; // plasmic-import: cNLJfmXsSSOr/component
 import TestimonialsSlider from "@/components/TestimonialsSlider/TestimonialsSlider"; // plasmic-import: J0SSSRogRoTR/codeComponent
 import TestimonialCard from "../../TestimonialCard"; // plasmic-import: zWVJ2Qd7n2nR/component

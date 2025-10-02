@@ -26,27 +26,23 @@ import {
   useDollarState
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
-import TopNav from "../../TopNav"; // plasmic-import: xBvtLE-eO4gb/component
 import Button from "../../Button"; // plasmic-import: 0o-OkGmTYJg3/component
 import ReviewsRatingPill from "../../ReviewsRatingPill"; // plasmic-import: lUTkTuQcsEcx/component
 import BenefitsOfBotoxCard from "../../BenefitsOfBotoxCard"; // plasmic-import: NylQq7mzP_E5/component
 import TestimonialsSlider from "@/components/TestimonialsSlider/TestimonialsSlider"; // plasmic-import: J0SSSRogRoTR/codeComponent
 import TestimonialCard from "../../TestimonialCard"; // plasmic-import: zWVJ2Qd7n2nR/component
-import TextToggler from "../../TextToggler"; // plasmic-import: nk356y6CCF9w/component
 import BotoxProcessCard from "../../BotoxProcessCard"; // plasmic-import: 7fDdA2kY52_t/component
 import AffordableBotoxCard from "../../AffordableBotoxCard"; // plasmic-import: dCCKAyC8oXyh/component
 // import FaceSection from "../../FaceSection"; // plasmic-import: dOVgE0OgS0yG/component
 import AreasInteractive from "../../AreasInteractive"; // plasmic-import: cNLJfmXsSSOr/component
 import BotoxResultCard from "../../BotoxResultCard"; // plasmic-import: LkkGmqnkkLRj/component
-import SelectPill from "../../SelectPill"; // plasmic-import: XgOD49Zg0vP7/component
-import HowItWorksCard from "../../HowItWorksCard"; // plasmic-import: w7EJDoU6NMVc/component
+import SelectPill from "../../SelectPill"; // plasmic-import: XgOD49Zg0vP7/componentcs
 import AgeGroupsCard from "../../AgeGroupsCard"; // plasmic-import: 0IByburiocI3/component
 import IconLayeredCircles from "../../IconLayeredCircles"; // plasmic-import: otc6Jw_feodx/component
 import Faq from "../../Faq"; // plasmic-import: kXqZTEGKWOeX/component
 import BotoxMythsSlider from "@/components/BotoxMythsSlider/BotoxMythsSlider"; // plasmic-import: 7M8CJgEEKvIi/codeComponent
 import BotoxMythsCard from "../../BotoxMythsCard"; // plasmic-import: 4aj6TPf-GBTB/component
 import OurLocationSection from "../../OurLocationSection"; // plasmic-import: 90jT_0Y9mL-p/component
-import FooterNew from "../../FooterNew"; // plasmic-import: NE5t6IteXed-/component
 import { useScreenVariants as useScreenVariants_4IUcgkiijTv2 } from "../blank_website/PlasmicGlobalVariant__Screen"; // plasmic-import: 4iUCGKIIJTv2/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
