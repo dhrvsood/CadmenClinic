@@ -8,6 +8,7 @@
 import * as React from "react";
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 import { useRouter } from "next/router";
 import {
   PlasmicImg as PlasmicImg__,
@@ -23,12 +24,8 @@ import {
   useDollarState
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
-import TopNav from "../../TopNav"; // plasmic-import: xBvtLE-eO4gb/component
 import DiscountPricingPill from "../../DiscountPricingPill"; // plasmic-import: TO66K8qjr8TP/component
 import Button from "../../Button"; // plasmic-import: 0o-OkGmTYJg3/component
-import TextNavLink from "../../TextNavLink"; // plasmic-import: EItg-PDL8JJi/component
-import IconLayeredCircles from "../../IconLayeredCircles"; // plasmic-import: otc6Jw_feodx/component
-import HowItWorksCard from "../../HowItWorksCard"; // plasmic-import: w7EJDoU6NMVc/component
 import AreasInteractive from "../../AreasInteractive"; // plasmic-import: cNLJfmXsSSOr/component
 import TestimonialsSlider from "@/components/TestimonialsSlider/TestimonialsSlider"; // plasmic-import: J0SSSRogRoTR/codeComponent
 import TestimonialCard from "../../TestimonialCard"; // plasmic-import: zWVJ2Qd7n2nR/component
@@ -37,20 +34,14 @@ import BigTestimonial from "../../BigTestimonial"; // plasmic-import: qZkEECWSrv
 import Faq from "../../Faq"; // plasmic-import: kXqZTEGKWOeX/component
 import { Video } from "@plasmicpkgs/plasmic-basic-components";
 import OurLocationSection from "../../OurLocationSection"; // plasmic-import: 90jT_0Y9mL-p/component
-import FooterNew from "../../FooterNew"; // plasmic-import: NE5t6IteXed-/component
-import { useScreenVariants as useScreenVariants_4IUcgkiijTv2 } from "../blank_website/PlasmicGlobalVariant__Screen"; // plasmic-import: 4iUCGKIIJTv2/globalVariant
+import { useScreenVariants as useScreenVariants } from "../blank_website/PlasmicGlobalVariant__Screen"; // plasmic-import: 4iUCGKIIJTv2/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "../blank_website/plasmic.module.css"; // plasmic-import: fpxTiFS69ULcX4wDGEfw3c/projectcss
-import sty from "./CadmenPRPLander.module.css"; // plasmic-import: 9rME71zJbGo1/css
-import Icon9Icon from "./icons/PlasmicIcon__Icon9"; // plasmic-import: fgEQ3xZTbtTI/icon
-import VectorHeartSvgIcon from "./icons/PlasmicIcon__VectorHeartSvg"; // plasmic-import: JbM7XFcjDUEn/icon
-import VectorPersonSvgIcon from "./icons/PlasmicIcon__VectorPersonSvg"; // plasmic-import: OvyHUiQ4SEzz/icon
-import Image from "next/image";
+import sty from "./CadmenServicePage.module.css"; // plasmic-import: 9rME71zJbGo1/css
 
 // newly created components
 import RatingReviewPill from "@/components/RatingReviewPill";
-import AffordableHairRestoration from "@/components/AffordableHairRestoration";
 import ServiceStepCard from "@/components/ServiceStepCard";
 import WhyPeopleChooseCard from "@/components/WhyPeopleChooseCard";
 import SmallInfoCard from "@/components/SmallInfoCard";
@@ -62,12 +53,13 @@ import CadmenWantToLearnMore from "./CadmenWantToLearnMore";
 import CadmenExpectDuringAndAfter from "./CadmenExpectDuringAndAfter";
 import InteractiveInfo from "@/components/InteractiveInfo";
 import BookNowButton from "@/components/ui/BookNowButton";
+import hair_info_interactive from "@/doc/services/hair_info_interactive";
 
 createPlasmicElementProxy;
 
-export const PlasmicBotoxLander__VariantProps = new Array();
+export const CadmenServicePage__VariantProps = new Array();
 
-export const PlasmicBotoxLander__ArgProps = ["serviceData"];
+export const CadmenServicePage__ArgProps = ["serviceData"];
 
 const $$ = {};
 
@@ -78,7 +70,7 @@ function useNextRouter() {
   return undefined;
 }
 
-function PlasmicBotoxLander__RenderFunc(props) {
+function CadmenServicePage__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const args = React.useMemo(
     () =>
@@ -138,7 +130,6 @@ function PlasmicBotoxLander__RenderFunc(props) {
     ];
   }, [faceInteractive]);
 
-
   const $state = useDollarState(stateSpecs, {
     $props,
     $ctx,
@@ -148,7 +139,7 @@ function PlasmicBotoxLander__RenderFunc(props) {
 
 
   const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariants_4IUcgkiijTv2()
+    screen: useScreenVariants()
   });
 
   const isHairRestoration = service.category === "hair-restoration"
@@ -553,8 +544,11 @@ function PlasmicBotoxLander__RenderFunc(props) {
                   `}</style>
                 </Stack__>
               </section>
-
-              <AffordableHairRestoration/>
+              <InteractiveInfo
+                title={hair_info_interactive.title}
+                description={hair_info_interactive.description}
+                data={hair_info_interactive.data}
+              />
             </>
 
             // FOR ALL OTHERS
@@ -731,7 +725,6 @@ function PlasmicBotoxLander__RenderFunc(props) {
 
                 // Show interactive face dot component for Botox and Dermal Fillers
                 ?
-                // <div key={__nextRouter.query.serviceName}>
                   <AreasInteractive
                     data-plasmic-name={"areasInteractive"}
                     data-plasmic-override={overrides.areasInteractive}
@@ -768,7 +761,6 @@ function PlasmicBotoxLander__RenderFunc(props) {
                       "selected"
                     ])}
                   />
-                // </div>
 
                 // Show interactive info component for rest
                 :
@@ -1217,179 +1209,24 @@ function PlasmicBotoxLander__RenderFunc(props) {
   );
 }
 
-const PlasmicDescendants = {
-  root: [
-    "root",
-    "topNav",
-    "hero",
-    "heroButton",
-    "heroImage",
-    "threeCardsSection",
-    "threeCards",
-    "chooseBotoxSection",
-    "chooseBotoxHeader",
-    "peopleChooseNav",
-    "chooseBotoxPoints",
-    "chooseBotoxDot2",
-    "chooseBotoxDot3",
-    "chooseBotoxDot4",
-    "chooseBotoxButton",
-    "chooseBotoxImages",
-    "button",
-    "howBotoxWorksSection",
-    "howBotoxWorksHeader",
-    "howBotoxWorksCards",
-    "howBotoxWorksCardsMobile",
-    "areasInteractive",
-    "beforeAfterSection",
-    "beforeAfterHeader",
-    "beforeAfterSlider",
-    "botoxHelpedSection",
-    "botoxHelpedScroller",
-    "satisfiedClientsSlider",
-    "htmlVideo",
-    "videoCtaButton",
-    "ourLocationSection",
-    "specialOfferButton",
-    "footerNew",
-    "claimBotoxFooter"
-  ],
+export default function CadmenServicePage(props) {
+  const { variants, args, overrides } = React.useMemo(
+    () =>
+      deriveRenderOpts(props, {
+        name: "root",
+        descendantNames: ["root"],
+        internalArgPropNames: CadmenServicePage__ArgProps,
+        internalVariantPropNames: CadmenServicePage__VariantProps,
+      }),
+    [props]
+  );
 
-  topNav: ["topNav"],
-  hero: ["hero", "heroButton", "heroImage"],
-  heroButton: ["heroButton"],
-  heroImage: ["heroImage"],
-  threeCardsSection: ["threeCardsSection", "threeCards"],
-  threeCards: ["threeCards"],
-  chooseBotoxSection: [
-    "chooseBotoxSection",
-    "chooseBotoxHeader",
-    "peopleChooseNav",
-    "chooseBotoxPoints",
-    "chooseBotoxDot2",
-    "chooseBotoxDot3",
-    "chooseBotoxDot4",
-    "chooseBotoxButton",
-    "chooseBotoxImages",
-    "button"
-  ],
-
-  chooseBotoxHeader: ["chooseBotoxHeader"],
-  peopleChooseNav: ["peopleChooseNav"],
-  chooseBotoxPoints: [
-    "chooseBotoxPoints",
-    "chooseBotoxDot2",
-    "chooseBotoxDot3",
-    "chooseBotoxDot4",
-    "chooseBotoxButton"
-  ],
-
-  chooseBotoxDot2: ["chooseBotoxDot2"],
-  chooseBotoxDot3: ["chooseBotoxDot3"],
-  chooseBotoxDot4: ["chooseBotoxDot4"],
-  chooseBotoxButton: ["chooseBotoxButton"],
-  chooseBotoxImages: ["chooseBotoxImages"],
-  button: ["button"],
-  howBotoxWorksSection: [
-    "howBotoxWorksSection",
-    "howBotoxWorksHeader",
-    "howBotoxWorksCards",
-    "howBotoxWorksCardsMobile"
-  ],
-
-  howBotoxWorksHeader: ["howBotoxWorksHeader"],
-  howBotoxWorksCards: ["howBotoxWorksCards"],
-  howBotoxWorksCardsMobile: ["howBotoxWorksCardsMobile"],
-  areasInteractive: ["areasInteractive"],
-  beforeAfterSection: [
-    "beforeAfterSection",
-    "beforeAfterHeader",
-    "beforeAfterSlider"
-  ],
-
-  beforeAfterHeader: ["beforeAfterHeader"],
-  beforeAfterSlider: ["beforeAfterSlider"],
-  botoxHelpedSection: ["botoxHelpedSection", "botoxHelpedScroller"],
-  botoxHelpedScroller: ["botoxHelpedScroller"],
-  satisfiedClientsSlider: ["satisfiedClientsSlider"],
-  htmlVideo: ["htmlVideo"],
-  videoCtaButton: ["videoCtaButton"],
-  ourLocationSection: ["ourLocationSection"],
-  specialOfferButton: ["specialOfferButton"],
-  footerNew: ["footerNew", "claimBotoxFooter"],
-  claimBotoxFooter: ["claimBotoxFooter"]
-};
-
-function makeNodeComponent(nodeName) {
-  const func = function (props) {
-    const { variants, args, overrides } = React.useMemo(
-      () =>
-        deriveRenderOpts(props, {
-          name: nodeName,
-          descendantNames: PlasmicDescendants[nodeName],
-          internalArgPropNames: PlasmicBotoxLander__ArgProps,
-          internalVariantPropNames: PlasmicBotoxLander__VariantProps
-        }),
-      [props, nodeName]
-    );
-    return PlasmicBotoxLander__RenderFunc({
-      variants,
-      args,
-      overrides,
-      forNode: nodeName
-    });
-  };
-  if (nodeName === "root") {
-    func.displayName = "CadmenPRPLander";
-  } else {
-    func.displayName = `CadmenPRPLander.${nodeName}`;
-  }
-  return func;
+  return CadmenServicePage__RenderFunc({
+    variants,
+    args,
+    overrides,
+    forNode: "root",
+  });
 }
 
-export const CadmenPRPLander = Object.assign(
-  // Top-level CadmenPRPLander renders the root element
-  makeNodeComponent("root"),
-  {
-    // Helper components rendering sub-elements
-    topNav: makeNodeComponent("topNav"),
-    hero: makeNodeComponent("hero"),
-    heroButton: makeNodeComponent("heroButton"),
-    heroImage: makeNodeComponent("heroImage"),
-    threeCardsSection: makeNodeComponent("threeCardsSection"),
-    threeCards: makeNodeComponent("threeCards"),
-    chooseBotoxSection: makeNodeComponent("chooseBotoxSection"),
-    chooseBotoxHeader: makeNodeComponent("chooseBotoxHeader"),
-    peopleChooseNav: makeNodeComponent("peopleChooseNav"),
-    chooseBotoxPoints: makeNodeComponent("chooseBotoxPoints"),
-    chooseBotoxDot2: makeNodeComponent("chooseBotoxDot2"),
-    chooseBotoxDot3: makeNodeComponent("chooseBotoxDot3"),
-    chooseBotoxDot4: makeNodeComponent("chooseBotoxDot4"),
-    chooseBotoxButton: makeNodeComponent("chooseBotoxButton"),
-    chooseBotoxImages: makeNodeComponent("chooseBotoxImages"),
-    button: makeNodeComponent("button"),
-    howBotoxWorksSection: makeNodeComponent("howBotoxWorksSection"),
-    howBotoxWorksHeader: makeNodeComponent("howBotoxWorksHeader"),
-    howBotoxWorksCards: makeNodeComponent("howBotoxWorksCards"),
-    howBotoxWorksCardsMobile: makeNodeComponent("howBotoxWorksCardsMobile"),
-    areasInteractive: makeNodeComponent("areasInteractive"),
-    beforeAfterSection: makeNodeComponent("beforeAfterSection"),
-    beforeAfterHeader: makeNodeComponent("beforeAfterHeader"),
-    beforeAfterSlider: makeNodeComponent("beforeAfterSlider"),
-    botoxHelpedSection: makeNodeComponent("botoxHelpedSection"),
-    botoxHelpedScroller: makeNodeComponent("botoxHelpedScroller"),
-    satisfiedClientsSlider: makeNodeComponent("satisfiedClientsSlider"),
-    htmlVideo: makeNodeComponent("htmlVideo"),
-    videoCtaButton: makeNodeComponent("videoCtaButton"),
-    ourLocationSection: makeNodeComponent("ourLocationSection"),
-    specialOfferButton: makeNodeComponent("specialOfferButton"),
-    footerNew: makeNodeComponent("footerNew"),
-    claimBotoxFooter: makeNodeComponent("claimBotoxFooter"),
-    // Metadata about props expected for CadmenPRPLander
-    internalVariantProps: PlasmicBotoxLander__VariantProps,
-    internalArgProps: PlasmicBotoxLander__ArgProps,
-  }
-);
-
-export default CadmenPRPLander;
 /* prettier-ignore-end */
