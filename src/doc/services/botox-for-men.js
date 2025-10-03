@@ -1,7 +1,7 @@
 const botox_for_men = {
     slug: "botox-for-men",
     tabTitle: "Botox for Men",
-    ctaId: "3a2b077b-3e98-4f16-9183-8c0cb9aeccfb",
+    ctaId: "5609ddd9-1fa8-40f0-95b5-1d09280e43ac",
     isMigrated: true,
     category: "skin-treatments",
     general: {
