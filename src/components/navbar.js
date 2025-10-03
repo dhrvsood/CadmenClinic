@@ -64,7 +64,7 @@ const Navbar = () => {
             target='_blank'
             className='flex w-full justify-center py-1 text-xs text-white'
           >
-            0% Financing Now Available
+            0% Interest Financing Now Available
           </Link>
         </div>
       )}
